@@ -37,8 +37,9 @@ if [ "$ACTIVE" = "0" ]; then
 fi
 
 echo ""
-echo "💹 ① 价格快照 + 指标预计算..."
+echo "💹 ① 价格快照 + 公司概况 + 指标预计算..."
 python3 scripts/sync-prices.py || echo "⚠️ 价格同步失败（用上次快照继续）"
+python3 scripts/sync-profiles.py || echo "⚠️ 公司概况同步失败（看板显示上次快照）"
 python3 scripts/compute-metrics.py
 
 echo ""

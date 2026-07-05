@@ -38,8 +38,9 @@ if ! command -v git &> /dev/null; then echo "❌ 找不到 git"; exit 1; fi
 echo "✅ claude / git OK"
 
 echo ""
-echo "💹 ① 价格快照 sync-prices.py..."
+echo "💹 ① 价格快照 + 公司概况..."
 python3 scripts/sync-prices.py || echo "⚠️ 价格同步失败（继续执行，明日会补拉）"
+python3 scripts/sync-profiles.py || echo "⚠️ 公司概况同步失败（看板显示上次快照）"
 
 echo ""
 echo "🤖 ② 调用 skill alpha-daily-scan..."

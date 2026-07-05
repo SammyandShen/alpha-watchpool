@@ -59,6 +59,11 @@ small { color:var(--dim); }
 .tier.p  { background:#8957e533; color:#bc8cff; }
 .lr { font-size:.82em; margin-right:8px; }
 
+.metrics-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:10px; margin:14px 0; }
+.kpi .v.small { font-size:1.05em; }
+details summary { cursor:pointer; color:var(--dim); font-size:.85em; margin:16px 0 6px; }
+details p { color:var(--dim); font-size:.85em; line-height:1.6; }
+
 .collapsible { cursor:pointer; user-select:none; }
 .reviews { list-style:none; }
 .reviews li { padding:4px 0; }

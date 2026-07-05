@@ -177,7 +177,7 @@
       "prior": {
         "p": 0.28,
         "log_odds": -0.9445,
-        "rationale": "七维总分 25 → 0.22-0.32 档；取中上因 demand_certainty=5（电网缺口是已发生事实）且验证快（8 月初 FQ3 即见 backlog），扣分项是市值弹性一般（~30 亿美元）",
+        "rationale": "七维总分 25 → 0.22-0.32 档；取中上因 demand_certainty=5（电网缺口是已发生事实）且验证快（8 月初 FQ3 即见 backlog），扣分项是市值弹性一般（~90 亿美元中盘）",
         "set_by": "daily-scan 2026-07-05"
       },
       "current": {

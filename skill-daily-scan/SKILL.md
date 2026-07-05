@@ -39,6 +39,13 @@ description: 每日扫描市场新闻，用 serenity-alpha 方法论把「已发
 
 对通过过滤的新闻执行 serenity-alpha 完整 9 段式分析（方法论本体见 `~/.claude/skills/serenity-alpha/SKILL.md`），然后按 `references/serenity-pipeline.md` 的字段映射把分析结果 JSON 化，写入 `data/hypotheses.json`。
 
+**新 ticker 首次入池时，同步写公司中文档案** `data/company-notes.json`（key = ticker）：
+- `business_cn`：主营业务一段话（产品线、应用场景、商业模式）
+- `segments_cn`：收入结构/业务构成一句话
+- `position_cn`：行业地位与竞争格局一句话
+- `added_at`：今天
+数字性指标（市值/营收/毛利率等）**不要写**——`sync-profiles.py` 自动拉取。已有档案的 ticker 不重复写。
+
 **入池纪律**：
 - 每日新建假设上限 **2 条**——多于 2 个候选时按 serenity 七维总分排序取最高的
 - 先验由七维总分查映射表（见 serenity-pipeline.md），**硬上限 0.45**

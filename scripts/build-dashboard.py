@@ -19,6 +19,8 @@ HYP_PATH = REPO_ROOT / "data" / "hypotheses.json"
 ARCHIVE_PATH = REPO_ROOT / "data" / "archive" / "hypotheses-closed.json"
 PRICES_PATH = REPO_ROOT / "docs" / "data" / "prices.json"
 SCORECARD_PATH = REPO_ROOT / "data" / "scorecard.json"
+PROFILES_PATH = REPO_ROOT / "docs" / "data" / "profiles.json"
+NOTES_PATH = REPO_ROOT / "data" / "company-notes.json"
 REVIEWS_DIR = REPO_ROOT / "docs" / "reviews"
 OUT_PATH = REPO_ROOT / "docs" / "data" / "dashboard.js"
 
@@ -51,6 +53,13 @@ def main() -> int:
             needed.add(bl["sector_benchmark"])
     series = {t: s for t, s in (prices.get("series") or {}).items() if t in needed}
 
+    # 公司简介 = 脚本拉的指标（profiles.json）+ LLM 写的中文档案（company-notes.json）
+    fin = load(PROFILES_PATH, {}).get("profiles", {})
+    notes = load(NOTES_PATH, {}).get("companies", {})
+    companies = {}
+    for t in set(fin) | set(notes):
+        companies[t] = {**fin.get(t, {}), "notes": notes.get(t)}
+
     reviews = sorted(
         [d.name for d in REVIEWS_DIR.iterdir() if d.is_dir() and (d / "index.html").exists()],
         reverse=True,
@@ -62,6 +71,7 @@ def main() -> int:
         "hypotheses": all_hyps,
         "prices": series,
         "scorecard": scorecard,
+        "companies": companies,
         "reviews": reviews,
     }
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)

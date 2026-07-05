@@ -28,6 +28,18 @@
   </table></div>
 </section>
 
+<section id="company" class="hidden">
+  <h2 id="company-title"></h2>
+  <div id="company-head" class="card"></div>
+  <div id="company-metrics" class="metrics-grid"></div>
+  <div class="chart-grid">
+    <div><h3>近 1 年股价走势</h3><div id="chart-company-price" class="chart"></div></div>
+    <div><h3>主营业务</h3><div id="company-business"></div></div>
+  </div>
+  <h3>关联假设</h3><div id="company-hyps"></div>
+  <details id="company-desc-en"><summary>英文业务描述（Yahoo Finance）</summary><p></p></details>
+</section>
+
 <section id="detail" class="hidden">
   <h2 id="detail-title"></h2>
   <div id="detail-thesis" class="card"></div>
@@ -104,6 +116,12 @@ function returns(h) {                       // 入池以来收益与超额
   return out;
 }
 
+const fmtBig = v => v == null ? "—" :
+  Math.abs(v) >= 1e9 ? (v/1e9).toFixed(2) + "B" :
+  Math.abs(v) >= 1e6 ? (v/1e6).toFixed(1) + "M" : v.toLocaleString();
+const fmtFrac = v => v == null ? "—" : (v*100).toFixed(1) + "%";
+const fmtX = v => v == null ? "—" : v.toFixed(1) + "x";
+
 function nextDeadline(h) {
   const pend = (h.validation_conditions||[]).filter(v => v.status === "pending" && v.check_by);
   if (!pend.length) return null;
@@ -165,7 +183,7 @@ function renderTable() {
     const r = returns(h), dl = nextDeadline(h);
     const dlTxt = dl ? `${dl.check_by}<br><small>${Math.max(0, daysBetween(new Date().toISOString().slice(0,10), dl.check_by))} 天 · ${esc(dl.id)}</small>` : "—";
     return `<tr onclick="location.hash='#/h/${h.id}'">
-      <td><b>${esc(h.ticker)}</b><br><small>${esc(h.company)}</small></td>
+      <td><b>${esc(h.ticker)}</b> <a href="#/c/${esc(h.ticker)}" onclick="event.stopPropagation()" title="公司简介">🏢</a><br><small>${esc(h.company)}</small></td>
       <td class="thesis-cell">${esc(h.thesis?.one_liner)}</td>
       <td>${fmtP(h.prior?.p)} → <b>${fmtP(h.current?.p)}</b></td>
       <td>${sparkline(h.posterior_history)}</td>
@@ -185,7 +203,8 @@ function renderDetail(id) {
   if (!h) { sec.classList.add("hidden"); return; }
   sec.classList.remove("hidden");
   document.getElementById("detail-title").innerHTML =
-    `${esc(h.ticker)} · ${esc(h.company)} <span class="badge ${h.status}">${STATUS_ZH[h.status]||h.status}</span>`;
+    `${esc(h.ticker)} · ${esc(h.company)} <span class="badge ${h.status}">${STATUS_ZH[h.status]||h.status}</span>
+     <a href="#/c/${esc(h.ticker)}" style="font-size:.7em">🏢 公司简介</a>`;
   const t = h.thesis || {}, r = returns(h);
   document.getElementById("detail-thesis").innerHTML = `
     <p><b>${esc(t.one_liner)}</b></p>
@@ -253,6 +272,74 @@ function renderDetail(id) {
   sec.scrollIntoView({behavior:"smooth"});
 }
 
+// ---------- 公司简介 ----------
+function renderCompany(ticker) {
+  const c = (D.companies || {})[ticker];
+  const sec = document.getElementById("company");
+  if (!c) { sec.classList.add("hidden"); return; }
+  sec.classList.remove("hidden");
+  document.getElementById("detail").classList.add("hidden");
+  const notes = c.notes || {};
+
+  document.getElementById("company-title").innerHTML =
+    `🏢 ${esc(c.name || ticker)} <small>(${esc(ticker)})</small>`;
+  document.getElementById("company-head").innerHTML = `
+    ${c.sector ? `<span class="badge">${esc(c.sector)}</span> <span class="badge">${esc(c.industry)}</span>` : ""}
+    ${c.employees ? `<span class="badge">👥 ${c.employees.toLocaleString()} 人</span>` : ""}
+    ${c.website ? `<a href="${esc(c.website)}" target="_blank">${esc(c.website.replace(/^https?:\/\/(www\.)?/, ""))} ↗</a>` : ""}
+    ${c.fetched_at ? `<small> · 指标更新于 ${esc(c.fetched_at.slice(0,10))}</small>` : ""}`;
+
+  const M = [
+    ["市值", fmtBig(c.market_cap) + (c.currency && c.currency !== "USD" ? " " + c.currency : "")],
+    ["营收 TTM", fmtBig(c.revenue_ttm)],
+    ["营收增速", fmtFrac(c.revenue_growth)],
+    ["毛利率", fmtFrac(c.gross_margin)],
+    ["营业利润率", fmtFrac(c.operating_margin)],
+    ["净利率", fmtFrac(c.profit_margin)],
+    ["PE (TTM/Fwd)", `${c.trailing_pe ? c.trailing_pe.toFixed(1) : "—"} / ${c.forward_pe ? c.forward_pe.toFixed(1) : "—"}`],
+    ["PS (TTM)", fmtX(c.ps_ttm)],
+    ["现金 / 负债", `${fmtBig(c.total_cash)} / ${fmtBig(c.total_debt)}`],
+    ["自由现金流", fmtBig(c.free_cashflow)],
+    ["52 周区间", c.week52_low != null ? `${c.week52_low.toFixed(2)} – ${c.week52_high.toFixed(2)}` : "—"],
+  ];
+  document.getElementById("company-metrics").innerHTML =
+    M.map(([k,v]) => `<div class="kpi"><div class="v small">${v}</div><div class="k">${k}</div></div>`).join("");
+
+  // 近 1 年走势（标注各假设入池点）
+  const ser = D.prices[ticker] || [];
+  const hyps = D.hypotheses.filter(h => h.ticker === ticker);
+  const entryMarks = hyps.filter(h => h.baseline?.entry_date).map(h => ({
+    x: h.baseline.entry_date, y: priceAt(ser, h.baseline.entry_date), id: h.id
+  })).filter(m => m.y != null);
+  Plotly.newPlot("chart-company-price", [
+    {x: ser.map(x=>x[0]), y: ser.map(x=>x[1]), mode:"lines", name: ticker,
+     line:{color:"#58a6ff", width:1.8}},
+    {x: entryMarks.map(m=>m.x), y: entryMarks.map(m=>m.y), mode:"markers+text", name:"入池",
+     marker:{color:"#d29922", size:11, symbol:"star"}, text: entryMarks.map(()=>"入池"),
+     textposition:"top center", textfont:{color:"#d29922", size:10},
+     hovertemplate:"%{x} 入池<br>%{text}<extra></extra>"},
+  ], {...PLOT_LAYOUT, showlegend:false,
+      yaxis:{...PLOT_LAYOUT.yaxis, title: c.currency || "USD"}}, PLOT_CFG);
+
+  document.getElementById("company-business").innerHTML = notes.business_cn ? `
+    <div class="card"><p>${esc(notes.business_cn)}</p>
+    ${notes.segments_cn ? `<p><small>📦 ${esc(notes.segments_cn)}</small></p>` : ""}
+    ${notes.position_cn ? `<p><small>⚔️ ${esc(notes.position_cn)}</small></p>` : ""}</div>`
+    : "<p class='empty'>暂无中文档案（入池时由 daily-scan 写入）</p>";
+
+  document.getElementById("company-hyps").innerHTML = hyps.length ? hyps.map(h => `
+    <div class="card" style="cursor:pointer" onclick="location.hash='#/h/${h.id}'">
+      <span class="badge ${h.status}">${STATUS_ZH[h.status]||h.status}</span>
+      ${esc(h.thesis?.one_liner)}
+      <small>· ${fmtP(h.prior?.p)} → ${fmtP(h.current?.p)} · 入池 ${esc(h.created_at)}</small>
+    </div>`).join("") : "<p class='empty'>无</p>";
+
+  const en = document.getElementById("company-desc-en");
+  if (c.description_en) { en.style.display=""; en.querySelector("p").textContent = c.description_en; }
+  else en.style.display = "none";
+  sec.scrollIntoView({behavior:"smooth"});
+}
+
 // ---------- 已关闭 ----------
 function renderClosed() {
   const closed = D.hypotheses.filter(h => h.status !== "observing");
@@ -283,9 +370,12 @@ function drawCalibration() {
 
 // ---------- 路由 & 启动 ----------
 function route() {
-  const m = location.hash.match(/^#\/h\/(.+)$/);
-  if (m) renderDetail(decodeURIComponent(m[1]));
-  else document.getElementById("detail").classList.add("hidden");
+  const mh = location.hash.match(/^#\/h\/(.+)$/);
+  const mc = location.hash.match(/^#\/c\/(.+)$/);
+  document.getElementById("detail").classList.add("hidden");
+  document.getElementById("company").classList.add("hidden");
+  if (mh) renderDetail(decodeURIComponent(mh[1]));
+  else if (mc) renderCompany(decodeURIComponent(mc[1]).toUpperCase());
 }
 window.addEventListener("hashchange", route);
 

@@ -37,8 +37,10 @@ def load_json(path: Path) -> dict:
 
 
 def collect_tickers() -> dict[str, str]:
-    """返回 {ticker: 最早需要的起始日期 YYYY-MM-DD}，只含仍需跟踪的 ticker。"""
+    """返回 {ticker: 最早需要的起始日期 YYYY-MM-DD}，只含仍需跟踪的 ticker。
+    假设标的本身拉满 1 年（公司简介页走势图用）；基准 ETF 从最早入池日起即可。"""
     today = datetime.now().date()
+    year_ago = (today - timedelta(days=365)).strftime("%Y-%m-%d")
     needed: dict[str, str] = {}
 
     def add(ticker: str, start: str) -> None:
@@ -63,7 +65,7 @@ def collect_tickers() -> dict[str, str]:
                             continue  # 复盘窗口已过，不再拉取
                     except ValueError:
                         pass
-            add(h.get("ticker"), entry)
+            add(h.get("ticker"), min(entry, year_ago))
             bl = h.get("baseline") or {}
             add(bl.get("benchmark") or "SPY", entry)
             if bl.get("sector_benchmark"):
@@ -109,9 +111,10 @@ def main() -> int:
     failures = []
     for ticker, start in sorted(needed.items()):
         have = series_map.get(ticker) or []
-        # 增量：已有数据则只从最后日期前 5 天拉（覆盖修正）
+        # 增量：已有数据则只从最后日期前 5 天拉（覆盖修正）；
+        # 但若已有序列的起点晚于所需起点（如新增了 1 年回填需求），全量重拉
         fetch_start = start
-        if have:
+        if have and have[0][0] <= start:
             last = have[-1][0]
             fetch_start = (datetime.strptime(last, "%Y-%m-%d") - timedelta(days=5)).strftime("%Y-%m-%d")
         try:
