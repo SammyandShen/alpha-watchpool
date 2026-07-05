@@ -2,5 +2,265 @@
   "$schema_version": "1",
   "$methodology_version": "1",
   "$last_updated": "2026-07-05",
-  "hypotheses": []
+  "hypotheses": [
+    {
+      "id": "H20260705-OUST",
+      "ticker": "OUST",
+      "company": "Ouster, Inc.",
+      "created_at": "2026-07-05",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-07-05",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：AIM 供货协议扩容 + Rev8 BABA 合规 + 2 亿美元融资落地"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-06-30",
+          "headline": "Ouster Announces Build America, Buy America Compliance for REV8 OS Digital Lidar Sensors",
+          "url": "https://www.businesswire.com/news/home/20260630299896/en/",
+          "summary": "Rev8 传感器通过 BABA 合规，打开联邦资助基建项目（州/地方交通）采购通道"
+        },
+        {
+          "date": "2026-06-23",
+          "headline": "OUST's AIM Partnership Validates Rev8's Commercial Promise",
+          "url": "https://www.zacks.com/stock/news/2941499/",
+          "summary": "与 AIM Intelligent Machines 扩大 lidar 供货协议，进入自主矿山/工程机械车队"
+        },
+        {
+          "date": "2026-07-02",
+          "headline": "Ouster Announces Pricing of Public Offering of Common Stock",
+          "url": "https://www.businesswire.com/news/home/20260702981664/en/",
+          "summary": "增发 362 万股 @ $55.22 募资约 2 亿美元，pro forma 现金约 3.75 亿，为产能与库存扩张备弹药"
+        }
+      ],
+      "thesis": {
+        "one_liner": "工业/基建 lidar 需求拐点将在 2-3 个季度内持续改写其收入线并驱动指引上修",
+        "demand_change": "已签署 AIM 供货协议扩容（自主矿山/工程机械车队实际采购）；多家客户公开披露 10-100x 单位扩张计划；公司已连续报出创纪录收入；BABA 合规打开联邦基建采购资格",
+        "transmission": "传感器出货量 × ASP → 产品收入线直接放量；软件附加（Gemini/BlueCity）拉毛利；2 亿融资解产能/库存瓶颈",
+        "misclassification": "市场标签仍是『失败的自动驾驶 lidar 故事』，正在变成『工业物理 AI 感知层的盈利性供应商』",
+        "serenity_score": {
+          "demand_certainty": 4,
+          "transmission_clarity": 4,
+          "purity": 5,
+          "elasticity": 4,
+          "neglect": 2,
+          "verification_speed": 4,
+          "downside": 2
+        }
+      },
+      "prior": {
+        "p": 0.25,
+        "log_odds": -1.0986,
+        "rationale": "七维总分 25 → 0.22-0.32 档；取下半区因 neglect=2（年内已涨 3 倍、覆盖密集）且 downside=2（~15x 市销率 + 增发价 $55.22 上方套牢盘）",
+        "set_by": "daily-scan 2026-07-05"
+      },
+      "current": {
+        "p": 0.25,
+        "log_odds": -1.0986,
+        "last_reviewed": "2026-07-05",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "CY26Q2 与 CY26Q3 营收 YoY 增速（连续两季）",
+          "confirm_if": ">= +30% YoY 且环比为正",
+          "falsify_if": "< +15% YoY 或环比转负",
+          "check_by": "2026-11-15",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "管理层电话会量化 AIM 协议出货 ramp 或 Rev8 基建订单 pipeline",
+          "confirm_if": "给出量化出货/订单数字",
+          "falsify_if": "被问及而承认推迟或低于预期",
+          "check_by": "2026-11-15",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-01-05"
+      },
+      "baseline": {
+        "entry_date": "2026-07-05",
+        "entry_price": 49.84,
+        "benchmark": "SPY",
+        "benchmark_entry_price": 744.78,
+        "sector_benchmark": "SOXX",
+        "sector_benchmark_entry_price": 566.32
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-07-05",
+          "p": 0.25,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-08-07",
+          "type": "earnings",
+          "note": "CY26Q2 财报（预估日期，待确认）— V1 第一个观测点"
+        },
+        {
+          "date": "2026-07-02",
+          "type": "offering",
+          "note": "增发定价 $55.22，短期供给压力/锚定位"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260705-POWL",
+      "ticker": "POWL",
+      "company": "Powell Industries",
+      "created_at": "2026-07-05",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-07-05",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：PJM 电网紧急状态 + 公司报表已见 backlog 上行"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-07-03",
+          "headline": "Largest US power grid PJM escalates emergency actions to avoid blackouts",
+          "url": "https://www.reuters.com/business/energy/largest-us-power-grid-pjm-says-it-is-no-longer-able-provide-expected-energy-2026-07-03/",
+          "summary": "PJM 处于联邦级警报：机组故障 + 输电线过载 + 高温空调负荷，电网容量缺口实锤"
+        },
+        {
+          "date": "2026-07-02",
+          "headline": "Powell Gains From Strength in Electric Utility Market: Will the Momentum Last?",
+          "url": "https://www.zacks.com/stock/news/2947314/",
+          "summary": "utility/工业市场强劲、backlog 上升、项目中标支撑 FY26 展望"
+        }
+      ],
+      "thesis": {
+        "one_liner": "电网容量缺口 + 数据中心负荷将在 1-3 个季度内继续推高其开关柜订单与 backlog，抬升 FY26/27 收入超共识",
+        "demand_change": "PJM 进入联邦级紧急状态（容量缺口已实际发生）；公司最近季报已报出 backlog 上升与 utility 项目中标；电网扩容 + 数据中心接入排队是持续性采购行为",
+        "transmission": "utility/数据中心开关柜与配电设备订单 → backlog → 12-18 个月确认为收入；产能利用率上行放大营业杠杆",
+        "misclassification": "市场把它当『周期性油气电气承包商、已涨过头』（6 月底两周回撤 ~15%），实际正在变成『电网+数据中心电气基建的结构性受益者』",
+        "serenity_score": {
+          "demand_certainty": 5,
+          "transmission_clarity": 4,
+          "purity": 4,
+          "elasticity": 3,
+          "neglect": 2,
+          "verification_speed": 4,
+          "downside": 3
+        }
+      },
+      "prior": {
+        "p": 0.28,
+        "log_odds": -0.9445,
+        "rationale": "七维总分 25 → 0.22-0.32 档；取中上因 demand_certainty=5（电网缺口是已发生事实）且验证快（8 月初 FQ3 即见 backlog），扣分项是市值弹性一般（~30 亿美元）",
+        "set_by": "daily-scan 2026-07-05"
+      },
+      "current": {
+        "p": 0.28,
+        "log_odds": -0.9445,
+        "last_reviewed": "2026-07-05",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "FQ3 FY2026（6 月止季度，约 8 月初发布）backlog 环比变化",
+          "confirm_if": ">= +5% QoQ",
+          "falsify_if": "<= -5% QoQ",
+          "check_by": "2026-08-15",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "FY2026 收入指引",
+          "confirm_if": "上修",
+          "falsify_if": "下修",
+          "check_by": "2026-08-15",
+          "status": "pending"
+        },
+        {
+          "id": "V3",
+          "required": false,
+          "metric": "电话会披露 utility/数据中心新订单动能（book-to-bill）",
+          "confirm_if": "book-to-bill > 1",
+          "falsify_if": "book-to-bill < 0.9",
+          "check_by": "2026-08-15",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 3,
+        "review_deadline": "2027-04-05"
+      },
+      "baseline": {
+        "entry_date": "2026-07-05",
+        "entry_price": 246.33,
+        "benchmark": "SPY",
+        "benchmark_entry_price": 744.78,
+        "sector_benchmark": "XLI",
+        "sector_benchmark_entry_price": 183.91
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-07-05",
+          "p": 0.28,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-08-05",
+          "type": "earnings",
+          "note": "FQ3 FY26 财报（预估日期，待确认）— V1/V2/V3 判定点"
+        },
+        {
+          "date": "2026-07-03",
+          "type": "macro",
+          "note": "PJM 联邦级电网紧急状态（需求侧催化剂）"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    }
+  ]
 }

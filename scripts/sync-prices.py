@@ -72,8 +72,10 @@ def collect_tickers() -> dict[str, str]:
 
 
 def fetch_series(ticker: str, start: str) -> list[list]:
-    """拉 [start, 今天] 的日收盘序列，返回 [[YYYY-MM-DD, close], ...]。"""
-    p1 = int(datetime.strptime(start, "%Y-%m-%d").replace(tzinfo=timezone.utc).timestamp())
+    """拉 [start-7天, 今天] 的日收盘序列，返回 [[YYYY-MM-DD, close], ...]。
+    往前多拉 7 天缓冲：入池日落在周末/假日时仍能取到最近收盘价作基准。"""
+    p1 = int((datetime.strptime(start, "%Y-%m-%d") - timedelta(days=7))
+             .replace(tzinfo=timezone.utc).timestamp())
     p2 = int((datetime.now(timezone.utc) + timedelta(days=1)).timestamp())
     req = urllib.request.Request(
         CHART_URL.format(ticker=ticker, p1=p1, p2=p2),

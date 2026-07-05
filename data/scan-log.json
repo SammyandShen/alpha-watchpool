@@ -1,4 +1,69 @@
 {
-  "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate",
-  "entries": []
+  "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate | skipped_daily_cap",
+  "entries": [
+    {
+      "date": "2026-07-05",
+      "fingerprint": "2026-06-30+OUST+baba-compliance",
+      "headline": "Ouster Rev8 BABA compliance",
+      "tickers": [
+        "OUST"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-05",
+      "fingerprint": "2026-06-23+OUST+aim-supply-agreement",
+      "headline": "Ouster-AIM lidar supply agreement expansion",
+      "tickers": [
+        "OUST"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-05",
+      "fingerprint": "2026-07-02+OUST+offering-200m",
+      "headline": "Ouster $200M offering priced at $55.22",
+      "tickers": [
+        "OUST"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-05",
+      "fingerprint": "2026-07-03+PJM+grid-emergency",
+      "headline": "PJM escalates emergency actions to avoid blackouts",
+      "tickers": [
+        "POWL"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-05",
+      "fingerprint": "2026-06-30+NVTS+q1-acceleration-ai-power",
+      "headline": "Navitas Q1 CY26 revenue acceleration / AI DC power pivot",
+      "tickers": [
+        "NVTS"
+      ],
+      "action": "skipped_daily_cap",
+      "note": "七维总分 21（neglect=1, downside=1，~100x 市销率已充分定价），排第 3，低于每日 2 条上限；观察名单级"
+    },
+    {
+      "date": "2026-07-05",
+      "fingerprint": "2026-07-04+SKT+15gw-ai-dc",
+      "headline": "SK Telecom 15GW AI data center buildout",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "5GW 2029 年起分期激活 — 传导距离远、无 1-4 季度可验证财务路径，纯规划"
+    },
+    {
+      "date": "2026-07-05",
+      "fingerprint": "2026-07-04+OUST+sa-physical-ai-article",
+      "headline": "Ouster: Funded For Physical AI Scaling (Seeking Alpha)",
+      "tickers": [
+        "OUST"
+      ],
+      "action": "skipped_duplicate",
+      "note": "与入池三条 source_news 同源（融资+扩产叙事），T4 叙事级不单独记证据"
+    }
+  ]
 }
