@@ -1,0 +1,4 @@
+{
+  "$comment": "已关闭假设（confirmed/falsified/expired/promoted 满 30 天后由 compute-metrics.py 迁入）。结构与 hypotheses.json 的单条假设一致。",
+  "hypotheses": []
+}

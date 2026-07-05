@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>假设复核周报 · <!--FILL:DATE--></title>
+<style>
+  :root { --bg:#0d1117; --card:#161b22; --border:#30363d; --text:#e6edf3; --dim:#8b949e;
+          --green:#3fb950; --red:#f85149; --amber:#d29922; --blue:#58a6ff; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+         line-height:1.7; max-width:860px; margin:0 auto; padding:32px 20px 80px; }
+  h1 { font-size:1.5em; margin-bottom:4px; }
+  h2 { font-size:1.15em; margin:36px 0 12px; padding-bottom:6px; border-bottom:1px solid var(--border); color:var(--blue); }
+  h3 { font-size:1em; margin:20px 0 8px; }
+  .meta { color:var(--dim); font-size:.85em; margin-bottom:24px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px 20px; margin:12px 0; }
+  table { width:100%; border-collapse:collapse; font-size:.9em; margin:12px 0; }
+  th,td { padding:8px 10px; text-align:left; border-bottom:1px solid var(--border); }
+  th { color:var(--dim); font-weight:600; font-size:.85em; }
+  .up { color:var(--green); } .down { color:var(--red); } .flat { color:var(--dim); }
+  .badge { display:inline-block; padding:1px 8px; border-radius:10px; font-size:.78em; border:1px solid var(--border); }
+  .badge.observing { color:var(--blue); border-color:var(--blue); }
+  .badge.confirmed { color:var(--green); border-color:var(--green); }
+  .badge.falsified { color:var(--red); border-color:var(--red); }
+  .badge.expired { color:var(--dim); }
+  .badge.promoted { color:var(--amber); border-color:var(--amber); }
+  .disclaimer { margin-top:48px; padding:14px 18px; border:1px solid var(--border); border-radius:10px;
+                color:var(--dim); font-size:.82em; }
+  a { color:var(--blue); text-decoration:none; }
+  .kpi-row { display:flex; gap:12px; flex-wrap:wrap; margin:16px 0; }
+  .kpi { flex:1; min-width:140px; background:var(--card); border:1px solid var(--border); border-radius:10px;
+         padding:12px 16px; }
+  .kpi .v { font-size:1.4em; font-weight:700; }
+  .kpi .k { color:var(--dim); font-size:.8em; }
+</style>
+</head>
+<body>
+
+<h1>🔬 假设复核周报</h1>
+<p class="meta"><!--FILL:DATE--> · alpha-watchpool weekly review · 方法论 v<!--FILL:METHODOLOGY_VERSION--> · 研究假设跟踪，非投资建议</p>
+
+<h2>1. 池子总览</h2>
+<div class="kpi-row">
+  <!--FILL:KPI_CARDS-->
+  <!-- 例：<div class="kpi"><div class="v">6</div><div class="k">活跃假设</div></div> × 活跃数/本周新增/本周关闭/平均后验变化 -->
+</div>
+<!--FILL:POOL_SUMMARY-->
+<!-- 一段话：本周池子发生了什么 -->
+
+<h2>2. 逐假设复核明细</h2>
+<!--FILL:HYPOTHESIS_DETAILS-->
+<!-- 每假设一个 .card：
+     <div class="card">
+       <h3>TICKER · 一句话论点 <span class="badge observing">observing</span></h3>
+       <p>后验：0.30 → 0.42（本周证据：...）</p>
+       <table> 证据 | tier | 标签 | log-LR </table>
+       <p>💥 证伪触发条件：...</p>
+     </div> -->
+
+<h2>3. 状态迁移公告</h2>
+<!--FILL:TRANSITIONS-->
+<!-- 无迁移则写「本周无状态迁移」；有则每条：id、迁移、reason、post_mortem -->
+
+<h2>4. Promote 建议</h2>
+<!--FILL:PROMOTE_SUGGESTIONS-->
+<!-- 无 confirmed 则写「暂无」。有则列出并注明：需用户手动确认，本系统不自动建仓 -->
+
+<h2>5. 评分卡摘要</h2>
+<!--FILL:SCORECARD_SUMMARY-->
+<!-- 读 data/scorecard.json：命中率、Brier、样本数；样本不足时如实说明 -->
+
+<!--FILL:QUARTERLY_CALIBRATION-->
+<!-- 仅每季度第一次周复核：<h2>6. 季度校准复盘</h2> + 四问回答；平时留空 -->
+
+<h2>下周扫描线索</h2>
+<!--FILL:NEXT_WEEK_LEADS-->
+
+<div class="disclaimer">
+  ⚠️ 本页面为个人研究假设跟踪工具的自动化输出，不构成任何投资建议。所有概率为研究性主观估计，
+  数据可能有误或延迟。做出任何投资决策前请独立核实。
+</div>
+
+</body>
+</html>

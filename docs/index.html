@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔬 Alpha Watchpool · 假设观察池</title>
+<link rel="stylesheet" href="assets/styles.css">
+<script src="assets/plotly.min.js"></script>
+<script src="data/dashboard.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>🔬 Alpha Watchpool</h1>
+  <p class="sub">新闻 → 可检验假设 → 贝叶斯跟踪验证 · <span id="meta"></span></p>
+</header>
+
+<section id="kpis" class="kpi-row"></section>
+
+<section>
+  <h2>观察池 <span class="filter-bar" id="filters"></span></h2>
+  <div class="table-wrap"><table id="pool-table">
+    <thead><tr>
+      <th>标的</th><th>假设</th><th>先验 → 后验</th><th>演变</th>
+      <th>入池</th><th>价格 vs 基准</th><th>最近验证点</th><th>状态</th>
+    </tr></thead>
+    <tbody id="pool-body"></tbody>
+  </table></div>
+</section>
+
+<section id="detail" class="hidden">
+  <h2 id="detail-title"></h2>
+  <div id="detail-thesis" class="card"></div>
+  <div class="chart-grid">
+    <div><h3>后验演变</h3><div id="chart-posterior" class="chart"></div></div>
+    <div><h3>价格 vs 基准（入池日 = 100）</h3><div id="chart-price" class="chart"></div></div>
+  </div>
+  <h3>验证条件</h3><div id="detail-vcs"></div>
+  <h3>证据时间线</h3><div id="detail-evidence"></div>
+</section>
+
+<section>
+  <h2 class="collapsible" onclick="toggle('closed-wrap', this)">▸ 已关闭假设（成绩单）</h2>
+  <div id="closed-wrap" class="hidden">
+    <div class="table-wrap"><table>
+      <thead><tr><th>标的</th><th>假设</th><th>结果</th><th>最终 Brier</th><th>超额 vs SPY</th><th>Post-mortem</th></tr></thead>
+      <tbody id="closed-body"></tbody>
+    </table></div>
+  </div>
+</section>
+
+<section>
+  <h2 class="collapsible" onclick="toggle('calib-wrap', this)">▸ 系统校准（后验分箱 vs 实际命中率）</h2>
+  <div id="calib-wrap" class="hidden"><div id="chart-calibration" class="chart"></div></div>
+</section>
+
+<section>
+  <h2>周报归档</h2>
+  <ul id="reviews-list" class="reviews"></ul>
+</section>
+
+<footer class="disclaimer">
+  ⚠️ 本页面为个人研究假设跟踪工具，所有概率为研究性主观估计，不构成任何投资建议。
+  数据来源 Yahoo Finance 与公开新闻，可能有误或延迟。
+</footer>
+
+<script>
+"use strict";
+const D = typeof DASHBOARD !== "undefined" ? DASHBOARD : {hypotheses:[],prices:{},scorecard:null,reviews:[]};
+const PLOT_CFG = {displayModeBar:false, responsive:true};
+const PLOT_LAYOUT = {
+  paper_bgcolor:"transparent", plot_bgcolor:"transparent",
+  font:{color:"#8b949e", size:11}, margin:{l:44,r:16,t:8,b:36},
+  xaxis:{gridcolor:"#21262d"}, yaxis:{gridcolor:"#21262d"},
+  hoverlabel:{bgcolor:"#161b22", bordercolor:"#30363d", font:{color:"#e6edf3"}},
+};
+const STATUS_ZH = {observing:"观察中", confirmed:"已证实", falsified:"已证伪", expired:"已到期", promoted:"已转正"};
+
+// ---------- 工具 ----------
+const fmtP = p => p == null ? "—" : (p*100).toFixed(0) + "%";
+const fmtPct = v => v == null ? "—" : (v>0?"+":"") + v.toFixed(1) + "%";
+const cls = v => v == null ? "flat" : v > 0 ? "up" : v < 0 ? "down" : "flat";
+const daysBetween = (a, b) => Math.round((new Date(b) - new Date(a)) / 864e5);
+const esc = s => (s ?? "").toString().replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function priceAt(series, date) {           // series: [[date, close]...] 升序
+  let best = null;
+  for (const [d, c] of series || []) { if (d <= date) best = c; else break; }
+  return best;
+}
+function latest(series) { return series && series.length ? series[series.length-1] : null; }
+
+function returns(h) {                       // 入池以来收益与超额
+  const bl = h.baseline || {}, t = D.prices[h.ticker];
+  const lat = latest(t);
+  if (!lat || !bl.entry_price) return {};
+  const r = (lat[1]/bl.entry_price - 1) * 100;
+  const out = {asOf: lat[0], ret: r};
+  const bser = D.prices[bl.sector_benchmark] || D.prices[bl.benchmark];
+  const bkey = D.prices[bl.sector_benchmark] ? "sector_benchmark" : "benchmark";
+  const b0 = bl[bkey + "_entry_price"] || priceAt(bser, bl.entry_date);
+  const b1 = priceAt(bser, lat[0]);
+  if (b0 && b1) { out.bench = (b1/b0 - 1) * 100; out.benchName = bl[bkey]; out.excess = r - out.bench; }
+  return out;
+}
+
+function nextDeadline(h) {
+  const pend = (h.validation_conditions||[]).filter(v => v.status === "pending" && v.check_by);
+  if (!pend.length) return null;
+  pend.sort((a,b) => a.check_by.localeCompare(b.check_by));
+  return pend[0];
+}
+
+function sparkline(ph) {                    // 迷你 SVG 后验曲线
+  if (!ph || ph.length < 2) return "";
+  const w=72, hgt=22, ps = ph.map(x=>x.p);
+  const min=0, max=1;
+  const pts = ps.map((p,i)=>`${(i/(ps.length-1)*w).toFixed(1)},${(hgt-(p-min)/(max-min)*hgt).toFixed(1)}`).join(" ");
+  const up = ps[ps.length-1] >= ps[0];
+  return `<svg width="${w}" height="${hgt}" class="spark"><polyline points="${pts}" fill="none" stroke="${up?"#3fb950":"#f85149"}" stroke-width="1.5"/></svg>`;
+}
+
+function toggle(id, el) {
+  const w = document.getElementById(id);
+  w.classList.toggle("hidden");
+  el.textContent = (w.classList.contains("hidden") ? "▸" : "▾") + el.textContent.slice(1);
+  if (id === "calib-wrap" && !w.classList.contains("hidden")) drawCalibration();
+}
+
+// ---------- KPI ----------
+function renderKPIs() {
+  const active = D.hypotheses.filter(h => h.status === "observing");
+  const sc = D.scorecard || {};
+  const pq = sc.prediction_quality || {};
+  const econ = (sc.economics || {});
+  const avgP = active.length ? active.reduce((s,h)=>s+(h.current?.p||0),0)/active.length : null;
+  const allEcon = Object.values(econ).reduce((a,g)=>{a.n+=g.n; if(g.avg_excess_vs_spy_pct!=null){a.s+=g.avg_excess_vs_spy_pct*g.n; a.m+=g.n;} return a;},{n:0,s:0,m:0});
+  const kpis = [
+    [active.length, "活跃假设"],
+    [fmtP(avgP), "平均后验"],
+    [pq.hit_rate != null ? fmtP(pq.hit_rate) + ` <small>(n=${pq.n_resolved})</small>` : "样本不足", "已判定命中率"],
+    [pq.brier_final_mean ?? "—", "平均 Brier"],
+    [allEcon.m ? fmtPct(allEcon.s/allEcon.m) : "—", "等权超额 vs SPY"],
+  ];
+  document.getElementById("kpis").innerHTML = kpis.map(([v,k]) =>
+    `<div class="kpi"><div class="v">${v}</div><div class="k">${k}</div></div>`).join("");
+}
+
+// ---------- 总览表 ----------
+let filterStatus = "observing";
+function renderFilters() {
+  const counts = {};
+  D.hypotheses.forEach(h => counts[h.status] = (counts[h.status]||0)+1);
+  const opts = ["observing","confirmed","falsified","expired","promoted","all"];
+  document.getElementById("filters").innerHTML = opts.map(s => {
+    const n = s === "all" ? D.hypotheses.length : (counts[s]||0);
+    if (!n && s !== "observing") return "";
+    return `<button class="chip ${filterStatus===s?"on":""}" onclick="filterStatus='${s}';renderTable();renderFilters()">${s==="all"?"全部":STATUS_ZH[s]} ${n}</button>`;
+  }).join("");
+}
+function renderTable() {
+  const rows = D.hypotheses.filter(h => filterStatus === "all" || h.status === filterStatus)
+    .sort((a,b) => (b.current?.p||0) - (a.current?.p||0));
+  document.getElementById("pool-body").innerHTML = rows.length ? rows.map(h => {
+    const r = returns(h), dl = nextDeadline(h);
+    const dlTxt = dl ? `${dl.check_by}<br><small>${Math.max(0, daysBetween(new Date().toISOString().slice(0,10), dl.check_by))} 天 · ${esc(dl.id)}</small>` : "—";
+    return `<tr onclick="location.hash='#/h/${h.id}'">
+      <td><b>${esc(h.ticker)}</b><br><small>${esc(h.company)}</small></td>
+      <td class="thesis-cell">${esc(h.thesis?.one_liner)}</td>
+      <td>${fmtP(h.prior?.p)} → <b>${fmtP(h.current?.p)}</b></td>
+      <td>${sparkline(h.posterior_history)}</td>
+      <td>${h.created_at ? daysBetween(h.created_at, new Date().toISOString().slice(0,10)) + " 天" : "—"}</td>
+      <td><span class="${cls(r.ret)}">${fmtPct(r.ret)}</span> / <span class="${cls(r.bench)}">${fmtPct(r.bench)}</span>
+          ${r.excess != null ? `<br><small class="${cls(r.excess)}">超额 ${fmtPct(r.excess)} vs ${esc(r.benchName)}</small>` : ""}</td>
+      <td>${dlTxt}</td>
+      <td><span class="badge ${h.status}">${STATUS_ZH[h.status]||h.status}</span></td>
+    </tr>`;
+  }).join("") : `<tr><td colspan="8" class="empty">池子为空 — 等待每日扫描入池</td></tr>`;
+}
+
+// ---------- 详情 ----------
+function renderDetail(id) {
+  const h = D.hypotheses.find(x => x.id === id);
+  const sec = document.getElementById("detail");
+  if (!h) { sec.classList.add("hidden"); return; }
+  sec.classList.remove("hidden");
+  document.getElementById("detail-title").innerHTML =
+    `${esc(h.ticker)} · ${esc(h.company)} <span class="badge ${h.status}">${STATUS_ZH[h.status]||h.status}</span>`;
+  const t = h.thesis || {}, r = returns(h);
+  document.getElementById("detail-thesis").innerHTML = `
+    <p><b>${esc(t.one_liner)}</b></p>
+    <p>📈 需求变化：${esc(t.demand_change)}</p>
+    <p>💰 财务传导：${esc(t.transmission)}</p>
+    <p>🏷️ 市场误分类：${esc(t.misclassification)}</p>
+    <p><small>入池 ${esc(h.created_at)} @ ${h.baseline?.entry_price ?? "—"} ·
+      现价收益 <span class="${cls(r.ret)}">${fmtPct(r.ret)}</span>
+      ${r.excess != null ? `· 超额 <span class="${cls(r.excess)}">${fmtPct(r.excess)}</span> vs ${esc(r.benchName)}` : ""} ·
+      ${esc(h.prior?.rationale)}</small></p>`;
+
+  // 后验曲线
+  const ph = h.posterior_history || [];
+  const evSettled = (h.evidence_log||[]).filter(e => !e.pending);
+  Plotly.newPlot("chart-posterior", [
+    {x: ph.map(p=>p.date), y: ph.map(p=>p.p), mode:"lines+markers", name:"后验",
+     line:{color:"#58a6ff", shape:"hv"}, hovertemplate:"%{x}<br>p=%{y:.2f}<extra>%{text}</extra>",
+     text: ph.map(p=>p.note||"")},
+    {x: evSettled.map(e=>e.date), y: evSettled.map(e=>e.posterior_after ?? null), mode:"markers", name:"证据",
+     marker:{color:"#d29922", size:9, symbol:"diamond"},
+     hovertemplate:"%{x}<br>%{text}<extra></extra>",
+     text: evSettled.map(e=>`[${e.likelihood?.label}] ${e.summary}`)},
+  ], {...PLOT_LAYOUT, yaxis:{...PLOT_LAYOUT.yaxis, range:[0,1], title:"P(验证条件达成)"},
+      shapes: (h.validation_conditions||[]).filter(v=>v.check_by).map(v=>({
+        type:"line", x0:v.check_by, x1:v.check_by, y0:0, y1:1,
+        line:{color:"#8b949e", dash:"dot", width:1}})),
+      showlegend:false}, PLOT_CFG);
+
+  // 价格 rebase 图
+  const bl = h.baseline || {};
+  const traces = [];
+  for (const [name, key] of [[h.ticker, h.ticker], [bl.sector_benchmark || bl.benchmark, bl.sector_benchmark || bl.benchmark]]) {
+    const ser = (D.prices[key]||[]).filter(x => x[0] >= bl.entry_date);
+    if (!ser.length) continue;
+    const base = ser[0][1];
+    traces.push({x: ser.map(x=>x[0]), y: ser.map(x=>x[1]/base*100), mode:"lines", name,
+                 line:{width: key===h.ticker?2.2:1.2, color: key===h.ticker?"#3fb950":"#8b949e"}});
+  }
+  Plotly.newPlot("chart-price", traces,
+    {...PLOT_LAYOUT, yaxis:{...PLOT_LAYOUT.yaxis, title:"rebase=100"}, legend:{orientation:"h", y:1.12}}, PLOT_CFG);
+
+  // 验证条件
+  document.getElementById("detail-vcs").innerHTML = `<div class="table-wrap"><table>
+    <thead><tr><th></th><th>指标</th><th>确认线</th><th>证伪线</th><th>判定期限</th><th>状态</th></tr></thead>
+    <tbody>${(h.validation_conditions||[]).map(v=>`<tr>
+      <td>${v.required?"🔴":"⚪"} ${esc(v.id)}</td><td>${esc(v.metric)}</td>
+      <td class="up">${esc(v.confirm_if)}</td><td class="down">${esc(v.falsify_if)}</td>
+      <td>${esc(v.check_by)}</td>
+      <td>${{pending:"⏳ 待判", met:"✅ 达成", missed:"❌ 未达", unclear:"❓ 不明"}[v.status]||esc(v.status)}</td>
+    </tr>`).join("")}</tbody></table></div>`;
+
+  // 证据时间线
+  const evs = [...(h.evidence_log||[])].sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+  document.getElementById("detail-evidence").innerHTML = evs.length ? evs.map(e=>{
+    const lk = e.likelihood || {};
+    const tierCls = (e.type||"").split("_")[0].toLowerCase();
+    return `<div class="ev ${e.pending?"pending":""}">
+      <span class="tier ${tierCls}">${esc(e.type)}</span>
+      <span class="ev-date">${esc(e.date)}</span>
+      ${e.pending ? '<span class="badge">pending</span>' : `<span class="lr ${lk.log_lr>0?"up":lk.log_lr<0?"down":"flat"}">${esc(lk.label)} (LR ${lk.lr ?? "—"})</span>`}
+      ${e.correlates_with ? `<span class="badge">同源 ${esc(e.correlates_with)}</span>` : ""}
+      <div>${esc(e.summary)} ${e.source && /^https?:/.test(e.source) ? `<a href="${esc(e.source)}" target="_blank">↗</a>` : ""}</div>
+    </div>`;
+  }).join("") : "<p class='empty'>暂无证据</p>";
+  sec.scrollIntoView({behavior:"smooth"});
+}
+
+// ---------- 已关闭 ----------
+function renderClosed() {
+  const closed = D.hypotheses.filter(h => h.status !== "observing");
+  document.getElementById("closed-body").innerHTML = closed.length ? closed.map(h => {
+    const res = h.resolution || {};
+    return `<tr onclick="location.hash='#/h/${h.id}'">
+      <td><b>${esc(h.ticker)}</b></td><td class="thesis-cell">${esc(h.thesis?.one_liner)}</td>
+      <td><span class="badge ${h.status}">${STATUS_ZH[h.status]}</span> ${res.outcome ? (res.outcome==="hit"?"✅":"❌") : ""}</td>
+      <td>${res.brier_final ?? "—"}</td>
+      <td class="${cls(res.excess_vs_spy_pct)}">${fmtPct(res.excess_vs_spy_pct)}</td>
+      <td><small>${esc(res.post_mortem)}</small></td>
+    </tr>`;
+  }).join("") : `<tr><td colspan="6" class="empty">还没有已判定的假设</td></tr>`;
+}
+
+// ---------- 校准图 ----------
+function drawCalibration() {
+  const bins = D.scorecard?.prediction_quality?.calibration_bins || [];
+  const has = bins.some(b => b.n > 0);
+  if (!has) { document.getElementById("chart-calibration").innerHTML = "<p class='empty'>已判定样本不足，暂无校准数据</p>"; return; }
+  const mid = bins.map(b => { const [lo,hi] = b.range.split("-").map(Number); return (lo+hi)/2; });
+  Plotly.newPlot("chart-calibration", [
+    {x: bins.map(b=>b.range), y: bins.map(b=>b.actual_rate), type:"bar", name:"实际命中率",
+     marker:{color:"#58a6ff"}, text: bins.map(b=>`n=${b.n}`), textposition:"outside"},
+    {x: bins.map(b=>b.range), y: mid, mode:"lines", name:"完美校准", line:{color:"#8b949e", dash:"dash"}},
+  ], {...PLOT_LAYOUT, yaxis:{...PLOT_LAYOUT.yaxis, range:[0,1]}, legend:{orientation:"h", y:1.15}}, PLOT_CFG);
+}
+
+// ---------- 路由 & 启动 ----------
+function route() {
+  const m = location.hash.match(/^#\/h\/(.+)$/);
+  if (m) renderDetail(decodeURIComponent(m[1]));
+  else document.getElementById("detail").classList.add("hidden");
+}
+window.addEventListener("hashchange", route);
+
+document.getElementById("meta").textContent =
+  `更新于 ${D.generated_at ? D.generated_at.replace("T"," ").slice(0,16) : "—"} · 方法论 v${D.methodology_version ?? "—"}`;
+document.getElementById("reviews-list").innerHTML = (D.reviews||[]).length
+  ? D.reviews.map(d => `<li><a href="reviews/${d}/">📋 ${d} 假设复核周报</a></li>`).join("")
+  : "<li class='empty'>还没有周报</li>";
+renderKPIs(); renderFilters(); renderTable(); renderClosed(); route();
+</script>
+</body>
+</html>
