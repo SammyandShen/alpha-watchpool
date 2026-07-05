@@ -43,6 +43,9 @@
 <section id="detail" class="hidden">
   <h2 id="detail-title"></h2>
   <div id="detail-thesis" class="card"></div>
+  <h3>📰 触发新闻</h3><div id="detail-news"></div>
+  <h3>🧭 判断链路</h3><div id="detail-brief" class="card"></div>
+  <h3>📐 Serenity 七维评分</h3><div id="detail-score"></div>
   <div class="chart-grid">
     <div><h3>后验演变</h3><div id="chart-posterior" class="chart"></div></div>
     <div><h3>价格 vs 基准（入池日 = 100）</h3><div id="chart-price" class="chart"></div></div>
@@ -215,6 +218,33 @@ function renderDetail(id) {
       现价收益 <span class="${cls(r.ret)}">${fmtPct(r.ret)}</span>
       ${r.excess != null ? `· 超额 <span class="${cls(r.excess)}">${fmtPct(r.excess)}</span> vs ${esc(r.benchName)}` : ""} ·
       ${esc(h.prior?.rationale)}</small></p>`;
+
+  // 触发新闻
+  document.getElementById("detail-news").innerHTML = (h.source_news||[]).length
+    ? h.source_news.map(n => `<div class="ev">
+        <span class="ev-date">${esc(n.date)}</span>
+        <b>${esc(n.headline)}</b>${n.url && /^https?:/.test(n.url) ? ` <a href="${esc(n.url)}" target="_blank">↗</a>` : ""}
+        <div><small>${esc(n.summary)}</small></div>
+      </div>`).join("")
+    : "<p class='empty'>无记录</p>";
+
+  // 判断链路（LLM 入池时写的叙事；旧数据无此字段时回退到结构化三段）
+  const brief = t.brief_cn && t.brief_cn.length ? t.brief_cn
+    : [`需求变化：${t.demand_change}`, `财务传导：${t.transmission}`, `市场误分类：${t.misclassification}`];
+  document.getElementById("detail-brief").innerHTML =
+    brief.map((p,i) => `<p><b class="step-n">${i+1}</b> ${esc(p)}</p>`).join("");
+
+  // 七维评分条
+  const SCORE_ZH = {demand_certainty:"需求确定性", transmission_clarity:"传导清晰度", purity:"业务纯度",
+                    elasticity:"市值弹性", neglect:"市场忽视度", verification_speed:"验证速度", downside:"下行保护"};
+  const sc = t.serenity_score || {};
+  const total = Object.values(sc).reduce((a,b)=>a+(b||0),0);
+  document.getElementById("detail-score").innerHTML = `<div class="score-grid">` +
+    Object.entries(SCORE_ZH).map(([k,zh]) => `
+      <div class="score-row"><span class="score-label">${zh}</span>
+        <span class="score-bar"><span style="width:${(sc[k]||0)*20}%"></span></span>
+        <span class="score-val">${sc[k] ?? "—"}</span></div>`).join("") +
+    `</div><p><small>总分 ${total}/35 → 先验档位 ${fmtP(h.prior?.p)}（${esc(h.prior?.rationale)}）</small></p>`;
 
   // 后验曲线
   const ph = h.posterior_history || [];

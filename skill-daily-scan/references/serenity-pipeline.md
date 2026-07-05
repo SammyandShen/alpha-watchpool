@@ -13,6 +13,7 @@
 | D. 受益链条 | （不单独存）| 一阶受益者即 primary candidate；二三阶写进 `links.related` 的备选假设或放弃 |
 | E. 小市值高弹性标的 | `ticker` 选择依据 + `thesis.serenity_score.elasticity/purity` | |
 | F. 市场误分类 | `thesis.misclassification` | 「市场当它是 X，它正在变成 Y」句式 |
+| 全链路叙事 | `thesis.brief_cn`（字符串数组，3-4 段）| 看板「判断链路」区展示。段落顺序：①触发新闻是什么 ②需求为何已可观察+财务传导 ③市场误分类 ④先验为什么给这个数（扣分项）+赌的是什么 |
 | G. 验证指标 | `validation_conditions[]` | 见下方规则 |
 | H. 下行风险 | `thesis.serenity_score.downside` + 周报叙事 | 分数 5=下行小 |
 | I. 仓位建议 | 不落盘 | 仓位是 promoted 之后的事，池内只跟踪判断质量 |
@@ -38,6 +39,7 @@
     "demand_change": "...",
     "transmission": "...",
     "misclassification": "...",
+    "brief_cn": ["①触发新闻...", "②需求与传导...", "③市场误分类...", "④先验理由与赌点..."],
     "serenity_score": {
       "demand_certainty": 4, "transmission_clarity": 3, "purity": 4,
       "elasticity": 4, "neglect": 3, "verification_speed": 4, "downside": 3

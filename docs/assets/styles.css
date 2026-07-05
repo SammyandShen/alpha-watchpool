@@ -60,6 +60,14 @@ small { color:var(--dim); }
 .lr { font-size:.82em; margin-right:8px; }
 
 .metrics-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:10px; margin:14px 0; }
+.step-n { display:inline-block; width:20px; height:20px; line-height:20px; text-align:center;
+          background:#1f6feb33; color:var(--blue); border-radius:50%; font-size:.78em; margin-right:6px; }
+.score-grid { max-width:520px; }
+.score-row { display:flex; align-items:center; gap:10px; padding:3px 0; font-size:.85em; }
+.score-label { width:90px; color:var(--dim); text-align:right; }
+.score-bar { flex:1; height:8px; background:var(--card); border:1px solid var(--border); border-radius:4px; overflow:hidden; }
+.score-bar span { display:block; height:100%; background:linear-gradient(90deg, #1f6feb, #58a6ff); }
+.score-val { width:16px; color:var(--dim); }
 .kpi .v.small { font-size:1.05em; }
 details summary { cursor:pointer; color:var(--dim); font-size:.85em; margin:16px 0 6px; }
 details p { color:var(--dim); font-size:.85em; line-height:1.6; }
