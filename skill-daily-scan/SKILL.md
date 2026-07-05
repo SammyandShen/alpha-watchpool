@@ -23,12 +23,11 @@ description: 每日扫描市场新闻，用 serenity-alpha 方法论把「已发
 ### 1. 新闻扫描（信源降级链）
 
 1. **探测 FMP MCP**：若会话中存在 FMP 金融数据工具（news / search / earnings calendar 等，工具名形如 `mcp__*__news`），优先使用：拉当日 general news + 活跃 ticker 相关新闻 + 未来 7 天财报日历。
-2. **WebSearch 兜底**（headless 必走）：3-5 组定向查询，围绕 serenity 方法论关注的「已发生的需求变化」信号，例如：
-   - 当日/昨日财报超预期 + 指引上修（尤其中小盘）
-   - 供应链信号：交期拉长、涨价、产能吃紧、backlog、book-to-bill
-   - 大客户 capex / 采购 / 订单公告
-   - 技术产品出货放量、渗透率拐点数据
-   - 池内活跃 ticker 的最新动态（每 ticker 一次快查）
+2. **WebSearch 兜底**（headless 必走）：**美股 + A 股各 2-4 组**定向查询，围绕「已发生的需求变化」信号：
+   - 美股：当日/昨日财报超预期 + 指引上修（尤其中小盘）；供应链信号（交期拉长、涨价、产能吃紧、backlog、book-to-bill）；大客户 capex/采购/订单公告；技术产品出货放量、渗透率拐点
+   - A 股（中文查询）：业绩预告 预增/超预期；中标公告 大订单；涨价函 提价 产能满载；扩产公告 供不应求。优先信源：财联社、巨潮资讯（公司公告）、证券时报、上证报
+   - 池内活跃 ticker 的最新动态（每 ticker 一次快查；A 股查中文名+公告）
+   - 覆盖范围：美股 + 中国 A 股（沪/深/北交所，Yahoo 后缀格式见 serenity-pipeline.md）。FMP MCP 对 A 股覆盖弱，A 股信号主要靠 WebSearch
 3. 对每条候选新闻计算指纹：`YYYY-MM-DD + 核心实体 + 事件类型` 的短哈希描述；命中 scan-log 已有指纹的跳过。
 
 ### 2. 需求过滤（serenity 第 1 步）

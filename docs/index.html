@@ -161,7 +161,7 @@ function renderKPIs() {
     [fmtP(avgP), "平均后验"],
     [pq.hit_rate != null ? fmtP(pq.hit_rate) + ` <small>(n=${pq.n_resolved})</small>` : "样本不足", "已判定命中率"],
     [pq.brier_final_mean ?? "—", "平均 Brier"],
-    [allEcon.m ? fmtPct(allEcon.s/allEcon.m) : "—", "等权超额 vs SPY"],
+    [allEcon.m ? fmtPct(allEcon.s/allEcon.m) : "—", "等权超额 vs 基准"],
   ];
   document.getElementById("kpis").innerHTML = kpis.map(([v,k]) =>
     `<div class="kpi"><div class="v">${v}</div><div class="k">${k}</div></div>`).join("");
