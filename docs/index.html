@@ -6,7 +6,10 @@
 <title>🔬 Alpha Watchpool · 假设观察池</title>
 <link rel="stylesheet" href="assets/styles.css">
 <script src="assets/plotly.min.js"></script>
-<script src="data/dashboard.js"></script>
+<script>
+  // dashboard.js 每日更新，加时间戳绕过 GitHub Pages/浏览器缓存（10 分钟 max-age）
+  document.write('<script src="data/dashboard.js?v=' + Date.now() + '"><\/script>');
+</script>
 </head>
 <body>
 
