@@ -62,6 +62,8 @@ small { color:var(--dim); }
 .metrics-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:10px; margin:14px 0; }
 .step-n { display:inline-block; width:20px; height:20px; line-height:20px; text-align:center;
           background:#1f6feb33; color:var(--blue); border-radius:50%; font-size:.78em; margin-right:6px; }
+.px-row { display:flex; gap:12px; flex-wrap:wrap; margin:10px 0; }
+.px-row .kpi { min-width:150px; }
 .score-grid { max-width:520px; }
 .score-row { display:flex; align-items:center; gap:10px; padding:3px 0; font-size:.85em; }
 .score-label { width:90px; color:var(--dim); text-align:right; }

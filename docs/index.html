@@ -25,7 +25,7 @@
   <div class="table-wrap"><table id="pool-table">
     <thead><tr>
       <th>标的</th><th>假设</th><th>先验 → 后验</th><th>演变</th>
-      <th>入池</th><th>价格 vs 基准</th><th>最近验证点</th><th>状态</th>
+      <th>入池</th><th>价格 vs 基准</th><th>期望价 (EV)</th><th>最近验证点</th><th>状态</th>
     </tr></thead>
     <tbody id="pool-body"></tbody>
   </table></div>
@@ -46,6 +46,7 @@
 <section id="detail" class="hidden">
   <h2 id="detail-title"></h2>
   <div id="detail-thesis" class="card"></div>
+  <div id="detail-price-exp"></div>
   <h3>📰 触发新闻</h3><div id="detail-news"></div>
   <h3>🧭 判断链路</h3><div id="detail-brief" class="card"></div>
   <h3>📐 Serenity 七维评分</h3><div id="detail-score"></div>
@@ -128,6 +129,16 @@ const fmtBig = v => v == null ? "—" :
 const fmtFrac = v => v == null ? "—" : (v*100).toFixed(1) + "%";
 const fmtX = v => v == null ? "—" : v.toFixed(1) + "x";
 
+function priceEV(h) {
+  // 后验加权期望价：EV = p × 证实价 + (1−p) × 证伪价，随每周贝叶斯更新自动变化
+  const px = h.price_expectation, p = h.current?.p;
+  if (!px || p == null || !px.confirm_target || !px.falsify_target) return null;
+  const ev = p * px.confirm_target + (1 - p) * px.falsify_target;
+  const lat = latest(D.prices[h.ticker]);
+  return {ev, cur: lat ? lat[1] : null,
+          upside: lat ? (ev / lat[1] - 1) * 100 : null, px};
+}
+
 function nextDeadline(h) {
   const pend = (h.validation_conditions||[]).filter(v => v.status === "pending" && v.check_by);
   if (!pend.length) return null;
@@ -196,6 +207,9 @@ function renderTable() {
       <td>${h.created_at ? daysBetween(h.created_at, new Date().toISOString().slice(0,10)) + " 天" : "—"}</td>
       <td><span class="${cls(r.ret)}">${fmtPct(r.ret)}</span> / <span class="${cls(r.bench)}">${fmtPct(r.bench)}</span>
           ${r.excess != null ? `<br><small class="${cls(r.excess)}">超额 ${fmtPct(r.excess)} vs ${esc(r.benchName)}</small>` : ""}</td>
+      <td>${(() => { const e = priceEV(h); return e
+          ? `<b>${e.ev.toFixed(1)}</b> <span class="${cls(e.upside)}">${fmtPct(e.upside)}</span><br><small>${e.px.falsify_target} ~ ${e.px.confirm_target}</small>`
+          : "—"; })()}</td>
       <td>${dlTxt}</td>
       <td><span class="badge ${h.status}">${STATUS_ZH[h.status]||h.status}</span></td>
     </tr>`;
@@ -221,6 +235,24 @@ function renderDetail(id) {
       现价收益 <span class="${cls(r.ret)}">${fmtPct(r.ret)}</span>
       ${r.excess != null ? `· 超额 <span class="${cls(r.excess)}">${fmtPct(r.excess)}</span> vs ${esc(r.benchName)}` : ""} ·
       ${esc(h.prior?.rationale)}</small></p>`;
+
+  // 价格预期（EV 由后验实时加权，不落盘）
+  const e = priceEV(h);
+  document.getElementById("detail-price-exp").innerHTML = e ? `
+    <h3>🎯 价格预期</h3>
+    <div class="px-row">
+      <div class="kpi"><div class="v small up">${e.px.confirm_target}</div><div class="k">证实目标价</div></div>
+      <div class="kpi"><div class="v small down">${e.px.falsify_target}</div><div class="k">证伪目标价</div></div>
+      <div class="kpi"><div class="v small">${e.ev.toFixed(1)} <small class="${cls(e.upside)}">${fmtPct(e.upside)}</small></div>
+        <div class="k">期望价 EV = ${fmtP(h.current?.p)}×${e.px.confirm_target} + ${fmtP(1-(h.current?.p||0))}×${e.px.falsify_target}</div></div>
+      <div class="kpi"><div class="v small">${esc(e.px.expected_by)}</div><div class="k">预期实现时间</div></div>
+    </div>
+    <div class="card">
+      <p>🧮 <b>目标价计算逻辑</b>：${esc(e.px.methodology_cn)}</p>
+      <p>⏱ <b>时间达成逻辑</b>：${esc(e.px.timeline_logic_cn)}</p>
+      ${(e.px.revisions||[]).length ? `<p><small>📝 修订历史：${e.px.revisions.map(r=>esc(JSON.stringify(r))).join("；")}</small></p>` : ""}
+      <p><small>EV 随每周贝叶斯复核的后验变化自动更新；EV 低于现价 = 按当前置信度尚不值得建仓，只值得观察。非投资建议。</small></p>
+    </div>` : "";
 
   // 触发新闻
   document.getElementById("detail-news").innerHTML = (h.source_news||[]).length

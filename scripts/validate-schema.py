@@ -127,10 +127,32 @@ def check_hypothesis(h: dict, all_ids: set[str]) -> None:
         err(hid, f"horizon.quarters 应为 1-4: {hz.get('quarters')!r}")
     check_date(hid, "horizon.review_deadline", hz.get("review_deadline"))
     bl = h.get("baseline") or {}
-    for f in ("entry_date", "entry_price", "benchmark", "benchmark_entry_price"):
+    for f in ("entry_date", "benchmark"):
         if bl.get(f) in (None, ""):
             err(hid, f"baseline.{f} 缺失")
+    if not bl.get("entry_price"):
+        err(hid, "baseline.entry_price 缺失或为 0")
+    for f in ("benchmark_entry_price", "sector_benchmark_entry_price"):
+        if bl.get(f) is not None and not bl.get(f):
+            warn(hid, f"baseline.{f} 为 0 — compute-metrics.py 会从 prices.json 自动回填")
     check_date(hid, "baseline.entry_date", bl.get("entry_date"))
+
+    # price_expectation（observing 状态必填）
+    if h.get("status") == "observing":
+        px = h.get("price_expectation") or {}
+        ct, ft = px.get("confirm_target"), px.get("falsify_target")
+        if not isinstance(ct, (int, float)) or ct <= 0:
+            err(hid, f"price_expectation.confirm_target 缺失或非法: {ct!r}")
+        if not isinstance(ft, (int, float)) or ft <= 0:
+            err(hid, f"price_expectation.falsify_target 缺失或非法: {ft!r}")
+        if isinstance(ct, (int, float)) and isinstance(ft, (int, float)) and ct <= ft:
+            err(hid, f"confirm_target({ct}) 应大于 falsify_target({ft})")
+        check_date(hid, "price_expectation.expected_by", px.get("expected_by"))
+        if not px.get("expected_by"):
+            err(hid, "price_expectation.expected_by 缺失")
+        for f in ("methodology_cn", "timeline_logic_cn"):
+            if not px.get(f) or len(str(px.get(f))) < 30:
+                err(hid, f"price_expectation.{f} 缺失或过于敷衍（需写明可复算的数字逻辑）")
 
     # evidence_log
     price_loglr_sum = 0.0

@@ -45,6 +45,11 @@ python3 scripts/compute-metrics.py --append-history "weekly review <YYYY-MM-DD>"
 - 关闭的假设填 `resolution.outcome`（hit/miss）、`resolved_at`、`post_mortem` 一句话
 - 数字字段（brier、收益）留给 compute-metrics.py，再跑一次即可填充
 
+### 2.5 价格预期检查
+
+- `expected_by` 已过但价格未向 confirm_target 方向移动 → 周报标注「重估未兑现」，作为下周复核时对 timeline 假设的反思材料（不自动降后验——价格证据另有 §3.4 机制）
+- 仅当发生**结构性事件**（股本变化、验证条件级事实变化）才修订目标价：旧值+理由追加进 `price_expectation.revisions[]`。禁止因股价波动调目标价。
+
 ### 3. 强制反问
 
 每条 observing 假设写一句：「什么新信息会把后验打到 0.2 以下」。答不出来 → 标 expired 候选，写进周报警示区。

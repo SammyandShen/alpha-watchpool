@@ -135,6 +135,15 @@
         "excess_vs_spy_pct": null,
         "excess_vs_sector_pct": null,
         "post_mortem": null
+      },
+      "price_expectation": {
+        "confirm_target": 63.0,
+        "falsify_target": 24.0,
+        "expected_by": "2026-12-15",
+        "methodology_cn": "证实情景：CY26Q2/Q3 连续 ≥30% YoY 确认后，NTM 营收 ≈ 2.5 亿美元（TTM 1.85 亿 × 1.35），增长兑现支撑当前 PS 17x 维持 → 市值 ≈ 42.5 亿 ÷ 增发后 6730 万股 ≈ $63。证伪情景：增速 <15% 打破成长叙事，PS 回落至 8x（lidar 同业非成长期中枢）× NTM 营收 2 亿 → 市值 16 亿 ≈ $24。",
+        "timeline_logic_cn": "V1 最晚判定点为 Q3 财报（2026-11-15 前），成长股的倍数重估通常在决定性财报后 2-4 周内完成 → 预期 2026-12-15 前到位；若 8 月初 Q2 财报已单季 ≥30%+环比为正，重估可能提前到 9 月。",
+        "set_at": "2026-07-06",
+        "revisions": []
       }
     },
     {
@@ -272,6 +281,15 @@
         "excess_vs_spy_pct": null,
         "excess_vs_sector_pct": null,
         "post_mortem": null
+      },
+      "price_expectation": {
+        "confirm_target": 300.0,
+        "falsify_target": 172.0,
+        "expected_by": "2026-12-15",
+        "methodology_cn": "证实情景：FQ3/FQ4 backlog 连续环比 +5%+ 且指引上修 → FY27 EPS ≈ 8.6（当前 forward EPS 6.9 × ~25% 上修），电网结构性需求支撑 forward PE 35x 维持 → $300。证伪情景：backlog 环比转负触发『周期见顶』重估，PE 回落至 25x（公司历史中枢）× EPS 6.9 ≈ $172。",
+        "timeline_logic_cn": "V1 第一观测点是 8-04 FQ3 财报，但单季 backlog 不足以让市场重估——通常需要连续两季订单动能确认，即 11 月初 FQ4 财报 + 2-4 周消化 → 预期 2026-12-15 前到位。",
+        "set_at": "2026-07-06",
+        "revisions": []
       }
     },
     {
@@ -372,9 +390,9 @@
         "entry_date": "2026-07-06",
         "entry_price": 25.81,
         "benchmark": "510300.SS",
-        "benchmark_entry_price": 0.0,
+        "benchmark_entry_price": 4.891,
         "sector_benchmark": "515030.SS",
-        "sector_benchmark_entry_price": 0.0
+        "sector_benchmark_entry_price": 1.881
       },
       "evidence_log": [],
       "posterior_history": [
@@ -404,6 +422,15 @@
         "excess_vs_spy_pct": null,
         "excess_vs_sector_pct": null,
         "post_mortem": null
+      },
+      "price_expectation": {
+        "confirm_target": 34.0,
+        "falsify_target": 17.5,
+        "expected_by": "2026-11-30",
+        "methodology_cn": "证实情景：中报兑现预告（净利 ≥2.65 亿）+ H2 产能爬坡 → 2026E 净利 ≈ 7 亿（H1 中值 3 亿 + H2 4 亿），持有 CATL 长协的成长性材料公司给 45x（当前 2026E 约 33x）→ 市值 315 亿 ÷ 9.27 亿股 ≈ ¥34；交叉验证：2027E 净利 ≈ 10 亿（CATL 2 万吨 VC 起量）× 30x = 300 亿 ≈ ¥32，两法收敛于 ¥33-34。证伪情景：中报不达标或 VC 价格战 → 退回『氟化工周期股』标签，回到入池前平台位 ¥17-18。",
+        "timeline_logic_cn": "V1 判定点 8-31 中报（硬截止），V2/V3（CATL 产能信号、VC 价格）10-31 三季报窗口确认 → A 股对业绩兑现型标的的重估通常在三季报后 1 个月内完成 → 预期 2026-11-30 前到位。",
+        "set_at": "2026-07-06",
+        "revisions": []
       }
     }
   ]

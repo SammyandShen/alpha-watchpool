@@ -52,7 +52,15 @@ echo "🤖 ② 调用 skill alpha-daily-scan..."
 4. 最后输出简短总结（新建/追加/跳过统计）。若触发 T1 紧急通道，总结第一行写 URGENT: <ticker> <事件>。"
 
 echo ""
-echo "🛡 ③ schema 校验（护栏）..."
+echo "📊 ③ 补数据 + 重算指标..."
+# 补拉当日新入池 ticker 的价格与概况（步骤①跑在 skill 之前，新 ticker 会漏）
+# compute-metrics 会顺带回填 skill 入池时拿不到的基准入池价
+python3 scripts/sync-prices.py || true
+python3 scripts/sync-profiles.py || true
+python3 scripts/compute-metrics.py
+
+echo ""
+echo "🛡 ④ schema 校验（护栏）..."
 if ! python3 scripts/validate-schema.py; then
     echo "❌ 校验失败 — 回滚 data/，本次不发布"
     git checkout -- data/ 2>/dev/null || true
@@ -61,15 +69,11 @@ if ! python3 scripts/validate-schema.py; then
 fi
 
 echo ""
-echo "📊 ④ 重算指标 + 渲染看板..."
-# 补拉当日新入池 ticker 的价格与概况（步骤①跑在 skill 之前，新 ticker 会漏）
-python3 scripts/sync-prices.py || true
-python3 scripts/sync-profiles.py || true
-python3 scripts/compute-metrics.py
+echo "📊 ⑤ 渲染看板..."
 python3 scripts/build-dashboard.py
 
 echo ""
-echo "📤 ⑤ 提交..."
+echo "📤 ⑥ 提交..."
 COMMIT_PREFIX="🔍 Daily scan"
 if grep -q "^URGENT:" "$LOG_FILE" 2>/dev/null; then COMMIT_PREFIX="[URGENT] 🔍 Daily scan"; fi
 if [[ -n $(git status --porcelain data/ docs/) ]]; then

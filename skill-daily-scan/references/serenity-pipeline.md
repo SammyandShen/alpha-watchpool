@@ -74,6 +74,15 @@
     "sector_benchmark": "<行业 ETF>",
     "sector_benchmark_entry_price": 0.0
   },
+  "price_expectation": {
+    "confirm_target": 0.0,
+    "falsify_target": 0.0,
+    "expected_by": "<YYYY-MM-DD>",
+    "methodology_cn": "证实情景：<NTM 收入/净利估算 × 目标倍数 = 市值 ÷ 股本 = 目标价，写明每个数字的来源>。证伪情景：<倍数 derate 到什么水平/回到什么历史平台，为什么>。",
+    "timeline_logic_cn": "<绑定哪个验证节点判定 + 市场重估通常滞后多久 → expected_by>",
+    "set_at": "<今天>",
+    "revisions": []
+  },
   "evidence_log": [],
   "posterior_history": [
     { "date": "<今天>", "p": 0.30, "note": "prior" }
@@ -113,6 +122,15 @@
 | 0.35 | -0.6190 |
 | 0.40 | -0.4055 |
 | 0.45 | -0.2007 |
+
+## 价格预期（price_expectation）设计规则
+
+1. **双情景各给一个可复算的数字**：
+   - `confirm_target`（证实价）：required 验证条件全部达成情形下的合理定价。必须用乘数框架写明：`收入/净利估算 × 目标倍数 = 目标市值 ÷ 股本`，每个数字要有出处（估算逻辑或 profiles.json 的当前值）。有两种独立算法时交叉验证（如 2026E PE 法 vs 2027E PE 法）。
+   - `falsify_target`（证伪价）：falsify_if 触发情形下的定价。锚定倍数 derate（回到行业非成长期中枢/公司历史中枢）或入池前价格平台，禁止随手打折。
+2. **期望价（EV）不落盘**：看板实时计算 `EV = 当前后验 × confirm_target + (1−后验) × falsify_target`，随每周贝叶斯更新自动变化。EV < 现价是合法状态——意味着「值得观察但按当前置信度不值得买」。
+3. **expected_by（实现时间）**：绑定最晚的 required 验证节点 + 市场重估滞后（财报驱动型通常 +2-4 周；需要连续两季确认的取第二个财报日为锚）。`timeline_logic_cn` 写明推理。
+4. **修订纪律**：目标价只在结构性事件时修订（股本变化、验证条件级别的事实变化、方法论版本升级），修订前值和理由追加进 `revisions[]`；禁止因股价波动本身调目标价（那是锚定漂移）。
 
 ## 验证条件（validation_conditions）设计规则
 

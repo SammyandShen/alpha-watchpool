@@ -237,6 +237,20 @@ def main() -> int:
     prices = load(PRICES_PATH, {"series": {}})
     series_map = prices.get("series", {})
 
+    # 0. 基准入池价回填（skill 入池时 prices.json 可能还没有该 ticker/基准的数据）
+    for h in data["hypotheses"]:
+        bl = h.get("baseline") or {}
+        ed = bl.get("entry_date")
+        if not ed:
+            continue
+        for pk, tk in (("entry_price", h.get("ticker")),
+                       ("benchmark_entry_price", bl.get("benchmark")),
+                       ("sector_benchmark_entry_price", bl.get("sector_benchmark"))):
+            if pk in bl and not bl.get(pk) and tk:
+                v = price_at(series_map.get(tk), ed)
+                if v:
+                    bl[pk] = v
+
     # 1. 账本重算（权威写回）
     corrections = 0
     for h in data["hypotheses"]:
