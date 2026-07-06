@@ -1,3 +1,4 @@
 logs/
 data/review-input.json
 .DS_Store
+data/cn-forecasts.json

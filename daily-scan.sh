@@ -38,9 +38,10 @@ if ! command -v git &> /dev/null; then echo "❌ 找不到 git"; exit 1; fi
 echo "✅ claude / git OK"
 
 echo ""
-echo "💹 ① 价格快照 + 公司概况..."
+echo "💹 ① 价格快照 + 公司概况 + A股业绩预告..."
 python3 scripts/sync-prices.py || echo "⚠️ 价格同步失败（继续执行，明日会补拉）"
 python3 scripts/sync-profiles.py || echo "⚠️ 公司概况同步失败（看板显示上次快照）"
+python3 scripts/fetch-cn-forecasts.py || echo "⚠️ 业绩预告抓取失败（A股信号回退到 WebSearch）"
 
 echo ""
 echo "🤖 ② 调用 skill alpha-daily-scan..."
@@ -61,6 +62,9 @@ fi
 
 echo ""
 echo "📊 ④ 重算指标 + 渲染看板..."
+# 补拉当日新入池 ticker 的价格与概况（步骤①跑在 skill 之前，新 ticker 会漏）
+python3 scripts/sync-prices.py || true
+python3 scripts/sync-profiles.py || true
 python3 scripts/compute-metrics.py
 python3 scripts/build-dashboard.py
 

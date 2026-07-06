@@ -331,6 +331,7 @@ function renderCompany(ticker) {
     ["现金 / 负债", `${fmtBig(c.total_cash)} / ${fmtBig(c.total_debt)}`],
     ["自由现金流", fmtBig(c.free_cashflow)],
     ["52 周区间", c.week52_low != null ? `${c.week52_low.toFixed(2)} – ${c.week52_high.toFixed(2)}` : "—"],
+    ["下次财报", c.next_earnings_date || "未排期"],
   ];
   document.getElementById("company-metrics").innerHTML =
     M.map(([k,v]) => `<div class="kpi"><div class="v small">${v}</div><div class="k">${k}</div></div>`).join("");

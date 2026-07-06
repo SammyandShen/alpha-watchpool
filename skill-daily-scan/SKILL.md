@@ -20,9 +20,12 @@ description: 每日扫描市场新闻，用 serenity-alpha 方法论把「已发
 - `data/scan-log.json` — 近 14 天新闻指纹（去重）
 - 顺带清理 scan-log 中超过 14 天的条目
 
-### 1. 新闻扫描（信源降级链）
+### 1. 新闻扫描（信源优先级）
 
-1. **探测 FMP MCP**：若会话中存在 FMP 金融数据工具（news / search / earnings calendar 等，工具名形如 `mcp__*__news`），优先使用：拉当日 general news + 活跃 ticker 相关新闻 + 未来 7 天财报日历。
+0. **A 股结构化信号（第一优先）**：读 `data/cn-forecasts.json`（shell 前置已由 fetch-cn-forecasts.py 生成）：
+   - `positive_forecasts`：近 7 天利好业绩预告（预增/略增/扭亏/续盈），按扣非净利增幅降序——这是 T1 级候选 feed，从头部挑「增幅大 + 有可持续需求逻辑」的做 serenity 分析（一次性损益/资产处置类的跳过）
+   - `pool_negative_warnings`：池内活跃 ticker 的利空预告——**必查**，命中即走 T1 紧急通道
+1. **探测 FMP MCP**：若会话中存在 FMP 金融数据工具（news / search 等，工具名形如 `mcp__*__news`），优先使用：拉当日 general news + 活跃 ticker 相关新闻。press-releases 先按关键词过滤（订单/backlog/扩产/涨价/中标/supply agreement/guidance），律所诉讼通稿直接丢弃。
 2. **WebSearch 兜底**（headless 必走）：**美股 + A 股各 2-4 组**定向查询，围绕「已发生的需求变化」信号：
    - 美股：当日/昨日财报超预期 + 指引上修（尤其中小盘）；供应链信号（交期拉长、涨价、产能吃紧、backlog、book-to-bill）；大客户 capex/采购/订单公告；技术产品出货放量、渗透率拐点
    - A 股（中文查询）：业绩预告 预增/超预期；中标公告 大订单；涨价函 提价 产能满载；扩产公告 供不应求。优先信源：财联社、巨潮资讯（公司公告）、证券时报、上证报
@@ -62,6 +65,7 @@ description: 每日扫描市场新闻，用 serenity-alpha 方法论把「已发
 ### 5. 池内轻跟踪
 
 对每个活跃 ticker：
+- **财报日校正**：读 `docs/data/profiles.json` 各 ticker 的 `next_earnings_date`（Yahoo 官方排期，每日刷新），与 `events[]` 中 earnings 事件比对，不一致则更新并去掉「预估待确认」字样；A 股该字段常为空，按法定节奏（serenity-pipeline.md）估算
 - 快查重大事件（财报日临近 7 天内、并购、指引修正、大订单）→ 追加/更新 `events[]`
 - 新的相关新闻 → pending 证据入账（不评 LR，周复核统一评）
 

@@ -48,9 +48,9 @@
   },
   "economics": {
     "observing": {
-      "n": 2,
-      "avg_return_pct": 0.0,
-      "avg_excess_vs_spy_pct": 0.0
+      "n": 3,
+      "avg_return_pct": -1.1,
+      "avg_excess_vs_spy_pct": -1.1
     }
   }
 }

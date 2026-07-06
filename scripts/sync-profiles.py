@@ -29,7 +29,7 @@ ARCHIVE_PATH = REPO_ROOT / "data" / "archive" / "hypotheses-closed.json"
 OUT_PATH = REPO_ROOT / "docs" / "data" / "profiles.json"
 
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
-MODULES = "assetProfile,summaryDetail,financialData,defaultKeyStatistics,price"
+MODULES = "assetProfile,summaryDetail,financialData,defaultKeyStatistics,price,calendarEvents"
 QS_URL = "https://query1.finance.yahoo.com/v10/finance/quoteSummary/{ticker}?modules={modules}&crumb={crumb}"
 TIMEOUT_SEC = 15
 
@@ -91,7 +91,16 @@ def fetch_profile(opener, crumb: str, ticker: str) -> dict:
     fd = result.get("financialData") or {}
     ks = result.get("defaultKeyStatistics") or {}
     pr = result.get("price") or {}
+
+    # 下次财报日：Yahoo 常返回上次财报日（未排期时），只保留今天及以后的
+    today = datetime.now().strftime("%Y-%m-%d")
+    earnings_dates = sorted(
+        d.get("fmt") for d in ((result.get("calendarEvents") or {}).get("earnings") or {}).get("earningsDate") or []
+        if isinstance(d, dict) and d.get("fmt"))
+    next_earnings = next((d for d in earnings_dates if d >= today), None)
+
     return {
+        "next_earnings_date": next_earnings,
         "name": pr.get("longName") or pr.get("shortName"),
         "sector": ap.get("sector"),
         "industry": ap.get("industry"),

@@ -1,8 +1,9 @@
 {
-  "$last_updated": "2026-07-06T08:00:12+08:00",
+  "$last_updated": "2026-07-06T10:26:31+08:00",
   "source": "yahoo-quote-summary",
   "profiles": {
     "OUST": {
+      "next_earnings_date": null,
       "name": "Ouster, Inc.",
       "sector": "Technology",
       "industry": "Electronic Components",
@@ -24,9 +25,10 @@
       "free_cashflow": -46808624,
       "week52_low": 16.4,
       "week52_high": 63.79,
-      "fetched_at": "2026-07-06T08:00:11+08:00"
+      "fetched_at": "2026-07-06T10:26:29+08:00"
     },
     "POWL": {
+      "next_earnings_date": "2026-08-04",
       "name": "Powell Industries, Inc.",
       "sector": "Industrials",
       "industry": "Electrical Equipment & Parts",
@@ -48,7 +50,32 @@
       "free_cashflow": 142181632,
       "week52_low": 68.333336,
       "week52_high": 328.0,
-      "fetched_at": "2026-07-06T08:00:11+08:00"
+      "fetched_at": "2026-07-06T10:26:30+08:00"
+    },
+    "002326.SZ": {
+      "next_earnings_date": null,
+      "name": "Zhejiang Yongtai Technology Co.,Ltd.",
+      "sector": "Basic Materials",
+      "industry": "Chemicals",
+      "employees": 3437,
+      "website": "https://yongtaitech.com",
+      "description_en": "Zhejiang Yongtai Technology Co.,Ltd. engages in the manufacture and sale of fluorinated pharmaceuticals, crop science, and new energy materials in China and internationally. Its products include fluorinated polymers, fluorinated fine chemicals, refrigerants, foaming agents, fire extinguishers, etc. The company also trades in herbicides, fungicides, insecticides, and other pesticide active ingredients and formulations; and lithium carbonate. In addition, it provides fluorinated intermediates; pharmaceutical APIs; and lithium battery and other materials products comprising lithium battery materials, fluoro liquid-crystal intermediates, fluorinated liquid, etc. Zhejiang Yongtai Technology Co.,Ltd. was founded in 1999 and is headquartered in Linhai, China.",
+      "currency": "CNY",
+      "market_cap": 23146692608,
+      "trailing_pe": 500.4,
+      "forward_pe": 7.6748466,
+      "ps_ttm": 3.9591582,
+      "revenue_ttm": 5846367232,
+      "revenue_growth": 0.597,
+      "gross_margin": 0.19556999,
+      "operating_margin": 0.10762,
+      "profit_margin": 0.00821,
+      "total_cash": 686818624,
+      "total_debt": 4881339392,
+      "free_cashflow": 192748608,
+      "week52_low": 11.78,
+      "week52_high": 33.0,
+      "fetched_at": "2026-07-06T10:26:30+08:00"
     }
   }
 }

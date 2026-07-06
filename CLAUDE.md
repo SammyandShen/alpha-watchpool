@@ -11,7 +11,8 @@
 | `data/hypotheses.json` | LLM（skill）| 假设池真源。每次修改后必须能通过 `scripts/validate-schema.py` |
 | `data/scan-log.json` | LLM（daily-scan）| 近 14 天新闻指纹，去重用 |
 | `data/company-notes.json` | LLM（daily-scan，新 ticker 入池时）| 公司中文主营业务档案；数字指标禁止写这里 |
-| `docs/data/profiles.json` | 脚本 `sync-profiles.py` | 公司财务指标快照（Yahoo），LLM 只读 |
+| `docs/data/profiles.json` | 脚本 `sync-profiles.py` | 公司财务指标快照 + 下次财报日（Yahoo），LLM 只读 |
+| `data/cn-forecasts.json` | 脚本 `fetch-cn-forecasts.py` | 近 7 天 A 股业绩预告（东财），LLM 只读，daily-scan 的 A 股候选 feed |
 | `data/scorecard.json` | 脚本 `compute-metrics.py` | LLM 只读 |
 | `docs/data/prices.json` | 脚本 `sync-prices.py` | LLM 只读 |
 | `docs/data/dashboard.js` | 脚本 `build-dashboard.py` | **LLM 禁止手改** |
