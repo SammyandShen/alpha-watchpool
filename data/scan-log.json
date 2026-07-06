@@ -64,6 +64,43 @@
       ],
       "action": "skipped_duplicate",
       "note": "与入池三条 source_news 同源（融资+扩产叙事），T4 叙事级不单独记证据"
+    },
+    {
+      "date": "2026-07-06",
+      "fingerprint": "2026-06-30+002326.SZ+h1-forecast-catl-vc-contract",
+      "headline": "永太科技 H1 2026 业绩预告净利润+351-461% + CATL框架合同2027-2029年VC供货",
+      "tickers": [
+        "002326.SZ"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-06",
+      "fingerprint": "2026-07-05+SSNLF+q2-18x-profit-preliminary",
+      "headline": "Samsung Q2 preliminary: 18-fold operating profit jump on surging AI memory demand",
+      "tickers": [
+        "SSNLF"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "大型股（三星），无弹性；AI内存需求信号已被市场定价，当日未找到合适小盘受益者尚未入池"
+    },
+    {
+      "date": "2026-07-06",
+      "fingerprint": "2026-05-05+MRCY+q3-record-bookings-backlog",
+      "headline": "Mercury Systems Q3 FY26 bookings $348M +73.7% YoY, book-to-bill 1.48, backlog $1.6B record",
+      "tickers": [
+        "MRCY"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "信号为2个月前（5月5日财报），股价已涨153%至52周新高，市值$76亿弹性弱，neglect=2；另有7月3日股东诉讼风险；观察名单级"
+    },
+    {
+      "date": "2026-07-06",
+      "fingerprint": "2026-07-06+AI-PCB+july-price-hike",
+      "headline": "AI服务器高端PCB/FR4价格7月涨幅+12-22%，HBM封装基板+15-30%",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "行业级供应链价格信号；无个股7月业绩预告或新订单T1公告，待深南电路/沪电股份中报后跟踪"
     }
   ]
 }

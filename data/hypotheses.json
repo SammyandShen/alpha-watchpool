@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-07-05",
+  "$last_updated": "2026-07-06",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -257,6 +257,138 @@
           "date": "2026-07-03",
           "type": "macro",
           "note": "PJM 联邦级电网紧急状态（需求侧催化剂）"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260706-002326.SZ",
+      "ticker": "002326.SZ",
+      "company": "浙江永太科技股份有限公司",
+      "created_at": "2026-07-06",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-07-06",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：H1 2026 业绩预告净利润+351-461% + 宁德时代VC框架合同（2027-2029年逐年扩量至4万吨）"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-06-30",
+          "headline": "永太科技披露2026年半年度业绩预告：净利润2.65-3.30亿元（同比+351-461%）",
+          "url": "http://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=002326&id=12422008",
+          "summary": "H1 2026净利润2.65-3.30亿元（同比+351-461%），扣非+957-1245%，VC/LiFSI放量驱动"
+        },
+        {
+          "date": "2026-06-30",
+          "headline": "永太科技与宁德时代签署VC原料供应框架协议（2027:2万吨/2028:3万吨/2029:4万吨）",
+          "url": "https://www.stcn.com/article/detail/3989878.html",
+          "summary": "与CATL签署碳酸亚乙烯酯多年期框架采购协议，2027-2029年出货量分别为2/3/4万吨，锁定核心客户"
+        }
+      ],
+      "thesis": {
+        "one_liner": "CATL万吨级VC框架合同+自产产能释放将在2-3个季度内持续推高其电解液添加剂收入线并驱动业绩超预期",
+        "demand_change": "宁德时代签署VC原料多年框架协议（2027起2万吨/年扩至2029年4万吨）；公司2025下半年新增5000吨/年VC产线投产放量；H1 2026业绩预告净利润同比+351-461%，LiFSI与VC需求已进入报表。",
+        "transmission": "VC（碳酸亚乙烯酯）和LiFSI作为锂电池电解液核心添加剂以产品销售收入直接体现；CATL框架合同锁定未来3年出货量；自有产能扩张随规模放大固定成本分摊优势，毛利率上行。",
+        "misclassification": "市场标签是「A股氟化工周期股，受益锂电复苏但估值已反映」；实际正成为「持有全球最大电池厂长期框架合同的电解液添加剂专业供应商，2027-2029年出货量确定性极高」",
+        "serenity_score": {
+          "demand_certainty": 5,
+          "transmission_clarity": 4,
+          "purity": 5,
+          "elasticity": 5,
+          "neglect": 4,
+          "verification_speed": 5,
+          "downside": 3
+        },
+        "brief_cn": [
+          "触发：6月30日永太科技披露2026年半年度业绩预告，净利润2.65-3.30亿元（同比+351-461%，扣非净利+957-1245%）；同日披露已与宁德时代签署VC原料供应框架协议：2027年2万吨、2028年3万吨、2029年4万吨，逐年量级递增。",
+          "需求已可观察：CATL合同是正式签署的采购框架，不是意向书；公司2025年下半年新增5000吨/年VC产线并持续放量，H1 2026已体现在业绩预告数字中。传导路径短——VC/LiFSI以产品出货直接进产品收入线；随规模扩大固定成本分摊优化，毛利率随出货量上行。",
+          "市场误分类：市场仍将永太科技定价为「A股氟化工周期股、锂电复苏弹性股」，忽视了CATL框架合同对2027-2029年出货量的确定性锁定——这是类似「长协」的结构性绑定，而非普通批量订单。",
+          "先验0.38的理由：七维总分31（demand_certainty/purity/elasticity/verification_speed均5分）；扣分项：transmission_clarity=4（2027年大合同正式起量，H2 2026影响有限需等待）、downside=3（天赐材料等同业竞争激烈，VC价格有压力）；赌的是CATL框架合同提供2027年出货重估锚点，同时H2 2026产能爬坡支撑持续超预期。"
+        ]
+      },
+      "prior": {
+        "p": 0.38,
+        "log_odds": -0.4895,
+        "rationale": "七维总分31 → >30档（0.38-0.45）；取下沿因transmission_clarity=4（2027才大规模出货）且downside=3（竞争压力）；CATL框架合同与已落地业绩预告支撑取0.38",
+        "set_by": "daily-scan 2026-07-06"
+      },
+      "current": {
+        "p": 0.38,
+        "log_odds": -0.4895,
+        "last_reviewed": "2026-07-06",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026年中报净利润（截止8月31日）及VC收入同比增速",
+          "confirm_if": "中报净利润 ≥ 2.65亿元（达业绩预告下限）且VC收入同比增速 ≥ +100%",
+          "falsify_if": "中报净利润 < 2.00亿元（低于预告下限25%）或披露VC/LiFSI单价同比下降超40%",
+          "check_by": "2026-08-31",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "CATL框架合同2027年出货准备信号（产能扩张/设备订单）",
+          "confirm_if": "公司披露为CATL 2027年VC供货启动新建产线或追加资本开支",
+          "falsify_if": "CATL合同在中报/三季报中未被管理层提及或合同条款被修改",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        },
+        {
+          "id": "V3",
+          "required": false,
+          "metric": "VC市场定价稳定性（高端电解液添加剂）",
+          "confirm_if": "2026年下半年VC市场价维持 > 10万元/吨",
+          "falsify_if": "天赐材料等主要竞品降价导致行业VC价格跌至 < 6万元/吨",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 3,
+        "review_deadline": "2027-04-06"
+      },
+      "baseline": {
+        "entry_date": "2026-07-06",
+        "entry_price": 25.81,
+        "benchmark": "510300.SS",
+        "benchmark_entry_price": 0.0,
+        "sector_benchmark": "515030.SS",
+        "sector_benchmark_entry_price": 0.0
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-07-06",
+          "p": 0.38,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-08-31",
+          "type": "earnings",
+          "note": "2026年中报披露截止日（V1判定点）；预计提前10-15天发布"
         }
       ],
       "links": {

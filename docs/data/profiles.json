@@ -1,5 +1,5 @@
 {
-  "$last_updated": "2026-07-05T17:25:30+08:00",
+  "$last_updated": "2026-07-06T08:00:12+08:00",
   "source": "yahoo-quote-summary",
   "profiles": {
     "OUST": {
@@ -24,7 +24,7 @@
       "free_cashflow": -46808624,
       "week52_low": 16.4,
       "week52_high": 63.79,
-      "fetched_at": "2026-07-05T17:25:29+08:00"
+      "fetched_at": "2026-07-06T08:00:11+08:00"
     },
     "POWL": {
       "name": "Powell Industries, Inc.",
@@ -48,7 +48,7 @@
       "free_cashflow": 142181632,
       "week52_low": 68.333336,
       "week52_high": 328.0,
-      "fetched_at": "2026-07-05T17:25:29+08:00"
+      "fetched_at": "2026-07-06T08:00:11+08:00"
     }
   }
 }
