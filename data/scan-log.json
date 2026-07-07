@@ -101,6 +101,37 @@
       "tickers": [],
       "action": "skipped_watchlist_only",
       "note": "行业级供应链价格信号；无个股7月业绩预告或新订单T1公告，待深南电路/沪电股份中报后跟踪"
+    },
+    {
+      "date": "2026-07-07",
+      "fingerprint": "2026-07-07+002497.SZ+h1-forecast-lithium-q2-acceleration",
+      "headline": "雅化集团H1 2026业绩预告净利润+710-857% A股首份锂矿中报 Q2单季环比+125-184%",
+      "tickers": ["002497.SZ"],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-07",
+      "fingerprint": "2026-07-04+603618.SS+h1-fiber-optic-1087pct-halted",
+      "headline": "杭电股份H1 2026业绩预告扣非净利+1087%光纤量价齐升（年初已涨6倍+今日跌停）",
+      "tickers": ["603618.SS"],
+      "action": "skipped_watchlist_only",
+      "note": "七维总分23（neglect=1，年初涨6倍今日跌停），先验≤0.18弱假设档，观察名单级"
+    },
+    {
+      "date": "2026-07-07",
+      "fingerprint": "2026-07-06+POWL+zacks-investor-search-volume",
+      "headline": "POWL listed as heavily searched by Zacks investors",
+      "tickers": ["POWL"],
+      "action": "evidence_appended",
+      "note": "T4叙事级，追加为POWL pending证据；关注度上升但无新基本面信息"
+    },
+    {
+      "date": "2026-07-07",
+      "fingerprint": "2026-07-06+ESI+solstice-14.5b-acquisition",
+      "headline": "Solstice Advanced Materials acquires Element Solutions for $14.5B semiconductor/DC/AI materials",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "大型M&A，ESI为被并购方；无直接可入池的小盘受益者，传导路径远"
     }
   ]
 }

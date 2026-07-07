@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-07-06",
+  "$last_updated": "2026-07-07",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -248,7 +248,23 @@
         "sector_benchmark": "XLI",
         "sector_benchmark_entry_price": 183.91
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-07-06",
+          "source": "Zacks",
+          "headline": "Investors Heavily Search Powell Industries, Inc. (POWL): Here is What You Need to Know",
+          "url": "https://www.zacks.com/stock/news/2948319/investors-heavily-search-powell-industries-inc-powl-here-is-what-you-need-to-know",
+          "summary": "POWL近期成为Zacks搜索量最高标的之一，叙事关注度明显上升；无新基本面信息",
+          "type": "T4_narrative",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-07-05",
@@ -431,6 +447,141 @@
         "timeline_logic_cn": "V1 判定点 8-31 中报（硬截止），V2/V3（CATL 产能信号、VC 价格）10-31 三季报窗口确认 → A 股对业绩兑现型标的的重估通常在三季报后 1 个月内完成 → 预期 2026-11-30 前到位。",
         "set_at": "2026-07-06",
         "revisions": []
+      }
+    },
+    {
+      "id": "H20260707-002497.SZ",
+      "ticker": "002497.SZ",
+      "company": "雅化集团股份有限公司",
+      "created_at": "2026-07-07",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-07-07",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：A股首份锂矿中报预告 H1净利+710-857% + Q2单季环比+125-184% 加速"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-07-07",
+          "headline": "雅化集团披露2026年半年度业绩预告：H1归母净利润11-13亿元，同比+710-857%；Q2单季7.61-9.61亿，环比+125-184%",
+          "url": "https://www.stcn.com/article/detail/4000993.html",
+          "summary": "A股首份锂矿中报预告，锂盐销量与均价同步增长，Q2单季净利明显加速"
+        }
+      ],
+      "thesis": {
+        "one_liner": "碳酸锂价格上行+中国新能源渗透超50%将在2-3个季度内持续推高其锂盐营收并驱动全年利润大幅超预期",
+        "demand_change": "碳酸锂电池级现货价5月升至20万元/吨年内持续上行；中国新能源车4月渗透率53.2%首超50%历史拐点，动力+储能双轮驱动锂盐需求；供给端津巴布韦在途精矿库存已耗尽、新矿投产滞后；H1业绩预告+Q2单季环比加速已进入报表验证阶段。",
+        "transmission": "锂盐（碳酸锂/氢氧化锂）按量×均价直接进产品收入线；价格弹性极强（价格+10%净利可倍增）；民爆业务约20%营收提供稳定底线；Q2单季净利环比+125-184%，加速态势清晰。",
+        "misclassification": "市场标签是「2022-2024年锂盐泡沫后的弱周期复苏股，故事已完结」；实际正成为「中国新能源渗透率突破50%拐点后新一轮供需紧平衡锂盐周期的一线受益者，Q2净利加速是新周期确认信号」",
+        "serenity_score": {
+          "demand_certainty": 4,
+          "transmission_clarity": 5,
+          "purity": 4,
+          "elasticity": 3,
+          "neglect": 3,
+          "verification_speed": 5,
+          "downside": 2
+        },
+        "brief_cn": [
+          "触发：2026-07-07雅化集团披露半年度业绩预告——H1归母净利润11-13亿元（同比+710-857%，扣非+1393-1645%），Q2单季净利7.61-9.61亿（环比+125-184%）。这是A股首份锂矿中报预告，Q2加速信号明确；公司Q1管理层已确认锂盐价格环比Q4 2025上涨。",
+          "需求已可观察：碳酸锂电池级现货价5月重回20万元/吨，年内快速上涨；中国新能源车4月渗透率53.2%，首次整体超50%历史拐点，动力+储能双轮驱动锂盐需求；供给端津巴布韦精矿在途库存已耗尽、新矿山投产滞后于需求增速。财务传导路径短：锂盐出货量×均价直接进收入，价格弹性极强，价格上涨10%可使净利翻倍。",
+          "市场误分类：A股整体锂电叙事是「2022高峰已过，2023-2024暴跌后弱复苏，故事结束」，雅化集团仍被标签为周期股等待去库。忽视了：①中国新能源车渗透率穿越50%是结构性加速，不是季节性；②储能新增装机以50%+年增速叠加；③本轮供给扰动（津巴布韦）持续性强。LG Energy Solution Q2 -77%反映海外EV疲软，与中国内循环独立运行，不构成对中国锂盐需求的否定。",
+          "先验给0.33的理由：七维总分26（30-42档）取下沿。主要扣分项：downside=2（锂盐价格历史上从60万跌至8万，周期性极强；若供给端新矿山Q3集中投产，价格重压风险高）；elasticity=3（市值约255亿CNY约35亿美元，弹性偏弱但尚可）。赌的是：H2净利不低于Q2单季水平（H2净利≥15亿），全年达22亿+，触发「新锂盐周期」估值重述。"
+        ]
+      },
+      "prior": {
+        "p": 0.33,
+        "log_odds": -0.7082,
+        "rationale": "七维总分26 → 30-42档；取下沿因downside=2（锂盐价格高波动）且elasticity=3（255亿CNY中盘）；A股首份锂矿预告+Q2加速支撑取0.33",
+        "set_by": "daily-scan 2026-07-07"
+      },
+      "current": {
+        "p": 0.33,
+        "log_odds": -0.7082,
+        "last_reviewed": "2026-07-07",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026年中报归母净利润（截止8月31日）及Q2单季净利润",
+          "confirm_if": "中报归母净利润 ≥ 11亿元（达业绩预告下限）且Q2单季净利 ≥ 7.6亿元",
+          "falsify_if": "中报归母净利润 < 9亿元（低于预告下限18%）或Q2单季净利 < 6亿元",
+          "check_by": "2026-08-31",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "Q3碳酸锂电池级现货价格（月度均价）",
+          "confirm_if": "Q3月均价维持 ≥ 18万元/吨",
+          "falsify_if": "Q3月均价跌至 < 14万元/吨",
+          "check_by": "2026-10-15",
+          "status": "pending"
+        },
+        {
+          "id": "V3",
+          "required": false,
+          "metric": "三季报披露Q3锂盐收入同比增速",
+          "confirm_if": "Q3锂盐收入同比增速 ≥ +50%",
+          "falsify_if": "Q3锂盐收入同比下降或披露出货量环比下滑 ≥ 20%",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 3,
+        "review_deadline": "2027-04-07"
+      },
+      "baseline": {
+        "entry_date": "2026-07-07",
+        "entry_price": 22.41,
+        "benchmark": "510300.SS",
+        "benchmark_entry_price": 4.891,
+        "sector_benchmark": "512400.SS",
+        "sector_benchmark_entry_price": 1.892
+      },
+      "price_expectation": {
+        "confirm_target": 38.0,
+        "falsify_target": 13.0,
+        "expected_by": "2026-11-30",
+        "methodology_cn": "证实情景：H1中报兑现+H2净利不低于Q2单季水平（H2约15亿）→ 全年净利约22亿，EPS=1.93元/股（11.4亿股）；新能源新周期成长溢价给PE 20x → 目标价≈¥38。交叉验证：2027E净利~25亿×PE 15x=375亿÷11.4亿股≈¥33，两法收敛于¥33-38区间。证伪情景：碳酸锂价格Q3重跌（新矿山集中投产），全年净利降至8亿，EPS 0.70元；回归「周期底部」叙事，PE压缩至历史中枢12x → ¥8.4；保守取¥13（含民爆业务底线与历史低点区间支撑）。",
+        "timeline_logic_cn": "V1判定点是8-31中报（通常提前10-15天发布，约8-15至8-20可见）；中报兑现后市场重估通常2-4周内完成；V2/V3（Q3价格+三季报）10-31进一步验证 → 预期2026-11-30前完成完整重述。",
+        "set_at": "2026-07-07",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-07-07",
+          "p": 0.33,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-08-31",
+          "type": "earnings",
+          "note": "2026年中报披露截止日（V1判定点）；预计提前10-15天（约8-15前后）发布"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
       }
     }
   ]
