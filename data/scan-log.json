@@ -132,6 +132,46 @@
       "tickers": [],
       "action": "skipped_watchlist_only",
       "note": "大型M&A，ESI为被并购方；无直接可入池的小盘受益者，传导路径远"
+    },
+    {
+      "date": "2026-07-09",
+      "fingerprint": "2026-06-09+OUST+bluecity-njdot-world-cup",
+      "headline": "Ouster completes NJDOT BlueCity deployment at 40+ MetLife Stadium highway sites for FIFA World Cup",
+      "tickers": ["OUST"],
+      "action": "evidence_appended",
+      "note": "T3商业化验证：政府付费合同落地执行，BABA合规后首个标志性联邦基建部署（永久性ATMS集成），记为OUST pending证据E1"
+    },
+    {
+      "date": "2026-07-09",
+      "fingerprint": "2026-05-06+POWL+q2fy26-400m-dc-order-backlog",
+      "headline": "Powell Industries Q2 FY26 earnings: $400M+ record data center order post-quarter, new orders +97% YoY, backlog $1.8B +33%",
+      "tickers": ["POWL"],
+      "action": "evidence_appended",
+      "note": "T2：史上最大单笔>4亿美元数据中心订单+季内新订单+97%YoY直接预示FQ3 backlog超V1确认线（+5% QoQ），记为POWL pending证据E2；Q2 EPS轻微miss被订单动能掩盖"
+    },
+    {
+      "date": "2026-07-09",
+      "fingerprint": "2026-07-01+POWL+ceo-insider-selling-36k",
+      "headline": "POWL CEO Brett Cope公开市场卖出36,000股（7/1），CFO提交Form 144，3个月内部人士仅净卖出",
+      "tickers": ["POWL"],
+      "action": "evidence_appended",
+      "note": "T4负面：高管密集卖出（PE 48x估值压力），7/2因此跌8.4%；单独不否定假设，但与E3合并周复核时需评估insider selling对neglect的影响；记为POWL pending证据E3"
+    },
+    {
+      "date": "2026-07-09",
+      "fingerprint": "2026-07-09+002990.SZ+h1-forecast-ai-computing-pivot",
+      "headline": "盛视科技H1 2026业绩预告扣非净利+552-743%，Q2单季环比+2556%，算力业务开始确认收入",
+      "tickers": ["002990.SZ"],
+      "action": "skipped_watchlist_only",
+      "note": "①60亿算力合同对手方为'神秘公司'信用风险高②公司定位为算力资源使用者非提供者，传导路径不清③股价5天4板已充分定价，neglect≤1④七维总分估算≤20弱假设档；观察名单级"
+    },
+    {
+      "date": "2026-07-09",
+      "fingerprint": "2026-07-02+002396.SZ+h1-dc-switch-5xLL-chip-risk",
+      "headline": "星网锐捷H1 2026业绩预告归母净利+46-103%，数据中心交换机爆发，5天4板，公司自披芯片成本隐忧",
+      "tickers": ["002396.SZ"],
+      "action": "skipped_watchlist_only",
+      "note": "5天4板（信息提前泄露）=neglect≤1已充分定价；扣非YoY仅+11.76-64.98%（主体增量来自非经常项）；公司主动发布异动公告提示芯片供应/成本风险；市值161.8亿弹性偏弱；观察名单级"
     }
   ]
 }
