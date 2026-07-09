@@ -111,7 +111,11 @@
           "url": "https://www.businesswire.com/news/home/20260609492632/en/Ouster-Completes-New-Jersey-DOT-Deployment-of-Ouster-BlueCity-Ahead-of-2026-FIFA-World-Cup",
           "summary": "NJDOT在MetLife Stadium周边40+路段完成BlueCity lidar部署，永久性集成入全州ATMS，超越FIFA赛事；政府付费合同实际落地执行，直接验证基建客户采购意愿",
           "type": "T3_soft_signal",
-          "likelihood": {"label": null, "lr": null, "log_lr": null},
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
           "pending": true
         }
       ],
@@ -269,7 +273,11 @@
           "url": "https://www.zacks.com/stock/news/2948319/investors-heavily-search-powell-industries-inc-powl-here-is-what-you-need-to-know",
           "summary": "POWL近期成为Zacks搜索量最高标的之一，叙事关注度明显上升；无新基本面信息",
           "type": "T4_narrative",
-          "likelihood": {"label": null, "lr": null, "log_lr": null},
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
           "pending": true
         },
         {
@@ -280,7 +288,11 @@
           "url": "https://www.sec.gov/Archives/edgar/data/0000080420/000008042026000063/ex991-powlq2xfy2026earning.htm",
           "summary": "Q2结束后（约2026年4-5月）获公司史上最大单笔订单：>4亿美元绿地数据中心一期合同；季内新订单达$490M同比+97%，极大支撑FQ3 backlog高度确定性增长，直接预示V1达成",
           "type": "T2_supply_chain",
-          "likelihood": {"label": null, "lr": null, "log_lr": null},
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
           "pending": true
         },
         {
@@ -291,7 +303,11 @@
           "url": "https://www.stocktitan.net/sec-filings/POWL/form-4-powell-industries-inc-insider-trading-activity-8eb2fd7a5ce7.html",
           "summary": "CEO 7/1开市场出售3.6万股，CFO Form 144预告出售，7/2股价因此跌8.4%；估值偏高（PE 48x vs 行业38.5x）+高管密集卖出是短期压力信号，但单独不构成假设否定",
           "type": "T4_narrative",
-          "likelihood": {"label": null, "lr": null, "log_lr": null},
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
           "pending": true
         }
       ],
