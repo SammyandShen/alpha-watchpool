@@ -172,6 +172,36 @@
       "tickers": ["002396.SZ"],
       "action": "skipped_watchlist_only",
       "note": "5天4板（信息提前泄露）=neglect≤1已充分定价；扣非YoY仅+11.76-64.98%（主体增量来自非经常项）；公司主动发布异动公告提示芯片供应/成本风险；市值161.8亿弹性偏弱；观察名单级"
+    },
+    {
+      "date": "2026-07-10",
+      "fingerprint": "2026-07-07+PENG+q3-fy26-earnings-beat-guidance-raise",
+      "headline": "Penguin Solutions Q3 FY26: revenue $479M +48% YoY, AI业务+104% YoY，全年指引上修至+22%增速",
+      "tickers": ["PENG"],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-10",
+      "fingerprint": "2026-07-08+688620.SS+h1-revenue-84pct-turnaround-ai-soc",
+      "headline": "安凯微H1 2026业绩预告：营收+84-87% YoY、净利扭亏为盈¥3800-4300万，AI硬件需求+产品提价驱动",
+      "tickers": ["688620.SS"],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-10",
+      "fingerprint": "2026-07-10+OUST+bluecity-700sites-worldcup-expansion",
+      "headline": "Ouster BlueCity全球签约站点超700个；FIFA世界杯决赛7/19 MetLife Stadium高能见度验证窗口",
+      "tickers": ["OUST"],
+      "action": "evidence_appended",
+      "note": "T3商业化验证：全球700+签约站点里程碑，FIFA世界杯决赛提供高能见度公共验证事件；追加为OUST pending证据E2"
+    },
+    {
+      "date": "2026-07-10",
+      "fingerprint": "2026-07-02+002497.SZ+lithium-price-163k-rising",
+      "headline": "碳酸锂电池级现货价7/2为¥16.3万/吨，近5天涨+8.67%（从约¥15万/吨回升）",
+      "tickers": ["002497.SZ"],
+      "action": "evidence_appended",
+      "note": "T3价格信号：锂价¥16.3万/吨持续回升但仍低于V2确认线（月均≥¥18万/吨）；追加为002497.SZ pending证据E1"
     }
   ]
 }

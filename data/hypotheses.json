@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-07-09",
+  "$last_updated": "2026-07-10",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -117,6 +117,21 @@
             "log_lr": null
           },
           "pending": true
+        },
+        {
+          "id": "E2",
+          "date": "2026-07-10",
+          "source": "StockTitan / BusinessWire / CNN 多源新闻汇总",
+          "headline": "Ouster BlueCity已在全球积累超700个签约站点；FIFA世界杯决赛7/19 MetLife Stadium提供高能见度基建验证事件",
+          "url": "https://www.stocktitan.net/news/OUST/",
+          "summary": "最新报道确认BlueCity全球签约站点超700个，NJDOT MetLife部署（40+路段）将在7/19世界杯决赛期间接受百万观众流量压力测试，是BABA基建商业化的公开演示",
+          "type": "T3_soft_signal",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -136,6 +151,11 @@
           "date": "2026-07-02",
           "type": "offering",
           "note": "增发定价 $55.22，短期供给压力/锚定位"
+        },
+        {
+          "date": "2026-07-19",
+          "type": "milestone",
+          "note": "FIFA世界杯决赛于MetLife Stadium举行，NJDOT BlueCity部署接受高流量压力测试，基建商业化高能见度验证"
         }
       ],
       "links": {
@@ -600,7 +620,23 @@
         "set_at": "2026-07-07",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-07-02",
+          "source": "生意社 商品与证券市场数据",
+          "headline": "碳酸锂电池级现货价7月2日163,000元/吨，近5日涨幅+8.67%（从约15万/吨回升）",
+          "url": "https://stock.100ppi.com/detail_chance-110138.html",
+          "summary": "锂价¥16.3万/吨持续回升但仍低于V2确认门槛（月均≥¥18万/吨）；若Q3均价维持上行趋势则有望逐步接近验证线",
+          "type": "T3_soft_signal",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-07-07",
@@ -627,6 +663,257 @@
         "price_return_pct": null,
         "excess_vs_spy_pct": null,
         "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260710-688620.SS",
+      "ticker": "688620.SS",
+      "company": "广州安凯微电子技术股份有限公司",
+      "created_at": "2026-07-10",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-07-10",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：H1 2026业绩预告营收+84-87%、净利扭亏为盈（¥3800-4300万），AI边缘SoC需求拐点+产品价格上调"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-07-08",
+          "headline": "安凯微（688620）预计2026年半年度营业收入4.33-4.39亿元（+84-87% YoY），归母净利润3800-4300万元，扣非净利3750-4250万元，实现扭亏为盈",
+          "url": "https://www.stcn.com/article/detail/4003108.html",
+          "summary": "业绩增长受益于市场需求持续增长、8款16颗新芯片产品量产出货及AI硬件需求热络；为应对存储等上游原材料封装成本上涨主动提价，产品竞争力与定价权同步体现"
+        }
+      ],
+      "thesis": {
+        "one_liner": "AI边缘SoC芯片需求拐点+产品周期放量将在2-3个季度内持续推高其营收线并驱动利润率扩张",
+        "demand_change": "H1 2026营业收入+84-87% YoY已进入预告数字（需求已可观察）；AI硬件市场（AI眼镜、智能摄像头、边缘AI终端）进入爆发周期，驱动AISoC芯片量价齐升；公司内存储备充足叠加提价能力，毛利率改善可期",
+        "transmission": "芯片销售出货量×ASP直接进产品收入线；新产品（8款16颗）分批量产拉动收入台阶式上升；毛利率因提价+规模效应逐步改善，运营杠杆在扭亏后快速兑现",
+        "misclassification": "市场标签是「亏损小型IC设计公司，靠烧钱推新品」；正在变成「边缘AI SoC专业供应商，新产品周期+AI终端需求共振下的成长型芯片股」",
+        "serenity_score": {
+          "demand_certainty": 4,
+          "transmission_clarity": 4,
+          "purity": 5,
+          "elasticity": 4,
+          "neglect": 4,
+          "verification_speed": 5,
+          "downside": 3
+        },
+        "brief_cn": [
+          "触发：2026-07-08安凯微披露H1 2026业绩预告，营业收入4.33-4.39亿元（同比+84-87%），归母净利润3800-4300万元并扭亏为盈；驱动力为AI硬件市场热络、2024-2025年密集推出的8款16颗新芯片产品逐步量产出货，以及公司主动上调产品销售价格以转嫁存储原材料成本压力。",
+          "需求已可观察：H1业绩预告数字真实反映了在手订单和已出货量，AISoC芯片需求来自AI眼镜、智能摄像机、AI桌面机器人、工业物联网终端等正在快速放量的场景，属于结构性增量而非一次性项目。传导路径短：芯片出货量×ASP直接进收入，扭亏后固定成本分摊优化开始大幅释放利润弹性。",
+          "市场误分类：安凯微过去被标签为「上市即亏损的小型科创板IC设计公司」，主流机构视野外；实际8款新品进入量产是三年研发积累的集中变现，AI终端的爆发（AI眼镜已是2026年消费电子增速最快品类之一）为公司提供需求端的结构性拉力。",
+          "先验0.33的理由：七维总分29（>26档），neglect=4（科创板小盘，机构覆盖稀少），verification_speed=5（中报8月31日即可验证）；扣分项：downside=3（IC设计竞争激烈、客户集中风险未知），transmission_clarity=4（H2能否维持H1增速仍需确认，新产品客户渗透需验证）；赌的是H2产品周期持续兑现，Q3业绩确认AI边缘SoC需求不是一次性。"
+        ]
+      },
+      "prior": {
+        "p": 0.33,
+        "log_odds": -0.7082,
+        "rationale": "七维总分29 → 26-30档（0.30-0.42）；取下沿偏下因H2持续性尚未验证、公司体量小竞争格局不清；neglect=4+verification_speed=5支撑优选入池",
+        "set_by": "daily-scan 2026-07-10"
+      },
+      "current": {
+        "p": 0.33,
+        "log_odds": -0.7082,
+        "last_reviewed": "2026-07-10",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026中报正式归母净利润及管理层H2出货展望",
+          "confirm_if": "中报净利润 ≥ 3800万元（达预告下限）且管理层指引H2出货量继续增长",
+          "falsify_if": "中报净利润 < 3000万元（低于预告下限21%，预告不兑现）或管理层承认主要客户需求放缓",
+          "check_by": "2026-08-31",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "H2 2026新产品（AI眼镜/智能摄像机SoC）出货量及客户拓展",
+          "confirm_if": "三季报或公司公告披露H2营业收入较H1继续增长 ≥ 10%，或新增大客户公告",
+          "falsify_if": "三季报披露H2营收较H1下降超20%，或主要客户取消订单的公告",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 3,
+        "review_deadline": "2027-04-10"
+      },
+      "baseline": {
+        "entry_date": "2026-07-10",
+        "entry_price": 16.92,
+        "benchmark": "510300.SS",
+        "benchmark_entry_price": 4.784,
+        "sector_benchmark": "512480.SS",
+        "sector_benchmark_entry_price": 1.339
+      },
+      "price_expectation": {
+        "confirm_target": 22.0,
+        "falsify_target": 10.0,
+        "expected_by": "2026-11-30",
+        "methodology_cn": "证实情景：H1中报兑现预告（净利≥3800万）+ H2新产品继续放量（假设H2净利≈5000万）→ FY2026E净利约9000万；参照科创板AI芯片成长股（2027E EPS约¥0.36/2.5亿股）给PE 50-60x → 目标市值约¥45-54亿，目标价约¥18-22；取中高端¥22（对应2027E净利约1.5亿×PE 40x÷2.5亿股）。证伪情景：H2增速崩塌（AI终端需求不持续/大客户流失），全年净利≤5000万，PS回落至2x（非成长期IC设计）× 年化收入¥8.7亿 = 市值¥17亿÷2.5亿股≈¥7；保守取¥10（对应52周低点区域，含市场对科创板的流动性溢价）。",
+        "timeline_logic_cn": "V1判定点8-31中报（通常提前10-15天发布，约8-15前后可见）；中报兑现后A股成长型芯片股的市场重估通常在三季报（10-31）进一步确认后1个月内完成 → 预期2026-11-30前到位。",
+        "set_at": "2026-07-10",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-07-10",
+          "p": 0.33,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-08-31",
+          "type": "earnings",
+          "note": "2026年中报披露截止日（V1判定点）；预计提前10-15天（约8-15前后）发布"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260710-PENG",
+      "ticker": "PENG",
+      "company": "Penguin Solutions, Inc.",
+      "created_at": "2026-07-10",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-07-10",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：Q3 FY26财报大幅超预期（收入+48% YoY，AI业务+104%），全年指引上修至+22%收入增速"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-07-07",
+          "headline": "Penguin Solutions Reports Q3 Fiscal 2026 Financial Results: Revenue $479M +48% YoY, AI-driven businesses +104% YoY, FY26 guidance raised to +22% growth",
+          "url": "https://www.businesswire.com/news/home/20260707722795/en/Penguin-Solutions-Reports-Q3-Fiscal-2026-Financial-Results",
+          "summary": "Q3营收$479M超共识$421M（+14%）；非GAAP EPS $0.84 vs 预期$0.56（+50%超预期）；AI驱动业务占总营收74%且同比+104%；集成内存板块$275M同比翻倍；全年指引收入增速从+12%上修至+22%"
+        }
+      ],
+      "thesis": {
+        "one_liner": "AI内存模块需求激增+系统集成能力将在1-2个季度内推高其AI收入占比并驱动全年业绩持续超共识",
+        "demand_change": "Q3实际收入$479M（+48% YoY）已进入财报验证；AI驱动业务$355M（+104% YoY），集成内存$275M（+111% YoY）——超大规模AI训练集群对定制DRAM模块的实际采购已大幅加速；公司主动将全年指引从+12%上调至+22%，反映订单能见度显著提升",
+        "transmission": "集成内存（AI DRAM/Flash模块）出货量×ASP直接进Integrated Memory收入线；AI计算集群系统集成（Advanced Computing）贡献服务收入；运营利润率13.4%（同比+1.5pp），表明规模效应已在兑现；FY26 non-GAAP EPS指引$2.60",
+        "misclassification": "市场历史上将公司（前身Smart Global Holdings）标记为「内存分销商 + LED灯具公司」；正在变成「AI基础设施全栈内存系统集成商，向超大规模客户提供高带宽AI DRAM定制解决方案」",
+        "serenity_score": {
+          "demand_certainty": 5,
+          "transmission_clarity": 4,
+          "purity": 4,
+          "elasticity": 3,
+          "neglect": 3,
+          "verification_speed": 5,
+          "downside": 3
+        },
+        "brief_cn": [
+          "触发：2026-07-07 Penguin Solutions报告Q3 FY26财报——营收$479M（+48% YoY，超市场预期$421M），非GAAP EPS $0.84（超预期$0.56，+50%）；AI驱动业务$355M（+104% YoY）占总营收74%；集成内存$275M（+111% YoY）成为核心增长引擎；全年FY26指引收入增速从+12%大幅上调至+22%，非GAAP EPS指引从$2.00提至$2.60。",
+          "需求已可观察：Q3财报是硬数据，AI DRAM模块采购来自超大规模客户（AWS/Azure/Meta等）的AI训练和推理集群扩张，不是预测而是已确认的出货量。传导路径：内存模块出货→产品收入，系统集成项目→服务收入；毛利率27.8%，operating margin 13.4%（+1.5pp YoY）体现规模效应。",
+          "市场误分类：PENG前身SGH以内存分销和LED灯具被市场标签为低质IT分销商；当前74%收入来自AI驱动业务，集成内存业务为超大规模AI客户提供高带宽定制DRAM解决方案，LED业务占比仅14%（且持续盈利）。分析师目标价$80-85（Citizens/Needham），但如果FY26 EPS $2.60实现，NTM PE仅31x——对+104% AI收入增速的公司有重估空间。",
+          "先验只给0.30的理由：七维总分27（26-30档）取下沿；扣分：市值$4B弹性偏弱（elasticity=3），neglect=3（财报已引发25%急涨+分析师提价至$80-85，misclassification部分已被定价）；downside=3（AI内存定价历史上波动剧烈，超大规模客户采购周期可能放缓）；赌的是FY26 Q4（8月止）和FY27连续季度维持+40%+ AI收入增速，触发估值从IT分销PS 2x重估至AI基础设施PS 4-5x。"
+        ]
+      },
+      "prior": {
+        "p": 0.3,
+        "log_odds": -0.8473,
+        "rationale": "七维总分27 → 26-30档；取下沿因市值$4B弹性有限（elasticity=3）且财报后已涨18-25%（neglect=3，misclassification部分已定价）；demand_certainty=5抵消部分扣分",
+        "set_by": "daily-scan 2026-07-10"
+      },
+      "current": {
+        "p": 0.3,
+        "log_odds": -0.8473,
+        "last_reviewed": "2026-07-10",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "Q4 FY26营收YoY增速及FY26全年non-GAAP EPS（约2026年10-11月发布）",
+          "confirm_if": "Q4营收YoY ≥ +22%（兑现全年指引下限）且FY26全年non-GAAP EPS ≥ $2.60",
+          "falsify_if": "Q4营收YoY < +10% 或 FY26全年non-GAAP EPS < $2.00（指引大幅下调）",
+          "check_by": "2026-11-15",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "Q4 FY26 AI驱动业务收入占比及YoY增速",
+          "confirm_if": "AI驱动业务YoY增速维持 ≥ +60%，且Integrated Memory营收环比持平或增长",
+          "falsify_if": "AI驱动业务YoY增速降至 < +30%，或管理层披露主要AI客户采购延迟",
+          "check_by": "2026-11-15",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-01-10"
+      },
+      "baseline": {
+        "entry_date": "2026-07-10",
+        "entry_price": 81.39,
+        "benchmark": "SPY",
+        "benchmark_entry_price": 751.71,
+        "sector_benchmark": "SOXX",
+        "sector_benchmark_entry_price": 581.7
+      },
+      "price_expectation": {
+        "confirm_target": 100.0,
+        "falsify_target": 50.0,
+        "expected_by": "2026-12-15",
+        "methodology_cn": "证实情景：FY26全年EPS $2.60实现 + Q4指引继续超预期 → FY27E EPS ≈ $3.40（+30%增速），AI基础设施同行（SMCI、NTAP等）NTM PE 28-35x → $3.40 × 30x = $102，取整$100。交叉验证：FY26E收入约$1.75B（Q1-Q3实际$1.24B + Q4指引$0.51B）× PS 4x（AI基础设施估值）→ $7B市值 ÷ 50.6M股 ≈ $138，较保守PE法收敛在$100区间。证伪情景：AI内存需求降温（超大规模客户资本支出下调），FY26 EPS实际仅$1.50，PE从AI叙事回落至IT分销商中枢20x = $30；保守起见取$50（≈1.5x PS × $1.75B收入 ÷ 50.6M股），因公司有LED盈利提供底线支撑。",
+        "timeline_logic_cn": "V1判定点为Q4 FY26财报（约2026年10-11月初发布）；成长型AI基础设施股的市场倍数重估通常在决定性财报后2-4周内到位 → 预期2026-12-15前完成。",
+        "set_at": "2026-07-10",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-07-10",
+          "p": 0.3,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-10-15",
+          "type": "earnings",
+          "note": "Q4 FY26财报（预估日期，FY26截止8月末，预计10月初至11月初发布）— V1/V2判定点"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
         "post_mortem": null
       }
     }
