@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-07-10",
+  "$last_updated": "2026-07-15",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -888,7 +888,23 @@
         "set_at": "2026-07-10",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-07-08",
+          "source": "BusinessWire / SEC 8-K",
+          "headline": "PENG CFO Nate Olmstead自愿离职（effective 7/8），Aaron Johnson接任interim CFO；公司同步重申FY26净销售额和EPS将达指引区间高端，强调agentic AI驱动内存+基础设施需求极强",
+          "url": "https://ir.penguinsolutions.com/news/news-details/2026/Penguin-Solutions-Announces-CFO-Transition/default.aspx",
+          "summary": "CFO主动离职无任何分歧，interim CFO从内部16年资深财务高管晋升；公司重申FY26 non-GAAP EPS和收入均在区间高端，叠加7/7 Q3已将全年指引上调至+22%，需求能见度强",
+          "type": "T4_narrative",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-07-10",
@@ -914,6 +930,258 @@
         "brier_time_avg": null,
         "price_return_pct": null,
         "excess_vs_spy_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260715-603115.SS",
+      "ticker": "603115.SS",
+      "company": "南通海星电子股份有限公司",
+      "created_at": "2026-07-15",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-07-15",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：H1 2026业绩预告扣非净利+62-70%（AI服务器电极箔批量交付+储能需求）+ 全球市占率第一"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-07-15",
+          "headline": "海星股份H1 2026业绩预告：归母净利9950-10380万元（+50-62%），扣非净利10532-11032万元（+62-70%），AI服务器用产品批量交付+新能源储能+车载电子景气驱动",
+          "url": "https://dataclouds.cninfo.com.cn/shgonggao/hsomarket/2026/",
+          "summary": "AI服务器用铝电解电容器电极箔实现批量交付、新能源储能高速增长、新产能基地爬坡提升高端品占比，扣非>归母、利润干净"
+        }
+      ],
+      "thesis": {
+        "one_liner": "AI服务器+储能双驱动将在2-3个季度内持续推高其电极箔收入并驱动全年业绩超预期",
+        "demand_change": "H1业绩预告确认AI服务器用铝电解电容器电极箔已实现批量交付（公司明确披露）；800V DC高压架构在AI数据中心普及推动高端电极箔需求结构性上行；新能源储能装机高速增长驱动高压电极箔第二条需求线；车载电子稳健增长；全球市占率第一产能爬坡中。",
+        "transmission": "铝电解电容器用电极箔出货量×单价直接进产品收入；新产能基地投产后固定成本分摊持续下降→毛利率改善；高端品（AI服务器/储能）ASP高于通用品，结构优化叠加规模效应。",
+        "misclassification": "市场标签为「传统铝电解电容器原材料商、低技术附加值」；正在变成「AI服务器+新能源储能双线受益的全球市占率第一电极箔供应商，切入AI基础设施材料供应链核心层」",
+        "serenity_score": {
+          "demand_certainty": 4,
+          "transmission_clarity": 4,
+          "purity": 4,
+          "elasticity": 3,
+          "neglect": 4,
+          "verification_speed": 5,
+          "downside": 3
+        },
+        "brief_cn": [
+          "触发：2026-07-15南通海星电子股份有限公司披露H1 2026业绩预告——归母净利润9950-10380万元（同比+50-62%），扣非净利10532-11032万元（同比+62-70%，扣非>归母，利润干净）；驱动力为AI服务器用铝电解电容器电极箔实现批量交付（公司明确披露）、新能源储能高速增长与车载电子需求，以及新产能基地启用后高端品占比持续提升。华泰证券2026年6月15日首次覆盖，目标价159.34元（当时约107元，折价33%）。",
+          "需求已可观察：公司业绩预告明确注明'AI服务器用产品实现批量交付'，这是实际出货验证而非预测；铝电解电容器是AI服务器电源管理系统不可或缺的基础元件，800V DC高压架构在超算和AI集群中推广是结构性驱动；新能源储能装机+50%+年增速为高压电极箔提供第二条持续需求线；Q1净利+74.74% YoY已提前验证H1趋势。传导路径清晰：电极箔出货量×单价→产品收入，新产能固定成本分摊下降→毛利率持续改善。",
+          "市场误分类：铝电解电容器电极箔长期被市场视为低技术含量传统制造业，股价在AI行情中跑输；海星股份全球市占率第一且获得AI服务器厂商供应链认证，高端品认证形成技术壁垒；华泰6月首覆意味着机构认知仍处于早期，misclassification窗口尚未关闭。",
+          "先验给0.33的理由：七维总分27（26-30档，0.30-0.42）；向上取因demand_certainty=4（AI批量交付已进报表预告）、neglect=4（华泰6月首覆，机构认知早期）、verification_speed=5（中报8-31即见真章）；向下调因elasticity=3（市值约130亿，弹性中等）、downside=3（铝原材料成本上行+高端品认证集中度风险）；赌的是H2 AI服务器持续扩产+储能装机加速，全年扣非净利达2.3亿+，触发市场将其从传统材料升格为AI基础设施材料供应商并重估倍数。"
+        ]
+      },
+      "prior": {
+        "p": 0.33,
+        "log_odds": -0.7082,
+        "rationale": "七维总分27 → 26-30档（0.30-0.42）；取中位因demand_certainty=4+neglect=4+verification_speed=5；扣分项elasticity=3（市值约130亿）+downside=3",
+        "set_by": "daily-scan 2026-07-15"
+      },
+      "current": {
+        "p": 0.33,
+        "log_odds": -0.7082,
+        "last_reviewed": "2026-07-15",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "H1 2026中报扣非归母净利润及管理层H2 AI电极箔展望（截止8月31日）",
+          "confirm_if": "中报扣非净利 ≥ 1.05亿元（达预告下限10532万）且管理层指引H2 AI服务器电极箔出货量继续增长",
+          "falsify_if": "中报扣非净利 < 8000万元（低于预告下限25%），或公司披露AI服务器客户推迟采购导致H2展望大幅下调",
+          "check_by": "2026-08-31",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "H2 2026 AI服务器电极箔收入占比及ASP稳定性",
+          "confirm_if": "三季报或中报管理层披露AI服务器专用电极箔收入占比同比显著提升（≥+5pp），或AI产品ASP较通用品有明显溢价披露",
+          "falsify_if": "AI服务器大客户认证被取消，或竞品大幅降价导致ASP压缩超20%",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 3,
+        "review_deadline": "2027-04-15"
+      },
+      "baseline": {
+        "entry_date": "2026-07-15",
+        "entry_price": 107.0,
+        "benchmark": "510300.SS",
+        "benchmark_entry_price": 4.711,
+        "sector_benchmark": "512480.SS",
+        "sector_benchmark_entry_price": 2.3
+      },
+      "price_expectation": {
+        "confirm_target": 150.0,
+        "falsify_target": 65.0,
+        "expected_by": "2026-11-30",
+        "methodology_cn": "证实情景：H1中报扣非净利1.05亿兑现+H2继续维持50%+增速→FY2026E扣非净利约2.3亿（H1 1.05亿+H2 1.25亿）；AI+储能电子材料成长股给PE 55x→目标市值126亿；华泰首次覆盖目标价159.34元与之交叉验证→取保守值150元。证伪情景：AI服务器渗透不达预期或原材料成本上升，增速回落至<20%，退回传统电容器材料估值框架，FY2026E净利约1.5亿×PE 25x→市值约37.5亿→股价约65元（较107元下跌约39%）。",
+        "timeline_logic_cn": "V1判定点8-31中报（通常提前10-15天发布，约8-15可见）；成长型电子材料股重估在三季报确认趋势后1个月内完成→预期2026-11-30前到位；如8月中报单季达标且管理层量化AI出货，重估可能提前至9月。",
+        "set_at": "2026-07-15",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-07-15",
+          "p": 0.33,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-08-31",
+          "type": "earnings",
+          "note": "H1 2026中报披露截止日（V1判定点）；预计提前10-15天（约8-15前后）发布"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260715-003026.SZ",
+      "ticker": "003026.SZ",
+      "company": "浙江中晶科技股份有限公司",
+      "created_at": "2026-07-15",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-07-15",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：H1 2026业绩预告扣非净利+59-80%（生产紧张订单充足+募投产能释放）+ 半导体硅材料国产化+功率器件需求双轮驱动"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-07-15",
+          "headline": "中晶科技H1 2026业绩预告：归母净利4000-4500万元（+55-75%），扣非净利3800-4300万元（+59-80%），生产紧张订单充足、募投产能持续释放",
+          "url": "https://data.eastmoney.com/notices/detail/003026/",
+          "summary": "生产持续紧张订单充足、募投项目产能释放增产上量；技术创新提升产品盈利；半导体硅材料+功率芯片双轮受益国产化扩产与AI需求"
+        }
+      ],
+      "thesis": {
+        "one_liner": "半导体国产化+功率器件需求将在2-3个季度内推高其硅材料收入并驱动业绩持续超预期",
+        "demand_change": "公司明确披露'生产紧张、订单充足'并通过提升稼动率保障交付（产能使用率已达上限）；国内晶圆厂（中芯国际/芯联集成等）6英寸/8英寸功率器件产线持续扩产驱动上游硅片需求；AI数据中心电源管理用功率芯片（占营收31.5%）受益于AI训练集群快速扩张；国产替代政策加速本土半导体材料供应链自主化。",
+        "transmission": "半导体硅棒/硅片/功率芯片出货量×单价直接进产品收入；募投产能释放增量优先完成存量订单，固定成本摊薄拉动毛利率；硅片与功率芯片两条收入线同向受益，业绩弹性随产能增加放大。",
+        "misclassification": "市场标签为「2025年才勉强扭亏的小型半导体硅材料厂商，技术壁垒低」；正在变成「受益国内晶圆厂扩产+AI功率需求双轮驱动的订单满载半导体基础材料供应商，业绩弹性在产能释放周期内将持续放大」",
+        "serenity_score": {
+          "demand_certainty": 3,
+          "transmission_clarity": 4,
+          "purity": 4,
+          "elasticity": 4,
+          "neglect": 4,
+          "verification_speed": 5,
+          "downside": 3
+        },
+        "brief_cn": [
+          "触发：2026-07-15中晶科技披露H1 2026业绩预告，归母净利润4000-4500万元（同比+55-75%），扣非净利3800-4300万元（同比+59-80%）；理由为：生产持续紧张+订单充足+募投项目产能持续释放+技术创新提升盈利；市值约51亿元，是市场关注度极低的科创板半导体硅材料公司。注：2026年7月2日曾出现跌停（-10%，具体原因不明），本假设以H1预告新信号为核心触发。",
+          "需求已可观察：'生产紧张+订单充足'是实际产能backlog信号（产能使用率达上限仍无法满足需求），证明需求旺盛；国内半导体制造扩产带动6/8英寸硅片需求持续增加；功率芯片（31.5%营收）受AI数据中心电源管理需求+新能源汽车功率器件需求双线拉动；募投产能释放将在H2进一步扩大收入规模。传导路径：硅片/功率芯片出货量×单价→产品收入，高稼动率→固定成本分摊下降→毛利率改善。",
+          "市场误分类：中晶科技历史上以亏损小型半导体材料公司见于市场；2025年扣非净利+97.82%是重要拐点，2026年H1在订单满载和产能释放下持续加速，正从'亏损后弱复苏'转变为'订单持续满载的成长性半导体基础材料供应商'；机构覆盖极少，市值约51亿弹性高。",
+          "先验给0.30的理由：七维总分27（26-30档）；取低端因demand_certainty=3（'生产紧张+订单充足'是backlog信号但无具体大客户合同，指向性偏弱）；2026-07-02无明显原因跌停（市场情绪不稳）；downside=3（晶圆厂资本支出周期性，库存调整可压制需求）；elasticity=4（市值51亿，小盘弹性好）+neglect=4+verification_speed=5支撑入池；赌的是H2募投产能爬坡兑现订单，中报≥3800万扣非净利确认增长方向，最终支撑功率器件+硅材料双轮驱动成长逻辑。"
+        ]
+      },
+      "prior": {
+        "p": 0.3,
+        "log_odds": -0.8473,
+        "rationale": "七维总分27 → 26-30档；取低端因demand_certainty=3（无具体大客户合同，需求信号相对模糊）且7/2跌停增加不确定性；elasticity=4（市值51亿，小盘弹性好）支撑入池但不拉高先验",
+        "set_by": "daily-scan 2026-07-15"
+      },
+      "current": {
+        "p": 0.3,
+        "log_odds": -0.8473,
+        "last_reviewed": "2026-07-15",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "H1 2026中报归母净利润及扣非净利润（截止8月31日）",
+          "confirm_if": "中报归母净利润 ≥ 4000万元（达预告下限）且扣非净利 ≥ 3800万元，管理层指引H2订单仍充足",
+          "falsify_if": "中报归母净利润 < 3000万元（低于预告下限25%），或公司披露主要晶圆厂客户缩减订单导致H2 backlog下降",
+          "check_by": "2026-08-31",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "H2 2026功率芯片业务收入增速及硅片供需稳定性",
+          "confirm_if": "三季报披露H2功率芯片收入同比增速 ≥ +50%，或募投新产能使H2产能利用率进一步提升",
+          "falsify_if": "三季报披露H2订单量环比下降 ≥ 30%，或主要下游晶圆厂因库存调整推迟采购公告",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 3,
+        "review_deadline": "2027-04-15"
+      },
+      "baseline": {
+        "entry_date": "2026-07-15",
+        "entry_price": 39.6,
+        "benchmark": "510300.SS",
+        "benchmark_entry_price": 4.711,
+        "sector_benchmark": "512480.SS",
+        "sector_benchmark_entry_price": 2.3
+      },
+      "price_expectation": {
+        "confirm_target": 55.0,
+        "falsify_target": 22.0,
+        "expected_by": "2026-11-30",
+        "methodology_cn": "证实情景：H1中报兑现（扣非净利≥3800万）+H2募投产能继续释放→FY2026E扣非净利约9000万（H1 4050万+H2 4500-5000万）；功率器件+半导体硅材料成长股给PE 45x→目标市值40.5亿；约1.3亿股→约31元；进一步FY2027E净利1.7亿×PE 35x=59.5亿÷1.3亿股≈46元，取中偏高55元（对应FY2027E PE 40x）。证伪情景：订单H2见顶回落（晶圆厂库存调整），FY2026E净利降至5000万，PE 20x→市值10亿→约7.7元；保守取22元（约为当前39.60元的55%，对应7月2日跌停后底部区间支撑）。",
+        "timeline_logic_cn": "V1判定点8-31中报（通常提前10-15天发布，约8-15可见）；中报兑现后小盘半导体成长股重估通常在三季报进一步确认后1个月内完成→预期2026-11-30前到位。",
+        "set_at": "2026-07-15",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-07-15",
+          "p": 0.3,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-08-31",
+          "type": "earnings",
+          "note": "H1 2026中报披露截止日（V1判定点）；预计提前10-15天（约8-15前后）发布"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
         "post_mortem": null
       }
     }

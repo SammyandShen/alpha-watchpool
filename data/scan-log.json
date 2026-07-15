@@ -202,6 +202,28 @@
       "tickers": ["002497.SZ"],
       "action": "evidence_appended",
       "note": "T3价格信号：锂价¥16.3万/吨持续回升但仍低于V2确认线（月均≥¥18万/吨）；追加为002497.SZ pending证据E1"
+    },
+    {
+      "date": "2026-07-15",
+      "fingerprint": "2026-07-08+PENG+cfo-transition-guidance-reaffirmed",
+      "headline": "PENG CFO Nate Olmstead自愿离职（effective 7/8），Aaron Johnson接任interim CFO；同步重申FY26净销售额和EPS将达指引区间高端",
+      "tickers": ["PENG"],
+      "action": "evidence_appended",
+      "note": "T4叙事级：CFO主动离职无任何分歧，interim CFO为内部16年资深财务高管；重申FY26 non-GAAP EPS和收入均在区间高端，agentic AI驱动内存+基础设施需求极强；追加为PENG pending证据E1"
+    },
+    {
+      "date": "2026-07-15",
+      "fingerprint": "2026-07-15+603115.SS+h1-forecast-ai-electrode-foil",
+      "headline": "海星股份H1 2026业绩预告：归母净利9950-10380万元（+50-62%），扣非净利10532-11032万元（+62-70%），AI服务器用产品批量交付+新能源储能+车载电子景气驱动",
+      "tickers": ["603115.SS"],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-15",
+      "fingerprint": "2026-07-15+003026.SZ+h1-forecast-semiconductor-silicon-capacity",
+      "headline": "中晶科技H1 2026业绩预告：归母净利4000-4500万元（+55-75%），扣非净利3800-4300万元（+59-80%），生产紧张订单充足、募投产能持续释放",
+      "tickers": ["003026.SZ"],
+      "action": "new_hypothesis"
     }
   ]
 }
