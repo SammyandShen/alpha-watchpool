@@ -224,6 +224,45 @@
       "headline": "中晶科技H1 2026业绩预告：归母净利4000-4500万元（+55-75%），扣非净利3800-4300万元（+59-80%），生产紧张订单充足、募投产能持续释放",
       "tickers": ["003026.SZ"],
       "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-17",
+      "fingerprint": "2026-07-17+688531.SS+h1-forecast-xray-inspection-ssti-semiconductor",
+      "headline": "日联科技H1 2026业绩预告：扣非净利+82.71%（10900万元），归母+54.6%（12800万元），集成电路+高端电子景气+SSTI并购拓展高端半导体检测",
+      "tickers": ["688531.SS"],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-17",
+      "fingerprint": "2026-07-17+688400.SS+h1-zhipuai-equity-nonoperating-gain",
+      "headline": "凌云光H1 2026业绩预告：归母净利+590%（66250万元），主要来自持有智谱华章股权公允价值变动（非经常性收益），扣非净利仅+60%（13000万元）",
+      "tickers": ["688400.SS"],
+      "action": "skipped_watchlist_only",
+      "note": "归母净利暴增主要来自非经常性损益（智谱华章股权公允价值变动），扣非净利仅+60%（13000万元），非经常性驱动跳过"
+    },
+    {
+      "date": "2026-07-17",
+      "fingerprint": "2026-07-17+688041.SS+h1-haiguang-cpu-dcu-ai-domestication",
+      "headline": "海光信息H1 2026业绩预告：扣非净利+38-56%（151-170亿元），CPU+DCU AI大模型+国产化驱动",
+      "tickers": ["688041.SS"],
+      "action": "skipped_watchlist_only",
+      "note": "海光信息市值极大（千亿级），弹性极低，neglect≤1；AI国产算力叙事已被广泛定价；观察名单级"
+    },
+    {
+      "date": "2026-07-17",
+      "fingerprint": "2026-07-15+ASML+guidance-raise-second-2026-backlog",
+      "headline": "ASML Q2 2026财报+第二次上调全年指引：EPS $8.69超预期，全年销售指引上调至€43-45B，EUV 2027产能计划84台",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "大型公司（ASML），受益链条远；无高纯度小盘直接受益者达入池门槛（ASYS book-to-bill ~1.03x，Q3 guidance不加速，七维总分约26偏弱）"
+    },
+    {
+      "date": "2026-07-17",
+      "fingerprint": "2026-07-17+002497.SZ+lithium-price-16wan-stock-underperform",
+      "headline": "碳酸锂7月中旬约¥16-16.5万/吨（低于V2确认线¥18万/吨）；雅化集团股价¥17.45（较入池价¥22.41跌约22%）",
+      "tickers": ["002497.SZ"],
+      "action": "evidence_appended",
+      "note": "T3价格追踪：锂价缓慢回升但距确认线仍有约10%差距；「业绩热股市冷」市场分歧；追加为002497.SZ pending证据E2"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-07-15",
+  "$last_updated": "2026-07-17",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -143,9 +143,9 @@
       ],
       "events": [
         {
-          "date": "2026-08-07",
+          "date": "2026-08-06",
           "type": "earnings",
-          "note": "CY26Q2 财报（预估日期，待确认）— V1 第一个观测点"
+          "note": "CY26Q2 财报（Yahoo 官方排期确认 2026-08-06）— V1 第一个观测点"
         },
         {
           "date": "2026-07-02",
@@ -628,6 +628,21 @@
           "headline": "碳酸锂电池级现货价7月2日163,000元/吨，近5日涨幅+8.67%（从约15万/吨回升）",
           "url": "https://stock.100ppi.com/detail_chance-110138.html",
           "summary": "锂价¥16.3万/吨持续回升但仍低于V2确认门槛（月均≥¥18万/吨）；若Q3均价维持上行趋势则有望逐步接近验证线",
+          "type": "T3_soft_signal",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
+        },
+        {
+          "id": "E2",
+          "date": "2026-07-17",
+          "source": "生意社/市场综合 + FMP行情",
+          "headline": "碳酸锂7月中旬约¥16-16.5万/吨，仍低于V2确认线（月均≥¥18万/吨）；雅化集团股价¥17.45（较入池价¥22.41下跌约22%）；市场呈现「业绩热股市冷」分歧",
+          "url": "https://finance.sina.com.cn/roll/2026-07-10/doc-inihhkum8402980.shtml",
+          "summary": "锂价从6月底¥16万/吨缓慢回升，距V2确认线（¥18万/吨）仍差约10%；股价显著跑输入池价，市场对周期持续性存疑；基本面V1（中报净利≥11亿）尚未判定，Q3锂价走势是关键",
           "type": "T3_soft_signal",
           "likelihood": {
             "label": null,
@@ -1160,6 +1175,132 @@
         {
           "date": "2026-07-15",
           "p": 0.3,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-08-31",
+          "type": "earnings",
+          "note": "H1 2026中报披露截止日（V1判定点）；预计提前10-15天（约8-15前后）发布"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260717-688531.SS",
+      "ticker": "688531.SS",
+      "company": "日联科技集团股份有限公司",
+      "created_at": "2026-07-17",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-07-17",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：H1 2026业绩预告扣非净利+82.71%（10900万元），并购SSTI拓展高端半导体检测，集成电路+电子制造双线景气驱动"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-07-17",
+          "headline": "日联科技（688531）2026年半年度业绩预告：扣非净利约10900万元（+82.71% YoY），归母净利约12800万元（+54.6% YoY），集成电路+高端电子制造景气+并购并表驱动",
+          "url": "https://www.cfi.net.cn/p20260716002179.html",
+          "summary": "扣非增速高于归母增速（+82.71% vs +54.6%），主营业务增长干净；2026年1月完成新加坡SSTI 66%股权收购，进入3nm/2nm先进制程缺陷检测；国产替代+AI算力检测需求双轮拉动"
+        }
+      ],
+      "thesis": {
+        "one_liner": "半导体/电子检测需求景气+SSTI并购将在2-3个季度内持续改写其收入线并驱动利润超预期",
+        "demand_change": "H1 2026扣非净利10900万元（+82.71%）已进入业绩预告验证；下游集成电路+高端电子制造景气度高（公司明确披露）；2026年1月完成新加坡SSTI 66%股权收购，进入3nm/2nm先进制程缺陷定位/失效分析设备领域；国金证券预测2026E归母净利3.3亿（+87.6% YoY）。",
+        "transmission": "工业X射线检测设备出货量×ASP直接进产品收入线；SSTI并购后新增高附加值半导体缺陷检测/失效分析业务，高端品ASP显著高于通用检测设备；规模效应下固定成本分摊优化毛利率。",
+        "misclassification": "市场标签为「工业X射线检测设备商，传统制造仪器行业」；正在变成「半导体+电子制造检测全流程服务商，SSTI并购后覆盖3nm/2nm先进制程缺陷检测，国产替代+AI算力检测需求受益者」",
+        "serenity_score": {
+          "demand_certainty": 3,
+          "transmission_clarity": 3,
+          "purity": 4,
+          "elasticity": 4,
+          "neglect": 3,
+          "verification_speed": 5,
+          "downside": 3
+        },
+        "brief_cn": [
+          "触发：2026-07-17日联科技披露2026年H1业绩预告，扣非净利约10900万元（同比+82.71%），归母净利约12800万元（同比+54.6%）；扣非增速高于归母增速，主营业务增长干净；驱动因素：下游集成电路+高端电子制造景气度高+2026年1月完成SSTI 66%股权收购（高端半导体缺陷定位/失效分析，面向3nm/2nm先进制程）+国内收并购公司并表贡献。",
+          "需求已可观察：H1业绩预告是实际出货/交付的反映；半导体制造和高端电子在AI算力设备拉动下持续扩产，检测设备需求具有结构性增量（设备交付必须通过质量检测，需求刚性强）；SSTI覆盖的先进制程缺陷定位是全球极少数供应商能做的高壁垒细分，国产化替代空间大。传导路径：设备出货量×ASP→产品收入，SSTI高端品毛利率高于通用品→产品结构优化推动整体毛利率上行。",
+          "市场误分类：日联科技历史上被标签为「工业X射线检测设备商」，归类为低技术含量制造检测仪器行业；SSTI并购完成后，公司已触及3nm/2nm先进制程半导体检测（该赛道全球仅少数玩家），但市场标签滞后于业务实质，半导体设备估值框架的重构尚未发生。",
+          "先验只给0.25的理由：七维总分25（21-25档）取中偏低。扣分：demand_certainty=3（并购贡献比例不清晰，有机增长 vs SSTI并表增量不可分离）；transmission_clarity=3（SSTI并表仅半年，整合风险尚未消化，H2有机增速能否维持需验证）；neglect=3（国金等有覆盖，非完全被忽视）；downside=3（晶圆厂资本支出周期性+并购整合风险）。赌的是：H2中报兑现预告且管理层量化SSTI协同，市场将估值框架从「工业仪器」切换到「半导体设备」，触发倍数重估。"
+        ]
+      },
+      "prior": {
+        "p": 0.25,
+        "log_odds": -1.0986,
+        "rationale": "七维总分25 → 21-25档（0.22-0.32）；取中偏低因demand_certainty=3（并购贡献比例不透明）且transmission_clarity=3（SSTI整合仅半年，有机增长可持续性待验证）",
+        "set_by": "daily-scan 2026-07-17"
+      },
+      "current": {
+        "p": 0.25,
+        "log_odds": -1.0986,
+        "last_reviewed": "2026-07-17",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "H1 2026中报扣非净利润（截止8月31日）及管理层H2展望",
+          "confirm_if": "中报扣非净利 ≥ 10900万元（达预告下限）且管理层指引H2检测设备出货量继续增长",
+          "falsify_if": "中报扣非净利 < 8500万元（低于预告下限22%，预告不兑现）或公司披露SSTI整合重大障碍导致H2展望大幅下调",
+          "check_by": "2026-08-31",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "SSTI并购整合效果：H2半导体缺陷检测收入可量化或大客户合同",
+          "confirm_if": "三季报或中报管理层披露SSTI业务收入贡献 ≥ 3000万元，或签署先进制程半导体客户新合同",
+          "falsify_if": "公司披露SSTI整合受阻、关键客户流失或收购资产出现减值迹象",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 3,
+        "review_deadline": "2027-04-17"
+      },
+      "baseline": {
+        "entry_date": "2026-07-17",
+        "entry_price": 78.0,
+        "benchmark": "510300.SS",
+        "benchmark_entry_price": 4.711,
+        "sector_benchmark": "512480.SS",
+        "sector_benchmark_entry_price": 2.3
+      },
+      "price_expectation": {
+        "confirm_target": 105.0,
+        "falsify_target": 31.0,
+        "expected_by": "2026-11-30",
+        "methodology_cn": "证实情景：中报扣非净利兑现（≥10900万）+ H2增速维持 → 2026E归母净利约3.3亿（国金预测）；半导体检测设备成长股PE 45x → 目标市值约148亿CNY；较当前约110亿市值有约35%上行空间 → entry_price ¥78 × 1.35 ≈ ¥105（price为估算值，待sync-prices.py回填实际收盘价后按相同比例校正revisions[]）。证伪情景：并购整合失败或H2有机增速崩塌，2026E净利回落至2025水平（1.76亿）；退回工业仪器估值框架PE 25x → 市值约44亿CNY，较当前110亿下跌约60% → entry_price ¥78 × 0.40 ≈ ¥31。",
+        "timeline_logic_cn": "V1判定点8-31中报（通常提前10-15天发布，约8-15可见）；中报兑现后A股半导体检测成长股重估通常在三季报进一步确认趋势后1个月内完成 → 预期2026-11-30前到位；如中报同时量化SSTI协同，重估可能提前至9月。",
+        "set_at": "2026-07-17",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-07-17",
+          "p": 0.25,
           "note": "prior"
         }
       ],

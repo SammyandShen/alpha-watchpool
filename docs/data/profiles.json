@@ -1,5 +1,5 @@
 {
-  "$last_updated": "2026-07-15T14:04:35+08:00",
+  "$last_updated": "2026-07-17T08:16:59+08:00",
   "source": "yahoo-quote-summary",
   "profiles": {
     "OUST": {
@@ -11,10 +11,10 @@
       "website": "https://ouster.com",
       "description_en": "Ouster, Inc. engages in the production and sale of lidar sensor kits for the automotive, industrial, robotics, and smart infrastructure industries in the Americas, the Asia-Pacific, Europe, the Middle East, and Africa. The company offers the Outer Sensor (OS) product line, including OSDome that provides a hemispheric field of view; OS0 for wide view; OS1, for mid-range view; and OS2 for long-range view. It also provides the DF series, a suite of short, mid, and long-range solid-state digital lidar sensors for advanced driver assistance systems (ADAS) and autonomous driving systems; Velodyne that offers surround-view lidar sensors comprising VLP-16, VLP-16 Lite, VLP-16 Hi-Res, VLP-32, and VLS-128; Ouster Gemini, a perception platform designed for smart infrastructure deployments; and BlueCity, a Gemini-powered solution for traffic operations, planning, and safety. In addition, the company offers ZED, a high-performance camera that provides 2D and 3D color data, as well as AI Compute. Further, it is developing solid-state digital flash sensors, a suite of short, mid, and long-range solid-state digital lidar sensors that provide uniform precision imaging without motion blur across an entire field of view. Ouster, Inc. was founded in 2015 and is headquartered in San Francisco, California.",
       "currency": "USD",
-      "market_cap": 2824363776,
+      "market_cap": 2364740096,
       "trailing_pe": null,
-      "forward_pe": -932.6667,
-      "ps_ttm": 15.239647,
+      "forward_pe": -780.88885,
+      "ps_ttm": 12.759619,
       "revenue_ttm": 185330000,
       "revenue_growth": 0.489,
       "gross_margin": 0.47694,
@@ -25,7 +25,7 @@
       "free_cashflow": -46808624,
       "week52_low": 16.4,
       "week52_high": 63.79,
-      "fetched_at": "2026-07-15T14:04:22+08:00"
+      "fetched_at": "2026-07-17T08:16:52+08:00"
     },
     "POWL": {
       "next_earnings_date": "2026-08-04",
@@ -36,10 +36,10 @@
       "website": "https://www.powellind.com",
       "description_en": "Powell Industries, Inc., together with its subsidiaries, designs, develops, manufactures, sells, and services custom-engineered equipment and systems. The company's products portfolio includes integrated power control room substations, custom-engineered modules, and electrical houses; and traditional and arc-resistant distribution switchgears and control gears, medium-voltage circuit breakers, monitoring and control communications systems, motor control centers, switches, and bus duct systems. It also provides field service inspection, installation, commissioning, modification, and repair services; spare parts; retrofit and retrofill components for existing systems; and replacement circuit breakers for switchgears. The company serves onshore and offshore production, liquefied natural gas facilities and terminals, pipelines and refineries, petrochemical, electric utility, light rail traction power, mining and metals, pulp and paper, data centers, commercial construction, and other industrial markets, as well as universities and government entities. It operates in the United States, Canada, the Middle East, Africa, Europe, Mexico, the Asia/Pacific, and Central and South America. Powell Industries, Inc. was founded in 1947 and is headquartered in Houston, Texas.",
       "currency": "USD",
-      "market_cap": 8534113792,
-      "trailing_pe": 44.03195,
-      "forward_pe": 34.075207,
-      "ps_ttm": 7.5386033,
+      "market_cap": 8590218240,
+      "trailing_pe": 46.142853,
+      "forward_pe": 34.29922,
+      "ps_ttm": 7.588163,
       "revenue_ttm": 1132055040,
       "revenue_growth": 0.065,
       "gross_margin": 0.30103,
@@ -50,7 +50,7 @@
       "free_cashflow": 142181632,
       "week52_low": 69.0,
       "week52_high": 328.0,
-      "fetched_at": "2026-07-15T14:04:24+08:00"
+      "fetched_at": "2026-07-17T08:16:53+08:00"
     },
     "002326.SZ": {
       "next_earnings_date": null,
@@ -61,10 +61,10 @@
       "website": "https://yongtaitech.com",
       "description_en": "Zhejiang Yongtai Technology Co.,Ltd. engages in the manufacture and sale of fluorinated pharmaceuticals, crop science, and new energy materials in China and internationally. Its products include fluorinated polymers, fluorinated fine chemicals, refrigerants, foaming agents, fire extinguishers, etc. The company also trades in herbicides, fungicides, insecticides, and other pesticide active ingredients and formulations; and lithium carbonate. In addition, it provides fluorinated intermediates; pharmaceutical APIs; and lithium battery and other materials products comprising lithium battery materials, fluoro liquid-crystal intermediates, fluorinated liquid, etc. Zhejiang Yongtai Technology Co.,Ltd. was founded in 1999 and is headquartered in Linhai, China.",
       "currency": "CNY",
-      "market_cap": 16920585216,
-      "trailing_pe": 365.80002,
-      "forward_pe": 5.61043,
-      "ps_ttm": 2.894205,
+      "market_cap": 16791065600,
+      "trailing_pe": 363.0,
+      "forward_pe": 5.5674844,
+      "ps_ttm": 2.8720512,
       "revenue_ttm": 5846367232,
       "revenue_growth": 0.597,
       "gross_margin": 0.19556999,
@@ -75,7 +75,7 @@
       "free_cashflow": 192748608,
       "week52_low": 12.88,
       "week52_high": 33.0,
-      "fetched_at": "2026-07-15T14:04:26+08:00"
+      "fetched_at": "2026-07-17T08:16:54+08:00"
     },
     "002497.SZ": {
       "next_earnings_date": null,
@@ -86,10 +86,10 @@
       "website": "https://www.scyahua.com",
       "description_en": "Sichuan Yahua Industrial Group Co., Ltd., together with its subsidiaries, engages in lithium and civil explosive businesses in China and internationally. The company offers industrial explosives, industrial detonators, and industrial detonating cords for various fields, including water conservancy and hydropower, transportation construction, urban renovation, geological exploration, and explosive processing. It is also involved in the provision of processing, blasting design, consulting, and supervision services, as well as integrated on-site mixed explosive blasting, integrated mining, and urban demolition services; transportation services for civil explosives, hazardous chemicals, hazardous waste, radioactive materials, and general cargo; and logistics, warehousing, and automobile repair services. In addition, the company engages in lithium mining and processing; research and development, production, sales, and trading of lithium salt products, such as battery-grade lithium hydroxide, battery-grade lithium carbonate, and lithium phosphate. The company was founded in 1952 and is based in Chengdu, China.",
       "currency": "CNY",
-      "market_cap": 20895959040,
-      "trailing_pe": 23.24359,
-      "forward_pe": 7.9170303,
-      "ps_ttm": 2.1243117,
+      "market_cap": 20112218112,
+      "trailing_pe": 22.371798,
+      "forward_pe": 7.6200876,
+      "ps_ttm": 2.0446355,
       "revenue_ttm": 9836578816,
       "revenue_growth": 0.842,
       "gross_margin": 0.22871,
@@ -98,9 +98,9 @@
       "total_cash": 2603001088,
       "total_debt": 1158887296,
       "free_cashflow": 592333376,
-      "week52_low": 11.4,
+      "week52_low": 11.43,
       "week52_high": 32.0,
-      "fetched_at": "2026-07-15T14:04:28+08:00"
+      "fetched_at": "2026-07-17T08:16:55+08:00"
     },
     "688620.SS": {
       "next_earnings_date": null,
@@ -111,10 +111,10 @@
       "website": "https://www.anyka.com",
       "description_en": "Guangzhou Anyka Microelectronics Co., Ltd. engages in the design and sale of AI System-on-a-Chip (SoC) chips that enable AI hardware in China. The company offers IoT camera chips, including the AK39AV130 series multi-view low-power intelligent camera chip, KM01 series AOV low-power intelligent vision chip, and KM02 series edge computing intelligent vision chip; low-power Bluetooth chips comprising AK1080 and AK1090 Bluetooth audio chips and SF32LB series chips for wearable devices; human interaction chips that include the AK2659 vision processing chip; and power management chips, such as the AK5301 chip, a photovoltaic charging management device. It also provides smart door lock and glasses solutions, as well as multimodal intelligent terminal solutions. The company was founded in 2001 and is based in Guangzhou, China.",
       "currency": "CNY",
-      "market_cap": 6201439744,
+      "market_cap": 5993679872,
       "trailing_pe": null,
       "forward_pe": null,
-      "ps_ttm": 10.602468,
+      "ps_ttm": 10.247265,
       "revenue_ttm": 584905344,
       "revenue_growth": 0.471,
       "gross_margin": 0.14101,
@@ -125,7 +125,7 @@
       "free_cashflow": -291374176,
       "week52_low": 10.0,
       "week52_high": 18.5,
-      "fetched_at": "2026-07-15T14:04:30+08:00"
+      "fetched_at": "2026-07-17T08:16:56+08:00"
     },
     "PENG": {
       "next_earnings_date": null,
@@ -136,10 +136,10 @@
       "website": "https://www.penguinsolutions.com",
       "description_en": "Penguin Solutions, Inc. designs, builds, deploys and manages enterprise solutions worldwide. The company operates through three segments: Advanced Computing, Integrated Memory, and Optimized LED. It offers hardware, software, and services focusing on technical computing for core and cloud environments through computing and AI solutions. The company also provides Penguin Solutions OriginAI, an AI infrastructure solution for customers deploying GPUs at scale; continuous availability of customers critical data and applications in data centers and edge locations under the Stratus brand products; and dynamic random-access memory, modules, solid-state/flash storage, and integrated memory solutions to networking and telecom, data analytics, AI, and ML under the SMART Modular Technologies brand. In addition, it provides Zefr, a memory module; Altus and AMD EPYC based servers for expansive memory for AI workloads; flash memory products comprising solid-state drives, Serial Advanced Technology Attachment, and PCIe NVMe products in 2.5 enclosures, M.2, EDSFF, and other form factors; and multimediacard and embedded and removable USB products, SD and microSD Card configurations, and firmware development. Further, the company offers procurement, logistics, inventory management, temporary warehousing, programming, kitting, and packaging supply chain services; and LEDs under the Cree LED brand; Cree LED XLamp and J Series packaged LED components. It serves OEMs, enterprises, government, and other customers through direct and third-party channels. The company has a strategic collaboration with Deepgram, Dell Technologies, and ZulaFly to offer healthcare, location-based workflow, and safety solutions. The company was formerly known as SMART Global Holdings, Inc. and changed its name to Penguin Solutions, Inc. in October 2024. Penguin Solutions, Inc. was founded in 1988 and is headquartered in Fremont, California.",
       "currency": "USD",
-      "market_cap": 3986682112,
-      "trailing_pe": 55.57143,
-      "forward_pe": 23.264576,
-      "ps_ttm": 2.6530037,
+      "market_cap": 3380481024,
+      "trailing_pe": 47.460434,
+      "forward_pe": 19.727045,
+      "ps_ttm": 2.2495973,
       "revenue_ttm": 1502705024,
       "revenue_growth": 0.476,
       "gross_margin": 0.27924,
@@ -150,7 +150,7 @@
       "free_cashflow": -107568000,
       "week52_low": 16.04,
       "week52_high": 89.86,
-      "fetched_at": "2026-07-15T14:04:31+08:00"
+      "fetched_at": "2026-07-17T08:16:56+08:00"
     },
     "603115.SS": {
       "next_earnings_date": null,
@@ -161,10 +161,10 @@
       "website": "https://www.haistar.com.cn",
       "description_en": "Nantong Haixing Electronics Co., Ltd. engages in the research, development, production, and sale of electrode foils for aluminum electrolytic capacitors in the People's Republic of China and internationally. Its products are used in consumption electronics, intelligence terminal, industrial control, 5G and industrial internet, new energy generation, and new energy vehicle applications. The company was incorporated in 1998 and is headquartered in Nantong, the People's Republic of China.",
       "currency": "CNY",
-      "market_cap": 22111203328,
-      "trailing_pe": 100.450554,
+      "market_cap": 19607635968,
+      "trailing_pe": 89.07692,
       "forward_pe": null,
-      "ps_ttm": 9.130069,
+      "ps_ttm": 8.096306,
       "revenue_ttm": 2421800192,
       "revenue_growth": 0.25,
       "gross_margin": 0.22358999,
@@ -173,9 +173,9 @@
       "total_cash": 682267904,
       "total_debt": 487404320,
       "free_cashflow": -275532320,
-      "week52_low": 14.63,
+      "week52_low": 15.24,
       "week52_high": 132.5,
-      "fetched_at": "2026-07-15T14:04:33+08:00"
+      "fetched_at": "2026-07-17T08:16:57+08:00"
     },
     "003026.SZ": {
       "next_earnings_date": null,
@@ -186,10 +186,10 @@
       "website": "https://www.mtcn.net",
       "description_en": "Zhejiang MTCN Technology Co.,Ltd. engages in the manufacturing and selling of crystalline silicon and electronic components in China. It provides semiconductor monocrystalline silicon wafers and rods, and high voltage rectifier devices. The company was founded in 2010 and is based in Huzhou, China.",
       "currency": "CNY",
-      "market_cap": 6541821440,
-      "trailing_pe": 129.03703,
-      "forward_pe": 72.583336,
-      "ps_ttm": 14.62157,
+      "market_cap": 6012317184,
+      "trailing_pe": 118.59259,
+      "forward_pe": 66.708336,
+      "ps_ttm": 13.43808,
       "revenue_ttm": 447408960,
       "revenue_growth": 0.185,
       "gross_margin": 0.33279,
@@ -200,7 +200,32 @@
       "free_cashflow": 3177057,
       "week52_low": 19.910343,
       "week52_high": 49.8,
-      "fetched_at": "2026-07-15T14:04:34+08:00"
+      "fetched_at": "2026-07-17T08:16:58+08:00"
+    },
+    "688531.SS": {
+      "next_earnings_date": null,
+      "name": "Unicomp Technology Group Co., Ltd.",
+      "sector": "Technology",
+      "industry": "Scientific & Technical Instruments",
+      "employees": 1302,
+      "website": "https://www.unicomp.cn",
+      "description_en": "Unicomp Technology Group Co., Ltd. engages in the research, development, manufacture, and sale of X-ray technology and intelligent detection equipment in China. It offers electronics, semicon, lithium battery, industrial NDT, food beverage, chip counter, electrical x-ray, industrial CT, and x-ray source products. Its products has applications in electronics, semicon, battery, foundries, automotive, welding, military, science and research industries. Unicomp Technology Group Co., Ltd. was formerly known as Wuxi Unicomp Technology Co., Ltd. and changed its name to Unicomp Technology Group Co., Ltd. in June 2025. The company was founded in 2002 and is based in Shenzhen, China.",
+      "currency": "CNY",
+      "market_cap": 23597135872,
+      "trailing_pe": 125.0,
+      "forward_pe": 42.664673,
+      "ps_ttm": 20.093597,
+      "revenue_ttm": 1174360960,
+      "revenue_growth": 0.483,
+      "gross_margin": 0.43620998,
+      "operating_margin": 0.12583,
+      "profit_margin": 0.15742,
+      "total_cash": 1230458624,
+      "total_debt": 192663920,
+      "free_cashflow": -41934600,
+      "week52_low": 45.6,
+      "week52_high": 215.0,
+      "fetched_at": "2026-07-17T08:16:59+08:00"
     }
   }
 }
