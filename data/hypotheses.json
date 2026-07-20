@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-07-17",
+  "$last_updated": "2026-07-20",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -125,6 +125,21 @@
           "headline": "Ouster BlueCity已在全球积累超700个签约站点；FIFA世界杯决赛7/19 MetLife Stadium提供高能见度基建验证事件",
           "url": "https://www.stocktitan.net/news/OUST/",
           "summary": "最新报道确认BlueCity全球签约站点超700个，NJDOT MetLife部署（40+路段）将在7/19世界杯决赛期间接受百万观众流量压力测试，是BABA基建商业化的公开演示",
+          "type": "T3_soft_signal",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
+        },
+        {
+          "id": "E3",
+          "date": "2026-07-14",
+          "source": "BusinessWire / Investing.com / Yahoo Finance",
+          "headline": "Ouster Q1 2026收入$49M(+49% YoY)超预期；Q2指引$49.5-52.5M(+48% midpoint YoY)；Q2财报日8/6官方确认；Roth Capital Partners和MKM新覆盖买入/$75目标价",
+          "url": "https://www.stocktitan.net/sec-filings/OUST/8-k-ouster-inc-reports-material-event-f37a1e7cdabb.html",
+          "summary": "Q1实际$49M(+49% YoY)，毛利率43%；Q2指引$49.5-52.5M(+48% midpoint YoY)均高于V1确认线(≥+30%)；两家新分析师给出买入/$75目标价（vs入池价$49.84+50%）",
           "type": "T3_soft_signal",
           "likelihood": {
             "label": null,
@@ -650,6 +665,21 @@
             "log_lr": null
           },
           "pending": true
+        },
+        {
+          "id": "E3",
+          "date": "2026-07-20",
+          "source": "SMM上海有色网 / 生意社",
+          "headline": "碳酸锂电池级现货价7/20约¥15.5万/吨（跌2.21%），较前次记录(7/17 ¥16-16.5万)进一步走低；雅化集团股价¥16.47（较入池价¥22.41下跌约26.5%）",
+          "url": "https://hq.smm.cn/h5/Li2CO3-battery-price",
+          "summary": "锂价¥15.5万/吨，持续偏离V2确认线（月均≥¥18万/吨），当前距确认线约-14%；「业绩热市场冷」格局延续，股价跑输基准",
+          "type": "T3_soft_signal",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -777,7 +807,23 @@
         "set_at": "2026-07-10",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-07-09",
+          "source": "同花顺机构调研记录",
+          "headline": "安凯微7/9接受多家机构调研（国投证券、万家基金、Point72、招商证券香港等），公司确认「部分品类订单非常旺盛」；AI眼镜/AI音频/AI学习机等产品已获客户项目或实现出货",
+          "url": "https://fund.10jqka.com.cn/20260710/c678103114.shtml",
+          "summary": "国际对冲基金Point72等顶级机构调研，公司确认AI硬件部分品类订单积压旺盛；AI眼镜/可穿戴/AI耳机产品获客户项目或已批量出货——H1预告+84-87%的订单支撑可见",
+          "type": "T3_soft_signal",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-07-10",
@@ -1314,6 +1360,134 @@
       "links": {
         "supersedes": null,
         "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260720-301536.SZ",
+      "ticker": "301536.SZ",
+      "company": "星宸科技股份有限公司",
+      "created_at": "2026-07-20",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-07-20",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：H1 2026业绩预告归母净利+583-650%（8.2-9亿）、扣非+632-715%、营收+87-94%（26.2-27.2亿），SSR670端边侧AI SoC大规模商用，管理层指引「逐季向好」"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-07-18",
+          "headline": "星宸科技2026年H1业绩预告：归母净利8.2-9亿元（+583-650% YoY），扣非净利7-7.8亿元（+632-715% YoY），营业收入26.2-27.2亿元（+87-94% YoY），端边侧AI应用爆发+SSR670量产驱动",
+          "url": "https://www.cfi.net.cn/p20260718000245.html",
+          "summary": "H1业绩全面超预期，量价齐升；SSR670系列芯片大规模商用落地，具身智能/服务机器人/AI眼镜/车载边缘计算等下游集中放量；供应链体系稳定，管理层指引后续逐季向好"
+        }
+      ],
+      "thesis": {
+        "one_liner": "端边侧AI SoC需求爆发+SSR670量产将在2-3个季度内持续推高其收入并驱动全年业绩超预期",
+        "demand_change": "H1 2026营收+87-94% YoY、归母净利+583-650%已进入预告验证（已发生事实非预测）；端边侧AI终端（具身智能/服务机器人/家庭智能体/车载边缘计算/AI眼镜）在2026年上半年进入规模化落地爆发期；公司核心产品SSR670系列已「大规模商用落地」，多个下游赛道需求集中放量；管理层明确表示「后续经营业绩将保持逐季向好」。",
+        "transmission": "AI SoC芯片出货量×ASP直接进产品收入线；高附加值端边侧AI芯片出货占比持续提升→产品结构优化→整体毛利率改善；自主可控供应链体系稳定承接核心客户订单，规模效应放大利润弹性。",
+        "misclassification": "市场标签为「视觉AI芯片商，主要做安防摄像头，业绩一般」；正在变成「端边侧AI SoC全场景龙头，机器人/车载/AI眼镜/边缘计算等多赛道共振，业绩进入爆发式兑现阶段」",
+        "serenity_score": {
+          "demand_certainty": 4,
+          "transmission_clarity": 4,
+          "purity": 4,
+          "elasticity": 3,
+          "neglect": 3,
+          "verification_speed": 5,
+          "downside": 3
+        },
+        "brief_cn": [
+          "触发：2026-07-18（周六）星宸科技披露H1 2026业绩预告，归母净利8.2-9亿元（+583-650% YoY，扣非净利+632-715% YoY），营业收入26.2-27.2亿元（+87-94% YoY）；量价同步创历史新高；公司SSR670系列芯片「大规模商用落地」（原文：在边缘计算场景获得市场广泛认可），具身智能/服务机器人/家庭智能体/车载边缘AI/AI眼镜等下游集中放量，供应链稳定无缺货。7/20（今天）为A股第一交易日反应。",
+          "需求已可观察：H1业绩预告是已出货/交付的真实反映，非预测；端边侧AI终端市场进入2026年规模化爆发期，AI眼镜已是消费电子增速最快品类之一，服务机器人/家庭智能体/工业边缘AI同步爆发；管理层指引「后续逐季向好」暗示H2需求能见度强。财务传导路径短：出货量×ASP→产品收入，高附加值AI SoC占比提升拉动整体毛利率，固定成本分摊随规模放大。",
+          "市场误分类：星宸科技长期被定价为「视觉AI芯片/安防SoC」赛道，市场对其端边侧AI的多赛道覆盖认知滞后；SSR670已在边缘计算商用，且车载激光雷达芯片预计2027年进入千万级量产——这是目前市场定价中尚未充分反映的新成长曲线；机构覆盖相对稀少（总股本4.22亿股，市值约300亿），misclassification窗口尚存。",
+          "先验给0.33的理由：七维总分26（26-30档）；取偏低因elasticity=3（市值约300亿，非小盘；H1预告发布后当天可能已有强烈反应，upside被部分捕获）、neglect=3（AI芯片热门赛道，7/18预告两天内已有讨论）；demand_certainty=4+transmission_clarity=4+verification_speed=5支撑入池；赌的是H2延续「逐季向好」，中报兑现预告后市场将估值框架从「安防SoC PE 25x」切换到「端边侧AI SoC成长股 PE 40-50x」，触发重估。"
+        ]
+      },
+      "prior": {
+        "p": 0.33,
+        "log_odds": -0.7082,
+        "rationale": "七维总分26 → 26-30档（0.30-0.42）；取偏低因elasticity=3（市值约300亿）且neglect=3（H1预告发布后AI芯片热门标的已有市场关注）；demand_certainty=4+verification_speed=5支撑入池",
+        "set_by": "daily-scan 2026-07-20"
+      },
+      "current": {
+        "p": 0.33,
+        "log_odds": -0.7082,
+        "last_reviewed": "2026-07-20",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "H1 2026中报正式归母净利润及营业收入（截止8月31日）",
+          "confirm_if": "中报归母净利润 ≥ 8.2亿元（达预告下限）且营业收入 ≥ 26.2亿元（达预告下限），且管理层指引H2出货量或收入继续增长",
+          "falsify_if": "中报归母净利润 < 6.5亿元（低于预告下限21%，预告不兑现）或管理层承认H2主要客户需求放缓/大客户流失",
+          "check_by": "2026-08-31",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "Q3 2026单季度归母净利润环比H1平均（=H1净利/2=约4.1亿）",
+          "confirm_if": "三季报Q3净利 ≥ 4亿元（环比H1均值维持）或公司公告新增车载激光雷达/机器人芯片大客户量产合同",
+          "falsify_if": "三季报Q3净利 < 2亿元（环比H1均值降幅超50%，AI终端需求明显减速）",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 3,
+        "review_deadline": "2027-04-20"
+      },
+      "baseline": {
+        "entry_date": "2026-07-20",
+        "entry_price": 72.0,
+        "benchmark": "510300.SS",
+        "benchmark_entry_price": 4.642,
+        "sector_benchmark": "512480.SS",
+        "sector_benchmark_entry_price": 1.06
+      },
+      "price_expectation": {
+        "confirm_target": 160.0,
+        "falsify_target": 45.0,
+        "expected_by": "2026-11-30",
+        "methodology_cn": "证实情景：H1中报兑现（归母净利≥8.2亿）+H2维持逐季向好（全年净利约16亿）；EPS≈3.79元（4.22亿股）；端边侧AI SoC成长股给PE 42x → 目标市值约672亿 ÷ 4.22亿股 ≈ 159元，取160元。交叉验证：2027E净利约20亿（+25% H2业绩继续增长）× PE 35x = 700亿 ÷ 4.22亿 ≈ 166元，两法收敛于¥160区间。证伪情景：AI终端需求H2不持续（AI眼镜/机器人需求走弱）或IC竞争压价，全年净利回落至10亿；PE回落至视觉SoC行业中枢20x → 目标市值200亿 ÷ 4.22亿 ≈ 47元，取45元。注：entry_price=72.0元为估算值（预告7/18周六发布，7/20为A股第一交易日，预估pre-ann约60元×涨停+20%≈72元），待sync-prices.py回填校正后按同比例更新目标价revisions[]。",
+        "timeline_logic_cn": "V1判定点8-31中报（通常提前10-15天发布，约8-15可见）；中报兑现后AI芯片成长股A股通常在三季报（10-31）进一步确认后1个月内完成倍数重估 → 预期2026-11-30前到位。",
+        "set_at": "2026-07-20",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-07-20",
+          "p": 0.33,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-08-31",
+          "type": "earnings",
+          "note": "H1 2026中报披露截止日（V1判定点）；预计提前10-15天（约8-15前后）发布，通常先发业绩快报"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": [
+          "H20260710-688620.SS"
+        ]
       },
       "resolution": {
         "outcome": null,

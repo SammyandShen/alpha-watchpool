@@ -2,70 +2,6 @@
   "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate | skipped_daily_cap",
   "entries": [
     {
-      "date": "2026-07-05",
-      "fingerprint": "2026-06-30+OUST+baba-compliance",
-      "headline": "Ouster Rev8 BABA compliance",
-      "tickers": [
-        "OUST"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
-      "date": "2026-07-05",
-      "fingerprint": "2026-06-23+OUST+aim-supply-agreement",
-      "headline": "Ouster-AIM lidar supply agreement expansion",
-      "tickers": [
-        "OUST"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
-      "date": "2026-07-05",
-      "fingerprint": "2026-07-02+OUST+offering-200m",
-      "headline": "Ouster $200M offering priced at $55.22",
-      "tickers": [
-        "OUST"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
-      "date": "2026-07-05",
-      "fingerprint": "2026-07-03+PJM+grid-emergency",
-      "headline": "PJM escalates emergency actions to avoid blackouts",
-      "tickers": [
-        "POWL"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
-      "date": "2026-07-05",
-      "fingerprint": "2026-06-30+NVTS+q1-acceleration-ai-power",
-      "headline": "Navitas Q1 CY26 revenue acceleration / AI DC power pivot",
-      "tickers": [
-        "NVTS"
-      ],
-      "action": "skipped_daily_cap",
-      "note": "七维总分 21（neglect=1, downside=1，~100x 市销率已充分定价），排第 3，低于每日 2 条上限；观察名单级"
-    },
-    {
-      "date": "2026-07-05",
-      "fingerprint": "2026-07-04+SKT+15gw-ai-dc",
-      "headline": "SK Telecom 15GW AI data center buildout",
-      "tickers": [],
-      "action": "skipped_watchlist_only",
-      "note": "5GW 2029 年起分期激活 — 传导距离远、无 1-4 季度可验证财务路径，纯规划"
-    },
-    {
-      "date": "2026-07-05",
-      "fingerprint": "2026-07-04+OUST+sa-physical-ai-article",
-      "headline": "Ouster: Funded For Physical AI Scaling (Seeking Alpha)",
-      "tickers": [
-        "OUST"
-      ],
-      "action": "skipped_duplicate",
-      "note": "与入池三条 source_news 同源（融资+扩产叙事），T4 叙事级不单独记证据"
-    },
-    {
       "date": "2026-07-06",
       "fingerprint": "2026-06-30+002326.SZ+h1-forecast-catl-vc-contract",
       "headline": "永太科技 H1 2026 业绩预告净利润+351-461% + CATL框架合同2027-2029年VC供货",
@@ -106,14 +42,18 @@
       "date": "2026-07-07",
       "fingerprint": "2026-07-07+002497.SZ+h1-forecast-lithium-q2-acceleration",
       "headline": "雅化集团H1 2026业绩预告净利润+710-857% A股首份锂矿中报 Q2单季环比+125-184%",
-      "tickers": ["002497.SZ"],
+      "tickers": [
+        "002497.SZ"
+      ],
       "action": "new_hypothesis"
     },
     {
       "date": "2026-07-07",
       "fingerprint": "2026-07-04+603618.SS+h1-fiber-optic-1087pct-halted",
       "headline": "杭电股份H1 2026业绩预告扣非净利+1087%光纤量价齐升（年初已涨6倍+今日跌停）",
-      "tickers": ["603618.SS"],
+      "tickers": [
+        "603618.SS"
+      ],
       "action": "skipped_watchlist_only",
       "note": "七维总分23（neglect=1，年初涨6倍今日跌停），先验≤0.18弱假设档，观察名单级"
     },
@@ -121,7 +61,9 @@
       "date": "2026-07-07",
       "fingerprint": "2026-07-06+POWL+zacks-investor-search-volume",
       "headline": "POWL listed as heavily searched by Zacks investors",
-      "tickers": ["POWL"],
+      "tickers": [
+        "POWL"
+      ],
       "action": "evidence_appended",
       "note": "T4叙事级，追加为POWL pending证据；关注度上升但无新基本面信息"
     },
@@ -137,7 +79,9 @@
       "date": "2026-07-09",
       "fingerprint": "2026-06-09+OUST+bluecity-njdot-world-cup",
       "headline": "Ouster completes NJDOT BlueCity deployment at 40+ MetLife Stadium highway sites for FIFA World Cup",
-      "tickers": ["OUST"],
+      "tickers": [
+        "OUST"
+      ],
       "action": "evidence_appended",
       "note": "T3商业化验证：政府付费合同落地执行，BABA合规后首个标志性联邦基建部署（永久性ATMS集成），记为OUST pending证据E1"
     },
@@ -145,7 +89,9 @@
       "date": "2026-07-09",
       "fingerprint": "2026-05-06+POWL+q2fy26-400m-dc-order-backlog",
       "headline": "Powell Industries Q2 FY26 earnings: $400M+ record data center order post-quarter, new orders +97% YoY, backlog $1.8B +33%",
-      "tickers": ["POWL"],
+      "tickers": [
+        "POWL"
+      ],
       "action": "evidence_appended",
       "note": "T2：史上最大单笔>4亿美元数据中心订单+季内新订单+97%YoY直接预示FQ3 backlog超V1确认线（+5% QoQ），记为POWL pending证据E2；Q2 EPS轻微miss被订单动能掩盖"
     },
@@ -153,7 +99,9 @@
       "date": "2026-07-09",
       "fingerprint": "2026-07-01+POWL+ceo-insider-selling-36k",
       "headline": "POWL CEO Brett Cope公开市场卖出36,000股（7/1），CFO提交Form 144，3个月内部人士仅净卖出",
-      "tickers": ["POWL"],
+      "tickers": [
+        "POWL"
+      ],
       "action": "evidence_appended",
       "note": "T4负面：高管密集卖出（PE 48x估值压力），7/2因此跌8.4%；单独不否定假设，但与E3合并周复核时需评估insider selling对neglect的影响；记为POWL pending证据E3"
     },
@@ -161,7 +109,9 @@
       "date": "2026-07-09",
       "fingerprint": "2026-07-09+002990.SZ+h1-forecast-ai-computing-pivot",
       "headline": "盛视科技H1 2026业绩预告扣非净利+552-743%，Q2单季环比+2556%，算力业务开始确认收入",
-      "tickers": ["002990.SZ"],
+      "tickers": [
+        "002990.SZ"
+      ],
       "action": "skipped_watchlist_only",
       "note": "①60亿算力合同对手方为'神秘公司'信用风险高②公司定位为算力资源使用者非提供者，传导路径不清③股价5天4板已充分定价，neglect≤1④七维总分估算≤20弱假设档；观察名单级"
     },
@@ -169,7 +119,9 @@
       "date": "2026-07-09",
       "fingerprint": "2026-07-02+002396.SZ+h1-dc-switch-5xLL-chip-risk",
       "headline": "星网锐捷H1 2026业绩预告归母净利+46-103%，数据中心交换机爆发，5天4板，公司自披芯片成本隐忧",
-      "tickers": ["002396.SZ"],
+      "tickers": [
+        "002396.SZ"
+      ],
       "action": "skipped_watchlist_only",
       "note": "5天4板（信息提前泄露）=neglect≤1已充分定价；扣非YoY仅+11.76-64.98%（主体增量来自非经常项）；公司主动发布异动公告提示芯片供应/成本风险；市值161.8亿弹性偏弱；观察名单级"
     },
@@ -177,21 +129,27 @@
       "date": "2026-07-10",
       "fingerprint": "2026-07-07+PENG+q3-fy26-earnings-beat-guidance-raise",
       "headline": "Penguin Solutions Q3 FY26: revenue $479M +48% YoY, AI业务+104% YoY，全年指引上修至+22%增速",
-      "tickers": ["PENG"],
+      "tickers": [
+        "PENG"
+      ],
       "action": "new_hypothesis"
     },
     {
       "date": "2026-07-10",
       "fingerprint": "2026-07-08+688620.SS+h1-revenue-84pct-turnaround-ai-soc",
       "headline": "安凯微H1 2026业绩预告：营收+84-87% YoY、净利扭亏为盈¥3800-4300万，AI硬件需求+产品提价驱动",
-      "tickers": ["688620.SS"],
+      "tickers": [
+        "688620.SS"
+      ],
       "action": "new_hypothesis"
     },
     {
       "date": "2026-07-10",
       "fingerprint": "2026-07-10+OUST+bluecity-700sites-worldcup-expansion",
       "headline": "Ouster BlueCity全球签约站点超700个；FIFA世界杯决赛7/19 MetLife Stadium高能见度验证窗口",
-      "tickers": ["OUST"],
+      "tickers": [
+        "OUST"
+      ],
       "action": "evidence_appended",
       "note": "T3商业化验证：全球700+签约站点里程碑，FIFA世界杯决赛提供高能见度公共验证事件；追加为OUST pending证据E2"
     },
@@ -199,7 +157,9 @@
       "date": "2026-07-10",
       "fingerprint": "2026-07-02+002497.SZ+lithium-price-163k-rising",
       "headline": "碳酸锂电池级现货价7/2为¥16.3万/吨，近5天涨+8.67%（从约¥15万/吨回升）",
-      "tickers": ["002497.SZ"],
+      "tickers": [
+        "002497.SZ"
+      ],
       "action": "evidence_appended",
       "note": "T3价格信号：锂价¥16.3万/吨持续回升但仍低于V2确认线（月均≥¥18万/吨）；追加为002497.SZ pending证据E1"
     },
@@ -207,7 +167,9 @@
       "date": "2026-07-15",
       "fingerprint": "2026-07-08+PENG+cfo-transition-guidance-reaffirmed",
       "headline": "PENG CFO Nate Olmstead自愿离职（effective 7/8），Aaron Johnson接任interim CFO；同步重申FY26净销售额和EPS将达指引区间高端",
-      "tickers": ["PENG"],
+      "tickers": [
+        "PENG"
+      ],
       "action": "evidence_appended",
       "note": "T4叙事级：CFO主动离职无任何分歧，interim CFO为内部16年资深财务高管；重申FY26 non-GAAP EPS和收入均在区间高端，agentic AI驱动内存+基础设施需求极强；追加为PENG pending证据E1"
     },
@@ -215,28 +177,36 @@
       "date": "2026-07-15",
       "fingerprint": "2026-07-15+603115.SS+h1-forecast-ai-electrode-foil",
       "headline": "海星股份H1 2026业绩预告：归母净利9950-10380万元（+50-62%），扣非净利10532-11032万元（+62-70%），AI服务器用产品批量交付+新能源储能+车载电子景气驱动",
-      "tickers": ["603115.SS"],
+      "tickers": [
+        "603115.SS"
+      ],
       "action": "new_hypothesis"
     },
     {
       "date": "2026-07-15",
       "fingerprint": "2026-07-15+003026.SZ+h1-forecast-semiconductor-silicon-capacity",
       "headline": "中晶科技H1 2026业绩预告：归母净利4000-4500万元（+55-75%），扣非净利3800-4300万元（+59-80%），生产紧张订单充足、募投产能持续释放",
-      "tickers": ["003026.SZ"],
+      "tickers": [
+        "003026.SZ"
+      ],
       "action": "new_hypothesis"
     },
     {
       "date": "2026-07-17",
       "fingerprint": "2026-07-17+688531.SS+h1-forecast-xray-inspection-ssti-semiconductor",
       "headline": "日联科技H1 2026业绩预告：扣非净利+82.71%（10900万元），归母+54.6%（12800万元），集成电路+高端电子景气+SSTI并购拓展高端半导体检测",
-      "tickers": ["688531.SS"],
+      "tickers": [
+        "688531.SS"
+      ],
       "action": "new_hypothesis"
     },
     {
       "date": "2026-07-17",
       "fingerprint": "2026-07-17+688400.SS+h1-zhipuai-equity-nonoperating-gain",
       "headline": "凌云光H1 2026业绩预告：归母净利+590%（66250万元），主要来自持有智谱华章股权公允价值变动（非经常性收益），扣非净利仅+60%（13000万元）",
-      "tickers": ["688400.SS"],
+      "tickers": [
+        "688400.SS"
+      ],
       "action": "skipped_watchlist_only",
       "note": "归母净利暴增主要来自非经常性损益（智谱华章股权公允价值变动），扣非净利仅+60%（13000万元），非经常性驱动跳过"
     },
@@ -244,7 +214,9 @@
       "date": "2026-07-17",
       "fingerprint": "2026-07-17+688041.SS+h1-haiguang-cpu-dcu-ai-domestication",
       "headline": "海光信息H1 2026业绩预告：扣非净利+38-56%（151-170亿元），CPU+DCU AI大模型+国产化驱动",
-      "tickers": ["688041.SS"],
+      "tickers": [
+        "688041.SS"
+      ],
       "action": "skipped_watchlist_only",
       "note": "海光信息市值极大（千亿级），弹性极低，neglect≤1；AI国产算力叙事已被广泛定价；观察名单级"
     },
@@ -260,9 +232,60 @@
       "date": "2026-07-17",
       "fingerprint": "2026-07-17+002497.SZ+lithium-price-16wan-stock-underperform",
       "headline": "碳酸锂7月中旬约¥16-16.5万/吨（低于V2确认线¥18万/吨）；雅化集团股价¥17.45（较入池价¥22.41跌约22%）",
-      "tickers": ["002497.SZ"],
+      "tickers": [
+        "002497.SZ"
+      ],
       "action": "evidence_appended",
       "note": "T3价格追踪：锂价缓慢回升但距确认线仍有约10%差距；「业绩热股市冷」市场分歧；追加为002497.SZ pending证据E2"
+    },
+    {
+      "date": "2026-07-20",
+      "fingerprint": "2026-07-18+301536.SZ+h1-forecast-ai-soc-edge-583pct",
+      "headline": "星宸科技H1 2026业绩预告：归母净利8.2-9亿元（+583-650% YoY），扣非净利+632-715%，营收+87-94%，端边侧AI SoC+SSR670量产驱动",
+      "tickers": [
+        "301536.SZ"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-20",
+      "fingerprint": "2026-07-20+301183.SZ+h1-forecast-ai-optical-68-88pct-pe170x",
+      "headline": "东田微H1 2026业绩预告：扣非净利+68-88%（8400-9400万），AI算力光通信组件（光隔离器/WDM），南昌基地产能爬坡",
+      "tickers": [
+        "301183.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "PE 170倍（5月市值约190亿）估值已充分定价；H1增速68-88%不算特别突出；七维总分约23（21-25档），先验≤0.25弱候选；观察名单级"
+    },
+    {
+      "date": "2026-07-20",
+      "fingerprint": "2026-07-14+OUST+q1-result-q2-guide-analyst-coverage",
+      "headline": "OUST Q1 2026收入$49M(+49% YoY)超预期；Q2指引$49.5-52.5M(+48%midpoint)；Roth/MKM新覆盖买入/$75目标价；Q2财报日8/6确认",
+      "tickers": [
+        "OUST"
+      ],
+      "action": "evidence_appended",
+      "note": "T3软信号：Q1实际和Q2指引均高于V1确认线(≥+30%)；两家新分析师$75目标价（vs入池价$49.84）；追加为OUST pending证据E3"
+    },
+    {
+      "date": "2026-07-20",
+      "fingerprint": "2026-07-20+002497.SZ+lithium-155k-further-decline",
+      "headline": "碳酸锂电池级现货价7/20约¥15.5万/吨（跌2.21%），较前次E2(7/17 ¥16-16.5万)进一步走低",
+      "tickers": [
+        "002497.SZ"
+      ],
+      "action": "evidence_appended",
+      "note": "T3负面信号：锂价进一步偏离V2确认线（月均≥¥18万/吨），当前距门槛约-14%；雅化集团股价¥16.47较入池价-26.5%；追加为002497.SZ pending证据E3"
+    },
+    {
+      "date": "2026-07-20",
+      "fingerprint": "2026-07-09+688620.SS+institution-survey-order-hot",
+      "headline": "安凯微7/9接受多家顶级机构调研（Point72/国投证券/万家基金等），公司确认「部分品类订单非常旺盛」，AI眼镜/智能锁/AI耳机产品获客户项目或已出货",
+      "tickers": [
+        "688620.SS"
+      ],
+      "action": "evidence_appended",
+      "note": "T3软信号：国际对冲基金Point72等参与调研，公司披露AI硬件部分品类订单积压；追加为688620.SS pending证据E1"
     }
   ]
 }
