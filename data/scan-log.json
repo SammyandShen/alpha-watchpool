@@ -2,43 +2,6 @@
   "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate | skipped_daily_cap",
   "entries": [
     {
-      "date": "2026-07-06",
-      "fingerprint": "2026-06-30+002326.SZ+h1-forecast-catl-vc-contract",
-      "headline": "永太科技 H1 2026 业绩预告净利润+351-461% + CATL框架合同2027-2029年VC供货",
-      "tickers": [
-        "002326.SZ"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
-      "date": "2026-07-06",
-      "fingerprint": "2026-07-05+SSNLF+q2-18x-profit-preliminary",
-      "headline": "Samsung Q2 preliminary: 18-fold operating profit jump on surging AI memory demand",
-      "tickers": [
-        "SSNLF"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "大型股（三星），无弹性；AI内存需求信号已被市场定价，当日未找到合适小盘受益者尚未入池"
-    },
-    {
-      "date": "2026-07-06",
-      "fingerprint": "2026-05-05+MRCY+q3-record-bookings-backlog",
-      "headline": "Mercury Systems Q3 FY26 bookings $348M +73.7% YoY, book-to-bill 1.48, backlog $1.6B record",
-      "tickers": [
-        "MRCY"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "信号为2个月前（5月5日财报），股价已涨153%至52周新高，市值$76亿弹性弱，neglect=2；另有7月3日股东诉讼风险；观察名单级"
-    },
-    {
-      "date": "2026-07-06",
-      "fingerprint": "2026-07-06+AI-PCB+july-price-hike",
-      "headline": "AI服务器高端PCB/FR4价格7月涨幅+12-22%，HBM封装基板+15-30%",
-      "tickers": [],
-      "action": "skipped_watchlist_only",
-      "note": "行业级供应链价格信号；无个股7月业绩预告或新订单T1公告，待深南电路/沪电股份中报后跟踪"
-    },
-    {
       "date": "2026-07-07",
       "fingerprint": "2026-07-07+002497.SZ+h1-forecast-lithium-q2-acceleration",
       "headline": "雅化集团H1 2026业绩预告净利润+710-857% A股首份锂矿中报 Q2单季环比+125-184%",
@@ -286,6 +249,56 @@
       ],
       "action": "evidence_appended",
       "note": "T3软信号：国际对冲基金Point72等参与调研，公司披露AI硬件部分品类订单积压；追加为688620.SS pending证据E1"
+    },
+    {
+      "date": "2026-07-21",
+      "fingerprint": "2026-07-20+POWL+earnings-date-confirmed-aug3",
+      "headline": "Powell Industries官方公告FQ3 FY2026财报发布日：8月3日收盘后，电话会议8月4日11时",
+      "tickers": [
+        "POWL"
+      ],
+      "action": "evidence_appended",
+      "note": "T4路标事件：公司官方锁定FQ3财报日8/3（结果）+ 8/4（电话会），V1/V2/V3判定窗口明确；events[]日期已更正为2026-08-03；追加为POWL pending证据E4"
+    },
+    {
+      "date": "2026-07-21",
+      "fingerprint": "2026-07-17+PENG+convertible-notes-750m-0pct-2031",
+      "headline": "Penguin Solutions完成$7.5亿可转换优先票据（0%利率，2031年到期）私募发行，超额认购",
+      "tickers": [
+        "PENG"
+      ],
+      "action": "evidence_appended",
+      "note": "T4资本结构事件：0%利率可转债7/17完成发行，超额认购；若转股将稀释现有股权；股价自入池价$81.39已跌至$53.23（-34.6%）；基本面AI内存需求假设未被否定；追加为PENG pending证据E2"
+    },
+    {
+      "date": "2026-07-21",
+      "fingerprint": "2026-07-19+301217.SZ+h1-hvlp-copper-foil-486-544pct-跌停",
+      "headline": "铜冠铜箔H1 2026归母净利+486%~+544%（2.05-2.25亿），预告发布当日20CM跌停",
+      "tickers": [
+        "301217.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "HVLP高频高速铜箔AI服务器需求实锤（供不应求），但：①业绩预告当日20CM跌停=neglect≈1（市场已充分定价并惩罚Q2环比Q1轻微下滑）；②隐含Q2净利0.99-1.19亿vs Q1 1.06亿，环比轻微走弱引发市场担忧；③七维总分估算≤21（demand_certainty=4, neglect=1拖累）；先验≤0.18弱假设档；观察名单级"
+    },
+    {
+      "date": "2026-07-21",
+      "fingerprint": "2026-07-19+300857.SZ+h1-ai-compute-247-340pct-giant",
+      "headline": "协创数据H1 2026归母净利+247%~+340%（15-19亿元），AI算力基础设施租赁爆发驱动",
+      "tickers": [
+        "300857.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "AI算力租赁业务真实需求，扣非净利增速高于归母净利（利润质量干净）；但市值约¥160B（约$22B），elasticity=1，弹性极低；serenity七维总分再高也因弹性不足无法入池；观察名单级"
+    },
+    {
+      "date": "2026-07-21",
+      "fingerprint": "2026-07-20+OUST+broad-ai-selloff-6pct-moonshot-kimi",
+      "headline": "OUST单日下跌-6.13%至$34.77；背景：Moonshot AI Kimi K3模型冲击AI基础设施估值逻辑",
+      "tickers": [
+        "OUST"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "AI市场系统性回调（Moonshot Kimi K3模型引发对美国AI基础设施叙事的重新定价）；OUST无公司层面负面基本面事件；Q2财报8/6是关键V1判定点；价格跟踪由sync-prices.py处理；无需追加假设层证据"
     }
   ]
 }

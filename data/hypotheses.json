@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-07-20",
+  "$last_updated": "2026-07-21",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -344,6 +344,21 @@
             "log_lr": null
           },
           "pending": true
+        },
+        {
+          "id": "E4",
+          "date": "2026-07-20",
+          "source": "GlobeNewsWire / POWL官方公告",
+          "headline": "Powell Industries正式公告FQ3 FY2026财报发布日：2026年8月3日收盘后，电话会议8月4日上午11时",
+          "url": "https://www.globenewswire.com/news-release/2026/07/20/3330109/0/en/powell-industries-announces-date-and-conference-call-for-fiscal-2026-third-quarter-results.html",
+          "summary": "公司官方确认FQ3 FY26（截止6月30日季度）财报将于8月3日收盘后发布，8月4日上午11时举行电话会议；V1(backlog QoQ)/V2(指引)/V3(book-to-bill)判定窗口已锁定；当前股价$228.28（较入池价$246.33跌约7.3%）",
+          "type": "T4_narrative",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -355,9 +370,9 @@
       ],
       "events": [
         {
-          "date": "2026-08-04",
+          "date": "2026-08-03",
           "type": "earnings",
-          "note": "FQ3 FY26 财报（Yahoo 官方排期确认）— V1/V2/V3 判定点"
+          "note": "FQ3 FY26 财报发布（8月3日收盘后）+ 电话会议8月4日上午11时（官方7/20公告确认）— V1/V2/V3判定点"
         },
         {
           "date": "2026-07-03",
@@ -957,6 +972,21 @@
           "headline": "PENG CFO Nate Olmstead自愿离职（effective 7/8），Aaron Johnson接任interim CFO；公司同步重申FY26净销售额和EPS将达指引区间高端，强调agentic AI驱动内存+基础设施需求极强",
           "url": "https://ir.penguinsolutions.com/news/news-details/2026/Penguin-Solutions-Announces-CFO-Transition/default.aspx",
           "summary": "CFO主动离职无任何分歧，interim CFO从内部16年资深财务高管晋升；公司重申FY26 non-GAAP EPS和收入均在区间高端，叠加7/7 Q3已将全年指引上调至+22%，需求能见度强",
+          "type": "T4_narrative",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
+        },
+        {
+          "id": "E2",
+          "date": "2026-07-17",
+          "source": "BusinessWire",
+          "headline": "Penguin Solutions完成$7.5亿可转换优先票据（0%利率，2031年到期）私募发行，超额认购",
+          "url": "https://www.businesswire.com/news/home/20260717995474/en/Penguin-Solutions-Announces-Closing-of-Oversubscribed-Convertible-Notes-Offering/",
+          "summary": "以0%利率发行7.5亿美元可转债（2031年到期），超额认购完成；若转股将显著稀释现有股东权益；股价自7/10入池价$81.39起已跌至$53.23（-34.6%），与AI市场普遍回调叠加资本结构担忧有关；基本面AI内存需求假设暂未被触及",
           "type": "T4_narrative",
           "likelihood": {
             "label": null,
