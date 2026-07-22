@@ -2,43 +2,6 @@
   "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate | skipped_daily_cap",
   "entries": [
     {
-      "date": "2026-07-07",
-      "fingerprint": "2026-07-07+002497.SZ+h1-forecast-lithium-q2-acceleration",
-      "headline": "雅化集团H1 2026业绩预告净利润+710-857% A股首份锂矿中报 Q2单季环比+125-184%",
-      "tickers": [
-        "002497.SZ"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
-      "date": "2026-07-07",
-      "fingerprint": "2026-07-04+603618.SS+h1-fiber-optic-1087pct-halted",
-      "headline": "杭电股份H1 2026业绩预告扣非净利+1087%光纤量价齐升（年初已涨6倍+今日跌停）",
-      "tickers": [
-        "603618.SS"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "七维总分23（neglect=1，年初涨6倍今日跌停），先验≤0.18弱假设档，观察名单级"
-    },
-    {
-      "date": "2026-07-07",
-      "fingerprint": "2026-07-06+POWL+zacks-investor-search-volume",
-      "headline": "POWL listed as heavily searched by Zacks investors",
-      "tickers": [
-        "POWL"
-      ],
-      "action": "evidence_appended",
-      "note": "T4叙事级，追加为POWL pending证据；关注度上升但无新基本面信息"
-    },
-    {
-      "date": "2026-07-07",
-      "fingerprint": "2026-07-06+ESI+solstice-14.5b-acquisition",
-      "headline": "Solstice Advanced Materials acquires Element Solutions for $14.5B semiconductor/DC/AI materials",
-      "tickers": [],
-      "action": "skipped_watchlist_only",
-      "note": "大型M&A，ESI为被并购方；无直接可入池的小盘受益者，传导路径远"
-    },
-    {
       "date": "2026-07-09",
       "fingerprint": "2026-06-09+OUST+bluecity-njdot-world-cup",
       "headline": "Ouster completes NJDOT BlueCity deployment at 40+ MetLife Stadium highway sites for FIFA World Cup",
@@ -299,6 +262,45 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "AI市场系统性回调（Moonshot Kimi K3模型引发对美国AI基础设施叙事的重新定价）；OUST无公司层面负面基本面事件；Q2财报8/6是关键V1判定点；价格跟踪由sync-prices.py处理；无需追加假设层证据"
+    },
+    {
+      "date": "2026-07-22",
+      "fingerprint": "2026-07-22+688195.SS+h1-optical-ocs-yvo4-89pct-adj",
+      "headline": "腾景科技H1 2026业绩预告：扣非净利+38-63%（¥4800-5200万），剔股权激励后净利+89-100%（¥6946-7346万），AI光通信OCS钒酸钇晶体+光模块无源元组件驱动",
+      "tickers": [
+        "688195.SS"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-22",
+      "fingerprint": "2026-07-22+688498.SS+h1-datacenter-laser-chips-1000pct-mktcap-over1200b",
+      "headline": "源杰科技H1 2026扣非净利+1001-1112%（¥5-5.5亿），营收+339-363%（¥9-9.5亿），InP激光芯片数据中心业务爆发",
+      "tickers": [
+        "688498.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "市值超¥1200亿（A股新股王，从¥88涨至¥1439），elasticity=1；neglect=1（广泛报道、PE 631x）；增长真实（InP DFB/EML激光芯片供应短缺）但已被市场充分定价，不满足小盘弹性入池条件"
+    },
+    {
+      "date": "2026-07-22",
+      "fingerprint": "2026-07-22+POWL+analyst-pt-raise-jpm360-roth333",
+      "headline": "JPMorgan将POWL目标价上调至$360（Overweight），Roth Capital上调至$333（Buy）；FQ3财报日8/3前机构信心提升",
+      "tickers": [
+        "POWL"
+      ],
+      "action": "evidence_appended",
+      "note": "T4叙事级：两家机构同步上调PT（JPM $310→$360，Roth $285→$333），共识目标价$316；反映分析师对电网+数据中心需求信心；追加为POWL pending证据E5"
+    },
+    {
+      "date": "2026-07-22",
+      "fingerprint": "2026-07-22+PENG+barclays-downgrade-underweight",
+      "headline": "Barclays将PENG降级至Underweight；$7.5亿可转债稀释风险+股价自入池价$81.39跌至约$53（-35%）为主因",
+      "tickers": [
+        "PENG"
+      ],
+      "action": "evidence_appended",
+      "note": "T4负面叙事：Barclays降级主要基于估值/资本结构担忧（0%利率$7.5亿可转债潜在稀释），非AI内存需求恶化；追加为PENG pending证据E3"
     }
   ]
 }

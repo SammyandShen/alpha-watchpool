@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-07-21",
+  "$last_updated": "2026-07-22",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -352,6 +352,21 @@
           "headline": "Powell Industries正式公告FQ3 FY2026财报发布日：2026年8月3日收盘后，电话会议8月4日上午11时",
           "url": "https://www.globenewswire.com/news-release/2026/07/20/3330109/0/en/powell-industries-announces-date-and-conference-call-for-fiscal-2026-third-quarter-results.html",
           "summary": "公司官方确认FQ3 FY26（截止6月30日季度）财报将于8月3日收盘后发布，8月4日上午11时举行电话会议；V1(backlog QoQ)/V2(指引)/V3(book-to-bill)判定窗口已锁定；当前股价$228.28（较入池价$246.33跌约7.3%）",
+          "type": "T4_narrative",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
+        },
+        {
+          "id": "E5",
+          "date": "2026-07-22",
+          "source": "JPMorgan / Roth Capital Partners",
+          "headline": "JPMorgan将POWL目标价从$310上调至$360（Overweight）；Roth Capital将目标价从$285上调至$333（Buy）；共识目标价约$316.25（较当前股价约+29%上行空间）",
+          "url": "https://stockanalysis.com/stocks/powl/",
+          "summary": "FQ3财报发布前（8/3）两家机构同步上调PT，反映分析师对电网+数据中心开关柜持续需求的信心；sell-side意见，非基本面直接验证",
           "type": "T4_narrative",
           "likelihood": {
             "label": null,
@@ -994,6 +1009,21 @@
             "log_lr": null
           },
           "pending": true
+        },
+        {
+          "id": "E3",
+          "date": "2026-07-22",
+          "source": "Barclays",
+          "headline": "Barclays将PENG降级至Underweight；$7.5亿0%可转债潜在稀释风险+股价持续下跌为主因",
+          "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-peng/penguin-solutions",
+          "summary": "Barclays负面评级主要基于估值/资本结构担忧（可转债稀释），非AI内存业务需求恶化；基本面V1（Q4 FY26财报+AI业务增速）判定点仍在10月；降级作为市场情绪负面信号记录，不改变假设等待期判断",
+          "type": "T4_narrative",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -1518,6 +1548,131 @@
         "related": [
           "H20260710-688620.SS"
         ]
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260722-688195.SS",
+      "ticker": "688195.SS",
+      "company": "腾景科技集团股份有限公司",
+      "created_at": "2026-07-22",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-07-22",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：H1 2026业绩预告扣非净利+38-63%（¥4800-5200万），剔股权激励后净利+89-100%（¥6946-7346万），AI数据中心OCS钒酸钇晶体+高速光模块无源元组件加速交付驱动"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-07-22",
+          "headline": "腾景科技H1 2026业绩预告：归母净利¥4800-5200万（+31-42% YoY），扣非净利¥4800-5200万（+38-63% YoY），剔股权激励（¥2534万）后归母净利¥6946-7346万（+89-100% YoY）",
+          "url": "https://wap.eastmoney.com/a/202607213815607132.html",
+          "summary": "AI算力基础设施建设加速拉动光模块配套无源元组件及OCS钒酸钇晶体订单加速交付；H2计划加速扩产落地推动业务规模及盈利能力持续提升"
+        }
+      ],
+      "thesis": {
+        "one_liner": "AI数据中心OCS+高速光模块无源元组件需求爆发将在2-3个季度内持续推高其光学组件收入并驱动利润率扩张",
+        "demand_change": "H1 2026业绩预告明确披露：数据中心高速光模块配套无源元组件及OCS钒酸钇晶体等关键产品订单加速交付（公司原文）；腾景是Coherent（Google专属OCS供应商）的关键无源元组件上游供应商；半导体设备领域高端光学模组产品交付量持续提升；Q1 2026营收¥1.71亿（+51% YoY）已提前验证上行趋势。",
+        "transmission": "光隔离器/光环形器等无源光学元组件出货量×单价直接进产品收入线；毛利率同比提升（产品结构优化，高端品占比上升）；H2加速扩产项目落地→固定成本摊薄→毛利率进一步改善；YVO₄晶体为OCS关键耗材，OCS规模化部署直接拉动需求量。",
+        "misclassification": "市场标签为「传统精密光学元件供应商，AI光通信叙事4月已见顶、已被充分定价，目前处于回调消化期」；实际正变成「AI数据中心OCS全光交换+高速光模块无源元组件核心供应商，Coherent OCS上游关键节点，处于算力网络从电互联向光互联演进的供应链核心层，当前估值（PE~16x FY2026E调整净利）显著低估」",
+        "serenity_score": {
+          "demand_certainty": 4,
+          "transmission_clarity": 4,
+          "purity": 5,
+          "elasticity": 4,
+          "neglect": 3,
+          "verification_speed": 5,
+          "downside": 3
+        },
+        "brief_cn": [
+          "触发：2026-07-22腾景科技披露H1 2026业绩预告，归母净利润¥4800-5200万（+31-42% YoY），扣非净利¥4800-5200万（+38-63% YoY）；公司特别披露剔除股权激励费用¥2534万后，归母净利为¥6946-7346万（+89-100% YoY），主营业务增速实质接近翻倍。驱动力：数据中心高速光模块配套无源元组件及OCS钒酸钇晶体订单加速交付，半导体设备高端光学模组交付持续提升；H2计划加速扩产落地。",
+          "需求已可观察：公司明确披露「OCS钒酸钇晶体及光模块无源元组件订单加速交付」是实际出货验证；腾景是Coherent（Google专属OCS供应商）关键上游，OCS全光交换在AI数据中心大规模部署是结构性需求，AI算力网络从电互联向光互联演进的趋势不可逆；Q1 2026营收¥1.71亿（+51% YoY）已提前确认趋势。财务传导路径短：光学元组件出货量×ASP→产品收入；毛利率随产品结构优化改善。",
+          "市场误分类：腾景科技从4月高点¥345回落至约¥189（-45%），市场将其标签为「AI光通信泡沫消退、叙事结束」；但调整后净利增速+89-100%是真实业务加速而非叙事；当前市值约¥24亿，FY2026E调整净利约¥1.56亿，隐含PE约15-16x——对AI光学供应链的核心节点公司而言显著低估（同类全球标的给35-50x）；Coherent/OCS作为AI基础设施持续性需求来源，腾景在这一价值链的定位被市场低估。",
+          "先验给0.33的理由：七维总分28（26-30档，0.30-0.42）；demand_certainty=4+purity=5+verification_speed=5支撑；扣分项：neglect=3（AI光通信赛道广泛关注，4月被充分关注后回调，部分叙事已被市场定价）、downside=3（Coherent客户集中风险；OCS市场格局仍在演变；钒酸钇晶体可能面临竞品压价）；赌的是H2中报兑现预告（净利加速）触发估值从15-16x向35-40x回归，股价重回4月高点区间并超越。"
+        ]
+      },
+      "prior": {
+        "p": 0.33,
+        "log_odds": -0.7082,
+        "rationale": "七维总分28 → 26-30档（0.30-0.42）；取中偏低因neglect=3（4月高点¥345后回调-45%，AI光通信叙事已被市场尝试定价）+downside=3（Coherent集中度风险）；purity=5+verification_speed=5支撑入池",
+        "set_by": "daily-scan 2026-07-22"
+      },
+      "current": {
+        "p": 0.33,
+        "log_odds": -0.7082,
+        "last_reviewed": "2026-07-22",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "H1 2026中报扣非净利润及剔股权激励后归母净利润（截止8月31日）",
+          "confirm_if": "中报扣非净利润 ≥ ¥4800万（达预告下限）且剔股权激励（¥2534万）后归母净利润 ≥ ¥6900万，且管理层指引H2光通信及半导体设备光模组出货量继续增长",
+          "falsify_if": "中报扣非净利润 < ¥3800万（低于预告下限21%，预告不兑现）或管理层承认主要光通信客户需求放缓/Coherent OCS项目延迟导致H2展望大幅下调",
+          "check_by": "2026-08-31",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "H2 2026 OCS供应链扩大信号及新客户拓展",
+          "confirm_if": "三季报或中报管理层披露OCS相关产品（YVO₄晶体/光环形器元组件）收入占比同比显著提升（≥+5pp），或披露向Coherent/其他OCS厂商新增产能扩张合同",
+          "falsify_if": "公司披露OCS相关业务订单取消，或主要客户Coherent因Google AI数据中心OCS项目收缩导致上游需求明显缩减",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 3,
+        "review_deadline": "2027-04-22"
+      },
+      "baseline": {
+        "entry_date": "2026-07-22",
+        "entry_price": 189.0,
+        "benchmark": "510300.SS",
+        "benchmark_entry_price": 4.65,
+        "sector_benchmark": "512480.SS",
+        "sector_benchmark_entry_price": 1.04
+      },
+      "price_expectation": {
+        "confirm_target": 350.0,
+        "falsify_target": 110.0,
+        "expected_by": "2026-11-30",
+        "methodology_cn": "证实情景：H1中报兑现（扣非净利≥¥4800万，剔股权激励后≥¥6900万）+ H2扩产推动全年调整净利约¥1.56亿（H1 ¥7145万中值 + H2 ¥8400万估算）；AI光通信OCS核心供应商给PE 30x → 目标市值¥46.8亿 ÷ 约1293万股 ≈ ¥362/股，取整¥350（接近4月历史高点¥345交叉验证，含安全边际）。证伪情景：H2 OCS需求放缓/Coherent份额丢失，全年调整净利仅¥1.0亿（H1水平重复，H2无增长），退回传统光学元件估值PE 15x → 市值¥15亿 ÷ 1293万股 ≈ ¥116/股，取整¥110（较当前¥189约-42%下行空间）。注：entry_price=189.0元为估算值（依据研究数据6月约¥189），待sync-prices.py回填实际收盘价后按同比例更新目标价revisions[]。",
+        "timeline_logic_cn": "V1判定点8-31中报（通常提前10-15天，约8-15可见）；中报兑现后AI光学元组件成长股重估通常在三季报（10-31）进一步确认趋势后1个月内完成 → 预期2026-11-30前到位；如中报同时量化OCS产品收入加速（V2前置信号），重估可能提前至9月。",
+        "set_at": "2026-07-22",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-07-22",
+          "p": 0.33,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-08-31",
+          "type": "earnings",
+          "note": "H1 2026中报披露截止日（V1判定点）；预计提前10-15天（约8-15前后）发布"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
       },
       "resolution": {
         "outcome": null,
