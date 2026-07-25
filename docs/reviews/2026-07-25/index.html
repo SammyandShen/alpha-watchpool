@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>假设复核周报 · 2026-07-25</title>
+<style>
+  :root { --bg:#0d1117; --card:#161b22; --border:#30363d; --text:#e6edf3; --dim:#8b949e;
+          --green:#3fb950; --red:#f85149; --amber:#d29922; --blue:#58a6ff; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+         line-height:1.7; max-width:860px; margin:0 auto; padding:32px 20px 80px; }
+  h1 { font-size:1.5em; margin-bottom:4px; }
+  h2 { font-size:1.15em; margin:36px 0 12px; padding-bottom:6px; border-bottom:1px solid var(--border); color:var(--blue); }
+  h3 { font-size:1em; margin:20px 0 8px; }
+  .meta { color:var(--dim); font-size:.85em; margin-bottom:24px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px 20px; margin:12px 0; }
+  table { width:100%; border-collapse:collapse; font-size:.9em; margin:12px 0; }
+  th,td { padding:8px 10px; text-align:left; border-bottom:1px solid var(--border); }
+  th { color:var(--dim); font-weight:600; font-size:.85em; }
+  .up { color:var(--green); } .down { color:var(--red); } .flat { color:var(--dim); }
+  .badge { display:inline-block; padding:1px 8px; border-radius:10px; font-size:.78em; border:1px solid var(--border); }
+  .badge.observing { color:var(--blue); border-color:var(--blue); }
+  .badge.confirmed { color:var(--green); border-color:var(--green); }
+  .badge.falsified { color:var(--red); border-color:var(--red); }
+  .badge.expired { color:var(--dim); }
+  .badge.promoted { color:var(--amber); border-color:var(--amber); }
+  .disclaimer { margin-top:48px; padding:14px 18px; border:1px solid var(--border); border-radius:10px;
+                color:var(--dim); font-size:.82em; }
+  a { color:var(--blue); text-decoration:none; }
+  .kpi-row { display:flex; gap:12px; flex-wrap:wrap; margin:16px 0; }
+  .kpi { flex:1; min-width:140px; background:var(--card); border:1px solid var(--border); border-radius:10px;
+         padding:12px 16px; }
+  .kpi .v { font-size:1.4em; font-weight:700; }
+  .kpi .k { color:var(--dim); font-size:.8em; }
+  .falsify { color:var(--amber); font-size:.88em; margin-top:8px; }
+</style>
+</head>
+<body>
+
+<h1>🔬 假设复核周报</h1>
+<p class="meta">2026-07-25 · alpha-watchpool weekly review · 方法论 v1 · 研究假设跟踪，非投资建议</p>
+
+<h2>1. 池子总览</h2>
+<div class="kpi-row">
+  <div class="kpi"><div class="v">11</div><div class="k">活跃假设（全部 observing）</div></div>
+  <div class="kpi"><div class="v">0</div><div class="k">本周新增（daily-scan 负责）</div></div>
+  <div class="kpi"><div class="v">0</div><div class="k">本周状态迁移</div></div>
+  <div class="kpi"><div class="v up">+2.6pp</div><div class="k">平均后验变化</div></div>
+</div>
+<p>这是本观察池的第一次周度深度复核。池内 11 条假设全部创建于 2026-07-05 至 2026-07-22 之间（最老 20 天，最新 3 天），无一条触及任何 required 验证条件的 check_by 日期（最早的是 POWL 2026-08-15），因此本周<strong>没有状态迁移</strong>——完全符合"尚早"阶段的预期。本周工作重心是：①对 5 条已有 pending 证据的假设定级入账；②对另外 6 条尚无 evidence_log 记录的假设做定向补搜并补充首批证据；③为全部 11 条假设按 §4 规则评估价格证据。补搜发现一个值得警惕的共性：11 条里有 7 条股价大幅偏离基准（±20%以上），但多数可归因为板块系统性 beta（7/20 A 股科技股集体回调、7/2 与 7/15 美股光学股联动杀跌）而非公司层面新增负面基本面——这提示当前市场对成长股的估值容忍度在收紧，需要在后续复核中持续区分"个股基本面恶化"与"板块去估值"。</p>
+
+<h2>2. 逐假设复核明细</h2>
+
+<div class="card">
+  <h3>OUST · Ouster工业lidar需求拐点 <span class="badge observing">observing</span></h3>
+  <p>后验：0.25 → <strong>0.40</strong>（Δlog-odds +0.693）</p>
+  <table>
+    <tr><th>证据</th><th>Tier</th><th>标签</th><th>log-LR</th></tr>
+    <tr><td>E1 NJDOT BlueCity部署（6/9，pre-entry背景）</td><td>T3</td><td>neutral</td><td>0</td></tr>
+    <tr><td>E2 BlueCity全球700+签约站点+FIFA压力测试</td><td>T3</td><td>weak_support</td><td>+0.405</td></tr>
+    <tr><td>E3 Q1实收+49% YoY超预期，Q2指引+48%均超V1确认线</td><td>T1（重定级）</td><td>moderate_support</td><td>+0.693</td></tr>
+    <tr><td>E4 价格证据：excess vs SPY -30.91%/vs SOXX -24.76%</td><td>P_price</td><td>weak_against</td><td>-0.405</td></tr>
+  </table>
+  <p>补搜确认：$200M增发（7/2定价$55.22，60天内部人锁定）是回撤主因，非需求侧证伪信号；Northland/Oppenheimer两家上调目标价但均为T4未计入账本。</p>
+  <p class="falsify">💥 证伪触发：8/6 Q2财报显示YoY增速&lt;30%或环比转负，或电话会承认AIM/Rev8订单推迟 → 后验可判至0.2以下。</p>
+</div>
+
+<div class="card">
+  <h3>POWL · Powell电网+数据中心开关柜 <span class="badge observing">observing</span></h3>
+  <p>后验：0.28 → <strong>0.28</strong>（Δlog-odds 0.000，本周无变化）</p>
+  <table>
+    <tr><th>证据</th><th>Tier</th><th>标签</th><th>log-LR</th></tr>
+    <tr><td>E1 Zacks搜索量报道</td><td>T4</td><td>neutral（固定）</td><td>0</td></tr>
+    <tr><td>E2 Q2 FY26订单/backlog（pre-entry，已计入先验）</td><td>T2</td><td>neutral</td><td>0</td></tr>
+    <tr><td>E3 CEO/CFO内部人卖出（10b5-1预定计划）</td><td>T4</td><td>neutral（固定）</td><td>0</td></tr>
+    <tr><td>E4 FQ3财报日期公告</td><td>T4</td><td>neutral（固定）</td><td>0</td></tr>
+    <tr><td>E5 JPMorgan/Roth目标价上调</td><td>T4</td><td>neutral（固定）</td><td>0</td></tr>
+  </table>
+  <p>价格证据为neutral（excess vs XLI -5.05%），不入账。全部5条证据均为T4叙事类或pre-entry背景，本周无实质新增T1-T3证据——8/3财报前是真空期，符合预期。</p>
+  <p class="falsify">💥 证伪触发：8/3 FQ3财报显示backlog环比≤-5%或FY26指引下修 → 后验可判至0.2以下。</p>
+</div>
+
+<div class="card">
+  <h3>002326.SZ · 永太科技CATL VC框架 <span class="badge observing">observing</span></h3>
+  <p>后验：0.38 → <strong>0.55</strong>（Δlog-odds +0.693，本周最大上修）</p>
+  <table>
+    <tr><th>证据</th><th>Tier</th><th>标签</th><th>log-LR</th></tr>
+    <tr><td>E1 VC市场价一周内¥16.5万→¥20万/吨(+21%)</td><td>T2</td><td>weak_support</td><td>+0.405</td></tr>
+    <tr><td>E2 新增CATL 47万吨电解液大单+内蒙古8亿元VC扩建</td><td>T1</td><td>moderate_support</td><td>+0.693</td></tr>
+    <tr><td>E3 价格证据：excess vs 510300 -28.25%/vs 515030 -15.87%</td><td>P_price</td><td>weak_against</td><td>-0.405</td></tr>
+  </table>
+  <p>股价下跌主因是连续涨停后获利了结+与天赐材料存量商业秘密诉讼（4月已知，非本周新增）压制情绪，非新增负面基本面。VC价格短周期波动较大，从严只判weak而非moderate。</p>
+  <p class="falsify">💥 证伪触发：8/31中报净利&lt;2.00亿元，或VC/LiFSI单价同比降超40%，或VC市场价跌破¥6万/吨 → 后验可判至0.2以下。</p>
+</div>
+
+<div class="card">
+  <h3>002497.SZ · 雅化集团锂盐新周期 <span class="badge observing">observing</span></h3>
+  <p>后验：0.33 → <strong>0.18</strong>（Δlog-odds -0.811，本周最大下修）</p>
+  <table>
+    <tr><th>证据</th><th>Tier</th><th>标签</th><th>log-LR</th></tr>
+    <tr><td>E1 碳酸锂价格连续走势(7/2-7/24)：触及13.66万(破V2 falsify线14万)后反弹至14.5万，全程未达confirm线18万</td><td>T2</td><td>weak_against</td><td>-0.405</td></tr>
+    <tr><td>E2 (correlates_with E1，7/17同一趋势报道)</td><td>T3</td><td>neutral</td><td>0</td></tr>
+    <tr><td>E3 (correlates_with E1，7/20同一趋势报道)</td><td>T3</td><td>neutral</td><td>0</td></tr>
+    <tr><td>E4 价格证据：excess vs 510300 -22.32%/vs 512400 -20.75%</td><td>P_price</td><td>weak_against</td><td>-0.405</td></tr>
+  </table>
+  <p>锂价一度跌破V2的falsify门槛（月均需&lt;14万才算falsify，日内低点13.66万未构成"月均"层面证伪），随后反弹企稳，尚不足以判V2 missed，但方向明确偏弱；叠加股价大幅跑输基准，是本周最大下修。V1（中报）仍是决定性判定点。</p>
+  <p class="falsify">💥 证伪触发：8/31中报归母净利&lt;9亿元，或Q3锂价月均持续&lt;14万元/吨且三季报确认收入增速转负 → 后验可判至0.2以下（当前0.18已接近该区间，需密切跟踪）。</p>
+</div>
+
+<div class="card">
+  <h3>688620.SS · 安凯微AI边缘SoC <span class="badge observing">observing</span></h3>
+  <p>后验：0.33 → <strong>0.43</strong>（Δlog-odds +0.406）</p>
+  <table>
+    <tr><th>证据</th><th>Tier</th><th>标签</th><th>log-LR</th></tr>
+    <tr><td>E1 机构调研（Point72等）确认"部分品类订单非常旺盛"</td><td>T3</td><td>weak_support</td><td>+0.405</td></tr>
+  </table>
+  <p>价格证据为neutral（excess vs 512480 +6.64%），不入账。补搜未发现7/9后增量信息，H1预告下限恰好卡在confirm门槛，8/31正式中报是关键判定点。</p>
+  <p class="falsify">💥 证伪触发：中报净利&lt;3000万元，或管理层承认主要客户需求放缓 → 后验可判至0.2以下。</p>
+</div>
+
+<div class="card">
+  <h3>PENG · Penguin Solutions AI内存 <span class="badge observing">observing</span></h3>
+  <p>后验：0.30 → <strong>0.16</strong>（Δlog-odds -0.811）</p>
+  <table>
+    <tr><th>证据</th><th>Tier</th><th>标签</th><th>log-LR</th></tr>
+    <tr><td>E1 CFO离职+重申指引高端</td><td>T4</td><td>neutral（固定）</td><td>0</td></tr>
+    <tr><td>E2 $7.5亿0%可转债私募（超额认购）</td><td>T4</td><td>neutral（固定）</td><td>0</td></tr>
+    <tr><td>E3 Barclays降级Underweight</td><td>T4</td><td>neutral（固定）</td><td>0</td></tr>
+    <tr><td>E4 第三方测算：89%利润增量来自DRAM商品周期而非AI结构性需求</td><td>T3</td><td>weak_against</td><td>-0.405</td></tr>
+    <tr><td>E5 价格证据：excess vs SPY -32.14%/vs SOXX -24.44%</td><td>P_price</td><td>weak_against</td><td>-0.405</td></tr>
+  </table>
+  <p>本周最重要的新信息不是可转债/降级（均为T4噪音），而是Seeking Alpha基于公司自身分部数据的测算：Advanced Computing（AI叙事主体）毛利率43.4%→26.5%骤降、营业利润$24.7M→$3.9M，而Integrated Memory的增长更像行业性DRAM涨价周期——这直接质疑了thesis的misclassification/purity核心假设，是本周除价格外唯一实质性证据。</p>
+  <p class="falsify">💥 证伪触发：Q4 FY26 AI业务增速&lt;30%或FY26 EPS&lt;$2.00，或后续证实Integrated Memory增长几乎全部来自DRAM商品周期（价格回落时收入同步回落）→ 后验可判至0.2以下。</p>
+</div>
+
+<div class="card">
+  <h3>603115.SS · 海星股份AI服务器电极箔 <span class="badge observing">observing</span></h3>
+  <p>后验：0.33 → <strong>0.33</strong>（Δlog-odds 0.000，本周无变化）</p>
+  <table>
+    <tr><th>证据</th><th>Tier</th><th>标签</th><th>log-LR</th></tr>
+    <tr><td>E1 价格证据：excess vs 510300 -38.83%/vs 512480 +14.69%</td><td>P_price</td><td>neutral</td><td>0</td></tr>
+  </table>
+  <p>股价绝对跌幅达37%看似严重，但补搜确认这是7/20 A股半导体/存储板块系统性去估值（美联储新主席沃什鹰派言论+伊朗冲突推升通胀预期，中信证券称电子板块7月跌20.5%属超跌）所致，相对行业基准反而跑赢14.69pp。未发现公司层面负面基本面消息，判neutral，不构成对thesis的证伪证据——是本周"价格跌但不应恐慌"的典型案例。</p>
+  <p class="falsify">💥 证伪触发：8/31中报扣非净利&lt;8000万元，或客户推迟AI服务器采购 → 后验可判至0.2以下。</p>
+</div>
+
+<div class="card">
+  <h3>003026.SZ · 中晶科技半导体硅材料 <span class="badge observing">observing</span></h3>
+  <p>后验：0.30 → <strong>0.39</strong>（Δlog-odds +0.406）</p>
+  <table>
+    <tr><th>证据</th><th>Tier</th><th>标签</th><th>log-LR</th></tr>
+    <tr><td>E1 机构调研："生产交付紧张，订单充足，部分产品交付延期"</td><td>T3</td><td>neutral</td><td>0</td></tr>
+    <tr><td>E2 价格证据：excess vs 510300 -32.85%/vs 512480 +20.67%</td><td>P_price</td><td>weak_support</td><td>+0.405</td></tr>
+  </table>
+  <p>"订单充足"（正面）与"交付延期"（负面，产能瓶颈）两个信号方向相反，判neutral。相对暴跌的半导体基准（同期-51.91%），个股相对跑赢20.67pp，反映一定相对强度。7/16单日-7.72%系隔夜美股半导体联动，非公司特定利空。</p>
+  <p class="falsify">💥 证伪触发：8/31中报归母净利&lt;3000万元，或晶圆厂客户缩减订单 → 后验可判至0.2以下。</p>
+</div>
+
+<div class="card">
+  <h3>688531.SS · 日联科技SSTI半导体检测 <span class="badge observing">observing</span></h3>
+  <p>后验：0.25 → <strong>0.25</strong>（Δlog-odds 0.000，两条证据方向相反恰好抵消）</p>
+  <table>
+    <tr><th>证据</th><th>Tier</th><th>标签</th><th>log-LR</th></tr>
+    <tr><td>E1 新增¥9.36亿收购上海菲莱测试(470%估值溢价)</td><td>T2</td><td>weak_against</td><td>-0.405</td></tr>
+    <tr><td>E2 价格证据：excess vs 510300 +56.62%/vs 512480 +110.14%</td><td>P_price</td><td>weak_support（降级）</td><td>+0.405</td></tr>
+  </table>
+  <p>股价大涨58-110%驱动力是7/16 H1预告(扣非净利1.09亿，精确压线confirm门槛)+菲莱测试并购叙事共振，公司自身已提示估值过高风险。菲莱测试470%高溢价并购增加整合/资本纪律风险，判weak_against抵消部分价格利好。注：review-input.json按excess规则建议价格标签为moderate_support，但P_price tier的LR上限固定为1.5，已降级采纳为weak_support。V2（SSTI具体客户合同）仍无实质证据。</p>
+  <p class="falsify">💥 证伪触发：正式中报扣非净利&lt;8500万元，或SSTI/菲莱测试整合出现重大障碍（客户流失、减值）→ 后验可判至0.2以下。</p>
+</div>
+
+<div class="card">
+  <h3>301536.SZ · 星宸科技端边侧AI SoC <span class="badge observing">observing</span></h3>
+  <p>后验：0.33 → <strong>0.43</strong>（Δlog-odds +0.406）</p>
+  <table>
+    <tr><th>证据</th><th>Tier</th><th>标签</th><th>log-LR</th></tr>
+    <tr><td>E1 价格证据：excess vs 510300 +79.94%/vs 512480 +78.72%</td><td>P_price</td><td>weak_support（主动降级）</td><td>+0.405</td></tr>
+  </table>
+  <p>补搜确认7/20入池后无任何独立新增基本面信息——83%涨幅完全是7/18晚间H1预告（设立先验的同一事件）驱动的一次性重估。review-input.json按excess规则建议moderate_support，但鉴于该价格反应与entry催化剂高度相关、非独立确认信息，主动降级为weak_support，避免同一事件通过价格渠道重复计入先验已部分反映的乐观。</p>
+  <p class="falsify">💥 证伪触发：正式中报归母净利&lt;6.5亿元，或H2需求明显放缓（Q3单季&lt;2亿元）→ 后验可判至0.2以下。</p>
+</div>
+
+<div class="card">
+  <h3>688195.SS · 腾景科技AI光通信OCS <span class="badge observing">observing</span></h3>
+  <p>后验：0.33 → <strong>0.30</strong>（Δlog-odds -0.118）</p>
+  <table>
+    <tr><th>证据</th><th>Tier</th><th>标签</th><th>log-LR</th></tr>
+    <tr><td>E1 Q1利润增速(+10.74%)大幅落后营收增速(+51.17%)，经营现金流转负</td><td>T1</td><td>weak_against</td><td>-0.405</td></tr>
+    <tr><td>E2 Lumentum OCS backlog超$4亿+Cignal AI上调OCS市场预测</td><td>T2</td><td>moderate_support</td><td>+0.693</td></tr>
+    <tr><td>E3 价格证据：excess vs 510300 -39.14%/vs 512480 -42.54%</td><td>P_price</td><td>weak_against（降级）</td><td>-0.405</td></tr>
+  </table>
+  <p>三条证据方向不一：Q1盈利质量（营收快、利润慢、现金流转负）是新发现的负面信号，直击thesis"毛利率随规模提升"的传导环节；但下游客户Lumentum的OCS backlog增长+行业预测上调，正面确认OCS终端需求未走弱；价格跑输主因是美股光学板块(Coherent/Lumentum/AOI)7/2、7/15两轮联动杀跌，非公司特定利空。三者部分对冲，净小幅下修。注：review-input.json按excess规则建议价格标签为moderate_against，已降级采纳为weak_against（P_price tier LR下限为0.67）。</p>
+  <p class="falsify">💥 证伪触发：正式中报扣非净利&lt;3800万元，或Coherent OCS项目确认推迟/取消 → 后验可判至0.2以下。</p>
+</div>
+
+<h2>3. 状态迁移公告</h2>
+<p>本周无状态迁移。全部11条假设的validation_conditions中，最早的check_by日期为POWL的2026-08-15，其余集中在8-31/10-15/10-31/11-15，均未到期。002497.SZ(雅化集团)后验降至0.18，PENG降至0.16，均已明显偏离先验但尚未触及"连续两周≤0.10"的falsified迁移条件——下周复核需重点跟踪这两条是否继续走弱。</p>
+
+<h2>4. Promote 建议</h2>
+<p>暂无。池内0条假设达到confirmed状态（需全部required验证条件met且后验≥0.75）。当前后验最高为002326.SZ(永太科技) 0.55，距confirmed门槛仍有较大差距，且V1（中报）尚未到判定窗口。</p>
+
+<h2>5. 评分卡摘要</h2>
+<p>样本不足，命中率/Brier分数暂无法计算：<code>n_resolved=0</code>（尚无任何假设走到confirmed/falsified/expired终态），校准分箱全部为空。经济结果方面，11条observing假设入池以来平均收益<strong>-9.11%</strong>，平均相对SPY超额<strong>-9.42%</strong>——反映本周期成长股整体承压（多条个股跌幅主要由7/20 A股科技板块系统性去估值+7/2、7/15美股光学股联动杀跌驱动，而非普遍性基本面恶化）。待首批假设在8月中下旬陆续进入V1判定窗口后，评分卡才能产生有意义的命中率/Brier数据。</p>
+
+<!-- 本次为池子首次周复核，无历史resolved数据，季度校准复盘(§9四问)暂不适用，待有resolved样本后再执行 -->
+
+<h2>下周扫描线索</h2>
+<ul style="margin-left:20px;">
+  <li>POWL的FQ3财报（8/3收盘后）是全池第一个V1判定点，需在下周复核前确认backlog环比、FY26指引、book-to-bill三项数据。</li>
+  <li>OUST（8/6）、雅化集团碳酸锂Q3价格走势（14万falsify线附近拉锯）需要日频跟踪，不必等到下周复核才处理——若锂价单日大幅跌破14万且连续多日不回升，属于T1紧急通道候选，应即时评级。</li>
+  <li>002497.SZ与PENG后验已跌至0.16-0.18，是当前池内最脆弱的两条假设，下周若继续无正面证据出现，需评估是否满足"连续两周≤0.10"的falsified前置条件。</li>
+  <li>688531.SS(日联科技)新增的菲莱测试并购细节（交易是否完成、标的财务数据）尚未披露，值得daily-scan持续追踪。</li>
+</ul>
+
+<div class="disclaimer">
+  ⚠️ 本页面为个人研究假设跟踪工具的自动化输出，不构成任何投资建议。所有概率为研究性主观估计，
+  数据可能有误或延迟。做出任何投资决策前请独立核实。
+</div>
+
+</body>
+</html>
