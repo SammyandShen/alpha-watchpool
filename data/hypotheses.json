@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-07-25",
+  "$last_updated": "2026-07-27",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -166,6 +166,21 @@
           },
           "pending": false,
           "review_note": "review-input.json建议标签weak_against，予以采纳（价格证据不得升级）"
+        },
+        {
+          "id": "E5",
+          "date": "2026-07-15",
+          "source": "Northland Securities / Oppenheimer",
+          "headline": "Northland将OUST目标价从$38上调至$60；Oppenheimer从$42上调至$57（均维持Outperform）",
+          "url": "https://www.gurufocus.com/news/8960739/oust-maintained-by-oppenheimer-price-target-raised-to-5700",
+          "summary": "两家机构7/15同步上调目标价，早于7/20 Roth/MKM给出的$75目标价；均为sell-side叙事级信号，非基本面直接验证",
+          "type": "T4_narrative",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -1195,9 +1210,9 @@
       ],
       "events": [
         {
-          "date": "2026-10-15",
+          "date": "2026-10-13",
           "type": "earnings",
-          "note": "Q4 FY26财报（预估日期，FY26截止8月末，预计10月初至11月初发布）— V1/V2判定点"
+          "note": "Q4 FY26财报（Yahoo官方排期确认2026-10-13）— V1/V2判定点"
         }
       ],
       "links": {
@@ -2002,6 +2017,147 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "H1 2026中报披露截止日（V1判定点）；预计提前10-15天（约8-15前后）发布"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260727-688380.SS",
+      "ticker": "688380.SS",
+      "company": "中微半导体（深圳）股份有限公司",
+      "created_at": "2026-07-27",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-07-27",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：H1 2026业绩预告扣非净利+101.95%（1.53亿元）+ MCU产能持续紧张、交期拉长驱动量价齐升"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-05-06",
+          "headline": "全球AI电源出货激增，中国MCU芯片厂商罕见'缺货提价'",
+          "url": "https://finance.sina.com.cn/jjxw/2026-05-06/doc-inhwxnuk8377599.shtml",
+          "summary": "AI服务器电源模块+数据中心光模块需求激增，挤占晶圆代工MCU产能，中微半导等厂商年内已提价15-50%"
+        },
+        {
+          "date": "2026-07-22",
+          "headline": "中微半导发布2026年半年度业绩预告：营收+44.06%、归母净利+90.82%、扣非净利+101.95%",
+          "url": "https://www.cfi.net.cn/p20260722001986.html",
+          "summary": "H1营收7.26亿元/归母净利1.65亿元/扣非净利1.53亿元，公司称MCU需求增速持续超产能增速，供不应求"
+        }
+      ],
+      "thesis": {
+        "one_liner": "AI算力挤占MCU产能引发结构性缺货提价，2-3个季度内将持续改写营收线",
+        "demand_change": "公司自2026年1月起对MCU产品提价15%-50%；董事长杨勇在4月业绩会公开确认MCU市场主要矛盾是供应紧张——晶圆代工产能被AI服务器电源、数据中心光模块等算力相关产品挤占，MCU产能不增反降；未交订单持续累积，晶圆和封测交期均已拉长约1/2；H1 2026业绩预告显示营收+44.06%、扣非净利+101.95%已进入报表验证阶段。",
+        "transmission": "MCU销售出货量×ASP直接进产品收入线（MCU贡献2025年营收75.4%）；产品提价15-50%直接拉高单位毛利；产能利用率提升摊薄固定成本，扣非净利润增速(101.95%)显著快于营收增速(44.06%)，显示经营杠杆已开始释放。",
+        "misclassification": "市场标签仍是『同质化竞争激烈的消费级MCU设计公司，靠杀价走量』；实际正变成『AI算力扩张挤占晶圆代工产能后，稀缺MCU产能与提价权的直接受益者』——缺货提价并非公司主动定价策略，而是被上游产能约束倒逼的结构性涨价，持续性取决于晶圆代工产能是否持续被AI订单占用。",
+        "serenity_score": {
+          "demand_certainty": 5,
+          "transmission_clarity": 4,
+          "purity": 4,
+          "elasticity": 4,
+          "neglect": 3,
+          "verification_speed": 5,
+          "downside": 3
+        },
+        "brief_cn": [
+          "触发：中微半导7/22披露2026年半年度业绩预告——营收7.26亿元(+44.06%)、归母净利1.65亿元(+90.82%)、扣非净利1.53亿元(+101.95%)，扣非增速已达2025年全年扣非净利润(1.69亿元)的90%；同期公司确认MCU产品自1月起已提价15%-50%。",
+          "需求已可观察：董事长杨勇4月业绩会公开确认『供应紧张是MCU市场主要矛盾』——AI服务器电源模块、数据中心光模块等算力相关产品的爆发式出货挤占了晶圆代工MCU产能，MCU产能不增反降，未交订单持续累积，晶圆/封测交期已拉长约1/2。传导路径短：MCU占公司2025年营收75.4%，出货量×ASP直接进收入线，扣非净利增速(101.95%)显著快于营收增速(44.06%)，显示提价+规模效应的经营杠杆已开始释放。",
+          "市场误分类：MCU设计赛道向来被视为『同质化竞争、靠低价走量』的红海生意，中微半导也常年被归入此类；但这轮涨价并非公司主动定价策略，而是AI算力对晶圆代工产能的虹吸效应倒逼的结构性缺货——公司自身正积极扩产/寻找新代工伙伴以承接这波产能红利，且自研存储新品Q2已开始出货，打开第二增长曲线。",
+          "先验给0.32的理由：七维总分28，取中下沿——demand_certainty/verification_speed均给5分（公司与管理层公开确认+月度可观测价格/交期数据），但neglect=3（涨价新闻已有一定财经媒体报道，非完全冷门）、downside=3（MCU赛道竞争者众多，涨价可持续性依赖晶圆代工产能分配格局是否持续偏向AI订单）。按H1扣非净利年化并给予40-50x景气期PE估算，当前股价已隐含较多预期，赌的是紧缺持续时间超过市场预期、且扩产/新品打开更大空间。"
+        ]
+      },
+      "prior": {
+        "p": 0.32,
+        "log_odds": -0.7538,
+        "rationale": "七维总分28→26-30档(0.30-0.42)；取中下沿因neglect=3（涨价新闻已有一定报道）且downside=3（MCU赛道竞争者众多，涨价可持续性依赖代工产能分配格局）；管理层公开确认供需矛盾+H1扣非净利已达2025全年90%支撑取0.32",
+        "set_by": "daily-scan 2026-07-27"
+      },
+      "current": {
+        "p": 0.32,
+        "log_odds": -0.7538,
+        "last_reviewed": "2026-07-27",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026年中报正式财报（截止8-31）营业收入与扣非净利润",
+          "confirm_if": "扣非净利润 >= 1.4亿元（基本达预告下限）且营业收入 >= 6.8亿元",
+          "falsify_if": "扣非净利润 < 1.0亿元（较预告下修超30%）或管理层/公告确认MCU价格出现回落",
+          "check_by": "2026-08-31",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "Q3单季度MCU产品价格及交期趋势（行业媒体/公司披露）",
+          "confirm_if": "Q3 MCU价格维持或续涨、交期维持拉长状态",
+          "falsify_if": "MCU价格出现下调或交期恢复至正常水平（产能紧张缓解信号）",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        },
+        {
+          "id": "V3",
+          "required": false,
+          "metric": "三季报扣非净利润同比增速",
+          "confirm_if": "Q3单季扣非净利润同比增速 >= +60%",
+          "falsify_if": "Q3单季扣非净利润同比增速 < +20% 或环比转负",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-01-27"
+      },
+      "baseline": {
+        "entry_date": "2026-07-27",
+        "entry_price": 39.2,
+        "benchmark": "510300.SS",
+        "benchmark_entry_price": 4.701,
+        "sector_benchmark": "512480.SS",
+        "sector_benchmark_entry_price": 1.113
+      },
+      "price_expectation": {
+        "confirm_target": 44.0,
+        "falsify_target": 14.0,
+        "expected_by": "2026-11-30",
+        "methodology_cn": "证实情景：H1扣非净利1.53亿元(已披露)+H2在提价效应完全传导与交期持续拉长下环比加速至约1.7-2.0亿元，2026E全年扣非净利润≈3.3-3.5亿元；若中报/三季报连续验证紧缺持续，给予MCU结构性缺货稀缺溢价50x PE（同业兆易创新等高景气期PE中枢40-55x）→ 目标市值=3.3亿×50≈165-175亿元 ÷ 总股本4.00365亿股 ≈ ¥41-44，取¥44。交叉验证：以2025年扣非净利润1.69亿元为基期、H2同比增速与H1(101.95%)相近估算全年2026E扣非净利润约3.3亿元，同样收敛于该区间。证伪情景：H2增速大幅放缓（扣非净利润增速<20%），退回MCU非紧缺期估值中枢25-28x，对应2026E扣非净利润保守估算约2.0亿元 × 28x ≈ 56亿元 ÷ 4.00365亿股 ≈ ¥14。",
+        "timeline_logic_cn": "V1最晚判定点为8-31中报（预计8月中旬提前发布），V2/V3三季报窗口10-31进一步确认价格与增速持续性；缺货提价类叙事的重估通常需要连续两个财务期确认才能兑现，预计2026-11-30前完成重估。",
+        "set_at": "2026-07-27",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-07-27",
+          "p": 0.32,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-08-31",
+          "type": "earnings",
+          "note": "2026年中报披露截止日（V1判定点）；预计提前至8月中旬发布"
         }
       ],
       "links": {

@@ -2,94 +2,6 @@
   "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate | skipped_daily_cap",
   "entries": [
     {
-      "date": "2026-07-09",
-      "fingerprint": "2026-06-09+OUST+bluecity-njdot-world-cup",
-      "headline": "Ouster completes NJDOT BlueCity deployment at 40+ MetLife Stadium highway sites for FIFA World Cup",
-      "tickers": [
-        "OUST"
-      ],
-      "action": "evidence_appended",
-      "note": "T3商业化验证：政府付费合同落地执行，BABA合规后首个标志性联邦基建部署（永久性ATMS集成），记为OUST pending证据E1"
-    },
-    {
-      "date": "2026-07-09",
-      "fingerprint": "2026-05-06+POWL+q2fy26-400m-dc-order-backlog",
-      "headline": "Powell Industries Q2 FY26 earnings: $400M+ record data center order post-quarter, new orders +97% YoY, backlog $1.8B +33%",
-      "tickers": [
-        "POWL"
-      ],
-      "action": "evidence_appended",
-      "note": "T2：史上最大单笔>4亿美元数据中心订单+季内新订单+97%YoY直接预示FQ3 backlog超V1确认线（+5% QoQ），记为POWL pending证据E2；Q2 EPS轻微miss被订单动能掩盖"
-    },
-    {
-      "date": "2026-07-09",
-      "fingerprint": "2026-07-01+POWL+ceo-insider-selling-36k",
-      "headline": "POWL CEO Brett Cope公开市场卖出36,000股（7/1），CFO提交Form 144，3个月内部人士仅净卖出",
-      "tickers": [
-        "POWL"
-      ],
-      "action": "evidence_appended",
-      "note": "T4负面：高管密集卖出（PE 48x估值压力），7/2因此跌8.4%；单独不否定假设，但与E3合并周复核时需评估insider selling对neglect的影响；记为POWL pending证据E3"
-    },
-    {
-      "date": "2026-07-09",
-      "fingerprint": "2026-07-09+002990.SZ+h1-forecast-ai-computing-pivot",
-      "headline": "盛视科技H1 2026业绩预告扣非净利+552-743%，Q2单季环比+2556%，算力业务开始确认收入",
-      "tickers": [
-        "002990.SZ"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "①60亿算力合同对手方为'神秘公司'信用风险高②公司定位为算力资源使用者非提供者，传导路径不清③股价5天4板已充分定价，neglect≤1④七维总分估算≤20弱假设档；观察名单级"
-    },
-    {
-      "date": "2026-07-09",
-      "fingerprint": "2026-07-02+002396.SZ+h1-dc-switch-5xLL-chip-risk",
-      "headline": "星网锐捷H1 2026业绩预告归母净利+46-103%，数据中心交换机爆发，5天4板，公司自披芯片成本隐忧",
-      "tickers": [
-        "002396.SZ"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "5天4板（信息提前泄露）=neglect≤1已充分定价；扣非YoY仅+11.76-64.98%（主体增量来自非经常项）；公司主动发布异动公告提示芯片供应/成本风险；市值161.8亿弹性偏弱；观察名单级"
-    },
-    {
-      "date": "2026-07-10",
-      "fingerprint": "2026-07-07+PENG+q3-fy26-earnings-beat-guidance-raise",
-      "headline": "Penguin Solutions Q3 FY26: revenue $479M +48% YoY, AI业务+104% YoY，全年指引上修至+22%增速",
-      "tickers": [
-        "PENG"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
-      "date": "2026-07-10",
-      "fingerprint": "2026-07-08+688620.SS+h1-revenue-84pct-turnaround-ai-soc",
-      "headline": "安凯微H1 2026业绩预告：营收+84-87% YoY、净利扭亏为盈¥3800-4300万，AI硬件需求+产品提价驱动",
-      "tickers": [
-        "688620.SS"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
-      "date": "2026-07-10",
-      "fingerprint": "2026-07-10+OUST+bluecity-700sites-worldcup-expansion",
-      "headline": "Ouster BlueCity全球签约站点超700个；FIFA世界杯决赛7/19 MetLife Stadium高能见度验证窗口",
-      "tickers": [
-        "OUST"
-      ],
-      "action": "evidence_appended",
-      "note": "T3商业化验证：全球700+签约站点里程碑，FIFA世界杯决赛提供高能见度公共验证事件；追加为OUST pending证据E2"
-    },
-    {
-      "date": "2026-07-10",
-      "fingerprint": "2026-07-02+002497.SZ+lithium-price-163k-rising",
-      "headline": "碳酸锂电池级现货价7/2为¥16.3万/吨，近5天涨+8.67%（从约¥15万/吨回升）",
-      "tickers": [
-        "002497.SZ"
-      ],
-      "action": "evidence_appended",
-      "note": "T3价格信号：锂价¥16.3万/吨持续回升但仍低于V2确认线（月均≥¥18万/吨）；追加为002497.SZ pending证据E1"
-    },
-    {
       "date": "2026-07-15",
       "fingerprint": "2026-07-08+PENG+cfo-transition-guidance-reaffirmed",
       "headline": "PENG CFO Nate Olmstead自愿离职（effective 7/8），Aaron Johnson接任interim CFO；同步重申FY26净销售额和EPS将达指引区间高端",
@@ -301,6 +213,55 @@
       ],
       "action": "evidence_appended",
       "note": "T4负面叙事：Barclays降级主要基于估值/资本结构担忧（0%利率$7.5亿可转债潜在稀释），非AI内存需求恶化；追加为PENG pending证据E3"
+    },
+    {
+      "date": "2026-07-27",
+      "fingerprint": "2026-07-22+688380.SS+h1-forecast-mcu-shortage-price-hike",
+      "headline": "中微半导H1 2026业绩预告：营收+44.06%(7.26亿)、归母净利+90.82%(1.65亿)、扣非净利+101.95%(1.53亿)，MCU缺货提价+董事长确认供应紧张是主要矛盾",
+      "tickers": [
+        "688380.SS"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-27",
+      "fingerprint": "2026-07-15+OUST+northland-oppenheimer-pt-raise",
+      "headline": "Northland将OUST目标价从$38上调至$60；Oppenheimer从$42上调至$57（均维持Outperform）",
+      "tickers": [
+        "OUST"
+      ],
+      "action": "evidence_appended",
+      "note": "T4叙事级：两家机构7/15同步上调目标价，早于7/20 Roth/MKM给出的$75目标价；追加为OUST pending证据E5"
+    },
+    {
+      "date": "2026-07-27",
+      "fingerprint": "2026-07-22+688220.SS+h1-forecast-asr-ai-custom-chip-still-loss",
+      "headline": "翱捷科技H1 2026归母净利扭亏(8500万,+503%)，AI芯片定制业务收入+157%，但扣非净利润仍亏损约5800万元",
+      "tickers": [
+        "688220.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "归母净利暴增主要来自非经常性损益(公允价值变动+投资收益约1.3亿)；扣非净利润仍为亏损状态，未通过入池的盈利质量门槛；AI定制业务增长趋势值得后续观察，暂列观察名单"
+    },
+    {
+      "date": "2026-07-27",
+      "fingerprint": "2026-07-24+688766.SS+h1-forecast-storage-chip-price-mktcap-over1000b",
+      "headline": "普冉股份H1 2026扣非净利+2977%(8.2亿)，营收+73%(39.5亿)，存储芯片供给紧张量价齐升+并购珠海诺亚长天并表贡献",
+      "tickers": [
+        "688766.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "总市值已超1200亿元，PE近300倍且年内已翻倍以上；elasticity=1、neglect=1，业绩增长部分来自并购并表非纯内生；已充分定价，不满足小盘弹性入池条件"
+    },
+    {
+      "date": "2026-07-27",
+      "fingerprint": "2026-07-21+688110.SS+h1-forecast-slc-nand-price-surge-mktcap-large",
+      "headline": "东芯股份H1 2026扣非净利+277-307%(6.3-6.7亿)，营收+334-346%，AI算力驱动利基型存储供需紧张、量价齐升",
+      "tickers": [
+        "688110.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "总市值约487亿元，7/24单日暴跌-14.41%显示已充分定价且波动剧烈；neglect≤2，弹性不及688380.SS等更小市值标的；观察名单级"
     }
   ]
 }

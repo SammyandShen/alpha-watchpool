@@ -1,5 +1,5 @@
 {
-  "$last_updated": "2026-07-25T12:00:27+08:00",
+  "$last_updated": "2026-07-27T08:11:45+08:00",
   "source": "yahoo-quote-summary",
   "profiles": {
     "OUST": {
@@ -25,7 +25,7 @@
       "free_cashflow": -46808624,
       "week52_low": 16.4,
       "week52_high": 63.79,
-      "fetched_at": "2026-07-25T12:00:20+08:00"
+      "fetched_at": "2026-07-27T08:11:37+08:00"
     },
     "POWL": {
       "next_earnings_date": "2026-08-03",
@@ -37,7 +37,7 @@
       "description_en": "Powell Industries, Inc., together with its subsidiaries, designs, develops, manufactures, sells, and services custom-engineered equipment and systems. The company's products portfolio includes integrated power control room substations, custom-engineered modules, and electrical houses; and traditional and arc-resistant distribution switchgears and control gears, medium-voltage circuit breakers, monitoring and control communications systems, motor control centers, switches, and bus duct systems. It also provides field service inspection, installation, commissioning, modification, and repair services; spare parts; retrofit and retrofill components for existing systems; and replacement circuit breakers for switchgears. The company serves onshore and offshore production, liquefied natural gas facilities and terminals, pipelines and refineries, petrochemical, electric utility, light rail traction power, mining and metals, pulp and paper, data centers, commercial construction, and other industrial markets, as well as universities and government entities. It operates in the United States, Canada, the Middle East, Africa, Europe, Mexico, the Asia/Pacific, and Central and South America. Powell Industries, Inc. was founded in 1947 and is headquartered in Houston, Texas.",
       "currency": "USD",
       "market_cap": 8459793408,
-      "trailing_pe": 47.389797,
+      "trailing_pe": 45.265106,
       "forward_pe": 33.778458,
       "ps_ttm": 7.4729524,
       "revenue_ttm": 1132055040,
@@ -50,7 +50,7 @@
       "free_cashflow": 142181632,
       "week52_low": 69.0,
       "week52_high": 328.0,
-      "fetched_at": "2026-07-25T12:00:20+08:00"
+      "fetched_at": "2026-07-27T08:11:37+08:00"
     },
     "002326.SZ": {
       "next_earnings_date": null,
@@ -75,7 +75,7 @@
       "free_cashflow": 192748608,
       "week52_low": 12.9,
       "week52_high": 33.0,
-      "fetched_at": "2026-07-25T12:00:21+08:00"
+      "fetched_at": "2026-07-27T08:11:38+08:00"
     },
     "002497.SZ": {
       "next_earnings_date": null,
@@ -100,7 +100,7 @@
       "free_cashflow": 592333376,
       "week52_low": 13.27,
       "week52_high": 32.0,
-      "fetched_at": "2026-07-25T12:00:22+08:00"
+      "fetched_at": "2026-07-27T08:11:39+08:00"
     },
     "688620.SS": {
       "next_earnings_date": null,
@@ -125,7 +125,7 @@
       "free_cashflow": -291374176,
       "week52_low": 10.0,
       "week52_high": 18.5,
-      "fetched_at": "2026-07-25T12:00:22+08:00"
+      "fetched_at": "2026-07-27T08:11:40+08:00"
     },
     "PENG": {
       "next_earnings_date": "2026-10-13",
@@ -150,7 +150,7 @@
       "free_cashflow": -107568000,
       "week52_low": 16.04,
       "week52_high": 89.86,
-      "fetched_at": "2026-07-25T12:00:23+08:00"
+      "fetched_at": "2026-07-27T08:11:40+08:00"
     },
     "603115.SS": {
       "next_earnings_date": null,
@@ -175,7 +175,7 @@
       "free_cashflow": -275532320,
       "week52_low": 15.24,
       "week52_high": 132.5,
-      "fetched_at": "2026-07-25T12:00:24+08:00"
+      "fetched_at": "2026-07-27T08:11:41+08:00"
     },
     "003026.SZ": {
       "next_earnings_date": null,
@@ -200,7 +200,7 @@
       "free_cashflow": 3177057,
       "week52_low": 19.910343,
       "week52_high": 49.8,
-      "fetched_at": "2026-07-25T12:00:24+08:00"
+      "fetched_at": "2026-07-27T08:11:42+08:00"
     },
     "688531.SS": {
       "next_earnings_date": null,
@@ -223,9 +223,9 @@
       "total_cash": 1230458624,
       "total_debt": 192663920,
       "free_cashflow": -41934600,
-      "week52_low": 46.2,
+      "week52_low": 47.37,
       "week52_high": 215.0,
-      "fetched_at": "2026-07-25T12:00:25+08:00"
+      "fetched_at": "2026-07-27T08:11:42+08:00"
     },
     "301536.SZ": {
       "next_earnings_date": null,
@@ -250,7 +250,7 @@
       "free_cashflow": 302683584,
       "week52_low": 53.37,
       "week52_high": 146.62,
-      "fetched_at": "2026-07-25T12:00:26+08:00"
+      "fetched_at": "2026-07-27T08:11:43+08:00"
     },
     "688195.SS": {
       "next_earnings_date": null,
@@ -273,9 +273,34 @@
       "total_cash": 107275208,
       "total_debt": 308830272,
       "free_cashflow": -347306784,
-      "week52_low": 30.092857,
+      "week52_low": 30.642857,
       "week52_high": 306.49286,
-      "fetched_at": "2026-07-25T12:00:26+08:00"
+      "fetched_at": "2026-07-27T08:11:44+08:00"
+    },
+    "688380.SS": {
+      "next_earnings_date": null,
+      "name": "Shenzhen China Micro Semicon Co., Ltd.",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "employees": null,
+      "website": "https://www.mcu.com.cn",
+      "description_en": "Shenzhen China Micro Semicon Co., Ltd., an integrated circuit design company, focuses on the research and development of digital-analog mixed-signal chips and analog chips in China. Its products are used in small household appliances, consumer electronics, smart home appliances, motor power supply, industrial control, automotive electronics, and medical health fields. The company was founded in 2001 and is based in Shenzhen, China.",
+      "currency": "CNY",
+      "market_cap": 15305953280,
+      "trailing_pe": 50.97333,
+      "forward_pe": null,
+      "ps_ttm": 12.33524,
+      "revenue_ttm": 1240831360,
+      "revenue_growth": 0.575,
+      "gross_margin": 0.34070998,
+      "operating_margin": 0.23031999,
+      "profit_margin": 0.24259001,
+      "total_cash": 1455170176,
+      "total_debt": 5486505,
+      "free_cashflow": 473868800,
+      "week52_low": 27.77,
+      "week52_high": 66.98,
+      "fetched_at": "2026-07-27T08:11:44+08:00"
     }
   }
 }
