@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-07-27",
+  "$last_updated": "2026-07-28",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -834,6 +834,21 @@
           },
           "pending": false,
           "review_note": "采纳review-input.json建议标签weak_against"
+        },
+        {
+          "id": "E5",
+          "date": "2026-07-27",
+          "source": "生意社 / 上海有色网(SMM)",
+          "headline": "电池级碳酸锂现货价格持续下探：7/22报14.05-14.49万元/吨，7/27生意社基准价14.30万元/吨，较7/20的15.5万元/吨进一步下跌约7-9%，已逼近V2证伪线(<14万元/吨)",
+          "url": "https://www.100ppi.com/news/detail-20260721-5952878.html",
+          "summary": "锂价延续弱势，7月下旬维持在14.0-14.5万元/吨区间震荡，距V2证伪门槛(<14万)仅一步之遥；距V2确认门槛(≥18万)差约22%；「业绩热股市冷」格局未改善，中报（8/31）判定点前需持续紧盯锂价是否跌破14万",
+          "type": "T2_supply_chain",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
         }
       ],
       "posterior_history": [

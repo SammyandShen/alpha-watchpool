@@ -262,6 +262,116 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "总市值约487亿元，7/24单日暴跌-14.41%显示已充分定价且波动剧烈；neglect≤2，弹性不及688380.SS等更小市值标的；观察名单级"
+    },
+    {
+      "date": "2026-07-28",
+      "fingerprint": "2026-07-27+002497.SZ+lithium-143k-near-falsify",
+      "headline": "电池级碳酸锂现货价7/22报14.05-14.49万元/吨，7/27生意社基准价14.30万元/吨，较7/20的15.5万元/吨进一步下跌，逼近V2证伪线(<14万元/吨)",
+      "tickers": [
+        "002497.SZ"
+      ],
+      "action": "evidence_appended",
+      "note": "T2供应链价格信号：锂价延续弱势并逼近证伪门槛；追加为002497.SZ pending证据E5，留待中报(8/31)前weekly review评级"
+    },
+    {
+      "date": "2026-07-28",
+      "fingerprint": "2026-07-28+MXL+infrastructure-revenue-145pct-dsp",
+      "headline": "MaxLinear Q2 2026财报：Infrastructure业务营收同比+145%（光模块PAM4 DSP出货放量），管理层称进入'根本性拐点'",
+      "tickers": [
+        "MXL"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "市值约$65亿中盘，需求已兑现为实际营收（非仅指引）但DSP/光模块AI叙事已广泛报道、机构覆盖密集(neglect低)，股价可能已部分反应；观察名单级"
+    },
+    {
+      "date": "2026-07-28",
+      "fingerprint": "2026-07-24+TPC+backlog-record-guidance-raise",
+      "headline": "Tutor Perini backlog创历史新高，同步上修全年指引",
+      "tickers": [
+        "TPC"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "市值约$19亿小盘，但backlog增量是否与数据中心/电网基建相关尚未证实，需求归因不够具体，demand_certainty证据链偏弱；观察名单级"
+    },
+    {
+      "date": "2026-07-28",
+      "fingerprint": "2026-07-28+ASYS+q2fy26-review-stale",
+      "headline": "Amtech Systems Q2 FY26（截至3/31/2026）营收$20.5M+31%YoY、backlog$22.3M、book-to-bill>1，AI reflow设备驱动",
+      "tickers": [
+        "ASYS"
+      ],
+      "action": "skipped_duplicate",
+      "note": "该季度数据已于7/17评估过(book-to-bill ~1.03x、七维总分约26偏弱)，本次复核未发现Q3 FY26(6月止)新数据，非增量信息，跳过避免重复"
+    },
+    {
+      "date": "2026-07-28",
+      "fingerprint": "2026-07-23+688655.SS+h1-forecast-pcb-turnaround-395pct",
+      "headline": "迅捷兴H1 2026扣非净利1180万元(+395%)扭亏为盈，公司称AI算力赛道景气、产能利用率大幅提升",
+      "tickers": [
+        "688655.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "核实公司自身披露：1.6T/800G高速光模块PCB仍处于试样阶段、尚未产生收入，8层以上高端板占比仅20.86%；本次扭亏主因珠海新工厂产能利用率回升的整体性复苏，而非AI专属需求拐点，purity/demand_certainty不足；拟收购嘉之宏尚处发股审批阶段未并表，不影响本期数据判断但需持续关注；观察名单级"
+    },
+    {
+      "date": "2026-07-28",
+      "fingerprint": "2026-07-22+688808.SS+h1-forecast-optical-test-equipment-830pct",
+      "headline": "联讯仪器H1 2026扣非净利5-5.7亿元(+830-960%)，AI算力/数据中心建设加速带动光模块测试仪器需求",
+      "tickers": [
+        "688808.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "需求证据扎实(核心客户中际旭创/新易盛/光迅科技等)，但市值已达约1900亿元、PE远超基本面兑现速度，7/17已现跌停显示市场分歧，不满足misclassification/未充分定价条件；跳过"
+    },
+    {
+      "date": "2026-07-28",
+      "fingerprint": "2026-07-24+688779.SS+h1-forecast-battery-materials-turnaround",
+      "headline": "五矿新能H1 2026归母净利3.4-4亿元扭亏为盈，新能源汽车及储能材料三大领域销量大幅增长",
+      "tickers": [
+        "688779.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "归母净利与扣非净利高度一致、非经常性占比低，客户覆盖宁德时代/亿纬锂能等扎实；但增长逻辑是新能源全行业复苏beta，缺乏区别于同业的独有催化事件；观察名单级"
+    },
+    {
+      "date": "2026-07-28",
+      "fingerprint": "2026-07-24+688297.SS+h1-forecast-drone-turnaround",
+      "headline": "中无人机H1 2026归母净利同比+108-144%，无人机订单交付放量",
+      "tickers": [
+        "688297.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "军用/警用无人机采购透明度低、缺乏可公开验证的客户订单证据；2025年全年仍为净亏损，本期高增速有低基数效应；verification_speed差；观察名单级"
+    },
+    {
+      "date": "2026-07-28",
+      "fingerprint": "2026-07-23+688268.SS+h1-forecast-electronic-gas-ASML-cert",
+      "headline": "华特气体H1 2026扣非净利略增74.9%，电子特气受益半导体产业需求，ASML/Gigaphoton双认证光刻气",
+      "tickers": [
+        "688268.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "ASML双认证叙事已被市场广泛报道(neglect低)，股价高位(¥215-278)且单日成交额30亿+显示充分定价；中报延至8/26披露，非提前预告；跳过"
+    },
+    {
+      "date": "2026-07-28",
+      "fingerprint": "2026-07-27+300765.SZ+h1-forecast-onetime-upfront-payment",
+      "headline": "石药创新H1 2026归母净利+1457-1649%(11.8-13.6亿)，主因子公司巨石生物收到阿斯利康4.2亿美元首付款",
+      "tickers": [
+        "300765.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "净利暴增主要来自授权协议首付款的一次性收入确认，非持续性经营性需求增长，判一次性收益跳过"
+    },
+    {
+      "date": "2026-07-28",
+      "fingerprint": "2026-07-23+688293.SS+h1-forecast-ma-consolidation-fairvalue",
+      "headline": "奥浦迈H1 2026扣非净利+866.8%(4900万)，主因并购澎立生物并表+并购负债公允价值变动收益",
+      "tickers": [
+        "688293.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "剔除并购会计处理后核心主业利润约7400万(+95%)，但披露口径中非经常性/并表因素占比过高，与serenity要求的'干净内生需求'标准不符；观察名单级"
     }
   ]
 }
