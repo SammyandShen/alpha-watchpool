@@ -372,6 +372,74 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "剔除并购会计处理后核心主业利润约7400万(+95%)，但披露口径中非经常性/并表因素占比过高，与serenity要求的'干净内生需求'标准不符；观察名单级"
+    },
+    {
+      "date": "2026-07-29",
+      "fingerprint": "2026-07-28+920493.BJ+h1-forecast-hpc-ai-compute-service-688pct",
+      "headline": "并行科技H1 2026业绩预告：归母净利润4000-4800万元(+687.62%-845.14%)，Q1已披露收入+117.3%/净利+222.9%，智算服务规模扩大驱动",
+      "tickers": [
+        "920493.BJ"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-29",
+      "fingerprint": "2026-07-29+300981.SZ+h1-forecast-nitrile-glove-price-surge-2338pct",
+      "headline": "中红医疗H1 2026业绩预告：归母净利润1.4-2.1亿元(+2338%-3557%)，丁腈手套满产满销+Q2售价大幅上涨驱动",
+      "tickers": [
+        "300981.SZ"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-29",
+      "fingerprint": "2026-07-29+688123.SS+h1-forecast-eeprom-ddr5-spd-156pct",
+      "headline": "聚辰股份H1 2026归母净利+156.07%(5.25亿)，DDR5 SPD/车规EEPROM驱动，但市值已近300亿且被多家券商深度覆盖",
+      "tickers": [
+        "688123.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "市值~300亿元中盘，DDR5 SPD『AI存储隐形冠军』叙事已被西部证券/光大证券等多家机构深度覆盖报道，neglect过低；且H1营收仅+4.71%（PC/手机拖累），增长质量不如预告净利数字亮眼；观察名单级"
+    },
+    {
+      "date": "2026-07-29",
+      "fingerprint": "2026-07-24+688411.SS+h1-energy-storage-integrator-mktcap-large",
+      "headline": "海博思创：2025年营收116亿元(+40.32%)、净利9.49亿元(+46.49%)，全球储能系统集成商前三强",
+      "tickers": [
+        "688411.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "营收规模已达百亿级、储能系统集成龙头，市值弹性不足；储能赛道景气已广泛定价，不满足小盘弹性入池条件"
+    },
+    {
+      "date": "2026-07-29",
+      "fingerprint": "2026-07-28+688733.SS+h1-forecast-battery-coating-material-subsidy-mixed",
+      "headline": "壹石通H1 2026扣非净利950-1400万元(+2065%-3139%)，锂电池涂覆材料销量增长，但净利基数极小且政府补助等非经常性损益贡献显著",
+      "tickers": [
+        "688733.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "利润绝对值过小（950-1400万）导致信噪比低；公司自述政府补助较上年同期增加对净利润产生积极影响，非经常性成分不干净；观察名单级"
+    },
+    {
+      "date": "2026-07-29",
+      "fingerprint": "2026-07-23+300891.SZ+h1-forecast-titanium-dioxide-price-recovery-small",
+      "headline": "惠云钛业H1 2026归母净利600-880万元(+278.9%-315.7%)，钛白粉价格回升+出口增长",
+      "tickers": [
+        "300891.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "净利绝对值仅600-880万元，商品价格周期性强且体量过小，verification信噪比不足；观察名单级"
+    },
+    {
+      "date": "2026-07-29",
+      "fingerprint": "2026-07-27+NVTS+q2-revenue-beat-databcenter-pivot-but-crowded",
+      "headline": "Navitas Semiconductor Q2 2026营收$10.5M超预期(+22%QoQ)，高功率/AI数据中心业务+50%YoY，Q3指引+28%QoQ，但GAAP净亏损$2.28亿",
+      "tickers": [
+        "NVTS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "『失败EV/移动GaN转型AI数据中心电源』misclassification叙事吸引力强，但股价H1已上涨151%、被Motley Fool等广泛报道为『Nvidia合作伙伴』热门股，neglect≈1；隐含2026E PS极高(市值$29.5亿 vs 季度营收仅$10.5M)，GAAP净亏损2.28亿需查明性质，downside高；观察名单级"
     }
   ]
 }
