@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-07-29",
+  "$last_updated": "2026-07-31",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -849,6 +849,21 @@
             "log_lr": null
           },
           "pending": true
+        },
+        {
+          "id": "E6",
+          "date": "2026-07-28",
+          "source": "SMM上海有色网",
+          "headline": "电池级碳酸锂现货价7/28报14.4-14.7万元/吨，较7/27生意社基准价14.30万元/吨小幅回升，未进一步跌破V2证伪线(<14万元/吨)",
+          "url": "https://hq.smm.cn/h5/Li2CO3-battery-price",
+          "summary": "锂价在逼近证伪门槛后企稳小幅反弹，距falsify线(14万)约有2.9%-5%缓冲，距confirm线(18万)仍有约18-20%差距；延续「业绩热股市冷」格局，未出现新增负面基本面",
+          "type": "T2_supply_chain",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -1209,6 +1224,21 @@
           },
           "pending": false,
           "review_note": "采纳review-input.json建议标签weak_against"
+        },
+        {
+          "id": "E6",
+          "date": "2026-07-30",
+          "source": "Benzinga",
+          "headline": "PENG单日下跌约9.2%（7日累计约-26%），同类AI基础设施/内存概念股集体回调，无公司层面利空消息",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/07/60555684/why-is-penguin-solutions-stock-falling-monday",
+          "summary": "板块性beta回调（此前因$750M可转债融资AI基础设施扩张+FY26上修指引+Q3破纪录业绩而大涨），基本面未变，Citizens 7/30刚上调目标价至$85",
+          "type": "P_price",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -1832,6 +1862,21 @@
           },
           "pending": false,
           "review_note": "review-input.json建议标签为moderate_support(excess≥+30%)，但鉴于此价格反应与设立先验的同一预告事件高度相关、非独立确认信息，按规则'只能采纳或降级'主动降级为weak_support，避免同一事件通过价格渠道重复计入"
+        },
+        {
+          "id": "E2",
+          "date": "2026-07-30",
+          "source": "证券时报网",
+          "headline": "端侧AI概念板块回调，星宸科技单日跌17.35%（换手率18.14%，振幅24.60%），同板块瑞芯微跌停、翱捷科技跌超13%；龙虎榜机构净卖出551万元，深股通净买入2.03亿元",
+          "url": "https://www.stcn.com/article/detail/4049888.html",
+          "summary": "板块性获利了结/风险偏好回落导致的价格波动，紧随7/20业绩预告(+583%-650%)后的大涨；未发现公司基本面负面消息",
+          "type": "P_price",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -2461,6 +2506,138 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "2026年中报法定披露截止日（预计提前10-15天披露）— V1判定点"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260730-AEHR",
+      "ticker": "AEHR",
+      "company": "Aehr Test Systems, Inc.",
+      "created_at": "2026-07-30",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-07-30",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：FY26Q4财报AI+硅光子学burn-in收入占比跃升至80%+、破纪录新签订单$6070万+硅光子学客户追加量产订单，FY27指引+160-200%"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-07-09",
+          "headline": "Aehr Receives Follow-On Production Order from Lead Silicon Photonics Customer for Fully Automated FOX-XP Wafer-Level Burn-In System",
+          "url": "https://www.aehr.com/2026/07/aehr-receives-follow-on-production-order-from-lead-silicon-photonics-customer-for-fully-automated-fox-xp-wafer-level-burn-in-system/",
+          "summary": "硅光子学龙头客户（此前已交付首台全自动FOX-XP并验证量产）追加订单，用于AI光互联/超大规模数据中心用硅光子器件的批量老化测试"
+        },
+        {
+          "date": "2026-07-14",
+          "headline": "Aehr Test Systems Reports Fiscal 2026 Fourth Quarter and Full Year Financial Results",
+          "url": "https://www.stocktitan.net/news/AEHR/aehr-test-systems-reports-fiscal-2026-fourth-quarter-and-full-year-aytbj239efe5.html",
+          "summary": "Q4营收$1880万(+33% YoY)，non-GAAP净利润由负转正；单季破纪录新签订单$6070万，backlog(含季后订单)达$1.006亿；AI处理器+硅光子学老化测试收入占比从56%跃升至80%+；FY27营收指引$1.3-1.5亿(+160-200% YoY)"
+        }
+      ],
+      "thesis": {
+        "one_liner": "AI芯片/硅光子学量产良率老化测试需求爆发将在2-3个季度内持续推高其设备+耗材收入并驱动指引连续上修",
+        "demand_change": "FY26Q4财报确认AI处理器+硅光子学burn-in收入占比从56%跃升至80%+（已发生的收入结构切换，非预测）；单季度录得破纪录$6070万新签订单，backlog(含季后订单)达$1.006亿；7/9硅光子学龙头客户在完成首台FOX-XP量产验证后追加订单，2月已有AI处理器龙头客户$1400万订单在先；管理层将FY27营收指引定为$1.3-1.5亿(+160-200% YoY)。",
+        "transmission": "FOX-XP晶圆级老化测试系统销售（资本品，一次性）+ WaferPak晶圆接触器耗材（随客户量产出货量线性增长的经常性高毛利收入）构成两条收入线；客户从验证阶段过渡到量产阶段后耗材占比提升，直接抬升整体毛利率——non-GAAP净利润已由负转正($360万 vs 去年同期-$20万)。",
+        "misclassification": "市场过去将其定价为「SiC/电动车功率器件老化测试设备商，2024年电动车需求崩塌后故事已破灭的问题股」；实际正在变成「AI处理器与硅光子学量产良率老化测试环节的稀缺纯正供应商」——FY26全年95%收入已来自SiC/电动车以外的市场。",
+        "serenity_score": {
+          "demand_certainty": 5,
+          "transmission_clarity": 5,
+          "purity": 4,
+          "elasticity": 3,
+          "neglect": 2,
+          "verification_speed": 4,
+          "downside": 2
+        },
+        "brief_cn": [
+          "触发：2026-07-09 Aehr Test Systems公告硅光子学龙头客户在首台FOX-XP量产验证成功后追加订单；7/14公布FY26Q4财报——营收$1880万(+33% YoY)，单季破纪录新签订单$6070万，backlog(含季后订单)达$1.006亿，AI处理器+硅光子学老化测试收入占比从56%跃升至80%+；管理层给出FY27营收指引$1.3-1.5亿(+160-200% YoY)，财报后股价一度暴涨29%。",
+          "需求已可观察：收入结构切换（56%→80%+）与破纪录backlog均是已发生的硬数据而非预测；WaferPak耗材收入随客户从验证转向量产而线性增长，两家'lead customer'（AI处理器/硅光子学）均已从单台验证机追加至多台量产订单，是真实采购行为而非意向。传导路径清晰：设备销售+耗材出货量×单价直接进收入，公司non-GAAP净利润已由负转正，规模效应开始兑现。",
+          "市场误分类：市场仍部分将其锚定在2023-2024年SiC/电动车老化测试设备的爆炒-崩盘周期（当时电动车需求放缓后公司业绩与股价均大幅回撤）；实际公司已完成向AI处理器+硅光子学老化测试的结构性转型，FY26全年95%收入来自非SiC/电动车市场，这是与两年前完全不同的需求主体。",
+          "先验只给0.30的理由：七维总分25（21-25档，0.22-0.32），取上沿因demand_certainty=5+transmission_clarity=5均有硬财报数据支撑；主要扣分项：neglect=2（财报后已上涨约29%、年内涨幅301%、5家机构一致买入评级，套利窗口已部分关闭）、downside=2（当前市值隐含约30x FY26实际营收的高倍数，客户集中度高——高度依赖1-2家'lead customer'，且公司自身2023-2024年SiC周期已展示过这类叙事股崩塌的历史先例）；赌的是Q1 FY27财报（约10月初）验证营收加速且管理层重申或上修FY27指引，确认AI/硅光子学老化测试是结构性而非又一次会很快退潮的短周期炒作。"
+        ]
+      },
+      "prior": {
+        "p": 0.3,
+        "log_odds": -0.8473,
+        "rationale": "七维总分25 → 21-25档（0.22-0.32）；取上沿因demand_certainty=5+transmission_clarity=5有硬财报数据（backlog、收入结构切换均已发生）支撑；neglect=2（财报后已涨29%+年内+301%，机构一致买入）与downside=2（估值隐含30x营收+客户集中度高+公司自身有SiC周期崩盘先例）拉低至档位上沿而非顶格",
+        "set_by": "daily-scan 2026-07-30"
+      },
+      "current": {
+        "p": 0.3,
+        "log_odds": -0.8473,
+        "last_reviewed": "2026-07-30",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "FY2027 Q1（截止约2026年8月28日，预计10月初发布）营收同比增速及管理层对FY27全年指引($1.3-1.5亿)的重申/修订",
+          "confirm_if": "Q1 FY27营收同比增速 ≥ +100% 且管理层重申或上修FY27全年指引",
+          "falsify_if": "Q1 FY27营收同比增速 < +50% 或管理层下修FY27全年指引",
+          "check_by": "2026-10-15",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "2026年Q3(8-10月)期间AI处理器/硅光子学客户追加订单及backlog变化",
+          "confirm_if": "公告新增≥$1000万规模追加订单，或backlog环比进一步扩大",
+          "falsify_if": "主要'lead customer'（AI处理器或硅光子学）取消或大幅削减在手订单，或backlog环比下滑",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-01-30"
+      },
+      "baseline": {
+        "entry_date": "2026-07-30",
+        "entry_price": 65.4,
+        "benchmark": "SPY",
+        "benchmark_entry_price": 729.46,
+        "sector_benchmark": "SOXX",
+        "sector_benchmark_entry_price": 465.0
+      },
+      "price_expectation": {
+        "confirm_target": 74.0,
+        "falsify_target": 11.0,
+        "expected_by": "2026-11-15",
+        "methodology_cn": "证实情景：Q1 FY27财报验证营收加速+管理层重申或上修FY27指引(收入中值约$1.4亿)后，市场对FY28E收入(假设在FY27基础上继续+50%至约$2.1亿)给予8x forward PS(AI基础设施稀缺测试设备标的溢价，参照同类小盘AI基础设施设备商)→目标市值约16.8亿美元÷2278万股(按$21.3亿市值/$93.5股价倒算)≈$74。证伪情景：Q1 FY27增速不及预期或指引下修，估值从当前隐含约30x FY26实际营收($5000万)的高倍数回落至5x show-me成长股倍数(AI故事未被证伪但市场存疑，非完全退回SiC崩盘期的2-3x)→目标市值约2.5亿美元÷2278万股≈$11；现金$1.165亿÷2278万股≈$5.11/股为进一步下行提供部分底线支撑。",
+        "timeline_logic_cn": "V1判定点为Q1 FY27财报(预计2026年10月初发布)；决定性财报后市场对成长型稀缺设备股的重估通常在2-4周内完成→预期2026-11-15前到位。",
+        "set_at": "2026-07-30",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-07-30",
+          "p": 0.3,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-10-08",
+          "type": "earnings",
+          "note": "Q1 FY2027财报（Yahoo官方排期确认2026-10-08）— V1判定点"
         }
       ],
       "links": {

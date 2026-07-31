@@ -2,34 +2,6 @@
   "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate | skipped_daily_cap",
   "entries": [
     {
-      "date": "2026-07-15",
-      "fingerprint": "2026-07-08+PENG+cfo-transition-guidance-reaffirmed",
-      "headline": "PENG CFO Nate Olmstead自愿离职（effective 7/8），Aaron Johnson接任interim CFO；同步重申FY26净销售额和EPS将达指引区间高端",
-      "tickers": [
-        "PENG"
-      ],
-      "action": "evidence_appended",
-      "note": "T4叙事级：CFO主动离职无任何分歧，interim CFO为内部16年资深财务高管；重申FY26 non-GAAP EPS和收入均在区间高端，agentic AI驱动内存+基础设施需求极强；追加为PENG pending证据E1"
-    },
-    {
-      "date": "2026-07-15",
-      "fingerprint": "2026-07-15+603115.SS+h1-forecast-ai-electrode-foil",
-      "headline": "海星股份H1 2026业绩预告：归母净利9950-10380万元（+50-62%），扣非净利10532-11032万元（+62-70%），AI服务器用产品批量交付+新能源储能+车载电子景气驱动",
-      "tickers": [
-        "603115.SS"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
-      "date": "2026-07-15",
-      "fingerprint": "2026-07-15+003026.SZ+h1-forecast-semiconductor-silicon-capacity",
-      "headline": "中晶科技H1 2026业绩预告：归母净利4000-4500万元（+55-75%），扣非净利3800-4300万元（+59-80%），生产紧张订单充足、募投产能持续释放",
-      "tickers": [
-        "003026.SZ"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
       "date": "2026-07-17",
       "fingerprint": "2026-07-17+688531.SS+h1-forecast-xray-inspection-ssti-semiconductor",
       "headline": "日联科技H1 2026业绩预告：扣非净利+82.71%（10900万元），归母+54.6%（12800万元），集成电路+高端电子景气+SSTI并购拓展高端半导体检测",
@@ -440,6 +412,173 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "『失败EV/移动GaN转型AI数据中心电源』misclassification叙事吸引力强，但股价H1已上涨151%、被Motley Fool等广泛报道为『Nvidia合作伙伴』热门股，neglect≈1；隐含2026E PS极高(市值$29.5亿 vs 季度营收仅$10.5M)，GAAP净亏损2.28亿需查明性质，downside高；观察名单级"
+    },
+    {
+      "date": "2026-07-30",
+      "fingerprint": "2026-07-09+AEHR+silicon-photonics-followon-order",
+      "headline": "Aehr Test Systems获硅光子学龙头客户追加FOX-XP量产订单",
+      "tickers": [
+        "AEHR"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-07-30",
+      "fingerprint": "2026-07-14+AEHR+q4fy26-record-bookings-ai-mix-80pct-fy27-guide",
+      "headline": "Aehr Test Systems FY26Q4财报：营收+33%、破纪录新签订单$6070万、backlog$1.006亿，AI+硅光子学收入占比56%→80%+，FY27指引+160-200%",
+      "tickers": [
+        "AEHR"
+      ],
+      "action": "new_hypothesis",
+      "note": "同一入池事件的两条触发新闻（7/9追加订单+7/14财报），合并写入H20260730-AEHR的source_news；先验0.30（21-25档取上沿，neglect=2因财报后已涨29%+年内+301%）"
+    },
+    {
+      "date": "2026-07-30",
+      "fingerprint": "2026-07-27+002497.SZ+lithium-144k-stabilize",
+      "headline": "电池级碳酸锂7/28报14.4-14.7万元/吨，企稳小幅回升，未跌破V2证伪线",
+      "tickers": [
+        "002497.SZ"
+      ],
+      "action": "evidence_appended",
+      "note": "追加为002497.SZ pending证据E6"
+    },
+    {
+      "date": "2026-07-30",
+      "fingerprint": "2026-07-27+920118.BJ+h1-forecast-cable-material-margin-recovery",
+      "headline": "太湖远大H1 2026业绩预告净利+212-263%（4300-5000万），原因为原材料价格波动缓和后毛利率回升",
+      "tickers": [
+        "920118.BJ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "增长驱动是原材料成本/竞价缓和带来的毛利率修复（供给侧成本传导），非需求侧变化，purity不足；观察名单级"
+    },
+    {
+      "date": "2026-07-30",
+      "fingerprint": "2026-07-30+688826.SS+h1-forecast-precision-laser-quantum-semiconductor-27to48pct",
+      "headline": "频准激光H1 2026业绩预告净利+27-48%（9000-10500万），量子科技+半导体制程精准激光器需求增长驱动",
+      "tickers": [
+        "688826.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "需求逻辑真实（半导体制程升级+量子科技驱动精准激光器需求），但公司科创板IPO要到2026-08-07才上市，当前无法交易/设entry_price，暂列观察名单待上市后重新评估"
+    },
+    {
+      "date": "2026-07-30",
+      "fingerprint": "2026-07-23+688099.SS+h1-forecast-tv-soc-ai-edge-22pct-mktcap390b",
+      "headline": "晶晨股份H1 2026业绩预告净利+22.44%左右（6.08亿），电视SoC份额提升+6nm AI端侧芯片A311Y3回片，市值约390亿",
+      "tickers": [
+        "688099.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "市值约390亿元中盘、多家券商深度覆盖（东吴等已有点评报告），neglect过低；H1净利增速22%不算突出（剔除股权激励费用后+31%）；观察名单级"
+    },
+    {
+      "date": "2026-07-30",
+      "fingerprint": "2026-07-16+688521.SS+ai-compute-custom-chip-orders-64b-7months",
+      "headline": "芯原股份2026年前七月新签订单146.53亿元，其中4/30-7/16新签64.13亿元、AI算力+数据处理占比超90%",
+      "tickers": [
+        "688521.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "AI定制芯片订单需求真实，但公司已是知名芯片设计IP龙头、多篇财经媒体广泛报道，6/15-6/30累计涨超66%后7/1-7/16又跌超34%，neglect过低且波动剧烈；观察名单级"
+    },
+    {
+      "date": "2026-07-30",
+      "fingerprint": "2026-07-15+301358.SZ+lfp-price-hike-2000yuan",
+      "headline": "湖南裕能发布磷酸铁锂涨价函，自8/1起全系列产品提价2000元/吨，因持续满产+新增产能无法满足订单增长",
+      "tickers": [
+        "301358.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "涨价函证明产能满载需求旺盛，但公司是磷酸铁锂行业龙头（市值约919亿元），elasticity/neglect均不满足小盘弹性入池条件；观察名单级"
+    },
+    {
+      "date": "2026-07-30",
+      "fingerprint": "2026-07-07+300620.SZ+h1-forecast-ai-optical-component-170to190pct",
+      "headline": "光库科技H1 2026业绩预告净利+170-190%（1.4-1.5亿），AI算力光模块/光器件需求驱动，市值约740亿元且已被称『8倍大牛股』",
+      "tickers": [
+        "300620.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "AI光器件需求逻辑扎实，但市值已达约740亿元、年内被广泛报道为'8倍大牛股'，neglect/elasticity均已不满足入池条件，与源杰科技/联讯仪器等同属'已充分定价'类别；观察名单级"
+    },
+    {
+      "date": "2026-07-30",
+      "fingerprint": "2026-07-08+PENG+citizens-pt-raise-85",
+      "headline": "Citizens将PENG目标价从$65上调至$85（维持Market Outperform），因AI驱动业务收入/EBITDA预期大幅上修",
+      "tickers": [
+        "PENG"
+      ],
+      "action": "skipped_duplicate",
+      "note": "T4叙事级分析师目标价调整，与7/7 Q3财报同期信号高度相关（同一驱动因子），且PENG evidence_log已有充分的T4事件记录与E4(memory-cycle质疑)覆盖核心分歧，边际信息量低，不单独入账"
+    },
+    {
+      "date": "2026-07-31",
+      "fingerprint": "2026-07-31+688836.SS+h1-forecast-unitree-robotics-not-yet-listed",
+      "headline": "宇树科技(688836.SH)H1 2026业绩预告净利+316%-412%（2.58-3.06亿），具身智能需求增长驱动；但公司尚未上市，8/10申购、8/12缴款，无可交易价格",
+      "tickers": [
+        "688836.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "尚未挂牌交易，无entry_price可用，无法建仓；且具身智能/人形机器人龙头叙事已被市场充分定价（IPO前已是现象级关注度），neglect极低，暂列观察名单待上市后重新评估"
+    },
+    {
+      "date": "2026-07-31",
+      "fingerprint": "2026-07-31+688433.SS+h1-forecast-3dprint-modest-growth",
+      "headline": "华曙高科(688433.SS)H1 2026业绩预告净利+87.09%（843万元），3D打印下游需求回暖驱动",
+      "tickers": [
+        "688433.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "市值已近450亿元(全球3D打印上市公司市值第一)，净利基数极小(843万)且2025全年净利仅+2.68%，需求回暖表述空泛缺乏具体验证锚点，弹性/纯度不达入池门槛"
+    },
+    {
+      "date": "2026-07-31",
+      "fingerprint": "2026-07-31+688218.SS+h1-forecast-welding-robot-impairment-reversal",
+      "headline": "江苏北人(688218.SS)H1 2026扣非净利扭亏为盈(+3998万)，主因智能装备项目验收提升+上年同期大额资产减值不再发生",
+      "tickers": [
+        "688218.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "扭亏主要由上年同期资产减值消退驱动（非经常性对比基数效应），非新增需求变化，不满足'已发生的需求变化'过滤标准"
+    },
+    {
+      "date": "2026-07-31",
+      "fingerprint": "2026-07-31+001232.SZ+h1-forecast-pcb-jlc-large-cap-ipo",
+      "headline": "嘉立创(001232.SZ)H1 2026扣非净利+64.53%-91.95%（9-10.5亿），PCB行业景气度改善+电子机械产业链一体化驱动",
+      "tickers": [
+        "001232.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "刚上市(7月网上路演)，预估市值约500-1000亿+区间，PCB龙头体量已大，弹性不达小盘门槛"
+    },
+    {
+      "date": "2026-07-30",
+      "fingerprint": "2026-07-30+301536.SZ+sector-selloff-edge-ai-chips",
+      "headline": "端侧AI概念板块回调，星宸科技单日跌17.35%，同板块瑞芯微跌停、翱捷科技跌超13%",
+      "tickers": [
+        "301536.SZ"
+      ],
+      "action": "evidence_appended",
+      "note": "板块性价格波动，无公司基本面利空，记入pending证据供周复核参考"
+    },
+    {
+      "date": "2026-07-30",
+      "fingerprint": "2026-07-30+PENG+sector-selloff-ai-memory",
+      "headline": "PENG单日跌约9.2%，AI基础设施/内存概念股集体回调，无公司层面利空",
+      "tickers": [
+        "PENG"
+      ],
+      "action": "evidence_appended",
+      "note": "板块性beta回调，基本面未变（Citizens同日上调目标价至$85），记入pending证据供周复核参考"
+    },
+    {
+      "date": "2026-07-31",
+      "fingerprint": "2026-07-31+ALL+us-smallcap-earnings-scan-no-hit",
+      "headline": "美股小盘财报/backlog扫描(Bloom Energy/EMCOR/Benchmark Electronics/ESCO等)：均为中大盘或已覆盖标的，无新的高纯度小盘候选",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "AI capex/backlog超预期驱动的beat集中在中大盘（EMCOR $20B+、Benchmark $3B+营收），未发现符合小盘高弹性门槛的新候选"
     }
   ]
 }
