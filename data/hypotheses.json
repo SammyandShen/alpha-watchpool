@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-07-31",
+  "$last_updated": "2026-08-01",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -67,7 +67,7 @@
       "current": {
         "p": 0.4,
         "log_odds": -0.4055,
-        "last_reviewed": "2026-07-25",
+        "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -176,11 +176,12 @@
           "summary": "两家机构7/15同步上调目标价，早于7/20 Roth/MKM给出的$75目标价；均为sell-side叙事级信号，非基本面直接验证",
           "type": "T4_narrative",
           "likelihood": {
-            "label": null,
-            "lr": null,
-            "log_lr": null
+            "label": "neutral",
+            "lr": 1.0,
+            "log_lr": 0.0
           },
-          "pending": true
+          "pending": false,
+          "review_note": "T4叙事类固定neutral；补搜确认7/25后无AIM出货量化或Rev8订单pipeline新增披露，8/6财报为下一判定窗口"
         }
       ],
       "posterior_history": [
@@ -193,6 +194,11 @@
           "date": "2026-07-25",
           "p": 0.4,
           "note": "weekly review 2026-07-25"
+        },
+        {
+          "date": "2026-08-01",
+          "p": 0.4,
+          "note": "weekly review 2026-08-01"
         }
       ],
       "events": [
@@ -292,9 +298,9 @@
         "set_by": "daily-scan 2026-07-05"
       },
       "current": {
-        "p": 0.28,
-        "log_odds": -0.9445,
-        "last_reviewed": "2026-07-25",
+        "p": 0.3684,
+        "log_odds": -0.539,
+        "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -418,6 +424,22 @@
           },
           "pending": false,
           "review_note": "sell-side目标价调整属T4叙事，固定neutral，不作为财报前的独立验证"
+        },
+        {
+          "id": "E6",
+          "date": "2026-07-20",
+          "source": "Forbes",
+          "headline": "PJM电网过去14个月已发动43次应急指令（远超此前50年20次），容量价格从约$29/MW-day飙升至约$270/MW-day，数据中心贡献63%涨幅",
+          "url": "https://www.forbes.com/sites/annademeo/2026/07/20/the-grids-emergency-fix-is-becoming-a-permanent-fixture/",
+          "summary": "第三方量化数据确认PJM电网紧急状态是持续性结构问题而非一次性事件，容量价格暴涨9倍为行业性背景，非POWL公司专属信息",
+          "type": "T3_soft_signal",
+          "likelihood": {
+            "label": "weak_support",
+            "lr": 1.5,
+            "log_lr": 0.4055
+          },
+          "pending": false,
+          "review_note": "行业级量化数据强化demand_certainty的持续性，但非POWL公司专属披露，从严按T3计；FQ3财报（8/3，晚于本次复核截止）为backlog硬数据的真正判定点"
         }
       ],
       "posterior_history": [
@@ -430,6 +452,11 @@
           "date": "2026-07-25",
           "p": 0.28,
           "note": "weekly review 2026-07-25"
+        },
+        {
+          "date": "2026-08-01",
+          "p": 0.3684,
+          "note": "weekly review 2026-08-01"
         }
       ],
       "events": [
@@ -526,7 +553,7 @@
       "current": {
         "p": 0.5507,
         "log_odds": 0.2036,
-        "last_reviewed": "2026-07-25",
+        "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -618,6 +645,23 @@
           },
           "pending": false,
           "review_note": "采纳review-input.json建议标签weak_against"
+        },
+        {
+          "id": "E4",
+          "date": "2026-07-27",
+          "source": "21世纪经济报道/腾讯新闻/东方财富财富号",
+          "headline": "VC价格7/27再涨2万元至21.2-22.2万元/吨实际成交，7月累计涨幅37.5%，小单急单最高报22.8万/吨",
+          "url": "https://news.qq.com/rain/a/20260727A08H2J00",
+          "summary": "VC价格延续E1建立的上涨趋势，持续在V3确认线(>10万)上方大幅运行，未见回落",
+          "type": "T2_supply_chain",
+          "likelihood": {
+            "label": "neutral",
+            "lr": 1.0,
+            "log_lr": 0.0
+          },
+          "pending": false,
+          "correlates_with": "E1",
+          "review_note": "与E1同属VC价格连续上涨趋势的同一底层信号，去重forced neutral，避免同一趋势重复计入LR"
         }
       ],
       "posterior_history": [
@@ -630,6 +674,11 @@
           "date": "2026-07-25",
           "p": 0.5507,
           "note": "weekly review 2026-07-25"
+        },
+        {
+          "date": "2026-08-01",
+          "p": 0.5507,
+          "note": "weekly review 2026-08-01"
         }
       ],
       "events": [
@@ -715,7 +764,7 @@
       "current": {
         "p": 0.1796,
         "log_odds": -1.5192,
-        "last_reviewed": "2026-07-25",
+        "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -844,11 +893,13 @@
           "summary": "锂价延续弱势，7月下旬维持在14.0-14.5万元/吨区间震荡，距V2证伪门槛(<14万)仅一步之遥；距V2确认门槛(≥18万)差约22%；「业绩热股市冷」格局未改善，中报（8/31）判定点前需持续紧盯锂价是否跌破14万",
           "type": "T2_supply_chain",
           "likelihood": {
-            "label": null,
-            "lr": null,
-            "log_lr": null
+            "label": "neutral",
+            "lr": 1.0,
+            "log_lr": 0.0
           },
-          "pending": true
+          "pending": false,
+          "correlates_with": "E1",
+          "review_note": "与E1同属碳酸锂价格连续波动趋势的同一底层信号，去重forced neutral"
         },
         {
           "id": "E6",
@@ -859,11 +910,30 @@
           "summary": "锂价在逼近证伪门槛后企稳小幅反弹，距falsify线(14万)约有2.9%-5%缓冲，距confirm线(18万)仍有约18-20%差距；延续「业绩热股市冷」格局，未出现新增负面基本面",
           "type": "T2_supply_chain",
           "likelihood": {
-            "label": null,
-            "lr": null,
-            "log_lr": null
+            "label": "neutral",
+            "lr": 1.0,
+            "log_lr": 0.0
           },
-          "pending": true
+          "pending": false,
+          "correlates_with": "E1",
+          "review_note": "与E1同属碳酸锂价格连续波动趋势的同一底层信号，去重forced neutral"
+        },
+        {
+          "id": "E7",
+          "date": "2026-07-31",
+          "source": "新浪财经/光大期货/SMM上海有色网",
+          "headline": "碳酸锂期货主力合约7/31再度跌破14万元/吨整数关口，单日收跌超4%；SMM电池级现货报14.4-14.8万/吨基本走平；市场预期8月下旬锂矿到港增量压制价格",
+          "url": "https://finance.sina.com.cn/money/future/2026-07-31/doc-inikstfm1300620.shtml",
+          "summary": "期货端信号偏弱但现货尚未确认跌破14万falsify线，仍在E1建立的弱势区间内震荡，未形成新趋势突破",
+          "type": "T2_supply_chain",
+          "likelihood": {
+            "label": "neutral",
+            "lr": 1.0,
+            "log_lr": 0.0
+          },
+          "pending": false,
+          "correlates_with": "E1",
+          "review_note": "与E1/E5/E6同属碳酸锂价格连续弱势区间震荡的同一底层信号，期货单日-4%波动不足以判定新趋势，去重forced neutral，避免对同一持续弱势现象反复扣分；8/31中报+Q3月均价为真正判定点"
         }
       ],
       "posterior_history": [
@@ -876,6 +946,11 @@
           "date": "2026-07-25",
           "p": 0.1796,
           "note": "weekly review 2026-07-25"
+        },
+        {
+          "date": "2026-08-01",
+          "p": 0.1796,
+          "note": "weekly review 2026-08-01"
         }
       ],
       "events": [
@@ -952,7 +1027,7 @@
       "current": {
         "p": 0.4249,
         "log_odds": -0.3027,
-        "last_reviewed": "2026-07-25",
+        "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -1024,6 +1099,11 @@
           "date": "2026-07-25",
           "p": 0.4249,
           "note": "weekly review 2026-07-25"
+        },
+        {
+          "date": "2026-08-01",
+          "p": 0.4249,
+          "note": "weekly review 2026-08-01"
         }
       ],
       "events": [
@@ -1098,9 +1178,9 @@
         "set_by": "daily-scan 2026-07-10"
       },
       "current": {
-        "p": 0.16,
-        "log_odds": -1.6583,
-        "last_reviewed": "2026-07-25",
+        "p": 0.1127,
+        "log_odds": -2.0638,
+        "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -1234,11 +1314,12 @@
           "summary": "板块性beta回调（此前因$750M可转债融资AI基础设施扩张+FY26上修指引+Q3破纪录业绩而大涨），基本面未变，Citizens 7/30刚上调目标价至$85",
           "type": "P_price",
           "likelihood": {
-            "label": null,
-            "lr": null,
-            "log_lr": null
+            "label": "weak_against",
+            "lr": 0.6667,
+            "log_lr": -0.4055
           },
-          "pending": true
+          "pending": false,
+          "review_note": "review-input.json建议标签weak_against(excess_vs_sector -22.14%)，予以采纳；本周期价格证据（E5为上周期），补搜未发现7/30后新增基本面消息，累计价格类log_lr未超生命周期封顶1.10"
         }
       ],
       "posterior_history": [
@@ -1251,6 +1332,11 @@
           "date": "2026-07-25",
           "p": 0.16,
           "note": "weekly review 2026-07-25"
+        },
+        {
+          "date": "2026-08-01",
+          "p": 0.1127,
+          "note": "weekly review 2026-08-01"
         }
       ],
       "events": [
@@ -1324,9 +1410,9 @@
         "set_by": "daily-scan 2026-07-15"
       },
       "current": {
-        "p": 0.33,
-        "log_odds": -0.7082,
-        "last_reviewed": "2026-07-25",
+        "p": 0.4249,
+        "log_odds": -0.3027,
+        "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -1386,6 +1472,22 @@
           },
           "pending": false,
           "review_note": "review-input.json建议标签为neutral(excess_vs_sector +14.69%在±15%区间内)，记录在案说明大幅绝对回撤的板块归因，不计入账本"
+        },
+        {
+          "id": "E2",
+          "date": "2026-08-01",
+          "source": "compute-metrics.py 价格证据",
+          "headline": "603115.SS入池以来相对510300.SS超额-33.03%，相对512480.SS(行业基准)超额+23.07%",
+          "url": "docs/data/prices.json",
+          "summary": "相对行业基准转为明显跑赢(+23.07%，落入+15~+30%区间)，补搜未发现公司层面新增基本面消息，回升主因7/20超跌后的板块修复",
+          "type": "P_price",
+          "likelihood": {
+            "label": "weak_support",
+            "lr": 1.5,
+            "log_lr": 0.4055
+          },
+          "pending": false,
+          "review_note": "采纳review-input.json建议标签weak_support；累计价格类log_lr（E1 neutral+此条）未超生命周期封顶1.10"
         }
       ],
       "posterior_history": [
@@ -1398,6 +1500,11 @@
           "date": "2026-07-25",
           "p": 0.33,
           "note": "weekly review 2026-07-25"
+        },
+        {
+          "date": "2026-08-01",
+          "p": 0.4249,
+          "note": "weekly review 2026-08-01"
         }
       ],
       "events": [
@@ -1472,9 +1579,9 @@
         "set_by": "daily-scan 2026-07-15"
       },
       "current": {
-        "p": 0.3913,
-        "log_odds": -0.4418,
-        "last_reviewed": "2026-07-25",
+        "p": 0.4909,
+        "log_odds": -0.0363,
+        "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -1550,6 +1657,22 @@
           },
           "pending": false,
           "review_note": "采纳review-input.json建议标签weak_support（不升级）"
+        },
+        {
+          "id": "E3",
+          "date": "2026-08-01",
+          "source": "compute-metrics.py 价格证据",
+          "headline": "003026.SZ入池以来相对510300.SS超额-33.89%，相对512480.SS(行业基准)超额+22.21%",
+          "url": "docs/data/prices.json",
+          "summary": "相对行业基准持续跑赢(+22.21%，落入+15~+30%区间)，补搜未发现新增基本面消息（股权激励草案与传闻中的股东减持均非直接需求侧信号），回升主因板块超跌反弹",
+          "type": "P_price",
+          "likelihood": {
+            "label": "weak_support",
+            "lr": 1.5,
+            "log_lr": 0.4055
+          },
+          "pending": false,
+          "review_note": "采纳review-input.json建议标签weak_support；累计价格类log_lr（E2+此条）未超生命周期封顶1.10"
         }
       ],
       "posterior_history": [
@@ -1562,6 +1685,11 @@
           "date": "2026-07-25",
           "p": 0.3913,
           "note": "weekly review 2026-07-25"
+        },
+        {
+          "date": "2026-08-01",
+          "p": 0.4909,
+          "note": "weekly review 2026-08-01"
         }
       ],
       "events": [
@@ -1636,9 +1764,9 @@
         "set_by": "daily-scan 2026-07-17"
       },
       "current": {
-        "p": 0.25,
-        "log_odds": -1.0986,
-        "last_reviewed": "2026-07-25",
+        "p": 0.3333,
+        "log_odds": -0.6931,
+        "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -1714,6 +1842,22 @@
           },
           "pending": false,
           "review_note": "review-input.json按excess≥30%建议moderate_support，但P_price tier的LR上限为1.5（0.67-1.5），故降级采纳为weak_support"
+        },
+        {
+          "id": "E3",
+          "date": "2026-08-01",
+          "source": "compute-metrics.py 价格证据",
+          "headline": "688531.SS入池以来相对510300.SS超额+48.13%，相对512480.SS超额+104.23%",
+          "url": "docs/data/prices.json",
+          "summary": "涨幅较上周(+56.62%/+110.14%)略有收窄但仍维持高位，补搜未发现SSTI具体客户合同新进展（V2仍待中报验证）",
+          "type": "P_price",
+          "likelihood": {
+            "label": "weak_support",
+            "lr": 1.5,
+            "log_lr": 0.4055
+          },
+          "pending": false,
+          "review_note": "review-input.json建议moderate_support，P_price tier LR上限1.5，降级采纳；累计价格类log_lr（E2+此条=0.8110）未超生命周期封顶1.10"
         }
       ],
       "posterior_history": [
@@ -1726,6 +1870,11 @@
           "date": "2026-07-25",
           "p": 0.25,
           "note": "weekly review 2026-07-25"
+        },
+        {
+          "date": "2026-08-01",
+          "p": 0.3333,
+          "note": "weekly review 2026-08-01"
         }
       ],
       "events": [
@@ -1800,9 +1949,9 @@
         "set_by": "daily-scan 2026-07-20"
       },
       "current": {
-        "p": 0.4249,
-        "log_odds": -0.3027,
-        "last_reviewed": "2026-07-25",
+        "p": 0.5257,
+        "log_odds": 0.1028,
+        "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -1872,11 +2021,12 @@
           "summary": "板块性获利了结/风险偏好回落导致的价格波动，紧随7/20业绩预告(+583%-650%)后的大涨；未发现公司基本面负面消息",
           "type": "P_price",
           "likelihood": {
-            "label": null,
-            "lr": null,
-            "log_lr": null
+            "label": "weak_support",
+            "lr": 1.5,
+            "log_lr": 0.4055
           },
-          "pending": true
+          "pending": false,
+          "review_note": "7/30单日跌17.35%系板块端侧AI获利了结(瑞芯微跌停)，但按相对基准法计算的累计超额收益仍为正且≥30%(vs510300 +57.84%/vs512480 +66.66%)；review-input.json建议moderate_support，P_price tier LR上限1.5降级采纳weak_support；补搜未发现新增基本面信息，累计价格类log_lr(E1+此条=0.8110)未超生命周期封顶1.10"
         }
       ],
       "posterior_history": [
@@ -1889,6 +2039,11 @@
           "date": "2026-07-25",
           "p": 0.4249,
           "note": "weekly review 2026-07-25"
+        },
+        {
+          "date": "2026-08-01",
+          "p": 0.5257,
+          "note": "weekly review 2026-08-01"
         }
       ],
       "events": [
@@ -1964,9 +2119,9 @@
         "set_by": "daily-scan 2026-07-22"
       },
       "current": {
-        "p": 0.3045,
-        "log_odds": -0.8261,
-        "last_reviewed": "2026-07-25",
+        "p": 0.3685,
+        "log_odds": -0.5385,
+        "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -2058,6 +2213,38 @@
           },
           "pending": false,
           "review_note": "review-input.json按excess≤-30%建议moderate_against，但P_price tier的LR下限为0.67（0.67-1.5），故降级采纳为weak_against"
+        },
+        {
+          "id": "E4",
+          "date": "2026-07-28",
+          "source": "东方财富财富号/讯石光通讯网",
+          "headline": "Coherent 7月正式下发OCS批量采购框架订单（月采购量15-25万只，逐步替代原供应商份额）；Google TPU v7 Ironwood采用Apollo OCS架构，单Superpod约需1.5万台OCS设备",
+          "url": "https://caifuhao.eastmoney.com/news/20260628155526763296020",
+          "summary": "下游OCS生态规模化的第三方证据，与E2(Lumentum backlog)同属供应链证据但为独立信息源和新增数据点；未见腾景公司层面直接新客户合同披露，V2仍待8/29中报验证",
+          "type": "T2_supply_chain",
+          "likelihood": {
+            "label": "moderate_support",
+            "lr": 2.0,
+            "log_lr": 0.6931
+          },
+          "pending": false,
+          "review_note": "Coherent批量采购框架+Google TPU v7大规模OCS部署是OCS商业化加速的强旁证，判moderate_support；公司自身收入贡献仍待验证"
+        },
+        {
+          "id": "E5",
+          "date": "2026-08-01",
+          "source": "compute-metrics.py 价格证据",
+          "headline": "688195.SS入池以来相对510300.SS超额-41.86%，相对512480.SS超额-34.95%",
+          "url": "docs/data/prices.json",
+          "summary": "股价持续大幅跑输，主因光通信板块(Coherent/Lumentum/AOI)整体回调叠加Q1利润质量担忧，未见腾景公司层面新增负面基本面",
+          "type": "P_price",
+          "likelihood": {
+            "label": "weak_against",
+            "lr": 0.6667,
+            "log_lr": -0.4055
+          },
+          "pending": false,
+          "review_note": "review-input.json建议moderate_against，P_price tier LR下限0.67，降级采纳；累计价格类|log_lr|（E3+此条=0.8110）未超生命周期封顶1.10"
         }
       ],
       "posterior_history": [
@@ -2070,13 +2257,18 @@
           "date": "2026-07-25",
           "p": 0.3045,
           "note": "weekly review 2026-07-25"
+        },
+        {
+          "date": "2026-08-01",
+          "p": 0.3685,
+          "note": "weekly review 2026-08-01"
         }
       ],
       "events": [
         {
-          "date": "2026-08-31",
+          "date": "2026-08-29",
           "type": "earnings",
-          "note": "H1 2026中报披露截止日（V1判定点）；预计提前10-15天（约8-15前后）发布"
+          "note": "公司官方确认H1 2026中报预约披露日期为2026-08-29（V1判定点）"
         }
       ],
       "links": {
@@ -2152,7 +2344,7 @@
       "current": {
         "p": 0.32,
         "log_odds": -0.7538,
-        "last_reviewed": "2026-07-27",
+        "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -2211,6 +2403,11 @@
           "date": "2026-07-27",
           "p": 0.32,
           "note": "prior"
+        },
+        {
+          "date": "2026-08-01",
+          "p": 0.32,
+          "note": "weekly review 2026-08-01"
         }
       ],
       "events": [
@@ -2293,7 +2490,7 @@
       "current": {
         "p": 0.27,
         "log_odds": -0.9946,
-        "last_reviewed": "2026-07-29",
+        "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -2352,6 +2549,11 @@
           "date": "2026-07-29",
           "p": 0.27,
           "note": "prior"
+        },
+        {
+          "date": "2026-08-01",
+          "p": 0.27,
+          "note": "weekly review 2026-08-01"
         }
       ],
       "events": [
@@ -2438,9 +2640,9 @@
         "set_by": "daily-scan 2026-07-29"
       },
       "current": {
-        "p": 0.35,
-        "log_odds": -0.619,
-        "last_reviewed": "2026-07-29",
+        "p": 0.4468,
+        "log_odds": -0.2135,
+        "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -2493,12 +2695,34 @@
         "set_at": "2026-07-29",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-08-01",
+          "source": "compute-metrics.py 价格证据",
+          "headline": "300981.SZ入池以来相对510300.SS超额+39.64%，相对512010.SS超额+35.37%",
+          "url": "docs/data/prices.json",
+          "summary": "股价大涨系入池当日(7/29)业绩预告本身触发的一次性重估反应(20CM一字涨停)，与设立先验的同一事件高度相关，非独立确认信息",
+          "type": "P_price",
+          "likelihood": {
+            "label": "weak_support",
+            "lr": 1.5,
+            "log_lr": 0.4055
+          },
+          "pending": false,
+          "review_note": "review-input.json按excess≥30%建议moderate_support，但此涨幅系入池触发事件本身的市场反应而非独立新信息，比照301536.SZ先例主动降级采纳为weak_support（P_price tier LR上限亦为1.5）"
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-07-29",
           "p": 0.35,
           "note": "prior"
+        },
+        {
+          "date": "2026-08-01",
+          "p": 0.4468,
+          "note": "weekly review 2026-08-01"
         }
       ],
       "events": [
@@ -2581,7 +2805,7 @@
       "current": {
         "p": 0.3,
         "log_odds": -0.8473,
-        "last_reviewed": "2026-07-30",
+        "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -2631,6 +2855,11 @@
           "date": "2026-07-30",
           "p": 0.3,
           "note": "prior"
+        },
+        {
+          "date": "2026-08-01",
+          "p": 0.3,
+          "note": "weekly review 2026-08-01"
         }
       ],
       "events": [
