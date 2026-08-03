@@ -2,53 +2,6 @@
   "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate | skipped_daily_cap",
   "entries": [
     {
-      "date": "2026-07-17",
-      "fingerprint": "2026-07-17+688531.SS+h1-forecast-xray-inspection-ssti-semiconductor",
-      "headline": "日联科技H1 2026业绩预告：扣非净利+82.71%（10900万元），归母+54.6%（12800万元），集成电路+高端电子景气+SSTI并购拓展高端半导体检测",
-      "tickers": [
-        "688531.SS"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
-      "date": "2026-07-17",
-      "fingerprint": "2026-07-17+688400.SS+h1-zhipuai-equity-nonoperating-gain",
-      "headline": "凌云光H1 2026业绩预告：归母净利+590%（66250万元），主要来自持有智谱华章股权公允价值变动（非经常性收益），扣非净利仅+60%（13000万元）",
-      "tickers": [
-        "688400.SS"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "归母净利暴增主要来自非经常性损益（智谱华章股权公允价值变动），扣非净利仅+60%（13000万元），非经常性驱动跳过"
-    },
-    {
-      "date": "2026-07-17",
-      "fingerprint": "2026-07-17+688041.SS+h1-haiguang-cpu-dcu-ai-domestication",
-      "headline": "海光信息H1 2026业绩预告：扣非净利+38-56%（151-170亿元），CPU+DCU AI大模型+国产化驱动",
-      "tickers": [
-        "688041.SS"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "海光信息市值极大（千亿级），弹性极低，neglect≤1；AI国产算力叙事已被广泛定价；观察名单级"
-    },
-    {
-      "date": "2026-07-17",
-      "fingerprint": "2026-07-15+ASML+guidance-raise-second-2026-backlog",
-      "headline": "ASML Q2 2026财报+第二次上调全年指引：EPS $8.69超预期，全年销售指引上调至€43-45B，EUV 2027产能计划84台",
-      "tickers": [],
-      "action": "skipped_watchlist_only",
-      "note": "大型公司（ASML），受益链条远；无高纯度小盘直接受益者达入池门槛（ASYS book-to-bill ~1.03x，Q3 guidance不加速，七维总分约26偏弱）"
-    },
-    {
-      "date": "2026-07-17",
-      "fingerprint": "2026-07-17+002497.SZ+lithium-price-16wan-stock-underperform",
-      "headline": "碳酸锂7月中旬约¥16-16.5万/吨（低于V2确认线¥18万/吨）；雅化集团股价¥17.45（较入池价¥22.41跌约22%）",
-      "tickers": [
-        "002497.SZ"
-      ],
-      "action": "evidence_appended",
-      "note": "T3价格追踪：锂价缓慢回升但距确认线仍有约10%差距；「业绩热股市冷」市场分歧；追加为002497.SZ pending证据E2"
-    },
-    {
       "date": "2026-07-20",
       "fingerprint": "2026-07-18+301536.SZ+h1-forecast-ai-soc-edge-583pct",
       "headline": "星宸科技H1 2026业绩预告：归母净利8.2-9亿元（+583-650% YoY），扣非净利+632-715%，营收+87-94%，端边侧AI SoC+SSR670量产驱动",
@@ -579,6 +532,94 @@
       "tickers": [],
       "action": "skipped_watchlist_only",
       "note": "AI capex/backlog超预期驱动的beat集中在中大盘（EMCOR $20B+、Benchmark $3B+营收），未发现符合小盘高弹性门槛的新候选"
+    },
+    {
+      "date": "2026-08-03",
+      "fingerprint": "2026-08-03+300613.SZ+h1-forecast-mcu-storage-price-hike-1072pct",
+      "headline": "富瀚微H1 2026业绩预告：营收+103.48%-118.01%，归母净利+1072.72%-1420.19%，存储/上游涨价+三大业务量价齐升+AI-ISP机器人新品",
+      "tickers": [
+        "300613.SZ"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-08-03",
+      "fingerprint": "2026-08-03+688733.SS+h1-forecast-battery-coating-turnaround",
+      "headline": "壹石通H1 2026业绩预告：营收+47.33%-54.69%，归母净利润扭亏为盈至950-1400万元，NEV/储能需求驱动涂覆材料放量+产能释放",
+      "tickers": [
+        "688733.SS"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-08-03",
+      "fingerprint": "2026-08-03+688836.SS+unitree-ipo-not-yet-listed",
+      "headline": "宇树科技(688836.SS)人形机器人IPO，8/10申购、尚未上市交易，预期发行市值超420亿元、机构预测或冲千亿",
+      "tickers": [
+        "688836.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "尚未上市，无法设定入池价/无法交易；市值预期巨大(420-1000亿)+行业关注度极高(A股人形机器人第一股)，即使上市后neglect也极低，暂不入池"
+    },
+    {
+      "date": "2026-08-03",
+      "fingerprint": "2026-08-03+688123.SS+ddr5-spd-price-surge-already-priced-in",
+      "headline": "聚辰股份(688123.SS)DDR5 SPD芯片价格上涨受益，H1预增+156.07%，但总市值已达281.72亿元且7/31单日涨5.73%换手12.34%",
+      "tickers": [
+        "688123.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "市值过大(282亿)+市场已充分关注并炒作(引爆市场炒作)，neglect/elasticity均不足，暂不入池，列入观察"
+    },
+    {
+      "date": "2026-08-03",
+      "fingerprint": "2026-08-03+300765.SZ+ast razeneca-license-fee-onetime-gain",
+      "headline": "石药创新(300765.SZ)H1扭亏为盈，主要来自与阿斯利康合作首付款4.2亿美元的收入确认",
+      "tickers": [
+        "300765.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "业绩改善主要驱动为license deal一次性首付款收入确认，非持续性经营需求变化，按规则跳过"
+    },
+    {
+      "date": "2026-08-03",
+      "fingerprint": "2026-08-03+600889.SS+st-jinghua-ma-accounting-onetime",
+      "headline": "*ST京化(600889.SS)H1扭亏，主要因同一控制下企业合并会计处理(收购南京工艺)带来的非经常性损益",
+      "tickers": [
+        "600889.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "一次性并购会计损益驱动，非经营性需求变化，且带*ST风险警示，跳过"
+    },
+    {
+      "date": "2026-08-03",
+      "fingerprint": "2026-08-03+688218.SS+jiangsu-beiren-impairment-reversal",
+      "headline": "江苏北人(688218.SS)H1扭亏，主要因上年同期大额资产减值不再重复",
+      "tickers": [
+        "688218.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "扭亏主因是上年同期减值高基数消除，而非新增需求变化，且金额很小(约1451万元)，跳过"
+    },
+    {
+      "date": "2026-08-03",
+      "fingerprint": "2026-08-03+002326.SZ+catl-vc-contract-capacity-duplicate",
+      "headline": "永太科技(002326.SZ)与宁德时代VC长协(2026.6-2029.12)+内蒙古5万吨VC扩建8亿元项目",
+      "tickers": [
+        "002326.SZ"
+      ],
+      "action": "skipped_duplicate",
+      "note": "与既有假设6/30 evidence_log已记录的内蒙古5万吨VC扩建资本开支计划为同一事件，不重复记账"
+    },
+    {
+      "date": "2026-08-03",
+      "fingerprint": "2026-08-03+688380.SS+mcu-shortage-continues-duplicate",
+      "headline": "中微半导(688380.SS) MCU供不应求持续，7月延续涨价函驱动的缺货提价局面",
+      "tickers": [
+        "688380.SS"
+      ],
+      "action": "skipped_duplicate",
+      "note": "与既有假设source_news(5/6缺货提价+7/22 H1预告)已覆盖的同一供需紧张叙事，无新增信息"
     }
   ]
 }

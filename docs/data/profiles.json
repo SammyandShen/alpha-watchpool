@@ -1,5 +1,5 @@
 {
-  "$last_updated": "2026-08-01T12:00:32+08:00",
+  "$last_updated": "2026-08-03T08:13:16+08:00",
   "source": "yahoo-quote-summary",
   "profiles": {
     "OUST": {
@@ -25,7 +25,7 @@
       "free_cashflow": -46808624,
       "week52_low": 16.4,
       "week52_high": 63.79,
-      "fetched_at": "2026-08-01T12:00:22+08:00"
+      "fetched_at": "2026-08-03T08:13:02+08:00"
     },
     "POWL": {
       "next_earnings_date": "2026-08-03",
@@ -50,7 +50,7 @@
       "free_cashflow": 142181632,
       "week52_low": 69.0,
       "week52_high": 328.0,
-      "fetched_at": "2026-08-01T12:00:23+08:00"
+      "fetched_at": "2026-08-03T08:13:03+08:00"
     },
     "002326.SZ": {
       "next_earnings_date": null,
@@ -73,9 +73,9 @@
       "total_cash": 686818624,
       "total_debt": 4881339392,
       "free_cashflow": 192748608,
-      "week52_low": 12.98,
+      "week52_low": 13.02,
       "week52_high": 33.0,
-      "fetched_at": "2026-08-01T12:00:24+08:00"
+      "fetched_at": "2026-08-03T08:13:04+08:00"
     },
     "002497.SZ": {
       "next_earnings_date": null,
@@ -100,7 +100,7 @@
       "free_cashflow": 592333376,
       "week52_low": 13.27,
       "week52_high": 32.0,
-      "fetched_at": "2026-08-01T12:00:24+08:00"
+      "fetched_at": "2026-08-03T08:13:05+08:00"
     },
     "688620.SS": {
       "next_earnings_date": null,
@@ -125,7 +125,7 @@
       "free_cashflow": -291374176,
       "week52_low": 10.0,
       "week52_high": 18.5,
-      "fetched_at": "2026-08-01T12:00:25+08:00"
+      "fetched_at": "2026-08-03T08:13:05+08:00"
     },
     "PENG": {
       "next_earnings_date": "2026-10-13",
@@ -137,7 +137,7 @@
       "description_en": "Penguin Solutions, Inc. designs, builds, deploys and manages enterprise solutions worldwide. The company operates through three segments: Advanced Computing, Integrated Memory, and Optimized LED. It offers hardware, software, and services focusing on technical computing for core and cloud environments through computing and AI solutions. The company also provides Penguin Solutions OriginAI, an AI infrastructure solution for customers deploying GPUs at scale; continuous availability of customers critical data and applications in data centers and edge locations under the Stratus brand products; and dynamic random-access memory, modules, solid-state/flash storage, and integrated memory solutions to networking and telecom, data analytics, AI, and ML under the SMART Modular Technologies brand. In addition, it provides Zefr, a memory module; Altus and AMD EPYC based servers for expansive memory for AI workloads; flash memory products comprising solid-state drives, Serial Advanced Technology Attachment, and PCIe NVMe products in 2.5 enclosures, M.2, EDSFF, and other form factors; and multimediacard and embedded and removable USB products, SD and microSD Card configurations, and firmware development. Further, the company offers procurement, logistics, inventory management, temporary warehousing, programming, kitting, and packaging supply chain services; and LEDs under the Cree LED brand; Cree LED XLamp and J Series packaged LED components. It serves OEMs, enterprises, government, and other customers through direct and third-party channels. The company has a strategic collaboration with Deepgram, Dell Technologies, and ZulaFly to offer healthcare, location-based workflow, and safety solutions. The company was formerly known as SMART Global Holdings, Inc. and changed its name to Penguin Solutions, Inc. in October 2024. Penguin Solutions, Inc. was founded in 1988 and is headquartered in Fremont, California.",
       "currency": "USD",
       "market_cap": 2696903424,
-      "trailing_pe": 37.06338,
+      "trailing_pe": 37.86331,
       "forward_pe": 15.737978,
       "ps_ttm": 1.7946992,
       "revenue_ttm": 1502705024,
@@ -150,7 +150,7 @@
       "free_cashflow": -107568000,
       "week52_low": 16.04,
       "week52_high": 89.86,
-      "fetched_at": "2026-08-01T12:00:26+08:00"
+      "fetched_at": "2026-08-03T08:13:06+08:00"
     },
     "603115.SS": {
       "next_earnings_date": null,
@@ -175,7 +175,7 @@
       "free_cashflow": -275532320,
       "week52_low": 15.24,
       "week52_high": 132.5,
-      "fetched_at": "2026-08-01T12:00:26+08:00"
+      "fetched_at": "2026-08-03T08:13:07+08:00"
     },
     "003026.SZ": {
       "next_earnings_date": null,
@@ -200,7 +200,7 @@
       "free_cashflow": 3177057,
       "week52_low": 19.910343,
       "week52_high": 49.8,
-      "fetched_at": "2026-08-01T12:00:27+08:00"
+      "fetched_at": "2026-08-03T08:13:07+08:00"
     },
     "688531.SS": {
       "next_earnings_date": null,
@@ -223,9 +223,9 @@
       "total_cash": 1230458624,
       "total_debt": 192663920,
       "free_cashflow": -41934600,
-      "week52_low": 50.78,
+      "week52_low": 52.2,
       "week52_high": 215.0,
-      "fetched_at": "2026-08-01T12:00:28+08:00"
+      "fetched_at": "2026-08-03T08:13:09+08:00"
     },
     "301536.SZ": {
       "next_earnings_date": null,
@@ -250,7 +250,7 @@
       "free_cashflow": 302683584,
       "week52_low": 53.37,
       "week52_high": 146.62,
-      "fetched_at": "2026-08-01T12:00:28+08:00"
+      "fetched_at": "2026-08-03T08:13:09+08:00"
     },
     "688195.SS": {
       "next_earnings_date": null,
@@ -275,7 +275,7 @@
       "free_cashflow": -347306784,
       "week52_low": 30.642857,
       "week52_high": 306.49286,
-      "fetched_at": "2026-08-01T12:00:29+08:00"
+      "fetched_at": "2026-08-03T08:13:10+08:00"
     },
     "688380.SS": {
       "next_earnings_date": null,
@@ -300,7 +300,7 @@
       "free_cashflow": 473868800,
       "week52_low": 27.77,
       "week52_high": 66.98,
-      "fetched_at": "2026-08-01T12:00:30+08:00"
+      "fetched_at": "2026-08-03T08:13:11+08:00"
     },
     "300981.SZ": {
       "next_earnings_date": null,
@@ -325,7 +325,7 @@
       "free_cashflow": 699546176,
       "week52_low": 9.21,
       "week52_high": 18.87,
-      "fetched_at": "2026-08-01T12:00:31+08:00"
+      "fetched_at": "2026-08-03T08:13:13+08:00"
     },
     "AEHR": {
       "next_earnings_date": "2026-10-08",
@@ -348,9 +348,59 @@
       "total_cash": 116358000,
       "total_debt": 9882000,
       "free_cashflow": -1955375,
-      "week52_low": 15.94,
+      "week52_low": 16.38,
       "week52_high": 126.62,
-      "fetched_at": "2026-08-01T12:00:32+08:00"
+      "fetched_at": "2026-08-03T08:13:14+08:00"
+    },
+    "300613.SZ": {
+      "next_earnings_date": null,
+      "name": "Shanghai Fullhan Microelectronics Co., Ltd.",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "employees": 543,
+      "website": "https://www.fullhan.com",
+      "description_en": "Shanghai Fullhan Microelectronics Co., Ltd., together with its subsidiaries, engages in the development and design of integrated circuit chips, electronic products, and communication equipment in China and internationally. The company provides various chips comprising HD analog image signal processors (ISP), IP camera system on chips (SoC), HD analog Rx, digital video recorder (DVR) SoC, network video recorder SoC, smart display SoC, automotive camera ISP, automotive HD analog Rx, and automotive DVR SoC. It also offers professional technology services, such as technology development and IC design; and technology transfer and technical consulting services. In addition, the company is involved in the development, design, and manufacturing of computer system software; sales of self-produced products; and import, export, and wholesale of integrated circuits, electronic products, communication equipment, computers, and accessories and consumables. Fullhan Microelectronics Co., Ltd. was founded in 2004 and is headquartered in Shanghai, China.",
+      "currency": "CNY",
+      "market_cap": 13095693312,
+      "trailing_pe": 59.81915,
+      "forward_pe": 38.77931,
+      "ps_ttm": 6.7844276,
+      "revenue_ttm": 1930257664,
+      "revenue_growth": 0.755,
+      "gross_margin": 0.37368,
+      "operating_margin": 0.15090999,
+      "profit_margin": 0.111590005,
+      "total_cash": 2157329920,
+      "total_debt": 637920384,
+      "free_cashflow": 247143024,
+      "week52_low": 39.05,
+      "week52_high": 85.8,
+      "fetched_at": "2026-08-03T08:13:15+08:00"
+    },
+    "688733.SS": {
+      "next_earnings_date": null,
+      "name": "Anhui Estone Materials Technology Co.,Ltd",
+      "sector": "Basic Materials",
+      "industry": "Specialty Chemicals",
+      "employees": 928,
+      "website": "https://www.estonegroup.com",
+      "description_en": "Anhui Estone Materials Technology Co.,Ltd, together with its subsidiaries, engages in the research, development, production, and sale of advanced inorganic non-metallic composites in China and internationally. The company offers coating materials for electrode plates and separators in lithium batteries; electronic communication functional filling materials, including chip packaging, 5G high-frequency and high-speed copper clad laminate functional filling materials, silicone rubber functional fillers, electronic ink functional filling materials, and thermal interface materials; low smoke halogen-free flame retardant materials comprising environmentally friendly flame retardant for low-smoke halogen-free B1 sheath materials, smoke suppression char-forming agents, ceramic flame retardants, and ceramic products; opening agent solutions that include soft silicon and spherical silicon dioxide; and ceramic parts, such as alumina, zirconia, and aluminum nitride structural components. It also exports its products. The company was incorporated in 2006 and is based in Bengbu, China.",
+      "currency": "CNY",
+      "market_cap": 5050316800,
+      "trailing_pe": null,
+      "forward_pe": 29.39535,
+      "ps_ttm": 7.2598023,
+      "revenue_ttm": 695654848,
+      "revenue_growth": 0.547,
+      "gross_margin": 0.1893,
+      "operating_margin": 0.01101,
+      "profit_margin": -0.0070499997,
+      "total_cash": 557807104,
+      "total_debt": 1008549632,
+      "free_cashflow": -300233408,
+      "week52_low": 19.39,
+      "week52_high": 48.25,
+      "fetched_at": "2026-08-03T08:13:16+08:00"
     }
   }
 }
