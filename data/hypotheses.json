@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-08-03",
+  "$last_updated": "2026-08-04",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -298,8 +298,8 @@
         "set_by": "daily-scan 2026-07-05"
       },
       "current": {
-        "p": 0.3684,
-        "log_odds": -0.539,
+        "p": 0.7447,
+        "log_odds": 1.0704,
         "last_reviewed": "2026-08-01",
         "recomputed_from_ledger": true
       },
@@ -311,7 +311,7 @@
           "confirm_if": ">= +5% QoQ",
           "falsify_if": "<= -5% QoQ",
           "check_by": "2026-08-15",
-          "status": "pending"
+          "status": "met"
         },
         {
           "id": "V2",
@@ -329,7 +329,7 @@
           "confirm_if": "book-to-bill > 1",
           "falsify_if": "book-to-bill < 0.9",
           "check_by": "2026-08-15",
-          "status": "pending"
+          "status": "met"
         }
       ],
       "horizon": {
@@ -440,6 +440,22 @@
           },
           "pending": false,
           "review_note": "行业级量化数据强化demand_certainty的持续性，但非POWL公司专属披露，从严按T3计；FQ3财报（8/3，晚于本次复核截止）为backlog硬数据的真正判定点"
+        },
+        {
+          "id": "E7",
+          "date": "2026-08-03",
+          "source": "Powell Industries FQ3 FY2026 8-K / GlobeNewswire 官方财报",
+          "headline": "Powell Industries FQ3 FY26财报：营收$311.7M(+9% YoY)，净利$52.2M，EPS$1.42；新签订单破纪录$934M(+158%)，book-to-bill 3.0x；backlog升至$2.4B（YoY+69%，QoQ+35%）；季内含>$4亿数据中心大单+约$75M石化订单+约$60M LNG订单",
+          "url": "https://www.stocktitan.net/news/POWL/powell-industries-announces-third-quarter-fiscal-2026-j2p62kk99k4f.html",
+          "summary": "公司自身财报数字：backlog环比+35%远超V1 confirm_if(≥+5% QoQ)且远离falsify_if(≤-5%)；book-to-bill 3.0x远超V3 confirm_if(>1)；>4亿美元数据中心大单直接对应thesis核心需求向量（数据中心+电网开关柜）；未见明确的FY26全年营收/EPS数字指引上修表述(V2维持pending)",
+          "type": "T1_hard_financial",
+          "likelihood": {
+            "label": "decisive_support",
+            "lr": 5.0,
+            "log_lr": 1.6094
+          },
+          "pending": false,
+          "review_note": "T1紧急通道：本公司财报直接击穿V1(backlog QoQ)与V3(book-to-bill)两条required/旁证条件且远超阈值(35% vs 5%门槛7倍；3.0x vs >1门槛3倍)，数据中心大单直接对应demand_change核心叙事，判decisive_support；按CLAUDE.md铁律2即时评级+compute-metrics.py重算，commit标[URGENT]"
         }
       ],
       "posterior_history": [
@@ -463,7 +479,7 @@
         {
           "date": "2026-08-03",
           "type": "earnings",
-          "note": "FQ3 FY26 财报发布（8月3日收盘后）+ 电话会议8月4日上午11时（官方7/20公告确认）— V1/V2/V3判定点"
+          "note": "[已发生] FQ3 FY26财报：backlog $2.4B(QoQ+35%/YoY+69%)、新签订单$934M(+158%)、book-to-bill 3.0x，V1/V3 required条件均已达成确认；电话会议8月4日上午11时"
         },
         {
           "date": "2026-07-03",
@@ -934,6 +950,22 @@
           "pending": false,
           "correlates_with": "E1",
           "review_note": "与E1/E5/E6同属碳酸锂价格连续弱势区间震荡的同一底层信号，期货单日-4%波动不足以判定新趋势，去重forced neutral，避免对同一持续弱势现象反复扣分；8/31中报+Q3月均价为真正判定点"
+        },
+        {
+          "id": "E8",
+          "date": "2026-08-03",
+          "source": "生意社",
+          "headline": "电池级碳酸锂现货价8月3日生意社基准价14.2万元/吨",
+          "url": "https://finance.sina.com.cn/money/future/nyzx/2026-08-03/doc-inikyxur6273085.shtml",
+          "summary": "延续7月末以来14-15万元/吨窄幅震荡，仍高于V2 falsify线(14万)、远低于confirm线(18万)",
+          "type": "T2_supply_chain",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true,
+          "review_note": "每日只记账，LR留待weekly review统一评级"
         }
       ],
       "posterior_history": [

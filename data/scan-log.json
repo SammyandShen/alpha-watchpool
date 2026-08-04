@@ -2,55 +2,6 @@
   "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate | skipped_daily_cap",
   "entries": [
     {
-      "date": "2026-07-20",
-      "fingerprint": "2026-07-18+301536.SZ+h1-forecast-ai-soc-edge-583pct",
-      "headline": "星宸科技H1 2026业绩预告：归母净利8.2-9亿元（+583-650% YoY），扣非净利+632-715%，营收+87-94%，端边侧AI SoC+SSR670量产驱动",
-      "tickers": [
-        "301536.SZ"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
-      "date": "2026-07-20",
-      "fingerprint": "2026-07-20+301183.SZ+h1-forecast-ai-optical-68-88pct-pe170x",
-      "headline": "东田微H1 2026业绩预告：扣非净利+68-88%（8400-9400万），AI算力光通信组件（光隔离器/WDM），南昌基地产能爬坡",
-      "tickers": [
-        "301183.SZ"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "PE 170倍（5月市值约190亿）估值已充分定价；H1增速68-88%不算特别突出；七维总分约23（21-25档），先验≤0.25弱候选；观察名单级"
-    },
-    {
-      "date": "2026-07-20",
-      "fingerprint": "2026-07-14+OUST+q1-result-q2-guide-analyst-coverage",
-      "headline": "OUST Q1 2026收入$49M(+49% YoY)超预期；Q2指引$49.5-52.5M(+48%midpoint)；Roth/MKM新覆盖买入/$75目标价；Q2财报日8/6确认",
-      "tickers": [
-        "OUST"
-      ],
-      "action": "evidence_appended",
-      "note": "T3软信号：Q1实际和Q2指引均高于V1确认线(≥+30%)；两家新分析师$75目标价（vs入池价$49.84）；追加为OUST pending证据E3"
-    },
-    {
-      "date": "2026-07-20",
-      "fingerprint": "2026-07-20+002497.SZ+lithium-155k-further-decline",
-      "headline": "碳酸锂电池级现货价7/20约¥15.5万/吨（跌2.21%），较前次E2(7/17 ¥16-16.5万)进一步走低",
-      "tickers": [
-        "002497.SZ"
-      ],
-      "action": "evidence_appended",
-      "note": "T3负面信号：锂价进一步偏离V2确认线（月均≥¥18万/吨），当前距门槛约-14%；雅化集团股价¥16.47较入池价-26.5%；追加为002497.SZ pending证据E3"
-    },
-    {
-      "date": "2026-07-20",
-      "fingerprint": "2026-07-09+688620.SS+institution-survey-order-hot",
-      "headline": "安凯微7/9接受多家顶级机构调研（Point72/国投证券/万家基金等），公司确认「部分品类订单非常旺盛」，AI眼镜/智能锁/AI耳机产品获客户项目或已出货",
-      "tickers": [
-        "688620.SS"
-      ],
-      "action": "evidence_appended",
-      "note": "T3软信号：国际对冲基金Point72等参与调研，公司披露AI硬件部分品类订单积压；追加为688620.SS pending证据E1"
-    },
-    {
       "date": "2026-07-21",
       "fingerprint": "2026-07-20+POWL+earnings-date-confirmed-aug3",
       "headline": "Powell Industries官方公告FQ3 FY2026财报发布日：8月3日收盘后，电话会议8月4日11时",
@@ -620,6 +571,59 @@
       ],
       "action": "skipped_duplicate",
       "note": "与既有假设source_news(5/6缺货提价+7/22 H1预告)已覆盖的同一供需紧张叙事，无新增信息"
+    },
+    {
+      "date": "2026-08-04",
+      "fingerprint": "2026-08-03+POWL+fq3-earnings-backlog-record-book-to-bill-3x",
+      "headline": "Powell Industries FQ3 FY26财报：营收$311.7M(+9%)，新签订单破纪录$934M(+158%)，backlog $2.4B(QoQ+35%/YoY+69%)，book-to-bill 3.0x，含>$4亿数据中心大单",
+      "tickers": [
+        "POWL"
+      ],
+      "action": "evidence_appended",
+      "note": "URGENT/T1紧急通道：backlog QoQ+35%远超V1 confirm线(+5%)，book-to-bill 3.0x远超V3 confirm线(>1)，判decisive_support(LR5.0)并即时评级；compute-metrics.py重算后current.p从0.3684→0.7447（未达0.75 confirmed门槛，留给周复核确认）；追加为POWL evidence E7"
+    },
+    {
+      "date": "2026-08-04",
+      "fingerprint": "2026-08-03+002497.SZ+lithium-142k-stable",
+      "headline": "电池级碳酸锂现货价8月3日生意社基准价14.2万元/吨，较7月末(14.4-14.7万)小幅走低但仍在V2 falsify线(14万)上方",
+      "tickers": [
+        "002497.SZ"
+      ],
+      "action": "evidence_appended",
+      "note": "T2供应链价格延续窄幅震荡，未突破confirm(18万)或falsify(14万)任一门槛；追加为002497.SZ pending证据供中报(8/31)前weekly review评级"
+    },
+    {
+      "date": "2026-08-04",
+      "fingerprint": "2026-08-04+301655.SZ+ev-commercial-drivetrain-not-yet-listed",
+      "headline": "绿控传动(301655.SZ)新能源商用车电驱动系统供应商，H1 2026扣非净利+93.51%-143.18%，但创业板IPO尚在询价阶段(8/5询价、8/10申购)，未上市交易",
+      "tickers": [
+        "301655.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "需求逻辑扎实(新能源商用车电驱动)，但尚无entry_price可用，无法建仓；待上市后重新评估"
+    },
+    {
+      "date": "2026-08-04",
+      "fingerprint": "2026-08-04+cn-forecast-batch-weak-or-large-cap-skip",
+      "headline": "cn-forecasts.json批量核查：三未信安688489(营收仅+7.38%)、展芯股份301707(净利+55-89%但基数平淡)、津富士达603468(营收增长主因并表非内生+汇兑拖累净利)、杰理科技920138(全年营收指引仅+10.66%)、中微公司688012(净利+282-310%但市值超2000亿/覆盖极密集)、大烨智能300670(扭亏主因船舶租赁非核心主业)",
+      "tickers": [
+        "688489.SS",
+        "301707.SZ",
+        "603468.SS",
+        "920138.BJ",
+        "688012.SS",
+        "300670.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "均不满足demand_certainty/purity/elasticity门槛：增速平淡、非经营性驱动或大市值已充分覆盖"
+    },
+    {
+      "date": "2026-08-04",
+      "fingerprint": "2026-08-04+US+smallcap-scan-no-new-hit",
+      "headline": "美股小盘扫描(backlog/订单/供应链紧张关键词4组查询)：GE Vernova/Vertiv/Supermicro/BWXT/Mercury Systems均为中大盘或已被广泛覆盖；Graham Corp(GHM)backlog数据系Q3FY26(今年2月)旧闻非本周新增",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "未发现符合小盘高弹性+低关注度门槛的新候选"
     }
   ]
 }
