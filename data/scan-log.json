@@ -2,56 +2,6 @@
   "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate | skipped_daily_cap",
   "entries": [
     {
-      "date": "2026-07-21",
-      "fingerprint": "2026-07-20+POWL+earnings-date-confirmed-aug3",
-      "headline": "Powell Industries官方公告FQ3 FY2026财报发布日：8月3日收盘后，电话会议8月4日11时",
-      "tickers": [
-        "POWL"
-      ],
-      "action": "evidence_appended",
-      "note": "T4路标事件：公司官方锁定FQ3财报日8/3（结果）+ 8/4（电话会），V1/V2/V3判定窗口明确；events[]日期已更正为2026-08-03；追加为POWL pending证据E4"
-    },
-    {
-      "date": "2026-07-21",
-      "fingerprint": "2026-07-17+PENG+convertible-notes-750m-0pct-2031",
-      "headline": "Penguin Solutions完成$7.5亿可转换优先票据（0%利率，2031年到期）私募发行，超额认购",
-      "tickers": [
-        "PENG"
-      ],
-      "action": "evidence_appended",
-      "note": "T4资本结构事件：0%利率可转债7/17完成发行，超额认购；若转股将稀释现有股权；股价自入池价$81.39已跌至$53.23（-34.6%）；基本面AI内存需求假设未被否定；追加为PENG pending证据E2"
-    },
-    {
-      "date": "2026-07-21",
-      "fingerprint": "2026-07-19+301217.SZ+h1-hvlp-copper-foil-486-544pct-跌停",
-      "headline": "铜冠铜箔H1 2026归母净利+486%~+544%（2.05-2.25亿），预告发布当日20CM跌停",
-      "tickers": [
-        "301217.SZ"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "HVLP高频高速铜箔AI服务器需求实锤（供不应求），但：①业绩预告当日20CM跌停=neglect≈1（市场已充分定价并惩罚Q2环比Q1轻微下滑）；②隐含Q2净利0.99-1.19亿vs Q1 1.06亿，环比轻微走弱引发市场担忧；③七维总分估算≤21（demand_certainty=4, neglect=1拖累）；先验≤0.18弱假设档；观察名单级"
-    },
-    {
-      "date": "2026-07-21",
-      "fingerprint": "2026-07-19+300857.SZ+h1-ai-compute-247-340pct-giant",
-      "headline": "协创数据H1 2026归母净利+247%~+340%（15-19亿元），AI算力基础设施租赁爆发驱动",
-      "tickers": [
-        "300857.SZ"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "AI算力租赁业务真实需求，扣非净利增速高于归母净利（利润质量干净）；但市值约¥160B（约$22B），elasticity=1，弹性极低；serenity七维总分再高也因弹性不足无法入池；观察名单级"
-    },
-    {
-      "date": "2026-07-21",
-      "fingerprint": "2026-07-20+OUST+broad-ai-selloff-6pct-moonshot-kimi",
-      "headline": "OUST单日下跌-6.13%至$34.77；背景：Moonshot AI Kimi K3模型冲击AI基础设施估值逻辑",
-      "tickers": [
-        "OUST"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "AI市场系统性回调（Moonshot Kimi K3模型引发对美国AI基础设施叙事的重新定价）；OUST无公司层面负面基本面事件；Q2财报8/6是关键V1判定点；价格跟踪由sync-prices.py处理；无需追加假设层证据"
-    },
-    {
       "date": "2026-07-22",
       "fingerprint": "2026-07-22+688195.SS+h1-optical-ocs-yvo4-89pct-adj",
       "headline": "腾景科技H1 2026业绩预告：扣非净利+38-63%（¥4800-5200万），剔股权激励后净利+89-100%（¥6946-7346万），AI光通信OCS钒酸钇晶体+光模块无源元组件驱动",
@@ -624,6 +574,94 @@
       "tickers": [],
       "action": "skipped_watchlist_only",
       "note": "未发现符合小盘高弹性+低关注度门槛的新候选"
+    },
+    {
+      "date": "2026-08-05",
+      "fingerprint": "2026-08-04+AEHR+silicon-photonics-second-followon-order",
+      "headline": "Aehr再获硅光子学龙头客户第二轮FOX-XP量产追加订单（9刀片配置，2027上半年交付）",
+      "tickers": [
+        "AEHR"
+      ],
+      "action": "evidence_appended",
+      "note": "T2供应链信号：与7/9首次追加订单(已记入source_news)为不同的独立新订单(URL/标题均不同，管理层称为'又一佐证')，追加为AEHR pending证据E1"
+    },
+    {
+      "date": "2026-08-05",
+      "fingerprint": "2026-08-04+POWL+post-earnings-selloff-execution-concern",
+      "headline": "POWL财报后(8/3)逆势下跌约13.8%至~$189.50，尽管backlog创纪录$2.4B，市场质疑交付执行能力",
+      "tickers": [
+        "POWL"
+      ],
+      "action": "evidence_appended",
+      "note": "T4叙事级：营收/EPS略低于FactSet一致预期触发获利了结，叙事从'能否拿到订单'转向'能否按时交付'；追加为POWL pending证据E8，供周复核评估"
+    },
+    {
+      "date": "2026-08-05",
+      "fingerprint": "2026-08-03+AUTL+prelim-q2-revenue-guidance-raise-credit-facility",
+      "headline": "Autolus Therapeutics初步Q2 2026 AUCATZYL净产品收入~$45M(环比+72%)，FY26指引上修至$1.4-1.5亿，同步宣布最高$250M Perceptive五年期信贷安排(首期$75M已到位)",
+      "tickers": [
+        "AUTL"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-08-05",
+      "fingerprint": "2026-08-03+AXTI+q2-earnings-record-inp-already-priced",
+      "headline": "AXT Inc Q2 2026营收$47.6M(+164% YoY)破纪录，InP AI数据中心需求爆发，backlog>$1亿，与Lumentum/Coherent/Casella签长协预付款合计约$1.35亿",
+      "tickers": [
+        "AXTI"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "需求确定性极高(T1硬财报数据+已签长协预付款)，但年内涨幅约650%+且7月中旬起被Timothy Sykes/StocksToTrade等动量媒体近乎每日追踪报道，neglect≈1；市值已达约$42亿，3家机构一致买入均价目标价$79(部分已被现价超越)，弹性/未充分定价条件均不满足；观察名单级"
+    },
+    {
+      "date": "2026-08-05",
+      "fingerprint": "2026-08-05+US+smallcap-scan-partial-hit-AXTI-AUTL",
+      "headline": "美股小盘扫描(4组英文查询：小盘财报超预期/backlog订单/供应链涨价/AI基础设施)：新发现AXTI(已排除,过度定价)与AUTL(入池)",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "其余检索结果(Palantir/Amgen/Ford/Pfizer/Inspire Medical/Wayfair/Zebra等)均为大盘或与本策略主题不符，未见其他符合小盘高弹性门槛的候选"
+    },
+    {
+      "date": "2026-08-05",
+      "fingerprint": "2026-08-05+CN+general-scan-no-new-hit",
+      "headline": "A股扫描(5组中文查询：中标大单/涨价满产/扩产/业绩预告/AI算力半导体机器人热点)：未发现通过完整过滤条件的新候选",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "远东股份(常规月度披露)、中材国际(市值过大)、有研新材(非经常性损益占比高+市值540亿已充分定价)等均被排除；机器人爆单/稀土永磁/光模块液冷等热点主线因新鲜度不足(报道集中在7月中下旬)或网红化(全市场密集覆盖)被过滤；cn-forecasts.json结构化feed本身亦无新增合格候选(见pool_negative_warnings为空、positive_forecasts新增条目002933.SZ为基金公允价值变动非经常性、688510.SS营收增速平淡)"
+    },
+    {
+      "date": "2026-08-05",
+      "fingerprint": "2026-08-05+CN-pool+13-tickers-no-material-news",
+      "headline": "池内13只A股标的复核(002326/002497/688620/603115/003026/688531/301536/688195/688380/920493/300981/300613/688733)：窗口期(8/3-8/5)均无新增重大新闻",
+      "tickers": [
+        "002326.SZ",
+        "002497.SZ",
+        "688620.SS",
+        "603115.SS",
+        "003026.SZ",
+        "688531.SS",
+        "301536.SZ",
+        "688195.SS",
+        "688380.SS",
+        "920493.BJ",
+        "300981.SZ",
+        "300613.SZ",
+        "688733.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "仅688380中微半导8/5有一条闲置募集资金现金管理公告(行政性T4，无thesis影响)；无T1紧急事件，无需追加pending证据"
+    },
+    {
+      "date": "2026-08-05",
+      "fingerprint": "2026-08-05+US-pool+OUST-PENG-no-material-news",
+      "headline": "OUST(8/6财报前+6.97%盘中反弹，无公司专属催化剂)/PENG复核：窗口期均无新增重大新闻",
+      "tickers": [
+        "OUST",
+        "PENG"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "OUST盘中反弹缺乏具体公司层面催化剂，判断为板块性/预期性拉升，不计入证据；PENG无新公告或报道；OUST 8/6财报为V1判定点，留待明日按T1通道处理"
     }
   ]
 }

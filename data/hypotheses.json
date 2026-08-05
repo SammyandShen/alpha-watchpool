@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-08-04",
+  "$last_updated": "2026-08-05",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -456,6 +456,21 @@
           },
           "pending": false,
           "review_note": "T1紧急通道：本公司财报直接击穿V1(backlog QoQ)与V3(book-to-bill)两条required/旁证条件且远超阈值(35% vs 5%门槛7倍；3.0x vs >1门槛3倍)，数据中心大单直接对应demand_change核心叙事，判decisive_support；按CLAUDE.md铁律2即时评级+compute-metrics.py重算，commit标[URGENT]"
+        },
+        {
+          "id": "E8",
+          "date": "2026-08-04",
+          "source": "TS2.tech / 市场行情数据",
+          "headline": "POWL财报后逆势下跌约13.8%（至约$189.50）尽管backlog创纪录，市场质疑交付执行能力",
+          "url": "https://ts2.tech/en/powell-industries-nasdaqpowl-falls-post-earnings-as-backlog-reaches-record-putting-delivery-to-the-test/",
+          "summary": "尽管FQ3财报backlog达$2.4B历史新高、book-to-bill 3.0x（已于E7判decisive_support），财报后交易日股价下跌约13.8%至约$189.50，营收$311.7M与EPS $1.42均略低于FactSet一致预期；市场叙事从『能否拿到订单』转向『能否按时交付执行』的担忧，供周复核评估是否需要下修头寸质量判断",
+          "type": "T4_narrative",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -2881,7 +2896,23 @@
         "set_at": "2026-07-30",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-08-04",
+          "source": "Aehr Test Systems 官方新闻稿",
+          "headline": "Aehr再获硅光子学龙头客户新一轮FOX-XP量产追加订单（9刀片配置，2027上半年交付）",
+          "url": "https://www.aehr.com/2026/08/aehr-test-systems-expands-silicon-photonics-production-momentum-with-follow-on-production-order-from-lead-customer/",
+          "summary": "同一硅光子学'lead customer'继7/9首次追加订单后再度下单，配置9个WaferPak测试刀片(单刀片最高3500W)全自动FOX-XP量产老化系统，2027上半年交付；管理层称此为硅光子学从技术导入进入规模化量产的又一佐证",
+          "type": "T2_supply_chain",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-07-30",
@@ -3151,6 +3182,141 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "H1 2026正式中报法定披露截止 — V1判定点"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260805-AUTL",
+      "ticker": "AUTL",
+      "company": "Autolus Therapeutics plc",
+      "created_at": "2026-08-05",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-08-05",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：初步Q2 2026 AUCATZYL净产品收入约$45M(环比+72%) + FY26指引上修至$1.4-1.5亿 + $250M Perceptive信贷安排降低摊薄风险"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-08-03",
+          "headline": "Autolus Therapeutics Reports Preliminary Second Quarter 2026 Net Product Revenue and Announces Credit Facility of up to $250 Million with Perceptive Advisors",
+          "url": "https://www.globenewswire.com/news-release/2026/08/03/3337385/0/en/Autolus-Therapeutics-Reports-Preliminary-Second-Quarter-2026-Net-Product-Revenue-and-Announces-Credit-Facility-of-up-to-250-Million-with-Perceptive-Advisors.html",
+          "summary": "初步Q2 2026 AUCATZYL净产品收入约4500万美元(环比+72%)；FY26指引由1.2-1.35亿上修至1.4-1.5亿美元；同步宣布最高2.5亿美元五年期Perceptive信贷安排，首期7500万已到位"
+        }
+      ],
+      "thesis": {
+        "one_liner": "AUCATZYL商业化放量加速将在2-3个季度内持续改写其产品收入线并驱动全年指引上修",
+        "demand_change": "初步Q2 2026业绩：AUCATZYL净产品收入约4500万美元，环比+72%(vs Q1约2600万)，同比翻倍以上；管理层将FY2026净产品收入指引由1.2-1.35亿美元上修至1.4-1.5亿美元；同期与Perceptive Advisors签署最高2.5亿美元五年期计息贷款(首期7500万美元已于7/30到位)；H1 2026毛利率约35%，较2025下半年约-20%大幅转正。",
+        "transmission": "AUCATZYL(CAR-T细胞疗法，治疗成人复发/难治性B系急性淋巴细胞白血病)是公司唯一商业化产品，净产品收入直接体现治疗中心接入数×患者处方量×单价；治疗中心网络从此前约60家已激活向70+家扩展，美国医保人群覆盖率超90%；毛利率同比大幅改善反映产量爬坡后的固定成本分摊优化，收入增长直接传导为盈利能力改善。",
+        "misclassification": "市场仍把它当作『管线未兑现、持续依赖股权融资摊薄的临床阶段CAR-T故事股』；实际正在变成『商业化收入连续加速放量、毛利率转正、且用债权融资(非股权稀释)延长现金跑道的商业阶段血液肿瘤药企』——2.5亿美元Perceptive信贷安排显著降低了此前市场担忧的短期增发摊薄风险。",
+        "serenity_score": {
+          "demand_certainty": 5,
+          "transmission_clarity": 5,
+          "purity": 4,
+          "elasticity": 5,
+          "neglect": 3,
+          "verification_speed": 5,
+          "downside": 2
+        },
+        "brief_cn": [
+          "触发：8月3日Autolus Therapeutics公告初步Q2 2026业绩——AUCATZYL净产品收入约4500万美元(环比Q1的2600万+72%)，同时将2026全年净产品收入指引由1.2-1.35亿上修至1.4-1.5亿美元；同步宣布与Perceptive Advisors最高2.5亿美元五年期计息信贷安排(首期7500万美元7/30已到位)。",
+          "需求已可观察+财务传导：这不是预测性叙事，而是公司自身初步收入数字+正式上修的指引；AUCATZYL是公司唯一商业化产品，净产品收入直接对应治疗中心接入数与患者处方量的扩张——此前约60家治疗中心已激活，近期信息显示已扩展至70+家，美国医保覆盖率超90%；H1 2026毛利率约35%，较2025下半年约-20%大幅转正，反映产量爬坡后固定成本分摊改善。正式Q2财报与电话会议将于8月11日举行，是6天内即可验证的近端催化剂。",
+          "市场误分类：市场仍把公司当作『管线故事尚未兑现、持续依赖股权融资摊薄的临床阶段CAR-T股』；实际正在变成『商业化收入连续加速放量、毛利率转正、且用债权(非股权)融资延长现金跑道的商业阶段血液肿瘤药企』——2.5亿美元信贷安排显著降低了市场此前担忧的短期增发摊薄风险。",
+          "先验0.36的理由：七维总分29(26-30档，0.30-0.42)取中段——demand_certainty/transmission_clarity/elasticity/verification_speed均5分(公司自身数字+6天后即有正式财报确认)是强支撑；扣分项是downside=2(单一产品依赖，与Gilead Tecartus/Novartis Kymriah竞争，生物科技仍具不确定性)和neglect=3(消息发布后已有分析师小幅上调目标价，但覆盖密度整体有限、非网红标的)。赌的是8/11正式财报确认初步数字且指引维持，验证AUCATZYL商业化放量是结构性加速而非一次性数字。"
+        ]
+      },
+      "prior": {
+        "p": 0.36,
+        "log_odds": -0.5754,
+        "rationale": "七维总分29 → 26-30档(0.30-0.42)；取中段因demand_certainty/transmission_clarity/elasticity/verification_speed均5分(公司自身初步收入数字+6天后即有正式财报确认)强力支撑，downside=2(单产品依赖+生物科技不确定性)与neglect=3(已有分析师目标价上修但覆盖有限)抑制先验不冲顶",
+        "set_by": "daily-scan 2026-08-05"
+      },
+      "current": {
+        "p": 0.36,
+        "log_odds": -0.5754,
+        "last_reviewed": "2026-08-05",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026-08-11正式Q2 2026财报：AUCATZYL净产品收入确认值及FY2026全年指引",
+          "confirm_if": "Q2净产品收入确认 >= $44M 且管理层重申或上修FY26指引($1.4-1.5亿)",
+          "falsify_if": "Q2净产品收入确认 < $40M（低于初步值超10%）或FY26指引被下修",
+          "check_by": "2026-08-11",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "8/11电话会议披露的治疗中心(site of care)激活数量与患者接入进展",
+          "confirm_if": "管理层披露治疗中心数量继续增长(达到或超过70家)或新增高权重区域中心",
+          "falsify_if": "治疗中心扩张停滞或披露具体中心退出/准入受阻",
+          "check_by": "2026-08-11",
+          "status": "pending"
+        },
+        {
+          "id": "V3",
+          "required": false,
+          "metric": "现金跑道与再融资动作（Perceptive信贷安排之外）",
+          "confirm_if": "管理层重申现金跑道支撑至2027年以后且无需在Perceptive信贷安排外追加股权融资",
+          "falsify_if": "公司在未来一个季度内宣布额外股权融资/ATM增发",
+          "check_by": "2026-11-15",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-02-05"
+      },
+      "baseline": {
+        "entry_date": "2026-08-05",
+        "entry_price": 1.95,
+        "benchmark": "SPY",
+        "benchmark_entry_price": 771.64,
+        "sector_benchmark": "XBI",
+        "sector_benchmark_entry_price": 151.88
+      },
+      "price_expectation": {
+        "confirm_target": 3.27,
+        "falsify_target": 1.3,
+        "expected_by": "2026-08-25",
+        "methodology_cn": "证实情景：8/11正式Q2财报确认初步收入(~$45M)且FY26指引(1.4-1.5亿美元)维持或上修 → FY26E净产品收入中值约1.45亿美元；当前隐含P/S≈3.58x(市值5.19亿÷FY26E收入1.45亿)，参照同类商业化放量期孤儿药/细胞疗法公司(收入100%+同比增长阶段)可支撑至约6x forward sales → 目标市值约8.7亿美元÷2.6614亿股(ADS)≈$3.27。证伪情景：8/11正式财报低于预告下限或FY26指引被下修 → P/S回落至约2x(小型商业阶段药企的保守中枢)×FY26E收入1.45亿≈2.9亿美元市值÷2.6614亿股≈$1.09；参考催化剂前(7/31)交易价约$1.49作为区间上沿，两者之间取$1.30(Perceptive信贷安排降低短期摊薄风险的效果具有持续性，不完全退回催化剂前水平)。",
+        "timeline_logic_cn": "V1判定点为2026-08-11正式Q2财报及电话会议；生物科技单一离散型财报催化剂的重估通常在财报后1-2周内快速完成(不同于工业股需连续两季确认) → 预期2026-08-25前到位。",
+        "set_at": "2026-08-05",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-08-05",
+          "p": 0.36,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-08-11",
+          "type": "earnings",
+          "note": "正式Q2 2026财报+电话会议，V1判定点(确认初步收入数字并听取治疗中心扩张/竞争细节)"
         }
       ],
       "links": {
