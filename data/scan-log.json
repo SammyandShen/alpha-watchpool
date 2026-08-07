@@ -2,45 +2,6 @@
   "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate | skipped_daily_cap",
   "entries": [
     {
-      "date": "2026-07-22",
-      "fingerprint": "2026-07-22+688195.SS+h1-optical-ocs-yvo4-89pct-adj",
-      "headline": "腾景科技H1 2026业绩预告：扣非净利+38-63%（¥4800-5200万），剔股权激励后净利+89-100%（¥6946-7346万），AI光通信OCS钒酸钇晶体+光模块无源元组件驱动",
-      "tickers": [
-        "688195.SS"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
-      "date": "2026-07-22",
-      "fingerprint": "2026-07-22+688498.SS+h1-datacenter-laser-chips-1000pct-mktcap-over1200b",
-      "headline": "源杰科技H1 2026扣非净利+1001-1112%（¥5-5.5亿），营收+339-363%（¥9-9.5亿），InP激光芯片数据中心业务爆发",
-      "tickers": [
-        "688498.SS"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "市值超¥1200亿（A股新股王，从¥88涨至¥1439），elasticity=1；neglect=1（广泛报道、PE 631x）；增长真实（InP DFB/EML激光芯片供应短缺）但已被市场充分定价，不满足小盘弹性入池条件"
-    },
-    {
-      "date": "2026-07-22",
-      "fingerprint": "2026-07-22+POWL+analyst-pt-raise-jpm360-roth333",
-      "headline": "JPMorgan将POWL目标价上调至$360（Overweight），Roth Capital上调至$333（Buy）；FQ3财报日8/3前机构信心提升",
-      "tickers": [
-        "POWL"
-      ],
-      "action": "evidence_appended",
-      "note": "T4叙事级：两家机构同步上调PT（JPM $310→$360，Roth $285→$333），共识目标价$316；反映分析师对电网+数据中心需求信心；追加为POWL pending证据E5"
-    },
-    {
-      "date": "2026-07-22",
-      "fingerprint": "2026-07-22+PENG+barclays-downgrade-underweight",
-      "headline": "Barclays将PENG降级至Underweight；$7.5亿可转债稀释风险+股价自入池价$81.39跌至约$53（-35%）为主因",
-      "tickers": [
-        "PENG"
-      ],
-      "action": "evidence_appended",
-      "note": "T4负面叙事：Barclays降级主要基于估值/资本结构担忧（0%利率$7.5亿可转债潜在稀释），非AI内存需求恶化；追加为PENG pending证据E3"
-    },
-    {
       "date": "2026-07-27",
       "fingerprint": "2026-07-22+688380.SS+h1-forecast-mcu-shortage-price-hike",
       "headline": "中微半导H1 2026业绩预告：营收+44.06%(7.26亿)、归母净利+90.82%(1.65亿)、扣非净利+101.95%(1.53亿)，MCU缺货提价+董事长确认供应紧张是主要矛盾",
@@ -662,6 +623,92 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "OUST盘中反弹缺乏具体公司层面催化剂，判断为板块性/预期性拉升，不计入证据；PENG无新公告或报道；OUST 8/6财报为V1判定点，留待明日按T1通道处理"
+    },
+    {
+      "date": "2026-08-07",
+      "fingerprint": "2026-08-06+688758.SS+H1-forecast-industrial-purification-surge",
+      "headline": "赛分科技(688758.SS)8/6发布2026H1业绩预告：扣非净利润预增100-135%，工业纯化业务收入增速超60%占营收67.4%，同日公告限制性股票首次授予",
+      "tickers": [
+        "688758.SS"
+      ],
+      "action": "new_hypothesis",
+      "note": "生物药GLP-1/抗体纯化材料需求扩容，法定业绩预告口径+项目管线数据(储备1281个)均为已观察需求，非叙事；prior=0.35"
+    },
+    {
+      "date": "2026-08-07",
+      "fingerprint": "2026-08-06+OUST+q2-earnings-beat-guide-eps-miss",
+      "headline": "Ouster CY26Q2财报：营收$54.63M(+56% YoY)超预期，Q3指引$54.5-57.5M，但EPS亏损超预期股价走弱",
+      "tickers": [
+        "OUST"
+      ],
+      "action": "evidence_appended",
+      "note": "V1要求连续两季确认，Q2单季达标，追加为pending证据E6，非T1紧急通道（需等11/15前Q3数据）"
+    },
+    {
+      "date": "2026-08-07",
+      "fingerprint": "2026-08-07+CN-forecast-batch-oneoff-or-preIPO-or-mixed-skip",
+      "headline": "cn-forecasts.json批量核查：绿控传动301655(未上市，8/10才申购)、荣昌生物688331(扭亏主因艾伯维一次性技术授权首付款+市值超600亿已充分覆盖)、华曙高科688433(总市值已近450亿+年内涨144%+机构密集覆盖，neglect过低)、江苏北人688218(扭亏主因上年同期资产减值转回，非经营性)、国仪公司688828(营收增40-63%但归母净利可能同比下滑，费用增速快于收入)、中微公司688012(市值超2000亿已在7/8月多次核查排除)",
+      "tickers": [
+        "301655.SZ",
+        "688331.SS",
+        "688433.SS",
+        "688218.SS",
+        "688828.SS",
+        "688012.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "均不满足入池门槛：pre-IPO不可交易/一次性损益/已过度定价覆盖密集/利润弹性不明确"
+    },
+    {
+      "date": "2026-08-07",
+      "fingerprint": "2026-08-07+US+smallcap-scan-PKOH-USAR-NB-no-hit",
+      "headline": "美股小盘扫描：Park-Ohio Holdings(PKOH)Q2记录营收+10%YoY超预期上修指引，但为多元化控股集团(供应链物流/装配组件/工程产品三大不相关板块)AI相关需求仅为其中一小部分，purity不足；USA Rare Earth(USAR)市值已达46.6亿美元且8家分析师覆盖，neglect过低；NioCorp(NB)与洛克希德签署钪供应预备协议但2028年投产，验证周期超出1-4季度窗口",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "PKOH纯度不足/USAR已过度定价覆盖/NB验证周期过长，均不满足入池门槛"
+    },
+    {
+      "date": "2026-08-07",
+      "fingerprint": "2026-08-07+CN+general-scan-no-new-hit",
+      "headline": "A股扫描(5组中文查询：中标涨价满产/机器人半导体涨价函/PCB覆铜板AI服务器)：PCB覆铜板涨价潮(生益科技/建滔积层板等)已是全市场广泛报道的热点主线，neglect过低；未发现通过完整过滤条件的新候选",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "覆铜板涨价题材已高度拥挤，其余检索结果(江丰电子基金设立/宇树科技IPO/博杰股份风险提示)均非thesis级信号"
+    },
+    {
+      "date": "2026-08-07",
+      "fingerprint": "2026-08-07+US-pool+AUTL-POWL-PENG-AEHR-no-material-news",
+      "headline": "美股池内复核(AUTL/POWL/PENG/AEHR)：窗口期(8/6-8/7)均无新增重大新闻",
+      "tickers": [
+        "AUTL",
+        "POWL",
+        "PENG",
+        "AEHR"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "AUTL正式Q2财报要到8/11；POWL无新公告；PENG 8/6股价回落至$55.72无具体催化剂；AEHR上次财报(7/14)已充分入账"
+    },
+    {
+      "date": "2026-08-07",
+      "fingerprint": "2026-08-07+CN-pool+13-tickers-no-material-news",
+      "headline": "池内13只A股标的复核(002326/002497/688620/603115/003026/688531/301536/688195/688380/920493/300981/300613/688733)：窗口期(8/6-8/7)均无新增重大新闻",
+      "tickers": [
+        "002326.SZ",
+        "002497.SZ",
+        "688620.SS",
+        "603115.SS",
+        "003026.SZ",
+        "688531.SS",
+        "301536.SZ",
+        "688195.SS",
+        "688380.SS",
+        "920493.BJ",
+        "300981.SZ",
+        "300613.SZ",
+        "688733.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "检索到的永太科技H1预告(002326)、星宸科技H1预告(301536)、安凯微/雅化集团回购进展均为已入池source_news的旧闻或行政性公告，非新增thesis信号；cn-forecasts.json pool_negative_warnings为空"
     }
   ]
 }

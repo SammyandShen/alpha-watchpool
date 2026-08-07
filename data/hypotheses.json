@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-08-05",
+  "$last_updated": "2026-08-07",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -182,6 +182,22 @@
           },
           "pending": false,
           "review_note": "T4叙事类固定neutral；补搜确认7/25后无AIM出货量化或Rev8订单pipeline新增披露，8/6财报为下一判定窗口"
+        },
+        {
+          "id": "E6",
+          "date": "2026-08-06",
+          "source": "MarketScreener / Benzinga / StockTitan",
+          "headline": "Ouster CY26Q2财报：营收$54.63M(+56% YoY，QoQ+11.5%)超预期$50.88M，GAAP毛利率49%(+400bp YoY)，Q3指引$54.5-57.5M；EPS亏损$0.27/股不及预期(-$0.20)，股价财报后走弱",
+          "url": "https://www.marketscreener.com/news/earnings-flash-oust-ouster-inc-reports-q2-revenue-54-6m-vs-factset-est-of-51-5m-ce7f50ddd18df426",
+          "summary": "Q2单季YoY+56%且环比为正，已满足V1单季确认线；但V1要求CY26Q2与CY26Q3连续两季确认，Q3指引中枢$56M对应YoY+约35%仍达标但需等待Q3实际数(11月)；EPS亏损超预期、总出货17000+台，'well positioned for physical AI'",
+          "type": "T1_hard_financial",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true,
+          "review_note": "非T1紧急通道：V1度量本身要求连续两季确认，Q2单季达标但需Q3(11/15前)才能完整判定，故仅记账不即时评LR，留待周复核或Q3财报后处理"
         }
       ],
       "posterior_history": [
@@ -205,7 +221,7 @@
         {
           "date": "2026-08-06",
           "type": "earnings",
-          "note": "CY26Q2 财报（Yahoo 官方排期确认 2026-08-06）— V1 第一个观测点"
+          "note": "CY26Q2财报已披露(8/6)：营收$54.63M(+56% YoY)超预期，Q3指引$54.5-57.5M；V1第一个观测点达标，等待Q3(11月)确认连续两季"
         },
         {
           "date": "2026-07-02",
@@ -3317,6 +3333,138 @@
           "date": "2026-08-11",
           "type": "earnings",
           "note": "正式Q2 2026财报+电话会议，V1判定点(确认初步收入数字并听取治疗中心扩张/竞争细节)"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260807-688758.SS",
+      "ticker": "688758.SS",
+      "company": "苏州赛分科技股份有限公司",
+      "created_at": "2026-08-07",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-08-07",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：2026H1业绩预告扣非净利润预增100-135%，工业纯化业务放量驱动"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-08-06",
+          "headline": "赛分科技2026年半年度业绩预告：归母净利润9660-11270万元(+80%~110%)，扣非净利润9320-10930万元(+100%~135%)",
+          "url": "https://data.eastmoney.com/notices/detail/688758",
+          "summary": "法定业绩预告口径，工业纯化业务收入增速预计突破60%，为整体业绩核心引擎；新增项目133个，累计储备1281个"
+        },
+        {
+          "date": "2026-08-06",
+          "headline": "赛分科技公告向2026年限制性股票激励计划激励对象首次授予限制性股票",
+          "url": "https://paper.cnstock.com/html/2026-08/06/content_2252294.htm",
+          "summary": "业绩预告披露当日同步落地股权激励首次授予，管理层信心佐证"
+        }
+      ],
+      "thesis": {
+        "one_liner": "全球生物药GLP-1/抗体纯化需求扩容将在1-2个季度内持续推高其工业纯化收入并驱动净利率结构性提升",
+        "demand_change": "法定业绩预告口径：2026H1扣非净利润预增100-135%；工业纯化业务收入同比增速预计超60%，占总营收67.4%；报告期内新增项目133个，累计储备1281个(其中临床三期及商业化阶段125个)，新开拓17个临床后期/商业化项目；扬州基地一期订单交付率100%，二期已开工建设",
+        "transmission": "客户项目从早期研发进入临床后期/商业化阶段 → 纯化填料采购量级跃升(克级到公斤级/吨级) → 工业纯化收入线直接放量；期间费用率同比下行 → 利润增速快于营收增速，净利率结构性扩张",
+        "misclassification": "市场仍把它当作『小众色谱耗材/分析仪器供应商』，实际正在变成『全球GLP-1/单抗/核酸药物放量周期里的隐形卡脖子纯化材料供应商』，中美双基地布局叠加国产替代逻辑强化其在全球供应链中的稀缺定位",
+        "serenity_score": {
+          "demand_certainty": 5,
+          "transmission_clarity": 4,
+          "purity": 5,
+          "elasticity": 4,
+          "neglect": 3,
+          "verification_speed": 5,
+          "downside": 3
+        },
+        "brief_cn": [
+          "触发：8/6晚间发布2026年中报业绩预告(法定强制披露口径)，扣非净利润预增100-135%，同日公告向2026年限制性股票激励计划核心员工首次授予，管理层信心与业绩预告同步释放。",
+          "需求已可观察而非故事：工业纯化业务收入增速超60%且占比67.4%，报告期内新开拓17个临床后期/商业化阶段项目，客户项目储备累计1281个(125个已至临床三期/商业化)——项目管线是实打实的采购漏斗，非愿景性表述；扬州基地一期100%交付率验证产能利用饱满，二期已开工对应扩产预期。",
+          "市场误分类：当前标签仍是『色谱耗材/分析仪器小盘股』，正在变成『全球生物药放量周期(尤其GLP-1/单抗/核酸药物专利悬崖驱动的生物类似药提速)里稀缺的纯化材料供应商』，中美双基地是应对供应链地缘风险的稀缺卡位。",
+          "先验只给0.35的原因：PE-TTM已约69倍不便宜(市场已部分定价成长性)，2025年1月新上市机构覆盖仍在建立中(neglect给3分中性)；赌的是正式中报(8/31法定截止前)兑现预告区间且工业纯化收入增速验证可持续，而非一次性项目确认。"
+        ]
+      },
+      "prior": {
+        "p": 0.35,
+        "log_odds": -0.619,
+        "rationale": "七维总分29 → 0.30-0.42档；取中段因demand_certainty/purity/verification_speed均为5分(法定业绩预告+主业高度集中+中报窗口临近)，但PE-TTM约69x偏贵(downside=3)且上市仅一年半机构覆盖尚在建立(neglect=3)拖累",
+        "set_by": "daily-scan 2026-08-07"
+      },
+      "current": {
+        "p": 0.35,
+        "log_odds": -0.619,
+        "last_reviewed": "2026-08-07",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026年半年度正式报告：扣非净利润同比增速 & 工业纯化业务收入同比增速",
+          "confirm_if": "扣非净利润YoY >= +90%（落在预告区间中上部）且工业纯化收入YoY >= +50%",
+          "falsify_if": "扣非净利润YoY < +80%（跌破预告下限）或工业纯化收入YoY < +30%",
+          "check_by": "2026-08-31",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "中报/三季报电话会披露项目储备净增数量与扬州二期产能投产进度",
+          "confirm_if": "项目储备较1281个继续净增，或二期产能如期于2026年底前投产",
+          "falsify_if": "管理层承认新增项目获取放缓或二期投产延迟",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-02-07"
+      },
+      "baseline": {
+        "entry_date": "2026-08-07",
+        "entry_price": 26.16,
+        "benchmark": "510300.SS",
+        "benchmark_entry_price": 4.714,
+        "sector_benchmark": "512010.SS",
+        "sector_benchmark_entry_price": 0.387
+      },
+      "price_expectation": {
+        "confirm_target": 32.0,
+        "falsify_target": 12.0,
+        "expected_by": "2026-09-20",
+        "methodology_cn": "证实情景：2026H1归母净利润预告中枢~1.05亿元，若H2维持类似强度全年归母净利润估算~2.2亿元 × 目标PE 60x(较当前TTM~69x小幅回落，反映连续两期兑现后市场对增速可持续性给的常态化溢价) = 目标市值132亿元 ÷ 总股本4.16亿股 ≈ 32元/股。证伪情景：若正式中报增速跌破预告下限，市场对『能否持续』产生质疑，全年净利润估算下修至~1.6亿元 × 常规特种材料供应商中枢PE 30x = 市值48亿元 ÷ 4.16亿股 ≈ 12元/股。",
+        "timeline_logic_cn": "V1绑定8/31法定中报披露截止日，正式数字通常在预告后2-4周内发布并伴随电话会，重估窗口预计在披露后2-3周内完成 → 预期2026-09-20前到位。",
+        "set_at": "2026-08-07",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-08-07",
+          "p": 0.35,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-08-31",
+          "type": "earnings",
+          "note": "2026年半年度正式报告法定截止日（业绩预告已于8/6披露，此为V1正式判定点）"
         }
       ],
       "links": {
