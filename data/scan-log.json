@@ -709,6 +709,134 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "检索到的永太科技H1预告(002326)、星宸科技H1预告(301536)、安凯微/雅化集团回购进展均为已入池source_news的旧闻或行政性公告，非新增thesis信号；cn-forecasts.json pool_negative_warnings为空"
+    },
+    {
+      "date": "2026-08-10",
+      "fingerprint": "2026-08-06+301366.SZ+h1-actual-report-pcb-capacity-full-backlog-3005pct",
+      "headline": "一博科技2026年半年度报告：营收7.09亿元(+41.63%)，扣非净利润6005万元(+3005.41%)，PCB制板产能满产订单积压，8/7涨停",
+      "tickers": [
+        "301366.SZ"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-08-10",
+      "fingerprint": "2026-08-06+PSIX+q2-2026-eps-revenue-beat-datacenter-backup-power-h2-guide",
+      "headline": "Power Solutions International 2026Q2财报：EPS $0.73(预期$0.27)，营收$1.525亿(预期$1.34亿)，数据中心备用电源需求强劲，H2指引超H1",
+      "tickers": [
+        "PSIX"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-08-10",
+      "fingerprint": "2026-08-03+688531.SS+zhuhai-land-purchase-capacity-expansion",
+      "headline": "日联科技子公司签订珠海工业用地出让合同(2957万元)，用于产能扩建",
+      "tickers": [
+        "688531.SS"
+      ],
+      "action": "evidence_appended",
+      "note": "T2供应链信号：扩产用地落地，追加为688531.SS pending证据E4"
+    },
+    {
+      "date": "2026-08-10",
+      "fingerprint": "2026-08-05+920493.BJ+private-placement-equity-offering-announcement",
+      "headline": "北京并行科技发布向特定对象发行股票(定增)相关公告并召开临时股东大会",
+      "tickers": [
+        "920493.BJ"
+      ],
+      "action": "evidence_appended",
+      "note": "T3软信号：再融资摊薄风险与中报后业绩增速需一并评估，追加为920493.BJ pending证据E1"
+    },
+    {
+      "date": "2026-08-10",
+      "fingerprint": "2026-08-07+002497.SZ+lithium-140k-touching-falsify-line-again",
+      "headline": "电池级碳酸锂现货价8/4 SMM报14.05-14.11万元/吨，8/7生意社基准价14.0万元/吨，再度贴近V2证伪线",
+      "tickers": [
+        "002497.SZ"
+      ],
+      "action": "evidence_appended",
+      "note": "T2供应链价格信号：延续在14万关口拉锯，追加为002497.SZ pending证据E10（correlates_with E1）"
+    },
+    {
+      "date": "2026-08-10",
+      "fingerprint": "2026-08-06+688331.SS+h1-forecast-turnaround-abbvie-licensing-onetime",
+      "headline": "荣昌生物H1 2026扣非净利扭亏(+12488.9%，43亿元)，主要驱动为艾伯维RC148独家授权许可技术授权收入",
+      "tickers": [
+        "688331.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "利润暴增主要来自一次性技术授权收入，且公司为知名大市值创新药标的(A+H两地上市)、机构覆盖密集，neglect/purity不满足入池门槛"
+    },
+    {
+      "date": "2026-08-10",
+      "fingerprint": "2026-08-05+002933.SZ+h1-forecast-fair-value-gain-fund-investment-nonrecurring",
+      "headline": "新兴装备H1 2026净利润预告上调，主要因参股基金公允价值变动收益增加(非经常性损益)",
+      "tickers": [
+        "002933.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "利润变动主因非经营性金融资产公允价值变动，非已发生的需求变化，不满足入池门槛"
+    },
+    {
+      "date": "2026-08-10",
+      "fingerprint": "2026-08-07+300586.SZ+h1-forecast-turnaround-generic-no-specific-driver",
+      "headline": "美联新材H1 2026扭亏预告(净利900-1200万元)，披露理由为'营业收入及综合毛利率均有所提升'",
+      "tickers": [
+        "300586.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "Q1单季净利仅142万元(同比-84.86%)，H1扭亏缺乏具体产品/客户端需求变化证据，过于笼统，不满足入池门槛"
+    },
+    {
+      "date": "2026-08-10",
+      "fingerprint": "2026-08-06+688835.SS+ipo-pending-not-yet-listed",
+      "headline": "高凯技术(精密流体控制)科创板IPO发行安排及初步询价公告，尚未正式上市交易",
+      "tickers": [
+        "688835.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "公司仍处于IPO询价/申购阶段，尚无可用于baseline.entry_price的二级市场交易价格，无法入池"
+    },
+    {
+      "date": "2026-08-10",
+      "fingerprint": "2026-08-07+688796.SS+h1-forecast-antibody-licensing-large-cap-crowded",
+      "headline": "百奥赛图H1 2026净利预增392-413%，RenMice抗体分子授权(千鼠万抗)驱动，总市值约251亿元",
+      "tickers": [
+        "688796.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "总市值约251亿元、机构持股集中(招银/国投/国寿系)、与默克/杨森/百济神州等知名药企已有多年合作关系，neglect不满足入池门槛，已充分定价"
+    },
+    {
+      "date": "2026-08-10",
+      "fingerprint": "2026-08-05+300209.SZ+compute-order-repricing-large-cap-high-leverage-risk",
+      "headline": "行云科技算力服务补充协议将头部大模型客户订单上调201%，在手长期框架订单超154亿元，总市值约345亿元",
+      "tickers": [
+        "300209.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "总市值约345亿元且已'领涨算力板块'关注度饱和；历史财务记录较差(近15年5次亏损、去年净利率-65%)，财务费用高、债务风险需重点关注，purity/downside不满足入池门槛"
+    },
+    {
+      "date": "2026-08-10",
+      "fingerprint": "2026-08-03+AEHR+fy26q4-earnings-date-confusion-already-captured",
+      "headline": "核查AEHR FY2026 Q4财报实际披露日期为7/14(非8/3-4)，相关记录与股价反应已在7/30入池及8/5证据E1/E2中完整捕获",
+      "tickers": [
+        "AEHR"
+      ],
+      "action": "skipped_duplicate",
+      "note": "池内轻跟踪初筛曾误判为新增8月财报事件，核实后确认为7/14旧闻的重复检索结果，不追加证据"
+    },
+    {
+      "date": "2026-08-10",
+      "fingerprint": "2026-08-03+AUTL+preliminary-q2-already-captured-at-creation",
+      "headline": "核查AUTL初步Q2业绩(8/3 GlobeNewswire)已作为source_news在8/5入池时完整记录",
+      "tickers": [
+        "AUTL"
+      ],
+      "action": "skipped_duplicate",
+      "note": "8/11正式财报电话会议为下一判定点，留待明日/下周复核处理，今日不重复记账"
     }
   ]
 }

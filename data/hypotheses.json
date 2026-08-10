@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-08-08",
+  "$last_updated": "2026-08-10",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -1047,6 +1047,22 @@
           },
           "pending": false,
           "review_note": "采纳review-input.json建议标签weak_against"
+        },
+        {
+          "id": "E10",
+          "date": "2026-08-07",
+          "source": "SMM上海有色网 / 生意社",
+          "headline": "电池级碳酸锂现货价8/4 SMM报14.05-14.11万元/吨，8/7生意社基准价14.0万元/吨，再度贴近V2证伪线(<14万元/吨)",
+          "url": "https://hq.smm.cn/h5/Li2CO3-battery-price",
+          "summary": "延续7月末以来在14万元/吨关口反复拉锯的格局，8/7生意社基准价已下探至14.0万整数关口，是E1建立以来最接近falsify线的读数；现货月均价口径尚未确认跌破，中报(8/31)前为关键观察窗口",
+          "type": "T2_supply_chain",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true,
+          "correlates_with": "E1"
         }
       ],
       "posterior_history": [
@@ -2028,6 +2044,21 @@
           },
           "pending": false,
           "review_note": "review-input.json建议moderate_support，P_price tier LR上限1.5，降级采纳；累计价格类log_lr（E2+此条=0.8110）未超生命周期封顶1.10"
+        },
+        {
+          "id": "E4",
+          "date": "2026-08-03",
+          "source": "163.com / 公司公告",
+          "headline": "日联科技子公司签订珠海工业用地出让合同，成交价2957万元，用于产能扩建",
+          "url": "https://www.163.com/dy/article/L3FOC1MN0534A4SC.html",
+          "summary": "扩产用地落地，与SSTI并购后业务扩张节奏一致；尚未有具体新增产能规模/投产时间表",
+          "type": "T2_supply_chain",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -2765,7 +2796,23 @@
         "set_at": "2026-07-29",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-08-05",
+          "source": "新浪财经/公司公告",
+          "headline": "北京并行科技发布向特定对象发行股票（定增）相关公告并召开临时股东大会",
+          "url": "http://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=920493&id=12455067",
+          "summary": "定增融资推进中，具体募资规模/用途未在检索中明确；北交所小市值公司再融资摊薄需在中报后结合业绩增速评估",
+          "type": "T3_soft_signal",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-07-29",
@@ -3774,6 +3821,264 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "2026年半年度正式报告法定截止日（业绩预告已于8/6披露，此为V1正式判定点）"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260810-301366.SZ",
+      "ticker": "301366.SZ",
+      "company": "深圳市一博科技股份有限公司",
+      "created_at": "2026-08-10",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-08-10",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：2026H1实际财报(非预告)扣非净利润+3005.41%，产能满产订单积压，8/7触发20CM涨停"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-08-06",
+          "headline": "一博科技发布2026年半年度报告及投资者调研记录：营收7.09亿元(+41.63%)，净利润6383万元(+1561.55%)，扣非净利润6005万元(+3005.41%)；PCB制板业务订单月度加速增长，部分工序产能满产出现订单积压",
+          "url": "https://www.stcn.com/article/detail/4063432.html",
+          "summary": "H1实际财报(非预告)+调研纪要，产能瓶颈与订单积压首次量化披露"
+        },
+        {
+          "date": "2026-08-07",
+          "headline": "一博科技(301366)9点57分快速涨停(20CM封板)，产能满产订单积压获市场重新定价",
+          "url": "https://news.qq.com/rain/a/20260807A0EPKC00?id=20260807A0EPKC00",
+          "summary": "涨停当日8.26万手买单死封，反映市场对产能瓶颈叙事的即时重估"
+        }
+      ],
+      "thesis": {
+        "one_liner": "AI硬件PCB产能满产订单积压将在1-2个季度内持续改写其营收净利率结构",
+        "demand_change": "2026H1财报实际数据(非预告)显示营收7.09亿元(+41.63%)、净利润6383万元(+1561.55%)、扣非净利润6005万元(+3005.41%)；公司自曝部分工序产能已满产、订单出现积压，经营层因'签单势头良好、高于年初规划'而适度上调全年经营目标——需求已从预期兑现为实际报表数字与产能瓶颈事实。",
+        "transmission": "PCB/PCBA设计与中小批量制造为公司唯一收入来源；产能利用率提升带来的规模效应+下一代服务器高精度工艺(阻抗±5%以内、背钻精度)溢价定价权，使41.63%的收入增长被显著放大为超30倍的净利润增长，体现强经营杠杆。",
+        "misclassification": "市场此前把一博科技当作普通中小批量PCB设计/制造代工厂给予制造业估值，现在它正在变成受益于下一代服务器高精度工艺+产能稀缺定价权的AI硬件供应链标的；20%涨停是市场重新认知的起点而非终点。",
+        "brief_cn": [
+          "①触发新闻：8月6日晚间公司披露2026年半年度报告及投资者调研记录，H1营收7.09亿元(+41.63%)、净利润6383万元(+1561.55%)、扣非净利润6005万元(+3005.41%)，并透露PCB制板业务订单月度加速增长、部分工序产能满产出现订单积压；8月7日9:57股价快速涨停(20CM封板)。",
+          "②需求与传导：这是实际财报数字而非预告或指引，需求已从'可能'变为'已发生'；公司前十大客户覆盖光模块/存储/半导体设备/新能源车/机器人/量子通信等头部企业，单一客户集中度不高，说明是下游多点AI/算力硬件资本开支共振而非单一订单驱动；产能满产叠加高精度工艺溢价把41.63%的收入增长放大成超30倍的利润增长，显示强经营杠杆。",
+          "③市场误分类：过去市场把一博科技当作普通PCB设计/中小批量制造代工厂给予制造业估值，现在它正在变成受益于下一代服务器高精度工艺(阻抗/背钻)+产能稀缺定价权的AI硬件供应链标的；20%涨停是市场重新认知的起点而非终点。",
+          "④先验理由与赌点：七维总分24，处于标准新闻驱动区间(0.22-0.32)取中低值0.25——扣分项在于AI类收入2025年占比仅9.47%(纯度不足)、涨停后已有相当关注度(neglect打折)、当前市值隐含估值已较为激进(下行风险)；赌的是产能瓶颈+订单积压能在Q3财报(10月31日前)继续兑现为营收净利率结构性抬升，而非昙花一现的涨停行情。"
+        ],
+        "serenity_score": {
+          "demand_certainty": 5,
+          "transmission_clarity": 4,
+          "purity": 3,
+          "elasticity": 4,
+          "neglect": 2,
+          "verification_speed": 4,
+          "downside": 2
+        }
+      },
+      "prior": {
+        "p": 0.25,
+        "log_odds": -1.0986,
+        "rationale": "七维总分24 → 0.22-0.32档；AI收入占比仅9.47%(纯度不足)+涨停后关注度上升(neglect打折)+当前估值已隐含较激进增长预期(下行风险)，在区间内取中低值0.25",
+        "set_by": "daily-scan 2026-08-10"
+      },
+      "current": {
+        "p": 0.25,
+        "log_odds": -1.0986,
+        "last_reviewed": "2026-08-10",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026年三季报(法定截止10-31)单季度营收同比增速及扣非净利润增长趋势",
+          "confirm_if": ">= +35% YoY 营收增速，且扣非净利润维持同比高增长(产能满产订单积压持续转化为业绩)",
+          "falsify_if": "< +15% YoY 营收增速，或扣非净利润同比增速较H1明显降速(订单积压未能兑现为收入)",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "AI算力相关营收占比变化及新客户/新订单公告",
+          "confirm_if": "AI类营收占比较2025年9.47%进一步提升，或公告新增头部AI硬件客户/订单",
+          "falsify_if": "AI类营收占比停滞或下滑，且无新订单信息强化",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-02-10"
+      },
+      "baseline": {
+        "entry_date": "2026-08-10",
+        "entry_price": 53.33,
+        "benchmark": "510300.SS",
+        "benchmark_entry_price": 4.751,
+        "sector_benchmark": "512720.SS",
+        "sector_benchmark_entry_price": 1.236
+      },
+      "price_expectation": {
+        "confirm_target": 65.0,
+        "falsify_target": 11.4,
+        "expected_by": "2026-11-20",
+        "methodology_cn": "证实情景：H1扣非净利润6005万元，假设产能满产+订单积压在H2持续转化为收入，H2扣非净利润估算1.1-1.3亿元(较H1加速)，全年扣非净利润合计约1.7-1.9亿元；给予60-70倍PE(AI硬件供应链成长股speculative溢价，参考当前涨停后市值隐含的市场预期区间) → 目标市值约110-130亿元 ÷ 总股本2.10亿股 ≈ 65元/股。证伪情景：若Q3订单积压未能兑现为收入增长，市场将回吐speculative溢价，估值回落至传统PCB代工厂非成长期中枢(约20倍PE)，按H1扣非净利润年化(6005万×2=1.2亿)计算 → 目标市值约24亿元 ÷ 2.10亿股 ≈ 11.4元/股。",
+        "timeline_logic_cn": "绑定2026年三季报(法定截止10-31)作为V1判定点，市场对财报驱动型小盘股的重估通常滞后2-3周，故expected_by设为2026-11-20。",
+        "set_at": "2026-08-10",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-08-10",
+          "p": 0.25,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-10-31",
+          "type": "earnings",
+          "note": "2026年三季报法定披露截止日 — V1判定点"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260810-PSIX",
+      "ticker": "PSIX",
+      "company": "Power Solutions International, Inc.",
+      "created_at": "2026-08-10",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-08-10",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：2026Q2财报EPS/营收双超预期，数据中心备用电源订单陆续进入生产阶段，H2指引超H1"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-08-06",
+          "headline": "Power Solutions International Announces Second Quarter 2026 Financial Results：EPS $0.73(预期$0.27)，营收$1.525亿(预期$1.34亿)，毛利率环比升至27.1%，数据中心备用电源需求强劲，H2指引超H1",
+          "url": "https://www.globenewswire.com/news-release/2026/08/06/3340810/17954/en/power-solutions-international-announces-second-quarter-2026-financial-results.html",
+          "summary": "Q2财报大超预期，管理层明确H2数据中心大额电源系统订单陆续进入生产交付阶段"
+        }
+      ],
+      "thesis": {
+        "one_liner": "数据中心备用电源大额订单转入生产将在1-2个季度内改写其营收结构与毛利率",
+        "demand_change": "PSIX 2026Q2财报(8/6公布)显示EPS $0.73(市场预期$0.27)、营收$1.525亿(市场预期$1.34亿)双超预期，毛利率环比改善至27.1%(EBITDA利润率16.9%)，经营现金流$5660万(去年同期$2020万)；管理层明确表示数据中心备用电源需求强劲，H2营收将超H1、大型电源系统订单陆续进入生产阶段兑现为收入，但同时披露整体营收同比实际下滑，油气板块持续疲软。",
+        "transmission": "收入按Power Systems(含数据中心备用电源)、Industrial、Transportation、油气四大板块划分；数据中心备用电源订单占比提升带来的产品结构优化是毛利率环比改善的核心驱动，尽管油气板块持续疲软拖累整体营收同比表现，但管理层指引H2营收环比H1加速反映在手大额电源系统订单进入生产交付阶段。",
+        "misclassification": "市场此前把PSIX当作周期性油气/工业发动机制造商定价，现在它正在变成受益于AI数据中心备用电源资本开支的稀缺发动机/动力系统供应商——但整体营收仍受油气疲软拖累同比下滑，'转型'尚未在总量层面完全兑现，是这笔押注的核心不确定性。",
+        "brief_cn": [
+          "①触发新闻：8月6日盘后PSIX公布2026Q2财报，EPS $0.73大幅超市场预期$0.27，营收$1.525亿超预期$1.34亿，毛利率环比提升至27.1%，管理层称数据中心备用电源需求强劲，指引H2营收将超H1并与2025年H2大致持平。",
+          "②需求与传导：数据中心相关电源系统大额订单正陆续进入生产交付阶段，是H2营收加速的核心逻辑；但公司同时披露整体营收同比实际下滑(受油气板块持续疲软拖累)，管理层用'订单节奏不均衡(uneven order patterns)'描述数据中心业务的季度波动性，需求方向明确但转化节奏尚不稳定。",
+          "③市场误分类：市场存量认知仍锚定其油气/工业发动机制造商属性，但公司毛利率结构已明显因数据中心占比提升而改善；股价此前已有一轮大幅重估，市场并非完全没有注意到这个故事，但对H2兑现节奏仍有分歧(9位分析师目标价中枢$72-100不等，离散度大)。",
+          "④先验理由与赌点：七维总分约19，处于纯观察区间(≤20，0.15-0.22)取偏低值0.20——扣分项包括总营收同比实际下滑(需求确定性打折)、油气/工业/交通板块拖累业务纯度、股价已有较大幅度前期重估(neglect与下行风险双重扣分)；赌的是Q3(11月)财报能验证'H2订单转化生产'的指引兑现，而非订单节奏进一步'不均衡'导致的二次失望。"
+        ],
+        "serenity_score": {
+          "demand_certainty": 3,
+          "transmission_clarity": 4,
+          "purity": 2,
+          "elasticity": 3,
+          "neglect": 2,
+          "verification_speed": 3,
+          "downside": 2
+        }
+      },
+      "prior": {
+        "p": 0.2,
+        "log_odds": -1.3863,
+        "rationale": "七维总分19 → ≤20档(0.15-0.22)；总营收同比实际下滑+油气/工业板块拖累纯度+股价此前已有大幅重估(neglect与下行双重扣分)，取偏低值0.20",
+        "set_by": "daily-scan 2026-08-10"
+      },
+      "current": {
+        "p": 0.2,
+        "log_odds": -1.3863,
+        "last_reviewed": "2026-08-10",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026年Q3财报(约11月初发布)营收环比/同比及H2整体指引兑现情况",
+          "confirm_if": "Q3营收环比Q2改善且管理层重申或上修'H2营收超H1'指引，数据中心相关收入占比继续提升",
+          "falsify_if": "Q3营收环比走弱或管理层下修H2展望，数据中心订单被描述为进一步'不均衡'或延迟",
+          "check_by": "2026-11-15",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "新增数据中心大型电源系统订单公告",
+          "confirm_if": "公告新增≥$2000万规模数据中心电源系统订单",
+          "falsify_if": "主要数据中心客户订单取消或推迟",
+          "check_by": "2026-11-15",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-02-10"
+      },
+      "baseline": {
+        "entry_date": "2026-08-10",
+        "entry_price": 40.83,
+        "benchmark": "SPY",
+        "benchmark_entry_price": 773.26,
+        "sector_benchmark": "XLI",
+        "sector_benchmark_entry_price": 185.18
+      },
+      "price_expectation": {
+        "confirm_target": 68.0,
+        "falsify_target": 22.0,
+        "expected_by": "2026-12-05",
+        "methodology_cn": "证实情景：Q2单季稀释EPS $0.73，若H2按指引加速(H2营收超H1且与2025H2大致持平)，全年EPS估算约$2.80-3.20；给予20-25倍远期PE(在传统工业发动机厂商约12-15倍与数据中心纯电源标的35-40倍成长溢价之间取混合值，反映业务纯度不足) → 目标价约$60-75，与当前9位分析师目标价中枢($72-100，取偏保守端)交叉验证，取$68。证伪情景：若数据中心订单持续'不均衡'且油气疲软深化，估值回吐至传统工业发动机制造商中枢(10-12倍PE)，按下修后EPS约$1.80估算 → 目标价约$20-22，取$22。",
+        "timeline_logic_cn": "绑定2026年Q3财报(约11月初)作为V1判定点，验证'H2订单转生产'指引是否兑现；市场重估通常滞后2-4周，故expected_by设为2026-12-05。",
+        "set_at": "2026-08-10",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-08-10",
+          "p": 0.2,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-11-15",
+          "type": "earnings",
+          "note": "2026年Q3财报(预估，约11月初发布) — V1判定点"
         }
       ],
       "links": {
