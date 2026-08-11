@@ -2,55 +2,6 @@
   "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate | skipped_daily_cap",
   "entries": [
     {
-      "date": "2026-07-27",
-      "fingerprint": "2026-07-22+688380.SS+h1-forecast-mcu-shortage-price-hike",
-      "headline": "中微半导H1 2026业绩预告：营收+44.06%(7.26亿)、归母净利+90.82%(1.65亿)、扣非净利+101.95%(1.53亿)，MCU缺货提价+董事长确认供应紧张是主要矛盾",
-      "tickers": [
-        "688380.SS"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
-      "date": "2026-07-27",
-      "fingerprint": "2026-07-15+OUST+northland-oppenheimer-pt-raise",
-      "headline": "Northland将OUST目标价从$38上调至$60；Oppenheimer从$42上调至$57（均维持Outperform）",
-      "tickers": [
-        "OUST"
-      ],
-      "action": "evidence_appended",
-      "note": "T4叙事级：两家机构7/15同步上调目标价，早于7/20 Roth/MKM给出的$75目标价；追加为OUST pending证据E5"
-    },
-    {
-      "date": "2026-07-27",
-      "fingerprint": "2026-07-22+688220.SS+h1-forecast-asr-ai-custom-chip-still-loss",
-      "headline": "翱捷科技H1 2026归母净利扭亏(8500万,+503%)，AI芯片定制业务收入+157%，但扣非净利润仍亏损约5800万元",
-      "tickers": [
-        "688220.SS"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "归母净利暴增主要来自非经常性损益(公允价值变动+投资收益约1.3亿)；扣非净利润仍为亏损状态，未通过入池的盈利质量门槛；AI定制业务增长趋势值得后续观察，暂列观察名单"
-    },
-    {
-      "date": "2026-07-27",
-      "fingerprint": "2026-07-24+688766.SS+h1-forecast-storage-chip-price-mktcap-over1000b",
-      "headline": "普冉股份H1 2026扣非净利+2977%(8.2亿)，营收+73%(39.5亿)，存储芯片供给紧张量价齐升+并购珠海诺亚长天并表贡献",
-      "tickers": [
-        "688766.SS"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "总市值已超1200亿元，PE近300倍且年内已翻倍以上；elasticity=1、neglect=1，业绩增长部分来自并购并表非纯内生；已充分定价，不满足小盘弹性入池条件"
-    },
-    {
-      "date": "2026-07-27",
-      "fingerprint": "2026-07-21+688110.SS+h1-forecast-slc-nand-price-surge-mktcap-large",
-      "headline": "东芯股份H1 2026扣非净利+277-307%(6.3-6.7亿)，营收+334-346%，AI算力驱动利基型存储供需紧张、量价齐升",
-      "tickers": [
-        "688110.SS"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "总市值约487亿元，7/24单日暴跌-14.41%显示已充分定价且波动剧烈；neglect≤2，弹性不及688380.SS等更小市值标的；观察名单级"
-    },
-    {
       "date": "2026-07-28",
       "fingerprint": "2026-07-27+002497.SZ+lithium-143k-near-falsify",
       "headline": "电池级碳酸锂现货价7/22报14.05-14.49万元/吨，7/27生意社基准价14.30万元/吨，较7/20的15.5万元/吨进一步下跌，逼近V2证伪线(<14万元/吨)",
@@ -837,6 +788,141 @@
       ],
       "action": "skipped_duplicate",
       "note": "8/11正式财报电话会议为下一判定点，留待明日/下周复核处理，今日不重复记账"
+    },
+    {
+      "date": "2026-08-11",
+      "fingerprint": "2026-08-06+AIP+q2-acv-royalties-record-design-starts-up21pct",
+      "headline": "Arteris(AIP) 2026Q2财报：ACV+royalties创新高9950万美元(+44% YoY)，design starts同比+21%，FY2026营收指引上修至9500-9800万美元",
+      "tickers": [
+        "AIP"
+      ],
+      "action": "new_hypothesis",
+      "note": "新建假设H20260811-AIP，先验0.34"
+    },
+    {
+      "date": "2026-08-11",
+      "fingerprint": "2026-08-10+688265.SS+h1-forecast-biopharma-demand-recovery-cage-utilization",
+      "headline": "南模生物(688265.SS) 2026H1业绩预告自愿披露：营收+10.34%~27.71%，生物医药行业需求向好+笼位使用效率提升",
+      "tickers": [
+        "688265.SS"
+      ],
+      "action": "new_hypothesis",
+      "note": "新建假设H20260811-688265.SS，先验0.24"
+    },
+    {
+      "date": "2026-08-11",
+      "fingerprint": "2026-08-11+300981.SZ+medical-consumables-tender-win-jiangsu-shaanxi",
+      "headline": "中红医疗子公司科伦医械中标江苏省第7、8轮及陕西省医用耗材集中采购项目",
+      "tickers": [
+        "300981.SZ"
+      ],
+      "action": "evidence_appended",
+      "note": "E3 pending，金额未披露，待周复核定级"
+    },
+    {
+      "date": "2026-08-11",
+      "fingerprint": "2026-08-10+603115.SS+trading-anomaly-second-notice-this-month",
+      "headline": "海星股份发布股票交易异常波动公告（本月内第二次）",
+      "tickers": [
+        "603115.SS"
+      ],
+      "action": "evidence_appended",
+      "note": "E3 pending，价格异动非基本面证据，仅记录"
+    },
+    {
+      "date": "2026-08-11",
+      "fingerprint": "2026-08-06+920493.BJ+private-placement-filings-batch",
+      "headline": "并行科技发布定向增发相关系列公告（不提供财务资助声明/股价稳定预案/募集说明书草案/董事会决议）",
+      "tickers": [
+        "920493.BJ"
+      ],
+      "action": "evidence_appended",
+      "note": "E2 pending，融资类公告，待核实募集资金用途"
+    },
+    {
+      "date": "2026-08-11",
+      "fingerprint": "2026-08-11+PSIX+earnings-date-correction-profiles-json",
+      "headline": "PSIX 下次财报日按profiles.json校正：2026-11-15 → 2026-11-05",
+      "tickers": [
+        "PSIX"
+      ],
+      "action": "evidence_appended",
+      "note": "财报日校正，非新证据，events/validation_conditions/price_expectation同步更新"
+    },
+    {
+      "date": "2026-08-11",
+      "fingerprint": "2026-08-06+AXTI+inp-substrate-record-but-5.8b-marketcap-crowded",
+      "headline": "AXT Inc(AXTI) Q2营收+164% YoY，InP衬底创新高，AI数据中心驱动，但市值已达58亿美元且分析师覆盖密集",
+      "tickers": [
+        "AXTI"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "elasticity/neglect不满足入池门槛：年内暴涨后市值58亿美元，已是市场热议的InP/AI光通信标的，不再是小盘错杀"
+    },
+    {
+      "date": "2026-08-11",
+      "fingerprint": "2026-08-04+301717.SZ+ipo-day-extreme-volatility-no-limit",
+      "headline": "超纯应材(301717.SZ)创业板上市首日(8/11)，发行价65.99元，创业板前5日无涨跌幅限制，预估首日涨幅450%-850%",
+      "tickers": [
+        "301717.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "需求信号本身合格(产能利用率97-99.99%+订单饱和+AMEC/比亚迪股东背景)，但IPO首日无涨跌幅限制、预估暴涨450-850%，entry_price极不稳定/downside过高，暂不入池，待价格企稳后重新评估"
+    },
+    {
+      "date": "2026-08-11",
+      "fingerprint": "2026-08-27+AAON+record-backlog-datacenter-hvac-large-cap",
+      "headline": "AAON 总backlog同比+107.4%至21亿美元，AI基础设施数据中心暖通需求驱动",
+      "tickers": [
+        "AAON"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "已是百亿美元级市值、机构覆盖密集的成熟工业股，elasticity/neglect不满足入池门槛"
+    },
+    {
+      "date": "2026-08-11",
+      "fingerprint": "2026-08-04+EOSE+record-backlog-execution-history-risk",
+      "headline": "Eos Energy(EOSE) 预公告Q2创纪录营收+backlog环比+25%至8.07亿美元",
+      "tickers": [
+        "EOSE"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "电网储能业务历史执行/稀释风险较高，downside不满足门槛，本次暂不深入分析"
+    },
+    {
+      "date": "2026-08-11",
+      "fingerprint": "2026-08-05+VSH+book-to-bill-record-midlarge-cap",
+      "headline": "Vishay Intertechnology Q2营收超指引，book-to-bill创纪录1.32",
+      "tickers": [
+        "VSH"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "多元化中大盘被动元件厂商，业务纯度/elasticity不满足门槛"
+    },
+    {
+      "date": "2026-08-11",
+      "fingerprint": "2026-08-11+cn-forecast-batch-weak-generic-or-price-passthrough",
+      "headline": "cn-forecasts.json批量核查：贝特利301697(营收增长主因白银/铂金原材料价格传导非需求)、双英集团920059(无具体驱动说明)、天能股份688819(营收微增但毛利受原材料涨价挤压)、信胜科技920093(预告口径与查证不匹配/仅笼统表述)、格林生物301688(无具体驱动说明)、安达科技920809(满产满销但与碳酸锂价格周期修复难以拆分，purity不足，更适合serenity-cycle而非serenity-alpha)",
+      "tickers": [
+        "301697.SZ",
+        "920059.BJ",
+        "688819.SS",
+        "920093.BJ",
+        "301688.SZ",
+        "920809.BJ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "均不满足demand_certainty/purity门槛：价格传导非需求驱动、驱动说明笼统或量价难拆分"
+    },
+    {
+      "date": "2026-08-11",
+      "fingerprint": "2026-08-06+688235.SS+beigene-mega-cap-already-covered",
+      "headline": "百济神州(688235.SS) H1营收指引+19.16%",
+      "tickers": [
+        "688235.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "市值超千亿元的成熟创新药龙头，覆盖极密集，明显不满足neglect门槛"
     }
   ]
 }

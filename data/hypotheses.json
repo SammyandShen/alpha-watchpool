@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-08-10",
+  "$last_updated": "2026-08-11",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -1648,6 +1648,22 @@
           },
           "pending": false,
           "review_note": "采纳review-input.json建议标签weak_support；累计价格类log_lr（E1 neutral+此条）未超生命周期封顶1.10"
+        },
+        {
+          "id": "E3",
+          "date": "2026-08-11",
+          "source": "公司公告",
+          "headline": "海星股份发布股票交易异常波动公告（8/10，本月内第二次，此前7/16-20已发过一次）",
+          "url": "https://www.cninfo.com.cn",
+          "summary": "股价异动本身非基本面证据，仅记录关注；7/14已披露H1业绩预增(净利润+50.07%~56.55%)，7/15控股股东一致行动人拟减持不超2%股份，异动需结合中报正式披露(8/31前)一并复核",
+          "type": "T3_soft_signal",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true,
+          "review_note": null
         }
       ],
       "posterior_history": [
@@ -2811,6 +2827,22 @@
             "log_lr": null
           },
           "pending": true
+        },
+        {
+          "id": "E2",
+          "date": "2026-08-11",
+          "source": "公司公告",
+          "headline": "并行科技发布定向增发相关系列公告（不提供财务资助声明、股价稳定预案、募集说明书草案、董事会决议）",
+          "url": "https://www.cninfo.com.cn",
+          "summary": "融资类公告，非直接需求证据；募集资金用途待核实是否投向算力产能扩张，周复核时结合募集说明书具体条款定级",
+          "type": "T3_soft_signal",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true,
+          "review_note": null
         }
       ],
       "posterior_history": [
@@ -3001,6 +3033,22 @@
           },
           "pending": false,
           "review_note": "供给出清叙事的关键支柱（价格溢价持续性）出现降温信号，从严按T3计（马来西亚行业媒体，非中红医疗公司披露）；未直接触发V2 falsify（尚未确认Q3实际订单价降幅），故判weak_against而非更强标签"
+        },
+        {
+          "id": "E3",
+          "date": "2026-08-11",
+          "source": "公司公告",
+          "headline": "子公司科伦医械中标江苏省第7、8轮及陕西省医用耗材集中采购项目",
+          "url": "https://www.cninfo.com.cn",
+          "summary": "中标公告未披露具体金额；作为医用耗材集采常规中标节奏的延续，与此前7/28业绩预告(净利润+2338%~3557%，低基数)方向一致，记账待周复核定级",
+          "type": "T2_supply_chain",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true,
+          "review_note": null
         }
       ],
       "posterior_history": [
@@ -4032,7 +4080,7 @@
           "metric": "2026年Q3财报(约11月初发布)营收环比/同比及H2整体指引兑现情况",
           "confirm_if": "Q3营收环比Q2改善且管理层重申或上修'H2营收超H1'指引，数据中心相关收入占比继续提升",
           "falsify_if": "Q3营收环比走弱或管理层下修H2展望，数据中心订单被描述为进一步'不均衡'或延迟",
-          "check_by": "2026-11-15",
+          "check_by": "2026-11-05",
           "status": "pending"
         },
         {
@@ -4041,7 +4089,7 @@
           "metric": "新增数据中心大型电源系统订单公告",
           "confirm_if": "公告新增≥$2000万规模数据中心电源系统订单",
           "falsify_if": "主要数据中心客户订单取消或推迟",
-          "check_by": "2026-11-15",
+          "check_by": "2026-11-05",
           "status": "pending"
         }
       ],
@@ -4060,7 +4108,7 @@
       "price_expectation": {
         "confirm_target": 68.0,
         "falsify_target": 22.0,
-        "expected_by": "2026-12-05",
+        "expected_by": "2026-11-26",
         "methodology_cn": "证实情景：Q2单季稀释EPS $0.73，若H2按指引加速(H2营收超H1且与2025H2大致持平)，全年EPS估算约$2.80-3.20；给予20-25倍远期PE(在传统工业发动机厂商约12-15倍与数据中心纯电源标的35-40倍成长溢价之间取混合值，反映业务纯度不足) → 目标价约$60-75，与当前9位分析师目标价中枢($72-100，取偏保守端)交叉验证，取$68。证伪情景：若数据中心订单持续'不均衡'且油气疲软深化，估值回吐至传统工业发动机制造商中枢(10-12倍PE)，按下修后EPS约$1.80估算 → 目标价约$20-22，取$22。",
         "timeline_logic_cn": "绑定2026年Q3财报(约11月初)作为V1判定点，验证'H2订单转生产'指引是否兑现；市场重估通常滞后2-4周，故expected_by设为2026-12-05。",
         "set_at": "2026-08-10",
@@ -4076,9 +4124,261 @@
       ],
       "events": [
         {
-          "date": "2026-11-15",
+          "date": "2026-11-05",
           "type": "earnings",
-          "note": "2026年Q3财报(预估，约11月初发布) — V1判定点"
+          "note": "2026年Q3财报(预估，约11月初发布(profiles.json校正为11/05)) — V1判定点"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260811-AIP",
+      "ticker": "AIP",
+      "company": "Arteris, Inc.",
+      "created_at": "2026-08-11",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-08-11",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：2026Q2财报ACV+royalties创新高(+44% YoY)，design starts同比+21%，多数新设计含AI计算，FY2026营收指引上修"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-08-06",
+          "headline": "Arteris Reports Second Quarter 2026 Financial Results; Raises FY2026 Revenue Guidance to $95-98M",
+          "url": "https://seekingalpha.com/news/4628916-arteris-raises-fy-2026-revenue-outlook-to-95m-98m-as-acv-plus-royalties-targets-102m-106m",
+          "summary": "Q2营收2410万美元超预期(2200万)；ACV+royalties达9950万美元创新高(+44% YoY)；design starts过去12个月同比+21%，多数新设计含AI计算；FY2026营收指引上修至9500-9800万美元"
+        }
+      ],
+      "thesis": {
+        "one_liner": "AI/HPC芯片设计爆发式增长的royalty转化将在2-3个季度内持续改写其收入与ACV结构",
+        "demand_change": "2026Q2财报(8/6)显示ACV+royalties达9950万美元创历史新高，同比+44%；design starts(设计导入数)过去12个月同比+21%，公司披露'多数新设计已包含某种形式的AI计算'；营收2410万美元超市场预期(2200万)；管理层将FY2026营收指引上修至9500-9800万美元。",
+        "transmission": "公司商业模式为半导体IP授权+royalty：客户在SoC设计阶段导入Arteris的NoC互联IP(FlexNoC/Ncore等)，design start转化为未来2-3年的royalty流；design starts同比+21%直接对应未来royalty收入的领先指标，ACV+royalties创新高反映当期royalty已开始加速兑现；royalty业务边际成本趋近于零，收入增长几乎直接转化为毛利/经营杠杆。",
+        "misclassification": "市场此前把Arteris当作『小众SoC互联IP供应商』，随着AI芯片架构复杂度提升(chiplet化、异构计算)，客户对第三方验证过的NoC IP依赖度上升，公司正在变成『AI时代芯片架构的隐形基础设施供应商』——但股价年内已从高点$50回落至$27(-44%)，反映市场对客户集中度风险的重新定价，误分类的『纠正』尚未完全反映在估值中。",
+        "brief_cn": [
+          "①触发：8月6日Arteris公布2026Q2财报，营收2410万美元超预期(2200万)，ACV+royalties达9950万美元创历史新高(+44% YoY)，design starts过去12个月同比+21%(多数含AI计算)，管理层上修FY2026营收指引至9500-9800万美元。",
+          "②需求与传导：design starts是royalty收入的领先指标——客户在芯片设计阶段导入IP，未来随芯片量产转化为royalty；design starts同比+21%叠加ACV创新高，说明这一转化已在加速兑现而非停留在'导入'阶段；royalty业务近乎零边际成本，收入增长直接传导为经营杠杆。",
+          "③市场误分类：市场存量认知仍是'小众SoC互联IP供应商'，但AI芯片架构复杂度(chiplet/异构计算)提升了对第三方验证IP的依赖，公司角色正从'可选组件'变为'架构基础设施'；股价年内从52周高点$50.26回落44%至$27附近，市场对客户集中度风险的担忧压制了重估空间。",
+          "④先验0.34的理由：七维总分28(26-30档，0.30-0.42)取中段偏上——demand_certainty/transmission_clarity/purity均4-5分(royalty转化机制清晰、纯度高)，扣分项主要在neglect(此前已有一轮AI IP炒作+大幅回撤，非完全冷门)和downside(客户集中度风险、竞争来自Arm/Synopsys/Cadence)；赌的是design starts的持续增长能在未来2个季度转化为royalty加速，而非客户集中度风险兑现导致的二次杀估值。"
+        ],
+        "serenity_score": {
+          "demand_certainty": 4,
+          "transmission_clarity": 5,
+          "purity": 5,
+          "elasticity": 4,
+          "neglect": 3,
+          "verification_speed": 4,
+          "downside": 3
+        }
+      },
+      "prior": {
+        "p": 0.34,
+        "log_odds": -0.6633,
+        "rationale": "七维总分28 → 26-30档(0.30-0.42)取中段偏上0.34；royalty转化机制清晰+高纯度加分，客户集中度与此前估值大幅波动扣分",
+        "set_by": "daily-scan 2026-08-11"
+      },
+      "current": {
+        "p": 0.34,
+        "log_odds": -0.6633,
+        "last_reviewed": "2026-08-11",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026年Q3财报(预估11月上旬发布)ACV+royalties同比增速及design starts趋势",
+          "confirm_if": "ACV+royalties同比增速维持在35%以上，design starts保持两位数同比增长",
+          "falsify_if": "ACV+royalties同比增速降至15%以下，或design starts同比转负",
+          "check_by": "2026-11-06",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "新增/丢失重大客户design win或客户集中度变化",
+          "confirm_if": "披露新增AI/HPC领域重大design win或与Arm等核心客户合作深化",
+          "falsify_if": "核心客户公开减少采用Arteris IP或流失",
+          "check_by": "2026-11-06",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-02-11"
+      },
+      "baseline": {
+        "entry_date": "2026-08-11",
+        "entry_price": 27.13,
+        "benchmark": "SPY",
+        "benchmark_entry_price": 773.03,
+        "sector_benchmark": "SOXX",
+        "sector_benchmark_entry_price": 529.39
+      },
+      "price_expectation": {
+        "confirm_target": 35.0,
+        "falsify_target": 13.0,
+        "expected_by": "2026-12-04",
+        "methodology_cn": "证实情景：当前市值约12.5亿美元(约4616万股×$27.13)，FY2026营收指引9500-9800万美元(已上修)；若design starts转化持续、ACV/royalties维持35%+增速，FY2027营收有望增至约1.25亿美元(+30%)，给予13倍远期营收倍数(参考半导体IP授权商轻资产/高毛利特性) → 目标市值约16.3亿美元 → 目标价约$35/股。证伪情景：若design starts转化停滞或客户集中度风险兑现，营收增速回落至个位数，倍数回吐至历史低位区间(约6倍，参考52周低点$8.42对应估值水平)，按9650万美元营收估算 → 目标市值约5.8亿美元 → 目标价约$13/股。",
+        "timeline_logic_cn": "绑定2026年Q3财报(预估11月上旬发布)作为V1判定点，验证design starts转化为royalty的斜率是否维持；市场对IP授权商的重估通常滞后财报发布2-4周，故expected_by设为2026-12-04。",
+        "set_at": "2026-08-11",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-08-11",
+          "p": 0.34,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-11-06",
+          "type": "earnings",
+          "note": "2026年Q3财报(预估，11月上旬发布) — V1判定点"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260811-688265.SS",
+      "ticker": "688265.SS",
+      "company": "上海南方模式生物科技股份有限公司",
+      "created_at": "2026-08-11",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-08-11",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：2026H1业绩预告自愿披露，生物医药行业需求回暖驱动营收+10.34%~27.71%，剔除股份支付影响后净利润大幅增长"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-08-10",
+          "headline": "南模生物：2026年半年度业绩预告的自愿性披露公告",
+          "url": "https://www.cfi.net.cn/p20260810001495.html",
+          "summary": "预计2026H1营收2.16-2.50亿元，同比+10.34%~27.71%；公告称生物医药行业需求向好；剔除限制性股票激励股份支付费用同比大增的影响后，归母净利润同比大幅增长，主因收入端提升+笼位使用效率提升带来毛利率改善"
+        }
+      ],
+      "thesis": {
+        "one_liner": "生物医药研发需求回暖将在1-2个季度内改写其模式动物服务收入与毛利结构",
+        "demand_change": "公司自愿披露2026年半年度业绩预告(8/10)：预计营收2.16-2.50亿元，同比+10.34%~27.71%；公告明确'生物医药行业需求向好，营业收入较上年同期实现稳步增长'；若剔除限制性股票激励产生的股份支付费用同比大幅增加的影响，归母净利润同比大幅增长，驱动因素为收入端稳步提升+笼位使用效率提升带来的综合毛利率同比改善；表观净利润因股份支付费用同比激增而同比下降，为一次性/非经营性因素干扰，非需求恶化。",
+        "transmission": "公司主营基因修饰动物模型(小鼠等)的研发、生产、销售及技术服务，收入分为定制化模型(科研客户按需定制)和标准化模型(资源库现货)两大类；标准化模型收入增速更高，反映资源库规模化(14000+品系)对工业客户(CRO/创新药企)引种/批量购买需求的承接能力提升；笼位使用效率提升直接改善综合毛利率，是收入增长向利润传导的核心杠杆。",
+        "misclassification": "市场此前将其视为'受生物医药研发投融资寒冬拖累、增长停滞的科创板次新股'，随着行业需求边际回暖+工业客户占比提升，公司可能正在变成'受益于生物医药研发活动复苏的模式动物服务稀缺供应商'；但表观净利润因股份支付费用干扰同比下降，容易被简单财务筛选工具误判为'业绩恶化'，这一认知差正是本次误分类的核心。",
+        "brief_cn": [
+          "①触发：8月10日南模生物自愿披露2026年半年度业绩预告，预计营收2.16-2.50亿元(同比+10.34%~27.71%)，公告明确'生物医药行业需求向好'；受限制性股票激励计划股份支付费用同比大幅增加影响，表观归母净利润同比下降，但剔除该非经营性因素后净利润同比大幅增长。",
+          "②需求与传导：收入增长主要由标准化模型(资源库14000+品系现货)对工业客户(CRO/创新药企)的批量供应能力驱动，叠加笼位使用效率提升带来综合毛利率同比改善；这是可观察的运营指标改善，不是纯粹的行业复苏叙事。",
+          "③市场误分类：表观净利润因股份支付费用干扰同比下降，容易被简单财务筛选工具误判为'业绩恶化'的科创板次新股，掩盖了收入端与毛利率的真实改善；公司8月7日已现龙虎榜(异动)，说明部分资金已注意到，但主流认知尚未完全修正。",
+          "④先验0.24的理由：七维总分23(21-25档，0.22-0.32)取偏低值——demand_certainty/verification_speed仅3分(预告表述仍偏笼统，'需求向好'缺乏具体客户/订单细节)，neglect仅2分(8/7已现龙虎榜异动，非完全冷门)，downside 3分(股份支付噪音使利润读数复杂，生物医药研发支出仍有周期性波动风险)；赌的是8/31正式中报能给出更具体的工业客户驱动细节，验证'需求回暖'不是笼统托词。"
+        ],
+        "serenity_score": {
+          "demand_certainty": 3,
+          "transmission_clarity": 4,
+          "purity": 4,
+          "elasticity": 4,
+          "neglect": 2,
+          "verification_speed": 3,
+          "downside": 3
+        }
+      },
+      "prior": {
+        "p": 0.24,
+        "log_odds": -1.1527,
+        "rationale": "七维总分23 → 21-25档(0.22-0.32)取偏低值0.24；demand_certainty/verification_speed偏低(预告表述笼统)+neglect偏低(已现龙虎榜)",
+        "set_by": "daily-scan 2026-08-11"
+      },
+      "current": {
+        "p": 0.24,
+        "log_odds": -1.1527,
+        "last_reviewed": "2026-08-11",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026年中报正式披露(法定截止8/31)营业收入及剔除股份支付影响后净利润同比增速",
+          "confirm_if": "正式营收同比增速达预告上限27.71%附近或以上，且披露工业端客户/收入占比环比提升的具体信息",
+          "falsify_if": "正式营收同比增速低于预告下限10.34%，或工业端驱动力未获具体信息支撑",
+          "check_by": "2026-08-31",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "新增/大额工业端(CRO/创新药企)合作或订单公告",
+          "confirm_if": "披露具体工业客户新增合作或规模化引种/批量采购订单",
+          "falsify_if": "无相关工业客户信息更新，收入增长归因持续模糊",
+          "check_by": "2026-08-31",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-02-11"
+      },
+      "baseline": {
+        "entry_date": "2026-08-11",
+        "entry_price": 42.9,
+        "benchmark": "510300.SS",
+        "benchmark_entry_price": 4.751,
+        "sector_benchmark": "512010.SS",
+        "sector_benchmark_entry_price": 0.396
+      },
+      "price_expectation": {
+        "confirm_target": 58.0,
+        "falsify_target": 31.0,
+        "expected_by": "2026-09-26",
+        "methodology_cn": "证实情景：当前流通市值33.45亿元(42.9元×约7797万股)，对应PS≈7倍(基于H1预告年化营收约4.8亿元估算)；若正式中报确认营收增速达预告上限附近(27.71%)且工业端占比继续提升，叠加'需求回暖'叙事被市场重新定价，PS倍数有望扩至9-10倍(参考生物医药服务类小盘股景气期估值区间) → 目标市值约43-48亿元 → 目标价约58元/股。证伪情景：若正式财报营收增速回落至预告下限(10.34%)附近或更低，工业端驱动力未获证实，估值倍数回吐至PS约5倍历史中枢 → 目标市值约24亿元 → 目标价约31元/股。",
+        "timeline_logic_cn": "绑定2026年中报正式披露(法定截止8/31，业绩预告已自愿披露具体区间)作为V1判定点；市场对细分服务类小盘股的重估通常滞后财报发布2-4周，故expected_by设为2026-09-26。",
+        "set_at": "2026-08-11",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-08-11",
+          "p": 0.24,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-08-31",
+          "type": "earnings",
+          "note": "2026年中报法定披露截止日（业绩预告已自愿披露）— V1判定点"
         }
       ],
       "links": {
