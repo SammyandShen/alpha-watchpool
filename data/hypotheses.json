@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-08-11",
+  "$last_updated": "2026-08-12",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -198,6 +198,21 @@
           },
           "pending": false,
           "review_note": "公司自身Q2实际(+56% YoY远超V1确认线+30%)+Q3指引(+35%仍达标)双重支撑，叠加电话会首次部分量化Rev8订单与产能扩张(V2旁证)，按同一披露事件合并评级避免双重计入；未达decisive因V1仍需Q3(11月)最终确认、且EPS亏损超预期存在执行风险"
+        },
+        {
+          "id": "E7",
+          "date": "2026-08-11",
+          "source": "Ouster官方新闻稿",
+          "headline": "Ouster BlueCity with REV8 Lidar中标犹他州交通现代化扩容项目(新增160个路口)，BlueCity部署站点逼近300个",
+          "url": "https://ts2.tech/en/ouster-wins-utah-lidar-expansion-taking-bluecity-footprint-toward-300-sites/",
+          "summary": "基建/交通类BlueCity客户continu续扩容，与demand_change核心叙事(基建lidar采购)一致，非V1(required财务指标)判定点，作pending证据记账",
+          "type": "T2_supply_chain",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -3224,6 +3239,21 @@
           },
           "pending": false,
           "review_note": "review-input.json按excess≥30%建议moderate_support，P_price tier LR上限1.5，降级采纳；本条为该假设首条价格证据，累计log_lr未超生命周期封顶1.10"
+        },
+        {
+          "id": "E3",
+          "date": "2026-08-11",
+          "source": "Aehr Test Systems FY2026 Q4/全年财报 (8-K)",
+          "headline": "Aehr FQ4 FY26财报：营收$18.8M(+34% YoY)，季度预订(bookings)$60.7M(同比+500%+)，季末backlog $80.6M(vs FY25末$15.2M)；非GAAP转正EPS$0.11；发布FY2027全年指引$1.30-1.50亿(YoY+160%~200%)",
+          "url": "https://www.stocktitan.net/news/AEHR/aehr-test-systems-reports-fiscal-2026-fourth-quarter-and-full-year-aytbj239efe5.html",
+          "summary": "季度业绩创纪录，backlog同比+430%，公司首次给出FY27全年指引区间与原thesis假设的$1.3-1.5亿区间一致；但本报告为FY26全年收官季，非V1指定判定点(Q1 FY27，约10月)，故不构成required条件的直接击穿，仅作强支撑性pending证据记账，留待周复核评级",
+          "type": "T1_hard_financial",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -3659,8 +3689,8 @@
         "set_by": "daily-scan 2026-08-05"
       },
       "current": {
-        "p": 0.36,
-        "log_odds": -0.5754,
+        "p": 0.6279,
+        "log_odds": 0.5232,
         "last_reviewed": "2026-08-08",
         "recomputed_from_ledger": true
       },
@@ -3672,7 +3702,7 @@
           "confirm_if": "Q2净产品收入确认 >= $44M 且管理层重申或上修FY26指引($1.4-1.5亿)",
           "falsify_if": "Q2净产品收入确认 < $40M（低于初步值超10%）或FY26指引被下修",
           "check_by": "2026-08-11",
-          "status": "pending"
+          "status": "met"
         },
         {
           "id": "V2",
@@ -3714,7 +3744,24 @@
         "set_at": "2026-08-05",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-08-11",
+          "source": "Autolus Therapeutics Q2 2026 Financial Results (GlobeNewswire/8-K)",
+          "headline": "Autolus正式Q2 2026财报：AUCATZYL净产品收入$45.7M(+119% YoY)，上修FY2026净产品收入指引至$1.40-1.50亿；同时落地最高2.5亿美元Perceptive信贷安排(首笔提款7500万)",
+          "url": "https://www.globenewswire.com/news-release/2026/08/11/3342551/0/en/autolus-therapeutics-reports-second-quarter-2026-financial-results-and-business-updates.html",
+          "summary": "公司自身财报数字：Q2净产品收入$45.7M超V1 confirm_if门槛($44M)且远离falsify_if($40M)；FY26指引上修至$140-150M(此前区间下限已在7/6预告中提及)，满足V1'重申或上修'条件；毛利率环比改善；$250M信贷安排(首笔提款$75M)与V3'无需追加股权融资'旁证方向一致但非required判定点，留待周复核评估",
+          "type": "T1_hard_financial",
+          "likelihood": {
+            "label": "strong_support",
+            "lr": 3.0,
+            "log_lr": 1.0986
+          },
+          "pending": false,
+          "review_note": "T1紧急通道：本公司正式财报直接击穿V1(required)confirm_if两项条件(收入≥$44M且指引重申/上修)，check_by恰为今日(2026-08-11)，判定V1 met；未判decisive因：①8/3已预披露初步收入数字，市场部分price-in，本次为正式确认而非完全意外；②单季通过率对多季度趋势的鉴别力有限，仍需Q3/Q4连续验证长期渗透曲线；按CLAUDE.md铁律2即时评级+compute-metrics.py重算，commit标[URGENT]"
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-08-05",
@@ -4203,10 +4250,10 @@
         {
           "id": "V1",
           "required": true,
-          "metric": "2026年Q3财报(预估11月上旬发布)ACV+royalties同比增速及design starts趋势",
+          "metric": "2026年Q3财报(Yahoo确认2026-11-03)ACV+royalties同比增速及design starts趋势",
           "confirm_if": "ACV+royalties同比增速维持在35%以上，design starts保持两位数同比增长",
           "falsify_if": "ACV+royalties同比增速降至15%以下，或design starts同比转负",
-          "check_by": "2026-11-06",
+          "check_by": "2026-11-03",
           "status": "pending"
         },
         {
@@ -4215,7 +4262,7 @@
           "metric": "新增/丢失重大客户design win或客户集中度变化",
           "confirm_if": "披露新增AI/HPC领域重大design win或与Arm等核心客户合作深化",
           "falsify_if": "核心客户公开减少采用Arteris IP或流失",
-          "check_by": "2026-11-06",
+          "check_by": "2026-11-03",
           "status": "pending"
         }
       ],
@@ -4250,9 +4297,9 @@
       ],
       "events": [
         {
-          "date": "2026-11-06",
+          "date": "2026-11-03",
           "type": "earnings",
-          "note": "2026年Q3财报(预估，11月上旬发布) — V1判定点"
+          "note": "2026年Q3财报(Yahoo官方排期确认2026-11-03) — V1判定点"
         }
       ],
       "links": {
