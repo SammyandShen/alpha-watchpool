@@ -1,7 +1,7 @@
 {
-  "$generated_at": "2026-08-12",
+  "$generated_at": "2026-08-13",
   "counts": {
-    "active": 23,
+    "active": 25,
     "confirmed": 0,
     "falsified": 0,
     "expired": 0,
@@ -49,8 +49,8 @@
   "economics": {
     "observing": {
       "n": 22,
-      "avg_return_pct": 3.8,
-      "avg_excess_vs_spy_pct": 2.64
+      "avg_return_pct": 7.23,
+      "avg_excess_vs_spy_pct": 6.46
     }
   }
 }

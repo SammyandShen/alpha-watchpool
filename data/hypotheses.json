@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-08-12",
+  "$last_updated": "2026-08-13",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -3254,6 +3254,21 @@
             "log_lr": null
           },
           "pending": true
+        },
+        {
+          "id": "E4",
+          "date": "2026-08-12",
+          "source": "Aehr Test Systems 8-K/新闻稿",
+          "headline": "Aehr获现有AI处理器晶圆级老化测试(WLBI)龙头客户2200万美元追加生产订单",
+          "url": "https://www.stocktitan.net/news/AEHR/aehr-receives-22-million-follow-on-order-for-ai-processor-wafer-1ghm71j2oo3a.html",
+          "summary": "继8/11 FY26全年财报披露backlog 0.6M后，8/12进一步追加同一龙头AI处理器客户2200万美元生产订单，直接对应V2(AI处理器/硅光子学客户追加订单)判定条件；pending待周复核评级",
+          "type": "T1_hard_financial",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -4426,6 +4441,270 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "2026年中报法定披露截止日（业绩预告已自愿披露）— V1判定点"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260813-MTUS",
+      "ticker": "MTUS",
+      "company": "Metallus Inc.",
+      "created_at": "2026-08-13",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-08-13",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：Q2财报(8/11)同步宣布特种钢现货端提价+航空航天国防积压订单同比+80%"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-08-11",
+          "headline": "Metallus公布Q2 2026财报：营收3.41亿美元(+12% YoY)，净利润890万美元(+141% YoY)；同步宣布特种棒材/无缝机械管现货端提价60-160美元/吨",
+          "url": "https://www.prnewswire.com/news-releases/metallus-announces-second-quarter-2026-results-302841486.html",
+          "summary": "Q2业绩超预期，同时宣布对非合同现货业务(约占订单量30%)提价：棒材+60美元/吨、碳钢无缝机械管+100美元/吨、合金无缝管+160美元/吨；管理层称SBQ棒材及无缝机械管交期已排至2026Q4末，反映需求强劲+库存回补"
+        },
+        {
+          "date": "2026-08-11",
+          "headline": "Metallus财报会：航空航天与国防积压订单同比增长约80%，目标2026年中年化销售规模达2.5亿美元",
+          "url": "https://www.tipranks.com/news/company-announcements/metallus-inc-earnings-call-highlights-growth-and-hurdles",
+          "summary": "A&D板块出货量近乎翻倍，成为公司增长最快板块，与整体提价周期形成双重驱动"
+        }
+      ],
+      "thesis": {
+        "one_liner": "特种钢现货端提价+航空航天国防订单积压将在2-3个季度内持续推高其ASP与毛利率结构",
+        "demand_change": "公司Q2财报(8/11)同步宣布对非合同现货业务(约占订单量30%)提价：SBQ棒材+60美元/吨、碳钢无缝机械管+100美元/吨、合金无缝管+160美元/吨；管理层明确表示SBQ棒材与无缝机械管交期已排至2026年Q4末，为库存回补+需求强劲的直接证据，非单纯成本转嫁。同时航空航天与国防板块积压订单同比增长约80%，出货量近乎翻倍，管理层重申2026年中年化销售规模达2.5亿美元目标。两条需求信号均为公司自身财报/电话会披露的具体数字，非分析师推测。",
+        "transmission": "现货端提价直接作用于毛利率(现货占订单量约30%，合同业务价格滞后调整)；A&D积压订单转化为出货后，因该板块产品附加值更高，将改善产品组合(mix)，进一步抬升整体毛利率；管理层称提价全部run-rate效益要到2027年才能完全体现，2026Q3/Q4财报将显示提价的早期部分传导。",
+        "misclassification": "市场此前将其视为'普通碳钢/合金钢周期股，盈利随大宗钢价波动'，随着A&D高附加值订单占比持续提升+现货提价权限重新显现，公司可能正在变成'受益于国防供应链本土化+库存周期回补的特钢结构性成长标的'；目前仅2家分析师覆盖，一致预期尚未完全消化A&D板块占比提升对毛利率中枢的结构性抬升。",
+        "brief_cn": [
+          "①触发：8月11日Metallus发布Q2 2026财报(营收3.41亿美元+12% YoY，净利890万美元+141% YoY)，同步宣布特种棒材/无缝机械管现货端提价60-160美元/吨，SBQ棒材与无缝机械管交期已排至2026Q4末。",
+          "②需求与传导：提价针对约30%的非合同现货业务，是库存回补+需求强劲的直接证据；同时航空航天与国防积压订单同比+80%，出货量近乎翻倍，管理层重申2026年中2.5亿美元年化销售目标——两条需求信号均可在未来财报中量化验证。",
+          "③市场误分类：市场仍将其视为普通碳钢周期股，随A&D高附加值订单占比提升+提价权限恢复，公司盈利弹性结构正在改变，但仅2家分析师覆盖，重估尚未完成。",
+          "④先验0.27的理由：七维总分24(21-25档,0.22-0.32)——demand_certainty/neglect较强(具体$/吨数字+覆盖稀薄)，但transmission_clarity/verification_speed偏低(现货仅占30%订单量，全部run-rate效益要到2027年，Q3财报只能看到早期部分传导)；赌的是Q3/Q4毛利率环比已现改善迹象，而非等到2027年才验证。"
+        ],
+        "serenity_score": {
+          "demand_certainty": 4,
+          "transmission_clarity": 3,
+          "purity": 4,
+          "elasticity": 3,
+          "neglect": 4,
+          "verification_speed": 3,
+          "downside": 3
+        }
+      },
+      "prior": {
+        "p": 0.27,
+        "log_odds": -0.9946,
+        "rationale": "七维总分24 → 21-25档(0.22-0.32)取中值偏上0.27；demand_certainty(具体$/吨提价数字+交期排至Q4末)和neglect(仅2家分析师覆盖)较强，但transmission_clarity/verification_speed偏低(现货仅占订单量30%，全部run-rate效益要到2027年)",
+        "set_by": "daily-scan 2026-08-13"
+      },
+      "current": {
+        "p": 0.27,
+        "log_odds": -0.9946,
+        "last_reviewed": "2026-08-13",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026Q3财报(预计2026年11月初)特钢产品毛利率环比变化及A&D板块积压订单同比增速",
+          "confirm_if": "Q3毛利率环比2026Q2出现改善(即使幅度有限)，且A&D积压订单同比增速维持在60%以上",
+          "falsify_if": "Q3毛利率环比走平或下滑(提价未能覆盖成本上行)，或A&D积压订单同比增速回落至30%以下",
+          "check_by": "2026-11-09",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "航空航天与国防板块年化销售规模是否如期于2026年中达到2.5亿美元目标",
+          "confirm_if": "管理层重申或上修2.5亿美元A&D年化销售目标",
+          "falsify_if": "管理层下修或撤回该目标指引",
+          "check_by": "2026-11-09",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-02-13"
+      },
+      "baseline": {
+        "entry_date": "2026-08-13",
+        "entry_price": 20.45,
+        "benchmark": "SPY",
+        "benchmark_entry_price": 772.49,
+        "sector_benchmark": "XLB",
+        "sector_benchmark_entry_price": 52.86
+      },
+      "price_expectation": {
+        "confirm_target": 27.0,
+        "falsify_target": 15.0,
+        "expected_by": "2026-11-30",
+        "methodology_cn": "证实情景：当前2家分析师一致目标价22.50美元(近期由18.00美元上修)已部分反映Q2业绩，尚未完全计入提价的Q3/Q4传导+A&D占比结构性提升；若V1确认(毛利率环比改善+A&D积压维持高增速)，预计吸引更多分析师覆盖(当前仅2家)并推动目标价上修至27美元左右(较现价+32%，较当前一致目标价+20%)，参照公司2025年周期高点估值区间。证伪情景：若提价未能转化为毛利率改善、A&D增速大幅回落，市场将其重新归类为普通钢铁周期股，估值倍数回吐至Q2财报发布前平台附近，目标价15美元(较现价-27%)。以上倍数与目标价均为估算，需以正式财报数字校正。",
+        "timeline_logic_cn": "绑定2026Q3财报(预计11月初)作为V1判定点；钢铁类小盘股财报后市场重估通常滞后2-4周，故expected_by设为2026-11-30。",
+        "set_at": "2026-08-13",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-08-13",
+          "p": 0.27,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-11-09",
+          "type": "earnings",
+          "note": "预估2026Q3财报日期(季度末+40天)，待Yahoo官方排期确认后校正 — V1判定点"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260813-MASS",
+      "ticker": "MASS",
+      "company": "908 Devices Inc.",
+      "created_at": "2026-08-13",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-08-13",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：Q2财报(8/11)营收+23%YoY，具体出货量+新增执法机构订单数字披露"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-08-11",
+          "headline": "908 Devices公布Q2 2026财报：营收1610万美元(+23% YoY)，季度内出货35台VipIR设备(含18台交付南亚某执法机构)，EPS亏损0.32美元(差于预期0.17美元)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/908-devices-reports-second-quarter-110000812.html",
+          "summary": "营收超预期增长但每股亏损扩大；FY26营收指引下限上修；管理层强调设备出货量与订单管道具体数字"
+        },
+        {
+          "date": "2026-08-12",
+          "headline": "908 Devices季度后新增：获亚太地区矫正机构600万美元ProtectIR订单",
+          "url": "https://www.stifel.com",
+          "summary": "季度结束后追加披露一笔600万美元(约占单季营收37%)ProtectIR设备订单，来自亚太地区矫正/执法机构"
+        }
+      ],
+      "thesis": {
+        "one_liner": "手持化学/生物检测设备执法与国防订单加速将在1-2个季度内改写其产品收入线并驱动经常性收入占比提升",
+        "demand_change": "公司Q2财报(8/11)披露具体出货数字：季度内出货35台VipIR设备(含18台交付南亚某执法机构)，营收同比+23%至1610万美元；季度结束后进一步追加披露获亚太地区矫正机构600万美元ProtectIR订单(约占单季营收37%)。这些是公司自身披露的具体客户/数量/金额数字，非笼统的'需求向好'表述，证明政府/执法端采购已经在发生而非仅停留在管道(pipeline)阶段。",
+        "transmission": "设备出货直接计入产品收入线；600万美元大额订单将在未来1-2个季度内确认收入，对单季营收贡献显著(约37%)；同时管理层强调正从一次性硬件销售向经常性软件/服务收入结构转型，若持续则改善收入质量与毛利率结构。但本季度EPS亏损同比扩大(运营费用增速快于收入)，说明需求→收入的传导清晰，但收入→利润的传导目前受费用扩张压制，是本假设的核心风险点。",
+        "misclassification": "市场此前可能因EPS亏损扩大将其简单归类为'烧钱型小盘检测设备公司，商业化不及预期'，但剔除费用扩张噪音后，产品出货量与大额订单数字显示政府/执法端采购正在加速兑现；随着经常性收入占比提升+运营杠杆逐步显现，公司可能正在变成'受益于全球公共安全/边境管控预算扩张的稀缺细分供应商'。",
+        "brief_cn": [
+          "①触发：8月11日908 Devices发布Q2 2026财报，营收1610万美元(+23% YoY)，季度内出货35台VipIR设备(含18台交付南亚执法机构)；8月12日追加披露获亚太矫正机构600万美元ProtectIR订单(约占单季营收37%)。",
+          "②需求与传导：具体出货台数+大额订单金额是可验证的硬数字，非笼统需求表述；600万美元订单将在未来1-2季度确认收入，对营收有显著拉动；但EPS亏损同比扩大(0.32美元 vs 预期0.17美元)，说明利润传导目前受费用扩张压制。",
+          "③市场误分类：EPS miss可能使市场简单归类为'烧钱型检测设备公司商业化不及预期'，掩盖了执法/国防端采购已实质加速的事实；4家分析师覆盖已给'强力买入'评级，一致目标价11美元，但尚未完全消化600万美元订单的增量。",
+          "④先验0.26的理由：七维总分24(21-25档,0.22-0.32)取中值偏下0.26——demand_certainty/elasticity强(具体出货台数+订单金额相对季度营收占比高)，但downside偏低(2分：EPS持续miss+52周股价波动区间大$3.58-$9.34+政府预算依赖风险)拉低整体；赌的是Q3财报能延续订单动能且费用增速开始收敛。"
+        ],
+        "serenity_score": {
+          "demand_certainty": 4,
+          "transmission_clarity": 3,
+          "purity": 4,
+          "elasticity": 4,
+          "neglect": 3,
+          "verification_speed": 4,
+          "downside": 2
+        }
+      },
+      "prior": {
+        "p": 0.26,
+        "log_odds": -1.046,
+        "rationale": "七维总分24 → 21-25档(0.22-0.32)取中值偏下0.26；demand_certainty/elasticity强(具体出货台数+订单金额占季度营收37%)，但downside偏低(EPS持续miss+高波动+政府预算依赖)拉低整体取值",
+        "set_by": "daily-scan 2026-08-13"
+      },
+      "current": {
+        "p": 0.26,
+        "log_odds": -1.046,
+        "last_reviewed": "2026-08-13",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026Q3财报(预计2026年11月初)产品收入同比增速及新增政府/执法机构订单披露",
+          "confirm_if": "产品收入同比增速维持20%以上，且披露至少1笔300万美元以上新增政府/执法订单",
+          "falsify_if": "产品收入同比增速回落至10%以下，且无新增大额政府订单披露",
+          "check_by": "2026-11-09",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "FY2026营收指引是否维持或上修，及每股亏损收窄趋势",
+          "confirm_if": "FY2026营收指引维持或上修，且Q3每股亏损同比/环比收窄",
+          "falsify_if": "FY2026营收指引下修，或每股亏损同比/环比继续扩大",
+          "check_by": "2026-11-09",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-02-13"
+      },
+      "baseline": {
+        "entry_date": "2026-08-13",
+        "entry_price": 8.93,
+        "benchmark": "SPY",
+        "benchmark_entry_price": 772.49,
+        "sector_benchmark": "XLI",
+        "sector_benchmark_entry_price": 185.88
+      },
+      "price_expectation": {
+        "confirm_target": 12.5,
+        "falsify_target": 6.0,
+        "expected_by": "2026-11-30",
+        "methodology_cn": "证实情景：当前4家分析师一致目标价11美元(Stifel近期由8美元上修至10美元)已部分反映Q2出货数据，尚未完全计入8/12追加披露的600万美元订单对Q3/Q4营收的贡献；若V1确认(订单动能延续+费用增速收敛)，预计目标价进一步上修至12.5美元左右(较现价+40%)，参照52周高点9.34美元附近的估值溢价再扩张。证伪情景：若订单动能未能延续、EPS亏损持续扩大，市场对'烧钱型商业化不及预期'的定价将占主导，估值回落至6美元附近(接近52周区间中枢，较现价-33%)。以上目标价为估算，需以正式财报数字校正。",
+        "timeline_logic_cn": "绑定2026Q3财报(预计11月初)作为V1判定点；小盘医疗器械/检测设备股财报后重估通常滞后2-4周，故expected_by设为2026-11-30。",
+        "set_at": "2026-08-13",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-08-13",
+          "p": 0.26,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-11-09",
+          "type": "earnings",
+          "note": "预估2026Q3财报日期(季度末+40天)，待Yahoo官方排期确认后校正 — V1判定点"
         }
       ],
       "links": {
