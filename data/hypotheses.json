@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-08-13",
+  "$last_updated": "2026-08-14",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -1078,6 +1078,22 @@
           },
           "pending": true,
           "correlates_with": "E1"
+        },
+        {
+          "id": "E11",
+          "date": "2026-08-14",
+          "source": "SMM上海有色网 / 生意社 / 期货主力合约",
+          "headline": "电池级碳酸锂现货价8/11 SMM报14.2-14.7万元/吨，8/10期货主力合约+2.87%收14.636万元/吨，脱离8/7 14.0万关口企稳回升",
+          "url": "https://hq.smm.cn/h5/Li2CO3-battery-price",
+          "summary": "延续E10观察窗口，8/10-8/11期货与现货同步反弹，脱离falsify线(14万)附近的拉锯区间，未突破confirm线(18万)，中报(8/31)前继续观察",
+          "type": "T2_supply_chain",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true,
+          "correlates_with": "E10"
         }
       ],
       "posterior_history": [

@@ -2,105 +2,6 @@
   "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate | skipped_daily_cap",
   "entries": [
     {
-      "date": "2026-07-30",
-      "fingerprint": "2026-07-09+AEHR+silicon-photonics-followon-order",
-      "headline": "Aehr Test Systems获硅光子学龙头客户追加FOX-XP量产订单",
-      "tickers": [
-        "AEHR"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
-      "date": "2026-07-30",
-      "fingerprint": "2026-07-14+AEHR+q4fy26-record-bookings-ai-mix-80pct-fy27-guide",
-      "headline": "Aehr Test Systems FY26Q4财报：营收+33%、破纪录新签订单$6070万、backlog$1.006亿，AI+硅光子学收入占比56%→80%+，FY27指引+160-200%",
-      "tickers": [
-        "AEHR"
-      ],
-      "action": "new_hypothesis",
-      "note": "同一入池事件的两条触发新闻（7/9追加订单+7/14财报），合并写入H20260730-AEHR的source_news；先验0.30（21-25档取上沿，neglect=2因财报后已涨29%+年内+301%）"
-    },
-    {
-      "date": "2026-07-30",
-      "fingerprint": "2026-07-27+002497.SZ+lithium-144k-stabilize",
-      "headline": "电池级碳酸锂7/28报14.4-14.7万元/吨，企稳小幅回升，未跌破V2证伪线",
-      "tickers": [
-        "002497.SZ"
-      ],
-      "action": "evidence_appended",
-      "note": "追加为002497.SZ pending证据E6"
-    },
-    {
-      "date": "2026-07-30",
-      "fingerprint": "2026-07-27+920118.BJ+h1-forecast-cable-material-margin-recovery",
-      "headline": "太湖远大H1 2026业绩预告净利+212-263%（4300-5000万），原因为原材料价格波动缓和后毛利率回升",
-      "tickers": [
-        "920118.BJ"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "增长驱动是原材料成本/竞价缓和带来的毛利率修复（供给侧成本传导），非需求侧变化，purity不足；观察名单级"
-    },
-    {
-      "date": "2026-07-30",
-      "fingerprint": "2026-07-30+688826.SS+h1-forecast-precision-laser-quantum-semiconductor-27to48pct",
-      "headline": "频准激光H1 2026业绩预告净利+27-48%（9000-10500万），量子科技+半导体制程精准激光器需求增长驱动",
-      "tickers": [
-        "688826.SS"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "需求逻辑真实（半导体制程升级+量子科技驱动精准激光器需求），但公司科创板IPO要到2026-08-07才上市，当前无法交易/设entry_price，暂列观察名单待上市后重新评估"
-    },
-    {
-      "date": "2026-07-30",
-      "fingerprint": "2026-07-23+688099.SS+h1-forecast-tv-soc-ai-edge-22pct-mktcap390b",
-      "headline": "晶晨股份H1 2026业绩预告净利+22.44%左右（6.08亿），电视SoC份额提升+6nm AI端侧芯片A311Y3回片，市值约390亿",
-      "tickers": [
-        "688099.SS"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "市值约390亿元中盘、多家券商深度覆盖（东吴等已有点评报告），neglect过低；H1净利增速22%不算突出（剔除股权激励费用后+31%）；观察名单级"
-    },
-    {
-      "date": "2026-07-30",
-      "fingerprint": "2026-07-16+688521.SS+ai-compute-custom-chip-orders-64b-7months",
-      "headline": "芯原股份2026年前七月新签订单146.53亿元，其中4/30-7/16新签64.13亿元、AI算力+数据处理占比超90%",
-      "tickers": [
-        "688521.SS"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "AI定制芯片订单需求真实，但公司已是知名芯片设计IP龙头、多篇财经媒体广泛报道，6/15-6/30累计涨超66%后7/1-7/16又跌超34%，neglect过低且波动剧烈；观察名单级"
-    },
-    {
-      "date": "2026-07-30",
-      "fingerprint": "2026-07-15+301358.SZ+lfp-price-hike-2000yuan",
-      "headline": "湖南裕能发布磷酸铁锂涨价函，自8/1起全系列产品提价2000元/吨，因持续满产+新增产能无法满足订单增长",
-      "tickers": [
-        "301358.SZ"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "涨价函证明产能满载需求旺盛，但公司是磷酸铁锂行业龙头（市值约919亿元），elasticity/neglect均不满足小盘弹性入池条件；观察名单级"
-    },
-    {
-      "date": "2026-07-30",
-      "fingerprint": "2026-07-07+300620.SZ+h1-forecast-ai-optical-component-170to190pct",
-      "headline": "光库科技H1 2026业绩预告净利+170-190%（1.4-1.5亿），AI算力光模块/光器件需求驱动，市值约740亿元且已被称『8倍大牛股』",
-      "tickers": [
-        "300620.SZ"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "AI光器件需求逻辑扎实，但市值已达约740亿元、年内被广泛报道为'8倍大牛股'，neglect/elasticity均已不满足入池条件，与源杰科技/联讯仪器等同属'已充分定价'类别；观察名单级"
-    },
-    {
-      "date": "2026-07-30",
-      "fingerprint": "2026-07-08+PENG+citizens-pt-raise-85",
-      "headline": "Citizens将PENG目标价从$65上调至$85（维持Market Outperform），因AI驱动业务收入/EBITDA预期大幅上修",
-      "tickers": [
-        "PENG"
-      ],
-      "action": "skipped_duplicate",
-      "note": "T4叙事级分析师目标价调整，与7/7 Q3财报同期信号高度相关（同一驱动因子），且PENG evidence_log已有充分的T4事件记录与E4(memory-cycle质疑)覆盖核心分歧，边际信息量低，不单独入账"
-    },
-    {
       "date": "2026-07-31",
       "fingerprint": "2026-07-31+688836.SS+h1-forecast-unitree-robotics-not-yet-listed",
       "headline": "宇树科技(688836.SH)H1 2026业绩预告净利+316%-412%（2.58-3.06亿），具身智能需求增长驱动；但公司尚未上市，8/10申购、8/12缴款，无可交易价格",
@@ -139,26 +40,6 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "刚上市(7月网上路演)，预估市值约500-1000亿+区间，PCB龙头体量已大，弹性不达小盘门槛"
-    },
-    {
-      "date": "2026-07-30",
-      "fingerprint": "2026-07-30+301536.SZ+sector-selloff-edge-ai-chips",
-      "headline": "端侧AI概念板块回调，星宸科技单日跌17.35%，同板块瑞芯微跌停、翱捷科技跌超13%",
-      "tickers": [
-        "301536.SZ"
-      ],
-      "action": "evidence_appended",
-      "note": "板块性价格波动，无公司基本面利空，记入pending证据供周复核参考"
-    },
-    {
-      "date": "2026-07-30",
-      "fingerprint": "2026-07-30+PENG+sector-selloff-ai-memory",
-      "headline": "PENG单日跌约9.2%，AI基础设施/内存概念股集体回调，无公司层面利空",
-      "tickers": [
-        "PENG"
-      ],
-      "action": "evidence_appended",
-      "note": "板块性beta回调，基本面未变（Citizens同日上调目标价至$85），记入pending证据供周复核参考"
     },
     {
       "date": "2026-07-31",
@@ -865,6 +746,94 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "市值已达约37.5亿美元+多篇深度报道已广泛覆盖(6月Army订单后已上修目标价)，neglect不足，且当日新建假设配额已用于MTUS/MASS"
+    },
+    {
+      "date": "2026-08-14",
+      "fingerprint": "2026-08-14+688052.SS+h1-forecast-turnaround-nonrecurring-fairvalue-gain-crowded",
+      "headline": "纳芯微(688052.SS)H1 2026业绩预告扭亏(净利6700万，+387%)，但扣非净利润仍约-4800万，扭亏主因私募基金公允价值变动收益约9400万(非经常性)；营收+66.7%(半导体AI算力/汽车/光伏储能需求)",
+      "tickers": [
+        "688052.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "需求端信号真实(营收+66.7%)但扭亏主因非经常性公允价值变动收益，purity不足；公司为科创板+H股两地上市的车规模拟芯片龙头，市值约230-350亿元，华泰/东方等多家券商长期覆盖，neglect不满足门槛"
+    },
+    {
+      "date": "2026-08-14",
+      "fingerprint": "2026-08-03+OPTX+ai-datacenter-orders-4m-cumulative-fusion-energy",
+      "headline": "Syntec Optics(OPTX)公告AI数据中心相关累计订单突破400万美元(进入该市场约2年的累计值)+新增融合能源订单",
+      "tickers": [
+        "OPTX"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "累计400万美元/2年的订单规模过小、非近期需求跃升信号；公司为融合能源/军用/空间光学多元化小型光学制造商，AI数据中心业务purity不足；年内股价已涨约240-260%，尽管分析师覆盖少但动量已充分反映，neglect不满足门槛"
+    },
+    {
+      "date": "2026-08-14",
+      "fingerprint": "2026-08-14+US+smallcap-scan-no-new-hit",
+      "headline": "美股小盘扫描(财报超预期/backlog创纪录/大客户capex订单/AI基建供应链4-5组查询)：AAOI/AXTI需求信号扎实但已被广泛报道+估值充分反映(AXTI年内+8436%)，FTK/FA与AI供应链主题弱相关，未发现新的高纯度小盘候选",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "OPTX单独评估见上；宏观背景(云厂商2026 capex指引7750-8000亿美元、HBM/CoWoS产能售罄至年底)持续利好供应链，但直接受益标的多已被充分定价"
+    },
+    {
+      "date": "2026-08-14",
+      "fingerprint": "2026-08-14+CN+general-scan-no-new-hit",
+      "headline": "A股扫描(中标大单/涨价函/满产扩建/AI算力半导体机器人5组中文查询)：长飞光纤中标电信空芯光缆集采1.59亿元(金额中等未核实占比)、华康洁净中标医院净化项目(金额未披露)均信息过薄；建滔积层板CCL六连涨、优必选订单、算力合同密集披露(证券时报头版'5倍牛股封涨停')均已是全市场广泛报道的拥挤题材",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "未发现通过完整过滤条件(demand_certainty+purity+neglect)的新候选；cn-forecasts.json positive_forecasts新增条目(纳芯微/贝特利/信胜科技/华大海天/马矿股份)均已核查排除(纳芯微见上，其余增速过弱或口径笼统)"
+    },
+    {
+      "date": "2026-08-14",
+      "fingerprint": "2026-08-14+002497.SZ+lithium-rebound-142to147k",
+      "headline": "电池级碳酸锂8/11 SMM报14.2-14.7万元/吨，8/10期货主力+2.87%收14.636万元/吨，脱离8/7 14.0万关口企稳回升",
+      "tickers": [
+        "002497.SZ"
+      ],
+      "action": "evidence_appended",
+      "note": "追加为002497.SZ pending证据E11，供中报(8/31)前weekly review评级"
+    },
+    {
+      "date": "2026-08-14",
+      "fingerprint": "2026-08-14+US-pool+9-tickers-no-material-news",
+      "headline": "美股池内9只标的复核(OUST/POWL/PENG/AEHR/AUTL/AIP/PSIX/MTUS/MASS)：窗口期(8/12-8/14)除AEHR已于8/12记入E4(2200万美元追加订单)外，其余均无新增重大新闻",
+      "tickers": [
+        "OUST",
+        "POWL",
+        "PENG",
+        "AEHR",
+        "AUTL",
+        "AIP",
+        "PSIX",
+        "MTUS",
+        "MASS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "OUST内部人小额申报出售非重大；PSIX新CEO 8/17生效待观察；POWL/AUTL/MTUS下次财报日Yahoo尚未排定，沿用现有预估"
+    },
+    {
+      "date": "2026-08-14",
+      "fingerprint": "2026-08-14+CN-pool+16-tickers-no-material-news",
+      "headline": "池内16只A股标的复核(002326/002497/688620/603115/003026/688531/301536/688195/688380/920493/300981/300613/688733/688758/301366/688265)：除002497.SZ已追加E11外，其余窗口期(8/12-8/14)均无新增重大新闻",
+      "tickers": [
+        "002326.SZ",
+        "688620.SS",
+        "603115.SS",
+        "003026.SZ",
+        "688531.SS",
+        "301536.SZ",
+        "688195.SS",
+        "688380.SS",
+        "920493.BJ",
+        "300981.SZ",
+        "300613.SZ",
+        "688733.SS",
+        "688758.SS",
+        "301366.SZ",
+        "688265.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "603115.SS 8/10交易异常波动公告及股东减持计划信息模糊(无具体金额/日期)暂不记账；300981.SZ集采中标/688265.SS业绩预告均为既有source_news/证据的重复检索结果"
     }
   ]
 }
