@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-08-14",
+  "$last_updated": "2026-08-15",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -65,9 +65,9 @@
         "set_by": "daily-scan 2026-07-05"
       },
       "current": {
-        "p": 0.6667,
-        "log_odds": 0.6931,
-        "last_reviewed": "2026-08-08",
+        "p": 0.75,
+        "log_odds": 1.0986,
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -208,11 +208,12 @@
           "summary": "基建/交通类BlueCity客户continu续扩容，与demand_change核心叙事(基建lidar采购)一致，非V1(required财务指标)判定点，作pending证据记账",
           "type": "T2_supply_chain",
           "likelihood": {
-            "label": null,
-            "lr": null,
-            "log_lr": null
+            "label": "weak_support",
+            "lr": 1.5,
+            "log_lr": 0.4054651081081644
           },
-          "pending": true
+          "pending": false,
+          "review_note": "补搜(8/11-8/15)未见AIM出货量化或Rev8订单pipeline新披露；犹他州扩容属BlueCity基建叙事延续，与既往同类T2证据(E2)一致按weak_support处理，非V1(收入)直接判定点"
         }
       ],
       "posterior_history": [
@@ -235,6 +236,11 @@
           "date": "2026-08-08",
           "p": 0.6667,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.75,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -336,7 +342,7 @@
       "current": {
         "p": 0.7447,
         "log_odds": 1.0704,
-        "last_reviewed": "2026-08-08",
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -356,7 +362,7 @@
           "confirm_if": "上修",
           "falsify_if": "下修",
           "check_by": "2026-08-15",
-          "status": "pending"
+          "status": "unclear"
         },
         {
           "id": "V3",
@@ -530,6 +536,11 @@
           "date": "2026-08-08",
           "p": 0.7447,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.7447,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -626,7 +637,7 @@
       "current": {
         "p": 0.5507,
         "log_odds": 0.2036,
-        "last_reviewed": "2026-08-08",
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -774,6 +785,11 @@
           "date": "2026-08-08",
           "p": 0.5507,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.5507,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -857,9 +873,9 @@
         "set_by": "daily-scan 2026-07-07"
       },
       "current": {
-        "p": 0.1273,
-        "log_odds": -1.9247,
-        "last_reviewed": "2026-08-08",
+        "p": 0.1796,
+        "log_odds": -1.5192,
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -1072,12 +1088,12 @@
           "summary": "延续7月末以来在14万元/吨关口反复拉锯的格局，8/7生意社基准价已下探至14.0万整数关口，是E1建立以来最接近falsify线的读数；现货月均价口径尚未确认跌破，中报(8/31)前为关键观察窗口",
           "type": "T2_supply_chain",
           "likelihood": {
-            "label": null,
-            "lr": null,
-            "log_lr": null
+            "label": "neutral",
+            "lr": 1.0,
+            "log_lr": 0.0
           },
-          "pending": true,
-          "correlates_with": "E1"
+          "pending": false,
+          "review_note": "8/7报价14.0万元/吨恰处V2证伪线(<14万)边界，方向不明，从严判neutral"
         },
         {
           "id": "E11",
@@ -1088,12 +1104,12 @@
           "summary": "延续E10观察窗口，8/10-8/11期货与现货同步反弹，脱离falsify线(14万)附近的拉锯区间，未突破confirm线(18万)，中报(8/31)前继续观察",
           "type": "T2_supply_chain",
           "likelihood": {
-            "label": null,
-            "lr": null,
-            "log_lr": null
+            "label": "weak_support",
+            "lr": 1.5,
+            "log_lr": 0.4054651081081644
           },
-          "pending": true,
-          "correlates_with": "E10"
+          "pending": false,
+          "review_note": "8/11-8/14价格回升至14.2-14.7万且期货主力+2.87%，补搜确认8/14现货运行于14.5-15.1万区间高位企稳，脱离证伪区间，判weak_support；H1业绩预告(净利+710~857%)发布于7/6入池前，已计入prior，不重复计入"
         }
       ],
       "posterior_history": [
@@ -1116,6 +1132,11 @@
           "date": "2026-08-08",
           "p": 0.1273,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.1796,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -1190,9 +1211,9 @@
         "set_by": "daily-scan 2026-07-10"
       },
       "current": {
-        "p": 0.4249,
-        "log_odds": -0.3027,
-        "last_reviewed": "2026-08-08",
+        "p": 0.5257,
+        "log_odds": 0.1028,
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -1252,6 +1273,22 @@
           },
           "pending": false,
           "review_note": "顶级机构现场调研+管理层口头确认订单旺盛，属T3上限weak_support；补搜确认7/9后无增量信息，价格证据为neutral(excess_vs_sector +6.64%)故不入账"
+        },
+        {
+          "id": "E2",
+          "date": "2026-08-15",
+          "source": "compute-metrics.py 价格证据（相对基准超额收益）",
+          "headline": "688620.SS 相对行业基准超额收益",
+          "url": "docs/data/prices.json",
+          "summary": "688620.SS入池以来相对510300.SS(沪深300)超额-3.39%，相对512480.SS(半导体行业基准)超额+15.21%；补搜未发现H2出货/展望新披露，H1业绩预告(净利同比扭亏、营收+84.8%~87.4%)已于7/9机构调研中部分确认，非本周增量",
+          "type": "P_price",
+          "likelihood": {
+            "label": "weak_support",
+            "lr": 1.5,
+            "log_lr": 0.4054651081081644
+          },
+          "pending": false,
+          "review_note": "review-input.json建议标签weak_support，予以采纳；本周首次记账价格证据"
         }
       ],
       "posterior_history": [
@@ -1274,6 +1311,11 @@
           "date": "2026-08-08",
           "p": 0.4249,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.5257,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -1350,7 +1392,7 @@
       "current": {
         "p": 0.1127,
         "log_odds": -2.0638,
-        "last_reviewed": "2026-08-08",
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -1528,6 +1570,11 @@
           "date": "2026-08-08",
           "p": 0.1127,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.1127,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -1601,9 +1648,9 @@
         "set_by": "daily-scan 2026-07-15"
       },
       "current": {
-        "p": 0.4249,
-        "log_odds": -0.3027,
-        "last_reviewed": "2026-08-08",
+        "p": 0.5257,
+        "log_odds": 0.1028,
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -1689,12 +1736,28 @@
           "summary": "股价异动本身非基本面证据，仅记录关注；7/14已披露H1业绩预增(净利润+50.07%~56.55%)，7/15控股股东一致行动人拟减持不超2%股份，异动需结合中报正式披露(8/31前)一并复核",
           "type": "T3_soft_signal",
           "likelihood": {
-            "label": null,
-            "lr": null,
-            "log_lr": null
+            "label": "neutral",
+            "lr": 1.0,
+            "log_lr": 0.0
           },
-          "pending": true,
-          "review_note": null
+          "pending": false,
+          "review_note": "补搜确认异常波动公告触发原因为3个交易日累计涨跌幅达20%的交易所强制信息披露规则，公司自查确认无未披露重大信息，非基本面/需求信号，判neutral"
+        },
+        {
+          "id": "E4",
+          "date": "2026-08-15",
+          "source": "compute-metrics.py 价格证据（相对基准超额收益）",
+          "headline": "603115.SS 相对行业基准超额收益",
+          "url": "docs/data/prices.json",
+          "summary": "603115.SS入池以来相对510300.SS超额-20.33%，相对512480.SS(行业基准)超额+33.25%；review-input建议标签moderate_support，但P_price tier LR上限1.5(不含moderate)，降级采纳为weak_support",
+          "type": "P_price",
+          "likelihood": {
+            "label": "weak_support",
+            "lr": 1.5,
+            "log_lr": 0.4054651081081644
+          },
+          "pending": false,
+          "review_note": "价格证据tier上限约束(0.67-1.5)，建议标签降级采纳；生命周期价格类log_lr累计至0.8109，未超1.10封顶"
         }
       ],
       "posterior_history": [
@@ -1717,6 +1780,11 @@
           "date": "2026-08-08",
           "p": 0.4249,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.5257,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -1793,7 +1861,7 @@
       "current": {
         "p": 0.5913,
         "log_odds": 0.3692,
-        "last_reviewed": "2026-08-08",
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -1923,6 +1991,11 @@
           "date": "2026-08-08",
           "p": 0.5913,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.5913,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -1997,9 +2070,9 @@
         "set_by": "daily-scan 2026-07-17"
       },
       "current": {
-        "p": 0.3333,
-        "log_odds": -0.6931,
-        "last_reviewed": "2026-08-08",
+        "p": 0.4286,
+        "log_odds": -0.2876,
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -2101,11 +2174,12 @@
           "summary": "扩产用地落地，与SSTI并购后业务扩张节奏一致；尚未有具体新增产能规模/投产时间表",
           "type": "T2_supply_chain",
           "likelihood": {
-            "label": null,
-            "lr": null,
-            "log_lr": null
+            "label": "weak_support",
+            "lr": 1.5,
+            "log_lr": 0.4054651081081644
           },
-          "pending": true
+          "pending": false,
+          "review_note": "补搜确认珠海工业用地(44,354㎡，可建约11万㎡)由子公司智测科技以自有资金+银行贷款出资，用于产能扩建，但未披露具体新增产能数字/投产时间表；SSTI整合已于1月完成、菲莱9亿并购仍在进行中未披露新进展；按T2供应端扩产信号弱证据处理，判weak_support；本周价格证据因生命周期封顶(既有0.8109+本次建议0.4055将达1.2164>1.10)不予新增记账"
         }
       ],
       "posterior_history": [
@@ -2128,6 +2202,11 @@
           "date": "2026-08-08",
           "p": 0.3333,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.4286,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -2204,7 +2283,7 @@
       "current": {
         "p": 0.5257,
         "log_odds": 0.1028,
-        "last_reviewed": "2026-08-08",
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -2318,6 +2397,11 @@
           "date": "2026-08-08",
           "p": 0.5257,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.5257,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -2395,7 +2479,7 @@
       "current": {
         "p": 0.4668,
         "log_odds": -0.133,
-        "last_reviewed": "2026-08-08",
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -2557,6 +2641,11 @@
           "date": "2026-08-08",
           "p": 0.4668,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.4668,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -2639,7 +2728,7 @@
       "current": {
         "p": 0.32,
         "log_odds": -0.7538,
-        "last_reviewed": "2026-08-08",
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -2708,6 +2797,11 @@
           "date": "2026-08-08",
           "p": 0.32,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.32,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -2788,9 +2882,9 @@
         "set_by": "daily-scan 2026-07-29"
       },
       "current": {
-        "p": 0.27,
-        "log_odds": -0.9946,
-        "last_reviewed": "2026-08-08",
+        "p": 0.3568,
+        "log_odds": -0.5891,
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -2853,11 +2947,12 @@
           "summary": "定增融资推进中，具体募资规模/用途未在检索中明确；北交所小市值公司再融资摊薄需在中报后结合业绩增速评估",
           "type": "T3_soft_signal",
           "likelihood": {
-            "label": null,
-            "lr": null,
-            "log_lr": null
+            "label": "weak_support",
+            "lr": 1.5,
+            "log_lr": 0.4054651081081644
           },
-          "pending": true
+          "pending": false,
+          "review_note": "补搜确认定增募资规模4.8亿元，明确用途为'云计算平台运维运营项目'(采购GPU/存储硬件扩充云计算/AI算力服务能力)，属产能扩张性质，与demand_change(算力结构性紧缺)方向一致；因摊薄比例未披露具体数字，从严不判strong_support；价格数据缺失(920493.BJ Yahoo同步404)无法交叉验证市场反应"
         },
         {
           "id": "E2",
@@ -2868,12 +2963,13 @@
           "summary": "融资类公告，非直接需求证据；募集资金用途待核实是否投向算力产能扩张，周复核时结合募集说明书具体条款定级",
           "type": "T3_soft_signal",
           "likelihood": {
-            "label": null,
-            "lr": null,
-            "log_lr": null
+            "label": "neutral",
+            "lr": 1.0,
+            "log_lr": 0.0
           },
-          "pending": true,
-          "review_note": null
+          "pending": false,
+          "review_note": "与E1同一定增披露流程的后续公告(不提供财务资助声明/股价稳定预案/募集说明书草案/董事会决议)，同源事件correlates_with E1，强制neutral",
+          "correlates_with": "E1"
         }
       ],
       "posterior_history": [
@@ -2891,6 +2987,11 @@
           "date": "2026-08-08",
           "p": 0.27,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.3568,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -2977,9 +3078,9 @@
         "set_by": "daily-scan 2026-07-29"
       },
       "current": {
-        "p": 0.35,
-        "log_odds": -0.619,
-        "last_reviewed": "2026-08-08",
+        "p": 0.4468,
+        "log_odds": -0.2135,
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -3074,12 +3175,28 @@
           "summary": "中标公告未披露具体金额；作为医用耗材集采常规中标节奏的延续，与此前7/28业绩预告(净利润+2338%~3557%，低基数)方向一致，记账待周复核定级",
           "type": "T2_supply_chain",
           "likelihood": {
-            "label": null,
-            "lr": null,
-            "log_lr": null
+            "label": "neutral",
+            "lr": 1.0,
+            "log_lr": 0.0
           },
-          "pending": true,
-          "review_note": null
+          "pending": false,
+          "review_note": "补搜确认此批集采(江苏7/8轮+陕西)标的为留置针/泡沫敷料，非丁腈手套产品线，与提价周期核心叙事(丁腈手套ASP)关联度低，判neutral；另注意公司已更名'中红医疗'"
+        },
+        {
+          "id": "E4",
+          "date": "2026-08-15",
+          "source": "compute-metrics.py 价格证据（相对基准超额收益）",
+          "headline": "300981.SZ 相对行业基准超额收益",
+          "url": "docs/data/prices.json",
+          "summary": "300981.SZ入池以来相对510300.SS超额+43.90%，相对512010.SS(行业基准)超额+36.08%；review-input建议moderate_support，P_price tier上限约束降级采纳为weak_support",
+          "type": "P_price",
+          "likelihood": {
+            "label": "weak_support",
+            "lr": 1.5,
+            "log_lr": 0.4054651081081644
+          },
+          "pending": false,
+          "review_note": "价格证据tier上限约束，建议标签降级采纳；生命周期价格类log_lr累计至0.8109，未超1.10封顶"
         }
       ],
       "posterior_history": [
@@ -3097,6 +3214,11 @@
           "date": "2026-08-08",
           "p": 0.35,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.4468,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -3177,9 +3299,9 @@
         "set_by": "daily-scan 2026-07-30"
       },
       "current": {
-        "p": 0.5625,
-        "log_odds": 0.2513,
-        "last_reviewed": "2026-08-08",
+        "p": 0.8852,
+        "log_odds": 2.0431,
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -3265,11 +3387,12 @@
           "summary": "季度业绩创纪录，backlog同比+430%，公司首次给出FY27全年指引区间与原thesis假设的$1.3-1.5亿区间一致；但本报告为FY26全年收官季，非V1指定判定点(Q1 FY27，约10月)，故不构成required条件的直接击穿，仅作强支撑性pending证据记账，留待周复核评级",
           "type": "T1_hard_financial",
           "likelihood": {
-            "label": null,
-            "lr": null,
-            "log_lr": null
+            "label": "strong_support",
+            "lr": 3.0,
+            "log_lr": 1.0986122886681098
           },
-          "pending": true
+          "pending": false,
+          "review_note": "公司自身FQ4 FY26财报：营收$18.8M(+34% YoY)，季度预订$60.7M(同比+500%+)，backlog突破$80M(约4倍单季营收)，前瞻指标远超同期营收增速，T1紧急通道内已实质反映强劲需求兑现；未判decisive因FY27正式指引区间重申需等10月Q1财报确认"
         },
         {
           "id": "E4",
@@ -3280,11 +3403,12 @@
           "summary": "继8/11 FY26全年财报披露backlog 0.6M后，8/12进一步追加同一龙头AI处理器客户2200万美元生产订单，直接对应V2(AI处理器/硅光子学客户追加订单)判定条件；pending待周复核评级",
           "type": "T1_hard_financial",
           "likelihood": {
-            "label": null,
-            "lr": null,
-            "log_lr": null
+            "label": "moderate_support",
+            "lr": 2.0,
+            "log_lr": 0.6931471805599453
           },
-          "pending": true
+          "pending": false,
+          "review_note": "FQ4财报后新增(8/12)现有AI处理器WLBI客户2200万美元追加生产订单，属新财年(FY27 Q1)增量订单而非已计入FQ4 bookings的存量，公司自身合同数字，T1；因是existing客户follow-on(非新客户破局)非decisive，判moderate_support"
         }
       ],
       "posterior_history": [
@@ -3302,6 +3426,11 @@
           "date": "2026-08-08",
           "p": 0.5625,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.8852,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -3378,7 +3507,7 @@
       "current": {
         "p": 0.6137,
         "log_odds": 0.4627,
-        "last_reviewed": "2026-08-08",
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -3482,6 +3611,11 @@
           "date": "2026-08-08",
           "p": 0.6137,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.6137,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -3558,7 +3692,7 @@
       "current": {
         "p": 0.3,
         "log_odds": -0.8473,
-        "last_reviewed": "2026-08-08",
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -3646,6 +3780,11 @@
           "date": "2026-08-08",
           "p": 0.3,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.3,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -3720,9 +3859,9 @@
         "set_by": "daily-scan 2026-08-05"
       },
       "current": {
-        "p": 0.6279,
-        "log_odds": 0.5232,
-        "last_reviewed": "2026-08-08",
+        "p": 0.7168,
+        "log_odds": 0.9287,
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -3742,7 +3881,7 @@
           "confirm_if": "管理层披露治疗中心数量继续增长(达到或超过70家)或新增高权重区域中心",
           "falsify_if": "治疗中心扩张停滞或披露具体中心退出/准入受阻",
           "check_by": "2026-08-11",
-          "status": "pending"
+          "status": "met"
         },
         {
           "id": "V3",
@@ -3791,6 +3930,22 @@
           },
           "pending": false,
           "review_note": "T1紧急通道：本公司正式财报直接击穿V1(required)confirm_if两项条件(收入≥$44M且指引重申/上修)，check_by恰为今日(2026-08-11)，判定V1 met；未判decisive因：①8/3已预披露初步收入数字，市场部分price-in，本次为正式确认而非完全意外；②单季通过率对多季度趋势的鉴别力有限，仍需Q3/Q4连续验证长期渗透曲线；按CLAUDE.md铁律2即时评级+compute-metrics.py重算，commit标[URGENT]"
+        },
+        {
+          "id": "E2",
+          "date": "2026-08-11",
+          "source": "Autolus Q2 2026 Earnings Call (TradingView/MarketBeat 电话会纪要)",
+          "headline": "Autolus 8/11电话会：美国已激活80+治疗中心(超年内90家目标提前达成节奏)，预计年底90+家；英国launch首年预计~20家授权中心",
+          "url": "https://www.tradingview.com/news/marketbeat:aa9c0caaa094b:0-autolus-therapeutics-q2-earnings-call-highlights/",
+          "summary": "V2 confirm_if门槛为治疗中心≥70家，实际披露80+已超越门槛且提前于年内目标节奏；美国90+/英国~20家均为增长而非停滞信号；来源为二手电话会纪要(SEC/Investing.com被403拦截)，非逐字一手转录，置信度打折，从严按T3计而非T1",
+          "type": "T3_soft_signal",
+          "likelihood": {
+            "label": "weak_support",
+            "lr": 1.5,
+            "log_lr": 0.4054651081081644
+          },
+          "pending": false,
+          "review_note": "满足V2 confirm_if(≥70家)，但因来源为二手纪要非一手transcript verbatim，tier从严按T3(非T1)，标签weak_support(T3上限)"
         }
       ],
       "posterior_history": [
@@ -3803,6 +3958,11 @@
           "date": "2026-08-08",
           "p": 0.36,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.7168,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -3885,7 +4045,7 @@
       "current": {
         "p": 0.35,
         "log_odds": -0.619,
-        "last_reviewed": "2026-08-08",
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -3940,6 +4100,11 @@
           "date": "2026-08-08",
           "p": 0.35,
           "note": "weekly review 2026-08-08"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.35,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -4022,7 +4187,7 @@
       "current": {
         "p": 0.25,
         "log_odds": -1.0986,
-        "last_reviewed": "2026-08-10",
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -4072,6 +4237,11 @@
           "date": "2026-08-10",
           "p": 0.25,
           "note": "prior"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.25,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -4148,7 +4318,7 @@
       "current": {
         "p": 0.2,
         "log_odds": -1.3863,
-        "last_reviewed": "2026-08-10",
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -4198,6 +4368,11 @@
           "date": "2026-08-10",
           "p": 0.2,
           "note": "prior"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.2,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -4274,7 +4449,7 @@
       "current": {
         "p": 0.34,
         "log_odds": -0.6633,
-        "last_reviewed": "2026-08-11",
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -4324,6 +4499,11 @@
           "date": "2026-08-11",
           "p": 0.34,
           "note": "prior"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.34,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -4398,9 +4578,9 @@
         "set_by": "daily-scan 2026-08-11"
       },
       "current": {
-        "p": 0.24,
-        "log_odds": -1.1527,
-        "last_reviewed": "2026-08-11",
+        "p": 0.3214,
+        "log_odds": -0.7472,
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -4444,12 +4624,50 @@
         "set_at": "2026-08-11",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-08-14",
+          "source": "中财网 关联交易公告",
+          "headline": "南方模式生物拟作为LP出资5900万元(占19.67%)参与设立盐城市场景创新应用产业投资基金(总规模3亿元，管理人为公司关联方)，投向AI+生物医药产业",
+          "url": "https://www.cfi.net.cn/p20260814002873.html",
+          "summary": "该基金出资为财务性股权投资/关联交易，公告未提及具体CRO/创新药企合作订单或模式动物服务收入相关信息，与验证条件(V2新增工业端合作)关联度低，判neutral",
+          "type": "T3_soft_signal",
+          "likelihood": {
+            "label": "neutral",
+            "lr": 1.0,
+            "log_lr": 0.0
+          },
+          "pending": false,
+          "review_note": "本周唯一新增事件性证据，判neutral；H1业绩预告(7/10-7/27区间预告，剔股份支付后净利+47%~79%)发布于hypothesis创建(8/11)前1天，已计入prior未重复计入"
+        },
+        {
+          "id": "E2",
+          "date": "2026-08-15",
+          "source": "compute-metrics.py 价格证据（相对基准超额收益）",
+          "headline": "688265.SS 相对行业基准超额收益",
+          "url": "docs/data/prices.json",
+          "summary": "688265.SS入池以来相对510300.SS超额+16.45%，相对XBI(行业基准)超额+15.29%；8/7、8/13两次20cm涨停(CRO板块整体爆发)；review-input建议标签weak_support，予以采纳",
+          "type": "P_price",
+          "likelihood": {
+            "label": "weak_support",
+            "lr": 1.5,
+            "log_lr": 0.4054651081081644
+          },
+          "pending": false,
+          "review_note": "本周首次记账价格证据，review-input建议标签直接采纳"
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-08-11",
           "p": 0.24,
           "note": "prior"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.3214,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -4532,7 +4750,7 @@
       "current": {
         "p": 0.27,
         "log_odds": -0.9946,
-        "last_reviewed": "2026-08-13",
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -4582,6 +4800,11 @@
           "date": "2026-08-13",
           "p": 0.27,
           "note": "prior"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.27,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
@@ -4664,7 +4887,7 @@
       "current": {
         "p": 0.26,
         "log_odds": -1.046,
-        "last_reviewed": "2026-08-13",
+        "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
       "validation_conditions": [
@@ -4714,6 +4937,11 @@
           "date": "2026-08-13",
           "p": 0.26,
           "note": "prior"
+        },
+        {
+          "date": "2026-08-15",
+          "p": 0.26,
+          "note": "weekly review 2026-08-15"
         }
       ],
       "events": [
