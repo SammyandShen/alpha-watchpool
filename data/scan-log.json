@@ -2,54 +2,6 @@
   "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate | skipped_daily_cap",
   "entries": [
     {
-      "date": "2026-07-31",
-      "fingerprint": "2026-07-31+688836.SS+h1-forecast-unitree-robotics-not-yet-listed",
-      "headline": "宇树科技(688836.SH)H1 2026业绩预告净利+316%-412%（2.58-3.06亿），具身智能需求增长驱动；但公司尚未上市，8/10申购、8/12缴款，无可交易价格",
-      "tickers": [
-        "688836.SS"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "尚未挂牌交易，无entry_price可用，无法建仓；且具身智能/人形机器人龙头叙事已被市场充分定价（IPO前已是现象级关注度），neglect极低，暂列观察名单待上市后重新评估"
-    },
-    {
-      "date": "2026-07-31",
-      "fingerprint": "2026-07-31+688433.SS+h1-forecast-3dprint-modest-growth",
-      "headline": "华曙高科(688433.SS)H1 2026业绩预告净利+87.09%（843万元），3D打印下游需求回暖驱动",
-      "tickers": [
-        "688433.SS"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "市值已近450亿元(全球3D打印上市公司市值第一)，净利基数极小(843万)且2025全年净利仅+2.68%，需求回暖表述空泛缺乏具体验证锚点，弹性/纯度不达入池门槛"
-    },
-    {
-      "date": "2026-07-31",
-      "fingerprint": "2026-07-31+688218.SS+h1-forecast-welding-robot-impairment-reversal",
-      "headline": "江苏北人(688218.SS)H1 2026扣非净利扭亏为盈(+3998万)，主因智能装备项目验收提升+上年同期大额资产减值不再发生",
-      "tickers": [
-        "688218.SS"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "扭亏主要由上年同期资产减值消退驱动（非经常性对比基数效应），非新增需求变化，不满足'已发生的需求变化'过滤标准"
-    },
-    {
-      "date": "2026-07-31",
-      "fingerprint": "2026-07-31+001232.SZ+h1-forecast-pcb-jlc-large-cap-ipo",
-      "headline": "嘉立创(001232.SZ)H1 2026扣非净利+64.53%-91.95%（9-10.5亿），PCB行业景气度改善+电子机械产业链一体化驱动",
-      "tickers": [
-        "001232.SZ"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "刚上市(7月网上路演)，预估市值约500-1000亿+区间，PCB龙头体量已大，弹性不达小盘门槛"
-    },
-    {
-      "date": "2026-07-31",
-      "fingerprint": "2026-07-31+ALL+us-smallcap-earnings-scan-no-hit",
-      "headline": "美股小盘财报/backlog扫描(Bloom Energy/EMCOR/Benchmark Electronics/ESCO等)：均为中大盘或已覆盖标的，无新的高纯度小盘候选",
-      "tickers": [],
-      "action": "skipped_watchlist_only",
-      "note": "AI capex/backlog超预期驱动的beat集中在中大盘（EMCOR $20B+、Benchmark $3B+营收），未发现符合小盘高弹性门槛的新候选"
-    },
-    {
       "date": "2026-08-03",
       "fingerprint": "2026-08-03+300613.SZ+h1-forecast-mcu-storage-price-hike-1072pct",
       "headline": "富瀚微H1 2026业绩预告：营收+103.48%-118.01%，归母净利+1072.72%-1420.19%，存储/上游涨价+三大业务量价齐升+AI-ISP机器人新品",
@@ -834,6 +786,73 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "603115.SS 8/10交易异常波动公告及股东减持计划信息模糊(无具体金额/日期)暂不记账；300981.SZ集采中标/688265.SS业绩预告均为既有source_news/证据的重复检索结果"
+    },
+    {
+      "date": "2026-08-17",
+      "fingerprint": "2026-08-17+CN-forecasts+positive-batch-review",
+      "headline": "cn-forecasts.json近7天positive_forecasts批量核查：新增频准激光688826(略增27.6%-57.1%/预增)——8/18才在科创板上市尚无可交易价格，暂不建仓待明日；纳芯微688052/贝特利301697/信胜科技920093/华大海天920288/马矿股份601123/广聚能源000096/绿控传动301655均已在此前扫描核查排除(增速过弱/口径笼统/一次性损益/非经营性因素为主)",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "频准激光明日(8/18)上市后可补建仓；宇树科技688836已于8/13前后上市但作为'人形机器人第一股'被极度追捧(发行市值预期超420亿、机构预测冲千亿)，neglect严重不足，且此前(7/31、8/3)已两次因'尚未上市'排除，现改列为'过度拥挤'排除"
+    },
+    {
+      "date": "2026-08-17",
+      "fingerprint": "2026-08-17+CN+general-scan-no-new-hit",
+      "headline": "A股扫描(中标公告/涨价函/满产扩产)：新北洋002376中标中国邮政济宁漯河项目1.1亿(但为与该客户历史多次重复中标的常规业务，非新增需求变化，purity不足)、润邦股份002483签6艘活鱼运输船28-33亿合同(合同尚未正式生效、首付款未到账，且更适合serenity-cycle造船周期框架而非serenity-alpha需求转导)、双良节能600481中标3.39亿EPC项目(公司已充分覆盖、市值大)均排除；MLCC国产替代(洁美科技/双星新材/国风新材等)受AI服务器涨价驱动但8月已连续多日集体走强(某标的TTM PE达170倍)，neglect不足",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "未发现通过完整过滤条件(demand_certainty+purity+neglect)的新候选"
+    },
+    {
+      "date": "2026-08-17",
+      "fingerprint": "2026-08-17+US+smallcap-scan-no-new-hit",
+      "headline": "美股扫描(财报超预期/供应链信号/大客户capex订单)：AAON数据中心冷却backlog创纪录(+107% QoQ)+2026指引上修至40-45%营收增长，但市值已达84亿美元且为广泛覆盖的AI基建标的，不符合小盘高弹性+neglect标准；半导体设备book-to-bill/HBM产能吃紧等均为持续性宏观背景，未发现新的高纯度小盘受益标的",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "宏观供应链紧张背景(CPU/HBM涨价、变压器交期160周+)持续利好已入池标的，未见新增候选"
+    },
+    {
+      "date": "2026-08-17",
+      "fingerprint": "2026-08-17+US-pool+9-tickers-review",
+      "headline": "美股池9只标的复核(OUST/POWL/PENG/AEHR/AUTL/AIP/PSIX/MTUS/MASS)：均无窗口期(8/15-8/17)新增重大新闻；AEHR(8/12 E4)、AUTL(8/11 E1/E2 T1紧急通道)、AIP(8/6 Q2财报)相关财报/订单证据均已在此前扫描记账，本次未发现增量；PSIX新CEO Richard Hu已于8/17正式生效(此前8/14已标记待观察，非新增)",
+      "tickers": [
+        "OUST",
+        "POWL",
+        "PENG",
+        "AEHR",
+        "AUTL",
+        "AIP",
+        "PSIX",
+        "MTUS",
+        "MASS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "profiles.json财报日校正：OUST补充下一财报日2026-11-03(events新增)，MASS财报日由预估11-09校正为Yahoo官方11-10(events+V1/V2 check_by同步更新)"
+    },
+    {
+      "date": "2026-08-17",
+      "fingerprint": "2026-08-17+CN-pool+16-tickers-review",
+      "headline": "A股池16只标的复核(002326/002497/688620/603115/003026/688531/301536/688195/688380/920493/300981/300613/688733/688758/301366/688265)：窗口期(8/15-8/17)均无新增重大公告；688265.SS的pool_negative_warning(预减)经核查为8/10已披露的同一份半年度业绩预告(已计入prior，非新事件)",
+      "tickers": [
+        "002326.SZ",
+        "002497.SZ",
+        "688620.SS",
+        "603115.SS",
+        "003026.SZ",
+        "688531.SS",
+        "301536.SZ",
+        "688195.SS",
+        "688380.SS",
+        "920493.BJ",
+        "300981.SZ",
+        "300613.SZ",
+        "688733.SS",
+        "688758.SS",
+        "301366.SZ",
+        "688265.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "A股16只标的Yahoo均无next_earnings_date数据(profiles.json为空)，沿用此前法定截止日估算(8/31)，未发现需校正的日期"
     }
   ]
 }

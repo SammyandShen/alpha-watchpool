@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-08-15",
+  "$last_updated": "2026-08-17",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -258,6 +258,11 @@
           "date": "2026-07-19",
           "type": "milestone",
           "note": "FIFA世界杯决赛于MetLife Stadium举行，NJDOT BlueCity部署接受高流量压力测试，基建商业化高能见度验证"
+        },
+        {
+          "date": "2026-11-03",
+          "type": "earnings",
+          "note": "CY26Q3财报（Yahoo官方排期确认2026-11-03）— V1第二个观测点，判定连续两季营收YoY+环比"
         }
       ],
       "links": {
@@ -4897,7 +4902,7 @@
           "metric": "2026Q3财报(预计2026年11月初)产品收入同比增速及新增政府/执法机构订单披露",
           "confirm_if": "产品收入同比增速维持20%以上，且披露至少1笔300万美元以上新增政府/执法订单",
           "falsify_if": "产品收入同比增速回落至10%以下，且无新增大额政府订单披露",
-          "check_by": "2026-11-09",
+          "check_by": "2026-11-10",
           "status": "pending"
         },
         {
@@ -4906,7 +4911,7 @@
           "metric": "FY2026营收指引是否维持或上修，及每股亏损收窄趋势",
           "confirm_if": "FY2026营收指引维持或上修，且Q3每股亏损同比/环比收窄",
           "falsify_if": "FY2026营收指引下修，或每股亏损同比/环比继续扩大",
-          "check_by": "2026-11-09",
+          "check_by": "2026-11-10",
           "status": "pending"
         }
       ],
@@ -4946,9 +4951,9 @@
       ],
       "events": [
         {
-          "date": "2026-11-09",
+          "date": "2026-11-10",
           "type": "earnings",
-          "note": "预估2026Q3财报日期(季度末+40天)，待Yahoo官方排期确认后校正 — V1判定点"
+          "note": "CY26Q3财报（Yahoo官方排期确认2026-11-10）— V1判定点"
         }
       ],
       "links": {

@@ -1,5 +1,5 @@
 {
-  "$generated_at": "2026-08-15",
+  "$generated_at": "2026-08-17",
   "counts": {
     "active": 25,
     "confirmed": 0,
@@ -50,7 +50,7 @@
     "observing": {
       "n": 24,
       "avg_return_pct": 9.93,
-      "avg_excess_vs_spy_pct": 9.13
+      "avg_excess_vs_spy_pct": 9.05
     }
   }
 }
