@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-08-17",
+  "$last_updated": "2026-08-18",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -3974,7 +3974,12 @@
         {
           "date": "2026-08-11",
           "type": "earnings",
-          "note": "正式Q2 2026财报+电话会议，V1判定点(确认初步收入数字并听取治疗中心扩张/竞争细节)"
+          "note": "[已发生] 正式Q2 2026财报+电话会议，V1/V2判定点均已met"
+        },
+        {
+          "date": "2026-11-16",
+          "type": "earnings",
+          "note": "Q3 2026财报（Yahoo官方排期确认2026-11-16）— 与V3(现金跑道/再融资，check_by 2026-11-15)判定窗口衔接，下一观测点"
         }
       ],
       "links": {
@@ -4367,7 +4372,23 @@
         "set_at": "2026-08-10",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-08-17",
+          "source": "PSIX 8-K/新闻稿",
+          "headline": "Power Solutions International任命Richard Hu(此前任职BorgWarner/Delphi Technologies高管，25年以上全球动力总成领导经验)为新任CEO，2026-08-17生效",
+          "url": "https://www.stocktitan.net/news/PSIX/",
+          "summary": "管理层变动，非需求侧证据；与V1(数据中心备用电源大额订单转入生产)无直接关联，仅作治理事件记账，不评级",
+          "type": "T4_narrative",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-08-10",
