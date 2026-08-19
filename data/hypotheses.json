@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-08-18",
+  "$last_updated": "2026-08-19",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -3414,6 +3414,22 @@
           },
           "pending": false,
           "review_note": "FQ4财报后新增(8/12)现有AI处理器WLBI客户2200万美元追加生产订单，属新财年(FY27 Q1)增量订单而非已计入FQ4 bookings的存量，公司自身合同数字，T1；因是existing客户follow-on(非新客户破局)非decisive，判moderate_support"
+        },
+        {
+          "id": "E5",
+          "date": "2026-08-14",
+          "source": "Jefferies / Seeking Alpha / StocksToTrade",
+          "headline": "Jefferies首次覆盖AEHR给予Buy评级/目标价$175，称其为唯一同时提供晶圆级与封装级burn-in并已导入AI量产的供应商；预测FY25-FY28营收CAGR 52%，毛利率2028年恢复至45%",
+          "url": "https://in.investing.com/news/stock-market-news/jefferies-initiates-aehr-test-systems-stock-with-buy-rating-on-ai-shift-93CH-5556825",
+          "summary": "Jefferies指出公司收入构成已从FY24 SiC占90%+切换至FY26 AI占90%+，目标价保守未计入memory/SiC潜在上行；财报后分析师首次覆盖，股价当日+10%",
+          "type": "T4_narrative",
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "pending": true,
+          "review_note": "补搜发现的sell-side首次覆盖，pending待周复核评级；不影响V1/V2 required判定"
         }
       ],
       "posterior_history": [
@@ -4975,6 +4991,138 @@
           "date": "2026-11-10",
           "type": "earnings",
           "note": "CY26Q3财报（Yahoo官方排期确认2026-11-10）— V1判定点"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20260819-QMCO",
+      "ticker": "QMCO",
+      "company": "Quantum Corporation",
+      "created_at": "2026-08-19",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-08-19",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：FY27 Q1财报营收$80.8M(+25.7% YoY)超指引、毛利率5季度新高39.3%，管理层称需求持续超过交付能力，backlog创新高、供给瓶颈未解"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-08-10",
+          "headline": "Quantum Corp FY2027 Q1财报：营收$80.8M(+25.7% YoY)超指引上限，non-GAAP每股收益$0.18（2023年来首次转正），毛利率39.3%(环比+360bp，5季度新高)，管理层称'客户需求持续超过我们的交付能力'，backlog创新高",
+          "url": "https://www.stocktitan.net/sec-filings/QMCO/8-k-quantum-corp-de-reports-material-event-c71e1074396a.html",
+          "summary": "磁带存储(Scalar)+对象存储(ActiveScale)需求旺盛，供给端受限(IBM磁带头量产未达拐点)；公司完成债务重组，季末现金$54.6M且零负债；财报后股价单日+64.7%"
+        },
+        {
+          "date": "2026-08-17",
+          "headline": "Quantum FY2027 Q1财报电话会实录：磁带需求受存储经济性/功耗/网络安全驱动，LTO产能环比+15%仍无法满足需求，Q2指引营收$80-84M(+31% YoY中值)",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/08/17/quantum-qmco-q1-2027-earnings-call-transcript/",
+          "summary": "CEO：'organizations are increasingly turning to tape to improve storage economics, reduce power consumption, and strengthen cyber resilience'；ActiveScale七位数金额企业订单持续；服务收入近年来首次环比+10%"
+        }
+      ],
+      "thesis": {
+        "one_liner": "磁带存储复苏+供给持续吃紧将在2-3个季度内推高其营收与毛利率",
+        "demand_change": "FY27 Q1(6月季度)营收$80.8M(+25.7% YoY)超指引上限，毛利率39.3%为5个季度新高；管理层在电话会明确表示'客户需求持续超过我们的交付能力'，backlog较上季度$45M进一步创历史新高(具体金额未披露)；LTO磁带产能环比已提升15%仍无法满足需求，供应商IBM磁带头量产尚未达到预期拐点；ActiveScale对象存储持续获取七位数金额企业订单，服务收入结束多年下滑首次环比+10%——均为已发生的订单与出货数据，非管理层前瞻性表态。",
+        "transmission": "Scalar磁带库出货量×单价直接计入产品收入线；ActiveScale软件订阅收入随客户容量扩容持续增长；供给瓶颈下产品结构优化(高毛利订阅/服务占比提升)+服务收入回升共同推动毛利率环比+360bp至39.3%，直接带动non-GAAP每股收益由负转正($0.18，为2023年来首次)。",
+        "misclassification": "市场仍将其定价为'2023年会计问题+高负债缠身的没落磁带硬件问题股'；实际上公司已完成债务重组实现零负债、季末现金$5460万，核心磁带业务正受益于AI数据中心建设引发的存储成本/功耗/网络安全压力这一结构性顺风，正从'过时遗留技术供应商'重新定位为'低成本冷存储稀缺供应商'。",
+        "serenity_score": {
+          "demand_certainty": 4,
+          "transmission_clarity": 4,
+          "purity": 3,
+          "elasticity": 3,
+          "neglect": 3,
+          "verification_speed": 4,
+          "downside": 3
+        },
+        "brief_cn": [
+          "触发：2026-08-10 Quantum Corp公布FY2027 Q1财报，营收$80.8M(+25.7% YoY)超指引上限，non-GAAP每股收益$0.18(2023年来首次转正)，毛利率39.3%(环比+360bp，5季度新高)；股价当日+64.7%，8/17电话会进一步披露供给瓶颈与Q2指引$80-84M(+31% YoY中值)，此后股价持续走高至8/18收盘$23.52(较入池前$12.04已上涨约95%)。",
+          "需求已可观察：管理层明确表示'客户需求持续超过我们的交付能力'，LTO磁带产能环比+15%仍无法满足需求，backlog较上季度$45M进一步创新高；ActiveScale对象存储持续拿下七位数金额企业订单，服务收入结束多年下滑首次环比+10%——均为已发生的出货/订单数据。财务传导路径清晰：出货量×单价直接进收入，供给紧张支撑毛利率环比大幅改善，non-GAAP盈利能力已实质兑现。",
+          "市场误分类：市场仍将其锚定在2023年会计问题、高负债、磁带是'夕阳技术'的问题股叙事；实际上公司已于近期完成债务重组实现零负债+现金$5460万，磁带作为低成本、低功耗、抗勒索软件的归档方案正被超大规模数据中心与企业重新采纳，这是AI时代存储成本与电力约束下的结构性需求，而非公司自身业务質變。",
+          "先验只给0.28的理由：七维总分24（21-25档，0.22-0.32）；demand_certainty=4+transmission_clarity=4有硬财报数据支撑，但purity=3(公司仍有DXi等非磁带遗留业务拖累整体纯度)、elasticity=3(现价对应市值约$9.3亿，财报后已上涨约95%，并非早期低位介入)、neglect=3(仅2家券商覆盖但已获主流财经媒体报道)、downside=3(公司有2023年会计问题与历史高负债/稀释先例，CFO对Q2毛利率指引态度'保守'因元件价格波动)共同拉低至档位中段；赌的是Q2 FY27财报(约11月)验证31%指引兑现且backlog/供给紧张状态延续，确认磁带复苏是结构性趋势而非单季度库存周期性反弹。"
+        ]
+      },
+      "prior": {
+        "p": 0.28,
+        "log_odds": -0.9445,
+        "rationale": "七维总分24 → 21-25档（0.22-0.32）；demand_certainty=4+transmission_clarity=4有硬财报数据支撑，但purity=3(非纯磁带标的)、elasticity=3(财报后已涨约95%，市值约$9.3亿非早期介入)、downside=3(2023年会计问题与历史高负债先例)共同拉至档位中段",
+        "set_by": "daily-scan 2026-08-19"
+      },
+      "current": {
+        "p": 0.28,
+        "log_odds": -0.9445,
+        "last_reviewed": "2026-08-19",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "FY2027 Q2（9月季度，约2026年11月初发布）实际营收及管理层对后续季度指引/backlog表态",
+          "confirm_if": "Q2实际营收 ≥ $84M（达指引上限）且管理层重申或上修后续指引，或明确backlog环比继续扩大",
+          "falsify_if": "Q2实际营收 < $76M（低于指引下限）或管理层表示磁带/ActiveScale需求边际转弱、backlog环比下滑",
+          "check_by": "2026-11-15",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "2026年Q3(8-10月)期间新增超大规模客户磁带/ActiveScale订单披露或供给瓶颈缓解进展",
+          "confirm_if": "公告新增≥$1000万规模超大规模客户订单，或明确量化backlog金额并环比增长",
+          "falsify_if": "主要客户取消或大幅削减在手订单，或供应商产能瓶颈快速解除导致议价权减弱",
+          "check_by": "2026-11-15",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-02-19"
+      },
+      "baseline": {
+        "entry_date": "2026-08-19",
+        "entry_price": 23.52,
+        "benchmark": "SPY",
+        "benchmark_entry_price": 767.45,
+        "sector_benchmark": "SKYY",
+        "sector_benchmark_entry_price": 161.37
+      },
+      "price_expectation": {
+        "confirm_target": 37.0,
+        "falsify_target": 12.0,
+        "expected_by": "2026-11-30",
+        "methodology_cn": "证实情景：Q2 FY27指引$80-84M兑现且趋势延续，假设FY27营收run-rate升至约$330M(季度约$82.5M×4)，磁带复苏被确认为结构性趋势后，市场给予稀缺低估值存储成长股4.5x forward P/S(参照同类小盘数据基础设施标的，较当前隐含约2.9x P/S明显扩张但仍显著低于典型AI基础设施标的)→目标市值约14.85亿美元÷3941万股≈$37.7，取$37。证伪情景：若Q2不及指引或管理层暗示磁带复苏为一次性去库存/供给错配而非结构性需求，估值回落至入池前平台价$12.04(约当前1x P/S的传统存储硬件商估值)，取整$12。",
+        "timeline_logic_cn": "V1判定点为FY2027 Q2财报（预计2026年11月初发布）；决定性财报后市场对小盘转型故事的重估通常在2-4周内完成→预期2026-11-30前到位。",
+        "set_at": "2026-08-19",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-08-19",
+          "p": 0.28,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-11-15",
+          "type": "earnings",
+          "note": "预估FY2027 Q2财报日期(季度末+~45天)，待Yahoo官方排期确认后校正 — V1判定点"
         }
       ],
       "links": {

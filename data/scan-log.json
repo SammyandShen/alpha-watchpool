@@ -2,59 +2,6 @@
   "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate | skipped_daily_cap",
   "entries": [
     {
-      "date": "2026-08-04",
-      "fingerprint": "2026-08-03+POWL+fq3-earnings-backlog-record-book-to-bill-3x",
-      "headline": "Powell Industries FQ3 FY26财报：营收$311.7M(+9%)，新签订单破纪录$934M(+158%)，backlog $2.4B(QoQ+35%/YoY+69%)，book-to-bill 3.0x，含>$4亿数据中心大单",
-      "tickers": [
-        "POWL"
-      ],
-      "action": "evidence_appended",
-      "note": "URGENT/T1紧急通道：backlog QoQ+35%远超V1 confirm线(+5%)，book-to-bill 3.0x远超V3 confirm线(>1)，判decisive_support(LR5.0)并即时评级；compute-metrics.py重算后current.p从0.3684→0.7447（未达0.75 confirmed门槛，留给周复核确认）；追加为POWL evidence E7"
-    },
-    {
-      "date": "2026-08-04",
-      "fingerprint": "2026-08-03+002497.SZ+lithium-142k-stable",
-      "headline": "电池级碳酸锂现货价8月3日生意社基准价14.2万元/吨，较7月末(14.4-14.7万)小幅走低但仍在V2 falsify线(14万)上方",
-      "tickers": [
-        "002497.SZ"
-      ],
-      "action": "evidence_appended",
-      "note": "T2供应链价格延续窄幅震荡，未突破confirm(18万)或falsify(14万)任一门槛；追加为002497.SZ pending证据供中报(8/31)前weekly review评级"
-    },
-    {
-      "date": "2026-08-04",
-      "fingerprint": "2026-08-04+301655.SZ+ev-commercial-drivetrain-not-yet-listed",
-      "headline": "绿控传动(301655.SZ)新能源商用车电驱动系统供应商，H1 2026扣非净利+93.51%-143.18%，但创业板IPO尚在询价阶段(8/5询价、8/10申购)，未上市交易",
-      "tickers": [
-        "301655.SZ"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "需求逻辑扎实(新能源商用车电驱动)，但尚无entry_price可用，无法建仓；待上市后重新评估"
-    },
-    {
-      "date": "2026-08-04",
-      "fingerprint": "2026-08-04+cn-forecast-batch-weak-or-large-cap-skip",
-      "headline": "cn-forecasts.json批量核查：三未信安688489(营收仅+7.38%)、展芯股份301707(净利+55-89%但基数平淡)、津富士达603468(营收增长主因并表非内生+汇兑拖累净利)、杰理科技920138(全年营收指引仅+10.66%)、中微公司688012(净利+282-310%但市值超2000亿/覆盖极密集)、大烨智能300670(扭亏主因船舶租赁非核心主业)",
-      "tickers": [
-        "688489.SS",
-        "301707.SZ",
-        "603468.SS",
-        "920138.BJ",
-        "688012.SS",
-        "300670.SZ"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "均不满足demand_certainty/purity/elasticity门槛：增速平淡、非经营性驱动或大市值已充分覆盖"
-    },
-    {
-      "date": "2026-08-04",
-      "fingerprint": "2026-08-04+US+smallcap-scan-no-new-hit",
-      "headline": "美股小盘扫描(backlog/订单/供应链紧张关键词4组查询)：GE Vernova/Vertiv/Supermicro/BWXT/Mercury Systems均为中大盘或已被广泛覆盖；Graham Corp(GHM)backlog数据系Q3FY26(今年2月)旧闻非本周新增",
-      "tickers": [],
-      "action": "skipped_watchlist_only",
-      "note": "未发现符合小盘高弹性+低关注度门槛的新候选"
-    },
-    {
       "date": "2026-08-05",
       "fingerprint": "2026-08-04+AEHR+silicon-photonics-second-followon-order",
       "headline": "Aehr再获硅光子学龙头客户第二轮FOX-XP量产追加订单（9刀片配置，2027上半年交付）",
@@ -850,6 +797,102 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "H1中报密集披露窗口(8/29-8/31)尚在7天观察窗之外，下次扫描需重点跟踪688195.SS(8/29最早)"
+    },
+    {
+      "date": "2026-08-19",
+      "fingerprint": "2026-08-10+QMCO+fy27q1-earnings-tape-demand-supply-constrained",
+      "headline": "Quantum Corp(QMCO) FY2027 Q1财报(8/10)：营收$80.8M(+25.7% YoY)超指引，毛利率39.3%(5季度新高)，non-GAAP EPS $0.18(2023年来首次转正)；8/17电话会：管理层称'客户需求持续超过交付能力'，磁带产能环比+15%仍无法满足需求，Q2指引$80-84M(+31% YoY)",
+      "tickers": [
+        "QMCO"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-08-19",
+      "fingerprint": "2026-08-14+AEHR+jefferies-initiate-buy-175pt",
+      "headline": "Jefferies首次覆盖AEHR，给予Buy/目标价$175，称其为唯一同时提供晶圆级与封装级burn-in并已导入AI量产的供应商",
+      "tickers": [
+        "AEHR"
+      ],
+      "action": "evidence_appended",
+      "note": "sell-side首次覆盖，追加为AEHR pending证据E5(T4_narrative，不评级)，供周复核评估；不影响V1/V2 required判定"
+    },
+    {
+      "date": "2026-08-19",
+      "fingerprint": "2026-08-19+CN-forecasts+positive-batch-review-new-tickers",
+      "headline": "cn-forecasts.json新增复核(较8/18批次新出现)：688208.SS道通科技(略增，营收yoy仅+12.6-15.1%，AI及软件收入虽+18%但占比小，公司已是300亿+市值成熟标的，增速平淡)；920071.BJ金钛股份(略增但净利润yoy实为+5-13%区间，展示的负百分比系环比基数误差，增速温和不足以支撑入池)；600187.SS *ST国中(扭亏，主因子公司股权处置一次性投资收益，非经营性)",
+      "tickers": [
+        "688208.SS",
+        "920071.BJ",
+        "600187.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "三者均未通过demand_certainty/purity阈值：增速平淡、一次性损益或已被充分定价"
+    },
+    {
+      "date": "2026-08-19",
+      "fingerprint": "2026-08-19+603256.SS+honghe-electronic-cloth-price-surge",
+      "headline": "宏和科技(603256.SS)电子布均价同比+147.6%至11.91元/米，AI算力驱动CCL上游电子布供不应求，中报净利+334%",
+      "tickers": [
+        "603256.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "总市值约1394.69亿元已属大盘股，且自5月起已有'2026年2800亿市值'等前瞻性市值预测广泛流传，neglect与elasticity均不满足小盘高弹性标准，跳过"
+    },
+    {
+      "date": "2026-08-19",
+      "fingerprint": "2026-08-19+US+smallcap-scan-partial-hit-QMCO",
+      "headline": "美股扫描(财报超预期/backlog破纪录/供应链涨价4组查询)：AAON(backlog+107%破纪录)/V2X(backlog$138亿)/Sterling Infrastructure(营收+90%)均为已被广泛覆盖的中大盘工业股，不满足neglect；Quantum Corp(QMCO)磁带存储FY27Q1财报+供给瓶颈符合入池标准，予以入池(见new_hypothesis记录)",
+      "tickers": [
+        "AAON",
+        "V2X",
+        "STRL"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "AAON/V2X/Sterling因市值大+机构覆盖充分跳过；QMCO已单独记录为new_hypothesis"
+    },
+    {
+      "date": "2026-08-19",
+      "fingerprint": "2026-08-19+US-pool+9-tickers-review",
+      "headline": "美股池9只标的复核(OUST/POWL/PENG/AEHR/AUTL/AIP/PSIX/MTUS/MASS)：AEHR发现8/14 Jefferies首次覆盖(已记账见上)；OUST Econolite/Utah DOT扩容已在8/11记账(E7)，本次为重复确认；POWL 8/19除息$0.09股息为常规事项非新增基本面信号；PENG/AUTL/AIP/PSIX/MTUS/MASS窗口期(8/18-8/19)无新增重大新闻",
+      "tickers": [
+        "OUST",
+        "POWL",
+        "PENG",
+        "AEHR",
+        "AUTL",
+        "AIP",
+        "PSIX",
+        "MTUS",
+        "MASS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "本次池内复核除AEHR新增1条pending证据外(已单独记录)，其余无新增"
+    },
+    {
+      "date": "2026-08-19",
+      "fingerprint": "2026-08-19+CN-pool+16-tickers-review",
+      "headline": "A股池16只标的复核：301536.SZ星宸科技检索结果为7/18已有业绩预告数字的旧闻重复索引(归母净利8.2-9亿+583-650%等，与既有source_news一致)，非新增信息；其余15只标的窗口期(8/18-8/19)无新增重大公告",
+      "tickers": [
+        "002326.SZ",
+        "002497.SZ",
+        "688620.SS",
+        "603115.SS",
+        "003026.SZ",
+        "688531.SS",
+        "301536.SZ",
+        "688195.SS",
+        "688380.SS",
+        "920493.BJ",
+        "300981.SZ",
+        "300613.SZ",
+        "688733.SS",
+        "688758.SS",
+        "301366.SZ",
+        "688265.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "H1中报密集披露窗口(8/29-8/31)仍在7天观察窗之外，下次扫描继续重点跟踪688195.SS等最早预约披露标的"
     }
   ]
 }
