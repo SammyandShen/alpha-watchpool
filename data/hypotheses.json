@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-08-21",
+  "$last_updated": "2026-10-26",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -519,6 +519,18 @@
           },
           "pending": false,
           "review_note": "T4叙事类固定neutral；补搜确认8/4电话会披露backlog集中度风险(57%来自三大订单，43%来自单一数据中心合同)及Sidoti小幅下修FY26 EPS估计，但均未构成required条件(V1/V3已met)的证伪信号，且FY26收入指引(V2)仍未见明确数字表述，维持pending"
+        },
+        {
+          "id": "E9",
+          "date": "2026-10-13",
+          "type": "T1_hard_financial",
+          "summary": "搜索发现分析师动作：JPMorgan等机构10月中下调目标价(JPM $300→$250)，提及某季度EPS $1.42不及预期$1.49、营收$311.74M不及预期$316.70M(+8.9% YoY)。注：此'财报'日期与profiles.json确认的下次财报日(2026-11-17，尚未发生)相矛盾，数字来源可信度存疑，未采信为确定事实，仅记录分析师降目标价+机构关注AI/数据中心需求持续性存疑的情绪面信号；另观察到近90天股价回撤~27%及内部人出售。V1/V3 required条件此前已met，此为情绪/估值层面新增信息，非对required条件的直接挑战。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -558,6 +570,11 @@
           "date": "2026-07-03",
           "type": "macro",
           "note": "PJM 联邦级电网紧急状态（需求侧催化剂）"
+        },
+        {
+          "date": "2026-10-17",
+          "type": "guidance_revision",
+          "note": "多家机构Oct中下调目标价，股价90天回撤约27%；具体'财报不及预期'数字与官方次财报日(11/17)矛盾，存疑未采信"
         }
       ],
       "links": {
@@ -768,6 +785,18 @@
           "pending": false,
           "correlates_with": "E1",
           "review_note": "与E1/E4同属VC价格上涨趋势的同一底层信号延续，去重forced neutral"
+        },
+        {
+          "id": "E6",
+          "date": "2026-08-26",
+          "type": "T1_hard_financial",
+          "summary": "2026年中报正式披露：归母净利润2.74亿元(+365.74% YoY，达V1门槛2.65亿)，扣非净利2.49亿元(+1005.94%)，营收37.46亿元(+43.57%)。VC业务收入同比增速未单独查实披露数字，V1第二项(VC收入同比≥100%)待核实。另：与宁德时代签3年约9万吨VC供货框架协议(2026.6-2029.12)，支持V2信号方向。未评级，留周复核。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -802,6 +831,11 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "2026年中报披露截止日（V1判定点）；预计提前10-15天发布"
+        },
+        {
+          "date": "2026-08-26",
+          "type": "earnings",
+          "note": "[已发生] 2026年中报正式披露，净利润门槛已达标，VC收入同比分项待核实"
         }
       ],
       "links": {
@@ -878,8 +912,8 @@
         "set_by": "daily-scan 2026-07-07"
       },
       "current": {
-        "p": 0.1796,
-        "log_odds": -1.5192,
+        "p": 0.3964,
+        "log_odds": -0.4206,
         "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
@@ -891,7 +925,7 @@
           "confirm_if": "中报归母净利润 ≥ 11亿元（达业绩预告下限）且Q2单季净利 ≥ 7.6亿元",
           "falsify_if": "中报归母净利润 < 9亿元（低于预告下限18%）或Q2单季净利 < 6亿元",
           "check_by": "2026-08-31",
-          "status": "pending"
+          "status": "met"
         },
         {
           "id": "V2",
@@ -1115,6 +1149,18 @@
           },
           "pending": false,
           "review_note": "8/11-8/14价格回升至14.2-14.7万且期货主力+2.87%，补搜确认8/14现货运行于14.5-15.1万区间高位企稳，脱离证伪区间，判weak_support；H1业绩预告(净利+710~857%)发布于7/6入池前，已计入prior，不重复计入"
+        },
+        {
+          "id": "E12",
+          "date": "2026-08-26",
+          "type": "T1_hard_financial",
+          "summary": "2026年中报正式披露：归母净利润12.16亿元(+795.48% YoY，达confirm门槛11亿)，Q2单季净利8.77亿元(+1545.14% YoY，达confirm门槛7.6亿)，营收67.09亿元(+96.02%)，锂业务收入49.28亿元(+179.36%)。V1 required条件两项quant门槛均清晰达标，判定decisive。",
+          "pending": false,
+          "likelihood": {
+            "label": "strong_support",
+            "lr": 3.0,
+            "log_lr": 1.0986
+          }
         }
       ],
       "posterior_history": [
@@ -1149,6 +1195,11 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "2026年中报披露截止日（V1判定点）；预计提前10-15天（约8-15前后）发布"
+        },
+        {
+          "date": "2026-08-26",
+          "type": "earnings",
+          "note": "[已发生] 2026年中报正式披露，V1 required条件(净利≥11亿且Q2≥7.6亿)已达标，status=met"
         }
       ],
       "links": {
@@ -1294,6 +1345,18 @@
           },
           "pending": false,
           "review_note": "review-input.json建议标签weak_support，予以采纳；本周首次记账价格证据"
+        },
+        {
+          "id": "E3",
+          "date": "2026-08-27",
+          "type": "T1_hard_financial",
+          "summary": "2026年中报正式披露：归母净利润4026.67万元(同比扭亏，上年同期亏损4925.07万元，达V1门槛3800万但缓冲仅约6%)，Q2单季净利5989.68万元(+320.63%)，营收4.36亿元(+85.99%)。公司同步上修Q1-Q3业绩预告至6500-7000万元，H2出货展望转强，但'管理层指引H2出货量继续增长'的quant门槛缓冲偏薄，未评级，留周复核。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -1328,6 +1391,11 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "2026年中报披露截止日（V1判定点）；预计提前10-15天（约8-15前后）发布"
+        },
+        {
+          "date": "2026-08-27",
+          "type": "earnings",
+          "note": "[已发生] 2026年中报披露+Q3预告上修，净利润门槛达标但缓冲薄，待周复核定档"
         }
       ],
       "links": {
@@ -1395,8 +1463,8 @@
         "set_by": "daily-scan 2026-07-10"
       },
       "current": {
-        "p": 0.1127,
-        "log_odds": -2.0638,
+        "p": 0.3883,
+        "log_odds": -0.4544,
         "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
@@ -1408,7 +1476,7 @@
           "confirm_if": "Q4营收YoY ≥ +22%（兑现全年指引下限）且FY26全年non-GAAP EPS ≥ $2.60",
           "falsify_if": "Q4营收YoY < +10% 或 FY26全年non-GAAP EPS < $2.00（指引大幅下调）",
           "check_by": "2026-11-15",
-          "status": "pending"
+          "status": "met"
         },
         {
           "id": "V2",
@@ -1553,6 +1621,18 @@
           },
           "pending": false,
           "review_note": "review-input.json建议weak_against，但价格类证据生命周期|Σ log_lr|已达0.8110（E5+E6），若再计入0.4055将突破1.10封顶，故本条强制降为neutral并仅记录（capped），不再计入LR"
+        },
+        {
+          "id": "E8",
+          "date": "2026-10-06",
+          "type": "T1_hard_financial",
+          "summary": "Q4 FY26财报(8-K+财报电话会，非原计划10/13，实际提前至10/6)：Q4净销售额$567M(+68% YoY，远超confirm门槛+22%)；FY26全年净销售额$1.73B(+26% YoY)；FY26全年non-GAAP稀释EPS $2.87(+51% YoY，超confirm门槛$2.60)。FY27全年指引中值约$2.43B(+40%)。V1 required条件两项quant门槛均大幅超越，判定decisive。",
+          "pending": false,
+          "likelihood": {
+            "label": "decisive_support",
+            "lr": 5.0,
+            "log_lr": 1.6094
+          }
         }
       ],
       "posterior_history": [
@@ -1587,6 +1667,11 @@
           "date": "2026-10-13",
           "type": "earnings",
           "note": "Q4 FY26财报（Yahoo官方排期确认2026-10-13）— V1/V2判定点"
+        },
+        {
+          "date": "2026-10-06",
+          "type": "earnings",
+          "note": "[已发生] Q4 FY26财报(提前至10/6发布)，V1 required条件(Q4营收YoY≥+22%且FY26 EPS≥$2.60)已大幅达标，status=met。下一次财报(Yahoo排期2027-01-05)"
         }
       ],
       "links": {
@@ -1763,6 +1848,18 @@
           },
           "pending": false,
           "review_note": "价格证据tier上限约束(0.67-1.5)，建议标签降级采纳；生命周期价格类log_lr累计至0.8109，未超1.10封顶"
+        },
+        {
+          "id": "E5",
+          "date": "2026-08-28",
+          "type": "T1_hard_financial",
+          "summary": "2026年中报正式披露：扣非净利润1.11亿元(+70.76% YoY，达V1门槛1.05亿)，归母净利1.04亿元(+57.20%)，营收13.56亿元(+24.17%)。'管理层指引H2 AI服务器电极箔出货量继续增长'的定性分项未查实到具体披露，未评级，留周复核。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -1797,6 +1894,11 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "H1 2026中报披露截止日（V1判定点）；预计提前10-15天（约8-15前后）发布"
+        },
+        {
+          "date": "2026-08-28",
+          "type": "earnings",
+          "note": "[已发生] 2026年中报披露，扣非净利门槛达标，管理层H2指引分项待核实"
         }
       ],
       "links": {
@@ -1974,6 +2076,18 @@
           },
           "pending": false,
           "review_note": "行业级证据从严按T3计（非公司专属披露），支撑V1/V2背景但不直接验证公司自身订单"
+        },
+        {
+          "id": "E5",
+          "date": "2026-08-28",
+          "type": "T1_hard_financial",
+          "summary": "2026年中报正式披露：归母净利润4155.69万元(+61.5% YoY，达V1门槛4000万)，扣非净利3997万元(+67.6%，达V1门槛3800万但缓冲仅约5%，精度紧)。'管理层指引H2订单仍充足'未查实具体披露。未评级，留周复核；扣非缓冲极薄需正式财报PDF复核精确值。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -2008,6 +2122,11 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "H1 2026中报披露截止日（V1判定点）；预计提前10-15天（约8-15前后）发布"
+        },
+        {
+          "date": "2026-08-28",
+          "type": "earnings",
+          "note": "[已发生] 2026年中报披露，净利/扣非门槛均达标但缓冲薄(尤其扣非)，待周复核核实精确值"
         }
       ],
       "links": {
@@ -2185,6 +2304,18 @@
           },
           "pending": false,
           "review_note": "补搜确认珠海工业用地(44,354㎡，可建约11万㎡)由子公司智测科技以自有资金+银行贷款出资，用于产能扩建，但未披露具体新增产能数字/投产时间表；SSTI整合已于1月完成、菲莱9亿并购仍在进行中未披露新进展；按T2供应端扩产信号弱证据处理，判weak_support；本周价格证据因生命周期封顶(既有0.8109+本次建议0.4055将达1.2164>1.10)不予新增记账"
+        },
+        {
+          "id": "E5",
+          "date": "2026-08-22",
+          "type": "T1_hard_financial",
+          "summary": "H1 2026扣非归母净利润约1.09-1.1亿元(+82.71%~84%，接近/略超V1门槛10900万)，营收7.15亿元(+55.30%)。注：数据来源为业绩预告/快报口径，非最终定稿审计半年报数字，且与confirm门槛非常接近，精度存疑。'管理层H2检测设备出货指引'未查实。未评级，留周复核并建议核实正式半年报PDF精确值。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -2219,6 +2350,11 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "H1 2026中报披露截止日（V1判定点）；预计提前10-15天（约8-15前后）发布"
+        },
+        {
+          "date": "2026-08-22",
+          "type": "earnings",
+          "note": "[业绩预告/快报口径] H1扣非净利约1.09-1.1亿，贴近confirm门槛(10900万)，需核实正式审计数字"
         }
       ],
       "links": {
@@ -2380,6 +2516,18 @@
           },
           "pending": false,
           "review_note": "review-input.json建议moderate_support，但价格类证据生命周期|Σ log_lr|已达0.8110（E1+E2），继续计入将突破1.10封顶，故本条强制降为neutral并仅记录（capped）"
+        },
+        {
+          "id": "E4",
+          "date": "2026-08-26",
+          "type": "T1_hard_financial",
+          "summary": "2026年中报正式披露：归母净利润8.63亿元(+619.50% YoY，达V1门槛8.2亿)，扣非净利7.12亿元(+644.14%)，营收26.58亿元(+89.43%，达V1门槛26.2亿)，Q2单季净利6.43亿元。'管理层H2出货/收入指引'未查实具体披露文本。quant门槛均达标，未评级(定性分项待核实)，留周复核。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -2414,6 +2562,11 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "H1 2026中报披露截止日（V1判定点）；预计提前10-15天（约8-15前后）发布，通常先发业绩快报"
+        },
+        {
+          "date": "2026-08-26",
+          "type": "earnings",
+          "note": "[已发生] 2026年中报披露，净利/营收quant门槛均达标，管理层H2指引分项待核实"
         }
       ],
       "links": {
@@ -2624,6 +2777,18 @@
           },
           "pending": false,
           "review_note": "政策利好但仍处起草阶段+对公司影响间接（非直接客户订单披露），从严按T3计weak_support；补搜未见腾景公司层面新增合同或Coherent OCS项目延迟信号"
+        },
+        {
+          "id": "E7",
+          "date": "2026-08-28",
+          "type": "T1_hard_financial",
+          "summary": "2026年中报正式披露：归母净利润5008.21万元(+36.88% YoY)，扣非净利约4967.39万元(+43.46%，达V1门槛4800万)。'剔除股权激励(¥2534万)后归母净利润≥6900万'的V1第二项分项未查实到对应披露数字，无法核实整条confirm_if是否全部满足。falsify_if(扣非<3800万)未触发。未评级，留周复核。另：公司已预告Q3净利同比+61.68%~76.38%，H2动能延续。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -2658,6 +2823,11 @@
           "date": "2026-08-29",
           "type": "earnings",
           "note": "公司官方确认H1 2026中报预约披露日期为2026-08-29（V1判定点）"
+        },
+        {
+          "date": "2026-08-28",
+          "type": "earnings",
+          "note": "[已发生] 2026年中报披露，扣非门槛达标，'剔除股权激励后净利'分项待核实"
         }
       ],
       "links": {
@@ -2731,8 +2901,8 @@
         "set_by": "daily-scan 2026-07-27"
       },
       "current": {
-        "p": 0.32,
-        "log_odds": -0.7538,
+        "p": 0.5854,
+        "log_odds": 0.3448,
         "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
@@ -2744,7 +2914,7 @@
           "confirm_if": "扣非净利润 >= 1.4亿元（基本达预告下限）且营业收入 >= 6.8亿元",
           "falsify_if": "扣非净利润 < 1.0亿元（较预告下修超30%）或管理层/公告确认MCU价格出现回落",
           "check_by": "2026-08-31",
-          "status": "pending"
+          "status": "met"
         },
         {
           "id": "V2",
@@ -2786,7 +2956,20 @@
         "set_at": "2026-07-27",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-08-16",
+          "type": "T1_hard_financial",
+          "summary": "2026年中报正式披露：扣非净利润1.59亿元(+109.7% YoY，达confirm门槛1.4亿)，营收7.26亿元(+44.0%，达confirm门槛6.8亿，但缓冲较薄约6.8%)。未见MCU价格回落报道，falsify_if未触发。V1 required条件达标。",
+          "pending": false,
+          "likelihood": {
+            "label": "strong_support",
+            "lr": 3.0,
+            "log_lr": 1.0986
+          }
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-07-27",
@@ -2814,6 +2997,11 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "2026年中报披露截止日（V1判定点）；预计提前至8月中旬发布"
+        },
+        {
+          "date": "2026-08-16",
+          "type": "earnings",
+          "note": "[已发生] 2026年中报正式披露，V1 required条件(扣非≥1.4亿且营收≥6.8亿)已达标，status=met"
         }
       ],
       "links": {
@@ -2975,6 +3163,18 @@
           "pending": false,
           "review_note": "与E1同一定增披露流程的后续公告(不提供财务资助声明/股价稳定预案/募集说明书草案/董事会决议)，同源事件correlates_with E1，强制neutral",
           "correlates_with": "E1"
+        },
+        {
+          "id": "E3",
+          "date": "2026-08-29",
+          "type": "T1_hard_financial",
+          "summary": "2026年中报：归母净利润4192.64万元(+725.55% YoY，达V1门槛4000万但缓冲仅约4.8%)，扣非净利2732.82万元(+505.28%，扣非口径明显低于归母)，营收9.46亿元(+106.76%)，算力服务收入占94.62%。'管理层H2营收/产能利用率量化指引'未查实具体披露。缓冲薄+扣非与归母差异大，未评级，留周复核。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -3004,6 +3204,11 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "2026年中报法定披露截止日（预计提前披露）— V1判定点"
+        },
+        {
+          "date": "2026-08-29",
+          "type": "earnings",
+          "note": "[已发生] 2026年中报披露，归母净利门槛达标但缓冲薄，扣非口径明显偏低，待周复核"
         }
       ],
       "links": {
@@ -3202,6 +3407,18 @@
           },
           "pending": false,
           "review_note": "价格证据tier上限约束，建议标签降级采纳；生命周期价格类log_lr累计至0.8109，未超1.10封顶"
+        },
+        {
+          "id": "E5",
+          "date": "2026-08-25",
+          "type": "T1_hard_financial",
+          "summary": "2026年中报正式披露：归母净利润1.59亿元(+2662.38% YoY，达V1门槛1.4亿)，扣非净利1.15亿元(上年同期亏损1317.45万元，实现扭亏)，营收14.78亿元(+19.46%)。公司对H2产能满产满销/价格展望的具体确认未查实到独立披露文本。未评级，留周复核。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -3231,6 +3448,11 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "2026年中报法定披露截止日（预计提前10-15天披露）— V1判定点"
+        },
+        {
+          "date": "2026-08-25",
+          "type": "earnings",
+          "note": "[已发生] 2026年中报披露，净利门槛达标，H2满产满销定性确认待核实"
         }
       ],
       "links": {
@@ -3316,7 +3538,7 @@
           "metric": "FY2027 Q1（截止约2026年8月28日，预计10月初发布）营收同比增速及管理层对FY27全年指引($1.3-1.5亿)的重申/修订",
           "confirm_if": "Q1 FY27营收同比增速 ≥ +100% 且管理层重申或上修FY27全年指引",
           "falsify_if": "Q1 FY27营收同比增速 < +50% 或管理层下修FY27全年指引",
-          "check_by": "2026-10-15",
+          "check_by": "2026-11-02",
           "status": "pending"
         },
         {
@@ -3430,6 +3652,18 @@
           },
           "pending": true,
           "review_note": "补搜发现的sell-side首次覆盖，pending待周复核评级；不影响V1/V2 required判定"
+        },
+        {
+          "id": "E6",
+          "date": "2026-10-07",
+          "type": "T1_hard_financial",
+          "summary": "10/7 8-K披露FY2026 Q4/全年财报(非原V1所需的FY27 Q1数字，公司因财年结束日调整，FY27 Q1正式报告改期至2026-11-02)：FY26 Q4营收$18.84M，净利润$1.39M；FY26全年营收$50.00M，净亏损$7.13M；Q4创纪录预订$60.70M，backlog超$80M；FY2027营收指引$130M-$150M。V1所需的'FY27 Q1营收同比增速'尚未公布，check_by据此从2026-10-15校正为2026-11-02(实际报告日)。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -3459,6 +3693,11 @@
           "date": "2026-10-08",
           "type": "earnings",
           "note": "Q1 FY2027财报（Yahoo官方排期确认2026-10-08）— V1判定点"
+        },
+        {
+          "date": "2026-11-02",
+          "type": "earnings",
+          "note": "FY2027 Q1财报改期至此日发布(原预计10/8)，为V1判定点；FY26全年/backlog数据已于10/7披露，方向积极"
         }
       ],
       "links": {
@@ -3526,8 +3765,8 @@
         "set_by": "daily-scan 2026-08-03"
       },
       "current": {
-        "p": 0.6137,
-        "log_odds": 0.4627,
+        "p": 0.8265,
+        "log_odds": 1.5613,
         "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
@@ -3539,7 +3778,7 @@
           "confirm_if": "营收YoY ≥ +100% 且归母净利润 ≥ 2.7亿元（兑现预告下限）",
           "falsify_if": "营收YoY < +80% 或归母净利润 < 2.0亿元（较预告下限大幅缩水）",
           "check_by": "2026-08-31",
-          "status": "pending"
+          "status": "met"
         },
         {
           "id": "V2",
@@ -3620,6 +3859,18 @@
           },
           "pending": false,
           "review_note": "review-input.json建议weak_support，予以采纳；本条为该假设首条价格证据"
+        },
+        {
+          "id": "E4",
+          "date": "2026-08-27",
+          "type": "T1_hard_financial",
+          "summary": "2026年中报正式披露：营收14.63亿元(+112.66% YoY，达confirm门槛+100%)，归母净利润3.5亿元(+1419.20%，达confirm门槛2.7亿)，扣非净利约3.353亿元(+2094.60%)。V1 required条件两项quant门槛均清晰达标且缓冲充足。",
+          "pending": false,
+          "likelihood": {
+            "label": "strong_support",
+            "lr": 3.0,
+            "log_lr": 1.0986
+          }
         }
       ],
       "posterior_history": [
@@ -3644,6 +3895,11 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "H1 2026正式中报法定披露截止（预计8月中下旬提前发布）— V1判定点"
+        },
+        {
+          "date": "2026-08-27",
+          "type": "earnings",
+          "note": "[已发生] 2026年中报正式披露，V1 required条件(营收YoY≥+100%且净利≥2.7亿)已达标，status=met。注：账本重算后验可能已接近/超过confirmed迁移门槛(0.75)，需weekly-review确认状态迁移。"
         }
       ],
       "links": {
@@ -3711,8 +3967,8 @@
         "set_by": "daily-scan 2026-08-03"
       },
       "current": {
-        "p": 0.3,
-        "log_odds": -0.8473,
+        "p": 0.4615,
+        "log_odds": -0.1542,
         "last_reviewed": "2026-08-15",
         "recomputed_from_ledger": true
       },
@@ -3724,7 +3980,7 @@
           "confirm_if": "营业收入YoY ≥ +45% 且归母净利润 ≥ 950万元（兑现预告下限，实现扭亏）",
           "falsify_if": "营业收入YoY < +30% 或归母净利润未能转正（仍为亏损）",
           "check_by": "2026-08-31",
-          "status": "pending"
+          "status": "met"
         },
         {
           "id": "V2",
@@ -3789,6 +4045,18 @@
           },
           "pending": false,
           "review_note": "review-input.json按excess≤-30%建议moderate_against，P_price tier LR下限0.67，降级采纳为weak_against"
+        },
+        {
+          "id": "E3",
+          "date": "2026-08-26",
+          "type": "T1_hard_financial",
+          "summary": "2026年中报正式披露：营业收入4.11亿元(+51.21% YoY，达confirm门槛+45%)，归母净利润1173.20万元(同比扭亏为盈，上年同期亏损1748.16万元，达confirm门槛950万)。V1 required条件达标，缓冲中等(营收+13.8%，净利+23.5%)。",
+          "pending": false,
+          "likelihood": {
+            "label": "moderate_support",
+            "lr": 2.0,
+            "log_lr": 0.6931
+          }
         }
       ],
       "posterior_history": [
@@ -3813,6 +4081,11 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "H1 2026正式中报法定披露截止 — V1判定点"
+        },
+        {
+          "date": "2026-08-26",
+          "type": "earnings",
+          "note": "[已发生] 2026年中报正式披露，V1 required条件(营收YoY≥+45%且净利≥950万且转正)已达标，status=met"
         }
       ],
       "links": {
@@ -4115,7 +4388,20 @@
         "set_at": "2026-08-07",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-08-27",
+          "type": "T1_hard_financial",
+          "summary": "2026年中报正式披露：营收2.8亿元(+53.2% YoY)，归母净利润1.11亿元(+106.2%)，扣非净利1.08亿元(+131.5%，达V1门槛+90%)。'工业纯化业务收入同比增速≥50%'的V1第二项分项未查实到独立披露数字(仅有叙事性描述'工业纯化板块成为增长核心引擎')。公司已预告前三季度净利1.58-1.68亿元(+70%~80%)，H2动能延续。未评级，留周复核。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-08-07",
@@ -4138,6 +4424,11 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "2026年半年度正式报告法定截止日（业绩预告已于8/6披露，此为V1正式判定点）"
+        },
+        {
+          "date": "2026-08-27",
+          "type": "earnings",
+          "note": "[已发生] 2026年中报披露，扣非净利门槛达标，工业纯化分部同比增速待核实"
         }
       ],
       "links": {
@@ -4403,6 +4694,18 @@
             "log_lr": null
           },
           "pending": true
+        },
+        {
+          "id": "E2",
+          "date": "2026-10-21",
+          "type": "T1_hard_financial",
+          "summary": "新增$220M循环信贷额度(替换原$135M额度)，约9/30完成；10/21宣布'PSI 2.0'品牌重塑及'Power Boost 2030'战略，明确聚焦数据中心电源业务。为定性积极信号(资本结构增强+战略聚焦数据中心)，非V1所需的量化营收/订单数字，Q3财报(11/5)仍为V1判定点。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -4422,6 +4725,11 @@
           "date": "2026-11-05",
           "type": "earnings",
           "note": "2026年Q3财报(预估，约11月初发布(profiles.json校正为11/05)) — V1判定点"
+        },
+        {
+          "date": "2026-10-21",
+          "type": "corporate_action",
+          "note": "新增$220M信贷额度+品牌重塑聚焦数据中心电源战略，Q3财报(11/5)为V1判定点"
         }
       ],
       "links": {
@@ -4501,7 +4809,7 @@
           "metric": "2026年Q3财报(Yahoo确认2026-11-03)ACV+royalties同比增速及design starts趋势",
           "confirm_if": "ACV+royalties同比增速维持在35%以上，design starts保持两位数同比增长",
           "falsify_if": "ACV+royalties同比增速降至15%以下，或design starts同比转负",
-          "check_by": "2026-11-03",
+          "check_by": "2026-11-05",
           "status": "pending"
         },
         {
@@ -4535,7 +4843,20 @@
         "set_at": "2026-08-11",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-10-06",
+          "type": "T2_supply_chain",
+          "summary": "10/6公告与BAE Systems、SiFive合作扩展硬件IP安全保障项目(政府资助，面向航空航天/国防半导体供应链安全)，为design-win邻近型生态信号，非量化design win数字。Q3财报(Yahoo确认2026-11-05，较此前估计11-03校正)仍为V1判定点。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-08-11",
@@ -4553,6 +4874,11 @@
           "date": "2026-11-03",
           "type": "earnings",
           "note": "2026年Q3财报(Yahoo官方排期确认2026-11-03) — V1判定点"
+        },
+        {
+          "date": "2026-10-06",
+          "type": "partnership",
+          "note": "与BAE Systems/SiFive扩展政府资助硬件IP安全项目；Q3财报日期校正为2026-11-05(Yahoo官方排期)"
         }
       ],
       "links": {
@@ -4698,6 +5024,18 @@
           },
           "pending": false,
           "review_note": "本周首次记账价格证据，review-input建议标签直接采纳"
+        },
+        {
+          "id": "E3",
+          "date": "2026-08-30",
+          "type": "T1_hard_financial",
+          "summary": "2026年中报正式披露：营收2.32亿元(+18.73% YoY，落在falsify线10.34%与confirm线27.71%之间的灰区偏下半区)，归母净利润907.66万元(同比-50.04%，增收不增利，为原confirm/falsify框架未覆盖的新增负面信号)。工业端(CRO/创新药企)收入占比提升的具体信息未查实。未触发falsify_if，但净利大幅下滑值得关注，留周复核重点评估。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -4717,6 +5055,11 @@
           "date": "2026-08-31",
           "type": "earnings",
           "note": "2026年中报法定披露截止日（业绩预告已自愿披露）— V1判定点"
+        },
+        {
+          "date": "2026-08-30",
+          "type": "earnings",
+          "note": "[已发生] 2026年中报披露，营收增速落入灰区(未达confirm/未触falsify)，净利同比-50%为新增负面信号，需周复核重点评估"
         }
       ],
       "links": {
@@ -4802,7 +5145,7 @@
           "metric": "2026Q3财报(预计2026年11月初)特钢产品毛利率环比变化及A&D板块积压订单同比增速",
           "confirm_if": "Q3毛利率环比2026Q2出现改善(即使幅度有限)，且A&D积压订单同比增速维持在60%以上",
           "falsify_if": "Q3毛利率环比走平或下滑(提价未能覆盖成本上行)，或A&D积压订单同比增速回落至30%以下",
-          "check_by": "2026-11-09",
+          "check_by": "2026-11-02",
           "status": "pending"
         },
         {
@@ -4836,7 +5179,20 @@
         "set_at": "2026-08-13",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-09-29",
+          "type": "T1_hard_financial",
+          "summary": "9/29公告获美国国防后勤局(DLA)特种钢合同，合同上限$995M，首批交付订单约$125M；10/5股价+5.78%至$21.04；Sidoti上调Q1 FY27 EPS预测至$0.30；公司此前Q2电话会重申2026年底前A&D年化营收run-rate目标$2.5亿+。为A&D订单积压验证条件(V2)的有力supply-chain级旁证，但非Q3正式财报数字。Q3财报日期经profiles.json(Yahoo)校正为2026-11-02(较此前预估11-09更早)。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-08-13",
@@ -4854,6 +5210,11 @@
           "date": "2026-11-09",
           "type": "earnings",
           "note": "预估2026Q3财报日期(季度末+40天)，待Yahoo官方排期确认后校正 — V1判定点"
+        },
+        {
+          "date": "2026-09-29",
+          "type": "contract_award",
+          "note": "获DLA特种钢合同上限$995M(首批交付订单~$125M)；Q3财报日期校正为2026-11-02(Yahoo官方排期，早于此前预估)"
         }
       ],
       "links": {
@@ -4973,7 +5334,20 @@
         "set_at": "2026-08-13",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-10-01",
+          "type": "T2_supply_chain",
+          "summary": "新增多项政府/执法订单信号：丹麦国防采购机构选定XplorIR平台(长程化学检测框架协议)；德州刑事司法部扩大MX908州级部署；约$6M ProtectIR亚太地区矫正系统订单(Q3/Q4分摊)；AVCAD(美国防部)项目方向性澄清预计约10/1。均为定性积极的新增订单信号，非量化产品收入同比数字，Q3财报仍为V1判定点。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-08-13",
@@ -4991,6 +5365,11 @@
           "date": "2026-11-10",
           "type": "earnings",
           "note": "CY26Q3财报（Yahoo官方排期确认2026-11-10）— V1判定点"
+        },
+        {
+          "date": "2026-10-01",
+          "type": "order_win",
+          "note": "新增丹麦国防/德州矫正系统/APAC订单等多项政府采购信号，Q3财报为V1判定点"
         }
       ],
       "links": {
@@ -5110,7 +5489,20 @@
         "set_at": "2026-08-19",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-10-09",
+          "type": "T1_hard_financial",
+          "summary": "10/9 8-K披露：公司预计截至2026-09-30季度'达到或超过'此前发布指引，但明确为初步/未经审计口径，待审计完成后公布正式数字(V1判定仍需正式财报，预计2026-11-09)。同日CFO William White离职，CAO Hiral Patel获任临时首席财务负责人；Lake Street上调目标价$24→$29。初步指引方向正面但伴随CFO变动，混合信号，未评级。",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-08-19",
@@ -5123,6 +5515,263 @@
           "date": "2026-11-09",
           "type": "earnings",
           "note": "FY2027 Q2财报（Yahoo官方排期确认2026-11-09）— V1判定点"
+        },
+        {
+          "date": "2026-10-09",
+          "type": "guidance_revision",
+          "note": "8-K披露初步指引'达到或超过预期'(未审计)，同日CFO离职；正式Q2 FY27财报(11/9)为V1判定点"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20261026-688410.SS",
+      "ticker": "688410.SS",
+      "company": "重庆山外山血液净化技术股份有限公司",
+      "created_at": "2026-10-26",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-10-26",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：10/24前三季度业绩预告归母净利1.51-1.67亿元(+44%~59% YoY)，自产耗材放量驱动"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-10-24",
+          "headline": "山外山发布2026年前三季度业绩预告：预计归母净利润1.51-1.67亿元，同比+44.23%~59.41%",
+          "url": "https://stockpage.10jqka.com.cn/688410/event/",
+          "summary": "自产血透耗材放量+单位成本下降驱动扣非净利1.37-1.51亿元(+51%~94%)"
+        }
+      ],
+      "thesis": {
+        "one_liner": "血透耗材自产放量+规模效应将在1-2个季度内持续改写其净利率结构",
+        "demand_change": "自产血透耗材(透析器/灌流器/透析液)销量占比持续提升，单位固定成本随产量摊薄下降，前三季度扣非净利润同比预增51%~94%，连锁血透中心网络同步扩张，为已观察到的经营杠杆兑现，非一次性因素。",
+        "transmission": "自产耗材毛利率显著高于外购耗材，耗材收入占比提升直接拉高综合毛利率；'设备导入+耗材复购+连锁透析中心运营'的组合模式驱动净利率结构性改善，体现在扣非净利增速(51%~94%)远超营收增速。",
+        "misclassification": "市场仍把山外山当作一家科创板'小众医疗设备制造商'定价，忽略其正从单一设备销售转型为'设备+耗材复购+连锁透析中心'的高粘性订阅式商业模式，耗材复购收入的确定性和持续性被低估。",
+        "brief_cn": [
+          "①10/24公司发布2026年前三季度业绩预告：预计归母净利润1.51-1.67亿元(同比+44.23%~59.41%)，扣非净利润1.37-1.51亿元(同比约+51%~94%)。",
+          "②需求变化已可观察：国产血透设备龙头地位稳固，自产透析器/灌流器等耗材销量快速放量，耗材复购带来的规模效应使单位固定成本下降，叠加产品结构持续高端化，推动净利率结构性改善，而非一次性因素驱动。",
+          "③市场误分类：当前仍以'设备制造商'的估值框架给山外山定价，但公司商业模式已转向'设备导入+耗材复购+连锁血透中心'的订阅式结构，这种收入可预测性和粘性尚未被充分计入估值。",
+          "④先验给到0.40(七维总分30，属于>30罕见区间但未顶格)，扣分项：连锁血透中心业务仍处早期扩张阶段，行业集采控费是持续性尾部风险，且预告已部分price in；赌的是三季报(10/31前，已被预告基本锚定)能否兑现，以及未来1-2个季度自产耗材占比继续提升的确定性。"
+        ],
+        "serenity_score": {
+          "demand_certainty": 4,
+          "transmission_clarity": 4,
+          "purity": 5,
+          "elasticity": 5,
+          "neglect": 3,
+          "verification_speed": 5,
+          "downside": 4
+        }
+      },
+      "prior": {
+        "p": 0.4,
+        "log_odds": -0.4055,
+        "rationale": "七维总分30 → >30罕见区间(0.38-0.45)，取0.40（非顶格，因连锁透析中心仍早期+预告已部分price in）",
+        "set_by": "daily-scan 2026-10-26"
+      },
+      "current": {
+        "p": 0.4,
+        "log_odds": -0.4055,
+        "last_reviewed": "2026-10-26",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026年前三季度正式季报(法定10-31前披露)归母净利润及扣非净利润",
+          "confirm_if": "归母净利润 >= 1.51亿元 且 扣非净利润 >= 1.37亿元（均达预告下限）",
+          "falsify_if": "归母净利润 < 1.2亿元（低于预告下限20%）或 扣非净利润 < 1.05亿元（低于预告下限23%，预告不兑现）",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "自产耗材收入占比及综合毛利率同比变化（年报/电话会披露）",
+          "confirm_if": "管理层披露自产耗材收入占比同比继续提升，或综合毛利率同比扩大",
+          "falsify_if": "管理层披露耗材放量不及预期，或毛利率同比走平/下滑",
+          "check_by": "2027-01-31",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-04-30"
+      },
+      "baseline": {
+        "entry_date": "2026-10-26",
+        "entry_price": 10.33,
+        "benchmark": "510300.SS",
+        "benchmark_entry_price": 4.178,
+        "sector_benchmark": "512010.SS",
+        "sector_benchmark_entry_price": 0.376
+      },
+      "price_expectation": {
+        "confirm_target": 17.0,
+        "falsify_target": 6.5,
+        "methodology_cn": "证实情景：Q1-Q3归母净利润1.51-1.67亿元，按血透设备Q4通常为全年旺季(医院年度采购/预算周期)估算FY26E全年净利润约2.0-2.3亿元，给予35x成长期医疗器械小盘股PE(可比血透/透析耗材公司成长期估值区间30-40x)=目标市值约70-80亿元÷总股本4.47亿股≈16-18元，取17.0元。证伪情景：若Q3实际低于预告下限，FY26E净利润回落至约1.3-1.5亿元，给予非成长期器械股18-20x中枢估值=目标市值约26-30亿元÷4.47亿股≈5.8-6.7元，取6.5元。",
+        "timeline_logic_cn": "三季报(10/31法定截止前，预计10/28前后发布)为V1判定点；预告已部分price in，正式数字公布后市场通常需2-4周消化年报展望与机构覆盖跟进，故expected_by设在12月中。",
+        "expected_by": "2026-12-15",
+        "set_at": "2026-10-26",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-10-26",
+          "p": 0.4,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-10-31",
+          "type": "earnings",
+          "note": "2026年前三季度正式季报法定披露截止日(预计10月28日前后提前披露) — V1判定点"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20261026-301563.SZ",
+      "ticker": "301563.SZ",
+      "company": "上海云汉芯城电子科技股份有限公司",
+      "created_at": "2026-10-26",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-10-26",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：10/23前三季度业绩预增归母净利3.35-3.71亿元(+312%~355% YoY)，电子元器件行业上行周期驱动平台GMV放量"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-10-23",
+          "headline": "业绩炸裂！云汉芯城(301563)发布前三季度预增公告：归母净利3.35-3.71亿元，同比+312%~355%",
+          "url": "http://stock.10jqka.com.cn/20261024/c681051266.shtml",
+          "summary": "半导体/电子元器件上行周期驱动平台GMV放量，Q3单季净利同比+545%~613%，环比持续加速"
+        }
+      ],
+      "thesis": {
+        "one_liner": "半导体上行周期驱动平台GMV放量将在1-2个季度内持续改写其净利率结构",
+        "demand_change": "10/23公司发布前三季度业绩预增公告：归母净利润同比+312%~355%，其中Q3单季同比+545%~613%，环比Q1(0.52亿)→Q2(1.14亿)→Q3(1.78-1.96亿)连续加速，反映电子元器件行业上行周期中平台GMV/订单量持续放量，而非一次性因素。",
+        "transmission": "作为电子元器件B2B数字化交易/代理分销平台('芯晶采'智能采购平台)，行业上行周期直接转化为平台GMV和订单数量增长，进而带动代理分销毛利及规模效应释放，体现为净利率同比大幅改善。",
+        "misclassification": "市场仍倾向把云汉芯城当作一家'电子元器件代理贸易商'按低毛利贸易商逻辑定价，但其智能采购平台+技术资料库+国产化替代支持服务正在使其向高附加值产业互联网平台转型，平台化带来的规模效应和客户粘性尚未被充分计入估值。",
+        "brief_cn": [
+          "①10/23晚公司发布2026年前三季度业绩预增公告：预计归母净利润3.35-3.71亿元(同比+311.65%~354.98%)，其中Q3单季1.78-1.96亿元(同比+545%~613%)。",
+          "②需求变化已可观察：全球电子元器件行业处于上行周期，公司平台GMV/订单量/客户数持续增长，季度净利润环比加速，是平台化规模效应兑现而非单季度异常。",
+          "③市场误分类：当前仍按'电子元器件贸易商'的低毛利估值框架定价，但公司智能采购平台化转型带来的客户粘性与规模效应尚未被充分定价。",
+          "④先验给到0.28(七维总分24，标准新闻驱动假设档)，扣分项：预增公告发布前两个交易日股价已累计上涨超30%，存在提前消化/信息提前流出的风险，关注度窗口可能已经收窄；赌的是正式三季报(10/31前)数字确认预告区间，以及Q4平台GMV增速能否维持。"
+        ],
+        "serenity_score": {
+          "demand_certainty": 4,
+          "transmission_clarity": 4,
+          "purity": 4,
+          "elasticity": 3,
+          "neglect": 2,
+          "verification_speed": 4,
+          "downside": 3
+        }
+      },
+      "prior": {
+        "p": 0.28,
+        "log_odds": -0.9446,
+        "rationale": "七维总分24 → 21-25标准档(0.22-0.32)，取0.28（扣分：预告前已现两日+30%异动，neglect窗口收窄）",
+        "set_by": "daily-scan 2026-10-26"
+      },
+      "current": {
+        "p": 0.28,
+        "log_odds": -0.9446,
+        "last_reviewed": "2026-10-26",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026年前三季度正式季报(法定10-31前披露)归母净利润及扣非净利润",
+          "confirm_if": "归母净利润 >= 3.35亿元 且 扣非净利润 >= 3.28亿元（均达预告下限）",
+          "falsify_if": "归母净利润 < 2.68亿元（低于预告下限20%）或 扣非净利润 < 2.62亿元（预告不兑现）",
+          "check_by": "2026-10-31",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "Q4平台GMV/订单量增速及新客户拓展（年报/电话会披露）",
+          "confirm_if": "管理层披露Q4订单量/GMV同比维持高增长(>=+50%)，或新增重大客户/供应商合作",
+          "falsify_if": "管理层披露Q4订单增速明显放缓(<20%)，或主要客户流失",
+          "check_by": "2027-01-31",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-04-30"
+      },
+      "baseline": {
+        "entry_date": "2026-10-26",
+        "entry_price": 123.52,
+        "benchmark": "510300.SS",
+        "benchmark_entry_price": 4.178,
+        "sector_benchmark": "512480.SS",
+        "sector_benchmark_entry_price": 0.836
+      },
+      "price_expectation": {
+        "confirm_target": 155.0,
+        "falsify_target": 65.0,
+        "methodology_cn": "证实情景：Q1-Q3净利润3.35-3.71亿元，假设Q4维持Q3单季强度(1.8-2.0亿，不额外加速)→FY26E净利润约5.15-5.71亿元，给予25x平台型电子分销成长股PE(当前隐含约19.4x，随业绩验证及确定性提升有望扩至25x)=目标市值约135亿元÷总股本0.8465亿股≈155-160元，取155元。证伪情景：若Q3不及预告下限且Q4增速明显放缓，FY26E净利润回落至约4.0亿元，给予传统电子分销商12x中枢估值(de-rate)=目标市值约48亿元÷0.8465亿股≈56.7元，综合预告前价格平台参考取65元。",
+        "timeline_logic_cn": "正式三季报(10/31法定截止前)为V1判定点；预增公告已引发两日+30%涨幅，存在提前price-in，正式数字确认后市场仍需2-4周消化Q4展望，故expected_by设在12月中。",
+        "expected_by": "2026-12-15",
+        "set_at": "2026-10-26",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-10-26",
+          "p": 0.28,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-10-31",
+          "type": "earnings",
+          "note": "2026年前三季度正式季报法定披露截止日 — V1判定点"
         }
       ],
       "links": {
