@@ -117,6 +117,67 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "OUST Q3财报11/3尚未发布；AUTL自8/11财报后无新增材料消息；301366.SZ三季报(法定10/31截止)尚未检索到已发布版本"
+    },
+    {
+      "date": "2026-10-27",
+      "fingerprint": "2026-10-05+INTT+q3-prebooking-backlog-AI-datacenter-semitest",
+      "headline": "inTest Corp(INTT) 10/5 8-K：Q3订单$48-50M(+28-33% YoY)创纪录，backlog $58-60M(+28-32% QoQ)，book-to-bill>1.3x，AI数据中心驱动半导体后段测试需求",
+      "tickers": [
+        "INTT"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-10-27",
+      "fingerprint": "2026-10-27+cn-forecasts-batch2-reviewed-9-rejected-crowded-or-weak",
+      "headline": "cn-forecasts.json正向候选批量复核(688059.SS华锐精密/688231.SS隆达股份/688827.SS钶锐锶/920085.BJ森峰激光/601969.SS海南矿业/600409.SS三友化工/002466.SZ天齐锂业/000603.SZ盛达资源/001381.SZ皇冠新材/603991.SS领先股份/600188.SS兖矿能源)",
+      "tickers": [
+        "688059.SS",
+        "688231.SS",
+        "688827.SS",
+        "920085.BJ",
+        "601969.SS",
+        "600409.SS",
+        "002466.SZ",
+        "000603.SZ",
+        "001381.SZ",
+        "603991.SS",
+        "600188.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "华锐精密：涨价传导真实但510家机构持仓34.88%流通股、neglect过低；隆达股份：高温合金需求真实但年内股价已+150%、概念板块(高端合金/燃气轮机)已充分炒作；钶锐锶：尚处IPO申购阶段未上市，无法建仓；森峰激光：刚过会北交所IPO，2023-2025净利润持续下滑(1.08亿→0.98亿)，本次仅为略增修复非强劲需求；海南矿业/天齐锂业：业绩增长主因联营公司投资收益或政府补贴等非经常性因素，非纯经营性需求；三友化工：分部业绩分化(纯碱/氯碱下滑对冲化纤/有机硅改善)，传导不清晰；盛达资源：贵金属涨价题材已高度拥挤；皇冠新材：营收个位数增长且利润因成本上升下滑，传导方向相反；领先股份：扭亏主因重大资产重组置入资产而非内生需求；兖矿能源：市值超千亿megacap，neglect为零"
+    },
+    {
+      "date": "2026-10-27",
+      "fingerprint": "2026-10-27+US-CN-macro-themes-algo-capex-copper-clad-already-crowded",
+      "headline": "美股小盘beat-and-raise宏观面扫描(62%指引超预期/84%beat)+A股算力大单/覆铜板连续涨价扫描(申昊科技/弘信电子等超百亿大单、CCL十轮涨价)",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "均为行业级/宏观叙事或已是市场高度关注的consensus标的(算力大单、CCL涨价已被充分报道)，未发现满足入池纪律的新idiosyncratic小盘ticker候选"
+    },
+    {
+      "date": "2026-10-27",
+      "fingerprint": "2026-10-25+PSIX+law-firm-solicitation-stale-march-litigation",
+      "headline": "PSIX多家律所持续发布『investigation/class action』征集公告(10/18-10/25)",
+      "tickers": [
+        "PSIX"
+      ],
+      "action": "skipped_duplicate",
+      "note": "均为律所对2026年3月已披露毛利率崩塌事件的常规征集原告PR，非新增实质性信息，且PSIX当前后验(0.20)已充分反映该已知风险，不记账"
+    },
+    {
+      "date": "2026-10-27",
+      "fingerprint": "2026-10-27+US-pool-5-tickers-pre-earnings-quickcheck-no-new-material",
+      "headline": "池内OUST/AEHR/PSIX/AIP/MTUS临近财报(11/2-11/5)快查：AIP新增$330万政府项目资助用于芯片安全验证业务(非核心thesis)，其余无新增材料消息",
+      "tickers": [
+        "OUST",
+        "AEHR",
+        "PSIX",
+        "AIP",
+        "MTUS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "AIP的政府资助金额小且非核心验证路径相关指标，不单独记账；其余4只ticker无新增可记账信息，等待各自11月初财报"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-10-26",
+  "$last_updated": "2026-10-27",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -5772,6 +5772,139 @@
           "date": "2026-10-31",
           "type": "earnings",
           "note": "2026年前三季度正式季报法定披露截止日 — V1判定点"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20261027-INTT",
+      "ticker": "INTT",
+      "company": "inTest Corporation",
+      "created_at": "2026-10-27",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-10-27",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：10/5 8-K预告Q3订单$48-50M(+28-33% YoY)、backlog $58-60M(+28-32% QoQ)、book-to-bill>1.3x，AI数据中心资本开支驱动半导体后段测试设备需求"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-10-05",
+          "headline": "inTest Corp 8-K: Q3 2026业务预告，订单破纪录+backlog大幅扩张，book-to-bill>1.3x",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001036262/000103626226000057/intt-20261005xpaexx991.htm",
+          "summary": "Q3订单$48-50M(+28-33%)，backlog $58-60M(+28-32% QoQ)，收入指引高位，AI数据中心驱动电子测试需求"
+        },
+        {
+          "date": "2026-10-26",
+          "headline": "Northland上调inTest目标价至$17，维持Outperform；股价年内+90.8%",
+          "url": "https://www.gurufocus.com/news/9143396/is-intest-corp-intt-overvalued-after-36-rally-gf-value-says-overvalued",
+          "summary": "分析师上调目标价确认预告可信度，但股价已反映部分预期，年内涨幅90.8%"
+        }
+      ],
+      "thesis": {
+        "one_liner": "AI数据中心驱动的半导体后段测试订单激增将在2-3个季度内重塑inTest收入规模",
+        "demand_change": "inTest电子测试业务收到的订单因客户（后段半导体测试）产能扩张而创纪录增长，驱动因素是AI数据中心需求；高功率chiller和manipulator等新产品因客户功率转换和混合信号/模拟测试需求上升而放量——这是已发生的订单和backlog数据，不是管理层叙事。",
+        "transmission": "Q3订单$48-50M(同比+28-33%)、期末backlog $58-60M(环比+28-32%)、book-to-bill>1.3x，直接传导至Q4及2027年收入确认；Q3收入指引上修至$33-35M区间高位(同比+30%+)，全年收入指引上修至$135-140M(2025年$113.8M基础上+21%中值)；公司市值仅~$1.8-2亿美元，收入基数小，订单弹性对报表影响显著。",
+        "misclassification": "市场仍把inTest当作一家多元化、低增长的『测试与工艺技术』小盘工业股（三大分部：电子测试/环境技术/工艺技术），而它正在变成AI数据中心资本开支驱动的半导体后段测试设备的直接受益者——电子测试分部的加速增长尚未完全反映在公司整体估值倍数（当前P/S约1.3x）中，但股价年内已有90%的前瞻性反应，关注度已明显提升。",
+        "brief_cn": [
+          "①触发新闻：inTest Corp 2026/10/5发布8-K业务预告，Q3订单预计$48-50M(同比+28-33%，创纪录)，期末backlog $58-60M(环比+28-32%)，book-to-bill预计>1.3x，收入指引上修至区间高位。",
+          "②需求已可观察且传导清晰：驱动力是AI数据中心带动客户半导体后段测试产能扩张，新产品(高功率chiller/manipulator)契合客户功率转换和混合信号测试需求——这是已发生的订单/backlog硬数据，全年收入指引同步上修至$135-140M(+21%中值)，公司市值仅~1.8亿美元，收入基数小，弹性显著。",
+          "③市场误分类：市场标签仍是多元化低增长工业测试小盘股，电子测试分部的AI驱动加速尚未充分计入整体估值(当前P/S~1.3x)；但股价年内已涨90.8%且分析师已上调目标价，说明部分重估已发生，关注度(neglect)已不算低。",
+          "④先验理由与赌点：七维总分27(demand_certainty 5/transmission 5/purity 3/elasticity 4/neglect 2/verification_speed 5/downside 3)，neglect偏低+已有90%涨幅是主要扣分项，故先验取标准档位下段0.32；赌的是11/6财报将把预告坐实为实际数字且backlog延续，验证速度快(10天内)。另需关注2026Q1 Alfamation子公司ERP实施导致的内控缺陷(~$750K存货调整)，公司称整改将于年底前生效——与本次验证节点吻合，需同步确认未再暴露新的内控问题。"
+        ],
+        "serenity_score": {
+          "demand_certainty": 5,
+          "transmission_clarity": 5,
+          "purity": 3,
+          "elasticity": 4,
+          "neglect": 2,
+          "verification_speed": 5,
+          "downside": 3
+        }
+      },
+      "prior": {
+        "p": 0.32,
+        "log_odds": -0.7538,
+        "rationale": "七维总分27 → 0.30-0.42档；neglect(2)已不算低(年内+90.8%+分析师已上调目标价)且downside含内控历史瑕疵，取档位下段0.32",
+        "set_by": "daily-scan 2026-10-27"
+      },
+      "current": {
+        "p": 0.32,
+        "log_odds": -0.7538,
+        "last_reviewed": "2026-10-27",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026Q3实际收入 + book-to-bill比率（11/6财报，相对10/5预告的坐实程度）",
+          "confirm_if": ">= $34M实际收入 且 book-to-bill实际值 >= 1.3x",
+          "falsify_if": "< $31M实际收入 或 book-to-bill实际值 < 1.1x（预告后需求降速）",
+          "check_by": "2026-11-06",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "2026Q4/FY2027初步指引中管理层对AI数据中心驱动需求延续性的表态 + 是否有新增内控缺陷披露",
+          "confirm_if": "管理层重申或上修2027展望，且未披露新的material weakness",
+          "falsify_if": "管理层提及订单推迟/客户资本开支放缓，或内控缺陷问题扩大",
+          "check_by": "2026-11-06",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-04-27"
+      },
+      "baseline": {
+        "entry_date": "2026-10-27",
+        "entry_price": 14.25,
+        "benchmark": "SPY",
+        "benchmark_entry_price": 765.37,
+        "sector_benchmark": "SOXX",
+        "sector_benchmark_entry_price": 491.83
+      },
+      "price_expectation": {
+        "confirm_target": 29.0,
+        "falsify_target": 9.5,
+        "expected_by": "2027-02-25",
+        "methodology_cn": "证实情景：11/6实际数字坐实预告后，若book-to-bill延续>=1.3x，FY2027E收入按全年指引高位$140M×1.20增长估算≈$168M；半导体测试设备小盘股在AI资本开支受益确认后的远期P/S倍数约2.2x（仍低于Advantest/Teradyne等大盘同业的4-6x，反映持续的『小盘折价』）→目标市值≈$370M÷1274万股≈$29/股。证伪情景：若book-to-bill回落<1.1x且增速回落至FY2025的个位数常态，估值倍数回落至预告前~0.9x FY2026收入$135M（低位）→目标市值≈$122M÷1274万股≈$9.5/股，接近52周低点附近。",
+        "timeline_logic_cn": "V1(11/6实际数字)是硬验证点，但『AI需求延续至2027』这一核心赌点需要等到下一次财报(通常2月末)管理层给出2027年初步展望才能完全验证——绑定第二个财报日为锚，预计重估滞后体现在2027Q1附近。",
+        "set_at": "2026-10-27",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-10-27",
+          "p": 0.32,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-11-06",
+          "type": "earnings",
+          "description": "Q3 2026财报+电话会，验证V1/V2",
+          "status": "upcoming"
         }
       ],
       "links": {
