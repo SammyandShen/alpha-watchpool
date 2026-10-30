@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-10-27",
+  "$last_updated": "2026-10-30",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -797,6 +797,13 @@
             "lr": null,
             "log_lr": null
           }
+        },
+        {
+          "id": "E7",
+          "date": "2026-10-16",
+          "type": "T1_hard_financial",
+          "summary": "2026年前三季度正式季报：归母净利润同比+1221.81%(10/16已发布，此前扫描漏记补记)，整体延续强劲增长；VC/LiFSI单价及CATL 2027产能信号未在本次披露中单独量化，V2/V3仍待周复核具体核实。",
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -1357,6 +1364,13 @@
             "lr": null,
             "log_lr": null
           }
+        },
+        {
+          "id": "E4",
+          "date": "2026-10-29",
+          "type": "T1_hard_financial",
+          "summary": "2026年前三季度正式季报：营收6.75亿元(+92.35% YoY)，净利润6751万元(同比扭亏)，延续中报增长趋势；H2较H1环比增速及新客户细分待周复核核实(V2)。",
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -1860,6 +1874,13 @@
             "lr": null,
             "log_lr": null
           }
+        },
+        {
+          "id": "E6",
+          "date": "2026-10-28",
+          "type": "T1_hard_financial",
+          "summary": "2026年Q3单季营收7.54亿元(+21.86% YoY)但归母净利润5451万元(-32.55% YoY)；前三季度累计净利1.59亿元(+7.90%)。媒体解读利润下滑主因泰国产能扩张带来的有息负债/财务费用上升+美国关税导致当地采购成本上涨，非AI电极箔ASP压缩或大客户流失(V2定义的falsify机制未直接触发)，但单季利润率下滑趋势需周复核关注。",
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -2316,6 +2337,13 @@
             "lr": null,
             "log_lr": null
           }
+        },
+        {
+          "id": "E6",
+          "date": "2026-10-29",
+          "type": "T1_hard_financial",
+          "summary": "2026年前三季度正式季报：营收11.36亿元(+54.07% YoY)，净利润1.97亿元(+57.82% YoY)；10/27首次实施股份回购。SSTI半导体检测业务具体收入贡献(V2门槛≥3000万)未单独披露，待周复核核实。",
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -2528,6 +2556,13 @@
             "lr": null,
             "log_lr": null
           }
+        },
+        {
+          "id": "E5",
+          "date": "2026-10-26",
+          "type": "T1_hard_financial",
+          "summary": "2026年前三季度正式季报：Q3单季净利7.01亿元(+752.76% YoY)，远超V2门槛(Q3净利≥4亿元环比H1均值维持)；前三季度累计净利15.64亿元(+673.71%)。强劲数据待周复核定级。",
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -2789,6 +2824,13 @@
             "lr": null,
             "log_lr": null
           }
+        },
+        {
+          "id": "E8",
+          "date": "2026-10-29",
+          "type": "T1_hard_financial",
+          "summary": "2026年前三季度正式季报：营收20.93亿元(+45.04% YoY)，净利8427万元(同比扭亏)；此前10/15-21子公司已落地11.14亿元中标，与V2(OCS供应链扩大/新增产能扩张合同)高度相关，具体OCS收入占比待周复核核实。",
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -2828,6 +2870,11 @@
           "date": "2026-08-28",
           "type": "earnings",
           "note": "[已发生] 2026年中报披露，扣非门槛达标，'剔除股权激励后净利'分项待核实"
+        },
+        {
+          "date": "2026-10-29",
+          "type": "earnings",
+          "note": "[已发生] 2026年前三季度正式季报披露，营收20.93亿元(+45.04%)，净利8427万元(同比扭亏)"
         }
       ],
       "links": {
@@ -2968,6 +3015,13 @@
             "lr": 3.0,
             "log_lr": 1.0986
           }
+        },
+        {
+          "id": "E2",
+          "date": "2026-10-27",
+          "type": "T1_hard_financial",
+          "summary": "2026年前三季度正式季报：归母净利润1.62亿元(+6.34% YoY)，但Q3单季归母净利润转亏967.52万元，扣非净利润单季亏损7825.52万元(同比-161.34%，环比由盈转亏)。该结果已落入V3 falsify_if定义区间(环比转负)，但V3为非required条件，暂不触发T1；周复核需重点评估MCU价格/交期是否同步转弱，警惕V1已met但趋势反转风险。",
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -3175,6 +3229,13 @@
             "lr": null,
             "log_lr": null
           }
+        },
+        {
+          "id": "E4",
+          "date": "2026-10-29",
+          "type": "T1_hard_financial",
+          "summary": "2026年前三季度正式季报：营收15.47亿元(+110.75% YoY，超V2门槛+80%)，净利润7881万元(+837.27% YoY)。强劲数据待周复核定级。",
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -3664,6 +3725,13 @@
             "lr": null,
             "log_lr": null
           }
+        },
+        {
+          "id": "E7",
+          "date": "2026-10-29",
+          "type": "T3_soft_signal",
+          "summary": "公司新增董事Vijay Rao(前Meta基础设施高管，具超大规模数据中心/AI加速器经验)，对公司在AI数据中心客户认知/治理层面的可信度提供边际佐证，属定性信号非量化证据，与V1/V2财报门槛无直接关联。",
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -3871,6 +3939,13 @@
             "lr": 3.0,
             "log_lr": 1.0986
           }
+        },
+        {
+          "id": "E5",
+          "date": "2026-10-27",
+          "type": "T1_hard_financial",
+          "summary": "2026年前三季度正式季报：归母净利润7.75亿元(+845.02% YoY)，延续H1高增长趋势，方向支持V2(Q3存储/被动件价格及经营数据)。current.p=0.8265已触及confirmed迁移门槛，状态迁移留待周复核确认。",
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -4266,9 +4341,9 @@
           "note": "[已发生] 正式Q2 2026财报+电话会议，V1/V2判定点均已met"
         },
         {
-          "date": "2026-11-16",
+          "date": "2026-11-10",
           "type": "earnings",
-          "note": "Q3 2026财报（Yahoo官方排期确认2026-11-16）— 与V3(现金跑道/再融资，check_by 2026-11-15)判定窗口衔接，下一观测点"
+          "note": "Q3 2026财报（Yahoo官方排期校正为2026-11-10）— 与V3(现金跑道/再融资，check_by 2026-11-15)判定窗口衔接，下一观测点"
         }
       ],
       "links": {
@@ -4400,6 +4475,13 @@
             "lr": null,
             "log_lr": null
           }
+        },
+        {
+          "id": "E2",
+          "date": "2026-10-29",
+          "type": "T1_hard_financial",
+          "summary": "2026年前三季度正式季报：营收4.25亿元(+40.52% YoY)，净利润1.65亿元(+76.83% YoY)。工业纯化分部具体增速及项目储备净增数待周复核核实(V2)。",
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -4548,7 +4630,15 @@
         "set_at": "2026-08-10",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-10-28",
+          "type": "T1_hard_financial",
+          "summary": "全资子公司珠海一博电子公告拟签约10亿元AI算力高端PCB制造项目投资协议，固定资产投资约6亿元，设计产能8万㎡/月，满产后年产值超15亿元；与V2(AI算力营收占比提升/新增头部客户订单)高度相关，为新增重大积极信号。三季报(法定截止10/31)尚未确认是否已发布，V1仍pending。",
+          "pending": true
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-08-10",
@@ -4566,6 +4656,11 @@
           "date": "2026-10-31",
           "type": "earnings",
           "note": "2026年三季报法定披露截止日 — V1判定点"
+        },
+        {
+          "date": "2026-10-28",
+          "type": "capacity_expansion",
+          "note": "全资子公司珠海一博电子公告拟签约10亿元AI算力高端PCB制造项目投资协议，固定资产投资约6亿元，设计产能8万㎡/月，满产后年产值超15亿元"
         }
       ],
       "links": {
@@ -4818,7 +4913,7 @@
           "metric": "新增/丢失重大客户design win或客户集中度变化",
           "confirm_if": "披露新增AI/HPC领域重大design win或与Arm等核心客户合作深化",
           "falsify_if": "核心客户公开减少采用Arteris IP或流失",
-          "check_by": "2026-11-03",
+          "check_by": "2026-11-05",
           "status": "pending"
         }
       ],
@@ -4871,9 +4966,9 @@
       ],
       "events": [
         {
-          "date": "2026-11-03",
+          "date": "2026-11-05",
           "type": "earnings",
-          "note": "2026年Q3财报(Yahoo官方排期确认2026-11-03) — V1判定点"
+          "note": "2026年Q3财报（Yahoo官方排期校正为2026-11-05）— V1判定点"
         },
         {
           "date": "2026-10-06",
@@ -5036,6 +5131,13 @@
             "lr": null,
             "log_lr": null
           }
+        },
+        {
+          "id": "E4",
+          "date": "2026-10-29",
+          "type": "T1_hard_financial",
+          "summary": "2026年前三季度正式季报：营收3.69亿元(+21.76% YoY)，净利润773万元，同比-71.13%(较H1的-50%进一步恶化)。负面趋势持续强化，是当前池内下行风险最高的标的之一，周复核需重点评估V1是否转向falsify。",
+          "pending": true
         }
       ],
       "posterior_history": [
@@ -5207,9 +5309,9 @@
       ],
       "events": [
         {
-          "date": "2026-11-09",
+          "date": "2026-11-02",
           "type": "earnings",
-          "note": "预估2026Q3财报日期(季度末+40天)，待Yahoo官方排期确认后校正 — V1判定点"
+          "note": "2026Q3财报（Yahoo官方排期确认2026-11-02）— V1判定点"
         },
         {
           "date": "2026-09-29",
@@ -5587,8 +5689,8 @@
         "set_by": "daily-scan 2026-10-26"
       },
       "current": {
-        "p": 0.4,
-        "log_odds": -0.4055,
+        "p": 0.5714,
+        "log_odds": 0.2876,
         "last_reviewed": "2026-10-26",
         "recomputed_from_ledger": true
       },
@@ -5600,7 +5702,7 @@
           "confirm_if": "归母净利润 >= 1.51亿元 且 扣非净利润 >= 1.37亿元（均达预告下限）",
           "falsify_if": "归母净利润 < 1.2亿元（低于预告下限20%）或 扣非净利润 < 1.05亿元（低于预告下限23%，预告不兑现）",
           "check_by": "2026-10-31",
-          "status": "pending"
+          "status": "met"
         },
         {
           "id": "V2",
@@ -5633,7 +5735,20 @@
         "set_at": "2026-10-26",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-10-27",
+          "type": "T1_hard_financial",
+          "summary": "2026年前三季度正式季报(10/27披露，确认10/24预告)：归母净利润1.59亿元(+51.82% YoY，达V1 confirm门槛≥1.51亿)，扣非净利润约1.44亿元(+52.81% YoY，达V1 confirm门槛≥1.37亿)。V1 required两项quant门槛均officially确认达标。",
+          "pending": false,
+          "likelihood": {
+            "label": "moderate_support",
+            "lr": 2.0,
+            "log_lr": 0.6931
+          }
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-10-26",
@@ -5643,9 +5758,9 @@
       ],
       "events": [
         {
-          "date": "2026-10-31",
+          "date": "2026-10-27",
           "type": "earnings",
-          "note": "2026年前三季度正式季报法定披露截止日(预计10月28日前后提前披露) — V1判定点"
+          "note": "[已发生] 2026年前三季度正式季报披露，归母净利润1.59亿元(+51.82%)/扣非净利润约1.44亿元(+52.81%)，V1 required门槛双双确认达标，status→met"
         }
       ],
       "links": {
@@ -5713,8 +5828,8 @@
         "set_by": "daily-scan 2026-10-26"
       },
       "current": {
-        "p": 0.28,
-        "log_odds": -0.9446,
+        "p": 0.4375,
+        "log_odds": -0.2515,
         "last_reviewed": "2026-10-26",
         "recomputed_from_ledger": true
       },
@@ -5726,7 +5841,7 @@
           "confirm_if": "归母净利润 >= 3.35亿元 且 扣非净利润 >= 3.28亿元（均达预告下限）",
           "falsify_if": "归母净利润 < 2.68亿元（低于预告下限20%）或 扣非净利润 < 2.62亿元（预告不兑现）",
           "check_by": "2026-10-31",
-          "status": "pending"
+          "status": "met"
         },
         {
           "id": "V2",
@@ -5759,7 +5874,20 @@
         "set_at": "2026-10-26",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-10-29",
+          "type": "T1_hard_financial",
+          "summary": "2026年前三季度正式季报(10/29披露，确认10/23预告)：归母净利润3.53亿元(+333.32% YoY，达V1 confirm门槛≥3.35亿)，扣非净利润3.46亿元(+350.91% YoY，达V1 confirm门槛≥3.28亿)。V1 required两项quant门槛均officially确认达标。",
+          "pending": false,
+          "likelihood": {
+            "label": "moderate_support",
+            "lr": 2.0,
+            "log_lr": 0.6931
+          }
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-10-26",
@@ -5769,9 +5897,9 @@
       ],
       "events": [
         {
-          "date": "2026-10-31",
+          "date": "2026-10-29",
           "type": "earnings",
-          "note": "2026年前三季度正式季报法定披露截止日 — V1判定点"
+          "note": "[已发生] 2026年前三季度正式季报披露，归母净利润3.53亿元(+333.32%)/扣非净利润3.46亿元(+350.91%)，V1 required门槛双双确认达标，status→met"
         }
       ],
       "links": {

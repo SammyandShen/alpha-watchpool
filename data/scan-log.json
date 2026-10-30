@@ -178,6 +178,111 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "AIP的政府资助金额小且非核心验证路径相关指标，不单独记账；其余4只ticker无新增可记账信息，等待各自11月初财报"
+    },
+    {
+      "date": "2026-10-30",
+      "fingerprint": "2026-10-30+cn-forecasts-batch3-reviewed-1-new-2-duplicate-rejected",
+      "headline": "cn-forecasts.json正向候选复核：002475.SZ立讯精密(新，10/30预告)/920085.BJ森峰激光/001381.SZ皇冠新材(均已于10/27复核排除，本次重复出现)",
+      "tickers": [
+        "002475.SZ",
+        "920085.BJ",
+        "001381.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "立讯精密：市值超4000亿元megacap，neglect为零，排除；森峰激光/皇冠新材：结论与10/27复核一致（略增修复非强劲需求、营收个位数增长且利润因成本上升下滑），重复排除"
+    },
+    {
+      "date": "2026-10-30",
+      "fingerprint": "2026-10-30+INTT+q3-order-backlog-same-as-20261005-8k",
+      "headline": "InTest(INTT) Q3订单$48-50M/backlog放量数据再次出现于10/29报道，与池内假设创建依据(10/5 8-K)为同一底层事件",
+      "tickers": [
+        "INTT"
+      ],
+      "action": "skipped_duplicate",
+      "note": "INTT已于10/27入池(H20261027-INTT)，本次搜索结果为同一Q3订单/backlog数据的后续转载报道，非新增信息"
+    },
+    {
+      "date": "2026-10-30",
+      "fingerprint": "2026-10-30+300695.SZ+robot-contract-weak-core-business-declining",
+      "headline": "兆丰股份(300695.SZ)子公司兆聚智能中标机器人创新服务平台项目2.9992亿元(10/28正式公告)",
+      "tickers": [
+        "300695.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "核心主业(汽车轮毂轴承，占营收78%)Q3净利同比-94%持续恶化，机器人为全新跨界业务，demand_certainty(2)/purity(2)/verification_speed(2)均偏低，更接近主业失速后的题材炒作，不满足入池质量门槛"
+    },
+    {
+      "date": "2026-10-30",
+      "fingerprint": "2026-10-30+US-pool-11tickers-quickcheck-AEHR-board-only",
+      "headline": "池内11只美股标的(OUST/POWL/PENG/AEHR/AUTL/PSIX/AIP/MTUS/MASS/QMCO/INTT) 10/28-10/30动态快查：仅AEHR新增董事会成员(10/29)，其余10只无新增实质消息",
+      "tickers": [
+        "OUST",
+        "POWL",
+        "PENG",
+        "AEHR",
+        "AUTL",
+        "PSIX",
+        "AIP",
+        "MTUS",
+        "MASS",
+        "QMCO",
+        "INTT"
+      ],
+      "action": "evidence_appended",
+      "note": "AEHR新增pending证据(T3_soft_signal，新董事Vijay Rao前Meta基础设施高管背景)；同步校正AUTL财报日11-16→11-10、AIP财报日11-03→11-05、MTUS财报日11-09→11-02，均按profiles.json(Yahoo)官方排期校正events[]"
+    },
+    {
+      "date": "2026-10-30",
+      "fingerprint": "2026-10-30+T1-URGENT-688410.SS-301563.SZ-q3report-confirm-v1",
+      "headline": "T1紧急通道：688410.SS山外山/301563.SZ云汉芯城 2026年前三季度正式季报(10/27、10/29披露)，双双确认V1 required门槛(归母+扣非净利润均达confirm_if)",
+      "tickers": [
+        "688410.SS",
+        "301563.SZ"
+      ],
+      "action": "evidence_appended",
+      "note": "[URGENT] 两条假设V1 required confirm_if门槛均officially确认达标，评级moderate_support(T1_hard_financial)入账并跑compute-metrics.py重算后验：688410.SS 0.40→0.5714，301563.SZ 0.28→0.4375"
+    },
+    {
+      "date": "2026-10-30",
+      "fingerprint": "2026-10-30+CN-pool-11tickers-q3report-wave-pending",
+      "headline": "A股三季报法定截止(10-31)前集中披露潮：002326.SZ/688620.SS/603115.SS/688531.SS/301536.SZ/688195.SS/688380.SS/920493.BJ/300613.SZ/688758.SS/688265.SS等11只池内标的三季报已正式发布(10/16-10/29)，均以pending=true记账",
+      "tickers": [
+        "002326.SZ",
+        "688620.SS",
+        "603115.SS",
+        "688531.SS",
+        "301536.SZ",
+        "688195.SS",
+        "688380.SS",
+        "920493.BJ",
+        "300613.SZ",
+        "688758.SS",
+        "688265.SS"
+      ],
+      "action": "evidence_appended",
+      "note": "多数延续强劲增长(301536.SZ Q3净利+752.76%、920493.BJ营收+110.75%、300613.SZ净利+845.02%)；两个负面信号需周复核重点关注：688380.SS Q3单季扣非净利润转亏7825.52万元(环比转负，落入V3 falsify_if区间但V3非required)、688265.SS净利润同比-71.13%(较H1的-50%进一步恶化)；603115.SS Q3单季净利-32.55%但系泰国产能扩张融资成本+关税成本上升所致，非ASP/需求端恶化"
+    },
+    {
+      "date": "2026-10-30",
+      "fingerprint": "2026-10-30+301366.SZ+10yiAI算力PCB扩产投资协议",
+      "headline": "一博科技(301366.SZ)全资子公司珠海一博电子10/28公告拟签约10亿元AI算力高端PCB制造项目投资协议",
+      "tickers": [
+        "301366.SZ"
+      ],
+      "action": "evidence_appended",
+      "note": "固定资产投资约6亿元、设计产能8万㎡/月、满产后年产值超15亿元，强化V2(AI算力营收占比/新订单)逻辑；三季报(法定截止10/31)尚未确认发布，V1仍pending待下次扫描跟进"
+    },
+    {
+      "date": "2026-10-30",
+      "fingerprint": "2026-10-30+CN-pool-3tickers-no-new-material",
+      "headline": "池内003026.SZ中晶科技/300981.SZ蓝帆医疗/688733.SS壹石通复核：窗口内(10-28至10-30)无新增实质消息",
+      "tickers": [
+        "003026.SZ",
+        "300981.SZ",
+        "688733.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "三者三季报均在窗口前(10/26-10/27)已发布或暂无新公告，本轮快查无新增可记账信息"
     }
   ]
 }
