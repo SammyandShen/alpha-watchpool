@@ -1,17 +1,17 @@
 {
-  "$generated_at": "2026-10-30",
+  "$generated_at": "2026-10-31",
   "counts": {
-    "active": 29,
-    "confirmed": 0,
+    "active": 23,
+    "confirmed": 6,
     "falsified": 0,
     "expired": 0,
     "promoted": 0
   },
   "prediction_quality": {
-    "hit_rate": null,
-    "n_resolved": 0,
-    "brier_final_mean": null,
-    "brier_time_avg_mean": null,
+    "hit_rate": 1.0,
+    "n_resolved": 6,
+    "brier_final_mean": 0.0134,
+    "brier_time_avg_mean": 0.2538,
     "calibration_bins": [
       {
         "range": "0.0-0.2",
@@ -21,36 +21,72 @@
       },
       {
         "range": "0.2-0.4",
-        "n": 0,
-        "hits": 0,
-        "actual_rate": null
+        "n": 11,
+        "hits": 11,
+        "actual_rate": 1.0
       },
       {
         "range": "0.4-0.6",
-        "n": 0,
-        "hits": 0,
-        "actual_rate": null
+        "n": 13,
+        "hits": 13,
+        "actual_rate": 1.0
       },
       {
         "range": "0.6-0.8",
-        "n": 0,
-        "hits": 0,
-        "actual_rate": null
+        "n": 2,
+        "hits": 2,
+        "actual_rate": 1.0
       },
       {
         "range": "0.8-1.0",
-        "n": 0,
-        "hits": 0,
-        "actual_rate": null
+        "n": 6,
+        "hits": 6,
+        "actual_rate": 1.0
       }
     ],
-    "tier_discrimination": {}
+    "tier_discrimination": {
+      "T2_supply_chain": {
+        "avg_loglr_in_hits": 0.366,
+        "avg_loglr_in_misses": null,
+        "n_hit": 6,
+        "n_miss": 0
+      },
+      "T1_hard_financial": {
+        "avg_loglr_in_hits": 0.825,
+        "avg_loglr_in_misses": null,
+        "n_hit": 15,
+        "n_miss": 0
+      },
+      "P_price": {
+        "avg_loglr_in_hits": 0.122,
+        "avg_loglr_in_misses": null,
+        "n_hit": 10,
+        "n_miss": 0
+      },
+      "T3_soft_signal": {
+        "avg_loglr_in_hits": 0.338,
+        "avg_loglr_in_misses": null,
+        "n_hit": 6,
+        "n_miss": 0
+      },
+      "T4_narrative": {
+        "avg_loglr_in_hits": 0.0,
+        "avg_loglr_in_misses": null,
+        "n_hit": 1,
+        "n_miss": 0
+      }
+    }
   },
   "economics": {
     "observing": {
-      "n": 28,
-      "avg_return_pct": -11.23,
-      "avg_excess_vs_spy_pct": -5.31
+      "n": 22,
+      "avg_return_pct": -16.39,
+      "avg_excess_vs_spy_pct": -10.54
+    },
+    "confirmed": {
+      "n": 6,
+      "avg_return_pct": -17.95,
+      "avg_excess_vs_spy_pct": -5.25
     }
   }
 }

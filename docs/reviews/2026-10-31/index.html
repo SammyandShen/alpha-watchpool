@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>假设复核周报 · 2026-10-31</title>
+<style>
+  :root { --bg:#0d1117; --card:#161b22; --border:#30363d; --text:#e6edf3; --dim:#8b949e;
+          --green:#3fb950; --red:#f85149; --amber:#d29922; --blue:#58a6ff; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+         line-height:1.7; max-width:860px; margin:0 auto; padding:32px 20px 80px; }
+  h1 { font-size:1.5em; margin-bottom:4px; }
+  h2 { font-size:1.15em; margin:36px 0 12px; padding-bottom:6px; border-bottom:1px solid var(--border); color:var(--blue); }
+  h3 { font-size:1em; margin:20px 0 8px; }
+  .meta { color:var(--dim); font-size:.85em; margin-bottom:24px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px 20px; margin:12px 0; }
+  table { width:100%; border-collapse:collapse; font-size:.9em; margin:12px 0; }
+  th,td { padding:8px 10px; text-align:left; border-bottom:1px solid var(--border); }
+  th { color:var(--dim); font-weight:600; font-size:.85em; }
+  .up { color:var(--green); } .down { color:var(--red); } .flat { color:var(--dim); }
+  .badge { display:inline-block; padding:1px 8px; border-radius:10px; font-size:.78em; border:1px solid var(--border); }
+  .badge.observing { color:var(--blue); border-color:var(--blue); }
+  .badge.confirmed { color:var(--green); border-color:var(--green); }
+  .badge.falsified { color:var(--red); border-color:var(--red); }
+  .badge.expired { color:var(--dim); }
+  .badge.promoted { color:var(--amber); border-color:var(--amber); }
+  .disclaimer { margin-top:48px; padding:14px 18px; border:1px solid var(--border); border-radius:10px;
+                color:var(--dim); font-size:.82em; }
+  a { color:var(--blue); text-decoration:none; }
+  .kpi-row { display:flex; gap:12px; flex-wrap:wrap; margin:16px 0; }
+  .kpi { flex:1; min-width:140px; background:var(--card); border:1px solid var(--border); border-radius:10px;
+         padding:12px 16px; }
+  .kpi .v { font-size:1.4em; font-weight:700; }
+  .kpi .k { color:var(--dim); font-size:.8em; }
+</style>
+</head>
+<body>
+
+<h1>🔬 假设复核周报</h1>
+<p class="meta">2026-10-31 · alpha-watchpool weekly review · 方法论 v1 · 研究假设跟踪，非投资建议</p>
+
+<h2>1. 池子总览</h2>
+<div class="kpi-row">
+
+<div class="kpi"><div class="v">23</div><div class="k">活跃假设</div></div>
+<div class="kpi"><div class="v">0</div><div class="k">本周新增</div></div>
+<div class="kpi"><div class="v">6</div><div class="k">本周关闭/迁移</div></div>
+<div class="kpi"><div class="v">+0.118</div><div class="k">平均后验变化</div></div>
+
+</div>
+<p>本周（2026-08-15 → 2026-10-31）对全部 29 条 observing 假设逐条复核。<b>需特别说明：这是本池子自2026-08-15以来的首次周度复核（间隔约11周，上次复核后 skill 未被持续按周触发），
+期间积压了 8 月中报与 10 月三季报两个完整报告季的 pending 证据</b>——这解释了本周异常密集的后验跃迁与 <b>6 条 confirmed</b>（<b>002326.SZ 永太科技、003026.SZ 中晶科技、301536.SZ 星宸科技、688195.SS 腾景科技、
+300613.SZ 富瀚微、688758.SS 赛分科技</b>），均为 A 股标的，核心逻辑是中报+三季报连续兑现业绩预告且多数伴随行业级佐证（存储涨价周期、CATL长单、新客户导入等）。<b>920493.BJ（并行科技）</b>后验同样升至0.83，
+但本周刻意将 V1(必要条件) 判定为 unclear 而非 met——管理层未披露确认文本要求的量化H2指引，仅能用资本开支激增作 proxy，为避免"借proxy强行confirm"的过度自信，本次不触发迁移，留待下次复核。
+下行方面，<b>688265.SS（南方模式生物）</b>后验跌至0.1364（连续两期净利润同比恶化-50%→-71%），<b>688733.SS（壹石通）</b>因扣非净利润质量问题（9个月累计仅68万元）后验腰斩至0.30，两者及 <b>AIP、QMCO</b> 等
+后验处于0.25-0.30区间的假设，是下次复核观察证伪通道（连续两周≤0.10）的重点对象。价格证据方面，<b>PENG、603115.SS、003026.SZ、688531.SS、301536.SZ、688195.SS、300981.SZ</b> 等多条假设本周因生命周期
+|Σlog_lr|≤1.10封顶被capped，未能计入本可采纳的价格证据，符合方法论"让市场投票权不过大"的设计意图。<b>920493.BJ（北交所）</b>价格数据源持续404，是暴露近3个月未修复的数据管线缺口。</p>
+
+<h2>2. 逐假设复核明细</h2>
+<div class="card">
+  <h3>OUST · Ouster, Inc. <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">工业/基建 lidar 需求拐点将在 2-3 个季度内持续改写其收入线并驱动指引上修</p>
+  <p>后验：0.75 → <b class="down">0.67 ↓</b>（Δ-0.0834）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-10-31 OUST本周新增价格证据：相对SOXX超额-23.59%</td><td>P_price</td><td>weak_against</td><td>-0.406</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·pending] CY26Q2 与 CY26Q3 营收 YoY 增速（连续两季）（check_by 2026-11-15）</li><li>[V2·旁证·pending] 管理层电话会量化 AIM 协议出货 ramp 或 Rev8 基建订单 pipeline（check_by 2026-11-15）</li></ul>
+  <p>💥 证伪触发条件：若CY26Q3营收YoY增速低于+15%或环比转负（11月中财报坐实V1 falsify_if），后验将打到0.2以下。</p>
+</div>
+<div class="card">
+  <h3>POWL · Powell Industries <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">电网容量缺口 + 数据中心负荷将在 1-3 个季度内继续推高其开关柜订单与 backlog，抬升 FY26/27 收入超共识</p>
+  <p>后验：0.74 → <b class="down">0.66 ↓</b>（Δ-0.0843）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-10-13 搜索发现分析师动作：JPMorgan等机构10月中下调目标价(JPM $300→$250)，提及某季度EPS $1.42</td><td>T4_narrative</td><td>neutral</td><td>+0.000</td></tr><tr><td>2026-10-31 POWL本周新增价格证据：相对SOXX超额-27.58%</td><td>P_price</td><td>weak_against</td><td>-0.406</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] FQ3 FY2026（6 月止季度，约 8 月初发布）backlog 环比变化（check_by 2026-08-15）</li><li>[V2·旁证·unclear] FY2026 收入指引（check_by 2026-08-15）</li><li>[V3·旁证·met] 电话会披露 utility/数据中心新订单动能（book-to-bill）（check_by 2026-08-15）</li></ul>
+  <p>💥 证伪触发条件：若FY2026收入指引被正式下修，或后续季度book-to-bill降至<0.9，后验将跌破0.2；目前V1/V3已met但E9显示机构降目标价和内部人减持值得关注。</p>
+</div>
+<div class="card">
+  <h3>002326.SZ · 浙江永太科技股份有限公司 <span class="badge confirmed">confirmed</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">CATL万吨级VC框架合同+自产产能释放将在2-3个季度内持续推高其电解液添加剂收入线并驱动业绩超预期</p>
+  <p>后验：0.55 → <b class="up">0.94 ↑</b>（Δ+0.3923）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-08-26 2026年中报正式披露：归母净利润2.74亿元(+365.74% YoY，达V1门槛2.65亿)，扣非净利2.49亿元(</td><td>T1_hard_financial</td><td>strong_support</td><td>+1.099</td></tr><tr><td>2026-10-16 2026年前三季度正式季报：归母净利润同比+1221.81%(10/16已发布，此前扫描漏记补记)，整体延续强劲增长；V</td><td>T1_hard_financial</td><td>weak_support</td><td>+0.406</td></tr><tr><td>2026-10-22 永太科技VC产能将提升至3万吨/年，锂电材料板块前三季度收入+112.09% YoY</td><td>T1_hard_financial</td><td>strong_support</td><td>+1.099</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] 2026年中报净利润（截止8月31日）及VC收入同比增速（check_by 2026-08-31）</li><li>[V2·旁证·met] CATL框架合同2027年出货准备信号（产能扩张/设备订单）（check_by 2026-10-31）</li><li>[V3·旁证·met] VC市场定价稳定性（高端电解液添加剂）（check_by 2026-10-31）</li></ul>
+  <p>💥 证伪触发条件：（已confirmed）若后续财报VC/锂电材料板块收入同比增速转负，或CATL合同条款被修改/取消，或VC市场价较年内高点回落超40%，应触发post-confirm复核降级。</p>
+</div>
+<div class="card">
+  <h3>002497.SZ · 雅化集团股份有限公司 <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">碳酸锂价格上行+中国新能源渗透超50%将在2-3个季度内持续推高其锂盐营收并驱动全年利润大幅超预期</p>
+  <p>后验：0.40 → <b class="flat">0.40 →</b>（Δ+0.0000）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-10-29 雅化集团2026年前三季度营收107.12亿元(+77.15%)，归母净利润14.90亿元(+346.01%)</td><td>T1_hard_financial</td><td>moderate_support</td><td>+0.693</td></tr><tr><td>2026-10-31 电池级碳酸锂现货价格9-10月持续下探至年内新低(10-12万元/吨)，跌破V2 falsify_if门槛14万元/吨</td><td>T2_supply_chain</td><td>moderate_against</td><td>-0.693</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] 2026年中报归母净利润（截止8月31日）及Q2单季净利润（check_by 2026-08-31）</li><li>[V2·旁证·missed] Q3碳酸锂电池级现货价格（月度均价）（check_by 2026-10-15）</li><li>[V3·旁证·met] 三季报披露Q3锂盐收入同比增速（check_by 2026-10-31）</li></ul>
+  <p>💥 证伪触发条件：若三季报锂盐分部收入同比转负，或碳酸锂价格连续两月维持在14万元/吨以下且公司确认提价空间消失，后验将跌破0.2；本周碳酸锂价格已跌破falsify线，是主要风险点。</p>
+</div>
+<div class="card">
+  <h3>688620.SS · 广州安凯微电子技术股份有限公司 <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">AI边缘SoC芯片需求拐点+产品周期放量将在2-3个季度内持续推高其营收线并驱动利润率扩张</p>
+  <p>后验：0.53 → <b class="up">0.71 ↑</b>（Δ+0.1881）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-08-27 2026年中报正式披露：归母净利润4026.67万元(同比扭亏，上年同期亏损4925.07万元，达V1门槛3800万但缓</td><td>T1_hard_financial</td><td>weak_support</td><td>+0.406</td></tr><tr><td>2026-10-29 2026年前三季度正式季报：营收6.75亿元(+92.35% YoY)，净利润6751万元(同比扭亏)，延续中报增长趋势</td><td>T1_hard_financial</td><td>weak_support</td><td>+0.406</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] 2026中报正式归母净利润及管理层H2出货展望（check_by 2026-08-31）</li><li>[V2·旁证·unclear] H2 2026新产品（AI眼镜/智能摄像机SoC）出货量及客户拓展（check_by 2026-10-31）</li></ul>
+  <p>💥 证伪触发条件：若年报H2营收较H1下降超20%，或主要客户取消订单，后验将跌破0.2；V1缓冲仅6%需持续关注。</p>
+</div>
+<div class="card">
+  <h3>PENG · Penguin Solutions, Inc. <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">AI内存模块需求激增+系统集成能力将在1-2个季度内推高其AI收入占比并驱动全年业绩持续超共识</p>
+  <p>后验：0.39 → <b class="flat">0.39 →</b>（Δ+0.0000）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td colspan='4' style='color:var(--dim)'>本周无新增证据；V1已于此前URGENT通道(10/6 Q4财报，decisive_support)确认met，本周无新增判定。</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] Q4 FY26营收YoY增速及FY26全年non-GAAP EPS（约2026年10-11月发布）（check_by 2026-11-15）</li><li>[V2·旁证·pending] Q4 FY26 AI驱动业务收入占比及YoY增速（check_by 2026-11-15）</li></ul>
+  <p>💥 证伪触发条件：若FY27 Q1/Q2财报或管理层指引显示超大规模客户AI DRAM采购大幅放缓、AI驱动业务YoY增速骤降至<30%，或公司因可转债稀释被迫下修EPS指引，后验应跌破0.2。</p>
+</div>
+<div class="card">
+  <h3>603115.SS · 南通海星电子股份有限公司 <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">AI服务器+储能双驱动将在2-3个季度内持续推高其电极箔收入并驱动全年业绩超预期</p>
+  <p>后验：0.53 → <b class="up">0.62 ↑</b>（Δ+0.0987）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-08-28 2026年中报正式披露：扣非净利润1.11亿元(+70.76% YoY，达V1门槛1.05亿)，归母净利1.04亿元(+</td><td>T1_hard_financial</td><td>weak_support</td><td>+0.406</td></tr><tr><td>2026-10-28 2026年Q3单季营收7.54亿元(+21.86% YoY)但归母净利润5451万元(-32.55% YoY)；前三季度</td><td>T1_hard_financial</td><td>weak_against</td><td>-0.406</td></tr><tr><td>2026-09-17 海星股份：AI电极箔订单滚动上修</td><td>T3_soft_signal</td><td>weak_support</td><td>+0.406</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] H1 2026中报扣非归母净利润及管理层H2 AI电极箔展望（截止8月31日）（check_by 2026-08-31）</li><li>[V2·旁证·unclear] H2 2026 AI服务器电极箔收入占比及ASP稳定性（check_by 2026-10-31）</li></ul>
+  <p>💥 证伪触发条件：若年报/Q4单季显示AI电极箔ASP被压缩超20%、主要AI服务器客户认证被取消，或净利润持续同比恶化并被明确归因于AI箔需求转弱，后验应跌破0.2。</p>
+</div>
+<div class="card">
+  <h3>003026.SZ · 浙江中晶科技股份有限公司 <span class="badge confirmed">confirmed</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">半导体国产化+功率器件需求将在2-3个季度内推高其硅材料收入并驱动业绩持续超预期</p>
+  <p>后验：0.59 → <b class="up">0.87 ↑</b>（Δ+0.2755）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-08-28 2026年中报正式披露：归母净利润4155.69万元(+61.5% YoY，达V1门槛4000万)，扣非净利3997万元</td><td>T1_hard_financial</td><td>weak_support</td><td>+0.406</td></tr><tr><td>2026-10-26 中晶科技：2026年前三季度净利润约7428.18万元，同比增长118.06%</td><td>T1_hard_financial</td><td>strong_support</td><td>+1.099</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] H1 2026中报归母净利润及扣非净利润（截止8月31日）（check_by 2026-08-31）</li><li>[V2·旁证·unclear] H2 2026功率芯片业务收入增速及硅片供需稳定性（check_by 2026-10-31）</li></ul>
+  <p>💥 证伪触发条件：（已confirmed）若Q4/年报显示主要晶圆厂客户公告削减或推迟采购、产能利用率明显下降，或扣非净利润增速骤降至<20%，应触发post-confirm复核降级。</p>
+</div>
+<div class="card">
+  <h3>688531.SS · 日联科技集团股份有限公司 <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">半导体/电子检测需求景气+SSTI并购将在2-3个季度内持续改写其收入线并驱动利润超预期</p>
+  <p>后验：0.43 → <b class="up">0.63 ↑</b>（Δ+0.1993）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-08-22 H1 2026扣非归母净利润约1.09-1.1亿元(+82.71%~84%，接近/略超V1门槛10900万)，营收7.1</td><td>T1_hard_financial</td><td>weak_support</td><td>+0.406</td></tr><tr><td>2026-10-29 2026年前三季度正式季报：营收11.36亿元(+54.07% YoY)，净利润1.97亿元(+57.82% YoY)；</td><td>T1_hard_financial</td><td>weak_support</td><td>+0.406</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] H1 2026中报扣非净利润（截止8月31日）及管理层H2展望（check_by 2026-08-31）</li><li>[V2·旁证·unclear] SSTI并购整合效果：H2半导体缺陷检测收入可量化或大客户合同（check_by 2026-10-31）</li></ul>
+  <p>💥 证伪触发条件：若SSTI资产出现减值迹象、核心半导体检测客户流失，或Q4/年报扣非净利增速骤降至远低于预告的82.71%水平，后验应跌破0.2。</p>
+</div>
+<div class="card">
+  <h3>301536.SZ · 星宸科技股份有限公司 <span class="badge confirmed">confirmed</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">端边侧AI SoC需求爆发+SSR670量产将在2-3个季度内持续推高其收入并驱动全年业绩超预期</p>
+  <p>后验：0.53 → <b class="up">0.87 ↑</b>（Δ+0.3436）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-08-26 2026年中报正式披露：归母净利润8.63亿元(+619.50% YoY，达V1门槛8.2亿)，扣非净利7.12亿元(+</td><td>T1_hard_financial</td><td>moderate_support</td><td>+0.693</td></tr><tr><td>2026-10-26 2026年前三季度正式季报：Q3单季净利7.01亿元(+752.76% YoY)，远超V2门槛(Q3净利≥4亿元环比H1</td><td>T1_hard_financial</td><td>strong_support</td><td>+1.099</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] H1 2026中报正式归母净利润及营业收入（截止8月31日）（check_by 2026-08-31）</li><li>[V2·旁证·met] Q3 2026单季度归母净利润环比H1平均（=H1净利/2=约4.1亿）（check_by 2026-10-31）</li></ul>
+  <p>💥 证伪触发条件：（已confirmed）若Q4/2027年指引显示主要车载或机器人芯片大客户流失、订单环比腰斩，或管理层公开承认端侧AI终端需求放缓，应触发post-confirm复核降级。</p>
+</div>
+<div class="card">
+  <h3>688195.SS · 腾景科技集团股份有限公司 <span class="badge confirmed">confirmed</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">AI数据中心OCS+高速光模块无源元组件需求爆发将在2-3个季度内持续推高其光学组件收入并驱动利润率扩张</p>
+  <p>后验：0.47 → <b class="up">0.89 ↑</b>（Δ+0.4206）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-08-28 2026年中报正式披露：归母净利润5008.21万元(+36.88% YoY)，扣非净利约4967.39万元(+43.4</td><td>T1_hard_financial</td><td>strong_support</td><td>+1.099</td></tr><tr><td>2026-10-29 2026年前三季度正式季报：营收20.93亿元(+45.04% YoY)，净利8427万元(同比扭亏)；此前10/15-</td><td>T4_narrative</td><td>neutral</td><td>+0.000</td></tr><tr><td>2026-10-23 腾景科技前三季度营收7.44亿元(+74.93% YoY)，净利润9610.42万元(+50.63% YoY)；Q3单季营收3.14亿元(+…</td><td>T1_hard_financial</td><td>strong_support</td><td>+1.099</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] H1 2026中报扣非净利润及剔股权激励后归母净利润（截止8月31日）（check_by 2026-08-31）</li><li>[V2·旁证·unclear] H2 2026 OCS供应链扩大信号及新客户拓展（check_by 2026-10-31）</li></ul>
+  <p>💥 证伪触发条件：（已confirmed）若Q4/全年报告显示OCS或光模块相关订单增速骤降至个位数或转负、Coherent/下游客户大幅削减或取消订单且无新客户填补份额，应触发post-confirm复核降级。</p>
+</div>
+<div class="card">
+  <h3>688380.SS · 中微半导体（深圳）股份有限公司 <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">AI算力挤占MCU产能引发结构性缺货提价，2-3个季度内将持续改写营收线</p>
+  <p>后验：0.59 → <b class="up">0.65 ↑</b>（Δ+0.0676）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-10-27 2026年前三季度正式季报：归母净利润1.62亿元(+6.34% YoY)，但Q3单季归母净利润转亏967.52万元，扣</td><td>T1_hard_financial</td><td>weak_against</td><td>-0.406</td></tr><tr><td>2026-10-27 中微半导Q3亏损系持有电科芯片股票公允价值变动损益-1.037亿元(非经营性)；核心业务前三季度毛利率39.12%(+5.5pp YoY)，…</td><td>T2_supply_chain</td><td>moderate_support</td><td>+0.693</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] 2026年中报正式财报（截止8-31）营业收入与扣非净利润（check_by 2026-08-31）</li><li>[V2·旁证·met] Q3单季度MCU产品价格及交期趋势（行业媒体/公司披露）（check_by 2026-10-31）</li><li>[V3·旁证·missed] 三季报扣非净利润同比增速（check_by 2026-10-31）</li></ul>
+  <p>💥 证伪触发条件：若后续季度剔除非经营性因素后的核心MCU业务毛利率同比转降、营收增速骤降至个位数，或公司/行业媒体证实MCU价格实质性下调超10%且交期恢复至正常水平，可将后验打至0.2以下。</p>
+</div>
+<div class="card">
+  <h3>920493.BJ · 北京并行科技股份有限公司 <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">AI算力服务结构性紧缺将在1-2个季度内持续推高其算力服务收入并驱动净利率改善</p>
+  <p>后验：0.36 → <b class="up">0.83 ↑</b>（Δ+0.4763）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-08-29 2026年中报：归母净利润4192.64万元(+725.55% YoY，达V1门槛4000万但缓冲仅约4.8%)，扣非净</td><td>T1_hard_financial</td><td>strong_support</td><td>+1.099</td></tr><tr><td>2026-10-29 2026年前三季度正式季报：营收15.47亿元(+110.75% YoY，超V2门槛+80%)，净利润7881万元(+8</td><td>T1_hard_financial</td><td>strong_support</td><td>+1.099</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·unclear] 2026年中报归母净利润（截止8月31日）及管理层对H2智算服务需求的量化展望（check_by 2026-08-31）</li><li>[V2·旁证·met] 2026年三季报营收同比增速（check_by 2026-10-31）</li><li>[V3·旁证·met] H1净利率（归母净利润/营收）同比改善幅度（check_by 2026-08-31）</li></ul>
+  <p>💥 证伪触发条件：若Q4/全年报告显示净利率增速逆转下滑、主要大客户流失、算力服务价格战导致单价大幅下降，且管理层承认产能利用率不及预期或资本开支计划大幅收缩，可将后验打至0.2以下；V1(必要)因管理层量化指引文本始终未披露，本周刻意保守判unclear而非met，尚未满足confirmed条件。</p>
+</div>
+<div class="card">
+  <h3>300981.SZ · 中红普林医疗用品股份有限公司 <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">丁腈手套供给出清+提价周期将在1-2个季度内持续改写其净利率并驱动业绩超预期</p>
+  <p>后验：0.45 → <b class="up">0.71 ↑</b>（Δ+0.2611）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-08-25 2026年中报正式披露：归母净利润1.59亿元(+2662.38% YoY，达V1门槛1.4亿)，扣非净利1.15亿元(</td><td>T1_hard_financial</td><td>strong_support</td><td>+1.099</td></tr><tr><td>2026-10-16 丁腈手套ASP三季度走势分化：6月末接单价回落约25-37%，9月内销开启新一轮涨价回升至3月高位，10月丁二烯价格小幅回落；中红医疗三季度…</td><td>T3_soft_signal</td><td>neutral</td><td>+0.000</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] 2026年中报归母净利润（截止8月31日）及管理层H2丁腈手套价格/满产满销展望（check_by 2026-08-31）</li><li>[V2·旁证·unclear] 丁腈手套/丁腈胶乳市场价格稳定性（check_by 2026-10-31）</li><li>[V3·旁证·pending] 印尼SEA2基地产能释放进度（check_by 2026-12-31）</li></ul>
+  <p>💥 证伪触发条件：若Q4/全年报告显示丁腈手套ASP较Q2高点持续回落超30%且公司确认提价未能对冲丁二烯成本上涨、印尼SEA2产能大幅延期，或行业新增产能集中释放导致供给过剩压垂利润率，可将后验打至0.2以下。</p>
+</div>
+<div class="card">
+  <h3>AEHR · Aehr Test Systems, Inc. <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">AI芯片/硅光子学量产良率老化测试需求爆发将在2-3个季度内持续推高其设备+耗材收入并驱动指引连续上修</p>
+  <p>后验：0.89 → <b class="down">0.84 ↓</b>（Δ-0.0480）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-08-14 Jefferies首次覆盖AEHR给予Buy评级/目标价$175，称其为唯一同时提供晶圆级与封装级burn-in并已导入AI量产的供应商；预…</td><td>T4_narrative</td><td>neutral</td><td>+0.000</td></tr><tr><td>2026-10-07 10/7 8-K披露FY2026 Q4/全年财报(非原V1所需的FY27 Q1数字，公司因财年结束日调整，FY27 Q1</td><td>T1_hard_financial</td><td>neutral</td><td>+0.000</td></tr><tr><td>2026-10-29 公司新增董事Vijay Rao(前Meta基础设施高管，具超大规模数据中心/AI加速器经验)，对公司在AI数据中心客户认</td><td>T3_soft_signal</td><td>neutral</td><td>+0.000</td></tr><tr><td>2026-10-31 AEHR本周新增价格证据：相对SOXX超额-17.47%</td><td>P_price</td><td>weak_against</td><td>-0.406</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·pending] FY2027 Q1（截止约2026年8月28日，预计10月初发布）营收同比增速及管理层对FY27全年指引($1.3-1.5亿)的重申/修订（check_by 2026-11-02）</li><li>[V2·旁证·met] 2026年Q3(8-10月)期间AI处理器/硅光子学客户追加订单及backlog变化（check_by 2026-10-31）</li></ul>
+  <p>💥 证伪触发条件：若Q1 FY27财报(预计2026-11-02发布)显示营收同比增速骤降至远低于50%，或管理层下修FY27全年指引，或主要lead customer取消或大幅削减在手订单导致backlog环比下滑，可将后验打至0.2以下。</p>
+</div>
+<div class="card">
+  <h3>300613.SZ · 上海富瀚微电子股份有限公司 <span class="badge confirmed">confirmed</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">存储/上游涨价传导提价+三大业务量价齐升将在1-2个季度内持续推高其营收净利率结构性改善</p>
+  <p>后验：0.83 → <b class="up">0.97 ↑</b>（Δ+0.1433）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-10-27 2026年前三季度正式季报：归母净利润7.75亿元(+845.02% YoY)，延续H1高增长趋势，方向支持V2(Q3存</td><td>T1_hard_financial</td><td>strong_support</td><td>+1.099</td></tr><tr><td>2026-10-30 2026年10月DRAM现货/合约价创新高，机构预测Q4 DRAM/NAND合约价续涨15%-20%</td><td>T3_soft_signal</td><td>weak_support</td><td>+0.406</td></tr><tr><td>2026-10-31 300613.SZ本周新增价格证据：相对SOXX超额+44.98%</td><td>P_price</td><td>weak_support</td><td>+0.406</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] H1 2026正式中报（法定8/31前披露，预计8月中下旬）营收及归母净利润（check_by 2026-08-31）</li><li>[V2·旁证·met] Q3 2026（10月末前后）存储/被动件价格走势及公司经营数据（check_by 2026-10-31）</li></ul>
+  <p>💥 证伪触发条件：（已confirmed）若Q4/全年报告显示存储现货价格年内快速回落(>30%)导致公司提价空间消失、三大业务板块销量环比转降，或主要存储厂商集体下修此前Q4涨价预期转为跌价，应触发post-confirm复核降级。</p>
+</div>
+<div class="card">
+  <h3>688733.SS · 安徽壹石通材料科技股份有限公司 <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">新能源车/储能需求高增驱动涂覆材料放量+产能释放规模效应将在1-2个季度内推动其扭亏为盈兑现</p>
+  <p>后验：0.46 → <b class="down">0.30 ↓</b>（Δ-0.1615）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-10-29 壹石通2026年前三季度正式季报：营收6.59亿元(+51.63%)，归母净利润2245.97万元(+262.46%)，扣非归母净利润仅68…</td><td>T1_hard_financial</td><td>moderate_against</td><td>-0.693</td></tr><tr><td>2026-10-30 2026年10月磷酸铁锂动力/储能电池价格环比上涨，碳酸锂期货小幅走高，8月电池排产环比+7.4%且全年产量预测上修</td><td>T3_soft_signal</td><td>weak_support</td><td>+0.406</td></tr><tr><td>2026-10-31 688733.SS本周新增价格证据：相对SOXX超额-29.41%</td><td>P_price</td><td>weak_against</td><td>-0.406</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] H1 2026正式中报（法定8/31前披露）营业收入及归母净利润（check_by 2026-08-31）</li><li>[V2·旁证·met] 下游动力电池/储能电池龙头厂商Q3排产及涂覆材料价格走势（check_by 2026-10-31）</li></ul>
+  <p>💥 证伪触发条件：若Q4/年报显示扣非净利润持续为负或增长停滞、下游电池厂商大规模削减排产、涂覆材料遭遇价格战导致毛利率显著回落，或主要客户订单流失，将把后验打到0.2以下；本周扣非净利润质量问题(9个月仅68万元)已是明确预警。</p>
+</div>
+<div class="card">
+  <h3>AUTL · Autolus Therapeutics plc <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">AUCATZYL商业化放量加速将在2-3个季度内持续改写其产品收入线并驱动全年指引上修</p>
+  <p>后验：0.72 → <b class="down">0.63 ↓</b>（Δ-0.0889）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-10-31 AUTL本周新增价格证据：相对SOXX超额-24.75%</td><td>P_price</td><td>weak_against</td><td>-0.406</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] 2026-08-11正式Q2 2026财报：AUCATZYL净产品收入确认值及FY2026全年指引（check_by 2026-08-11）</li><li>[V2·旁证·met] 8/11电话会议披露的治疗中心(site of care)激活数量与患者接入进展（check_by 2026-08-11）</li><li>[V3·旁证·pending] 现金跑道与再融资动作（Perceptive信贷安排之外）（check_by 2026-11-15）</li></ul>
+  <p>💥 证伪触发条件：若2026-11-10 Q3财报显示AUCATZYL净产品收入环比下滑或治疗中心扩张停滞/收缩，或公司在Perceptive信贷安排之外被迫宣布额外股权融资显著稀释股东，将把后验打到0.2以下。</p>
+</div>
+<div class="card">
+  <h3>688758.SS · 苏州赛分科技股份有限公司 <span class="badge confirmed">confirmed</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">全球生物药GLP-1/抗体纯化需求扩容将在1-2个季度内持续推高其工业纯化收入并驱动净利率结构性提升</p>
+  <p>后验：0.35 → <b class="up">0.83 ↑</b>（Δ+0.4789）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-08-27 2026年中报正式披露：营收2.8亿元(+53.2% YoY)，归母净利润1.11亿元(+106.2%)，扣非净利1.0</td><td>T1_hard_financial</td><td>moderate_support</td><td>+0.693</td></tr><tr><td>2026-10-29 2026年前三季度正式季报：营收4.25亿元(+40.52% YoY)，净利润1.65亿元(+76.83% YoY)。工</td><td>T1_hard_financial</td><td>strong_support</td><td>+1.099</td></tr><tr><td>2026-10-19 赛分科技2026年前三季度业绩预告：新增落地28个临床后期及商业化阶段项目(较H1公告的17个继续净增)，扬州二期按2026年底投产计划推进…</td><td>T2_supply_chain</td><td>weak_support</td><td>+0.406</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] 2026年半年度正式报告：扣非净利润同比增速 & 工业纯化业务收入同比增速（check_by 2026-08-31）</li><li>[V2·旁证·met] 中报/三季报电话会披露项目储备净增数量与扬州二期产能投产进度（check_by 2026-10-31）</li></ul>
+  <p>💥 证伪触发条件：（已confirmed）若Q4/年报显示工业纯化板块增速骤降至30%以下、新增临床后期/商业化项目获取明显放缓，或扬州二期投产延迟且管理层承认产能瓶颈影响交付，应触发post-confirm复核降级。</p>
+</div>
+<div class="card">
+  <h3>301366.SZ · 深圳市一博科技股份有限公司 <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">AI硬件PCB产能满产订单积压将在1-2个季度内持续改写其营收净利率结构</p>
+  <p>后验：0.25 → <b class="up">0.67 ↑</b>（Δ+0.4167）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-10-28 全资子公司珠海一博电子公告拟签约10亿元AI算力高端PCB制造项目投资协议，固定资产投资约6亿元，设计产能8万㎡/月，满</td><td>T1_hard_financial</td><td>moderate_support</td><td>+0.693</td></tr><tr><td>2026-10-28 一博科技2026年第三季度报告：前三季度营收12.40亿元(+56.11%)，净利润1.61亿元(+834.98%)；Q3单季营收5.31亿…</td><td>T1_hard_financial</td><td>strong_support</td><td>+1.099</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] 2026年三季报(法定截止10-31)单季度营收同比增速及扣非净利润增长趋势（check_by 2026-10-31）</li><li>[V2·旁证·met] AI算力相关营收占比变化及新客户/新订单公告（check_by 2026-10-31）</li></ul>
+  <p>💥 证伪触发条件：若Q4财报显示营收增速骤降至15%以下或净利润同比转为下滑，或珠海10亿元AI算力项目因良率/客户验证问题搁置或延期，或主要AI/光模块头部客户流失，将把后验打到0.2以下。</p>
+</div>
+<div class="card">
+  <h3>PSIX · Power Solutions International, Inc. <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">数据中心备用电源大额订单转入生产将在1-2个季度内改写其营收结构与毛利率</p>
+  <p>后验：0.20 → <b class="up">0.27 ↑</b>（Δ+0.0727）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-08-17 Power Solutions International任命Richard Hu(此前任职BorgWarner/Delphi Techno…</td><td>T3_soft_signal</td><td>neutral</td><td>+0.000</td></tr><tr><td>2026-10-21 新增$220M循环信贷额度(替换原$135M额度)，约9/30完成；10/21宣布'PSI 2.0'品牌重塑及'Powe</td><td>T1_hard_financial</td><td>neutral</td><td>+0.000</td></tr><tr><td>2026-10-31 PSIX本周新增价格证据：相对XLI超额+21.6%</td><td>P_price</td><td>weak_support</td><td>+0.406</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·pending] 2026年Q3财报(约11月初发布)营收环比/同比及H2整体指引兑现情况（check_by 2026-11-05）</li><li>[V2·旁证·pending] 新增数据中心大型电源系统订单公告（check_by 2026-11-05）</li></ul>
+  <p>💥 证伪触发条件：若2026Q3财报(11/5)显示营收环比未改善甚至走弱、管理层将数据中心电源订单继续描述为'不均衡'或交付推迟，且油气板块疲软未见缓解，后验将被打至0.2以下。</p>
+</div>
+<div class="card">
+  <h3>AIP · Arteris, Inc. <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">AI/HPC芯片设计爆发式增长的royalty转化将在2-3个季度内持续改写其收入与ACV结构</p>
+  <p>后验：0.34 → <b class="down">0.26 ↓</b>（Δ-0.0844）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-10-06 10/6公告与BAE Systems、SiFive合作扩展硬件IP安全保障项目(政府资助，面向航空航天/国防半导体供应链</td><td>T3_soft_signal</td><td>neutral</td><td>+0.000</td></tr><tr><td>2026-10-31 AIP本周新增价格证据：相对SOXX超额-19.77%</td><td>P_price</td><td>weak_against</td><td>-0.406</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·pending] 2026年Q3财报(Yahoo确认2026-11-03)ACV+royalties同比增速及design starts趋势（check_by 2026-11-05）</li><li>[V2·旁证·pending] 新增/丢失重大客户design win或客户集中度变化（check_by 2026-11-05）</li></ul>
+  <p>💥 证伪触发条件：若2026Q3财报(11/5)显示ACV+royalties同比增速降至15%以下，或design starts同比转负，或核心客户公开减少采用Arteris IP，后验将跌破0.2。</p>
+</div>
+<div class="card">
+  <h3>688265.SS · 上海南方模式生物科技股份有限公司 <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">生物医药研发需求回暖将在1-2个季度内改写其模式动物服务收入与毛利结构</p>
+  <p>后验：0.32 → <b class="down">0.14 ↓</b>（Δ-0.1850）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-08-30 2026年中报正式披露：营收2.32亿元(+18.73% YoY，落在falsify线10.34%与confirm线27</td><td>T1_hard_financial</td><td>weak_against</td><td>-0.406</td></tr><tr><td>2026-10-29 2026年前三季度正式季报：营收3.69亿元(+21.76% YoY)，净利润773万元，同比-71.13%(较H1的-</td><td>T1_hard_financial</td><td>moderate_against</td><td>-0.693</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·pending] 2026年中报正式披露(法定截止8/31)营业收入及剔除股份支付影响后净利润同比增速（check_by 2026-08-31）</li><li>[V2·旁证·pending] 新增/大额工业端(CRO/创新药企)合作或订单公告（check_by 2026-08-31）</li></ul>
+  <p>💥 证伪触发条件：若Q4/年度报告显示营收增速继续放缓且净利润(即便剔除股份支付这一次性因素)仍未能恢复正增长，或工业端收入占比提升始终拿不出具体数据支撑，核心传导逻辑将被证明站不住脚；目前后验0.1364已逼近连续两周≤0.10的证伪线，是本周期最脆弱的持仓。</p>
+</div>
+<div class="card">
+  <h3>MTUS · Metallus Inc. <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">特种钢现货端提价+航空航天国防订单积压将在2-3个季度内持续推高其ASP与毛利率结构</p>
+  <p>后验：0.27 → <b class="up">0.43 ↑</b>（Δ+0.1552）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-09-29 9/29公告获美国国防后勤局(DLA)特种钢合同，合同上限$995M，首批交付订单约$125M；10/5股价+5.78%</td><td>T1_hard_financial</td><td>moderate_support</td><td>+0.693</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·pending] 2026Q3财报(预计2026年11月初)特钢产品毛利率环比变化及A&D板块积压订单同比增速（check_by 2026-11-02）</li><li>[V2·旁证·pending] 航空航天与国防板块年化销售规模是否如期于2026年中达到2.5亿美元目标（check_by 2026-11-09）</li></ul>
+  <p>💥 证伪触发条件：若2026Q3财报(11/2)显示毛利率环比走平或下滑且A&D积压订单同比增速回落至30%以下，或DLA合同后续批次大幅缩水，后验将跌破0.2。</p>
+</div>
+<div class="card">
+  <h3>MASS · 908 Devices Inc. <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">手持化学/生物检测设备执法与国防订单加速将在1-2个季度内改写其产品收入线并驱动经常性收入占比提升</p>
+  <p>后验：0.26 → <b class="up">0.44 ↑</b>（Δ+0.1815）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-10-01 新增多项政府/执法订单信号：丹麦国防采购机构选定XplorIR平台(长程化学检测框架协议)；德州刑事司法部扩大MX908</td><td>T3_soft_signal</td><td>weak_support</td><td>+0.406</td></tr><tr><td>2026-10-31 MASS本周新增价格证据：相对XLI超额+35.92%</td><td>P_price</td><td>weak_support</td><td>+0.406</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·pending] 2026Q3财报(预计2026年11月初)产品收入同比增速及新增政府/执法机构订单披露（check_by 2026-11-10）</li><li>[V2·旁证·pending] FY2026营收指引是否维持或上修，及每股亏损收窄趋势（check_by 2026-11-10）</li></ul>
+  <p>💥 证伪触发条件：若2026Q3财报(11/10)显示产品收入同比增速回落至10%以下且无新增300万美元以上政府订单披露，或FY2026营收指引下修且每股亏损继续扩大，后验将跌破0.2。</p>
+</div>
+<div class="card">
+  <h3>QMCO · Quantum Corporation <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">磁带存储复苏+供给持续吃紧将在2-3个季度内推高其营收与毛利率</p>
+  <p>后验：0.28 → <b class="flat">0.28 →</b>（Δ+0.0000）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td>2026-10-09 10/9 8-K披露：公司预计截至2026-09-30季度'达到或超过'此前发布指引，但明确为初步/未经审计口径，待审计</td><td>T3_soft_signal</td><td>weak_support</td><td>+0.406</td></tr><tr><td>2026-10-31 QMCO本周新增价格证据：相对XLI超额-21.33%</td><td>P_price</td><td>weak_against</td><td>-0.406</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·pending] FY2027 Q2（9月季度，Yahoo官方排期2026-11-09发布）实际营收及管理层对后续季度指引/backlog表态（check_by 2026-11-09）</li><li>[V2·旁证·pending] 2026年Q3(8-10月)期间新增超大规模客户磁带/ActiveScale订单披露或供给瓶颈缓解进展（check_by 2026-11-09）</li></ul>
+  <p>💥 证伪触发条件：若2026-11-09正式审计后的FY27 Q2营收低于$76M，或管理层表示磁带/ActiveScale需求边际转弱、backlog环比下滑，叠加CFO过渡期内进一步暴露治理问题，后验会被打到0.2以下。</p>
+</div>
+<div class="card">
+  <h3>688410.SS · 重庆山外山血液净化技术股份有限公司 <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">血透耗材自产放量+规模效应将在1-2个季度内持续改写其净利率结构</p>
+  <p>后验：0.57 → <b class="flat">0.57 →</b>（Δ+0.0000）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td colspan='4' style='color:var(--dim)'>刚入池5天，V1已于三季报(法定10/31前披露)确认met；本周无新增证据，价格证据建议neutral不入账。</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] 2026年前三季度正式季报(法定10-31前披露)归母净利润及扣非净利润（check_by 2026-10-31）</li><li>[V2·旁证·pending] 自产耗材收入占比及综合毛利率同比变化（年报/电话会披露）（check_by 2027-01-31）</li></ul>
+  <p>💥 证伪触发条件：V1已硬性达标；若叠加监管/审计对已披露三季报净利润真实性提出重大问询或出现业绩更正，或年报显示耗材占比不升反降、毛利率同比转降，后验才可能被打到0.2以下。</p>
+</div>
+<div class="card">
+  <h3>301563.SZ · 上海云汉芯城电子科技股份有限公司 <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">半导体上行周期驱动平台GMV放量将在1-2个季度内持续改写其净利率结构</p>
+  <p>后验：0.44 → <b class="flat">0.44 →</b>（Δ+0.0000）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td colspan='4' style='color:var(--dim)'>刚入池4天，V1已于三季报确认met；本周无新增证据，价格证据建议neutral不入账。</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·met] 2026年前三季度正式季报(法定10-31前披露)归母净利润及扣非净利润（check_by 2026-10-31）</li><li>[V2·旁证·pending] Q4平台GMV/订单量增速及新客户拓展（年报/电话会披露）（check_by 2027-01-31）</li></ul>
+  <p>💥 证伪触发条件：V1已硬性达标；若Q4订单量/GMV同比增速明显放缓(<20%)或主要客户流失，并叠加管理层下修2027年展望，后验才可能被打到0.2以下。</p>
+</div>
+<div class="card">
+  <h3>INTT · inTest Corporation <span class="badge observing">observing</span></h3>
+  <p style="color:var(--dim);font-size:.88em;margin-bottom:8px">AI数据中心驱动的半导体后段测试订单激增将在2-3个季度内重塑inTest收入规模</p>
+  <p>后验：0.32 → <b class="flat">0.32 →</b>（Δ+0.0000）</p>
+  <table><thead><tr><th>本周证据</th><th>tier</th><th>标签</th><th>log-LR</th></tr></thead><tbody><tr><td colspan='4' style='color:var(--dim)'>刚入池3天，V1/V2均未到期(11/6)，本周无新增实质信息，价格证据建议neutral不入账。</td></tr></tbody></table>
+  <ul style="font-size:.88em;color:var(--dim);margin:8px 0 8px 20px"><li>[V1·必要·pending] 2026Q3实际收入 + book-to-bill比率（11/6财报，相对10/5预告的坐实程度）（check_by 2026-11-06）</li><li>[V2·旁证·pending] 2026Q4/FY2027初步指引中管理层对AI数据中心驱动需求延续性的表态 + 是否有新增内控缺陷披露（check_by 2026-11-06）</li></ul>
+  <p>💥 证伪触发条件：若2026-11-06财报实际收入低于$31M或book-to-bill实际值低于1.1x，或管理层提及订单推迟/客户资本开支放缓，且新增内控material weakness披露，后验会被打到0.2以下。</p>
+</div>
+
+<h2>3. 状态迁移公告</h2>
+<div class="card">
+  <h3>002326.SZ · observing → <span class="badge confirmed">confirmed</span></h3>
+  <p><b>迁移理由：</b>V1(必要)经中报利润达标(2.74亿，+365.74%)+与宁德时代签订3年9万吨VC框架合同+补搜确认锂电材料板块收入+112.09%(proxy满足VC收入≥100%门槛)综合判met；V2(CATL 2027产能准备，5万吨/年新线明确为CATL备产)met；V3(VC市场价23万元/吨，供需紧平衡未松动)met。账本重算后验0.9430≥0.75，判confirmed。</p>
+  <p><b>post_mortem：</b>押注CATL框架合同驱动VC收入结构性放量，被中报利润超预告+专项产能扩张+VC价格维持高位三重验证，判断正确；唯一瑕疵是VC收入增速靠锂电材料板块(112.09%)作为proxy而非VC单一产品数据，确认时点略晚于理想。</p>
+</div>
+<div class="card">
+  <h3>003026.SZ · observing → <span class="badge confirmed">confirmed</span></h3>
+  <p><b>迁移理由：</b>H1中报利润达标(缓冲4-5%)+三季报利润加速至Q3单季+292.96%(营收+65.29%)，连续两期同步加速验证'产能释放+订单满载'传导逻辑；账本重算后验0.8668≥0.75，V1(必要)met，判confirmed。</p>
+  <p><b>post_mortem：</b>押注半导体国产化+功率器件产能释放驱动业绩持续超预期，中报缓冲虽薄但三季报利润加速(Q3单季+292.96%)验证趋势兑现而非一次性波动，判断正确。</p>
+</div>
+<div class="card">
+  <h3>301536.SZ · observing → <span class="badge confirmed">confirmed</span></h3>
+  <p><b>迁移理由：</b>中报归母净利8.63亿(+619.5%)+营收26.58亿均达标，管理层指引H2出货持续增长；三季报Q3单季净利7.01亿(+752.76%)远超V2门槛，叠加新增一汽大众等传统合资车厂导入车规芯片。V1(必要)+V2均met，账本重算后验0.8693≥0.75，判confirmed。</p>
+  <p><b>post_mortem：</b>押注端边侧AI SoC需求爆发+SSR670量产驱动业绩超预期，中报+三季报连续兑现且新增传统车厂客户导入验证'需求结构性扩张'而非单一客户脉冲，判断正确。</p>
+</div>
+<div class="card">
+  <h3>688195.SS · observing → <span class="badge confirmed">confirmed</span></h3>
+  <p><b>迁移理由：</b>中报扣非净利4967.39万(+43.46%)达门槛，剔除股权激励后归母净利7154.20万(+95.53%)达6900万门槛，V1两项子条件均满足；三季报(经补搜核实修正E8数据错误后)营收7.44亿(+74.93%)/净利9610.42万(+50.63%)，Q3单季增速较Q1进一步加速。账本重算后验0.8874≥0.75，V1(必要)met，判confirmed。</p>
+  <p><b>post_mortem：</b>押注AI数据中心OCS+高速光模块无源元组件需求放量驱动利润率扩张，中报+三季报连续验证且营收增速加速，判断正确；过程中发现池内原始pending证据(E8)存在数据错误(疑似与其他公司财报混淆)，已用补搜核实的真实数据更正，提示daily-scan阶段的数字摘录流程需要加强校验。</p>
+</div>
+<div class="card">
+  <h3>300613.SZ · observing → <span class="badge confirmed">confirmed</span></h3>
+  <p><b>迁移理由：</b>V1(必要)已于此前周报确认met；本周V2(Q3存储/被动件价格走势)经补搜确认DRAM/NAND合约价10月创新高、Q4预期续涨15-20%，叠加公司三季报净利润+845.02%(Q3单季+620.99%，增速较H1加速)，V2判met。账本重算后验0.9772(远超0.75)，V1+V2均met，判confirmed。</p>
+  <p><b>post_mortem：</b>押注存储/上游涨价传导+三大业务量价齐升驱动净利率结构性改善，中报+三季报连续兑现且行业DRAM/NAND涨价周期未现拐点，判断正确；复核时后验已达0.83，本周两条支撑证据叠加价格证据后突破0.95，升幅偏快，建议下次季度校准复盘关注该假设是否存在'强证据扎堆同周'导致过度自信的风险。</p>
+</div>
+<div class="card">
+  <h3>688758.SS · observing → <span class="badge confirmed">confirmed</span></h3>
+  <p><b>迁移理由：</b>H1正式中报扣非净利1.08亿(+131.54%)远超90%门槛，工业纯化板块增速经叙述性确认'突破50%'且经Q3精确数字(+55.35%)交叉验证；三季报营收4.25亿(+40.52%)/净利1.65亿(+76.83%)延续强劲；项目储备9个月净增28个，扬州二期按计划推进。V1(必要)+V2均met，账本重算后验0.8289≥0.75，判confirmed。</p>
+  <p><b>post_mortem：</b>押注全球GLP-1/抗体纯化需求扩容驱动工业纯化收入及净利率结构性提升，H1+Q3连续验证且项目储备持续净增，判断正确；本次复核一次性补判了两个月滞后的V1/V2，提示daily-scan阶段应更及时标记到期验证条件，避免证据堆积到周复核时一次性释放过大log-odds变动。</p>
+</div>
+
+<h2>4. Promote 建议</h2>
+<p>本周新增 <b>6 条 confirmed</b> 假设，候选 promote 清单如下：</p>
+<ul><li><b>002326.SZ</b>（浙江永太科技股份有限公司）· 后验 0.943 · CATL万吨级VC框架合同+自产产能释放将在2-3个季度内持续推高其电解液添加剂收入线并驱动业绩超预期</li><li><b>003026.SZ</b>（浙江中晶科技股份有限公司）· 后验 0.867 · 半导体国产化+功率器件需求将在2-3个季度内推高其硅材料收入并驱动业绩持续超预期</li><li><b>301536.SZ</b>（星宸科技股份有限公司）· 后验 0.869 · 端边侧AI SoC需求爆发+SSR670量产将在2-3个季度内持续推高其收入并驱动全年业绩超预期</li><li><b>688195.SS</b>（腾景科技集团股份有限公司）· 后验 0.887 · AI数据中心OCS+高速光模块无源元组件需求爆发将在2-3个季度内持续推高其光学组件收入并驱动利润率扩张</li><li><b>300613.SZ</b>（上海富瀚微电子股份有限公司）· 后验 0.970 · 存储/上游涨价传导提价+三大业务量价齐升将在1-2个季度内持续推高其营收净利率结构性改善</li><li><b>688758.SS</b>（苏州赛分科技股份有限公司）· 后验 0.829 · 全球生物药GLP-1/抗体纯化需求扩容将在1-2个季度内持续推高其工业纯化收入并驱动净利率结构性提升</li></ul>
+<p style='color:var(--dim);font-size:.85em'>⚠️ 以上仅为 promote 候选建议。向 ai-investment-weekly/data/portfolio.json 的状态迁移仅在用户手动确认后执行，本系统绝不自动建仓。
+建议用户逐条核实：(1) 002326.SZ/688195.SS 的 V1 判定部分依赖"板块收入"作为 VC/OCS 专项收入的 proxy，非精确数字；(2) 300613.SZ 本周后验从0.83跃升至0.97，升幅主要由两条strong_support叠加moderate_support价格证据触发，建议对照年报做二次确认；(3) 其余4条(003026.SZ/301536.SZ/688758.SS)证据链相对扎实。</p>
+
+<h2>5. 评分卡摘要</h2>
+<div class="kpi-row">
+  <div class="kpi"><div class="v">23</div><div class="k">活跃</div></div>
+  <div class="kpi"><div class="v">6</div><div class="k">confirmed</div></div>
+  <div class="kpi"><div class="v">0</div><div class="k">falsified</div></div>
+  <div class="kpi"><div class="v">0</div><div class="k">expired</div></div>
+</div>
+<p>命中率 100%（n_resolved=6，全部为本周新增confirmed，0 falsified/expired）；Brier(final) 0.0134，Brier(time-avg) 0.2538。
+<b>样本解读需谨慎</b>：6个已关闭假设全部是"hit"，0个"miss"，校准分箱的 actual_rate 全部显示100%并非真正的校准证据——没有miss样本，无法区分"先验/标尺确实准"还是"系统还没来得及犯错/还没真正证伪过任何假设"。</p>
+<p>经济性快照：observing 仓位平均收益 -16.39%（vs SPY超额 -10.54%，n=22）；
+confirmed 仓位平均收益 -17.95%（vs SPY超额 -5.25%，n=6）——
+注意轨道A(假设验证)与轨道B(赚钱)分开记账：本周6条confirmed的基本面判断全部兑现，但其中多条股价仍跑输大盘（如002326.SZ/688733.SS系列的A股半导体材料板块本身经历了系统性杀估值），
+这正是方法论设计"财务验证与赚钱分开记账"的意义所在。</p>
+
+<h2>6. 季度校准复盘（Q4 2026 首次周复核）</h2>
+<div class="card">
+<p><b>1. 先验是否系统性偏高？</b> 暂无法判断。校准分箱在0.2-1.0区间全部显示100%命中率，但这是因为目前0个"miss"样本（0 falsified/expired）——不是先验校准良好的证据，而是系统尚未经历任何一次真正的证伪。在至少出现几条falsified/expired之前，不应依据当前分箱得出"先验偏保守/偏乐观"的结论。</p>
+<p><b>2. 哪个tier在骗我？</b> 同样因0个miss样本无法判断（tier_discrimination中所有tier的avg_loglr_in_misses均为null）。T1_hard_financial在本季度贡献了最多的hit样本(n=15)和最高平均log_lr(0.825)，是目前驱动confirmed的主力tier，但"是否存在虚假鉴别力"要等到它在某条falsified假设里也给出高log_lr才能验证。</p>
+<p><b>3. 证伪平均耗时几周？</b> 0个falsified案例，无法计算。当前后验最低的688265.SS(0.1364)、QMCO(0.28)、AIP(0.2556)是观察falsified通道首次触发的候选。</p>
+<p><b>4. expired占比是否过高？</b> 0%（0/29），尚不构成担忧，但样本太早。</p>
+<p style="color:var(--amber)"><b>本季度最重要的发现不在四问本身，而在复核节奏：</b>本次复核距上次(2026-08-15)间隔约11周，而falsified判定规则之一是"后验≤0.10<b>连续两周</b>"——如果周复核节奏不稳定（本季度实际是单次大跳变而非连续11次观察），这条证伪通道在实践中几乎不可能被触发，因为它依赖"连续周"的观测密度。建议：(a) 恢复真正的每周节奏，或 (b) 将该规则改为"至少两次独立复核(无论间隔)观测到后验≤0.10，且期间无新增强支持证据"，否则该季度6个confirmed+0个falsified的命中率看起来完美，但更可能反映的是"证伪机制失效"而非"判断真的很准"。这应作为下次methodology版本修订的候选项，提交用户确认。</p>
+</div>
+
+<h2>下周扫描线索</h2>
+<ul>
+  <li>920493.BJ（并行科技）后验0.8331但V1因管理层量化指引文本未披露被保守判unclear，下次复核若三季报电话会补充量化口径，大概率触发confirmed；北交所价格数据源404已持续近3个月未修复，建议检查sync-prices.py对北交所代码格式的支持</li>
+  <li>688265.SS（南方模式生物）后验0.1364，逼近连续两周≤0.10的falsified候选线，下次复核若仍无起色需严肃评估falsified</li>
+  <li>688733.SS（壹石通）扣非净利润质量问题（9个月累计仅68万元）需在年报进一步验证是否为一次性因素</li>
+  <li>AEHR 的V1(FY27 Q1正式财报)已修正check_by至2026-11-02，是本周期最临近的决定性判定窗口</li>
+  <li>PSIX/AIP/MTUS/MASS/QMCO/INTT 的Q3财报集中在11月2日-11月10日之间发布，是下次复核的核心判定窗口</li>
+  <li>002497.SZ 碳酸锂价格本周已跌破V2 falsify_if门槛(14万元/吨)，虽为非required条件，仍需紧密跟踪是否传导至三季报锂盐毛利率</li>
+  <li>方法论校准：本季度0 falsified使"连续两周≤0.10"规则实际失效，建议下次用户确认是否修订为methodology v2（见第6节）</li>
+</ul>
+
+<div class="disclaimer">
+  ⚠️ 本页面为个人研究假设跟踪工具的自动化输出，不构成任何投资建议。所有概率为研究性主观估计，
+  数据可能有误或延迟。做出任何投资决策前请独立核实。
+</div>
+
+</body>
+</html>
