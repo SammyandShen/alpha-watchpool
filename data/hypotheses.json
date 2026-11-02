@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-10-31",
+  "$last_updated": "2026-11-02",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -6605,6 +6605,260 @@
           "date": "2026-11-06",
           "type": "earnings",
           "description": "Q3 2026财报+电话会，验证V1/V2",
+          "status": "upcoming"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20261102-ASUR",
+      "ticker": "ASUR",
+      "company": "Asure Software, Inc.",
+      "created_at": "2026-11-02",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-11-02",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：10/30 Q3财报经常性收入+16%YoY(占比92%)，AWS/Oracle新分销渠道+合规外包交叉销售驱动，上修Q4/FY26指引"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-10-30",
+          "headline": "Asure Software(ASUR)发布2026Q3财报：营收4000万美元(+10%)超预期，经常性收入3690万美元(+16%)，EPS $0.21超预期，股价+22%~24%",
+          "url": "https://markets.financialcontent.com/stocks/article/stockstory-2026-10-30-why-asure-software-asur-stock-is-up-today",
+          "summary": "Q3营收/EPS超预期，经常性收入占比92%+16%YoY，AWS/Oracle新渠道+合规外包交叉销售驱动，上修Q4/FY26指引"
+        }
+      ],
+      "thesis": {
+        "one_liner": "AWS/Oracle新渠道分销+合规外包交叉销售放量，2个季度内重塑Asure经常性收入结构",
+        "demand_change": "2026Q3实际经常性收入同比+16%(达3690万美元，占总收入92%)，Payroll Tax Management合规申报服务通过AWS/Oracle Marketplace新分销渠道获客放量(可触达AWS约33万客户)，叠加AsureWorks管理外包交叉销售(客单价约5倍)——这是已实现的收入数据和管理层点名的具体渠道驱动因素，非单纯叙事。",
+        "transmission": "经常性收入占比92%，同比+16%；payroll单位收入同比+57%；公司上修Q4 2026营收指引至4200-4400万美元(原未披露区间)，FY26指引上修至1.62-1.64亿美元，并给出2027年13-14%增长展望；市值仅~2.1亿美元，收入基数小，经常性收入占比/增速提升对报表弹性显著。",
+        "misclassification": "市场仍带着Asure 2022-2023年ERTC(雇佣保留退税)一次性退税业务造成业绩暴涨暴跌的历史印象，把它当作不稳定的小型payroll服务商；而本季度经常性收入占比已达92%，本次增长驱动(云市场分销+合规外包)与ERTC历史问题完全脱钩，市场尚未针对这一结构性转变充分重新定价——机构覆盖稀少。",
+        "brief_cn": [
+          "①触发新闻：Asure Software(ASUR)2026-10-30发布Q3 2026财报，营收4000万美元(+10% YoY)超预期，经常性收入3690万美元(+16% YoY)，non-GAAP EPS $0.21超预期(+10.5%)，调整后EBITDA 1050万美元(+29%)，净亏损大幅收窄至60万美元(去年同期540万美元)，股价单日+22%~24%。",
+          "②需求已可观察且传导清晰：管理层点名三个具体驱动——Payroll Tax Management合规申报服务通过AWS/Oracle Marketplace新渠道获客、Asure Central平台上线一年后放量、AsureWorks管理外包交叉销售(客单价约payroll-only的5倍)；payroll单位收入同比+57%；公司同步上修Q4指引至4200-4400万美元及FY26指引至1.62-1.64亿美元，并给出2027年13-14%增长展望——这是已实现的收入结构数据，不是愿景叙事。",
+          "③市场误分类：市场仍带着Asure 2022-2023年ERTC一次性退税业务造成业绩暴涨暴跌的历史印象，把它当作一家不稳定的小型payroll服务商；而本季度经常性收入占比已达92%，ERTC历史问题与本次增长驱动(云市场分销+合规外包)完全脱钩，市场尚未针对这一结构性转变重新定价——机构覆盖稀少，是典型被忽视的微盘股。",
+          "④先验理由与赌点：七维总分25(demand_certainty 4/transmission 4/purity 3/elasticity 4/neglect 3/verification_speed 4/downside 3)，purity因三个并行驱动因素(渠道分销+平台+交叉销售)叙事稍分散被扣1分，取标准档位上段0.30；赌的是Q4(2027年1-2月财报)能否兑现4200-4400万美元指引且经常性收入占比/增速延续，同时需警惕payroll/HR SaaS赛道竞争拥挤(Paychex/ADP/Gusto/Rippling均为巨头)带来的中期份额风险。"
+        ],
+        "serenity_score": {
+          "demand_certainty": 4,
+          "transmission_clarity": 4,
+          "purity": 3,
+          "elasticity": 4,
+          "neglect": 3,
+          "verification_speed": 4,
+          "downside": 3
+        }
+      },
+      "prior": {
+        "p": 0.3,
+        "log_odds": -0.8473,
+        "rationale": "七维总分25 → 0.22-0.32档；经常性收入占比92%+管理层已上修两次指引(Q4+FY26)支撑确定性，取档位上段0.30",
+        "set_by": "daily-scan 2026-11-02"
+      },
+      "current": {
+        "p": 0.3,
+        "log_odds": -0.8473,
+        "last_reviewed": "2026-11-02",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "2026Q4实际营收+经常性收入同比增速(下次财报，预计2027年1-2月，未正式排期)",
+          "confirm_if": ">= $42M营收 且 经常性收入同比增速 >= 14%",
+          "falsify_if": "< $40M营收 或 经常性收入同比增速 < 10%（指引落空/增长失速）",
+          "check_by": "2027-02-15",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "AWS/Oracle Marketplace渠道贡献的新客户/收入进展披露",
+          "confirm_if": "管理层披露渠道贡献持续扩大(新增客户数或占比提升)",
+          "falsify_if": "管理层未再提及渠道进展或渠道贡献停滞",
+          "check_by": "2027-02-15",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-05-02"
+      },
+      "baseline": {
+        "entry_date": "2026-11-02",
+        "entry_price": 9.41,
+        "benchmark": "SPY",
+        "benchmark_entry_price": 755.72,
+        "sector_benchmark": "IGV",
+        "sector_benchmark_entry_price": 104.29
+      },
+      "price_expectation": {
+        "confirm_target": 16.5,
+        "falsify_target": 6.5,
+        "expected_by": "2027-03-03",
+        "methodology_cn": "证实情景：FY2026指引中值1.63亿美元×(1+13.5% 2027展望中值)≈1.85亿美元FY2027E收入；payroll/HCM SaaS微盘股在经常性收入占比92%+确认情形下估值倍数由当前~1.3x FY26收入(2.1亿市值/1.63亿收入)修复至~2.0x(仍远低于Paycor/Paylocity等4-6x，反映持续小盘折价)→目标市值≈3.7亿美元÷约2230万股(2.1亿市值÷$9.41)≈$16.5/股。证伪情景：若Q4未达4200-4400万美元指引下限且经常性收入增速回落至个位数，估值倍数回落至~0.8x FY26收入1.63亿美元→目标市值≈1.3亿美元÷2230万股≈$6.5/股，低于earnings前股价平台(~$7.7)。",
+        "timeline_logic_cn": "绑定预计2027年1-2月的Q4 2026财报(未正式排期，按历史节奏估算)作为V1判定节点，核心赌点(经常性收入加速能否延续)需要该次财报坐实；市场重估通常滞后2-4周，expected_by设为2027-03-03。",
+        "set_at": "2026-11-02",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-11-02",
+          "p": 0.3,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2027-02-15",
+          "type": "earnings",
+          "description": "Q4 2026/FY2026全年财报(未正式排期，按历史节奏估算)，验证V1/V2",
+          "status": "upcoming"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20261102-OSPN",
+      "ticker": "OSPN",
+      "company": "OneSpan Inc.",
+      "created_at": "2026-11-02",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-11-02",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：10/30 Q3财报订阅收入+16%YoY，大型银行客户合约扩容+EU数字身份法规临近，上修FY26指引"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-10-30",
+          "headline": "OneSpan(OSPN)发布2026Q3财报：营收6390万美元(+12%)，订阅收入5150万美元(+16%)超预期，EPS $0.35超预期，上修FY26指引，股价创12个月新高(+27%)",
+          "url": "https://www.marketbeat.com/instant-alerts/price-onespan-nasdaq-ospn-reaches-new-12-month-high-following-earnings-beat-2026-10-30/",
+          "summary": "Q3订阅收入加速，大型银行客户合约扩容+EU数字身份法规临近，但ARR增速落后订阅收入增速，存在追溯确认噪音"
+        }
+      ],
+      "thesis": {
+        "one_liner": "大客户合约扩容+EU数字身份法规临近，3-4个季度内重塑OneSpan订阅收入曲线",
+        "demand_change": "2026Q3订阅收入5150万美元(+16% YoY)，其中一家大型银行客户将Digital Agreements合约从超额用量模式转为多年期合约并扩大规模(已实现)，叠加ARR同比+9%至1.955亿美元、RPO达1.127亿美元(覆盖至2029年)；同时2027年底欧盟数字身份钱包法规(eIDAS2.0)将强制银行支持数字身份钱包认证，公司计划2027Q1推出DigipassONE Verify——前者是已发生的合同扩容事实，后者是有明确时间表的监管催化剂，但本季度部分增长(ARR增速9%落后订阅收入增速16%)来自逾期续约追溯确认，存在一次性成分。",
+        "transmission": "订阅收入占比81%(5150万/6390万)，同比+16%；RPO 1.127亿美元(2027年5180万/2028年2980万/2029年及以后990万)提供2027年部分收入可见性；FY26营收指引上修至2.54-2.58亿美元(原2.48-2.52亿美元)；市值~9.45亿美元，仅4家卖方覆盖，股价当日+27%反映部分预期但分析师目标价(B.Riley $32/DA Davidson $22)仍分化，街区尚未统一重估。",
+        "misclassification": "市场把OneSpan当作一家增长放缓、硬件token业务拖累估值的传统数字身份认证硬件商，而公司正在向订阅制(81%收入占比)+合规驱动(EU数字身份钱包强制令)的平台转型；由于订阅收入增速(16%)部分含逾期续约追溯确认的噪音，市场对'这是真实加速还是一次性catch-up'存在分歧，这正是误分类/认知差的来源。",
+        "brief_cn": [
+          "①触发新闻：OneSpan(OSPN)2026-10-30发布Q3 2026财报，营收6390万美元(+12% YoY)，订阅收入5150万美元(+16% YoY)超预期，EPS $0.35超预期(vs$0.24预期)，上修FY26营收指引至2.54-2.58亿美元(原2.48-2.52亿美元)，股价创12个月新高(+27%)。",
+          "②需求已可观察但传导部分含噪音：管理层点名一家大型银行客户将Digital Agreements合约从按量超额付费模式转为多年期合约并扩大规模(已发生的合同扩容事实)；RPO达1.127亿美元覆盖至2029年；但ARR同比+9%明显落后订阅收入+16%，CFO承认部分增长来自逾期续约追溯确认收入，传导清晰度打折扣。",
+          "③市场误分类：市场把OneSpan当作增长放缓、硬件token拖累估值的传统认证硬件商，而公司订阅收入占比已达81%，且2027年底EU数字身份钱包强制令(eIDAS2.0)是尚未兑现的监管催化剂；仅4家卖方覆盖(远低于Okta/SailPoint同业的22-44家)，关注度明显不足，但本季度16% vs 9%的订阅/ARR增速背离也让市场难以判断这是真实加速还是一次性现象。",
+          "④先验理由与赌点：七维总分22(demand_certainty 3/transmission 3/purity 3/elasticity 3/neglect 4/verification_speed 3/downside 3)，因ARR与订阅收入增速背离(16% vs 9%)反映传导存在噪音，取档位下段0.24；赌的是下次财报(预计2027年3月)能否证明订阅收入加速是结构性而非一次性追溯确认，同时EU数字身份钱包法规催化尚需12-14个月才会真正落地检验。"
+        ],
+        "serenity_score": {
+          "demand_certainty": 3,
+          "transmission_clarity": 3,
+          "purity": 3,
+          "elasticity": 3,
+          "neglect": 4,
+          "verification_speed": 3,
+          "downside": 3
+        }
+      },
+      "prior": {
+        "p": 0.24,
+        "log_odds": -1.1527,
+        "rationale": "七维总分22 → 0.22-0.32档；ARR增速(9%)明显落后订阅收入增速(16%)，存在一次性追溯确认噪音，取档位下段0.24",
+        "set_by": "daily-scan 2026-11-02"
+      },
+      "current": {
+        "p": 0.24,
+        "log_odds": -1.1527,
+        "last_reviewed": "2026-11-02",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "下次财报(FY2026 Q4/全年，预计2027年3月初，未正式排期)订阅收入同比增速+ARR同比增速",
+          "confirm_if": "订阅收入同比增速 >= 12% 且 ARR同比增速 >= 10%（证明非一次性追溯确认，是真实加速）",
+          "falsify_if": "订阅收入同比增速 < 8% 或 ARR同比增速 < 6%（证明Q3增长主要是逾期续约一次性catch-up，不可持续）",
+          "check_by": "2027-03-15",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "是否有新增大型客户合约扩容案例披露，或DigipassONE Verify产品进展更新",
+          "confirm_if": "管理层披露至少1个新增大客户扩容案例或产品按期推进",
+          "falsify_if": "未再提及新客户扩容，产品时间表推迟",
+          "check_by": "2027-03-15",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-05-02"
+      },
+      "baseline": {
+        "entry_date": "2026-11-02",
+        "entry_price": 25.66,
+        "benchmark": "SPY",
+        "benchmark_entry_price": 755.72,
+        "sector_benchmark": "IGV",
+        "sector_benchmark_entry_price": 104.29
+      },
+      "price_expectation": {
+        "confirm_target": 38.0,
+        "falsify_target": 17.5,
+        "expected_by": "2027-03-31",
+        "methodology_cn": "证实情景：FY2026指引中值2.56亿美元×(1+10-12% 2027增长假设)≈2.82-2.87亿美元FY2027E收入；当前EV/Revenue约3.7x(9.45亿市值/2.56亿收入)，若订阅加速确认为结构性且EU数字身份钱包催化临近，倍数修复至~5x(仍远低于Okta/SailPoint等8-15x，反映硬件业务拖累折价)→目标市值≈14.1亿美元÷约3685万股≈$38/股。证伪情景：若Q4显示增速回落至中低个位数(证明Q3是追溯确认noise)，倍数回落至历史低位~2.5x FY26收入2.56亿美元→目标市值≈6.4亿美元÷3685万股≈$17.5/股，低于earnings前股价平台(~$20)。",
+        "timeline_logic_cn": "绑定预计2027年3月初(未正式排期，按历史节奏估算)的FY2026 Q4/全年财报作为V1判定节点，核心赌点(订阅收入加速是否为真实可持续增长而非一次性追溯确认)需要该次财报把ARR与订阅收入增速的背离解释清楚；市场重估通常滞后2-4周，expected_by设为2027-03-31。",
+        "set_at": "2026-11-02",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-11-02",
+          "p": 0.24,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2027-03-15",
+          "type": "earnings",
+          "description": "FY2026 Q4/全年财报(未正式排期，按历史节奏估算)，验证V1/V2",
           "status": "upcoming"
         }
       ],

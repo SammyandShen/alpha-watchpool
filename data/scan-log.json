@@ -283,6 +283,66 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "三者三季报均在窗口前(10/26-10/27)已发布或暂无新公告，本轮快查无新增可记账信息"
+    },
+    {
+      "date": "2026-11-02",
+      "fingerprint": "2026-10-30+ASUR+q3-beat-recurring-revenue-marketplace-distribution",
+      "headline": "Asure Software(ASUR) 10/30 Q3财报：经常性收入3690万美元(+16%YoY,占比92%)，AWS/Oracle新渠道+合规外包交叉销售驱动，上修Q4/FY26指引，股价+22%~24%",
+      "tickers": [
+        "ASUR"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-11-02",
+      "fingerprint": "2026-10-30+OSPN+q3-beat-subscription-accel-bank-contract-eu-mandate",
+      "headline": "OneSpan(OSPN) 10/30 Q3财报：订阅收入5150万美元(+16%YoY)，大型银行客户合约扩容+EU数字身份钱包法规(2027年底)临近，上修FY26指引，股价创12个月新高(+27%)",
+      "tickers": [
+        "OSPN"
+      ],
+      "action": "new_hypothesis"
+    },
+    {
+      "date": "2026-11-02",
+      "fingerprint": "2026-11-01+DFIN+q3-beat-clean-no-demand-narrative",
+      "headline": "Donnelley Financial Solutions(DFIN) 11/1 Q3财报超预期+上修Q4指引，股价+12%~13%",
+      "tickers": [
+        "DFIN"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "金融印刷/合规软件业务，无可观察的具体需求变化叙事(非客户扩容/涨价/产能信号)，纯beat-and-raise不满足serenity第1步需求过滤"
+    },
+    {
+      "date": "2026-11-02",
+      "fingerprint": "2026-11-01+603686.SS+environmental-service-order-growth-but-revenue-declining",
+      "headline": "福龙马(603686.SS) 11/1公告10月新中标2个环卫服务项目，首年服务费7479.7万元，2026年累计中标23单",
+      "tickers": [
+        "603686.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "核查发现传导链路存疑：2026H1环卫服务板块收入同比-7.49%(存量到期流失速度超过新签)，新中标增速(+35%)尚未能抵消存量流失，demand→revenue传导不清晰，不满足serenity第3步传导清晰度要求"
+    },
+    {
+      "date": "2026-11-02",
+      "fingerprint": "2026-10-30+300880.SZ+recurring-grid-bid-ambiguous-no-fresh-signal",
+      "headline": "迦南智能(300880.SZ) 疑似10/30国网智能电能表中标约1.5亿元",
+      "tickers": [
+        "300880.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "该公司常年反复中标国网项目属可预期常规业务节奏，搜索结果对公告日期/金额有歧义未能核实原始公告，且非idiosyncratic新增量信号，暂不纳入"
+    },
+    {
+      "date": "2026-11-02",
+      "fingerprint": "2026-11-02+cn-forecasts-batch-reviewed-3-rejected",
+      "headline": "cn-forecasts.json正向候选批量复核(920085.BJ森峰激光/002475.SZ立讯精密/001381.SZ皇冠新材)",
+      "tickers": [
+        "920085.BJ",
+        "002475.SZ",
+        "001381.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "森峰激光：净利预增17.4%-25.6%，增幅温和，公告未显示新增idiosyncratic需求驱动(仅'业务规模扩大'泛化表述)，弹性故事不清晰；立讯精密：净利预增15-20%，但为千亿市值果链龙头，早已被市场充分覆盖，不满足小盘高弹性标准；皇冠新材：仅营业收入预增10.18%-11.65%，未披露净利润数字，增幅本身也偏温和，三者均未通过增幅/确定性门槛"
     }
   ]
 }
