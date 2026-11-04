@@ -1,20 +1,26 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-11-02",
+  "$last_updated": "2026-11-04",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
       "ticker": "OUST",
       "company": "Ouster, Inc.",
       "created_at": "2026-07-05",
-      "status": "observing",
+      "status": "confirmed",
       "status_history": [
         {
           "at": "2026-07-05",
           "from": null,
           "to": "observing",
           "reason": "入池：AIM 供货协议扩容 + Rev8 BABA 合规 + 2 亿美元融资落地"
+        },
+        {
+          "at": "2026-11-04",
+          "from": "observing",
+          "to": "confirmed",
+          "reason": "T1紧急通道：CY26Q3财报(11/3)确认V1唯一required条件status=met(连续两季营收YoY>=30%且环比为正，Q2+56%/Q3+50%均达标)；compute-metrics.py重算后验0.9091，超过confirmed迁移门槛(0.75)且已突破observing后验夹逼上限(0.90)，按methodology §7状态迁移规则与§6.3'触边即说明该判定了'确认迁移"
         }
       ],
       "source_news": [
@@ -65,8 +71,8 @@
         "set_by": "daily-scan 2026-07-05"
       },
       "current": {
-        "p": 0.6666,
-        "log_odds": 0.6931,
+        "p": 0.9091,
+        "log_odds": 2.3025,
         "last_reviewed": "2026-10-31",
         "recomputed_from_ledger": true
       },
@@ -78,7 +84,7 @@
           "confirm_if": ">= +30% YoY 且环比为正",
           "falsify_if": "< +15% YoY 或环比转负",
           "check_by": "2026-11-15",
-          "status": "pending"
+          "status": "met"
         },
         {
           "id": "V2",
@@ -228,6 +234,22 @@
             "log_lr": -0.4055
           },
           "pending": false
+        },
+        {
+          "id": "E9",
+          "date": "2026-11-03",
+          "source": "Ouster官方财报新闻稿 / Investing.com / 电话会",
+          "headline": "Ouster CY26Q3财报：营收$59M(+50% YoY，环比+9%)超预期，完成V1连续两季确认",
+          "url": "https://www.stocktitan.net/news/OUST/",
+          "summary": "Q3营收$59M(+50% YoY，QoQ+9%)超分析师预期$56.27M，产品收入$56M(+42% YoY)连续15个季度增长；GAAP毛利率43%(同比持平)，non-GAAP毛利率47%(环比降700bp，主因上季度$5M一次性关税退税基数效应)；Q4指引$61-64M；Adj. EBITDA亏损$3M，同比收窄60%；电话会披露出货27000+台激光雷达/摄像头传感器，工业/机器人(仓储自动化/建筑/测绘)为主驱动。V1 required验证条件『CY26Q2与CY26Q3营收YoY增速连续两季>=30%且环比为正』两个观测点均已确认（Q2 +56%/QoQ+11.5%，Q3 +50%/QoQ+9%），完整击穿confirm_if门槛",
+          "type": "T1_hard_financial",
+          "likelihood": {
+            "label": "decisive_support",
+            "lr": 5.0,
+            "log_lr": 1.6094
+          },
+          "pending": false,
+          "review_note": "V1是本假设唯一required验证条件，要求连续两季营收YoY>=30%且环比为正；Q3实际值(+50% YoY/QoQ+9%)远超门槛，且与Q2(E6已strong_support)共同完整满足'连续两季'的全部测试点，构成required条件的最终决定性确认，故评decisive；若需求拐点thesis为假(行业beta/一次性订单)，公司难以连续两季在beat预期的同时维持远超门槛的加速增长，该证据在假设为假时出现概率很低。残余风险(non-GAAP毛利率环比降700bp、重申35-40%长期目标低于当前47%)不影响V1判定，留周复核关注毛利率趋势"
         }
       ],
       "posterior_history": [
@@ -281,7 +303,7 @@
         {
           "date": "2026-11-03",
           "type": "earnings",
-          "note": "CY26Q3财报（Yahoo官方排期确认2026-11-03）— V1第二个观测点，判定连续两季营收YoY+环比"
+          "note": "CY26Q3财报实际披露：营收$59M(+50% YoY，环比+9%)超预期$56.27M；GAAP毛利率43%(同比持平，环比降600bp)，non-GAAP毛利率47%(环比降700bp，主因上季度一次性关税退税$5M)；Q4指引$61-64M；Adj.EBITDA亏损$3M(同比改善60%)；出货27000+台传感器，工业/机器人为主驱动；V1 required两季连续确认完成(Q2 +56%/Q3 +50%均远超30%门槛且环比为正)"
         }
       ],
       "links": {
@@ -289,14 +311,14 @@
         "related": []
       },
       "resolution": {
-        "outcome": null,
-        "resolved_at": null,
+        "outcome": "hit",
+        "resolved_at": "2026-11-04",
         "brier_final": null,
         "brier_time_avg": null,
         "price_return_pct": null,
         "excess_vs_spy_pct": null,
         "excess_vs_sector_pct": null,
-        "post_mortem": null
+        "post_mortem": "押注工业/基建lidar需求拐点将驱动OUST收入连续加速增长并改写'失败自动驾驶故事'市场标签，Q2(+56% YoY)/Q3(+50% YoY)连续两季大幅超30%确认门槛，判断正确；本次confirmed迁移由daily-scan的T1紧急通道触发(非常规周复核)，因后验触及observing夹逼上限0.90不得不即时判定，建议weekly-review复核此次迁移的合理性，并关注non-GAAP毛利率环比走弱(47%，降700bp)这一残余风险。"
       },
       "price_expectation": {
         "confirm_target": 63.0,
@@ -1759,6 +1781,21 @@
             "lr": 5.0,
             "log_lr": 1.6094
           }
+        },
+        {
+          "date": "2026-11-03",
+          "source": "SEC Schedule 13D / 公开报道",
+          "headline": "SK Hynix子公司SHIFTIX1 LLC披露持有PENG 9.1%股权(优先股，10/29以$3.772亿购入，转股价$32.81/股)，获董事会提名权及未来融资参与权",
+          "url": "https://www.sec.gov/",
+          "summary": "战略客户/供应链伙伴SK Hynix以大额优先股投资方式入股并获董事会席位，强化与HBM/内存模组供应链深度绑定叙事，股价应声上涨；与V1/V2(AI驱动业务营收占比及FY26营收/EPS指引)方向一致但非直接财务判定点，以pending记账",
+          "type": "T2_supply_chain",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "id": "E9"
         }
       ],
       "posterior_history": [
@@ -3810,13 +3847,19 @@
       "ticker": "AEHR",
       "company": "Aehr Test Systems, Inc.",
       "created_at": "2026-07-30",
-      "status": "observing",
+      "status": "confirmed",
       "status_history": [
         {
           "at": "2026-07-30",
           "from": null,
           "to": "observing",
           "reason": "入池：FY26Q4财报AI+硅光子学burn-in收入占比跃升至80%+、破纪录新签订单$6070万+硅光子学客户追加量产订单，FY27指引+160-200%"
+        },
+        {
+          "at": "2026-11-03",
+          "from": "observing",
+          "to": "confirmed",
+          "reason": "T1紧急通道：FQ1 FY2027财报(11/2)显示唯一required条件V1已met(营收YoY+200%远超>=100%门槛，且FY27指引上修至$150M)，账本重算后验0.9626(远超confirmed门槛0.75)；observing状态后验夹逼上限0.90已被触及，按methodology §6.3'触边即说明该判定了'与§7状态迁移规则，确认迁移"
         }
       ],
       "source_news": [
@@ -3861,8 +3904,8 @@
         "set_by": "daily-scan 2026-07-30"
       },
       "current": {
-        "p": 0.8372,
-        "log_odds": 1.6376,
+        "p": 0.9626,
+        "log_odds": 3.247,
         "last_reviewed": "2026-10-31",
         "recomputed_from_ledger": true
       },
@@ -3874,7 +3917,7 @@
           "confirm_if": "Q1 FY27营收同比增速 ≥ +100% 且管理层重申或上修FY27全年指引",
           "falsify_if": "Q1 FY27营收同比增速 < +50% 或管理层下修FY27全年指引",
           "check_by": "2026-11-02",
-          "status": "pending"
+          "status": "met"
         },
         {
           "id": "V2",
@@ -4028,6 +4071,22 @@
             "log_lr": -0.4055
           },
           "pending": false
+        },
+        {
+          "id": "E9",
+          "date": "2026-11-02",
+          "source": "Aehr Test Systems FQ1 FY2027财报 (8-K/新闻稿)",
+          "headline": "AEHR FQ1 FY2027财报：营收$33.0M(+200% YoY，远超预期$27.53M)，预订(bookings)$46.7M，book-to-bill ~1.4x，backlog达$109.3M(截至11/1)；管理层将FY2027全年营收指引由$130-150M上修收窄至$150M(区间上沿)",
+          "url": "https://www.gurufocus.com/news/9163194/aehr-test-systems-aehr-reports-strong-q1-results-shares-jump-12",
+          "summary": "V1 required两项门槛同时击穿：Q1 FY27营收同比+200%(门槛>=100%)，且管理层上修(非仅重申)FY27全年指引至$150M。backlog环比(10/31→11/1，实际为Q1末)继续扩大至$109.3M，强化V2持续兑现。",
+          "type": "T1_hard_financial",
+          "likelihood": {
+            "label": "decisive_support",
+            "lr": 5.0,
+            "log_lr": 1.6094
+          },
+          "pending": false,
+          "review_note": "公司自身财报直接击穿V1 required confirm_if两项条件(营收YoY>=100%且指引重申/上修)，营收增速(+200%)为门槛两倍，指引为上修而非仅重申，属decisive_support；T1 URGENT通道处理。"
         }
       ],
       "posterior_history": [
@@ -4074,14 +4133,14 @@
         "related": []
       },
       "resolution": {
-        "outcome": null,
-        "resolved_at": null,
+        "outcome": "hit",
+        "resolved_at": "2026-11-03",
         "brier_final": null,
         "brier_time_avg": null,
         "price_return_pct": null,
         "excess_vs_spy_pct": null,
         "excess_vs_sector_pct": null,
-        "post_mortem": null
+        "post_mortem": "押注AI芯片/硅光子学量产良率老化测试需求爆发驱动AEHR设备+耗材收入及指引连续上修，FQ1 FY27财报(营收+200% YoY、backlog达$109.3M、指引上修至$150M上沿)验证趋势持续兑现，判断正确；本次confirmed迁移由daily-scan的T1紧急通道触发(非常规周复核)，因后验触及observing夹逼上限0.90不得不即时判定，建议weekly-review复核此次迁移的合理性。"
       }
     },
     {
@@ -5806,6 +5865,21 @@
             "log_lr": 0.6931
           },
           "review_note": "获美国国防后勤局(DLA)特种钢合同，合同上限$995M、首批交付订单约$125M，直接对应V2验证方向，且是公司自身公告的具体量化中标数字。若A&D需求增长叙事为假，公司仍能拿下近10亿美元级国防部特种钢合同的概率较低，属较强正面信号；但未判strong/decisive因$995M是合同上限(IDIQ类，非保证收入)，仅$125M为确定首批订单，且V1判定点(Q3毛利率环比改善)仍需财报验证。"
+        },
+        {
+          "id": "E2",
+          "date": "2026-11-02",
+          "source": "Metallus Inc. Q3 2026财报 (8-K/新闻稿)",
+          "headline": "Metallus Q3 2026财报：净销售额$337.2M(环比2026Q2的$341.0M小幅下降，低于分析师预期$345.15M，主因汽车/能源终端市场出货下滑)，毛利润$36.3M(毛利率约10.77%，环比Q2的10.0%改善)；A&D业务本季度达成年化$250M销售run-rate目标；另获DLA国防合同首批$125M交付订单(总合同上限$995M，为E1已披露合同的后续确认)",
+          "url": "https://www.prnewswire.com/news-releases/metallus-announces-third-quarter-2026-results-302926742.html",
+          "summary": "V1 required两项门槛：①毛利率环比改善——已满足(10.0%→10.77%)；②A&D积压订单同比增速>=60%——官方财报未披露精确同比数字，仅查到Q2口径'订单量同比+50%+'及本季度'达成$250M年化run-rate目标'，不足以判定是否跨过60%门槛。两项门槛中一项满足一项存疑，不构成decisive击穿，以pending记账，留周复核定向补搜backlog同比精确数字后定级。",
+          "type": "T1_hard_financial",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -6719,7 +6793,23 @@
         "set_at": "2026-11-02",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "date": "2026-11-02",
+          "source": "公开报道/公司新闻稿",
+          "headline": "Asure Software与Vertex达成战略合作，拓展payroll tax计算/合规分销渠道",
+          "url": "https://www.asuresoftware.com/",
+          "summary": "新增分销渠道扩大payroll tax合规业务覆盖，与核心thesis(经常性收入+交叉销售驱动)方向一致，但为渠道型合作非量化财务指标，以pending记账；另11/4披露BIPA生物识别隐私集体诉讼和解(金额$644,105，涉及2629人)，金额小且非经营性，不单独计入thesis证据",
+          "type": "T3_soft_signal",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "id": "E1"
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-11-02",
@@ -6846,7 +6936,23 @@
         "set_at": "2026-11-02",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "date": "2026-11-03",
+          "source": "DA Davidson/Riley/Rosenblatt/Sidoti分析师报告",
+          "headline": "OSPN财报后分析师意见分化：DA Davidson上调目标价至$22(中性)，Riley上调至$32(买入)，Rosenblatt下调至中性目标价$18，Sidoti下调Q4 EPS预测至$0.26；股价财报创12个月新高后回落5.3%至$24.21",
+          "url": "https://www.marketbeat.com/",
+          "summary": "尽管Q3订阅收入+16%、FY26指引上修，财报后分析师评级/目标价分化明显，股价冲高回落，反映市场对ARR增速落后订阅收入增速的担忧(与入池source_news已记录的'追溯确认噪音'风险一致)；T3叙事级证据+价格信号，以pending记账留周复核评级",
+          "type": "T3_soft_signal",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "id": "E1"
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-11-02",
@@ -6860,6 +6966,137 @@
           "type": "earnings",
           "description": "FY2026 Q4/全年财报(未正式排期，按历史节奏估算)，验证V1/V2",
           "status": "upcoming"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20261104-MEC",
+      "ticker": "MEC",
+      "company": "Mayville Engineering Company, Inc.",
+      "created_at": "2026-11-04",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-11-04",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：Q3 2026财报(11/3)披露Datacenter & Critical Power细分收入+64.9% YoY，单季新增项目订单$4500万，qualified pipeline从$1.25亿扩至超$2亿"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-11-03",
+          "headline": "Mayville Engineering Company Announces Third Quarter 2026 Results",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/mayville-engineering-company-announces-third-211500145.html",
+          "summary": "Q3总营收$1.704亿(+18% YoY)超预期；Datacenter & Critical Power细分收入$3720万(+64.9% YoY)，单季新增该细分项目订单约$4500万，qualified pipeline扩至超$2亿(此前约$1.25亿)，管理层预计18个月内该产能趋于满产并已启动资本扩产"
+        }
+      ],
+      "thesis": {
+        "one_liner": "数据中心关键电力机柜订单爆发将在2-3季度内改写收入结构并驱动重估",
+        "demand_change": "Q3 2026 Datacenter & Critical Power(D&CP)细分收入同比+64.9%至$3720万；单季新增该细分项目订单约$4500万；合格商机(qualified)管道从此前约$1.25亿扩大至超$2亿；管理层预计未来18个月内该产能将趋于满产并已开始部署资本扩产",
+        "transmission": "D&CP细分收入直接计入合并净销售额(Q3总营收$1.704亿，该细分占比已达约22%且环比提速)；管道转化将持续拉动该细分收入线，但当期约$300万的项目启动/外包成本与溢价人工成本对毛利形成短期拖累，产能扩张完成后规模效应显现，毛利率弹性可期",
+        "misclassification": "市场仍将其标签定性为『商用车金属结构件代工商』，受周期性商用车需求疲软拖累(52周区间$12.42-$38.76，现价$16.20处于区间低位)，尚未定价其正在成为『AI数据中心关键电力基础设施机柜供应商』的第二增长曲线；分析师/媒体覆盖仅停留在SEC文件与财报快讯层面，未见专题报道",
+        "serenity_score": {
+          "demand_certainty": 4,
+          "transmission_clarity": 4,
+          "purity": 3,
+          "elasticity": 4,
+          "neglect": 4,
+          "verification_speed": 4,
+          "downside": 3
+        },
+        "brief_cn": [
+          "触发：Mayville Engineering(商用车金属结构件代工商)11/3发布Q3 2026财报，Datacenter & Critical Power(D&CP)细分收入同比+64.9%至$3720万，单季新增该细分项目订单约$4500万，管理层明确表示合格商机管道从约$1.25亿扩大至超$2亿。",
+          "需求已可观察而非故事：D&CP细分收入与订单金额均为公司自身财报披露的具体数字，非分析师推测；总营收$1.704亿中该细分占比已近22%且环比加速，管理层已启动资本扩产、预计18个月内该产能趋于满产，传导路径清晰(细分收入直接计入合并营收)。",
+          "市场误分类：标签仍停留在『商用车周期代工商』，股价受商用车需求疲软拖累处于52周区间低位($16.20 vs 高点$38.76)，尚未意识到其正在成为AI数据中心关键电力基础设施机柜的稀缺供应商；目前仅SEC文件/财报快讯级覆盖，无专题报道，neglect很高。",
+          "先验只给0.32的原因：D&CP仍非公司主营(占比约22%，purity=3，非纯play)；当期$300万项目启动/外包成本拖累毛利，commercial vehicle核心业务仍处周期下行，存在业绩兑现前的执行风险(downside=3)。赌的是D&CP占比能否在未来2-3个季度持续加速提升并带动整体估值重估。"
+        ]
+      },
+      "prior": {
+        "p": 0.32,
+        "log_odds": -0.7538,
+        "rationale": "七维总分26 → 26-30档(0.30-0.42)；demand_certainty/transmission_clarity/elasticity/neglect均较强(具体订单+管道数字+52周低位+零专题覆盖)，但purity=3(D&CP仍为次要细分)、downside=3(商用车核心业务周期下行+短期成本拖累)拉低至区间下段",
+        "set_by": "daily-scan 2026-11-04"
+      },
+      "current": {
+        "p": 0.32,
+        "log_odds": -0.7538,
+        "last_reviewed": "2026-11-04",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "下一季度(Q4 2026，预计2027年2月中旬披露)财报中D&CP细分收入同比增速及qualified pipeline变化",
+          "confirm_if": "D&CP细分收入同比增速维持>=50%，且qualified pipeline环比不下滑(即仍>=$2亿)",
+          "falsify_if": "D&CP细分收入同比增速降至<20%，或管理层下修/撤回pipeline与产能扩张指引",
+          "check_by": "2027-03-01",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "资本开支部署进展/新客户或新项目名称披露",
+          "confirm_if": "管理层具体量化新增产能投资金额或披露新客户/新项目细节",
+          "falsify_if": "资本开支计划推迟或取消",
+          "check_by": "2027-03-01",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-05-04"
+      },
+      "baseline": {
+        "entry_date": "2026-11-04",
+        "entry_price": 16.2,
+        "benchmark": "SPY",
+        "benchmark_entry_price": 752.1,
+        "sector_benchmark": "XLI",
+        "sector_benchmark_entry_price": 169.71
+      },
+      "price_expectation": {
+        "confirm_target": 30.0,
+        "falsify_target": 12.5,
+        "expected_by": "2027-03-15",
+        "methodology_cn": "证实情景：当前总营收年化约$6.8亿(Q3*4)对应市值约$4.1亿(约25.4M股@$16.20)，EV/Sales约0.6x；若D&CP占比持续提升至30%+且管道加速转化，市场有望向电力设备/数据中心基建可比公司估值靠拢(1.0-1.5x营收)，假设总营收维持$6.8亿、给予1.1x中枢，目标市值约$7.5亿，对应目标价约$30(=$7.5亿/25.4M股)。证伪情景：若D&CP增速证伪且commercial vehicle核心业务继续走弱，估值倍数回落至历史周期底部水平，股价重新测试52周低点附近$12.50。",
+        "timeline_logic_cn": "绑定V1(required)所在的Q4 2026财报(预计2027年2月中旬披露)，市场重估通常滞后财报发布2-4周，故expected_by设为2027-03-15",
+        "set_at": "2026-11-04",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-11-04",
+          "p": 0.32,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-11-03",
+          "type": "earnings",
+          "note": "Q3 2026财报已披露，D&CP细分+64.9% YoY，入池依据事件"
+        },
+        {
+          "date": "2027-02-15",
+          "type": "earnings",
+          "note": "预计Q4 2026财报日(待Yahoo官方排期确认)，V1判定点"
         }
       ],
       "links": {

@@ -343,6 +343,208 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "森峰激光：净利预增17.4%-25.6%，增幅温和，公告未显示新增idiosyncratic需求驱动(仅'业务规模扩大'泛化表述)，弹性故事不清晰；立讯精密：净利预增15-20%，但为千亿市值果链龙头，早已被市场充分覆盖，不满足小盘高弹性标准；皇冠新材：仅营业收入预增10.18%-11.65%，未披露净利润数字，增幅本身也偏温和，三者均未通过增幅/确定性门槛"
+    },
+    {
+      "date": "2026-11-03",
+      "fingerprint": "2026-11-03+cn-forecasts-batch-reviewed-3-rejected",
+      "headline": "cn-forecasts.json正向候选批量复核(002475.SZ立讯精密/001381.SZ皇冠新材/920309.BJ菊乐股份)",
+      "tickers": [
+        "002475.SZ",
+        "001381.SZ",
+        "920309.BJ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "立讯精密/皇冠新材：与10/27-11/02历史复核结论一致(千亿市值megacap/增幅温和)，重复排除；菊乐股份：营收预增6.26%-12.17%、净利预增9.99%-22.02%，公告原因仅'产品销量提升+成本降低'泛化表述，无idiosyncratic需求驱动，增幅亦非爆发性，不满足入池门槛"
+    },
+    {
+      "date": "2026-11-03",
+      "fingerprint": "2026-11-02+AEHR+T1-URGENT-q1fy27-revenue-200pct-guidance-raised",
+      "headline": "T1紧急通道：AEHR 11/2发布FQ1 FY2027财报，营收$33.0M(+200% YoY，远超门槛>=100%)，FY2027全年指引由$130-150M上修至$150M(区间上沿)，backlog达$109.3M",
+      "tickers": [
+        "AEHR"
+      ],
+      "action": "evidence_appended",
+      "note": "[URGENT] V1 required两项confirm_if门槛同时击穿(营收YoY+指引上修)，评级decisive_support(T1_hard_financial)入账并跑compute-metrics.py重算后验：0.8372→0.9626，已突破confirmed迁移门槛(0.75)，留待weekly-review确认状态迁移"
+    },
+    {
+      "date": "2026-11-03",
+      "fingerprint": "2026-11-02+MTUS+q3report-margin-improved-backlog-pct-unconfirmed",
+      "headline": "MTUS 11/2发布Q3 2026财报：毛利率环比改善(10.0%→10.77%)，A&D业务达成年化$250M run-rate目标，另获DLA国防合同$125M首批交付订单",
+      "tickers": [
+        "MTUS"
+      ],
+      "action": "evidence_appended",
+      "note": "V1 required两项门槛之一(毛利率环比改善)已满足，另一项(A&D积压订单同比>=60%)官方财报未披露精确数字(仅查到Q2口径'+50%+')，不构成decisive击穿，以pending=true记账，留周复核定向补搜backlog同比精确数字后定级"
+    },
+    {
+      "date": "2026-11-03",
+      "fingerprint": "2026-11-03+US-pool-9tickers-quickcheck-no-new-material",
+      "headline": "池内9只美股标的(POWL/PENG/PSIX/AIP/MASS/QMCO/INTT/ASUR/OSPN)复核：无新增可记账重大消息",
+      "tickers": [
+        "POWL",
+        "PENG",
+        "PSIX",
+        "AIP",
+        "MASS",
+        "QMCO",
+        "INTT",
+        "ASUR",
+        "OSPN"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "POWL下次财报11/17；PENG发布MRDIMM新品+CFO变更(非核心thesis指标)；PSIX/AIP财报11/5待发；MASS财报11/10待发；QMCO无新增；INTT财报11/6待发；ASUR/OSPN为11/02新入池同一事件无进一步更新"
+    },
+    {
+      "date": "2026-11-03",
+      "fingerprint": "2026-11-03+OUST+earnings-today-not-yet-released",
+      "headline": "OUST Q3 2026财报定于11/3盘后发布，扫描时点尚未发布实际数字",
+      "tickers": [
+        "OUST"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "V1 check_by 2026-11-15仍有余量，待下次扫描跟进盘后实际财报数字"
+    },
+    {
+      "date": "2026-11-03",
+      "fingerprint": "2026-11-03+CN-pool-6tickers-quickcheck-no-new-material",
+      "headline": "池内6只A股标的(002497.SZ雅化集团/688620.SS安凯微/688531.SS日联科技/688380.SS中微半导体/920493.BJ并行科技/688265.SS南模生物)复核：无新增重大实质消息",
+      "tickers": [
+        "002497.SZ",
+        "688620.SS",
+        "688531.SS",
+        "688380.SS",
+        "920493.BJ",
+        "688265.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "688620.SS唯一新增为11/2公告累计回购205万股(0.52%总股本)，属股东回报行为非需求端信号，不计入thesis证据；其余5只无新增可记账信息"
+    },
+    {
+      "date": "2026-11-03",
+      "fingerprint": "2026-11-03+301366.SZ+q3report-already-captured-duplicate",
+      "headline": "一博科技(301366.SZ) Q3报告(前三季度净利润+834.98%)复核：与池内已有证据E2(10/28,已评strong_support,V1已met)为同一事件",
+      "tickers": [
+        "301366.SZ"
+      ],
+      "action": "skipped_duplicate",
+      "note": "10/30扫描曾误判三季报'尚未确认发布'，实际已于10/28发布并已在10/31周复核中正确记账评级，本次复核确认无需重复处理"
+    },
+    {
+      "date": "2026-11-03",
+      "fingerprint": "2026-11-03+CN-newcandidate-scan-300903.SZ-crowded-rejected",
+      "headline": "科翔股份(300903.SZ) 85亿元加码AI算力PCB基板+服务器项目(10/30-11/2多篇报道)",
+      "tickers": [
+        "300903.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "年内涨幅已超230%，多家财经媒体密集报道(21jingji/同花顺/东方财富/维科网)，同步启动H股上市计划，neglect已为零，属极度拥挤的AI PCB基板consensus题材，不满足入池质量门槛"
+    },
+    {
+      "date": "2026-11-03",
+      "fingerprint": "2026-11-03+US-newcandidate-scan-megacap-or-no-demand-narrative-rejected",
+      "headline": "美股11/2-11/3 beat-and-raise扫描：NXT(Nextracker)/UPWK/MGRC/IDXX/Estee Lauder/Fabrinet/ON Semi/Tower Semi等财报超预期+上修指引",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "均为大盘股(NXT营收指引$4.2-4.45B/IDXX/Estee Lauder/Fabrinet市值均超百亿美元)或缺乏具体可观察需求变化叙事的纯beat-and-raise(UPWK/MGRC)，不满足serenity小盘高弹性/需求过滤标准"
+    },
+    {
+      "date": "2026-11-03",
+      "fingerprint": "2026-11-03+CN-bidorder-scan-toolarge-or-toosmall-rejected",
+      "headline": "A股11/3中标公告扫描：大华股份26.3亿元中国移动订单/远东股份14.98亿元10月订单/交控科技1.56亿元信号项目/金冠电气2451万元国网项目",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "大华股份市值超600亿元megacap；远东股份多元化电缆集团，订单为常规业务节奏非idiosyncratic信号；交控科技/金冠电气金额过小(分别1.56亿/2451万)，不足以构成业绩弹性"
+    },
+    {
+      "date": "2026-11-04",
+      "fingerprint": "2026-11-04+OUST+T1-URGENT-q3report-v1-decisive-confirmed",
+      "headline": "T1紧急通道：OUST(Ouster) 2026Q3财报(11/3)营收$59M(+50% YoY，环比+9%)，V1 required两季连续确认完成，compute-metrics.py重算后验0.9091触及observing夹逼上限，迁移confirmed",
+      "tickers": [
+        "OUST"
+      ],
+      "action": "evidence_appended",
+      "note": "[URGENT] V1唯一required验证条件(CY26Q2与CY26Q3营收YoY连续两季>=30%且环比为正)两个观测点均已确认(Q2+56%/Q3+50%)，评decisive_support(T1_hard_financial)入账并跑compute-metrics.py重算：0.6666→0.9091，超过confirmed迁移门槛(0.75)且突破observing后验夹逼上限(0.90)，status迁移至confirmed并填写resolution(outcome=hit)"
+    },
+    {
+      "date": "2026-11-04",
+      "fingerprint": "2026-11-04+cn-forecasts-batch-reviewed-4-duplicate-rejected",
+      "headline": "cn-forecasts.json正向候选复核(688827.SS钶锐锶/002475.SZ立讯精密/001381.SZ皇冠新材/920309.BJ菊乐股份)，均与此前复核结论重复",
+      "tickers": [
+        "688827.SS",
+        "002475.SZ",
+        "001381.SZ",
+        "920309.BJ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "钶锐锶：仍为IPO申购阶段未上市(与10/27复核一致)；立讯精密/皇冠新材/菊乐股份：与11/2-11/3历史复核结论一致(千亿市值megacap/增幅温和/无idiosyncratic需求驱动)，重复排除；pool_negative_warnings为空，池内无利空预告命中"
+    },
+    {
+      "date": "2026-11-04",
+      "fingerprint": "2026-11-04+US-newcandidate-scan-MEC-new-hypothesis-others-rejected",
+      "headline": "美股小盘AI数据中心/半导体供应链需求信号扫描：Mayville Engineering(MEC)/Navitas(NVTS)/AMSC/ESCO/Syntec Optics(OPTX)等候选复核",
+      "tickers": [
+        "MEC",
+        "NVTS",
+        "AMSC",
+        "ESE",
+        "OPTX"
+      ],
+      "action": "new_hypothesis",
+      "note": "MEC入池(Datacenter & Critical Power细分收入+64.9% YoY+管道扩容至$2亿+，市值仅$4亿、52周低位、zero专题覆盖，neglect/elasticity俱佳)；Navitas：book-to-bill 2.0x但已被Benzinga『小盘AI基建』专题点名，拥挤度中等偏高；AMSC：backlog>$2.5亿但掺杂Russell指数流出等技术性催化，purity打折且已获两家媒体覆盖；ESCO：市值~$50亿超出小盘高弹性screen上限；Syntec Optics：仅单一商业资讯源报道，信源过于单薄未能核实原始公告，暂不采纳"
+    },
+    {
+      "date": "2026-11-04",
+      "fingerprint": "2026-11-04+CN-newcandidate-scan-all-rejected-valuation-or-purity",
+      "headline": "A股新候选扫描：平高电气(600312)/浙江建投(002761)/龙磁科技(300835)/新洁能(605111)均未入池",
+      "tickers": [
+        "600312.SS",
+        "002761.SZ",
+        "300835.SZ",
+        "605111.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "平高电气：9.98亿元国网中标属行业级电网投资周期beta(十五五4万亿规模)而非idiosyncratic信号，且市值260-300亿、ETF机构持仓已充分定价；浙江建投：15.03亿储能EPC中标但为联合体中标(实际权益比例不明)+建筑总包利润率结构性偏低，财务传导C段不清晰；龙磁科技：芯片电感订单2.4亿元+批量交付具体可验证，但经核算当前PE约120x+年内已获118家机构密集调研，估值已充分price-in该叙事，neglect过低；新洁能：功率半导体11月仍在涨价周期但为同批22家涨价企业之一，非公司专属idiosyncratic驱动，拥挤度高"
+    },
+    {
+      "date": "2026-11-04",
+      "fingerprint": "2026-11-04+US-pool-12tickers-quickcheck",
+      "headline": "池内12只美股标的(OUST/POWL/PENG/AUTL/PSIX/AIP/MTUS/MASS/QMCO/INTT/ASUR/OSPN)动态快查",
+      "tickers": [
+        "OUST",
+        "POWL",
+        "PENG",
+        "AUTL",
+        "PSIX",
+        "AIP",
+        "MTUS",
+        "MASS",
+        "QMCO",
+        "INTT",
+        "ASUR",
+        "OSPN"
+      ],
+      "action": "evidence_appended",
+      "note": "OUST见T1紧急通道独立记录；PENG新增SK Hynix 9.1%优先股入股+董事会提名权(pending)；ASUR新增Vertex分销合作(pending)，另有BIPA小额和解(非经营性不计入)；OSPN财报后分析师评级分化+股价回落5.3%(pending)；POWL/AUTL/PSIX/AIP/MTUS/MASS/QMCO/INTT均无新增重大消息，财报排期确认：PSIX/AIP 11/5、INTT 11/6、QMCO 11/9、MASS/AUTL 11/10、POWL 11/16-17"
+    },
+    {
+      "date": "2026-11-04",
+      "fingerprint": "2026-11-04+CN-pool-11tickers-quickcheck-no-new-material",
+      "headline": "池内11只A股标的(002497.SZ/603115.SS/688531.SS/688380.SS/920493.BJ/300981.SZ/688733.SS/301366.SZ/688265.SS/688410.SS/301563.SZ)动态快查：无新增重大实质消息",
+      "tickers": [
+        "002497.SZ",
+        "603115.SS",
+        "688531.SS",
+        "688380.SS",
+        "920493.BJ",
+        "300981.SZ",
+        "688733.SS",
+        "301366.SZ",
+        "688265.SS",
+        "688410.SS",
+        "301563.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "688531.SS/688733.SS仅例行回购进展披露(非经营性不计入)；920493.BJ限售解禁例行公告；688265.SS南模生物无11/3后新增官方澄清，前三季度净利-71.13%官方解释仍为非经营性因素，未见监管问询，持续关注；688380.SS中微半导体11/3跟随半导体设备板块普跌但无公司专属澄清公告，调研纪要提及MCU涨价+订单积压但发布时间无法确认在11/3后，不采信为新增"
     }
   ]
 }
