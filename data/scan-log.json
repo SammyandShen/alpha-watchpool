@@ -545,6 +545,117 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "688531.SS/688733.SS仅例行回购进展披露(非经营性不计入)；920493.BJ限售解禁例行公告；688265.SS南模生物无11/3后新增官方澄清，前三季度净利-71.13%官方解释仍为非经营性因素，未见监管问询，持续关注；688380.SS中微半导体11/3跟随半导体设备板块普跌但无公司专属澄清公告，调研纪要提及MCU涨价+订单积压但发布时间无法确认在11/3后，不采信为新增"
+    },
+    {
+      "date": "2026-11-09",
+      "fingerprint": "2026-11-09+cn-forecasts-batch-reviewed-4-rejected",
+      "headline": "cn-forecasts.json正向候选复核(688827.SS钶锐锶/688235.SS百济神州/001381.SZ皇冠新材/920309.BJ菊乐股份)",
+      "tickers": [
+        "688827.SS",
+        "688235.SS",
+        "001381.SZ",
+        "920309.BJ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "钶锐锶/皇冠新材/菊乐股份：与此前多次复核结论一致(IPO未上市/千亿级增幅温和或营收负增长/泛化表述无idiosyncratic驱动)，重复排除；百济神州：营收预增22%+但为千亿市值biotech megacap龙头，机构覆盖已极充分，neglect为零，排除。pool_negative_warnings为空，池内无利空预告命中。"
+    },
+    {
+      "date": "2026-11-09",
+      "fingerprint": "2026-11-09+US-T1-INTT-decisive-q3-confirmed",
+      "headline": "T1紧急通道：inTest(INTT) Q3 2026正式财报(11/6)收入$35.1M(+34% YoY)+book-to-bill>1.3x，V1 required两项confirm_if门槛均清晰越过",
+      "tickers": [
+        "INTT"
+      ],
+      "action": "evidence_appended",
+      "note": "[URGENT] 评级decisive_support(T1_hard_financial)入账，V1/V2均判定met，跑compute-metrics.py重算后验：0.32→0.7017，尚未达confirmed迁移门槛(0.75)，维持observing状态"
+    },
+    {
+      "date": "2026-11-09",
+      "fingerprint": "2026-11-09+US-pool-PSIX-AIP-q3-earnings-ambiguous-pending",
+      "headline": "池内PSIX/AIP Q3 2026正式财报(均11/5披露)：PSIX营收环比+32.5%但指引措辞口径与原V1设定不完全对应；AIP ACV+royalties+39% YoY达标但design starts同比增速未量化披露",
+      "tickers": [
+        "PSIX",
+        "AIP"
+      ],
+      "action": "evidence_appended",
+      "note": "两者V1均为required的AND型多子条件，各有一项子条件未能clean击穿(PSIX的H2指引口径/AIP的design starts同比数字)，均以pending=true记账，不构成T1决定性事件，留周复核逐字核实电话会原话后定级"
+    },
+    {
+      "date": "2026-11-09",
+      "fingerprint": "2026-11-09+US-MTUS-AD-backlog-followup-still-gray-zone",
+      "headline": "MTUS A&D backlog同比精确数字定向补搜：未查到官方精确backlog YoY%，最佳代理指标为A&D净销售额+41% YoY(落在30%-60%灰区)",
+      "tickers": [
+        "MTUS"
+      ],
+      "action": "evidence_appended",
+      "note": "V1第一项(毛利率环比改善)已于11/2确认met，第二项(backlog同比)仍无精确数字可用，+41% YoY代理指标落灰区不构成击穿，继续pending留周复核"
+    },
+    {
+      "date": "2026-11-09",
+      "fingerprint": "2026-11-09+QMCO+earnings-today-not-yet-released",
+      "headline": "QMCO FY2027 Q2财报定于11/9盘后发布，扫描时点(美东上午)尚未发布实际数字",
+      "tickers": [
+        "QMCO"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "V1 check_by恰为今日，待下次扫描跟进盘后实际财报数字"
+    },
+    {
+      "date": "2026-11-09",
+      "fingerprint": "2026-11-09+US-pool-5tickers-quickcheck",
+      "headline": "池内POWL/PENG/ASUR/OSPN/MEC动态快查(11/5-11/9窗口)",
+      "tickers": [
+        "POWL",
+        "PENG",
+        "ASUR",
+        "OSPN",
+        "MEC"
+      ],
+      "action": "evidence_appended",
+      "note": "OSPN新增Wall Street Zen评级上调(Hold→Buy，11/7，pending)；MEC新增11/5财报后股价大跌16-18%+三家分析师下调目标价(管理层指引偏弱但D&CP细分本身未见下修，pending，需关注价格已接近falsify_target)；POWL仅例行分红公告；PENG为11/4 SK Hynix入股事件的细节补充(同一事件不重复记账)；ASUR无新增重大消息"
+    },
+    {
+      "date": "2026-11-09",
+      "fingerprint": "2026-11-09+CN-pool-12tickers-quickcheck",
+      "headline": "池内002497.SZ/688620.SS/603115.SS/688531.SS/688380.SS/920493.BJ/300981.SZ/688733.SS/301366.SZ/688265.SS/688410.SS/301563.SZ动态快查(11/5-11/9窗口)",
+      "tickers": [
+        "002497.SZ",
+        "688620.SS",
+        "603115.SS",
+        "688531.SS",
+        "688380.SS",
+        "920493.BJ",
+        "300981.SZ",
+        "688733.SS",
+        "301366.SZ",
+        "688265.SS",
+        "688410.SS",
+        "301563.SZ"
+      ],
+      "action": "evidence_appended",
+      "note": "688733.SS新增Low-α球形氧化铝对日韩客户小批量试供信号(与主业V1/V2无关的第三增长曲线苗头，pending)；603115.SS本轮信源核实出现公司名称误判(研究代理误查成嘉元科技688388)，未获得有效新增信息，下次扫描需重新核实南通海星电子本身动态；其余10只(002497.SZ/688620.SS/688531.SS/688380.SS/920493.BJ/300981.SZ/301366.SZ/688265.SS/688410.SS/301563.SZ)均为例行回购/治理/行政性公告，无新增可记账实质消息"
+    },
+    {
+      "date": "2026-11-09",
+      "fingerprint": "2026-11-09+US-newcandidate-GHM-new-hypothesis-others-rejected",
+      "headline": "美股小盘beat+backlog扫描：Graham Corp(GHM)入池；StandardAero/Sterling Infrastructure/IonQ/Coherent/Arista/Eaton/nVent/VAT Group/Microchip等候选复核排除",
+      "tickers": [
+        "GHM"
+      ],
+      "action": "new_hypothesis",
+      "note": "GHM：Q2 FY2027财报(11/5)backlog创连续第7个季度纪录$561.3M(+12% YoY)，国防/太空占比83%且约85%已获资金支持，本季度新增国防订单$41.8M，市值~$9亿、媒体覆盖仅财报快讯级，七维总分24入选；其余候选均因市值过大(多数>$5B)或已是AI数据中心/量子计算consensus拥挤题材被排除"
+    },
+    {
+      "date": "2026-11-09",
+      "fingerprint": "2026-11-09+CN-newcandidate-scan-all-rejected",
+      "headline": "A股新候选扫描：兆丰股份(300695.SZ)/侨源股份(301286.SZ)/新联电子(002546.SZ)均未入池",
+      "tickers": [
+        "300695.SZ",
+        "301286.SZ",
+        "002546.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "兆丰股份：11/28机器人中标2.9992亿元与10/30已复核排除的同一事件(核心轮毂轴承主业Q3净利-94%持续恶化)，重复排除；侨源股份：31.58亿元电子特气扩产项目响应氖气/氦气价格暴涨(+1500%-2000%)属真实供给响应，但为新建产能项目、建设周期长(预计1-2年)，verification_speed不满足1-4季度验证窗口要求，暂不入池；新联电子：国网智能终端中标累计超1.1亿元(约占2025营收8%)但公司整体净利承压、弹性有限，不满足入池质量门槛"
     }
   ]
 }

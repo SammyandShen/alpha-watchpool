@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-11-04",
+  "$last_updated": "2026-11-09",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -4574,6 +4574,20 @@
             "log_lr": -0.4055
           },
           "pending": false
+        },
+        {
+          "id": "E7",
+          "date": "2026-11-06",
+          "source": "壹石通2026年度业绩说明会(交易所互动平台)",
+          "headline": "壹石通11/6业绩说明会披露：高端芯片封装用Low-α球形氧化铝已对日韩客户实现小批量试供",
+          "summary": "为锂电涂覆材料主业之外的第三增长曲线新信号(半导体封装用特种氧化铝)，但仅为'小批量试供'，未披露放量时点、金额或是否已形成订单，与V1/V2(均已met，锂电涂覆主业相关)无直接关联，鉴别力有限。以pending记账，供周复核评估是否构成独立观察点。",
+          "type": "T3_soft_signal",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -5335,6 +5349,21 @@
             "log_lr": 0.4055
           },
           "pending": false
+        },
+        {
+          "id": "E4",
+          "date": "2026-11-05",
+          "source": "Power Solutions International Q3 2026财报/电话会",
+          "headline": "PSIX Q3 2026财报：营收$202.1M(环比Q2 +32.5%)，创纪录营业利润$40.9M、EBITDA$42.7M(+44% YoY)，毛利率+580bp至29.7%；数据中心+工业产品出货驱动环比放量，管理层将H2 2026展望由'大致持平于H2 2025'上修为'H2 2026将超过H2 2025'",
+          "url": "https://www.gurufocus.com/news/9176521/",
+          "summary": "V1 required三项AND条件中两项清晰确认(营收环比改善+32.5%；数据中心收入占比持续提升)，但管理层指引措辞为'H2 2026同比超H2 2025'而非原设定的'H2营收超H1'口径，未能逐字对应，不构成对confirm_if的clean击穿；未发现单笔≥$2000万新增数据中心订单(V2)。以pending记账，留周复核对照电话会原话逐字核实指引口径后定级。",
+          "type": "T1_hard_financial",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -5504,6 +5533,21 @@
             "log_lr": -0.4055
           },
           "pending": false
+        },
+        {
+          "id": "E3",
+          "date": "2026-11-05",
+          "source": "Arteris Q3 2026财报/电话会",
+          "headline": "Arteris(AIP) Q3 2026财报：收入$25.8M(+48% YoY)，ACV+royalties达$103.8M(+39% YoY，超此前指引上沿)，TTM可变royalty $9.4M(+71% YoY)；累计客户确认design starts突破1000个(里程碑)，约1/3 Q3 design win金额来自全球Top30科技客户；RPO $135.5M(+29% YoY)；上修FY2026 ACV+royalties指引至$103-107M",
+          "url": "https://www.gurufocus.com/news/9180639/",
+          "summary": "V1 required两项AND条件中第一项(ACV+royalties YoY>=35%)清晰确认(实际39%且超指引上沿)；第二项(design starts保持两位数同比增长)未查到具体quarterly YoY增速数字，仅披露'累计突破1000个'里程碑式表述，不足以判定是否达到两位数同比门槛，不构成对confirm_if的clean击穿。以pending记账，留周复核定向补搜design starts同比精确数字。",
+          "type": "T1_hard_financial",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -5880,6 +5924,21 @@
             "lr": null,
             "log_lr": null
           }
+        },
+        {
+          "id": "E3",
+          "date": "2026-11-09",
+          "source": "Metallus Q3 2026电话会纪要定向补搜(Fool/GuruFocus)",
+          "headline": "针对E2遗留问题定向补搜A&D backlog精确同比数字：未查到官方披露的backlog YoY%，但找到更精确的同期量价代理指标——A&D出货量+34% YoY(约21,900-22,000吨)，A&D净销售额+41% YoY(达成$250M年化run-rate目标)；另有DLA合同上限$995M(首批$125M)分5年交付",
+          "summary": "A&D净销售额+41% YoY落在confirm_if(>=60%)与falsify_if(<30%)之间的灰区，不构成对V1第二项(backlog同比)门槛的clean击穿，继续按pending记账留周复核；一则未经一手transcript核实的'~80%'backlog同比数字来源存疑，不采信。",
+          "type": "T1_hard_financial",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "review_note": "V1第一项(毛利率环比改善)已于E2确认met；第二项仍缺精确backlog同比数字，A&D净销售额+41% YoY可作为最佳可得代理但本身落灰区，建议周复核综合多个代理指标定级而非等待不会出现的单一精确数字。"
         }
       ],
       "posterior_history": [
@@ -6615,8 +6674,8 @@
         "set_by": "daily-scan 2026-10-27"
       },
       "current": {
-        "p": 0.32,
-        "log_odds": -0.7538,
+        "p": 0.7017,
+        "log_odds": 0.8556,
         "last_reviewed": "2026-10-31",
         "recomputed_from_ledger": true
       },
@@ -6628,7 +6687,7 @@
           "confirm_if": ">= $34M实际收入 且 book-to-bill实际值 >= 1.3x",
           "falsify_if": "< $31M实际收入 或 book-to-bill实际值 < 1.1x（预告后需求降速）",
           "check_by": "2026-11-06",
-          "status": "pending"
+          "status": "met"
         },
         {
           "id": "V2",
@@ -6637,7 +6696,7 @@
           "confirm_if": "管理层重申或上修2027展望，且未披露新的material weakness",
           "falsify_if": "管理层提及订单推迟/客户资本开支放缓，或内控缺陷问题扩大",
           "check_by": "2026-11-06",
-          "status": "pending"
+          "status": "met"
         }
       ],
       "horizon": {
@@ -6661,7 +6720,24 @@
         "set_at": "2026-10-27",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-11-06",
+          "source": "inTest Corp Q3 2026财报 (8-K/新闻稿/电话会)",
+          "headline": "inTest(INTT) Q3 2026正式财报：收入$35.1M(+34% YoY)，订单$49.4M(+31% YoY)，book-to-bill>1.3x(订单超收入41%)；后段半导体测试订单$23.9M(近4倍YoY)；backlog创纪录$59.7M(+21% YoY)，约60%预计2027年交付，毛利率47.7%(+580bp YoY)，净利润$1.9M(去年同期净亏损)",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001036262/000103626226000061/intt-20261106xexx991.htm",
+          "summary": "V1 required两项门槛同时且明确击穿：实际收入$35.1M>=confirm_if门槛$34M；实际book-to-bill>1.3x>=confirm_if门槛1.3x，两项均有清晰余量、非临界擦边；管理层以'2027年强劲开局'定性backlog交付节奏，未见新增内控缺陷披露，V2方向亦正面。",
+          "type": "T1_hard_financial",
+          "likelihood": {
+            "label": "decisive_support",
+            "lr": 5.0,
+            "log_lr": 1.6094
+          },
+          "pending": false,
+          "review_note": "本公司正式Q3财报对V1(required)两项confirm_if量化门槛均清晰越过且留有安全边际(收入超门槛3.2%，book-to-bill超门槛明显)，非临界擦边判定；AI数据中心驱动的后段测试订单近4倍YoY放量，与thesis核心驱动高度一致。按CLAUDE.md铁律2即时评级+compute-metrics.py重算，commit标[URGENT]。"
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-10-27",
@@ -6679,7 +6755,8 @@
           "date": "2026-11-06",
           "type": "earnings",
           "description": "Q3 2026财报+电话会，验证V1/V2",
-          "status": "upcoming"
+          "status": "done",
+          "note": "Q3 2026财报+电话会，验证V1/V2（已发生，V1/V2均met，见E1）"
         }
       ],
       "links": {
@@ -6951,6 +7028,20 @@
             "log_lr": null
           },
           "id": "E1"
+        },
+        {
+          "id": "E2",
+          "date": "2026-11-07",
+          "source": "Wall Street Zen分析师评级",
+          "headline": "Wall Street Zen将OSPN评级由Hold上调至Buy(11/7)",
+          "summary": "延续财报后分析师意见分化格局(E1已记录Riley买入/Rosenblatt中性等)，本次为新增上调；仍为分析师观点而非公司自身量化数据，鉴别力有限。以pending记账留周复核综合评级。",
+          "type": "T3_soft_signal",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -7079,7 +7170,22 @@
         "set_at": "2026-11-04",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-11-05",
+          "source": "股价走势+Craig-Hallum/Northland/Citi分析师目标价下调",
+          "headline": "MEC股价11/5单日下跌16-18%(入池价$16.20→现price约$13.12，接近falsify_target $12.50)，Craig-Hallum/Northland/Citi同日下调目标价至$25/$30/$27，理由为管理层指引偏弱，尽管Q3整体营收beat且D&CP细分延续入池当日披露的强劲数据",
+          "summary": "入池次日即出现大幅负面价格反应+分析师目标价下调，但根源是公司整体(很可能是commercial vehicle核心业务)指引偏弱而非D&CP细分本身走弱——未查到分析师或公司对D&CP细分增速/pipeline的下修表态。价格已逼近falsify_target，但V1判定点在下一财季(2027年2月)，当前属于市场情绪/预期层面的负面信号，非对V1 confirm_if/falsify_if的直接击穿。以pending记账，留周复核结合更多信息评级，并重点关注falsify_target临近风险。",
+          "type": "T3_soft_signal",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-11-04",
@@ -7097,6 +7203,138 @@
           "date": "2027-02-15",
           "type": "earnings",
           "note": "预计Q4 2026财报日(待Yahoo官方排期确认)，V1判定点"
+        }
+      ],
+      "links": {
+        "supersedes": null,
+        "related": []
+      },
+      "resolution": {
+        "outcome": null,
+        "resolved_at": null,
+        "brier_final": null,
+        "brier_time_avg": null,
+        "price_return_pct": null,
+        "excess_vs_spy_pct": null,
+        "excess_vs_sector_pct": null,
+        "post_mortem": null
+      }
+    },
+    {
+      "id": "H20261109-GHM",
+      "ticker": "GHM",
+      "company": "Graham Corporation",
+      "created_at": "2026-11-09",
+      "status": "observing",
+      "status_history": [
+        {
+          "at": "2026-11-09",
+          "from": null,
+          "to": "observing",
+          "reason": "入池：Q2 FY2027财报(11/5)披露backlog达$561.3M创连续第7个季度纪录新高，国防(潜艇/鱼雷项目)贡献本季度新增订单$41.8M、占backlog约83%"
+        }
+      ],
+      "source_news": [
+        {
+          "date": "2026-11-05",
+          "headline": "Graham Corporation Announces Second Quarter Fiscal 2027 Results",
+          "url": "https://www.tipranks.com/news/company-announcements/graham-reports-strong-second-quarter-fiscal-2027-results",
+          "summary": "Q2 FY27 backlog创纪录$561.3M(+12% YoY)，连续第7个季度创纪录；国防/太空业务占backlog约83%(约85%已获资金支持)，本季度新增国防订单$41.8M；重申FY27指引营收$2.85-2.95亿、EBITDA$3.5-4.0千万"
+        }
+      ],
+      "thesis": {
+        "one_liner": "美国海军潜艇/鱼雷多年期资助订单推动backlog连续7季度创纪录，重塑收入结构",
+        "demand_change": "Q2 FY2027(截至2026-09-30)国防订单单季新增$41.8M，公司整体backlog达$561.3M(+12% YoY)，连续第7个季度创纪录；国防/太空业务占backlog比重约83%(约85%已获资金支持)，为已签约、已获资助的多年期海军项目，非预测性需求；backlog每年约30-35%转化为确认收入。",
+        "transmission": "backlog直接构成未来1-3年可预见收入；国防业务占比提升将改变公司历史上分散于化工/炼油/能源/国防等多元终端市场的收入结构，管理层重申FY2027营收指引$2.85-2.95亿(较FY2026实际$245.3M同比+16-20%)及EBITDA指引$3.5-4.0千万(较FY2026的$26M同比+35-54%)，显示规模效应+高价值国防组合占比提升驱动利润率同步扩张。",
+        "misclassification": "市场仍将其标签定性为分散型『化工/炼油/能源用真空与热传导设备制造商』，当前覆盖仅限财报快讯/电话会纪要层面(Fool/GuruFocus)，未见专题研究覆盖；实际上收入结构正在向『受益于美国海军潜艇/鱼雷现代化多年期资助项目的国防装备供应商』转变，当前估值倍数(EV/Revenue 3.83x)仍低于可比纯国防标的Kratos Defense(EV/Revenue 4.87x)，存在重估空间。",
+        "serenity_score": {
+          "demand_certainty": 4,
+          "transmission_clarity": 4,
+          "purity": 3,
+          "elasticity": 3,
+          "neglect": 3,
+          "verification_speed": 4,
+          "downside": 3
+        },
+        "brief_cn": [
+          "①触发新闻：Graham Corporation(GHM)11/5发布Q2 FY2027财报：backlog达$561.3M(+12% YoY)，连续第7个季度创历史纪录；本季度新增国防订单$41.8M，国防/太空业务占backlog约83%。",
+          "②需求已可观察+财务传导：backlog为已签约、约85%已获资金支持的美国海军潜艇/鱼雷推进与动力系统多年期项目，非预测性订单；每年约30-35%的backlog转化为确认收入，管理层重申FY2027营收指引$2.85-2.95亿(较FY2026的$245.3M增长16-20%)及EBITDA指引同步扩张，传导路径清晰、非一次性。",
+          "③市场误分类：当前媒体覆盖仅停留在财报快讯层面(Fool/GuruFocus电话会纪要)，未见专题研究；市场仍视其为分散型工业设备商，估值倍数(EV/Revenue 3.83x)落后于纯国防可比标的Kratos(4.87x)，一旦国防占比持续提升、市场确认收入结构转变，存在估值重估空间。",
+          "④先验给0.28的原因：demand_certainty/transmission_clarity较强(已签约资助项目+清晰backlog转化机制)，但purity打折(83%是backlog口径而非当期收入口径，历史上化工/炼油/能源等非国防业务仍占相当收入比例)；52周股价已从$52.57冲高至$125.82后回落至$78，说明此前已有一轮市场发现和部分price-in，neglect不算顶格；downside包括国防预算/项目执行风险及前期股价高波动性。赌的是backlog国防占比与利润率扩张能在未来1-2个财季继续被验证、推动市场完成从『多元工业设备商』到『国防装备供应商』的重新定价。"
+        ]
+      },
+      "prior": {
+        "p": 0.28,
+        "log_odds": -0.9445,
+        "rationale": "七维总分24 → 21-25档(0.22-0.32)；demand_certainty/transmission_clarity/verification_speed较强(已签约资助国防项目+backlog转化机制清晰)，但purity=3(83%为backlog口径非当期收入口径)、elasticity=3(市值~$9亿中等偏小)、neglect=3(52周已从低点$52.57涨至现价$78，此前已有一轮市场发现)拉至区间中段",
+        "set_by": "daily-scan 2026-11-09"
+      },
+      "current": {
+        "p": 0.28,
+        "log_odds": -0.9445,
+        "last_reviewed": "2026-11-09",
+        "recomputed_from_ledger": true
+      },
+      "validation_conditions": [
+        {
+          "id": "V1",
+          "required": true,
+          "metric": "下一财季(Q3 FY2027，截至2026-12-31，预计2027年2月中旬披露)财报中backlog水平及FY2027营收/EBITDA指引",
+          "confirm_if": "backlog维持在$560M以上(环比不下滑)，且管理层重申或上修FY2027营收($2.85-2.95亿)/EBITDA($3.5-4.0千万)指引",
+          "falsify_if": "backlog环比下滑超过5%，或管理层下修FY2027指引，或披露国防项目延迟/取消",
+          "check_by": "2027-02-12",
+          "status": "pending"
+        },
+        {
+          "id": "V2",
+          "required": false,
+          "metric": "新增国防合同/项目金额披露",
+          "confirm_if": "公告新增≥$2000万国防订单或新项目",
+          "falsify_if": "现有国防合同被取消或大幅推迟",
+          "check_by": "2027-02-12",
+          "status": "pending"
+        }
+      ],
+      "horizon": {
+        "quarters": 2,
+        "review_deadline": "2027-05-09"
+      },
+      "baseline": {
+        "entry_date": "2026-11-09",
+        "entry_price": 78.02,
+        "benchmark": "SPY",
+        "benchmark_entry_price": 735.29,
+        "sector_benchmark": "ITA",
+        "sector_benchmark_entry_price": 68.98
+      },
+      "price_expectation": {
+        "confirm_target": 111.0,
+        "falsify_target": 64.0,
+        "expected_by": "2027-03-10",
+        "methodology_cn": "证实情景：FY2027营收指引中枢$2.90亿(11/5重申) × 国防占比持续提升带来的重估倍数4.5x forward P/S(现价对应3.16x forward P/S，介于当前水平与纯国防可比Kratos EV/Revenue 4.87x之间) = 目标市值约$13.05亿 ÷ 1174万股(diluted) = 目标价约$111。证伪情景：backlog转化证伪、国防订单增长停滞，倍数回落至本轮重估前水平约2.6x forward P/S(接近52周低点$52.57对应的历史估值区间) × 同营收指引$2.90亿 = 目标市值约$7.54亿 ÷ 1174万股 = 目标价约$64。",
+        "timeline_logic_cn": "绑定V1(required)所在的Q3 FY2027财报(预计2027年2月中旬，约2027-02-12)为判定节点；市场重估通常滞后财报发布2-4周，故expected_by设为2027-03-10。",
+        "set_at": "2026-11-09",
+        "revisions": []
+      },
+      "evidence_log": [],
+      "posterior_history": [
+        {
+          "date": "2026-11-09",
+          "p": 0.28,
+          "note": "prior"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-11-05",
+          "type": "earnings",
+          "note": "Q2 FY2027财报已披露，backlog创纪录$561.3M，入池依据事件"
+        },
+        {
+          "date": "2027-02-12",
+          "type": "earnings",
+          "note": "预计Q3 FY2027财报日(待官方排期确认)，V1判定点",
+          "status": "upcoming"
         }
       ],
       "links": {
