@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-11-09",
+  "$last_updated": "2026-11-10",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -1500,6 +1500,20 @@
             "log_lr": 0.4055
           },
           "review_note": "三季报营收6.75亿(+92.35%)/净利6751万，落入此前上修预告区间内，印证guidance可信但非超预期增量，判weak_support。"
+        },
+        {
+          "id": "E5",
+          "date": "2026-11-04",
+          "source": "中国芯大会报道 + 公司回购公告",
+          "headline": "AK3918A V130系列智能视觉SoC获\"中国芯\"大会优秀市场表现产品奖，上市不足一年出货破千万颗；截至10/31累计回购205万股耗资2644万元",
+          "summary": "出货量门槛达成为新产品放量的量化旁证，回购体现管理层对现金流/估值的信心；与V2(新品出货/客户拓展)方向一致但非financial判定点，以pending记账",
+          "type": "T2_supply_chain",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -2056,6 +2070,20 @@
             "log_lr": 0.4055
           },
           "pending": false
+        },
+        {
+          "id": "E8",
+          "date": "2026-11-09",
+          "source": "公司公告/财联社报道",
+          "headline": "海星股份公告将于11/16召开临时股东会，审议21亿元定增用于AI算力高压电极箔项目扩产",
+          "summary": "扩产规模(21亿元)指向管理层对AI服务器电极箔需求持续性的中长期下注，与V2(H2 AI服务器电极箔收入占比/ASP)方向一致，但为股东会审议阶段非已落地产能，以pending记账；注意E6已记录Q3单季净利润同比-32.55%的负面背离，本条与之方向相反，留周复核综合判断",
+          "type": "T2_supply_chain",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -3786,6 +3814,20 @@
             "log_lr": 0.0
           },
           "pending": false
+        },
+        {
+          "id": "E7",
+          "date": "2026-10-28",
+          "source": "中红普林2026年第三季度报告",
+          "headline": "中红普林正式三季报：前三季度营业收入22.45亿元(+20.44% YoY)，归母净利润2.53亿元(+3611.36% YoY)",
+          "summary": "正式季报数字大幅超越中报已达成的V1门槛(1.4亿)，延续丁腈手套提价+满产满销趋势；E6(10/16)仅为ASP定性追踪，未覆盖本次正式财务数字，以pending记账供周复核综合定级",
+          "type": "T1_hard_financial",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -5164,6 +5206,20 @@
             "log_lr": 1.0986
           },
           "pending": false
+        },
+        {
+          "id": "E3",
+          "date": "2026-11-10",
+          "source": "投资者调研记录(11/4) + 财经媒体报道(11/10)",
+          "headline": "一博科技11/4投资者调研确认产能基本满产；11/10报道10月订单增速超80%，半导体ATE相关产品全年增速有望翻两倍",
+          "summary": "订单先行指标(10月+80%)为Q3财报(E2已记)之后的新增动能信号，支持V2(AI算力营收占比/新订单)持续性判断；增速口径来自媒体转述非一手公告，置信度打折，以pending记账",
+          "type": "T3_soft_signal",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -5358,6 +5414,20 @@
           "url": "https://www.gurufocus.com/news/9176521/",
           "summary": "V1 required三项AND条件中两项清晰确认(营收环比改善+32.5%；数据中心收入占比持续提升)，但管理层指引措辞为'H2 2026同比超H2 2025'而非原设定的'H2营收超H1'口径，未能逐字对应，不构成对confirm_if的clean击穿；未发现单笔≥$2000万新增数据中心订单(V2)。以pending记账，留周复核对照电话会原话逐字核实指引口径后定级。",
           "type": "T1_hard_financial",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
+        },
+        {
+          "id": "E5",
+          "date": "2026-11-09",
+          "source": "公司公告/GuruFocus",
+          "headline": "Power Solutions International宣布CFO Ken Li将于2026/11/27离职，股价应声-6.4%；同日披露与HD Construction Equipment签订多年期发动机供应协议修订(客户多元化信号)",
+          "summary": "CFO离职为负面治理信号，与数据中心备用电源核心论点无直接关联但增加执行风险；HD协议为非核心客户多元化的正面旁证。两者方向相反、均非V1/V2直接判定点，以pending记账留周复核评估治理风险权重",
+          "type": "T3_soft_signal",
           "pending": true,
           "likelihood": {
             "label": null,
@@ -6216,8 +6286,8 @@
         "set_by": "daily-scan 2026-08-19"
       },
       "current": {
-        "p": 0.28,
-        "log_odds": -0.9445,
+        "p": 0.5384,
+        "log_odds": 0.1541,
         "last_reviewed": "2026-10-31",
         "recomputed_from_ledger": true
       },
@@ -6229,7 +6299,7 @@
           "confirm_if": "Q2实际营收 ≥ $84M（达指引上限）且管理层重申或上修后续指引，或明确backlog环比继续扩大",
           "falsify_if": "Q2实际营收 < $76M（低于指引下限）或管理层表示磁带/ActiveScale需求边际转弱、backlog环比下滑",
           "check_by": "2026-11-09",
-          "status": "pending"
+          "status": "met"
         },
         {
           "id": "V2",
@@ -6238,7 +6308,7 @@
           "confirm_if": "公告新增≥$1000万规模超大规模客户订单，或明确量化backlog金额并环比增长",
           "falsify_if": "主要客户取消或大幅削减在手订单，或供应商产能瓶颈快速解除导致议价权减弱",
           "check_by": "2026-11-09",
-          "status": "pending"
+          "status": "met"
         }
       ],
       "horizon": {
@@ -6289,6 +6359,22 @@
             "log_lr": -0.4055
           },
           "pending": false
+        },
+        {
+          "id": "E3",
+          "date": "2026-11-09",
+          "source": "Quantum Corporation FQ2 FY2027 Financial Results (投资者关系新闻稿/8-K)",
+          "headline": "Quantum FQ2 FY2027正式财报：营收$89.6M(环比Q1的$80.8M +10.9%，YoY+42.9%)，连续第4个季度环比增长，non-GAAP调整EBITDA转正至$11.1M；管理层给出FQ3指引营收$91M±$2M；季末订单backlog创纪录达近$100M，由ActiveScale Cold Storage与Scalar i7 Raptor超大规模客户新单驱动",
+          "url": "https://investors.quantum.com/news-events/press-releases/detail/274/quantum-reports-fiscal-second-quarter-2027-financial-results",
+          "summary": "V1(required) confirm_if两项条件均清晰击穿：①Q2营收$89.6M > $84M门槛(达指引上限之上)；②FQ3指引$91M±2M即管理层重申/上修后续展望(环比Q2仍为增长)。V2(非required)confirm_if同步满足：backlog明确量化至近$100M且为\"创纪录\"(环比扩大)，并有具名超大规模客户新单(ActiveScale/Scalar i7 Raptor)。按CLAUDE.md铁律2即时评级：本公司正式财报直接击穿required条件，走T1紧急通道，compute-metrics.py重算后验，commit标[URGENT]",
+          "type": "T1_hard_financial",
+          "pending": false,
+          "likelihood": {
+            "label": "strong_support",
+            "lr": 3.0,
+            "log_lr": 1.0986
+          },
+          "review_note": "未判decisive因：①单季度财务beat对多季度持续性渗透曲线的鉴别力有限，QMCO历史上(2023年会计问题)存在数据质量先例需要连续验证；②磁带/ActiveScale需求的长期结构性程度仍待Q3/Q4连续确认，故按strong_support(T1上限)而非decisive_support计，与AUTL(H20260805-AUTL)E1先例口径一致"
         }
       ],
       "posterior_history": [
@@ -6313,6 +6399,11 @@
           "date": "2026-10-09",
           "type": "guidance_revision",
           "note": "8-K披露初步指引'达到或超过预期'(未审计)，同日CFO离职；正式Q2 FY27财报(11/9)为V1判定点"
+        },
+        {
+          "date": "2026-11-09",
+          "type": "earnings",
+          "note": "[已发生][URGENT] FQ2 FY2027正式财报：营收$89.6M超V1门槛，backlog创纪录~$100M，V1/V2均已met，T1紧急通道已触发compute-metrics.py重算"
         }
       ],
       "links": {
@@ -6437,6 +6528,20 @@
             "label": "moderate_support",
             "lr": 2.0,
             "log_lr": 0.6931
+          }
+        },
+        {
+          "id": "E2",
+          "date": "2026-11-09",
+          "source": "山外山2026年10月28日机构调研纪要(11/9披露)",
+          "headline": "调研纪要披露：前三季度血透设备收入3.58亿元(+34.91%)、血透机中标占比22.95%行业第一；血透耗材收入1.877亿元(+37.07%)，其中自产耗材收入+56.50%",
+          "summary": "自产耗材收入增速(+56.50%)显著高于耗材整体增速(+37.07%)，直接支持V2(自产耗材收入占比/综合毛利率变化)判定方向，为E1正式季报之外的结构明细补充，以pending记账留周复核评级",
+          "type": "T1_hard_financial",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
           }
         }
       ],
@@ -7316,7 +7421,22 @@
         "set_at": "2026-11-09",
         "revisions": []
       },
-      "evidence_log": [],
+      "evidence_log": [
+        {
+          "id": "E1",
+          "date": "2026-11-09",
+          "source": "William Blair / JPMorgan 分析师报告",
+          "headline": "William Blair对Graham Corporation首次覆盖给予Outperform评级(股价+14.9%)，理由是海军国防业务外的核能/航天多元化；同日JPMorgan维持Buy评级但将目标价从$120下修至$100",
+          "summary": "两家机构评级方向分歧(新覆盖看多多元化叙事 vs 现有覆盖下修目标价)，均未直接引用backlog或合同数据，与V1(下一财季backlog/FY指引)、V2(新增国防合同)均无直接关联，以pending记账",
+          "type": "T3_soft_signal",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
+        }
+      ],
       "posterior_history": [
         {
           "date": "2026-11-09",

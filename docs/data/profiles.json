@@ -1,5 +1,5 @@
 {
-  "$last_updated": "2026-11-09T08:14:54+08:00",
+  "$last_updated": "2026-11-10T10:43:35+08:00",
   "source": "yahoo-quote-summary",
   "profiles": {
     "OUST": {
@@ -586,10 +586,10 @@
       "website": "https://908devices.com",
       "description_en": "908 Devices Inc. provides purpose-built handheld mass spectrometry and fourier transform infrared (FTIR) devices for use in vital health and safety applications. The company's products include MX908, a handheld, battery-powered, and Mass Spec device that is designed for rapid analysis of solid, liquid, vapor, and aerosol materials of unknown identity; XplorIR, a handheld device that uses FTIR spectroscopy to identify, quantify, and track gases and vapors; ThreatID, a portable FTIR device that rapidly detects and identifies approximately 28,000 unknown gas, vapor, powder, and liquid chemical hazards; ProtectIR, a handheld FTIR device that can identify approximately 23,000 solid and liquid chemical hazards; and VipIR, a handheld 3-in-1 analyzer that integrates FTIR, Raman spectroscopy, and smart spectral processing (SSP), a proprietary algorithm, to provide a single result from just one sample. It operates in the United States, Europe, the Middle East, Africa, the Asia Pacific, and rest of Americas. The company was incorporated in 2012 and is headquartered in Burlington, Massachusetts.",
       "currency": "USD",
-      "market_cap": 436483936,
+      "market_cap": 475750944,
       "trailing_pe": null,
-      "forward_pe": -34.341465,
-      "ps_ttm": 7.174292,
+      "forward_pe": -37.430893,
+      "ps_ttm": 7.8197064,
       "revenue_ttm": 60840000,
       "revenue_growth": 0.233,
       "gross_margin": 0.52651,
@@ -600,10 +600,10 @@
       "free_cashflow": 18682500,
       "week52_low": 5.025,
       "week52_high": 13.348,
-      "fetched_at": "2026-11-09T08:00:49+08:00"
+      "fetched_at": "2026-11-10T10:43:29+08:00"
     },
     "QMCO": {
-      "next_earnings_date": "2026-11-09",
+      "next_earnings_date": null,
       "name": "Quantum Corporation",
       "sector": "Technology",
       "industry": "Computer Hardware",
@@ -611,10 +611,10 @@
       "website": "https://www.quantum.com",
       "description_en": "Quantum Corporation provides data management solutions for unstructured data in the Americas, Europe, the Middle East, Africa, and the Asia Pacific. The company offers primary storage software and systems, including StorNext Hybrid Flash/Disk File Storage Software for video editing, post-production, and streaming applications, as well as large digital file archives; and Unified Surveillance Platform Software, a unified compute and storage software for video surveillance recording, storage, and analytics. It also provides cost-per-terabyte secondary storage software and systems, such as ActiveScale Object Storage Software, a storage for building massive data lakes, storage clouds, and cold archives; DXi Backup Appliances for backup and recovery and multisite data protection; Scalar Tape Storage, a storage for long-term data archiving and offline data protection; and CatDV Asset Management Software for indexing, cataloging, AI data enrichment, and workflow orchestration. In addition, the company sells standalone linear-tape open tape drives for small business data protection and archiving, as well as linear-tape open media for use in tape storage systems. Further, it offers global support, deployment and consulting, and education services, as well as Quantum-as-a-Service. The company serves media and entertainment, life sciences, gaming and hospitality, retail, education, energy, financial services, and manufacturing industries, as well as hyperscale cloud providers, US federal and public sector, safe cities, and government. The company sells its products through a network of distributors, value-added resellers, direct marketing resellers, original equipment manufacturers, and other suppliers, as well as directly to corporate entities and government agencies. Quantum Corporation was incorporated in 1980 and is headquartered in Centennial, Colorado.",
       "currency": "USD",
-      "market_cap": 570262720,
+      "market_cap": 669575872,
       "trailing_pe": null,
-      "forward_pe": 17.22619,
-      "ps_ttm": 1.9259257,
+      "forward_pe": 20.22619,
+      "ps_ttm": 2.261332,
       "revenue_ttm": 296097984,
       "revenue_growth": 0.257,
       "gross_margin": 0.37842,
@@ -625,7 +625,7 @@
       "free_cashflow": 17369876,
       "week52_low": 4.19,
       "week52_high": 35.65,
-      "fetched_at": "2026-11-09T08:00:49+08:00"
+      "fetched_at": "2026-11-10T10:43:29+08:00"
     },
     "688410.SS": {
       "next_earnings_date": null,
@@ -636,10 +636,10 @@
       "website": "https://www.swskj.com",
       "description_en": "SWS Hemodialysis Care Co., Ltd. research, develops, produces, and sells blood purification equipment and consumables in China and internationally. It offers blood purification equipment, dialysis disposables, and dialysis center intelligent management system, as well as operates chain dialysis centers. The company was founded in 2001 and is headquartered in Chongqing, China.",
       "currency": "CNY",
-      "market_cap": 4845784576,
-      "trailing_pe": 24.066668,
+      "market_cap": 4792091648,
+      "trailing_pe": 23.800001,
       "forward_pe": null,
-      "ps_ttm": 5.050622,
+      "ps_ttm": 4.9946594,
       "revenue_ttm": 959443136,
       "revenue_growth": 0.203,
       "gross_margin": 0.53484,
@@ -650,7 +650,7 @@
       "free_cashflow": 38871176,
       "week52_low": 8.61,
       "week52_high": 13.192857,
-      "fetched_at": "2026-11-09T08:00:50+08:00"
+      "fetched_at": "2026-11-10T10:43:30+08:00"
     },
     "301563.SZ": {
       "next_earnings_date": null,
@@ -661,10 +661,10 @@
       "website": "https://www.ickey.cn",
       "description_en": "YH Group Internet and Technology Co., Ltd. operates a B2B sales platform for the electronics manufacturing industry in China. The company through its B2B sales platform ickey.cn provides analog chips, logic core pieces, memory devices, micro processing devices, discrete devices, sensors, optoelectronics, capacitances, inductances, resistance products, and connectors, as well as operates chip barke community. It also offers supply chain services, such as research and development project engineering, product technical solution development, product design-related solution consultation, circuit design, printed circuit board layout, material selection and solution optimization, electronic component procurement, and printed circuit board assembly engineering services. YH Group Internet and Technology Co., Ltd. was formerly known as ICkey (Shanghai) Internet and Technology Co.,Ltd. and changed its name to YH Group Internet and Technology Co., Ltd. in October 2026. The company was founded in 2008 and is based in Shanghai, China.",
       "currency": "CNY",
-      "market_cap": 7928406016,
-      "trailing_pe": 21.680555,
+      "market_cap": 8305102848,
+      "trailing_pe": 22.60599,
       "forward_pe": null,
-      "ps_ttm": 2.6792552,
+      "ps_ttm": 2.806553,
       "revenue_ttm": 2959182848,
       "revenue_growth": 0.263,
       "gross_margin": 0.16093999,
@@ -675,7 +675,7 @@
       "free_cashflow": null,
       "week52_low": 89.03,
       "week52_high": 232.99,
-      "fetched_at": "2026-11-09T08:00:51+08:00"
+      "fetched_at": "2026-11-10T10:43:31+08:00"
     },
     "INTT": {
       "next_earnings_date": null,
@@ -686,10 +686,10 @@
       "website": "https://www.intest.com",
       "description_en": "inTEST Corporation provides test and process technology solutions for use in Semi, Auto/Electric Vehicle, Defense/Aerospace, Industrial, Life Sciences, Safety/Security, and other markets in the United States and internationally. The company operates through three segments: Electronic Test, Environmental Technologies, and Process Technologies. The Electronic Test segment offers Cobal, and LS series manipulators that hold various test heads and enable an operator to reposition a test head for use with several probers on a test floor; and docking hardware products, which protect the interface contacts and ensure proper repeatable and precise alignment between the test head's interface board and the prober's probing assembly. This segment also provides tester interfaces that offer electrical connections between the tester and the wafer prober or IC handler; scorpion flying probe test systems that designs and manufactures robotics-based electronic test equipment and application support services; and BRiZ automated test and programming services, as well as functional test platform, touch display tester, wafer-level optical component tester, and specialty test modules. The Environmental Technologies segment provides ThermoStream products that are used in the semi market as a stand-alone temperature management tool, or in various electronic test applications; Thermal Chambers; Thermal Platforms; Thermonics temperature conditioning products that offer tempered gas or fluid; and ultra-cold storage solutions, including biomedical freezers, refrigerators, and mobile storage solutions. The Process Technologies segment offers EKOHEAT and EASYHEAT induction heating systems; and digital streaming and image capturing solutions. The company markets and sells its products to semiconductor manufacturers, third-party foundries, test and assembly providers, and original equipment manufacturers. inTEST Corporation was incorporated in 1981 and is headquartered in Mount Laurel, New Jersey.",
       "currency": "USD",
-      "market_cap": 171605920,
-      "trailing_pe": 44.566666,
-      "forward_pe": 19.191296,
-      "ps_ttm": 1.2517756,
+      "market_cap": 175342032,
+      "trailing_pe": 45.533333,
+      "forward_pe": 19.514286,
+      "ps_ttm": 1.2790287,
       "revenue_ttm": 137090000,
       "revenue_growth": 0.337,
       "gross_margin": 0.44187,
@@ -700,7 +700,7 @@
       "free_cashflow": 7805625,
       "week52_low": 7.07,
       "week52_high": 20.0,
-      "fetched_at": "2026-11-09T08:00:52+08:00"
+      "fetched_at": "2026-11-10T10:43:32+08:00"
     },
     "ASUR": {
       "next_earnings_date": null,
@@ -711,10 +711,10 @@
       "website": "https://www.asuresoftware.com",
       "description_en": "Asure Software, Inc. engages in the provision of cloud-based Human Capital Management (HCM) software solutions in the United States. It provides its human resources (HR) tool as Software-as-a-Service that helps various small and medium-sized businesses to build a productive workforce to help them stay compliant and allocate resources to grow their business. The company offers a comprehensive suite of HCM tools through its Asure HCM platform, which includes payroll and tax filing, HR management tools, time and attendance software, recruiting, and benefits administration. It provides technology-enabled services such as AsureMarketplace, facilitating automated data exchange with third-party providers; HR compliance services; AsurePay, a payroll card solution; and insurance brokerage services for benefits management. The company also offers payroll processing and compliance; offers payroll calculation and processing services, including wage and overtime calculations, garnishments, direct deposit processing, and related payroll administration; HR compliance and workforce management; time and attendance solutions; applicant tracking and recruiting tools; insurance brokerage and benefits administration, retirement plan administration; tax management solutions; payroll tax processing platforms; outsourced payroll tax services; and treasury and funds management services. The company delivers its products directly and through a national network of reseller partners and referral partners. Asure Software, Inc. was formerly known as Forgent Networks Inc. and changed its name to Asure Software, Inc. in September 2007. Asure Software, Inc. was incorporated in 1985 and is headquartered in Austin, Texas.",
       "currency": "USD",
-      "market_cap": 291138048,
+      "market_cap": 313161984,
       "trailing_pe": null,
-      "forward_pe": 8.4017515,
-      "ps_ttm": 1.828722,
+      "forward_pe": 9.037325,
+      "ps_ttm": 1.9670607,
       "revenue_ttm": 159203008,
       "revenue_growth": 0.104,
       "gross_margin": 0.69139,
@@ -724,8 +724,8 @@
       "total_debt": 70304000,
       "free_cashflow": 15892875,
       "week52_low": 6.8,
-      "week52_high": 10.2,
-      "fetched_at": "2026-11-09T08:00:53+08:00"
+      "week52_high": 10.4564,
+      "fetched_at": "2026-11-10T10:43:32+08:00"
     },
     "OSPN": {
       "next_earnings_date": null,
@@ -736,10 +736,10 @@
       "website": "https://www.onespan.com",
       "description_en": "OneSpan Inc., together with its subsidiaries, provides digital solutions for security, authentication, identity, electronic signature, and digital workflow products in the Americas, Europe, the Middle East, Africa, and the Asia Pacific regions. It operates through Cybersecurity and Digital Agreements segments. The company offers Cloud Authentication, a cloud-based multifactor authentication solution; Mobile Security Suite, a software development kit that protects mobile transactions; Mobile Application Shielding that protects mobile applications from attacks by malware allowing secure usage of mobile applications even in hostile environments; and authentication servers that securely authenticate users and transactions. The company also provides Authentication Suite, a solution to protect organizations from cyber threats; Digipass Authenticator; and Digipass S3 Authentication software, an authentication platform designed to enable passwordless and phishing-resistant authentication across web and mobile applications. It also provides OneSpan Sign, a range of e-signature requirements for occasional agreement; OneSpan Notary, an online notary solution developed for organizations with in-house notaries; OneSpan Sign Identity Verification that enables banks and financial institutions identity verification services; Onespan Sign Authentication, a configurable authentication option to verify senders and signers by adding layers of security to e-signature transactions; and OneSpan Integration Platform, a platform that enables organizations to integrate e-signatures. It sells its solutions through its direct sales force, distributors, resellers, systems integrators, and original equipment manufacturers. The company was formerly known as VASCO Data Security International, Inc. and changed its name to OneSpan Inc. in August 1997. OneSpan Inc. was founded in 1991 and is headquartered in Boston, Massachusetts.",
       "currency": "USD",
-      "market_cap": 796558464,
-      "trailing_pe": 11.994445,
-      "forward_pe": 15.644928,
-      "ps_ttm": 3.1458042,
+      "market_cap": 833453248,
+      "trailing_pe": 12.55,
+      "forward_pe": 16.369566,
+      "ps_ttm": 3.2915106,
       "revenue_ttm": 253212992,
       "revenue_growth": 0.12,
       "gross_margin": 0.74425006,
@@ -750,7 +750,7 @@
       "free_cashflow": 39358376,
       "week52_low": 10.07,
       "week52_high": 27.45,
-      "fetched_at": "2026-11-09T08:00:53+08:00"
+      "fetched_at": "2026-11-10T10:43:33+08:00"
     },
     "MEC": {
       "next_earnings_date": null,
@@ -761,10 +761,10 @@
       "website": "https://www.mecinc.com",
       "description_en": "Mayville Engineering Company, Inc., together with its subsidiaries, engages in the production, design, prototyping and tooling, fabrication, aluminum extrusion, coating, and assembling of aftermarket components in the United States. It supplies engineered components to original equipment manufacturers. The company serves heavy and medium duty commercial vehicles, construction and access equipment, powersports, data center and critical power, agriculture, military, and other end markets. Mayville Engineering Company, Inc. was founded in 1945 and is headquartered in Milwaukee, Wisconsin.",
       "currency": "USD",
-      "market_cap": 334573760,
+      "market_cap": 359819808,
       "trailing_pe": null,
-      "forward_pe": 12.905891,
-      "ps_ttm": 0.5463419,
+      "forward_pe": 13.879735,
+      "ps_ttm": 0.5875674,
       "revenue_ttm": 612388992,
       "revenue_growth": 0.181,
       "gross_margin": 0.107250005,
@@ -775,7 +775,32 @@
       "free_cashflow": 1391375,
       "week52_low": 12.415,
       "week52_high": 38.76,
-      "fetched_at": "2026-11-09T08:00:54+08:00"
+      "fetched_at": "2026-11-10T10:43:34+08:00"
+    },
+    "GHM": {
+      "next_earnings_date": "2027-02-05",
+      "name": "Graham Corporation",
+      "sector": "Industrials",
+      "industry": "Specialty Industrial Machinery",
+      "employees": 732,
+      "website": "https://grahamcorp.com",
+      "description_en": "Graham Corporation designs and manufactures fluid, power, heat transfer, and vacuum technologies for chemical and petrochemical processing, defense, space, petroleum refining, cryogenic, and energy industries. The company offers power plant systems, including ejectors and surface condensers, as well as torpedo ejection, propulsion, and power systems comprising turbines, alternators, regulators, pumps, and blowers for the defense industry. It also provides heat transfer and vacuum systems that include ejectors, process and surface condensers, liquid ring pumps, and heat exchangers, as well as nozzles and power generation systems, such as turbines, generators, compressors, and pumps for the energy and process industry. In addition, the company offers rocket propulsion systems, including turbopumps, fuel, cryogenic, and nuclear propellant pumps; cooling systems comprising pumps, compressors, fans, and blowers; and life support systems that consist of fans, pumps, and blowers for the space industry. Further, it provides thermal management systems, such as pumps, blowers, and electronics for the defense and energy sector; advanced mixing systems, including bladeless centrifugal mixers, accessories, services, and consumables; and spare parts for its equipment. It serves customers in the United States, Asia, Canada, the Middle East, South America, and internationally. Graham Corporation was founded in 1936 and is headquartered in Batavia, New York.",
+      "currency": "USD",
+      "market_cap": 1040453568,
+      "trailing_pe": 67.66412,
+      "forward_pe": 38.51,
+      "ps_ttm": 3.9280038,
+      "revenue_ttm": 264880992,
+      "revenue_growth": 0.057,
+      "gross_margin": 0.25063,
+      "operating_margin": 0.0863,
+      "profit_margin": 0.05045,
+      "total_cash": 71427000,
+      "total_debt": 6426000,
+      "free_cashflow": 28424000,
+      "week52_low": 52.57,
+      "week52_high": 125.82,
+      "fetched_at": "2026-11-10T10:43:35+08:00"
     }
   }
 }
