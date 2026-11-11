@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-11-10",
+  "$last_updated": "2026-11-11",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -4832,6 +4832,21 @@
             "log_lr": -0.4055
           },
           "pending": false
+        },
+        {
+          "id": "E4",
+          "date": "2026-11-10",
+          "source": "Autolus Therapeutics Q3 2026 Financial Results (StockTitan/GlobeNewswire)",
+          "headline": "Autolus Q3 2026财报：AUCATZYL净产品收入$41.2M(+95% YoY)，毛利率57%(环比改善)，上修FY2026收入指引至≥$1.50亿(区间上沿)；现金$248.4M，跑道延至2028Q2",
+          "url": "https://www.stocktitan.net/news/AUTL/autolus-therapeutics-reports-third-quarter-2026-financial-results-aeb4ctdhp20w.html",
+          "summary": "V3(非required)confirm_if('现金跑道支撑至2027年以后且无需在Perceptive信贷安排外追加股权融资')方向性满足(跑道延至2028Q2，财报/电话会未披露新增股权融资计划)，但公司未明确逐字重申'无需额外融资'，按daily-scan纪律只记pending不升级T1(V3非required)，留周复核定级",
+          "type": "T1_hard_financial",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -4865,7 +4880,7 @@
         {
           "date": "2026-11-10",
           "type": "earnings",
-          "note": "Q3 2026财报（Yahoo官方排期校正为2026-11-10）— 与V3(现金跑道/再融资，check_by 2026-11-15)判定窗口衔接，下一观测点"
+          "note": "[已发生] Q3 2026财报：收入+95% YoY、FY26指引上修至≥$1.5亿、现金跑道延至2028Q2；V3(非required)方向性满足，pending留周复核定级"
         }
       ],
       "links": {
@@ -6184,6 +6199,21 @@
             "log_lr": 0.4055
           },
           "pending": false
+        },
+        {
+          "id": "E3",
+          "date": "2026-11-10",
+          "source": "908 Devices Q3 2026 Earnings Release & Call (GuruFocus/Benzinga)",
+          "headline": "908 Devices Q3 2026财报：营收$19.0M(+35% YoY，超V1门槛20%)，上修FY2026营收指引下限至$68.5-70M；欧洲新增2笔ProtectIR政府/EOD订单(未披露具体金额)",
+          "url": "https://www.gurufocus.com/news/9188466/908-devices-inc-reports-q3-2026-revenue-of-190-million-surpassing-estimates-net-loss-narrows-to-46-million",
+          "summary": "V1(required)收入同比子条件已清晰确认(+35%>20%)，但'新增≥$300万政府/执法订单'子条件未见清晰新披露(欧洲2笔EOD订单未量化金额；此前已知的$6M APAC矫正系统订单(E1,10/1)本季度发货约2/3，属存量非新增披露)，AND型条件未能clean击穿，不构成T1 decisive；V2(非required)指引上修下限+每股亏损收窄($0.11 vs预期$0.16)方向性满足。均pending留周复核定级",
+          "type": "T1_hard_financial",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
         }
       ],
       "posterior_history": [
@@ -6207,7 +6237,7 @@
         {
           "date": "2026-11-10",
           "type": "earnings",
-          "note": "CY26Q3财报（Yahoo官方排期确认2026-11-10）— V1判定点"
+          "note": "[已发生] Q3 2026财报：收入+35% YoY(满足V1收入子条件)、FY26指引下限上修至$68.5-70M；V1'新增政府订单'子条件未见清晰新披露，AND条件未clean击穿，pending留周复核定级"
         },
         {
           "date": "2026-10-01",

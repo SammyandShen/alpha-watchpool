@@ -1,5 +1,5 @@
 {
-  "$generated_at": "2026-11-10",
+  "$generated_at": "2026-11-11",
   "counts": {
     "active": 25,
     "confirmed": 8,
@@ -80,13 +80,13 @@
   "economics": {
     "confirmed": {
       "n": 8,
-      "avg_return_pct": -21.46,
-      "avg_excess_vs_spy_pct": -12.11
+      "avg_return_pct": -18.78,
+      "avg_excess_vs_spy_pct": -9.28
     },
     "observing": {
-      "n": 22,
-      "avg_return_pct": -15.33,
-      "avg_excess_vs_spy_pct": -8.81
+      "n": 24,
+      "avg_return_pct": -15.75,
+      "avg_excess_vs_spy_pct": -9.63
     }
   }
 }

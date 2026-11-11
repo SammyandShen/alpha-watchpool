@@ -2,67 +2,6 @@
   "$comment": "近 14 天已分析新闻指纹，daily-scan 去重用。每条: {date, fingerprint, headline, tickers, action}。action: new_hypothesis | evidence_appended | skipped_watchlist_only | skipped_duplicate | skipped_daily_cap",
   "entries": [
     {
-      "date": "2026-10-27",
-      "fingerprint": "2026-10-05+INTT+q3-prebooking-backlog-AI-datacenter-semitest",
-      "headline": "inTest Corp(INTT) 10/5 8-K：Q3订单$48-50M(+28-33% YoY)创纪录，backlog $58-60M(+28-32% QoQ)，book-to-bill>1.3x，AI数据中心驱动半导体后段测试需求",
-      "tickers": [
-        "INTT"
-      ],
-      "action": "new_hypothesis"
-    },
-    {
-      "date": "2026-10-27",
-      "fingerprint": "2026-10-27+cn-forecasts-batch2-reviewed-9-rejected-crowded-or-weak",
-      "headline": "cn-forecasts.json正向候选批量复核(688059.SS华锐精密/688231.SS隆达股份/688827.SS钶锐锶/920085.BJ森峰激光/601969.SS海南矿业/600409.SS三友化工/002466.SZ天齐锂业/000603.SZ盛达资源/001381.SZ皇冠新材/603991.SS领先股份/600188.SS兖矿能源)",
-      "tickers": [
-        "688059.SS",
-        "688231.SS",
-        "688827.SS",
-        "920085.BJ",
-        "601969.SS",
-        "600409.SS",
-        "002466.SZ",
-        "000603.SZ",
-        "001381.SZ",
-        "603991.SS",
-        "600188.SS"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "华锐精密：涨价传导真实但510家机构持仓34.88%流通股、neglect过低；隆达股份：高温合金需求真实但年内股价已+150%、概念板块(高端合金/燃气轮机)已充分炒作；钶锐锶：尚处IPO申购阶段未上市，无法建仓；森峰激光：刚过会北交所IPO，2023-2025净利润持续下滑(1.08亿→0.98亿)，本次仅为略增修复非强劲需求；海南矿业/天齐锂业：业绩增长主因联营公司投资收益或政府补贴等非经常性因素，非纯经营性需求；三友化工：分部业绩分化(纯碱/氯碱下滑对冲化纤/有机硅改善)，传导不清晰；盛达资源：贵金属涨价题材已高度拥挤；皇冠新材：营收个位数增长且利润因成本上升下滑，传导方向相反；领先股份：扭亏主因重大资产重组置入资产而非内生需求；兖矿能源：市值超千亿megacap，neglect为零"
-    },
-    {
-      "date": "2026-10-27",
-      "fingerprint": "2026-10-27+US-CN-macro-themes-algo-capex-copper-clad-already-crowded",
-      "headline": "美股小盘beat-and-raise宏观面扫描(62%指引超预期/84%beat)+A股算力大单/覆铜板连续涨价扫描(申昊科技/弘信电子等超百亿大单、CCL十轮涨价)",
-      "tickers": [],
-      "action": "skipped_watchlist_only",
-      "note": "均为行业级/宏观叙事或已是市场高度关注的consensus标的(算力大单、CCL涨价已被充分报道)，未发现满足入池纪律的新idiosyncratic小盘ticker候选"
-    },
-    {
-      "date": "2026-10-27",
-      "fingerprint": "2026-10-25+PSIX+law-firm-solicitation-stale-march-litigation",
-      "headline": "PSIX多家律所持续发布『investigation/class action』征集公告(10/18-10/25)",
-      "tickers": [
-        "PSIX"
-      ],
-      "action": "skipped_duplicate",
-      "note": "均为律所对2026年3月已披露毛利率崩塌事件的常规征集原告PR，非新增实质性信息，且PSIX当前后验(0.20)已充分反映该已知风险，不记账"
-    },
-    {
-      "date": "2026-10-27",
-      "fingerprint": "2026-10-27+US-pool-5-tickers-pre-earnings-quickcheck-no-new-material",
-      "headline": "池内OUST/AEHR/PSIX/AIP/MTUS临近财报(11/2-11/5)快查：AIP新增$330万政府项目资助用于芯片安全验证业务(非核心thesis)，其余无新增材料消息",
-      "tickers": [
-        "OUST",
-        "AEHR",
-        "PSIX",
-        "AIP",
-        "MTUS"
-      ],
-      "action": "skipped_watchlist_only",
-      "note": "AIP的政府资助金额小且非核心验证路径相关指标，不单独记账；其余4只ticker无新增可记账信息，等待各自11月初财报"
-    },
-    {
       "date": "2026-10-30",
       "fingerprint": "2026-10-30+cn-forecasts-batch3-reviewed-1-new-2-duplicate-rejected",
       "headline": "cn-forecasts.json正向候选复核：002475.SZ立讯精密(新，10/30预告)/920085.BJ森峰激光/001381.SZ皇冠新材(均已于10/27复核排除，本次重复出现)",
@@ -631,6 +570,65 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "MASS的V1(required)check_by恰为今日，AUTL的V3(非required)check_by为11/15；两者均需待实际财报数字公开后在后续扫描/周复核中补记，今日未发现可用数字故不记账，亦不构成T1（无数据不可能击穿条件）"
+    },
+    {
+      "date": "2026-11-11",
+      "fingerprint": "2026-11-11+cn-forecasts-fetch-failed-reused-stale-snapshot-duplicate",
+      "headline": "东财接口当日拉取失败(eastmoney success=false)，fetch-cn-forecasts.py保留11/9快照；候选批次(688827.SS钶锐锶/688235.SS百济神州/001381.SZ皇冠新材/920309.BJ菊乐股份)与11/9-11/10复核结论一致",
+      "tickers": [
+        "688827.SS",
+        "688235.SS",
+        "001381.SZ",
+        "920309.BJ"
+      ],
+      "action": "skipped_duplicate",
+      "note": "无新鲜数据来源，沿用既有排除结论（IPO未上市/千亿megacap/营收负增长或方向相反/温和消费品故事无idiosyncratic驱动）；pool_negative_warnings为空(沿用快照)"
+    },
+    {
+      "date": "2026-11-11",
+      "fingerprint": "2026-11-10+AUTL+q3report-v3-directional-pending",
+      "headline": "Autolus(AUTL) Q3 2026正式财报(11/10)：AUCATZYL净产品收入$41.2M(+95% YoY)，毛利率57%，上修FY26指引至≥$1.5亿，现金$248.4M跑道延至2028Q2",
+      "tickers": [
+        "AUTL"
+      ],
+      "action": "evidence_appended",
+      "note": "V1/V2已于8/11 met；本次为V3(非required，现金跑道/无需追加融资)方向性满足但非逐字重申，按daily-scan纪律记pending(E4)，不构成T1"
+    },
+    {
+      "date": "2026-11-11",
+      "fingerprint": "2026-11-10+MASS+q3report-v1-and-condition-partial-ambiguous",
+      "headline": "908 Devices(MASS) Q3 2026正式财报(11/10)：营收$19.0M(+35% YoY)，上修FY26指引下限至$68.5-70M；欧洲新增2笔ProtectIR政府/EOD订单(未披露金额)",
+      "tickers": [
+        "MASS"
+      ],
+      "action": "evidence_appended",
+      "note": "V1(required AND条件)收入子条件清晰确认(+35%>20%)，但'新增≥$300万政府订单'子条件未见清晰新披露(已知$6M APAC订单为存量发货非新增)，未clean击穿不构成T1；记pending(E3)留周复核"
+    },
+    {
+      "date": "2026-11-11",
+      "fingerprint": "2026-11-10+US-newcandidate-scan-megacap-or-crowded-rejected",
+      "headline": "美股小盘beat-and-raise/backlog扫描：CoreWeave/Embraer/IonQ/Rigetti/D-Wave/Novanta等候选复核",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "CoreWeave/Embraer均为大盘股(backlog千亿/百亿美元级)；IonQ/Rigetti/D-Wave量子计算已是高度拥挤consensus题材且有分析师专题覆盖；Novanta市值~$5B+机构覆盖充分，均不满足小盘高弹性/低关注门槛"
+    },
+    {
+      "date": "2026-11-11",
+      "fingerprint": "2026-11-11+CN-newcandidate-scan-megacap-or-macro-theme-rejected",
+      "headline": "A股新候选扫描：中国移动116亿元国产算力大单(大华股份26.3亿元)+半导体涨价潮(AMD/存储/封测)宏观面扫描",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "大华股份市值超600亿元megacap(10/30-11/3已复核排除)；算力大单其余中标方(华鲲振宇/宝德/百信/神州鲲泰)为非上市主体或信息不足无法核实具体上市公司承接方；半导体涨价为行业级宏观叙事，未发现满足入池纪律的新idiosyncratic小盘ticker候选"
+    },
+    {
+      "date": "2026-11-11",
+      "fingerprint": "2026-11-11+POWL+quickcheck-no-new-material",
+      "headline": "池内POWL复核：11/3常规分红公告，FY2026 Q4财报确认11/16盘后发布(11/17电话会)",
+      "tickers": [
+        "POWL"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "无新增可记账实质消息，待11/16财报"
     }
   ]
 }
