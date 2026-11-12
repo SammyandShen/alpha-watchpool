@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-11-11",
+  "$last_updated": "2026-11-12",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -1810,6 +1810,21 @@
             "log_lr": null
           },
           "id": "E9"
+        },
+        {
+          "date": "2026-11-04",
+          "source": "SEC 8-K / 公开报道",
+          "headline": "Penguin Solutions announced定实协议将Cree LED业务出售给Transom Capital Group(现金交易，预计2027Q1完成)，Cree LED约占FY27预计净销售额10%",
+          "url": "https://www.sec.gov/",
+          "summary": "剥离非AI的LED照明业务，聚焦AI数据中心基础设施(Integrated Memory+Advanced Computing)，强化V2业务纯度逻辑(AI驱动业务占比将进一步提升)；非直接财务判定点，以pending记账",
+          "type": "T2_supply_chain",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          },
+          "id": "E10"
         }
       ],
       "posterior_history": [

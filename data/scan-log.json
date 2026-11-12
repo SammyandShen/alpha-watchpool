@@ -629,6 +629,91 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "无新增可记账实质消息，待11/16财报"
+    },
+    {
+      "date": "2026-11-12",
+      "fingerprint": "2026-11-12+cn-forecasts-fetch-failed-reused-stale-snapshot-duplicate",
+      "headline": "东财接口当日再次拉取失败(eastmoney success=false)，fetch-cn-forecasts.py保留11/9快照；候选批次(688827.SS钶锐锶/688235.SS百济神州/001381.SZ皇冠新材/920309.BJ菊乐股份)与11/9-11/11复核结论一致",
+      "tickers": [
+        "688827.SS",
+        "688235.SS",
+        "001381.SZ",
+        "920309.BJ"
+      ],
+      "action": "skipped_duplicate",
+      "note": "连续第二日无新鲜数据来源，沿用既有排除结论；pool_negative_warnings为空(沿用快照)"
+    },
+    {
+      "date": "2026-11-12",
+      "fingerprint": "2026-11-12+US-newcandidate-scan-megacap-or-crowded-rejected",
+      "headline": "美股小盘beat-and-raise/AI基建供应链扫描：CoreWeave/MDA Space/Consensus Cloud/Microchip/Vertiv/SMCI/Dell/Ameresco/American Superconductor(AMSC)等候选复核",
+      "tickers": [
+        "AMSC"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "CoreWeave/Dell/SMCI/Vertiv/Microchip均为大盘股；MDA Space/Consensus Cloud无清晰小盘弹性叙事；Ameresco数据中心订单亮眼但市值~$30亿+已被多篇AI基建专题覆盖，拥挤度高；AMSC与11/4复核结论一致(已被Benzinga『小盘AI基建』专题点名+自由现金流转正叙事持续发酵，neglect已下降，拥挤度维持中高)，重复排除"
+    },
+    {
+      "date": "2026-11-12",
+      "fingerprint": "2026-11-12+CN-newcandidate-scan-603083-toocrowded-rejected",
+      "headline": "A股新候选扫描：剑桥科技(603083.SS)光模块2027年底前再扩产1000万支，Q3归母净利同比+2倍，今日涨停",
+      "tickers": [
+        "603083.SS"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "总市值452亿元(远超小盘门槛)，国泰海通等多家机构已首次覆盖+多只公募基金Q3增持，今日涨停反映misclassification已被市场充分修正，neglect为零，不满足入池质量门槛；半导体封测/存储涨价潮为延续性行业级宏观叙事，非idiosyncratic新信号"
+    },
+    {
+      "date": "2026-11-12",
+      "fingerprint": "2026-11-04+PENG+cree-led-divestiture-purity-signal",
+      "headline": "Penguin Solutions(PENG) 11/4公告将Cree LED业务(约占FY27预计净销售额10%)出售给Transom Capital Group，预计2027Q1完成交易，聚焦AI数据中心基础设施",
+      "tickers": [
+        "PENG"
+      ],
+      "action": "evidence_appended",
+      "note": "剥离非AI照明业务强化V2(AI驱动业务占比)纯度逻辑，以pending(E10)记账，不构成T1"
+    },
+    {
+      "date": "2026-11-12",
+      "fingerprint": "2026-11-12+US-pool-12tickers-quickcheck-no-new-material",
+      "headline": "池内12只美股标的(POWL/AUTL/PSIX/AIP/MTUS/MASS/QMCO/INTT/ASUR/OSPN/MEC/GHM)动态快查：除PENG(见独立记录)外无新增可记账实质消息",
+      "tickers": [
+        "POWL",
+        "AUTL",
+        "PSIX",
+        "AIP",
+        "MTUS",
+        "MASS",
+        "QMCO",
+        "INTT",
+        "ASUR",
+        "OSPN",
+        "MEC",
+        "GHM"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "GHM新增William Blair首次覆盖(Outperform，11/9，股价+14.9%)/OSPN新增B.Riley目标价上调($22→$32)/QMCO参加Cantor Convergence Conference(11/11-12)均为分析师评级或投资者会议日程，非基本面信号不构成pending证据；POWL确认FY2026 Q4财报11/16盘后发布、11/17电话会；其余标的无新增重大消息"
+    },
+    {
+      "date": "2026-11-12",
+      "fingerprint": "2026-11-12+CN-pool-12tickers-quickcheck-no-new-material",
+      "headline": "池内12只A股标的(002497.SZ/688620.SS/603115.SS/688531.SS/688380.SS/920493.BJ/300981.SZ/688733.SS/688265.SS/688410.SS/301563.SZ/301366.SZ)动态快查：无新增可记账实质消息",
+      "tickers": [
+        "002497.SZ",
+        "688620.SS",
+        "603115.SS",
+        "688531.SS",
+        "688380.SS",
+        "920493.BJ",
+        "300981.SZ",
+        "688733.SS",
+        "688265.SS",
+        "688410.SS",
+        "301563.SZ",
+        "301366.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "688620.SS获'中国芯'优秀产品奖(已于11/4记账)+Q1-3营收6.75亿/净利6751万与既有H1 met结论方向一致，非新增判定点；688410.SS机构调研前三季度耗材/设备营收数据(已于11/9记账)重复出现；603115.SS仅11/16例行独董选举股东会通知；688265.SS仅例行业绩说明会日程(11/12)+既有盐城基金出资的后续进展(与8/14记账为同一笔承诺出资)；301563.SZ股东户数披露+13万股限制性股票首次授予均为行政性信息；301366.SZ 11/17临时股东会(利润分配)+募投项目实施主体变更为程序性公告；其余标的无新增信息"
     }
   ]
 }
