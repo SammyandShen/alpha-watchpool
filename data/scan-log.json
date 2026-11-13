@@ -714,6 +714,81 @@
       ],
       "action": "skipped_watchlist_only",
       "note": "688620.SS获'中国芯'优秀产品奖(已于11/4记账)+Q1-3营收6.75亿/净利6751万与既有H1 met结论方向一致，非新增判定点；688410.SS机构调研前三季度耗材/设备营收数据(已于11/9记账)重复出现；603115.SS仅11/16例行独董选举股东会通知；688265.SS仅例行业绩说明会日程(11/12)+既有盐城基金出资的后续进展(与8/14记账为同一笔承诺出资)；301563.SZ股东户数披露+13万股限制性股票首次授予均为行政性信息；301366.SZ 11/17临时股东会(利润分配)+募投项目实施主体变更为程序性公告；其余标的无新增信息"
+    },
+    {
+      "date": "2026-11-13",
+      "fingerprint": "2026-11-13+cn-forecasts-fetch-failed-reused-stale-snapshot-duplicate",
+      "headline": "东财接口当日第三次连续拉取失败(eastmoney success=false)，fetch-cn-forecasts.py保留11/9快照；候选批次(688827.SS钶锐锶/688235.SS百济神州/001381.SZ皇冠新材/920309.BJ菊乐股份)与11/9-11/12复核结论一致",
+      "tickers": [
+        "688827.SS",
+        "688235.SS",
+        "001381.SZ",
+        "920309.BJ"
+      ],
+      "action": "skipped_duplicate",
+      "note": "连续第三日无新鲜数据来源，沿用既有排除结论(IPO未上市/千亿megacap/营收负增长或方向相反/温和消费品故事无idiosyncratic驱动)；pool_negative_warnings为空(沿用快照)"
+    },
+    {
+      "date": "2026-11-13",
+      "fingerprint": "2026-11-13+US-newcandidate-scan-LUNR-MBGL-TSSI-rejected",
+      "headline": "美股小盘beat+backlog扫描：Intuitive Machines(LUNR)/Mobility Global(MBGL)/TSS Inc(TSSI)/Cerebras(CBRS)等候选复核",
+      "tickers": [
+        "LUNR",
+        "TSSI"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "LUNR：Q3营收+413.7% YoY+backlog $1.9B($15B CLPS2.0机会)需求确定性强，但市值$2.79B超出池内弹性screen上限(池内最大GHM~$10亿)+历史上已是高关注度航天题材股(今日出现异常高期权成交量，speculative crowd已入场)，misclassification已被部分修正，排除；MBGL(Mobility Global)：季度营收$478M+$800亿美元回购，体量/市值均非小盘，且CARFAX/B2B汽车信息业务无idiosyncratic需求变化叙事，排除；TSSI：市值仅$196M但系2025年已被充分炒作过的AI机架集成meme股(1年内$5.9-$17.57大幅波动)，11/9刚被Wall Street Zen降至Sell，neglect/misclassification条件不满足(市场已反复定价)，排除；CBRS(Cerebras)为高度拥挤的AI芯片IPO热股，排除"
+    },
+    {
+      "date": "2026-11-13",
+      "fingerprint": "2026-11-13+CN-newcandidate-scan-electroniccloth-DRAM-macro-theme-rejected",
+      "headline": "A股新候选扫描：电子布(莱特光电/石英股份/国际复材/菲利华/宏和科技)五轮涨价+DRAM存储涨价潮(10月合约价环比+5.77%)行业级主题扫描",
+      "tickers": [],
+      "action": "skipped_watchlist_only",
+      "note": "电子布：五轮涨价、四大龙头股价已翻倍，中国基金报/证券市场周刊/知乎等多篇专题密集覆盖，neglect为零、misclassification已被市场充分修正，属极度拥挤consensus题材，排除；DRAM/存储芯片涨价为延续性行业级宏观叙事(个人消费电子/服务器DRAM普涨)，未发现满足入池纪律的新idiosyncratic小盘ticker候选"
+    },
+    {
+      "date": "2026-11-13",
+      "fingerprint": "2026-11-13+US-pool-13tickers-quickcheck",
+      "headline": "池内13只美股标的(POWL/PENG/AUTL/PSIX/AIP/MTUS/MASS/QMCO/INTT/ASUR/OSPN/MEC/GHM)动态快查(11/12-11/13窗口)：OSPN新增pending证据，POWL补充11/16财报events[]，其余无新增可记账实质消息",
+      "tickers": [
+        "POWL",
+        "PENG",
+        "AUTL",
+        "PSIX",
+        "AIP",
+        "MTUS",
+        "MASS",
+        "QMCO",
+        "INTT",
+        "ASUR",
+        "OSPN",
+        "MEC",
+        "GHM"
+      ],
+      "action": "evidence_appended",
+      "note": "OSPN新增FIDO认证技术获选支持日本TSUBASA银行联盟安全倡议(11/10,V2相关产品采用信号,pending E3)；POWL确认FY2026 Q4财报官方排期11/16收盘后发布(11/17电话会)，距今3天在7天窗口内，补充events[](V1/V3此前已met，本次为V2判定窗口)；其余标的(PENG/AUTL/PSIX/AIP/MTUS/MASS/QMCO/INTT/ASUR/MEC/GHM)复核确认近期动态(SK Hynix持股/CARLYSLE狼疮数据/CFO离职/analyst rating等)均已在11/9-11/12历史记账中覆盖，无新增"
+    },
+    {
+      "date": "2026-11-13",
+      "fingerprint": "2026-11-13+CN-pool-12tickers-quickcheck-no-new-material",
+      "headline": "池内12只A股标的(002497.SZ/688620.SS/603115.SS/688531.SS/688380.SS/920493.BJ/300981.SZ/688733.SS/301366.SZ/688265.SS/688410.SS/301563.SZ)动态快查(11/12-11/13窗口)：无新增可记账实质消息",
+      "tickers": [
+        "002497.SZ",
+        "688620.SS",
+        "603115.SS",
+        "688531.SS",
+        "688380.SS",
+        "920493.BJ",
+        "300981.SZ",
+        "688733.SS",
+        "301366.SZ",
+        "688265.SS",
+        "688410.SS",
+        "301563.SZ"
+      ],
+      "action": "skipped_watchlist_only",
+      "note": "全部为例行回购进展/股东户数/限制性股票授予/临时股东会/机构调研/业绩说明会日程等行政性公告，无idiosyncratic新增需求/财务信号；301563.SZ新增富海系基金减持0.88%(非经营性)；603115.SS/688531.SS/688733.SS/688265.SS均仅例行公告；688380.SS涨价公告为1月旧闻重复出现，非本周新增"
     }
   ]
 }

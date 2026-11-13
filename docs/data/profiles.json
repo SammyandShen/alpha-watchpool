@@ -1,5 +1,5 @@
 {
-  "$last_updated": "2026-11-12T08:08:34+08:00",
+  "$last_updated": "2026-11-13T10:59:42+08:00",
   "source": "yahoo-quote-summary",
   "profiles": {
     "OUST": {
@@ -36,10 +36,10 @@
       "website": "https://www.powellind.com",
       "description_en": "Powell Industries, Inc., together with its subsidiaries, designs, develops, manufactures, sells, and services custom-engineered equipment and systems. The company's products portfolio includes integrated power control room substations, custom-engineered modules, and electrical houses; and traditional and arc-resistant distribution switchgears and control gears, medium-voltage circuit breakers, monitoring and control communications systems, motor control centers, switches, and bus duct systems. It also provides field service inspection, installation, commissioning, modification, and repair services; spare parts; retrofit and retrofill components for existing systems; and replacement circuit breakers for switchgears. The company serves onshore and offshore production, liquefied natural gas facilities and terminals, pipelines and refineries, petrochemical, electric utility, light rail traction power, mining and metals, pulp and paper, data centers, commercial construction, and other industrial markets, as well as universities and government entities. It operates in the United States, Canada, the Middle East, Africa, Europe, Mexico, the Asia/Pacific, and Central and South America. Powell Industries, Inc. was founded in 1947 and is headquartered in Houston, Texas.",
       "currency": "USD",
-      "market_cap": 5315510784,
-      "trailing_pe": 27.950191,
-      "forward_pe": 20.875929,
-      "ps_ttm": 4.5921464,
+      "market_cap": 5165044736,
+      "trailing_pe": 27.159006,
+      "forward_pe": 20.284994,
+      "ps_ttm": 4.462157,
       "revenue_ttm": 1157522048,
       "revenue_growth": 0.089,
       "gross_margin": 0.3008,
@@ -50,7 +50,7 @@
       "free_cashflow": 190403632,
       "week52_low": 92.59,
       "week52_high": 328.0,
-      "fetched_at": "2026-11-12T08:00:27+08:00"
+      "fetched_at": "2026-11-13T08:55:19+08:00"
     },
     "002326.SZ": {
       "next_earnings_date": null,
@@ -61,10 +61,10 @@
       "website": "https://yongtaitech.com",
       "description_en": "Zhejiang Yongtai Technology Co.,Ltd. engages in the manufacture and sale of fluorinated pharmaceuticals, crop science, and new energy materials in China and internationally. Its products include fluorinated polymers, fluorinated fine chemicals, refrigerants, foaming agents, fire extinguishers, etc. The company also trades in herbicides, fungicides, insecticides, and other pesticide active ingredients and formulations; and lithium carbonate. In addition, it provides fluorinated intermediates; pharmaceutical APIs; and lithium battery and other materials products comprising lithium battery materials, fluoro liquid-crystal intermediates, fluorinated liquid, etc. Zhejiang Yongtai Technology Co.,Ltd. was founded in 1999 and is headquartered in Linhai, China.",
       "currency": "CNY",
-      "market_cap": 13372892160,
-      "trailing_pe": 38.05263,
-      "forward_pe": 4.4355826,
-      "ps_ttm": 1.8420835,
+      "market_cap": 13141687296,
+      "trailing_pe": 38.405403,
+      "forward_pe": 4.358896,
+      "ps_ttm": 1.8102355,
       "revenue_ttm": 7259656192,
       "revenue_growth": 0.641,
       "gross_margin": 0.24503,
@@ -75,7 +75,7 @@
       "free_cashflow": -181812656,
       "week52_low": 13.62,
       "week52_high": 33.0,
-      "fetched_at": "2026-11-12T08:00:28+08:00"
+      "fetched_at": "2026-11-13T09:12:41+08:00"
     },
     "002497.SZ": {
       "next_earnings_date": null,
@@ -86,10 +86,10 @@
       "website": "https://www.scyahua.com",
       "description_en": "Sichuan Yahua Industrial Group Co., Ltd., together with its subsidiaries, engages in lithium and civil explosive businesses in China and internationally. The company offers industrial explosives, industrial detonators, and industrial detonating cords for various fields, including water conservancy and hydropower, transportation construction, urban renovation, geological exploration, and explosive processing. It is also involved in the provision of processing, blasting design, consulting, and supervision services, as well as integrated on-site mixed explosive blasting, integrated mining, and urban demolition services; transportation services for civil explosives, hazardous chemicals, hazardous waste, radioactive materials, and general cargo; and logistics, warehousing, and automobile repair services. In addition, the company engages in lithium mining and processing; research and development, production, sales, and trading of lithium salt products, such as battery-grade lithium hydroxide, battery-grade lithium carbonate, and lithium phosphate. The company was founded in 1952 and is based in Chengdu, China.",
       "currency": "CNY",
-      "market_cap": 14891108352,
-      "trailing_pe": 8.2293,
-      "forward_pe": 5.6419215,
-      "ps_ttm": 1.1273915,
+      "market_cap": 14868057088,
+      "trailing_pe": 8.486842,
+      "forward_pe": 5.633188,
+      "ps_ttm": 1.1256464,
       "revenue_ttm": 13208462336,
       "revenue_growth": 0.525,
       "gross_margin": 0.2938,
@@ -100,7 +100,7 @@
       "free_cashflow": -1003524160,
       "week52_low": 12.31,
       "week52_high": 32.0,
-      "fetched_at": "2026-11-12T08:00:28+08:00"
+      "fetched_at": "2026-11-13T10:59:22+08:00"
     },
     "688620.SS": {
       "next_earnings_date": null,
@@ -111,10 +111,10 @@
       "website": "https://www.anyka.com",
       "description_en": "Guangzhou Anyka Microelectronics Co., Ltd. engages in the design and sale of AI System-on-a-Chip (SoC) chips that enable AI hardware in China. The company offers IoT camera chips, including the AK39AV130 series multi-view low-power intelligent camera chip, KM01 series AOV low-power intelligent vision chip, and KM02 series edge computing intelligent vision chip; low-power Bluetooth chips comprising AK1080 and AK1090 Bluetooth audio chips and SF32LB series chips for wearable devices; human interaction chips that include the AK2659 vision processing chip; and power management chips, such as the AK5301 chip, a photovoltaic charging management device. It also provides smart door lock and glasses solutions, as well as multimodal intelligent terminal solutions. The company was founded in 2001 and is based in Guangzhou, China.",
       "currency": "CNY",
-      "market_cap": 5272399872,
-      "trailing_pe": 672.5,
+      "market_cap": 5190080000,
+      "trailing_pe": 662.0,
       "forward_pe": null,
-      "ps_ttm": 7.139891,
+      "ps_ttm": 7.0284133,
       "revenue_ttm": 738442624,
       "revenue_growth": 1.159,
       "gross_margin": 0.26645002,
@@ -125,7 +125,7 @@
       "free_cashflow": 251299696,
       "week52_low": 10.0,
       "week52_high": 18.75,
-      "fetched_at": "2026-11-12T08:00:29+08:00"
+      "fetched_at": "2026-11-13T10:59:23+08:00"
     },
     "PENG": {
       "next_earnings_date": "2027-01-05",
@@ -136,10 +136,10 @@
       "website": "https://www.penguinsolutions.com",
       "description_en": "Penguin Solutions, Inc. designs, builds, deploys and manages data centers for enterprises, sovereign AI initiatives, and neocloud providers worldwide. The company operates through three segments: Advanced Computing, Integrated Memory, and Optimized LED. It offers AI infrastructure design, system integration, deployment, cluster validation, performance optimization, and ongoing infrastructure management services; continuous availability of customers critical data and applications in data centers and edge locations under the Stratus brand products; and dynamic random-access memory, modules, solid-state/flash storage, and CXL-based memory expansion technologies designed to improve memory capacity, bandwidth, and system efficiency under the SMART Modular Technologies brand. The company also provides Zefr, a memory module; Altus and AMD EPYC based servers for expanded memory capacity; flash memory products comprising solid-state drives, Serial Advanced Technology Attachment, and PCIe NVMe products in 2.5 enclosures, M.2, EDSFF, and other form factors; and multimediacard and embedded and removable USB products, SD and microSD Card configurations, and firmware development. In addition, it offers procurement, logistics, inventory management, temporary warehousing, programming, kitting, and packaging supply chain services; and LEDs under the Cree LED brand; Cree LED XLamp and J Series packaged LED components. It serves OEMs, enterprises, government, and other customers through direct and third-party channels. The company was formerly known as SMART Global Holdings, Inc. and changed its name to Penguin Solutions, Inc. in October 2024. Penguin Solutions, Inc. was founded in 1988 and is headquartered in Fremont, California.",
       "currency": "USD",
-      "market_cap": 2523703040,
-      "trailing_pe": 18.942308,
-      "forward_pe": 9.370243,
-      "ps_ttm": 1.457551,
+      "market_cap": 3036893696,
+      "trailing_pe": 19.269232,
+      "forward_pe": 9.531963,
+      "ps_ttm": 1.7539415,
       "revenue_ttm": 1731468032,
       "revenue_growth": 0.677,
       "gross_margin": 0.27632,
@@ -150,7 +150,7 @@
       "free_cashflow": -124298624,
       "week52_low": 16.04,
       "week52_high": 89.86,
-      "fetched_at": "2026-11-12T08:00:30+08:00"
+      "fetched_at": "2026-11-13T10:59:24+08:00"
     },
     "603115.SS": {
       "next_earnings_date": null,
@@ -161,10 +161,10 @@
       "website": "https://www.haistar.com.cn",
       "description_en": "Nantong Haixing Electronics Co., Ltd. engages in the research, development, production, and sale of electrode foils for aluminum electrolytic capacitors in the People's Republic of China and internationally. Its products are used in consumption electronics, intelligence terminal, industrial control, 5G and industrial internet, new energy generation, and new energy vehicle applications. The company was incorporated in 1998 and is headquartered in Nantong, the People's Republic of China.",
       "currency": "CNY",
-      "market_cap": 11642131456,
-      "trailing_pe": 52.88889,
+      "market_cap": 10986649600,
+      "trailing_pe": 53.47619,
       "forward_pe": null,
-      "ps_ttm": 4.3207016,
+      "ps_ttm": 4.077435,
       "revenue_ttm": 2694500096,
       "revenue_growth": 0.219,
       "gross_margin": 0.22204,
@@ -175,7 +175,7 @@
       "free_cashflow": -193433424,
       "week52_low": 17.56,
       "week52_high": 132.5,
-      "fetched_at": "2026-11-12T08:00:30+08:00"
+      "fetched_at": "2026-11-13T10:59:25+08:00"
     },
     "003026.SZ": {
       "next_earnings_date": null,
@@ -186,10 +186,10 @@
       "website": "https://www.mtcn.net",
       "description_en": "Zhejiang MTCN Technology Co.,Ltd. engages in the manufacturing and selling of crystalline silicon and electronic components in China. It provides semiconductor monocrystalline silicon wafers and rods, and high voltage rectifier devices, as well as involved in the production and sales of semiconductor power chips and devices. The company was founded in 2010 and is based in Huzhou, China.",
       "currency": "CNY",
-      "market_cap": 5293052416,
-      "trailing_pe": 59.404255,
-      "forward_pe": 58.166668,
-      "ps_ttm": 9.675901,
+      "market_cap": 5166034432,
+      "trailing_pe": 61.93182,
+      "forward_pe": 56.770836,
+      "ps_ttm": 9.443707,
       "revenue_ttm": 547034560,
       "revenue_growth": 0.653,
       "gross_margin": 0.35443002,
@@ -200,7 +200,7 @@
       "free_cashflow": 87077440,
       "week52_low": 19.910343,
       "week52_high": 49.8,
-      "fetched_at": "2026-11-12T08:00:31+08:00"
+      "fetched_at": "2026-11-13T10:59:25+08:00"
     },
     "688531.SS": {
       "next_earnings_date": null,
@@ -211,10 +211,10 @@
       "website": "https://www.unicomp.cn",
       "description_en": "Unicomp Technology Group Co., Ltd. engages in the research, development, manufacture, and sale of X-ray technology and intelligent detection equipment in China. It offers electronics, semicon, lithium battery, industrial NDT, food beverage, chip counter, electrical x-ray, industrial CT, and x-ray source products. Its products has applications in electronics, semicon, battery, foundries, automotive, welding, military, science and research industries. Unicomp Technology Group Co., Ltd. was formerly known as Wuxi Unicomp Technology Co., Ltd. and changed its name to Unicomp Technology Group Co., Ltd. in June 2025. The company was founded in 2002 and is based in Shenzhen, China.",
       "currency": "CNY",
-      "market_cap": 13943009280,
-      "trailing_pe": 51.0303,
-      "forward_pe": 25.209581,
-      "ps_ttm": 9.443462,
+      "market_cap": 13209427968,
+      "trailing_pe": 53.53691,
+      "forward_pe": 23.883234,
+      "ps_ttm": 8.946615,
       "revenue_ttm": 1476472192,
       "revenue_growth": 0.519,
       "gross_margin": 0.44278,
@@ -225,7 +225,7 @@
       "free_cashflow": -186176368,
       "week52_low": 58.5,
       "week52_high": 215.0,
-      "fetched_at": "2026-11-12T08:00:32+08:00"
+      "fetched_at": "2026-11-13T10:59:26+08:00"
     },
     "301536.SZ": {
       "next_earnings_date": null,
@@ -261,10 +261,10 @@
       "website": "https://www.optowide.com",
       "description_en": "Optowide Technologies Co., Ltd. engages in the research, development, production, and sale of precision optical components, fiber optic devices, and optical testing instruments in China and internationally. The company's precision optics components include crystal materials, planar optical elements, spherical optical elements, molded glass aspherical lenses, diffraction gratings, and optical assemblies; fiber optic devices, such as coated fiber optic devices, collimators, acousto-optic devices, and others fiber optics; optical testing instruments, comprising tunable lasers, laser scanning analyzers, and optical equipment and modules. Its products are used in optical communications, fiber lasers and other fields, such as scientific research, semiconductors equipment, quantum information research, biomedicine, and consumer optics. Optowide Technologies Co., Ltd. was incorporated in 2013 and is based in Fuzhou, China.",
       "currency": "CNY",
-      "market_cap": 19108616192,
-      "trailing_pe": 185.1228,
+      "market_cap": 18735570944,
+      "trailing_pe": 184.75,
       "forward_pe": null,
-      "ps_ttm": 21.135565,
+      "ps_ttm": 20.722948,
       "revenue_ttm": 904097728,
       "revenue_growth": 0.937,
       "gross_margin": 0.39810002,
@@ -273,9 +273,9 @@
       "total_cash": 252354768,
       "total_debt": 660012608,
       "free_cashflow": -548069504,
-      "week52_low": 79.292854,
+      "week52_low": 80.34286,
       "week52_high": 306.49286,
-      "fetched_at": "2026-11-12T08:00:33+08:00"
+      "fetched_at": "2026-11-13T10:59:27+08:00"
     },
     "688380.SS": {
       "next_earnings_date": null,
@@ -311,10 +311,10 @@
       "website": "https://www.zhonghongmedical.com",
       "description_en": "Zhonghong Pulin Medical Products Co., Ltd., together with its subsidiaries, engages in the research, development, production, and sale of disposable health protection products, sterile medical devices, and life support solutions in China and internationally. It operates through the Health Protection Products Division; Safe Infusion Products Division; and Innovation and Incubation Product Division segments. The Health Protection Products Division is involved in the research, development, production, and sale of nitrile gloves, PVC gloves, natural latex gloves, radiation protection gloves, polyisoprene gloves, and other gloves and condoms. The Safe Infusion Products Division engages in the research, development, production, and sale of infusion device-related products, such as precision infusion sets, indwelling needles, ordinary infusion sets, ordinary syringes, and blood collection tubes. The Innovation and Incubation Product Division is involved in the research, development, production, and sale of products and equipment, including infusion pumps, syringe pumps, infusion information acquisition systems, disposable non-invasive EEG electrodes, disposable medical temperature sensors, non-invasive blood pressure cuffs, and radial artery compression tourniquets. The company also provides wireless continuous monitoring sensors and probes; and scientific research and technical services. Zhonghong Pulin Medical Products Co., Ltd. was founded in 2010 and is based in Tangshan, China.",
       "currency": "CNY",
-      "market_cap": 6754622976,
-      "trailing_pe": 45.0,
-      "forward_pe": 34.23913,
-      "ps_ttm": 2.452616,
+      "market_cap": 6501592576,
+      "trailing_pe": 43.314285,
+      "forward_pe": 32.95652,
+      "ps_ttm": 2.3607402,
       "revenue_ttm": 2754048256,
       "revenue_growth": 0.224,
       "gross_margin": 0.21029,
@@ -325,7 +325,7 @@
       "free_cashflow": 615852032,
       "week52_low": 9.21,
       "week52_high": 25.91,
-      "fetched_at": "2026-11-12T08:00:36+08:00"
+      "fetched_at": "2026-11-13T10:59:29+08:00"
     },
     "AEHR": {
       "next_earnings_date": null,
@@ -361,10 +361,10 @@
       "website": "https://www.fullhan.com",
       "description_en": "Shanghai Fullhan Microelectronics Co., Ltd., together with its subsidiaries, engages in the development and design of integrated circuit chips, electronic products, and communication equipment in China and internationally. The company provides various chips comprising HD analog image signal processors (ISP), IP camera system on chips (SoC), HD analog Rx, digital video recorder (DVR) SoC, network video recorder SoC, smart display SoC, automotive camera ISP, automotive HD analog Rx, and automotive DVR SoC. It also offers professional technology services, such as technology development and IC design; and technology transfer and technical consulting services. In addition, the company is involved in the development, design, and manufacturing of computer system software; sales of self-produced products; and import, export, and wholesale of integrated circuits, electronic products, communication equipment, computers, and accessories and consumables. Fullhan Microelectronics Co., Ltd. was founded in 2004 and is headquartered in Shanghai, China.",
       "currency": "CNY",
-      "market_cap": 19910078464,
-      "trailing_pe": 22.139896,
-      "forward_pe": 58.937927,
-      "ps_ttm": 6.415769,
+      "market_cap": 19015452672,
+      "trailing_pe": 23.320002,
+      "forward_pe": 56.289654,
+      "ps_ttm": 6.127487,
       "revenue_ttm": 3103303424,
       "revenue_growth": 1.411,
       "gross_margin": 0.4525,
@@ -375,7 +375,7 @@
       "free_cashflow": -695144640,
       "week52_low": 39.05,
       "week52_high": 89.88,
-      "fetched_at": "2026-11-12T08:00:37+08:00"
+      "fetched_at": "2026-11-13T10:59:30+08:00"
     },
     "688733.SS": {
       "next_earnings_date": null,
@@ -386,10 +386,10 @@
       "website": "https://www.estonegroup.com",
       "description_en": "Anhui Estone Materials Technology Co.,Ltd, together with its subsidiaries, engages in the research, development, production, and sale of advanced inorganic non-metallic composites in China and internationally. The company offers coating materials for electrode plates and separators in lithium batteries; electronic communication functional filling materials, including chip packaging, 5G high-frequency and high-speed copper clad laminate functional filling materials, silicone rubber functional fillers, electronic ink functional filling materials, and thermal interface materials; low smoke halogen-free flame retardant materials comprising environmentally friendly flame retardant for low-smoke halogen-free B1 sheath materials, smoke suppression char-forming agents, ceramic flame retardants, and ceramic products; opening agent solutions that include soft silicon and spherical silicon dioxide; and ceramic parts, such as alumina, zirconia, and aluminum nitride structural components. It also exports its products. The company was incorporated in 2006 and is based in Bengbu, China.",
       "currency": "CNY",
-      "market_cap": 4674739200,
-      "trailing_pe": 334.2857,
-      "forward_pe": 27.209301,
-      "ps_ttm": 5.4703197,
+      "market_cap": 4566860800,
+      "trailing_pe": 326.57144,
+      "forward_pe": 26.581396,
+      "ps_ttm": 5.344082,
       "revenue_ttm": 854564160,
       "revenue_growth": 0.523,
       "gross_margin": 0.21531999,
@@ -400,7 +400,7 @@
       "free_cashflow": -379548544,
       "week52_low": 20.79,
       "week52_high": 48.25,
-      "fetched_at": "2026-11-12T08:00:38+08:00"
+      "fetched_at": "2026-11-13T10:59:31+08:00"
     },
     "AUTL": {
       "next_earnings_date": null,
@@ -436,10 +436,10 @@
       "website": "https://www.sepax-tech.com.cn",
       "description_en": "Suzhou Sepax Technologies Co., Ltd., a high-tech company, engages on the research, development, production, and sale of liquid chromatography materials and technologies worldwide. Its products are chromatographic columns and chromatographic fillers used in the analysis, detection, separation and purification of biological macromolecule drugs and small molecule chemical drugs. The company's analytical chromatography products are used for analytical testing in drug development and quality inspection. Suzhou Sepax Technologies Co., Ltd. was founded in 2002 and is headquartered in Suzhou, China.",
       "currency": "CNY",
-      "market_cap": 9945162752,
-      "trailing_pe": 49.75,
-      "forward_pe": 37.904762,
-      "ps_ttm": 18.926151,
+      "market_cap": 9716107264,
+      "trailing_pe": 48.604168,
+      "forward_pe": 37.031746,
+      "ps_ttm": 18.490246,
       "revenue_ttm": 525472032,
       "revenue_growth": 0.212,
       "gross_margin": 0.71212995,
@@ -450,7 +450,7 @@
       "free_cashflow": 100803840,
       "week52_low": 15.85,
       "week52_high": 34.79,
-      "fetched_at": "2026-11-12T08:00:40+08:00"
+      "fetched_at": "2026-11-13T10:59:32+08:00"
     },
     "301366.SZ": {
       "next_earnings_date": null,
@@ -461,21 +461,21 @@
       "website": "https://www.edadoc.com",
       "description_en": "Shenzhen Edadoc Technology Co.,Ltd. provides printed circuit board (PCB) design and PCB assembly manufacturing services in China and internationally. The company offers simulation analysis services, including DDRx simulation, high speed serial interface, power integrity simulation, system in packaging design, universal standard fixture, customized fixtures, and laboratory services; and PCB fabrication. It also provides component selection services. Shenzhen Edadoc Technology Co.,Ltd. was founded in 2003 and is headquartered in Shenzhen, China.",
       "currency": "CNY",
-      "market_cap": 10020021248,
-      "trailing_pe": 56.928574,
+      "market_cap": 10204413952,
+      "trailing_pe": 59.390244,
       "forward_pe": null,
-      "ps_ttm": 6.3705306,
+      "ps_ttm": 6.487764,
       "revenue_ttm": 1572870784,
       "revenue_growth": 0.808,
       "gross_margin": 0.32031,
-      "operating_margin": 0.19201,
+      "operating_margin": 0.11737,
       "profit_margin": 0.10973,
       "total_cash": 711223808,
       "total_debt": 250778000,
       "free_cashflow": -48095616,
       "week52_low": 29.83,
       "week52_high": 76.54,
-      "fetched_at": "2026-11-11T08:00:42+08:00"
+      "fetched_at": "2026-11-13T10:59:33+08:00"
     },
     "PSIX": {
       "next_earnings_date": null,
@@ -486,21 +486,21 @@
       "website": "https://psiengines.com",
       "description_en": "Power Solutions International, Inc. designs, engineers, manufactures, markets, and sells engines and power systems in the United States, the rest of North America, the Pacific Rim, Europe, and internationally. The company offers basic engine blocks integrated with fuel system parts, as well as completely packaged power systems, that include combinations of front accessory drives, cooling systems, electronic systems, air intake systems, fuel systems, housings, power takeoff systems, exhaust systems, hydraulic systems, enclosures, brackets, hoses, tubes, packaging, telematics, and other assembled componentry. It also designs and manufactures large, custom-engineered integrated electrical power generation systems for standby and prime power applications; sells emission-certified compression ignition and spark-ignition internal combustion engines; designs and fabricates power system enclosures; and sources electrification components. In addition, the company provides mobile and stationary gensets for emergency standby, rental, prime power, demand response, microgrid, oil and gas, data center, renewable energy resiliency, and combined heat and power; forklifts, wood chippers, stump grinders, sweepers/industrial scrubbers, aerial lift platforms/scissor lifts, irrigation pumps, oil and gas compression, oil lifts, off road utility vehicles, ground support equipment, ice resurfacing equipment, pump jacks, and battery packs; vocational trucks and vans, school buses, transit buses, and terminal and utility tractors; and internal aftermarket and OEM-developed service parts programs. It serves original equipment manufacturers and end-user customers across the power systems, industrial, and transportation end-markets; and large and multinational organizations. The company was founded in 1985 and is headquartered in Wood Dale, Illinois.",
       "currency": "USD",
-      "market_cap": 843734208,
-      "trailing_pe": 12.072608,
-      "forward_pe": 11.22086,
-      "ps_ttm": 1.2510257,
+      "market_cap": 909240000,
+      "trailing_pe": 13.0099,
+      "forward_pe": 12.092024,
+      "ps_ttm": 1.3481528,
       "revenue_ttm": 674433984,
       "revenue_growth": -0.009,
       "gross_margin": 0.25584,
-      "operating_margin": 0.18357,
+      "operating_margin": 0.14909,
       "profit_margin": 0.104040004,
       "total_cash": 72031000,
       "total_debt": 100124000,
       "free_cashflow": 77449128,
       "week52_low": 25.28,
       "week52_high": 106.5,
-      "fetched_at": "2026-11-11T08:00:42+08:00"
+      "fetched_at": "2026-11-13T10:59:34+08:00"
     },
     "AIP": {
       "next_earnings_date": null,
@@ -536,10 +536,10 @@
       "website": "https://www.modelorg.com",
       "description_en": "Shanghai Model Organisms Center, Inc. engages research and development, production, sale, and related technical services of genetically modified animal models. It uses model organisms, such as mice, rats, zebrafish, and nematodes as carriers which uses gene editing technology to introduce or delete target DNA fragments. The company offers toolbox of mice; disease mice, such as rare, infectious, and nervous system diseases, cardio-metabolic, autoimmune, and spontaneous tumor; and target humanized knockins, which includes tumor targets, immune checkpoint, complements, cytokines, and metabolic and other targets, as well as cytokine reporters, inducible cell ablation, and cell-specific reporters. It also provides other models comprising rats, such as humanized drug target, immunodeficient, diseases, reporters, and cre-drivers; standard strains including inbred and outbred; cells model, which includes reporter labeled, primary, wild-type, and other; and supporting solutions including colony management, such as cryopreservation and cryorecovery, housing and management, genotyping analysis, and breeding services, as well as auxiliary apparatuses, such as e-BLOT WB imaging system. Further, the company provides preclinical services, which includes non-GLP toxicology, pharmacokinetics, phenotype analysis, and pharmacology and pharmacodynamics. It offers treatment for various therapeutic areas, such as oncology; nervous system, autoimmune, and digestive system diseases. The company was founded in 2000 and is headquartered in Shanghai, China.",
       "currency": "CNY",
-      "market_cap": 3761739520,
-      "trailing_pe": 268.05554,
+      "market_cap": 3686114816,
+      "trailing_pe": 248.8421,
       "forward_pe": null,
-      "ps_ttm": 7.725948,
+      "ps_ttm": 7.570628,
       "revenue_ttm": 486896832,
       "revenue_growth": 0.273,
       "gross_margin": 0.51717,
@@ -550,7 +550,7 @@
       "free_cashflow": -10239719,
       "week52_low": 30.36,
       "week52_high": 67.98,
-      "fetched_at": "2026-11-12T08:00:42+08:00"
+      "fetched_at": "2026-11-13T10:59:35+08:00"
     },
     "MTUS": {
       "next_earnings_date": null,
@@ -586,21 +586,21 @@
       "website": "https://908devices.com",
       "description_en": "908 Devices Inc. provides purpose-built handheld mass spectrometry and fourier transform infrared (FTIR) devices for use in vital health and safety applications. The company's products include MX908, a handheld, battery-powered, and Mass Spec device that is designed for rapid analysis of solid, liquid, vapor, and aerosol materials of unknown identity; XplorIR, a handheld device that uses FTIR spectroscopy to identify, quantify, and track gases and vapors; ThreatID, a portable FTIR device that rapidly detects and identifies approximately 28,000 unknown gas, vapor, powder, and liquid chemical hazards; ProtectIR, a handheld FTIR device that can identify approximately 23,000 solid and liquid chemical hazards; and VipIR, a handheld 3-in-1 analyzer that integrates FTIR, Raman spectroscopy, and smart spectral processing (SSP), a proprietary algorithm, to provide a single result from just one sample. It operates in the United States, Europe, the Middle East, Africa, the Asia Pacific, and rest of Americas. The company was incorporated in 2012 and is headquartered in Burlington, Massachusetts.",
       "currency": "USD",
-      "market_cap": 418318912,
+      "market_cap": 407091648,
       "trailing_pe": null,
-      "forward_pe": -23.215565,
-      "ps_ttm": 6.3587832,
+      "forward_pe": -22.592482,
+      "ps_ttm": 6.18812,
       "revenue_ttm": 65786000,
       "revenue_growth": 0.353,
-      "gross_margin": 0.52241004,
-      "operating_margin": -0.32968,
+      "gross_margin": 0.52741003,
+      "operating_margin": -0.30642998,
       "profit_margin": -0.36868,
       "total_cash": 99122000,
-      "total_debt": 2290000,
-      "free_cashflow": null,
+      "total_debt": 5047000,
+      "free_cashflow": -17821376,
       "week52_low": 5.025,
       "week52_high": 13.348,
-      "fetched_at": "2026-11-12T08:00:44+08:00"
+      "fetched_at": "2026-11-13T10:59:37+08:00"
     },
     "QMCO": {
       "next_earnings_date": "2027-02-09",
@@ -636,21 +636,21 @@
       "website": "https://www.swskj.com",
       "description_en": "SWS Hemodialysis Care Co., Ltd. research, develops, produces, and sells blood purification equipment and consumables in China and internationally. It offers blood purification equipment, dialysis disposables, and dialysis center intelligent management system, as well as operates chain dialysis centers. The company was founded in 2001 and is headquartered in Chongqing, China.",
       "currency": "CNY",
-      "market_cap": 4841310208,
-      "trailing_pe": 23.521738,
+      "market_cap": 4975542272,
+      "trailing_pe": 24.711111,
       "forward_pe": null,
-      "ps_ttm": 5.0459585,
+      "ps_ttm": 5.1858644,
       "revenue_ttm": 959443136,
       "revenue_growth": 0.203,
       "gross_margin": 0.53484,
-      "operating_margin": 0.2765,
+      "operating_margin": 0.23209,
       "profit_margin": 0.20849001,
       "total_cash": 1331788160,
       "total_debt": 1725124,
-      "free_cashflow": 38871176,
+      "free_cashflow": 40235520,
       "week52_low": 8.61,
       "week52_high": 13.192857,
-      "fetched_at": "2026-11-11T08:00:47+08:00"
+      "fetched_at": "2026-11-13T10:59:38+08:00"
     },
     "301563.SZ": {
       "next_earnings_date": null,
@@ -661,10 +661,10 @@
       "website": "https://www.ickey.cn",
       "description_en": "YH Group Internet and Technology Co., Ltd. operates a B2B sales platform for the electronics manufacturing industry in China. The company through its B2B sales platform ickey.cn provides analog chips, logic core pieces, memory devices, micro processing devices, discrete devices, sensors, optoelectronics, capacitances, inductances, resistance products, and connectors, as well as operates chip barke community. It also offers supply chain services, such as research and development project engineering, product technical solution development, product design-related solution consultation, circuit design, printed circuit board layout, material selection and solution optimization, electronic component procurement, and printed circuit board assembly engineering services. YH Group Internet and Technology Co., Ltd. was formerly known as ICkey (Shanghai) Internet and Technology Co.,Ltd. and changed its name to YH Group Internet and Technology Co., Ltd. in October 2026. The company was founded in 2008 and is based in Shanghai, China.",
       "currency": "CNY",
-      "market_cap": 8476097024,
-      "trailing_pe": 22.808657,
+      "market_cap": 8018136064,
+      "trailing_pe": 22.824097,
       "forward_pe": null,
-      "ps_ttm": 2.864337,
+      "ps_ttm": 2.7095778,
       "revenue_ttm": 2959182848,
       "revenue_growth": 0.263,
       "gross_margin": 0.16093999,
@@ -675,7 +675,7 @@
       "free_cashflow": null,
       "week52_low": 89.03,
       "week52_high": 232.99,
-      "fetched_at": "2026-11-12T08:00:46+08:00"
+      "fetched_at": "2026-11-13T10:59:38+08:00"
     },
     "INTT": {
       "next_earnings_date": null,
@@ -686,10 +686,10 @@
       "website": "https://www.intest.com",
       "description_en": "inTEST Corporation provides test and process technology solutions for use in Semi, Auto/Electric Vehicle, Defense/Aerospace, Industrial, Life Sciences, Safety/Security, and other markets in the United States and internationally. The company operates through three segments: Electronic Test, Environmental Technologies, and Process Technologies. The Electronic Test segment offers Cobal, and LS series manipulators that hold various test heads and enable an operator to reposition a test head for use with several probers on a test floor; and docking hardware products, which protect the interface contacts and ensure proper repeatable and precise alignment between the test head's interface board and the prober's probing assembly. This segment also provides tester interfaces that offer electrical connections between the tester and the wafer prober or IC handler; scorpion flying probe test systems that designs and manufactures robotics-based electronic test equipment and application support services; and BRiZ automated test and programming services, as well as functional test platform, touch display tester, wafer-level optical component tester, and specialty test modules. The Environmental Technologies segment provides ThermoStream products that are used in the semi market as a stand-alone temperature management tool, or in various electronic test applications; Thermal Chambers; Thermal Platforms; Thermonics temperature conditioning products that offer tempered gas or fluid; and ultra-cold storage solutions, including biomedical freezers, refrigerators, and mobile storage solutions. The Process Technologies segment offers EKOHEAT and EASYHEAT induction heating systems; and digital streaming and image capturing solutions. The company markets and sells its products to semiconductor manufacturers, third-party foundries, test and assembly providers, and original equipment manufacturers. inTEST Corporation was incorporated in 1981 and is headquartered in Mount Laurel, New Jersey.",
       "currency": "USD",
-      "market_cap": 185996064,
-      "trailing_pe": 48.299995,
-      "forward_pe": 20.313179,
-      "ps_ttm": 1.3567442,
+      "market_cap": 189461824,
+      "trailing_pe": 49.199997,
+      "forward_pe": 20.691687,
+      "ps_ttm": 1.3820251,
       "revenue_ttm": 137090000,
       "revenue_growth": 0.337,
       "gross_margin": 0.44187,
@@ -700,7 +700,7 @@
       "free_cashflow": 7805625,
       "week52_low": 7.07,
       "week52_high": 20.0,
-      "fetched_at": "2026-11-12T08:00:47+08:00"
+      "fetched_at": "2026-11-13T10:59:39+08:00"
     },
     "ASUR": {
       "next_earnings_date": null,
@@ -711,10 +711,10 @@
       "website": "https://www.asuresoftware.com",
       "description_en": "Asure Software, Inc. engages in the provision of cloud-based Human Capital Management (HCM) software solutions in the United States. It provides its human resources (HR) tool as Software-as-a-Service that helps various small and medium-sized businesses to build a productive workforce to help them stay compliant and allocate resources to grow their business. The company offers a comprehensive suite of HCM tools through its Asure HCM platform, which includes payroll and tax filing, HR management tools, time and attendance software, recruiting, and benefits administration. It provides technology-enabled services such as AsureMarketplace, facilitating automated data exchange with third-party providers; HR compliance services; AsurePay, a payroll card solution; and insurance brokerage services for benefits management. The company also offers payroll processing and compliance; offers payroll calculation and processing services, including wage and overtime calculations, garnishments, direct deposit processing, and related payroll administration; HR compliance and workforce management; time and attendance solutions; applicant tracking and recruiting tools; insurance brokerage and benefits administration, retirement plan administration; tax management solutions; payroll tax processing platforms; outsourced payroll tax services; and treasury and funds management services. The company delivers its products directly and through a national network of reseller partners and referral partners. Asure Software, Inc. was formerly known as Forgent Networks Inc. and changed its name to Asure Software, Inc. in September 2007. Asure Software, Inc. was incorporated in 1985 and is headquartered in Austin, Texas.",
       "currency": "USD",
-      "market_cap": 313161984,
+      "market_cap": 310446720,
       "trailing_pe": null,
-      "forward_pe": 8.9482765,
-      "ps_ttm": 1.9670607,
+      "forward_pe": 8.87069,
+      "ps_ttm": 1.9500054,
       "revenue_ttm": 159203008,
       "revenue_growth": 0.104,
       "gross_margin": 0.69139,
@@ -724,8 +724,8 @@
       "total_debt": 70304000,
       "free_cashflow": 15892875,
       "week52_low": 6.8,
-      "week52_high": 10.46,
-      "fetched_at": "2026-11-12T08:00:47+08:00"
+      "week52_high": 10.5,
+      "fetched_at": "2026-11-13T10:59:40+08:00"
     },
     "OSPN": {
       "next_earnings_date": null,
@@ -786,21 +786,21 @@
       "website": "https://grahamcorp.com",
       "description_en": "Graham Corporation designs and manufactures fluid, power, heat transfer, and vacuum technologies for chemical and petrochemical processing, defense, space, petroleum refining, cryogenic, and energy industries. The company offers power plant systems, including ejectors and surface condensers, as well as torpedo ejection, propulsion, and power systems comprising turbines, alternators, regulators, pumps, and blowers for the defense industry. It also provides heat transfer and vacuum systems that include ejectors, process and surface condensers, liquid ring pumps, and heat exchangers, as well as nozzles and power generation systems, such as turbines, generators, compressors, and pumps for the energy and process industry. In addition, the company offers rocket propulsion systems, including turbopumps, fuel, cryogenic, and nuclear propellant pumps; cooling systems comprising pumps, compressors, fans, and blowers; and life support systems that consist of fans, pumps, and blowers for the space industry. Further, it provides thermal management systems, such as pumps, blowers, and electronics for the defense and energy sector; advanced mixing systems, including bladeless centrifugal mixers, accessories, services, and consumables; and spare parts for its equipment. It serves customers in the United States, Asia, Canada, the Middle East, South America, and internationally. Graham Corporation was founded in 1936 and is headquartered in Batavia, New York.",
       "currency": "USD",
-      "market_cap": 1035758336,
-      "trailing_pe": 76.73044,
-      "forward_pe": 38.308586,
-      "ps_ttm": 3.910278,
+      "market_cap": 1008878400,
+      "trailing_pe": 75.39474,
+      "forward_pe": 37.39558,
+      "ps_ttm": 3.8087988,
       "revenue_ttm": 264880992,
       "revenue_growth": 0.057,
       "gross_margin": 0.25063,
-      "operating_margin": 0.0863,
+      "operating_margin": 0.06726,
       "profit_margin": 0.05045,
       "total_cash": 71427000,
       "total_debt": 6426000,
       "free_cashflow": 28424000,
       "week52_low": 52.57,
       "week52_high": 125.82,
-      "fetched_at": "2026-11-11T08:00:51+08:00"
+      "fetched_at": "2026-11-13T10:59:42+08:00"
     }
   }
 }

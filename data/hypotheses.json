@@ -1,7 +1,7 @@
 {
   "$schema_version": "1",
   "$methodology_version": "1",
-  "$last_updated": "2026-11-12",
+  "$last_updated": "2026-11-13",
   "hypotheses": [
     {
       "id": "H20260705-OUST",
@@ -636,6 +636,11 @@
           "date": "2026-10-17",
           "type": "guidance_revision",
           "note": "多家机构Oct中下调目标价，股价90天回撤约27%；具体'财报不及预期'数字与官方次财报日(11/17)矛盾，存疑未采信"
+        },
+        {
+          "date": "2026-11-16",
+          "type": "earnings",
+          "note": "FY2026 Q4财报官方排期(profiles.json/Yahoo确认)，收盘后发布，电话会11/17上午；V1/V3此前已met，本次为V2(FY26营收指引是否上修)及后续动能的下一判定窗口"
         }
       ],
       "links": {
@@ -7186,6 +7191,21 @@
           "headline": "Wall Street Zen将OSPN评级由Hold上调至Buy(11/7)",
           "summary": "延续财报后分析师意见分化格局(E1已记录Riley买入/Rosenblatt中性等)，本次为新增上调；仍为分析师观点而非公司自身量化数据，鉴别力有限。以pending记账留周复核综合评级。",
           "type": "T3_soft_signal",
+          "pending": true,
+          "likelihood": {
+            "label": null,
+            "lr": null,
+            "log_lr": null
+          }
+        },
+        {
+          "id": "E3",
+          "date": "2026-11-10",
+          "source": "BusinessWire / OneSpan官方公告",
+          "headline": "OneSpan FIDO认证技术获选支持日本TSUBASA银行联盟安全倡议",
+          "url": "https://financialcontent.com/article/bizwire-2026-11-10-onespans-fido-authentication-technology-to-support-japans-tsubasa-alliance-banking-security-initiative",
+          "summary": "日本TSUBASA联盟(多家区域银行组成)采用OneSpan FIDO无密码认证技术用于银行安全体系；属V2(新增客户/产品进展)相关的产品采用信号，非V1所需的量化订阅收入/ARR数字，以pending记账留周复核评级",
+          "type": "T2_supply_chain",
           "pending": true,
           "likelihood": {
             "label": null,
